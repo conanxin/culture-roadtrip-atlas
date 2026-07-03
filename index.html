@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="行旅图谱 - 为自驾、徒步与人文旅行准备的个人导游手册">
+  <meta name="author" content="Xin Conan">
+  <title>行旅图谱 · Culture Roadtrip Atlas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <nav class="site-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">行旅图谱</a>
+        <div class="nav-links">
+          <a href="#trips" class="nav-link">行程</a>
+          <a href="#about" class="nav-link">关于</a>
+          <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="nav-link" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero 区域 -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">行旅图谱</h1>
+      <p class="hero-subtitle">为自驾、徒步与人文旅行准备的个人导游手册<br>记录每一段路上的历史、建筑与故事</p>
+    </div>
+  </section>
+
+  <!-- 行程卡片 -->
+  <section id="trips" class="container">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">当前行程</h2>
+
+    <article class="trip-card">
+      <div class="trip-card-header">
+        <div>
+          <h3 class="trip-card-title">北京出发·辽塔巡礼自驾导游手册</h3>
+          <p class="trip-card-subtitle">从辽西走廊到契丹草原腹地，一条关于佛塔、捺钵与辽代都城的自驾路线</p>
+        </div>
+      </div>
+
+      <div class="trip-tags">
+        <span class="trip-tag">辽塔</span>
+        <span class="trip-tag">契丹</span>
+        <span class="trip-tag">捺钵</span>
+        <span class="trip-tag">石窟</span>
+        <span class="trip-tag">博物馆</span>
+        <span class="trip-tag">自驾</span>
+      </div>
+
+      <div class="trip-meta">
+        <div class="trip-meta-item">
+          <span class="trip-meta-label">天数</span>
+          <span class="trip-meta-value">9天8晚</span>
+        </div>
+        <div class="trip-meta-item">
+          <span class="trip-meta-label">路线</span>
+          <span class="trip-meta-value">北京 → 锦州 → 义县 → 北镇 → 朝阳 → 赤峰 → 巴林左旗 → 宁城/承德 → 北京</span>
+        </div>
+        <div class="trip-meta-item">
+          <span class="trip-meta-label">主题</span>
+          <span class="trip-meta-value">辽代佛塔、都城遗址、草原文明</span>
+        </div>
+      </div>
+
+      <div class="trip-card-footer">
+        <a href="trips/liao-tower-roadtrip/index.html" class="btn btn-primary">
+          进入行程 →
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <!-- 关于区域 -->
+  <section id="about" class="container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">关于行旅图谱</h2>
+
+    <div class="city-card" style="max-width: 800px; margin: 0 auto;">
+      <div class="city-intro">
+        <p><strong>行旅图谱</strong>是一个个人人文旅行项目库，收录自驾、徒步、古建、博物馆、历史地理主题路线。每条路线均包含完整的行程规划、景点深度讲解、随行导游词、城市背景、美食推荐与行前资料包。</p>
+
+        <p>与旅游攻略不同，行旅图谱追求的不是"打卡清单"，而是<strong>"随行导游"式的沉浸体验</strong>。每到一个地方，你会知道为什么这个地方值得来，它在中国历史和文化的坐标中处于什么位置，应该怎么看、怎么感受、怎么思考。</p>
+
+        <p>技术层面，行旅图谱是一个<strong>纯静态网站</strong>：不依赖后端、不需要数据库、不调用地图 API、不使用复杂框架。在浏览器原生能力的范围内（localStorage、speechSynthesis），实现尽可能丰富的交互功能。</p>
+      </div>
+
+      <h4 style="margin: var(--space-lg) 0 var(--space-md); color: var(--color-accent);">设计风格</h4>
+      <div class="city-intro">
+        <p>视觉风格参考文物图录与古代长卷：墨绿、米白、灰绿、暗金的色调，长卷式的排版布局，克制的装饰语言，古朴而不喧嚣的整体气质。每一次阅读，都像是展开一卷泛黄的史料。</p>
+      </div>
+
+      <h4 style="margin: var(--space-lg) 0 var(--space-md); color: var(--color-accent);">内容原则</h4>
+      <div class="city-intro">
+        <ul style="list-style: disc; padding-left: var(--space-xl);">
+          <li style="margin-bottom: var(--space-sm);"><strong>内容深度优先</strong>：重点景点提供800字左右的随行导游词，而非简短的简介</li>
+          <li style="margin-bottom: var(--space-sm);"><strong>原创讲解</strong>：导游词基于历史文献和实地考察，不是资料的搬运</li>
+          <li style="margin-bottom: var(--space-sm);"><strong>多层次设计</strong>：重点景点有完整导游词，普通景点有简明介绍</li>
+          <li style="margin-bottom: var(--space-sm);"><strong>可持续扩展</strong>：架构设计支持未来添加更多路线</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 底部信息 -->
+  <section class="container" style="margin-top: var(--space-3xl); margin-bottom: var(--space-2xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+
+    <div class="city-card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h4 style="margin-bottom: var(--space-lg); color: var(--color-accent);">技术说明</h4>
+      <div class="city-intro">
+        <p>本项目使用纯前端技术栈：HTML5 + CSS3 + Vanilla JavaScript。部署于 GitHub Pages，不产生任何服务器费用。</p>
+        <p style="margin-top: var(--space-md);">
+          <a href="https://github.com/conanxin/culture-roadtrip-atlas" target="_blank" class="btn btn-outline" style="margin: var(--space-xs);">
+            GitHub 仓库
+          </a>
+          <a href="docs/CONTENT_NOTES.md" target="_blank" class="btn btn-outline" style="margin: var(--space-xs);">
+            内容说明
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">行旅图谱</div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">首页</a>
+          <a href="#trips" class="footer-link">行程</a>
+          <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
+        </div>
+        <div class="footer-credit">Built with static HTML · 2026</div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</body>
+</html>
