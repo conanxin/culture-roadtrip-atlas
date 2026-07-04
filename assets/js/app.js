@@ -104,6 +104,9 @@
 
   // ============ 朗读功能 ============
 
+  // 语音朗读状态
+  let isSpeaking = false;
+
   /**
    * 朗读文本
    */
@@ -113,8 +116,19 @@
       return;
     }
 
+    // iOS Safari 需要用户交互才能触发
+    if (navigator.userAgent.match(/(iPhone|iPad|iPod)/i)) {
+      // iOS 设备，先尝试 unlock
+      var unlockAudio = function() {
+        var audio = new window.Audio();
+        audio.play().catch(function() {});
+        document.removeEventListener('touchstart', unlockAudio, true);
+      };
+      document.addEventListener('touchstart', unlockAudio, true);
+    }
+
     // 停止之前的朗读
-    window.speechSynthesis.cancel();
+    stopSpeech();
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'zh-CN';
@@ -125,12 +139,16 @@
     if (btn) {
       btn.classList.add('listened');
       btn.textContent = '🔊 朗读中...';
+      isSpeaking = true;
+      updateStopButtons(true);
     }
 
     utterance.onend = function() {
       if (btn) {
         btn.classList.remove('listened');
         btn.textContent = '🔊 朗读讲解';
+        isSpeaking = false;
+        updateStopButtons(false);
       }
     };
 
@@ -138,6 +156,8 @@
       if (btn) {
         btn.classList.remove('listened');
         btn.textContent = '🔊 朗读讲解';
+        isSpeaking = false;
+        updateStopButtons(false);
       }
       showToast('朗读出错，请重试');
     };
@@ -152,6 +172,28 @@
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
     }
+    isSpeaking = false;
+    updateStopButtons(false);
+    // 重置所有朗读按钮状态
+    document.querySelectorAll('[data-speak-btn]').forEach(function(btn) {
+      btn.classList.remove('listened');
+      btn.textContent = '🔊 朗读讲解';
+    });
+  }
+
+  /**
+   * 更新停止按钮状态
+   */
+  function updateStopButtons(speaking) {
+    document.querySelectorAll('.stop-speak-btn').forEach(function(btn) {
+      if (speaking) {
+        btn.classList.add('active');
+        btn.textContent = '⏹ 停止';
+      } else {
+        btn.classList.remove('active');
+        btn.textContent = '⏹ 停止';
+      }
+    });
   }
 
   // ============ 地图跳转 ============
@@ -348,6 +390,9 @@
     // 初始化朗读按钮
     initSpeakButtons();
 
+    // 初始化停止朗读按钮
+    initStopSpeakButtons();
+
     // 初始化操作按钮
     initActionButtons();
 
@@ -356,6 +401,9 @@
 
     // 初始化资料按钮
     initResourceButtons();
+
+    // 初始化语音状态检测
+    initSpeechStatus();
 
     // 更新进度
     updateProgress();
@@ -526,6 +574,40 @@
         }
       });
     });
+  }
+
+  /**
+   * 初始化停止朗读按钮
+   */
+  function initStopSpeakButtons() {
+    document.querySelectorAll('.stop-speak-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        stopSpeech();
+        showToast('已停止朗读');
+      });
+    });
+  }
+
+  /**
+   * 初始化语音状态检测
+   */
+  function initSpeechStatus() {
+    const speechStatusEl = document.getElementById('speech-status');
+    if (!speechStatusEl) return;
+
+    const dot = speechStatusEl.querySelector('.speech-status-dot');
+    const text = speechStatusEl.querySelector('.speech-status-text');
+
+    if ('speechSynthesis' in window) {
+      dot.classList.add('supported');
+      dot.classList.remove('unsupported');
+      text.textContent = '语音朗读: 支持';
+    } else {
+      dot.classList.add('unsupported');
+      dot.classList.remove('supported');
+      text.textContent = '语音朗读: 不支持';
+    }
   }
 
   // 页面加载完成后初始化

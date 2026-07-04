@@ -47,6 +47,11 @@
       </div>
       <span class="progress-count">0/0 资料</span>
     </div>
+    <div class="speech-status" id="speech-status">
+      <span class="speech-status-dot"></span>
+      <span class="speech-status-text">语音朗读: 检测中...</span>
+      <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()" style="margin-left: auto;">⏹ 停止</button>
+    </div>
   </div>
 
   <!-- Hero 首屏 -->
@@ -114,11 +119,25 @@
         <div class="timeline-title">北京 → 锦州</div>
         <div class="timeline-theme">从华北平原进入辽西走廊</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">北京出发，自驾抵达锦州，锦州城市轻游，可看锦州广济寺塔，晚餐安排锦州烧烤，宿锦州。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>约400公里，4.5小时</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>住宿：</strong>锦州市区</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>餐食：</strong>晚餐锦州烧烤</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>锦州广济寺塔建议傍晚光线好时拍摄</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">总车程：</span><span class="day-meta-value">约 400 公里 / 4.5 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">锦州市区</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">锦州烧烤</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>北京出发，沿京哈高速（G1）东行，约 400 公里</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>抵达锦州市区，午餐（推荐：凌河区锦州烧烤老店）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>锦州广济寺塔（建议傍晚光线好时拍摄），城市轻游</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>锦州烧烤晚餐（推荐：晓亮烧烤、大漠烤羊腿），入住酒店</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 雨天）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>跳过广济寺塔，直接到酒店休息，第二天补游</li>
+              <li><strong>雨天：</strong>改室内活动：辽沈战役纪念馆（周一闭馆）、锦州博物馆</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 开放时间、门票信息以景区官方公告为准，出行前请核对</p>
         </div>
       </div>
 
@@ -127,10 +146,26 @@
         <div class="timeline-title">义县佛教遗存日</div>
         <div class="timeline-theme">辽西佛教遗存的开场</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">奉国寺、万佛堂石窟，可选义县广胜寺塔或锦州广济寺塔，宿锦州。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>奉国寺（⭐重点）、万佛堂石窟（⭐重点）</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>锦州至义县约60公里，1小时</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>奉国寺建议安排在上午，避开人流。万佛堂需要爬山，请穿舒适鞋子。</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">锦州 ↔ 义县 约 60 公里 / 1 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">锦州市区（或义县）</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">锦州烧烤</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>奉国寺（建议 8:00-9:00 开门就到，避开人流）——重点游览大雄殿、七尊佛像</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>义县午餐（推荐：义县羊汤馆、杀猪菜）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>万佛堂石窟（爬山约需 2 小时，注意安全）——东区3窟、西区6窟</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>返回锦州，锦州烧烤晚餐，入住酒店</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 闭馆 / 雨天）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>优先奉国寺（约 2 小时），万佛堂石窟可改为 Day3 上午</li>
+              <li><strong>万佛堂闭馆：</strong>可改为参观义县广胜寺塔（辽塔）</li>
+              <li><strong>雨天：</strong>万佛堂需要爬山，路滑不安全——改为锦州广济寺塔或博物馆</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 奉国寺约 50 元，万佛堂约 30 元。出行前请核对官方公告。</p>
         </div>
       </div>
 
@@ -139,10 +174,25 @@
         <div class="timeline-title">北镇与医巫闾山</div>
         <div class="timeline-theme">山岳信仰、辽代皇室活动与辽西边塞</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">北镇庙、崇兴寺双塔、李成梁石坊，可选医巫闾山，宿锦州或北镇。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>北镇庙、崇兴寺双塔、李成梁石坊</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>锦州至北镇约80公里，1.5小时</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>北镇庙与崇兴寺双塔相距很近，可安排在同一天</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">锦州 ↔ 北镇 约 80 公里 / 1.5 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">北镇（或返回锦州）</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">北镇/锦州</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>北镇庙（游览约 1 小时）——祭祀北镇医巫闾山，五镇信仰核心</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>北镇午餐（推荐：北镇猪蹄、北镇羊汤）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>崇兴寺双塔（东西对峙，相距50米）、李成梁石坊（城内）</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>入住北镇或返回锦州，晚餐</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 雨天）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>优先北镇庙和崇兴寺双塔，李成梁石坊可路过快速看一眼</li>
+              <li><strong>雨天：</strong>医巫闾山爬山不便，改为北镇博物馆（如果开放）或在酒店休息</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 北镇庙约 30 元，崇兴寺双塔免费（户外）。出行前请核对。</p>
         </div>
       </div>
 
@@ -151,10 +201,26 @@
         <div class="timeline-title">锦州/北镇 → 朝阳</div>
         <div class="timeline-theme">进入兴中府，观看辽塔城市天际线</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">班吉塔、朝阳北塔、北塔博物馆、朝阳南塔，宿朝阳。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>朝阳北塔（⭐重点⭐）、北塔博物馆（⭐重点⭐）</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>北镇至朝阳约150公里，2小时</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>朝阳北塔与北塔博物馆相邻，建议一同参观</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">北镇 → 朝阳 约 150 公里 / 2 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">朝阳市区</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">凌源烧饼、羊汤</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>班吉塔（城郊，建议顺路参观，约 30 分钟）——小型辽塔，保存完好</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>朝阳午餐（推荐：凌源烧饼、豆腐脑）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>朝阳北塔（登塔或绕塔参观）+ 北塔博物馆（周一闭馆）</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>朝阳南塔（可夜色中远观）、慕容街晚餐，入住酒店</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 闭馆 / 雨天）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>优先朝阳北塔和北塔博物馆，班吉塔可跳过</li>
+              <li><strong>北塔博物馆周一闭馆：</strong>改为朝阳市博物馆或慕容街购物</li>
+              <li><strong>雨天：</strong>优先北塔博物馆室内，班吉塔可跳过</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 朝阳北塔户外免费，北塔博物馆凭身份证免费。周一闭馆。</p>
         </div>
       </div>
 
@@ -163,10 +229,25 @@
         <div class="timeline-title">朝阳博物馆 → 赤峰</div>
         <div class="timeline-theme">从辽西文明进入契丹草原腹地</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">朝阳博物馆，可选牛河梁国家考古遗址公园，下午或傍晚前往赤峰，宿赤峰。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>朝阳博物馆（⭐重点）</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>朝阳至赤峰约250公里，3小时</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>牛河梁需要半天时间，建议Day4下午或Day5上午</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">朝阳 → 赤峰 约 250 公里 / 3 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">赤峰市区</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">赤峰对夹、手把肉</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>朝阳博物馆（周一闭馆，约 2 小时）——红山文化、三燕古都、辽代佛教艺术</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>朝阳市内午餐</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>出发前往赤峰（约 3 小时车程），傍晚抵达后红山公园散步</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>赤峰对夹+手把肉晚餐，入住酒店</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 闭馆）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>如果 Day4 下午没去牛河梁，可以 Day5 上午去后再出发，但会比较赶</li>
+              <li><strong>朝阳博物馆周一闭馆：</strong>改为慕容街购物或直接出发去赤峰</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 朝阳博物馆凭身份证免费。周一闭馆。出行前请核对。</p>
         </div>
       </div>
 
@@ -175,10 +256,25 @@
         <div class="timeline-title">赤峰 → 庆州白塔 → 巴林左旗</div>
         <div class="timeline-theme">草原威仪与辽代佛塔艺术巅峰</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">庆州白塔、庆州古城遗址，宿巴林左旗。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>庆州白塔（⭐重点⭐⭐）</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>赤峰至庆州约200公里，3小时</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>庆州白塔是此行重点景点，建议安排充足时间</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">赤峰 → 庆州 约 200 公里 / 3 小时 → 巴林左旗 约 50 公里 / 1 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">巴林左旗（林东镇）</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">蒙古族手把肉、奶食</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>赤峰出发，沿丹锡高速西行，约 3 小时到达庆州</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>庆州午餐（简餐）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>庆州白塔（⭐⭐⭐最高重点，约 1.5-2 小时）+ 庆州古城遗址（绕城一圈）</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>前往巴林左旗（林东镇，约 1 小时），蒙古族晚餐，入住</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 雨天）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>庆州白塔是此行最高重点，不可跳过。庆州古城遗址可快速看一眼或不去</li>
+              <li><strong>雨天：</strong>不影响庆州白塔参观，室内外皆可</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 庆州白塔约 30 元，庆州古城免费（户外）。巴林左旗住宿条件一般，建议提前预订。</p>
         </div>
       </div>
 
@@ -187,10 +283,26 @@
         <div class="timeline-title">辽上京核心日</div>
         <div class="timeline-theme">契丹龙兴之地与辽代二元都城制度</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">辽上京遗址、辽上京博物馆、辽上京南塔、真寂之寺，宿赤峰。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>辽上京遗址（⭐重点⭐⭐）、辽上京博物馆（⭐重点⭐）</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>巴林左旗至辽上京约20公里，30分钟</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>辽上京博物馆建议请讲解</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">巴林左旗 → 辽上京 约 20 公里 / 30 分钟 → 赤峰 约 90 公里 / 1.5 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">赤峰市区（返回）</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">排骨蒸饺、羊杂汤</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>辽上京遗址（皇城、汉城布局，绕遗址一周约 1 小时）+ 辽上京南塔（遗址内）</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>巴林左旗午餐（蒙古族风味）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>真寂之寺（石窟，约 1 小时）→ 辽上京博物馆（周一闭馆，建议请讲解，约 2 小时）</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>返回赤峰，排骨蒸饺+羊杂汤晚餐，入住酒店</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 闭馆 / 雨天）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>优先辽上京遗址和博物馆，真寂之寺可快速看一眼或第二天早上</li>
+              <li><strong>辽上京博物馆周一闭馆：</strong>改为先游真寂之寺，或去红山公园</li>
+              <li><strong>雨天：</strong>优先博物馆和真寂之寺（室内），遗址是户外但影响不大</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 辽上京遗址户外免费，真寂之寺约 30 元，博物馆凭身份证免费。周一闭馆。</p>
         </div>
       </div>
 
@@ -199,10 +311,26 @@
         <div class="timeline-title">赤峰博物馆总结 → 宁城方向</div>
         <div class="timeline-theme">用博物馆回看整条辽塔线</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">赤峰辽文化博物馆、赤峰博物馆，下午前往宁城或承德方向，宿宁城或承德。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>赤峰辽文化博物馆（⭐重点⭐⭐）</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>赤峰至宁城约150公里，2小时</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>赤峰两个博物馆相距不远，可以安排在上午</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">赤峰 → 宁城 约 150 公里 / 2 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">宁城（或承德）</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">晚餐：</span><span class="day-meta-value">荞面、莜面、羊汤</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>赤峰辽文化博物馆（⭐⭐⭐最高重点，约 2-3 小时，建议请讲解）</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>赤峰午餐（推荐：对夹、排骨蒸饺）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>赤峰博物馆（如果时间充裕），下午出发前往宁城（约 2 小时）</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>抵达宁城，荞面/莜面晚餐，入住</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 闭馆 / 雨天）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>赤峰辽文化博物馆是此行总结性参观，必去。赤峰博物馆可跳过</li>
+              <li><strong>辽文化博物馆周一闭馆：</strong>改为先去红山公园，然后直接出发去宁城</li>
+              <li><strong>雨天：</strong>不影响，继续行程</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 赤峰辽文化博物馆凭身份证免费。周一闭馆。出行前请核对。</p>
         </div>
       </div>
 
@@ -211,10 +339,25 @@
         <div class="timeline-title">辽中京/大明塔 → 北京</div>
         <div class="timeline-theme">从辽上京回望辽中京，完成辽代都城闭环</div>
         <div class="timeline-content">
-          <p style="margin-bottom: var(--space-md);">大明塔、辽中京遗址，返程北京。</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>景点：</strong>大明塔（⭐重点⭐⭐）</p>
-          <p style="font-size: 0.9rem; color: var(--color-text-secondary);"><strong>车程：</strong>宁城至大明塔约30公里，大明塔至北京约350公里</p>
-          <p style="font-size: 0.9rem; color: var(--color-accent);"><strong>Tips：</strong>建议早出发，上午参观大明塔，午后返程</p>
+          <div class="day-meta">
+            <div class="day-meta-item"><span class="day-meta-label">区间车程：</span><span class="day-meta-value">宁城 → 大明塔 约 30 分钟 → 北京 约 350 公里 / 4.5 小时</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">住宿：</span><span class="day-meta-value">返程（到家晚餐）</span></div>
+            <div class="day-meta-item"><span class="day-meta-label">午餐：</span><span class="day-meta-value">宁城荞面/莜面</span></div>
+          </div>
+          <div class="day-schedule">
+            <div class="time-slot"><span class="time-slot-label morning">上午</span><span>大明塔（⭐⭐⭐最高重点，约 1-1.5 小时）——全国现存最高古塔之一，80米</span></div>
+            <div class="time-slot"><span class="time-slot-label noon">中午</span><span>宁城午餐（荞面、莜面、羊汤）</span></div>
+            <div class="time-slot"><span class="time-slot-label afternoon">下午</span><span>返程北京，约 4.5-5 小时（避开周日返程高峰）</span></div>
+            <div class="time-slot"><span class="time-slot-label evening">晚上</span><span>到家，整理照片和笔记，完成此次辽塔巡礼</span></div>
+          </div>
+          <details class="plan-b">
+            <summary>替代方案（时间不够 / 闭馆）</summary>
+            <ul>
+              <li><strong>时间不够：</strong>大明塔是此行最后一个重点，不可跳过。辽中京遗址可快速看一眼或不去</li>
+              <li><strong>周一闭馆：</strong>不影响，大明塔是户外观赏</li>
+            </ul>
+          </details>
+          <p class="verify-note">* 大明塔户外免费。建议早出发，避开周日返程高峰。</p>
         </div>
       </div>
     </div>
@@ -252,6 +395,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">8:00 - 17:00</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value">无固定闭馆日</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">约 ¥50（参考）</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">寺院山门外有停车位</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
@@ -309,6 +458,7 @@
             <button class="spot-action-btn" data-spot-btn="fengguosi" data-btn-type="visited">📍 已去</button>
             <button class="spot-action-btn" data-spot-btn="fengguosi" data-btn-type="wanted">☆ 想去</button>
             <button class="spot-action-btn" data-speak-btn="fengguosi">🔊 朗读讲解</button>
+            <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()">⏹ 停止</button>
             <button class="spot-action-btn" data-copy="奉国寺">📋 复制</button>
             <button class="spot-action-btn" data-map-gaode="奉国寺">🗺️ 高德</button>
             <button class="spot-action-btn" data-map-baidu="奉国寺">🗺️ 百度</button>
@@ -331,6 +481,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">8:30 - 16:30</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value warning">周一闭馆</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">约 ¥30（参考）</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">石窟入口处有停车场</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
@@ -386,6 +542,7 @@
             <button class="spot-action-btn" data-spot-btn="wanfotang" data-btn-type="visited">📍 已去</button>
             <button class="spot-action-btn" data-spot-btn="wanfotang" data-btn-type="wanted">☆ 想去</button>
             <button class="spot-action-btn" data-speak-btn="wanfotang">🔊 朗读讲解</button>
+            <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()">⏹ 停止</button>
             <button class="spot-action-btn" data-copy="万佛堂石窟">📋 复制</button>
             <button class="spot-action-btn" data-map-gaode="万佛堂石窟">🗺️ 高德</button>
             <button class="spot-action-btn" data-map-baidu="万佛堂石窟">🗺️ 百度</button>
@@ -408,6 +565,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">8:30 - 17:00</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value warning">周一闭馆</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">户外塔区免费；博物馆凭身份证</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">博物馆有停车场</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
@@ -466,6 +629,7 @@
             <button class="spot-action-btn" data-spot-btn="chaoyang-north-pagoda" data-btn-type="visited">📍 已去</button>
             <button class="spot-action-btn" data-spot-btn="chaoyang-north-pagoda" data-btn-type="wanted">☆ 想去</button>
             <button class="spot-action-btn" data-speak-btn="chaoyang-north-pagoda">🔊 朗读讲解</button>
+            <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()">⏹ 停止</button>
             <button class="spot-action-btn" data-copy="朝阳北塔">📋 复制</button>
             <button class="spot-action-btn" data-map-gaode="朝阳北塔">🗺️ 高德</button>
             <button class="spot-action-btn" data-map-baidu="朝阳北塔">🗺️ 百度</button>
@@ -488,6 +652,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">8:00 - 17:00</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value">无固定闭馆日</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">约 ¥30（参考）</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">景区门口有停车位</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
@@ -543,6 +713,7 @@
             <button class="spot-action-btn" data-spot-btn="qingzhou-white-pagoda" data-btn-type="visited">📍 已去</button>
             <button class="spot-action-btn" data-spot-btn="qingzhou-white-pagoda" data-btn-type="wanted">☆ 想去</button>
             <button class="spot-action-btn" data-speak-btn="qingzhou-white-pagoda">🔊 朗读讲解</button>
+            <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()">⏹ 停止</button>
             <button class="spot-action-btn" data-copy="庆州白塔">📋 复制</button>
             <button class="spot-action-btn" data-map-gaode="庆州白塔">🗺️ 高德</button>
             <button class="spot-action-btn" data-map-baidu="庆州白塔">🗺️ 百度</button>
@@ -565,6 +736,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">全天开放</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value">无</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">免费</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">遗址门口有停车位</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
@@ -621,6 +798,7 @@
             <button class="spot-action-btn" data-spot-btn="liao-capital" data-btn-type="visited">📍 已去</button>
             <button class="spot-action-btn" data-spot-btn="liao-capital" data-btn-type="wanted">☆ 想去</button>
             <button class="spot-action-btn" data-speak-btn="liao-capital">🔊 朗读讲解</button>
+            <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()">⏹ 停止</button>
             <button class="spot-action-btn" data-copy="辽上京遗址">📋 复制</button>
             <button class="spot-action-btn" data-map-gaode="辽上京遗址">🗺️ 高德</button>
             <button class="spot-action-btn" data-map-baidu="辽上京遗址">🗺️ 百度</button>
@@ -643,6 +821,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">9:00 - 16:30</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value warning">周一闭馆</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">凭身份证免费</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">博物馆有停车场</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
@@ -700,6 +884,7 @@
             <button class="spot-action-btn" data-spot-btn="chifeng-liao-museum" data-btn-type="visited">📍 已去</button>
             <button class="spot-action-btn" data-spot-btn="chifeng-liao-museum" data-btn-type="wanted">☆ 想去</button>
             <button class="spot-action-btn" data-speak-btn="chifeng-liao-museum">🔊 朗读讲解</button>
+            <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()">⏹ 停止</button>
             <button class="spot-action-btn" data-copy="赤峰辽文化博物馆">📋 复制</button>
             <button class="spot-action-btn" data-map-gaode="赤峰辽文化博物馆">🗺️ 高德</button>
             <button class="spot-action-btn" data-map-baidu="赤峰辽文化博物馆">🗺️ 百度</button>
@@ -722,6 +907,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">全天开放</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value">无</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">免费（户外）</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">景区门口有停车位</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
@@ -777,6 +968,7 @@
             <button class="spot-action-btn" data-spot-btn="daming-pagoda" data-btn-type="visited">📍 已去</button>
             <button class="spot-action-btn" data-spot-btn="daming-pagoda" data-btn-type="wanted">☆ 想去</button>
             <button class="spot-action-btn" data-speak-btn="daming-pagoda">🔊 朗读讲解</button>
+            <button class="spot-action-btn stop-speak-btn" onclick="stopSpeech()">⏹ 停止</button>
             <button class="spot-action-btn" data-copy="大明塔">📋 复制</button>
             <button class="spot-action-btn" data-map-gaode="大明塔">🗺️ 高德</button>
             <button class="spot-action-btn" data-map-baidu="大明塔">🗺️ 百度</button>
@@ -799,6 +991,12 @@
           <span class="spot-toggle">+</span>
         </div>
         <div class="spot-card-body">
+          <div class="spot-practical-info">
+            <div class="spot-practical-item"><span class="spot-practical-label">开放时间</span><span class="spot-practical-value">8:30 - 17:00</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">闭馆日</span><span class="spot-practical-value">无固定闭馆日</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">门票</span><span class="spot-practical-value">约 ¥30（参考）</span></div>
+            <div class="spot-practical-item"><span class="spot-practical-label">停车</span><span class="spot-practical-value">景区有停车场</span></div>
+          </div>
           <div class="spot-fields">
             <div class="spot-field">
               <div class="spot-field-label">一句话价值</div>
