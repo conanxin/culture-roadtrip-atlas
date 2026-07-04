@@ -6062,3 +6062,373 @@ p {
     padding: 4px 6px;
   }
 }
+
+/* ============================================================
+   v1.4.3 · Out of Eden Walk China · Narrative Guide Styles
+   ============================================================ */
+
+/* ---------- 如何阅读这条路线 ---------- */
+.reading-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.reading-guide-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-top: 3px solid #b8860b;
+  position: relative;
+}
+
+.reading-guide-num {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(184, 134, 11, 0.3);
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  line-height: 1;
+}
+
+.reading-guide-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.reading-guide-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.reading-guide-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  border-top: 1px dashed var(--color-divider);
+  padding-top: var(--space-sm);
+}
+
+/* ---------- 中国段长卷地图 ---------- */
+.scroll-map {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: var(--space-2xl);
+}
+
+.scroll-map::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    rgba(184, 134, 11, 0.4) 5%,
+    rgba(184, 134, 11, 0.4) 95%,
+    transparent 100%);
+}
+
+.scroll-map-node {
+  position: relative;
+  margin-bottom: var(--space-2xl);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border-left: 3px solid #b8860b;
+}
+
+.scroll-map-marker {
+  position: absolute;
+  left: -56px;
+  top: var(--space-lg);
+  width: 32px;
+  height: 32px;
+  background: #b8860b;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 3px solid var(--color-bg);
+}
+
+.scroll-map-content h4 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.scroll-map-content p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.scroll-map-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  border-top: 1px dashed var(--color-divider);
+  padding-top: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+/* ---------- 10 段随行导游词 ---------- */
+.narrative-guide-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.narrative-guide-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-left: 4px solid #6b8e23;
+}
+
+.narrative-guide-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid rgba(107, 142, 35, 0.2);
+}
+
+.narrative-guide-card p {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.field-observation {
+  background: rgba(184, 134, 11, 0.08);
+  border-left: 3px solid #b8860b;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem !important;
+  line-height: 1.8 !important;
+  color: var(--color-text);
+  margin-top: var(--space-md);
+  margin-bottom: 0 !important;
+}
+
+.field-observation strong {
+  color: #8b6914;
+}
+
+/* ---------- 行前资料包 ---------- */
+.prep-pack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.prep-pack-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  position: relative;
+  border-top: 3px solid #6b8e23;
+}
+
+.prep-pack-tag {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 36px;
+  height: 36px;
+  background: #6b8e23;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.prep-pack-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.prep-pack-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.prep-pack-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prep-pack-list li {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+}
+
+.prep-pack-list li:last-child {
+  border-bottom: none;
+}
+
+.prep-pack-list strong {
+  color: #6b8e23;
+}
+
+.prep-pack-list a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 134, 11, 0.4);
+}
+
+.prep-pack-list a:hover {
+  color: #b8860b;
+}
+
+/* ---------- 传播摘要 ---------- */
+.share-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.share-summary-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-left: 4px solid #b8860b;
+  position: relative;
+}
+
+.share-summary-tag {
+  display: inline-block;
+  background: rgba(184, 134, 11, 0.15);
+  color: #8b6914;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.05em;
+}
+
+.share-summary-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.share-summary-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.share-summary-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  border-top: 1px dashed var(--color-divider);
+  padding-top: var(--space-sm);
+}
+
+/* ---------- 每日主题表格列 ---------- */
+.daily-theme {
+  font-style: italic;
+  color: #6b8e23;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+/* ---------- 移动端响应式（v1.4.3 新模块） ---------- */
+@media (max-width: 768px) {
+  .reading-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prep-pack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scroll-map {
+    padding-left: var(--space-xl);
+  }
+
+  .scroll-map::before {
+    left: 14px;
+  }
+
+  .scroll-map-marker {
+    left: -34px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+
+  .scroll-map-node {
+    padding: var(--space-md);
+  }
+
+  .narrative-guide-card,
+  .share-summary-card,
+  .prep-pack-card {
+    padding: var(--space-md);
+  }
+
+  .travel-version-table {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .daily-theme {
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

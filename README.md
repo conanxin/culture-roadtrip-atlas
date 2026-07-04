@@ -69,6 +69,7 @@ v1.0.0 · Stable Release（2026-07-04）
 | v1.4 | 山西文化导览草稿 | 12 A级 + 5 B级点位导览、山西古建现场怎么看、古建观察清单、关键词进阶 |
 | v1.4.1 | Out of Eden Walk 中国段 | Paul Salopek 中国段复刻路线，10 分段、Milestone 74-95、3 种复刻版本 |
 | v1.4.2 | Phase 2 事实审校与可旅行化 | 事实审校模块、Milestones 表格升级、10 段可旅行化字段、21-28 天精华版日程、6 段短线版、不建议硬走清单 |
+| v1.4.3 | Phase 3 叙事导览版 | 如何阅读路线、长卷文字地图、10 段随行导游词、每日主题、6 段短线适合人群、行前资料包、传播摘要 |
 
 ---
 
@@ -87,7 +88,7 @@ v1.0.0 · Stable Release（2026-07-04）
 | 路线 | 状态 | 进度 | 链接 |
 |------|------|------|------|
 | 山西古建自驾线 | 规划中 · 文化导览草稿中（v1.4） | 70% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/) |
-| Out of Eden Walk 中国段复刻路线 | 规划中（v1.0） | 10% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/) |
+| Out of Eden Walk 中国段复刻路线 | 规划中（v1.4.3 · 叙事导览版） | 30% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/) |
 | 北京周边辽金古建线 | 规划中 | 30% | 首页卡片 |
 | 河西走廊文化线 | 规划中 | 10% | 首页卡片 |
 | 滇越铁路文化线 | 规划中 | 5% | 首页卡片 |
