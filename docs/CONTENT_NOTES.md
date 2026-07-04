@@ -138,3 +138,18 @@
 ### Workflow 改进
 - 增加 NODE_VERSION 环境变量
 - 移除 environment 引用避免保护规则
+
+
+## v0.5 路线可视化版 (2026-07-04)
+
+### 新增功能
+- 路线示意图：纯 SVG 路线图，9 个城市节点（北京、锦州、义县、北镇、朝阳、赤峰、巴林左旗、宁城、承德）
+- Day 高亮交互：Day 1-9 按钮，点击高亮当天城市节点和路线段
+- 主题路径切换：5 个主题（辽塔线、石窟线、都城线、博物馆线、返程线）
+- 景点关系网络：5 组关系项，点击跳转到对应景点卡片
+- 路线阶段卡片：5 个阶段说明
+- 路线总览 Meta：推荐天数/路线类型/核心主题/路线阶段
+
+### JS 新增函数
+- initRouteMap, highlightRouteDay, highlightThemeRoute
+- initRelationNetwork, initV5
