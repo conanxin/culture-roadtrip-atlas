@@ -43,7 +43,7 @@
   <!-- Hero 首屏 -->
   <section class="hero trip-skeleton">
     <div class="container">
-      <div class="trip-skeleton-badge">🚧 规划中 · 内容待校准 · 不作为正式出行方案</div>
+      <div class="trip-skeleton-badge">🚧 规划中 · 内容待校准 · 不作为正式出行方案 · v1.4 文化导览草稿中</div>
       <h1 class="hero-title">山西古建自驾线</h1>
       <p class="hero-subtitle">从大同到晋东南，沿着木构、佛寺、壁画与地方信仰<br>进入中国古代建筑现场</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -60,11 +60,10 @@
   <!-- 规划中提示 -->
   <section class="container" style="margin-top: var(--space-xl);">
     <div class="planning-note">
-      <strong>📝 这是一条出发前实用信息核验中的路线</strong>。<br>
-      本页面（v1.3 shanxi practical fact audit）已完成<strong>17 个 A/B 级点位的实用信息卡（开放时间 / 闭馆日 / 门票 / 预约 / 停车 / 拍照限制 / 建议停留 / 地图搜索）、高风险点位提示（7 个）、出发前必须核验面板（10 项）、每日核对事项</strong>。<br>
-      <span style="font-size: 0.85rem; color: var(--color-text-light);">路线历史：v0.9 规划中骨架页 → v1.1 研究建档 → v1.2 路线校准中 → v1.3 实用信息核验（当前）。v1.3 保留了 v1.2 的 3 种行程版本、路线取舍逻辑、点位分级、每日分时草案。</span><br>
-      <span style="font-size: 0.85rem; color: var(--color-text-light);">路线历史：v0.9 规划中骨架页 → v1.1 研究建档 → v1.2 路线校准 → v1.3 实用信息核验（当前）。v1.3 保留了 v1.2 的 3 种行程版本、路线取舍逻辑、点位分级、每日分时草案。</span><br>
-      <strong>所有具体信息（开放时间、门票、预约、停车、拍照限制、维修状态）出发前必须二次核对</strong>，本页不作为正式出行方案。<br>
+      <strong>📝 这是一条出发前实用信息核验中、文化导览草稿整理中的路线</strong>。<br>
+      本页面（v1.4 shanxi cultural guide lite）已完成<strong>17 个 A/B 级点位的实用信息卡、高风险点位提示、出发前必须核验面板、每日核对事项、A 级 12 个核心点位的文化导览草稿（30 秒导入 / 现场怎么看 / 观察点 / 导游式讲解草稿 / 离开前回望 / 自我提问）、B 级 5 个点位的简短导览、山西古建现场怎么看总导览、古建观察清单（10 项可勾选，localStorage 保存）、山西古建关键词扩展</strong>。<br>
+      <span style="font-size: 0.85rem; color: var(--color-text-light);">路线历史：v0.9 规划中骨架页 → v1.1 研究建档 → v1.2 路线校准 → v1.3 实用信息核验 → v1.4 文化导览草稿中（当前）。v1.4 保留了 v1.3 的实用信息核验模块、v1.2 的 3 种行程版本、v1.1 的点位分级、v0.9 的骨架结构。</span><br>
+      <strong>所有导览词为「草稿版 / 待实地复核」，不作为已现场验证资料</strong>；所有具体信息（开放时间、门票、预约、停车、拍照限制、维修状态）出发前必须二次核对，本页不作为正式出行方案。<br>
       出发前请以各点位<strong>官方公告、博物馆官网、文旅局信息、地图导航</strong>为准。
     </div>
   </section>
@@ -74,15 +73,15 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.3 shanxi practical fact audit</span>
+        <span class="page-meta-value">v1.4 shanxi cultural guide lite</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">最近更新日期：</span>
-        <span class="page-meta-value" id="page-update-date">2026-07-04 (v1.3)</span>
+        <span class="page-meta-value" id="page-update-date">2026-07-04 (v1.4)</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">实用信息核验中 · 待实地复盘</span>
+        <span class="page-meta-value">规划中 · 文化导览草稿中 · 待实地复盘</span>
       </div>
     </div>
   </section>
@@ -122,6 +121,156 @@
           从北魏云冈到辽金佛光寺，从唐构南禅寺到宋金彩塑，<br>一条关于中国古代建筑最深厚一面的路线
         </p>
       </div>
+    </div>
+  </section>
+
+  <!-- 山西古建现场怎么看（v1.4 新增） -->
+  <section id="how-to-look" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">山西古建现场怎么看</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      进入古建现场前，先记住这六个观察顺序。<strong>现场看什么，远比打卡重要</strong>。
+    </p>
+
+    <div class="how-to-look-box">
+      <div class="how-to-look-box-title">👁 六个观察顺序（核心方法）</div>
+      <ol class="how-to-look-list">
+        <li>
+          <strong>1. 先看选址，再看院落</strong>
+          <span style="color: var(--color-text-secondary); font-size: 0.9rem; display: block; margin-top: 4px;">山西寺院常依山就势，先站到院外，看寺院和山势、村落的关系；进院前先看轴线、几进、东西配殿是否对称。云冈、华严寺、善化寺、青莲寺、玉皇庙都值得先做这一步。</span>
+        </li>
+        <li>
+          <strong>2. 先看屋顶，再看梁架</strong>
+          <span style="color: var(--color-text-secondary); font-size: 0.9rem; display: block; margin-top: 4px;">屋顶的形制（庑殿 / 歇山 / 悬山 / 硬山 / 攒尖）直接决定等级。远远就能判读；走近了再看屋脊兽、瓦色、举折。</span>
+        </li>
+        <li>
+          <strong>3. 先看斗栱，再看柱网</strong>
+          <span style="color: var(--color-text-secondary); font-size: 0.9rem; display: block; margin-top: 4px;">斗栱是中国古建的"年轮"——唐、辽、宋、金的斗栱比例、铺作数、出跳都不同。柱网（柱子的排列）则能看出减柱造、移柱造、金厢斗底槽等结构特点。</span>
+        </li>
+        <li>
+          <strong>4. 先看空间，再看塑像</strong>
+          <span style="color: var(--color-text-secondary); font-size: 0.9rem; display: block; margin-top: 4px;">殿堂的"间"和"进"决定了塑像的视觉位置（佛、菩萨、弟子、护法）。先看空间再仰视塑像，会更清楚为什么主尊在三间正中、为什么山墙会有胁侍。</span>
+        </li>
+        <li>
+          <strong>5. 先看时代，再看修缮痕迹</strong>
+          <span style="color: var(--color-text-secondary); font-size: 0.9rem; display: block; margin-top: 4px;">能判断"哪部分是唐/辽/宋/金/元/明/清"——再分辨哪些是后期修缮（比如明清换过的瓦、金代补过的柱础）。看修缮痕迹能让你了解这座古建"活过了多少代"。</span>
+        </li>
+        <li>
+          <strong>6. 先看主殿，再看配殿、碑刻、壁画</strong>
+          <span style="color: var(--color-text-secondary); font-size: 0.9rem; display: block; margin-top: 4px;">主殿地位最高，配殿、碑刻、壁画是补充。山西寺院的碑刻常常记录重修史，本身就是研究材料。</span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="how-to-look-box" style="background: linear-gradient(135deg, rgba(184, 134, 11, 0.05), rgba(39, 174, 96, 0.05)); border-color: var(--color-accent);">
+      <div class="how-to-look-box-title">🎨 彩塑和壁画怎么看（特殊提醒）</div>
+      <p style="font-size: 0.95rem; line-height: 1.8; color: var(--color-text); margin-bottom: var(--space-md);">
+        <strong>不要只拍照，要看三件事：</strong>
+      </p>
+      <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; line-height: 1.8;">
+        <li style="padding: 8px 12px; background: var(--color-bg); border-radius: 4px; margin-bottom: 6px;">
+          <strong>① 人物关系与叙事结构</strong>——主尊是谁？胁侍是谁？护法是谁？这种安排反映了什么佛教宇宙观？
+        </li>
+        <li style="padding: 8px 12px; background: var(--color-bg); border-radius: 4px; margin-bottom: 6px;">
+          <strong>② 服饰与姿态的时代特征</strong>——唐塑的丰腴、宋代写实、辽金粗犷、明代程式化，每个时代塑像风格有差异。
+        </li>
+        <li style="padding: 8px 12px; background: var(--color-bg); border-radius: 4px; margin-bottom: 6px;">
+          <strong>③ 壁画的"画外信息"</strong>——不只看绘画技巧，要看画中的建筑、人物、服饰、社会场景，那是当时生活的实况。
+        </li>
+      </ul>
+      <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: var(--space-md); font-style: italic;">
+        ⚠️ 重要提醒：山西绝大多数寺院的彩塑和壁画殿堂内禁止拍照，闪光灯会加速颜料剥落。请用眼睛和笔记代替相机。
+      </p>
+    </div>
+  </section>
+
+  <!-- 古建观察清单（v1.4 新增） -->
+  <section id="observation-checklist" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">古建观察清单</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      进入每个古建现场前，扫一眼这 10 项。<strong>勾选会保存在浏览器</strong>，方便行程中查看进度。
+    </p>
+
+    <div class="observation-checklist" id="observation-checklist">
+      <div class="observation-item" data-key="roof">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看屋顶形制</div>
+          <div class="observation-note">庑殿 / 歇山 / 悬山 / 硬山 / 攒尖？屋脊、瓦色、举折如何？</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="dougong">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看斗栱</div>
+          <div class="observation-note">出跳数、铺作、比例、材等——斗栱是古建的"年轮"。</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="beam">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看梁架</div>
+          <div class="observation-note">抬梁式、穿斗式？叉手、托脚、驼峰、蜀柱的位置？</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="column">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看柱网</div>
+          <div class="observation-note">柱子的排列：减柱造？移柱造？金厢斗底槽？</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="sculpture">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看彩塑</div>
+          <div class="observation-note">主尊、胁侍、护法的人物关系、姿态、服饰、时代风格。</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="mural">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看壁画</div>
+          <div class="observation-note">壁画中的建筑、人物、服饰、社会场景——不止看绘画技巧。</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="stele">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看碑刻</div>
+          <div class="observation-note">重修碑、功德碑、记事碑——碑刻本身就是研究材料。</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="axis">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看院落轴线</div>
+          <div class="observation-note">中轴线、几进、东西配殿、跨院——空间叙事。</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="repair">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看修缮痕迹</div>
+          <div class="observation-note">明清换过的瓦？金代补过的柱础？看清"活过多少代"。</div>
+        </div>
+      </div>
+      <div class="observation-item" data-key="local">
+        <div class="observation-checkbox">✓</div>
+        <div class="observation-content">
+          <div class="observation-label">看地方信仰元素</div>
+          <div class="observation-note">道教、民间信仰、神祠、村社——晋东南寺院常含地方信仰。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="observation-progress">
+      已完成 <span class="observation-progress-value" id="observation-progress-value">0 / 10</span> 项 · 数据保存在本机浏览器
     </div>
   </section>
 
@@ -2730,6 +2879,854 @@
     </div>
 </section>
 
+  <!-- A/B 级导览草稿（v1.4 新增） -->
+  <section id="guide-drafts" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">A/B 级核心点位导览草稿</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      以下导览词根据公开资料和路线研究整理，适合行前预习。<strong>所有内容均为草稿版 / 待实地复核</strong>，不作为已现场验证资料。
+    </p>
+    <div class="planning-note" style="margin-bottom: var(--space-xl); background: rgba(184, 134, 11, 0.08); border-color: var(--color-accent);">
+      <strong>📝 导览草稿状态说明</strong>：本页导览词根据公开资料和路线研究整理，适合行前预习；具体现场动线、殿堂开放、讲解重点需实地走访后修订。
+    </div>
+
+    <!-- A 级导览：云冈石窟 -->
+    <div class="guide-draft-card" id="guide-yungang">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">云冈石窟</span>
+        <span class="guide-draft-meta">大同 · 北魏 · 世界文化遗产 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        你即将进入的，是北魏皇室开凿的第一批皇家石窟——云冈石窟。公元 460 年，高僧昙曜受文成帝之命，在武周山南麓开凿五座大像窟。此后 60 年间，皇室动用数万人力，将整面山崖雕刻成佛教宇宙的立体模型。今天你看到的第 1-20 窟，每一座都是北魏皇室的国家工程，每一尊佛像都有明确的政治寓意。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">先从第 1 窟走到第 20 窟，感受石窟群的体量。然后回到第 5-8 窟（双窟），看北魏早期的"褒衣博带"式佛衣。第 9-13 窟（音乐窟）最后进，里面有完整的伎乐天雕刻。昙曜五窟（第 16-20 窟）的大像最大，是石窟群的精神核心。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>第 5 窟的主尊坐佛（17 米，云冈最大）的面部特征——这是北魏还是清代修复的？</li>
+          <li>第 6 窟的方形塔柱——看塔柱的分层雕刻，记录了多少佛传故事？</li>
+          <li>第 9-13 窟（音乐窟）的乐器雕刻——有多少种乐器？伎乐天的排列有什么规律？</li>
+          <li>昙曜五窟（第 16-20 窟）大像的"十字佛"手印——这种手印在其他石窟见过吗？</li>
+          <li>第 20 窟的露天大佛（云冈标志）——这尊大佛的面部表情，和你在图片中看到的一样吗？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          云冈石窟不是普通的佛教艺术遗迹，它是北魏国家的政治声明。<br><br>
+          公元 460 年，高僧昙曜受文成帝之托，在武周山开凿五座大像窟。这五座窟的主尊，从第 16 窟的宝装佛像到第 20 窟的露天大佛，据说分别对应北魏的五位皇帝——这是一种"皇帝即如来"的政治隐喻，佛教为皇权背书，皇权用佛教凝聚人心。<br><br>
+          云冈的雕刻分为三期：第一期（460-465）的昙曜五窟，风格粗犷，胡服特征明显；第二期（465-494）的第 5-13 窟，开始出现"褒衣博带"式佛衣——这是孝文帝汉化改革的痕迹；第三期（494-525）的第 21-45 窟，秀骨清像，完全汉化。三期雕刻记录了北魏从鲜卑到汉化的完整过程。<br><br>
+          你在第 9 窟看到的那对龙首，下方那个门楣上，雕刻着一对中国传统风格的龙——这是佛教艺术中国化的最早证据之一。北魏皇室在云冈做了一次国家级实验：把外来宗教变成自己的意识形态工具，同时把外来的艺术形式变成自己的文化语言。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">走出石窟群之前，回头看一眼武周山的整体轮廓。想象公元 460 年，这里还没有石窟，只有悬崖和松林，数千工匠在悬崖上搭起脚手架，一凿一凿地雕刻。北魏灭了，但云冈留下来了——这就是文化的韧性。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 北魏在云冈雕刻的政治目的是什么？它和同期南朝的佛教艺术有何本质区别？</div>
+          <div class="guide-draft-question-item">2. 云冈第三期（494 年之后）为什么出现了完全汉化的雕刻风格？这和孝文帝的汉化改革有什么关系？</div>
+          <div class="guide-draft-question-item">3. 如果没有北魏皇室的国家力量，云冈石窟会是什么样子？对比同期龙门石窟的皇室工程，这个问题会更清晰。</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 1 段（晋北）的核心点位。云冈是北魏石窟艺术的代表，与后续华严寺、善化寺等辽金寺院建筑形成时间轴对照：从北魏到辽金，中国古代建筑经历了怎样的演化？云冈是起点。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：华严寺 -->
+    <div class="guide-draft-card" id="guide-huayan">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">华严寺</span>
+        <span class="guide-draft-meta">大同 · 辽金 · 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        华严寺是辽代皇室敕建的皇家寺院，上、下两寺现存 11 座殿堂，其中下寺薄伽教藏殿是辽代小木作的极致代表——殿内的壁藏（雕版藏经柜）和露齿菩萨被誉为"辽代小木作双绝"。华严寺的建筑布局保留了辽代伽蓝的基本规制，是中国现存最完整的辽代寺院实例之一。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">先看上寺的大雄宝殿（辽代现存最大佛殿之一），站在殿外先看屋顶形制（单檐庑殿顶）和斗栱比例。然后进入下寺薄伽教藏殿，看四排书架式的壁藏——这是辽代小木作的最高成就。最后找到那尊露齿菩萨（合掌露齿维摩诘像），它是辽代彩塑的标志，也是中国古代雕塑史上最动人的作品之一。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>上寺大雄宝殿的规模和屋顶——这座殿的体量让你感受到辽代皇家寺院的规格了吗？</li>
+          <li>下寺薄伽教藏殿的壁藏（雕版藏经柜）——看书架的分层、斗栱的小木作、门窗的雕刻细节</li>
+          <li>露齿菩萨的面部表情——这尊菩萨和常规的庄重佛菩萨像有什么不同？为什么说它是"人"而不是"神"？</li>
+          <li>华严寺的布局——上、下两寺的关系是什么？它们和辽代皇室有什么联系？</li>
+          <li>殿内的减柱造——柱子减少了哪几根？为什么减柱？减柱之后空间感受有什么变化？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          华严寺的名字来自华严宗——以《华严经》为根本经典的佛教流派。辽代皇室崇信华严宗，因此华严寺是辽代皇家寺院的代表。<br><br>
+          上寺的大雄宝殿是辽代现存最大的佛殿之一，单檐庑殿顶，这种屋顶形制在辽金寺院中属于高规格。站在殿外，先看它的斗栱——辽代斗栱的特点是硕大、出跳深、力学感和装饰感并存。进入殿内，注意柱网的排列：这是辽代常见的"减柱造"——为了获得更大的礼佛空间，减少了内槽的柱子。减柱造是辽代木构的标志性特征。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">走出华严寺前，在山门处回望整个寺院。华严寺是辽代皇家寺院的遗存，但它的建筑语言（庑殿顶、减柱造、斗栱）来自唐代。辽代人在吸收唐式建筑的基础上，发展出了自己的风格——这种"继承中演化"的模式，贯穿整个辽代建筑史。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 华严寺的减柱造和应县木塔的结构有什么关系？两者都出现在辽代建筑中，是偶然还是必然？</div>
+          <div class="guide-draft-question-item">2. 露齿菩萨为什么和常规佛菩萨像不同？这反映了辽代佛教艺术的什么特点？</div>
+          <div class="guide-draft-question-item">3. 华严寺是辽代皇家寺院的代表，和同期北宋的寺院建筑相比，辽代建筑有什么独特性？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 1 段（晋北）的核心点位。与云冈石窟、善化寺共同构成晋北辽代寺院建筑的核心现场。华严寺的减柱造和薄伽教藏殿的小木作是辽代建筑技术的两个方向——前者是结构创新，后者是装饰工艺的极致。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：善化寺 -->
+    <div class="guide-draft-card" id="guide-shanhua">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">善化寺</span>
+        <span class="guide-draft-meta">大同 · 辽金 · 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        善化寺是现存辽金时期布局最完整的寺院之一——三座主殿（山门、三圣殿、大雄宝殿）均保存了辽金原构，是中国古建筑研究中"辽金寺院布局"的标准参照物。寺中五躯金代塑像是金代彩塑艺术的精品。善化寺的价值不仅在单体建筑，更在整体布局的完整性。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">进入善化寺，先站在山门外，看整个寺院的中轴线——这是中国寺院"伽蓝七堂"制的标准布局。进入后，先看三圣殿（辽构）的斗栱和梁架，再看大雄宝殿（金构）的结构和五躯金代塑像。注意三圣殿的减柱造——为了礼佛空间，内槽柱子被大幅减少。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>善化寺的整体布局——从山门到三圣殿再到大雄宝殿，这条中轴线说明了什么？</li>
+          <li>三圣殿的斗栱——这是辽代斗栱的典型特征吗？和华严寺的斗栱有何异同？</li>
+          <li>三圣殿的减柱造——减柱之后，空间感受有什么变化？这种做法是辽代普遍的吗？</li>
+          <li>大雄宝殿的五躯金代塑像——这五尊塑像的人物关系是什么？主尊是谁？胁侍是谁？</li>
+          <li>山门的结构——这是辽构还是清代重建？从哪些细节可以判断年代？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          善化寺的存在对中国古建筑史意义非凡——它保留了辽金时期完整的寺院布局。中国古建筑的演变，最难保存的不是单体建筑，而是整体规划。但善化寺做到了：三座主殿从南到北排列在中轴线上，两侧有垛殿、廊屋，形成完整的院落。这种"伽蓝七堂"制在宋辽金时期标准化后，成为中国佛寺的基本格局。<br><br>
+          三圣殿是善化寺最值得细看的建筑。这座殿的斗栱硕大、出跳深，明显是辽代特征。但它的梁架结构已经开始变化——出现了宋式建筑的一些做法。这是辽代中期（11 世纪）建筑的特点：辽人在继承唐式的基础上，开始吸收宋式的做法。<br><br>
+          三圣殿的减柱造是辽代建筑的另一个标志。殿内原本应该有前后两排柱子，但为了获得更大的礼佛空间，辽人把内槽的柱子大幅减少，有的柱子甚至移到了次要位置。这种做法在辽代很普遍，但也带来了结构上的风险——柱网减弱后，梁架的受力方式就变了。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开善化寺前，在大雄宝殿后面回望整条中轴线。想象从山门进入，穿越三圣殿，最终到达大雄宝殿的视觉序列——这是一种刻意设计的空间叙事，佛教用建筑说话。善化寺的布局，是中国寺院建筑哲学的完美体现。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 善化寺三座主殿的年代（辽 / 金）和它们的结构特点之间有什么对应关系？</div>
+          <div class="guide-draft-question-item">2. 辽代减柱造和宋代《营造法式》记载的结构做法有什么异同？</div>
+          <div class="guide-draft-question-item">3. 善化寺的布局和华严寺的布局有什么异同？两者都是辽代寺院，布局差异说明了什么？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 1 段（晋北）的核心点位。与华严寺相邻，两寺共同构成大同辽代寺院的核心现场。善化寺的布局完整性是研究辽代寺院规制的标准参照，对理解后续晋中、晋东南的寺院建筑有基准意义。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：应县木塔 -->
+    <div class="guide-draft-card" id="guide-yingxian">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">应县木塔</span>
+        <span class="guide-draft-meta">应县 · 辽清宁二年（1056）· 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        应县木塔（佛宫寺释迦塔）是世界现存最高大的木塔，建于辽清宁二年（1056），全木结构、无一铁钉，高 67.31 米。与意大利比萨斜塔、法国埃菲尔铁塔并称"世界三大奇塔"。木塔经历 970 年风雨、多次地震，至今仍屹立不倒，是木构建筑结构学的活标本。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">先绕塔一圈，观察塔的外观层次（底层腰檐 + 五层屋檐 + 铁刹）。站在塔下仰视，看各层出檐的递减比例。然后走近看底层门洞——注意门洞的高度，这是辽代小木作的特征之一。目前内部登塔已长期关闭（结构倾斜原因），仅可外观。注意：塔身目前有肉眼可见的倾斜。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>木塔的整体比例——从下往上看，各层出檐是怎么递减的？这种"收分"是力学需要还是审美需要？</li>
+          <li>塔的层数——为什么是五层而不是七层或三层？层数和辽代佛教观念有什么关系？</li>
+          <li>底层门洞的高度——这个高度和同期宋、辽的佛塔相比，有什么特点？</li>
+          <li>塔身倾斜——从哪个角度看能最明显看到塔的倾斜？倾斜的原因是什么？</li>
+          <li>塔刹（最顶端）——这座塔刹是什么材质？有什么装饰？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          应县木塔的建筑史意义在于它是纯木结构、无钉无铆、纯靠斗栱和榫卯搭建的高层建筑。67.31 米的高度，在钢筋混凝土出现之前，是人类建筑史上的极限。<br><br>
+          木塔的结构原理叫"筒中筒"——外槽和内筒通过层板连接，形成一个刚性整体。每一层的斗栱就像弹簧，在地震时能吸收能量。这就是为什么木塔经历了 970 年、多次大地震（包括 1976 年唐山地震）仍然屹立的原因。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开前再看一次木塔的整体。想象这座塔在 1056 年刚建成时，周围还没有这么多现代建筑，它孤零零地站在应县的土地上，是整个地区的最高点。970 年过去了，它还在那里，这就是木构建筑的伟大。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 应县木塔的结构"筒中筒"原理和现代建筑的结构原理有什么相似之处？</div>
+          <div class="guide-draft-question-item">2. 为什么辽代能建成应县木塔这样的纯木结构高层建筑，而同期北宋没有类似的作品？</div>
+          <div class="guide-draft-question-item">3. 木塔目前的倾斜是什么原因造成的？修复方案有哪些？为什么不能轻易动它？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 2 段的核心点位。应县木塔是辽代木构技术的最高成就，也是全路线中最具"结构震撼力"的单体建筑。从大同（华严寺、善化寺）到应县，是从辽代寺院到辽代单塔的技术升级。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：佛光寺 -->
+    <div class="guide-draft-card" id="guide-foguang">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">佛光寺</span>
+        <span class="guide-draft-meta">五台山 · 唐大中十一年（857）· 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        佛光寺东大殿是中国现存仅有的四座唐代木构建筑之一（另外三座：南禅寺大殿、广仁王庙正殿、天台庵大殿）。1937 年，梁思成、林徽因根据《敦煌石窟图录》中的壁画线索，在五台山野外重新发现了这座被遗忘的唐代木构——"梁思成一生最重要的发现"。东大殿的"四绝"：唐代木构、唐代彩塑、唐代壁画、唐代题记，同时存在于一座殿内，在中国仅此一例。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">先看东大殿的整体外观：单檐庑殿顶、斗栱雄大、出檐深远——这是唐代木构的典型特征。进入殿内，先看五铺作斗栱，再看梁架（明栿）的结构，最后看佛坛上的彩塑。殿内禁止拍照，请用眼睛记录。注意：佛光寺位置偏远（五台山深处），需提前确认是否开放及预约要求。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>东大殿的庑殿顶——庑殿是古建筑最高等级屋顶，只有皇家建筑才能用。为什么佛光寺能用？</li>
+          <li>斗栱的比例——唐代的斗栱和明清的斗栱在比例上有什么根本差异？为什么说"唐代斗栱是结构，明清斗栱是装饰"？</li>
+          <li>梁架结构——明栿（明露的梁）上有没有驼峰、托脚、叉手？这些构件在宋《营造法式》中有详细记载。</li>
+          <li>佛坛上的彩塑群——主尊释迦牟尼、胁侍菩萨、弟子、金刚——这套组合是唐代的标准配置吗？</li>
+          <li>殿内后墙的壁画——这是唐代壁画还是后代补绘的？面积有多大？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          佛光寺东大殿是梁思成口中的"中国第一国宝"。1937 年七七事变前夕，梁思成和林徽因在五台山野外考察时，根据敦煌壁画中的《五台山图》线索，找到了这座被遗忘的唐代木构。当时日本学者断言"中国已无唐代木构，要看唐构必须去日本"——佛光寺的发现，打脸了这句话。<br><br>
+          东大殿的庑殿顶在五台山地区的寺院建筑中极为罕见——庑殿顶是最高等级的屋顶形式，只有皇家建筑或奉旨建造的建筑才能用。但佛光寺是民间信徒筹资建造的，为什么能用庑殿顶？这和唐代佛教的"国家护法"观念有关：皇帝支持佛教，佛教反过来用皇家形制来彰显权威。<br><br>
+          东大殿的斗栱是五铺作，和宋《营造法式》记载的制度高度吻合。唐代斗栱的核心特征是：出跳深、比例大、力学功能强——它是真的在承重，而不是装饰。这种"斗栱即结构"的特征，是判断唐构的关键依据。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开佛光寺前，回头看一眼东大殿。1937 年，梁思成在这里拍下了他一生最重要的照片。同一座大殿，经历了 1169 年（从 857 年到 2026 年），它还在那里，而且还能进去看。这就是唐构的伟大——不是博物馆里的玻璃柜，而是真实的、可以走进去的历史。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 佛光寺东大殿的"四绝"（木构、彩塑、壁画、题记）同时存在，为什么在中国仅此一例？其他唐代建筑为什么没有保存下来？</div>
+          <div class="guide-draft-question-item">2. 为什么说"唐代斗栱是结构，明清斗栱是装饰"？这种转变是什么时候发生的？为什么？</div>
+          <div class="guide-draft-question-item">3. 梁思成发现佛光寺的故事，和当时中国建筑史研究的国际背景有什么关系？日本学者"中国已无唐构"的论断反映了什么问题？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 2 段的核心点位，也是全路线中古建研究价值最高的点位。佛光寺是唐代木构的标杆，和南禅寺（同路线 B 级）一起，构成唐构双子星。两寺相距不远，建议安排在同一天。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：南禅寺 -->
+    <div class="guide-draft-card" id="guide-nanchan">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">南禅寺</span>
+        <span class="guide-draft-meta">五台山 · 唐建中三年（782）· 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        南禅寺大殿是中国现存最古老的木构建筑（比佛光寺东大殿早 75 年），建于唐建中三年（782 年）。南禅寺是五台山的一座乡村小庙，没有佛光寺的皇家规格，但正因为规模小，反而躲过了历代战火和灭佛运动的破坏。南禅寺大殿是唐代木构研究的另一块基石。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">先看南禅寺的整体环境——它在一个小山村里，周围是普通农舍，和佛光寺的深山古刹氛围完全不同。看大殿的屋顶：单檐歇山顶，比佛光寺的庑殿顶低一级——这反映了南禅寺作为乡村小庙的身份。进入殿内，看三铺作斗栱和梁架结构，以及佛坛上的唐代彩塑群。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>南禅寺大殿的屋顶形制——为什么是歇山顶而不是庑殿顶？这和佛光寺的等级差异说明了什么？</li>
+          <li>三铺作斗栱——比佛光寺的五铺作简单，这是年代差异还是等级差异？</li>
+          <li>殿内的梁架——有没有驼峰、叉手？这些构件在唐代建筑中起什么作用？</li>
+          <li>佛坛上的彩塑——和佛光寺的彩塑群相比，有什么异同？哪个年代更早？</li>
+          <li>南禅寺的村落环境——为什么一座唐代木构会保存在一个普通村子里？这说明了什么？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          南禅寺的价值在于"古老"——它是目前已知的中国现存最古老的木构建筑。782 年建造，比佛光寺东大殿还早 75 年。<br><br>
+          但南禅寺的"古老"不是皇家敕建的荣耀，而是民间小庙的幸运。五台山地区在唐代是佛教中心，佛光寺那样的皇家大刹很多，但它们大多在后来的灭佛运动和战火中被毁了。南禅寺因为规模小、位置偏僻，反而躲过了最严重的破坏。这是中国古建保护史上的一个悖论：有时候，小和偏僻是活下去的最大优势。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开南禅寺时，看一眼这座小村子里的大殿。南禅寺的存在说明：中国古建筑的保存，有时候靠的不是官方保护，而是运气——一个偏僻的位置、一座不起眼的小庙，反而让大唐的木构活到了今天。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 南禅寺和佛光寺同为唐代木构，但等级差距明显（歇山顶 vs 庑殿顶）。这种等级差异反映了唐代建筑的什么制度？</div>
+          <div class="guide-draft-question-item">2. 为什么南禅寺能保存下来，而佛光寺那样的皇家大刹反而可能被毁？这对中国古建保护有什么启示？</div>
+          <div class="guide-draft-question-item">3. 从南禅寺的三铺作斗栱到佛光寺的五铺作斗栱，这个演变说明了唐代斗栱发展的什么趋势？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 2 段的核心点位。与佛光寺同属五台山地区，建议安排在同一天。南禅寺是全路线中最古老的木构，佛光寺是唐构的另一块基石——两寺合看，能完整理解唐代木构的特征和等级差异。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：晋祠 -->
+    <div class="guide-draft-card" id="guide-jinci">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">晋祠</span>
+        <span class="guide-draft-meta">太原 · 北宋 · 世界文化遗产 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        晋祠是纪念晋国始祖唐叔虞的祠庙，创建于北魏，历代重修。现存建筑以宋代为主：圣母殿（北宋）、鱼沼飞梁（北宋）、金人台（金代）、献殿（元代）。"晋祠三绝"：圣母殿的宋代彩塑、周柏（西周，3000 年树龄）、难老泉（春秋）。晋祠是中国现存最早的祠庙建筑群，也是研究北宋建筑的标准参照。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">晋祠景区很大，建议按以下顺序游览：进门后先看金人台（四个铁人，金代铸造）→ 献殿（元代结构典范）→ 鱼沼飞梁（北宋，世界上最古老的立交桥）→ 圣母殿（北宋核心建筑）。圣母殿前有三千年周柏，是活的文物。殿内有 43 尊宋代彩塑，是研究宋代雕塑艺术的珍贵实物。注意：晋祠是太原最热门的景点，旺季建议早到。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>鱼沼飞梁的结构——这是一座十字形石桥，建造于北宋。看它的柱子、栏板、桥面石材——这种"立交桥"结构在宋代是怎么实现的？</li>
+          <li>圣母殿的斗栱——这是北宋斗栱的典型代表。和唐代斗栱相比，比例和功能有什么变化？</li>
+          <li>圣母殿的减柱造——殿内没有内柱，前槽减去两根柱子。这种做法和辽代减柱造有什么异同？</li>
+          <li>圣母殿内的宋代彩塑——43 尊彩塑的人物关系是什么？为什么侍女像的数量这么多？</li>
+          <li>周柏——3000 年树龄的柏树，看它的姿态，想象它在西周时期还是一棵小树苗。</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          晋祠是中国现存最早的祠庙建筑群，始于北魏，历代增修，但核心建筑是北宋遗构。圣母殿是晋祠的核心，建于北宋天圣年间（1023-1032），是北宋皇室敕建的皇家祠庙。<br><br>
+          圣母殿有三个建筑史标志：其一，斗栱的铺作层数增加到四铺作、五铺作，结构更加复杂；其二，殿内采用减柱造——前槽两根金柱被省去，形成更大的礼佛空间；其三，殿身正面用廊柱形成了回廊——这是宋式建筑"副阶周匝"的典型做法。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开晋祠前，在圣母殿前回望整条中轴线。从金人台到献殿到鱼沼飞梁再到圣母殿，这条轴线的设计者用建筑语言讲述了一个关于晋国的故事——晋祠不只是祠庙，它是晋国历史的空间化叙事。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 晋祠圣母殿的减柱造和辽代减柱造有什么本质区别？为什么说宋式减柱是"结构优化"而不是"技术退化"？</div>
+          <div class="guide-draft-question-item">2. 鱼沼飞梁的"立交桥"结构在宋辽金时期是孤例吗？这种水上古建筑有没有其他同时期的例子？</div>
+          <div class="guide-draft-question-item">3. 圣母殿 43 尊彩塑中，侍女像占多数。这种人物构成反映了北宋时期的什么社会观念？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 3 段（晋中）的核心点位。晋祠是北宋建筑的标准参照，也是全路线中文化地位最高的点位（世界文化遗产）。晋祠的宋代彩塑和减柱造，是理解后续平遥（镇国寺五代）、长治（崇庆寺宋代彩塑）的重要参照系。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：镇国寺 -->
+    <div class="guide-draft-card" id="guide-zhenguo">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">镇国寺</span>
+        <span class="guide-draft-meta">平遥 · 北汉天会七年（963）· 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        镇国寺万佛殿是现存五代时期（北汉，963 年）唯一的大型木构建筑——中国现存五代木构仅此一例。万佛殿的斗栱是七铺作（五代最高铺作数），殿内保存了 11 尊五代彩塑，是中国现存最早的木构建筑和彩塑群之一。镇国寺的建筑史价值等于一座"五代建筑孤岛"。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">进入镇国寺，先看万佛殿的外观——单檐歇山顶，但出檐很深，斗栱比例大。进入殿内，先看七铺作斗栱（这是五代最高铺作数），再看殿内 11 尊五代彩塑。这 11 尊彩塑是整座寺院的精华：主尊释迦牟尼居中，两侧是弟子、菩萨、供养菩萨、天王——这套完整体系是研究五代佛教造像的珍贵实物。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>万佛殿的斗栱——七铺作是五代最高铺作数。比宋式斗栱的铺作数更多还是更少？这说明了什么问题？</li>
+          <li>万佛殿的梁架——看明栿的形状，这是"月梁"形式吗？月梁在宋代《营造法式》中有详细规定。</li>
+          <li>殿内 11 尊彩塑的排列——从左到右分别是哪些人物？它们的服饰、姿态、面部表情有什么时代特征？</li>
+          <li>镇国寺的地理位置——平遥是一座明清古城，为什么五代建筑会出现在这里？北汉和后来统一北宋是什么关系？</li>
+          <li>万佛殿的柱子——柱础的形状和辽代、宋代的柱础有什么异同？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          五代（907-960）是中国历史上的混乱期——中原地区五个朝代快速更迭，战乱频繁。这个时期的建筑几乎没有留存，唯一的大型木构就是镇国寺万佛殿。北汉是五代时期的割据政权之一，位于山西中部，定都太原。963 年，北汉在平遥建造了镇国寺万佛殿。<br><br>
+          万佛殿的七铺作斗栱是五代建筑史的活标本。铺作数越多，说明斗栱越复杂、出跳越深。七铺作是五代能达到的最高铺作数，和辽代早期的斗栱水平相当。这说明五代的建筑技术和辽代几乎同步——中原和北方在建筑上并没有因为政治分裂而拉开差距。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开镇国寺前，再看一眼万佛殿的斗栱。五代是中国历史的"失语期"——史书记录少，建筑实物更少。镇国寺万佛殿是这 50 多年历史的唯一木构证词。它的存在说明：即使在最混乱的年代，建筑工匠的手艺也没有断过。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 为什么五代时期的中原地区几乎没有建筑留存，而北汉的平遥却有镇国寺这样的完整木构？</div>
+          <div class="guide-draft-question-item">2. 镇国寺万佛殿的七铺作斗栱和辽代早期斗栱的关系是什么？两者在技术传承上有没有可能有关联？</div>
+          <div class="guide-draft-question-item">3. 镇国寺的 11 尊五代彩塑和晋祠的宋代彩塑在风格上有什么差异？这些差异能说明五代到北宋雕塑艺术演化的什么趋势？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 3 段（晋中）的核心点位。镇国寺是五代木构的孤例，是从唐代到宋代建筑过渡期的唯一完整证据。镇国寺的彩塑（11 尊五代彩塑）和晋祠的彩塑（43 尊宋代彩塑）形成时间轴对照，是研究五代到宋代雕塑演化的珍贵材料。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：双林寺 -->
+    <div class="guide-draft-card" id="guide-shuanglin">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">双林寺</span>
+        <span class="guide-draft-meta">平遥 · 明 · 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        双林寺是明代彩塑艺术博物馆，寺内保存了 2000 多尊彩塑，以韦驮像（被誉为"全国韦驮之冠"）和千佛殿的悬塑最著名。双林寺的建筑是明清风格，没有唐构或宋构，但彩塑的艺术价值弥补了建筑的单调——它是研究明代彩塑的最佳现场。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">进入双林寺，先看释迦殿的壁画和彩塑（壁画是双林寺的精华），再进入千佛殿看悬塑——这是双林寺最震撼的空间：墙壁上密密麻麻的小佛像和菩萨，像一个微缩的佛国世界。殿内的韦驮像是双林寺的镇寺之宝，注意他身体扭曲的"S"形姿态——这种姿态在宋辽金雕塑中很常见，但明代还能保持这种动态，非常难得。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>韦驮像的 S 形姿态——从头部到脚部，这条曲线是怎么形成的？这种姿态在古希腊雕塑中也有，是巧合还是传播？</li>
+          <li>千佛殿的悬塑——密密麻麻的小佛像排列在墙壁上，数一数大概有多少尊？这种"千佛"题材在山西寺院中很常见，但双林寺的规模是最大的吗？</li>
+          <li>释迦殿的壁画——壁画内容是什么？描述的是佛传故事还是其他题材？壁画中有没有明显的明代特征？</li>
+          <li>双林寺的建筑——为什么说明清建筑在艺术价值上不如唐宋辽金？双林寺的建筑和彩塑相比，哪个更值得看？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          双林寺的名字来自"双林"——释迦牟尼圆寂于娑罗双树之间，双林即代指佛陀圆寂之地。双林寺的彩塑是明代最高水平的代表：2000 多尊，题材涵盖佛、菩萨、罗汉、韦驮、天王、供养人等各种类型。<br><br>
+          双林寺韦驮像是研究明代雕塑动态表现力的珍贵实物。韦驮的身体呈 S 形扭曲，这种姿态在古希腊雕塑中叫"contrapposto"（对立式平衡），但中国雕塑有自己的传承——从唐代开始，中国雕塑就学会了用身体扭曲来表现动感和生命力。明代的韦驮像继承了这一传统，但加入了更多程式化的细节（铠甲、飘带）。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开双林寺时，想象一下 2000 多尊彩塑在幽暗的殿堂内被烛光照亮的场景。明代的工匠用数量和密度制造了视觉震撼——和唐构的空灵、梁思成追求的结构美感不同，双林寺的美学是巴洛克式的饱和与密集。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 韦驮像的 S 形姿态（contrapposto）和古希腊雕塑的对立式平衡有什么异同？这种姿态在佛教艺术中是从什么时候开始出现的？</div>
+          <div class="guide-draft-question-item">2. 双林寺的明清建筑和唐宋辽金建筑在结构语言上有什么本质差异？为什么说"明清建筑是装饰的时代，不是结构的时代"？</div>
+          <div class="guide-draft-question-item">3. 双林寺 2000 多尊彩塑和云冈石窟的雕刻都是佛教视觉艺术，但它们的艺术风格完全不同。这种差异反映了什么？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 3 段（晋中）的核心点位。与镇国寺同在平遥，建议安排在同一天。双林寺代表明代彩塑艺术的最高水平，和小西天（明代悬塑）同属明代彩塑但风格不同——双林寺是"密集型"，小西天是"悬空型"。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：小西天 -->
+    <div class="guide-draft-card" id="guide-xiaoxitian">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">小西天</span>
+        <span class="guide-draft-meta">隰县 · 明崇祯二年（1629）· 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        小西天以千佛悬塑闻名——大雄宝殿的殿顶和四壁布满了密密麻麻的小佛像、菩萨像，视觉密度极高，被誉为"中国悬塑之冠"。小西天建于明崇祯二年（1629），是一座民间筹资建造的小寺，但悬塑的工艺水平远超同期官方寺院。千佛悬塑不允许拍照——请用眼睛和笔记代替相机。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">小西天景区不大，但大雄宝殿的悬塑是核心。进入大雄宝殿前，先站在殿外感受一下它的体量——这是一座很小的殿，但内部空间几乎全部被悬塑覆盖。进入殿内，不要急着抬头看殿顶，先适应光线，再慢慢从下往上看——悬塑的层次感很强，从人物到祥云到山石，一层层向上延伸。大雄宝殿内禁止拍照。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>悬塑的密度——大雄宝殿的殿顶和四壁有多少尊小佛像？估算一下。</li>
+          <li>悬塑的层次——从底部到顶部，悬塑的构图有没有规律？人物的大小、位置、高度有没有叙事逻辑？</li>
+          <li>悬塑的工艺——这些悬塑是怎么固定在墙壁和屋顶上的？有没有金属骨架？</li>
+          <li>小西天的建筑体量——为什么一座民间小庙能做出如此精致的悬塑？这和明代民间信仰的兴盛有什么关系？</li>
+          <li>小西天的位置——在吕梁山区的一个小县城里。为什么会在这里出现一座悬塑艺术如此精湛的寺院？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          小西天的悬塑是明代民间艺术最精致的代表之一。明代是中国民间信仰最兴盛的时代——佛教、道教、民间宗教的界限在民间层面是模糊的，小西天的悬塑就是这种混合信仰的视觉化呈现。<br><br>
+          大雄宝殿内的千佛悬塑，描述的是"华严境界"——根据《华严经》的宇宙观，整个宇宙分为无数层级，每一层级都有无量众生。小西天的工匠用密密麻麻的小佛像来表现这种"无量"的概念——你看不出具体是哪尊佛，只能感受到一种视觉上的无限感。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开小西天前，回头看一眼大雄宝殿的屋顶。一座民间小庙，在 1629 年，用有限的钱和材料，做出了一件可以和皇家工程比肩的视觉作品。这就是中国民间艺术的力量——它不需要国家力量，只需要虔诚和手艺。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 小西天的千佛悬塑描述的是《华严经》的宇宙观。这种"无限感"的视觉表达，在东西方宗教艺术中有没有类似的例子？</div>
+          <div class="guide-draft-question-item">2. 小西天是民间筹资建造的，但工艺水平很高。这种"民间高技术"现象在明代是不是普遍现象？为什么？</div>
+          <div class="guide-draft-question-item">3. 小西天悬塑和双林寺彩塑都是明代艺术，但形式完全不同（悬塑 vs 圆雕）。这两种形式的艺术表达效果有什么差异？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 4 段（临汾/隰县方向）的核心点位。小西天是全路线中悬塑艺术的最高代表，和双林寺（密集型彩塑）形成风格对照。小西天位置偏僻（吕梁山区），建议和 Day 7 的行程一起安排。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：玉皇庙 -->
+    <div class="guide-draft-card" id="guide-yuhuang">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">玉皇庙</span>
+        <span class="guide-draft-meta">晋城 · 宋元 · 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        玉皇庙是晋城地区最重要的道教庙宇，以二十八宿彩塑闻名——这是中国现存唯一的元代二十八宿塑像群。二十八宿是中国古代天文体系中的 28 个星座，玉皇庙的工匠把它们"人格化"成 28 尊彩塑，每尊都有独特的表情、姿态和服饰。二十八宿彩塑被誉为"中国古代雕塑艺术的高峰"，也是晋东南宋金元道教艺术的代表。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">玉皇庙的二十八宿殿是核心。二十八宿彩塑排列在殿堂四周墙壁上，每尊彩塑都有明确的星座名称（角、亢、氐、房、心、尾、箕等）和独特的性格描述。看二十八宿时，不要只看单尊，要看整体——28 尊彩塑的性格构成了一幅完整的"星座人物谱系"。注意：二十八宿彩塑严禁触摸。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>二十八宿的"人格化"——每个星座被塑造成什么性格的人物？看几尊：角宿（正直？）、心宿（激烈？）、牛宿（稳重？）</li>
+          <li>二十八宿的服饰差异——不同星座人物的服饰、朝代风格不同。这说明什么问题？</li>
+          <li>二十八宿的排列逻辑——28 尊彩塑是按什么规律排列的？顺时针？逆时针？和天球坐标有什么关系？</li>
+          <li>玉皇庙的道教属性——和本路线其他佛教寺院（云冈、华严寺等）相比，玉皇庙的建筑和彩塑有什么本质不同？</li>
+          <li>玉皇庙的位置——在晋城的一个山坡上，周围是普通民居。这种道教庙宇在晋东南的分布有什么规律？</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          玉皇庙是道教建筑，和本路线上的佛教寺院（云冈、华严寺、小西天等）属于不同的宗教系统。但玉皇庙被纳入这条古建路线，是因为它是晋东南地方信仰的核心代表——晋东南是中国民间信仰最浓郁的地区，道教、佛教、民间宗教的界限在这里是模糊的。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开玉皇庙前，回头看一眼二十八宿殿。28 尊彩塑，28 个星座，28 种性格——中国古代的天文学家把星空人格化，明代的工匠又把人格化的星座艺术化。这条线索：星空→哲学→艺术→民间信仰，是理解晋东南地方文化的关键。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 玉皇庙的二十八宿彩塑是中国唯一的元代二十八宿群塑。为什么这种题材的彩塑在元代出现？元代的宗教政策起了什么作用？</div>
+          <div class="guide-draft-question-item">2. 道教二十八宿和佛教天龙八部都是宗教艺术中的人物体系，它们的功能和表达方式有什么异同？</div>
+          <div class="guide-draft-question-item">3. 晋东南为什么成为中国民间信仰最浓郁的地区？这和它的地理位置、历史背景有什么深层关系？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 5 段（晋东南）的核心点位。玉皇庙是全路线中唯一的道教建筑代表，和佛教寺院形成宗教对比。二十八宿彩塑是元代道教艺术的最高成就，和小西天（明代悬塑）、双林寺（明代圆雕）形成时间轴和题材的对照。</div>
+      </div>
+    </div>
+
+    <!-- A 级导览：青莲寺 -->
+    <div class="guide-draft-card" id="guide-qinglian">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">青莲寺</span>
+        <span class="guide-draft-meta">晋城 · 唐宋 · 国保 · A级核心</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+
+      <div class="guide-draft-30s">
+        <div class="guide-draft-30s-label">30 秒导入</div>
+        青莲寺是晋城地区最古老的寺院之一，分上、下两院：下院有唐代石塔和宋代建筑，上院有宋代木构和明代彩塑。青莲寺的价值在于"时间跨度"——从唐代到明代，这座寺院一直在被使用、扩建、修缮，每个时代都留下了痕迹。注意：青莲寺上、下院可能因维修部分关闭，出发前需提前确认。
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场怎么看</div>
+        <div class="guide-draft-section-text">先看青莲寺下院的唐代石塔（释迦如来石塔）——这是研究唐代石塔形制的标准参照物。再看上院的宋代木构（藏阴式木结构）和明代彩塑。青莲寺的特殊之处在于它的"时间深度"——同一座寺院，不同时代的人都在这里留下了痕迹：唐代的石塔、宋代的木构、明代的彩塑、清代的修缮。这种"层层叠叠"是山西古建的普遍特征，青莲寺是其中最典型的例子之一。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察点</div>
+        <ul class="guide-draft-section-list">
+          <li>青莲寺下院的唐代石塔——看石塔的分层和雕刻。它和法兴寺唐塔有什么异同？</li>
+          <li>青莲寺的"上下院"结构——上、下两院分别建于什么年代？为什么一座寺院要分上下两院？</li>
+          <li>上院宋代木构的特征——这是晋东南宋代建筑的代表。和晋祠圣母殿的宋代建筑相比，有什么异同？</li>
+          <li>青莲寺的修缮痕迹——哪些部分是明清修缮的？哪些是原构件？看柱础、看斗栱、看瓦。</li>
+          <li>青莲寺的维修状态——出发前需确认上、下院是否都开放。部分院落可能因维修关闭。</li>
+        </ul>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">导游式讲解草稿（300-400 字）</div>
+        <div class="guide-draft-quote">
+          青莲寺的存在本身就是一部"建筑编年史"。下院的唐代石塔建于北齐或唐代初期，是研究早期佛塔形制的重要实物。上院的宋代木构建于北宋，保存了晋东南地区宋代建筑的基本特征——晋东南宋代建筑的斗栱铺作数一般比北方中原地区少，这可能和当地的气候、材料有关。
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">离开前回望</div>
+        <div class="guide-draft-section-text">离开青莲寺前，站在上下院之间的山坡上，同时看到唐代石塔和宋代木构——这座小山坡连接了两个时代。青莲寺告诉你：中国古建筑不是"建成即定型"的静态物体，而是"不断被使用、不断被修缮、不断被叠加"的动态遗产。</div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">自我提问</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 青莲寺上下院分别代表什么年代？这种"上下院"结构在山西古建中是不是普遍现象？它反映了什么？</div>
+          <div class="guide-draft-question-item">2. 晋东南的宋代建筑和中原（晋祠）的宋代建筑在风格上有什么差异？这种"地方风格"是怎么形成的？</div>
+          <div class="guide-draft-question-item">3. 青莲寺的唐代石塔和法兴寺唐塔都是晋东南的早期石塔，它们在形制上有什么异同？</div>
+        </div>
+      </div>
+
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">与整条路线的关系</div>
+        <div class="guide-draft-role">本路线第 5 段（晋东南）的核心点位。青莲寺是晋东南古建"时间深度"的代表——从唐代石塔到宋代木构到明代彩塑，是全路线中最能说明"古建是层层叠加的动态遗产"这一观点的现场。</div>
+      </div>
+    </div>
+
+    <!-- B 级导览分隔 -->
+    <div class="section-divider" style="margin: var(--space-3xl) 0;">
+      <span class="section-divider-icon">◆</span>
+    </div>
+    <h3 class="text-center" style="margin-bottom: var(--space-2xl);">B 级强烈推荐点位简短导览</h3>
+
+    <!-- B 级导览：双塔寺 -->
+    <div class="guide-draft-card b-tier" id="guide-shuangta">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">双塔寺</span>
+        <span class="guide-draft-meta">太原 · 明 · 国保 · B级强烈推荐</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">一句话价值</div>
+        <div class="guide-draft-section-text">太原标志性明代双塔，太原城市天际线的组成部分。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场重点</div>
+        <div class="guide-draft-section-text">登塔可俯瞰太原全城。双塔均为 13 层密檐式砖塔，高约 50 米。双塔间距很近，在太原老城中能同时看到两座塔的视觉效果。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察问题</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 明代双塔和唐代单塔（如南禅寺）的功能有什么不同？为什么明代流行双塔？</div>
+          <div class="guide-draft-question-item">2. 双塔寺在太原城市中的位置，和平遥古城中的双塔寺有什么空间关系上的不同？</div>
+        </div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">是否适合纳入主线</div>
+        <div class="guide-draft-role">建议作为太原停留时的补充看点，不作为独立行程目的地。如果太原行程紧凑（压缩版 Day 5），可考虑省略。</div>
+      </div>
+    </div>
+
+    <!-- B 级导览：介休后土庙 -->
+    <div class="guide-draft-card b-tier" id="guide-houtu">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">介休后土庙</span>
+        <span class="guide-draft-meta">介休 · 明清 · 国保 · B级强烈推荐</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">一句话价值</div>
+        <div class="guide-draft-section-text">道教庙宇建筑群，琉璃艺术与彩塑并存的明清道教建筑标本。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场重点</div>
+        <div class="guide-draft-section-text">后土庙的琉璃艺术是核心——脊刹、吻兽、瓦当都是明清琉璃的精品。庙内的三清殿有道教彩塑，反映了道教的神系体系。琉璃和彩塑是两种不同的工艺，在同一座庙里并存，说明明清道教建筑的完整性。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察问题</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 后土庙的琉璃和同期佛教寺院的琉璃有什么异同？道教和佛教的琉璃艺术有没有互相影响？</div>
+          <div class="guide-draft-question-item">2. 道教的三清彩塑（玉清元始天尊、上清灵宝天尊、太清道德天尊）和佛教的三世佛在神系结构上有什么相似之处？</div>
+        </div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">是否适合纳入主线</div>
+        <div class="guide-draft-role">建议在 Day 6 平遥/介休行程中作为补充看点。介休位于太原到临汾的途中，不绕路。</div>
+      </div>
+    </div>
+
+    <!-- B 级导览：长治观音堂 -->
+    <div class="guide-draft-card b-tier" id="guide-guanyin">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">长治观音堂</span>
+        <span class="guide-draft-meta">长治 · 明 · 国保 · B级强烈推荐</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">一句话价值</div>
+        <div class="guide-draft-section-text">明代彩塑精品，以悬塑和圆雕组合的观音殿著称。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场重点</div>
+        <div class="guide-draft-section-text">观音殿内的彩塑群以观音为核心，辅以善财童子、龙女、韦驮等，悬塑与圆雕组合是明代彩塑的创新形式。殿内禁止拍照。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察问题</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 长治观音堂的彩塑组合和双林寺的韦驮像、小西天的悬塑在形式上有什么不同？三者的艺术表达哪个更打动你？</div>
+          <div class="guide-draft-question-item">2. 明代彩塑为什么喜欢用悬塑和圆雕组合？这种形式创新是明代特有的吗？</div>
+        </div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">是否适合纳入主线</div>
+        <div class="guide-draft-role">建议作为 Day 8 长治行程的补充看点。长治观音堂位于长治市区，不绕路，但如果是压缩版行程且时间紧张，可省略。</div>
+      </div>
+    </div>
+
+    <!-- B 级导览：崇庆寺 -->
+    <div class="guide-draft-card b-tier" id="guide-chongqing">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">崇庆寺</span>
+        <span class="guide-draft-meta">长子县 · 宋 · 国保 · B级强烈推荐</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">一句话价值</div>
+        <div class="guide-draft-section-text">宋代彩塑三大处之一，十八罗汉像被誉为"宋塑之冠"。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场重点</div>
+        <div class="guide-draft-section-text">十八罗汉像是崇庆寺的精华——宋代彩塑，写实风格，个性鲜明。罗汉的服饰、姿态、面部表情都和真人无异，是宋代"写实主义"雕塑的代表作。注意：崇庆寺位置在长子县山区，部分殿堂可能因维修关闭，出发前需确认。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察问题</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 崇庆寺的十八罗汉和晋祠的侍女像，都是宋代彩塑，为什么艺术风格差异这么大？两者分别代表了宋代彩塑的什么方向？</div>
+          <div class="guide-draft-question-item">2. "宋代彩塑三大处"除了崇庆寺，另外两处在哪里？三处的彩塑各有什么特点？</div>
+        </div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">是否适合纳入主线</div>
+        <div class="guide-draft-role">强烈建议纳入主线。崇庆寺是全路线中宋代彩塑的最高代表（和晋祠宋代彩塑不同风格），晋东南行程 Day 9 不应省略。</div>
+      </div>
+    </div>
+
+    <!-- B 级导览：法兴寺 -->
+    <div class="guide-draft-card b-tier" id="guide-faxing">
+      <div class="guide-draft-header">
+        <span class="guide-draft-name">法兴寺</span>
+        <span class="guide-draft-meta">长子县 · 唐宋 · 国保 · B级强烈推荐</span>
+        <span class="guide-draft-badge">草稿版 · 待实地复核</span>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">一句话价值</div>
+        <div class="guide-draft-section-text">唐代石塔与宋代彩塑并存，晋东南早期佛教艺术的实例。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">现场重点</div>
+        <div class="guide-draft-section-text">法兴寺的唐代石塔（舍利塔）是晋东南现存最早的唐代石塔实例之一，塔的形制和同期南禅寺、佛光寺的石塔有可比性。寺内的宋代彩塑和崇庆寺风格相似但各有特色。注意：法兴寺石塔周边可能有围栏维修，出发前需确认。</div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">观察问题</div>
+        <div class="guide-draft-questions">
+          <div class="guide-draft-question-item">1. 法兴寺的唐塔和青莲寺的唐塔在形制上有什么异同？两座塔都在晋东南，但年代可能有差异。</div>
+          <div class="guide-draft-question-item">2. 法兴寺的唐塔和南禅寺大殿（唐代木构）分别代表了唐代建筑的两个方向（石构 vs 木构），它们的时代背景有什么不同？</div>
+        </div>
+      </div>
+      <div class="guide-draft-section">
+        <div class="guide-draft-section-label">是否适合纳入主线</div>
+        <div class="guide-draft-role">建议与崇庆寺同一天安排（Day 9），两者都在长子县山区，路线顺路。如果时间紧张且必须在崇庆寺和法兴寺之间取舍，建议保留崇庆寺（宋代彩塑价值更高）。</div>
+      </div>
+    </div>
+
+  </section>
+
   <!-- 资料来源索引 -->
   <section id="sources" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
@@ -2979,6 +3976,54 @@
         </div>
       </div>
 
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">殿堂</div>
+        <div class="concept-card-v14-one-line">木构寺院中供奉佛像、进行礼拜的主要建筑空间。</div>
+        <div class="concept-card-v14-spots">对应点位：晋祠圣母殿、佛光寺东大殿、华严寺大雄宝殿、镇国寺万佛殿</div>
+      </div>
+
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">悬山 / 歇山 / 庑殿</div>
+        <div class="concept-card-v14-one-line">中国古建筑三种最高等级屋顶形式：悬山（两侧悬出）、歇山（悬山+抱厦）、庑殿（四坡五脊，最高级）。</div>
+        <div class="concept-card-v14-spots">对应点位：南禅寺（悬山）、佛光寺东大殿（庑殿）、晋祠圣母殿（歇山）</div>
+      </div>
+
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">减柱造</div>
+        <div class="concept-card-v14-one-line">辽宋时期为扩大礼佛空间，将内槽柱子减少或移位的结构做法。</div>
+        <div class="concept-card-v14-spots">对应点位：华严寺薄伽教藏殿、善化寺三圣殿、晋祠圣母殿、佛光寺东大殿</div>
+      </div>
+
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">叉手与托脚</div>
+        <div class="concept-card-v14-one-line">梁架中的斜向支撑构件，叉手支撑脊博，托脚支撑梁头，是唐代及早期木构的典型特征。</div>
+        <div class="concept-card-v14-spots">对应点位：佛光寺东大殿（叉手托脚）、南禅寺大殿</div>
+      </div>
+
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">悬塑</div>
+        <div class="concept-card-v14-one-line">彩塑的一种形式，塑像悬空贴附于墙壁或屋顶，不落地，是明清彩塑艺术的特殊形式。</div>
+        <div class="concept-card-v14-spots">对应点位：小西天（千佛悬塑，全国之冠）、长治观音堂</div>
+      </div>
+
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">水陆画</div>
+        <div class="concept-card-v14-one-line">水陆法会使用的宗教绘画，描绘水陆两界的神祇、鬼魂、众生，是研究明清宗教艺术的重要资料。</div>
+        <div class="concept-card-v14-spots">对应点位：晋城玉皇庙（元代道教壁画）、隰县小西天</div>
+      </div>
+
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">明清修缮</div>
+        <div class="concept-card-v14-one-line">山西古建大多经历明清大规模修缮，明清修缮部分和原构的区分是古建研究的基础功夫。</div>
+        <div class="concept-card-v14-spots">对应点位：几乎所有点位都含明清修缮痕迹，尤其是平遥、双林寺</div>
+      </div>
+
+      <div class="concept-card concept-card-v14">
+        <div class="concept-card-v14-name">国保单位</div>
+        <div class="concept-card-v14-one-line">全国重点文物保护单位的简称，本路线所有 A/B 级核心点位均为国保单位，是最高等级的文物保护认定。</div>
+        <div class="concept-card-v14-spots">对应点位：本路线 17 个 A/B 级点位全部为国保单位</div>
+      </div>
+
     </div>
   </section>
 
@@ -3105,6 +4150,64 @@
   </footer>
 
   <script>
+    // v1.4 古建观察清单 localStorage 逻辑
+    (function () {
+      const STORAGE_KEY = 'shanxi_observation_checklist_v14';
+      const container = document.getElementById('observation-checklist');
+      const progressEl = document.getElementById('observation-progress-value');
+
+      // 加载已保存的勾选状态
+      function loadState() {
+        try {
+          return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+        } catch (e) { return {}; }
+      }
+
+      // 保存勾选状态
+      function saveState(state) {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        } catch (e) {}
+      }
+
+      // 更新进度显示
+      function updateProgress(state) {
+        if (!progressEl) return;
+        const total = document.querySelectorAll('.observation-item').length;
+        const checked = Object.values(state).filter(Boolean).length;
+        progressEl.textContent = checked + ' / ' + total;
+      }
+
+      // 初始化
+      function init() {
+        if (!container) return;
+        const state = loadState();
+        const items = container.querySelectorAll('.observation-item');
+
+        items.forEach(item => {
+          const key = item.dataset.key;
+          if (state[key]) {
+            item.classList.add('checked');
+          }
+          item.addEventListener('click', () => {
+            const current = loadState();
+            current[key] = !current[key];
+            saveState(current);
+            item.classList.toggle('checked', current[key]);
+            updateProgress(current);
+          });
+        });
+
+        updateProgress(state);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+
     // v1.2 行程版本 tab 切换
     (function () {
       const tabs = document.querySelectorAll('.route-version-tab');

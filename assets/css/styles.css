@@ -1908,6 +1908,336 @@ p {
 
 
 
+
+/* ============================================
+   v1.4 山西文化导览草稿版样式
+   ============================================ */
+
+/* ---------- 导览草稿状态 ---------- */
+.guide-draft-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(184, 134, 11, 0.1);
+  color: var(--color-accent-dark);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  font-weight: 600;
+}
+
+/* ---------- 现场观察总导览 ---------- */
+.how-to-look-box {
+  background: linear-gradient(135deg, rgba(26, 58, 42, 0.05), rgba(184, 134, 11, 0.05));
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin: var(--space-md) 0;
+}
+
+.how-to-look-box-title {
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.how-to-look-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.how-to-look-list li {
+  background: var(--color-bg);
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-accent);
+}
+
+.how-to-look-list li strong {
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+/* ---------- 古建观察清单 ---------- */
+.observation-checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.observation-item {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.observation-item:hover {
+  border-color: var(--color-accent);
+}
+
+.observation-item.checked {
+  background: rgba(39, 174, 96, 0.05);
+  border-color: #27ae60;
+}
+
+.observation-checkbox {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: transparent;
+  margin-top: 2px;
+}
+
+.observation-item.checked .observation-checkbox {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: white;
+}
+
+.observation-content {
+  flex: 1;
+}
+
+.observation-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.observation-note {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.observation-progress {
+  text-align: center;
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+}
+
+.observation-progress-value {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+}
+
+/* ---------- 导览草稿卡（A/B 级点位）---------- */
+.guide-draft-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.guide-draft-card.b-tier {
+  border-left-color: var(--color-accent);
+}
+
+.guide-draft-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px dashed var(--color-divider);
+  flex-wrap: wrap;
+}
+
+.guide-draft-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.guide-draft-meta {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.guide-draft-30s {
+  background: rgba(184, 134, 11, 0.08);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.guide-draft-30s-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  font-style: normal;
+}
+
+.guide-draft-section {
+  margin-bottom: var(--space-md);
+}
+
+.guide-draft-section-label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.guide-draft-section-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.guide-draft-section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.guide-draft-section-list li {
+  padding-left: var(--space-md);
+  position: relative;
+  margin-bottom: var(--space-xs);
+}
+
+.guide-draft-section-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.guide-draft-quote {
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  border-left: 3px solid var(--color-primary);
+  font-style: italic;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.guide-draft-questions {
+  background: rgba(52, 152, 219, 0.05);
+  border-left: 3px solid #3498db;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+}
+
+.guide-draft-question-item {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.guide-draft-question-item::before {
+  content: '❓';
+  position: absolute;
+  left: 0;
+}
+
+.guide-draft-role {
+  background: rgba(39, 174, 96, 0.05);
+  border-left: 3px solid #27ae60;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.guide-draft-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+  border-top: 1px dashed var(--color-divider);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* ---------- 概念词条扩展（v1.4）---------- */
+.concept-card-v14 {
+  background: var(--color-bg-card);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+}
+
+.concept-card-v14-name {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.concept-card-v14-one-line {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: var(--space-xs);
+}
+
+.concept-card-v14-spots {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 768px) {
+  .observation-checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-draft-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
 /* ============================================
    v1.3 山西实用信息核验样式
    ============================================ */
