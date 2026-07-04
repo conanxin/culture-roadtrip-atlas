@@ -1902,6 +1902,420 @@ p {
 
 
 
+
+/* ============================================
+   v0.7 Heritage Visual Polish 样式
+   ============================================ */
+
+/* ---------- 重点景点档案卡 ---------- */
+.heritage-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin: var(--space-lg) 0;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.heritage-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.heritage-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  padding: 4px 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.heritage-card-titles {
+  flex: 1;
+}
+
+.heritage-card-title {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.heritage-card-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  font-family: var(--font-serif);
+}
+
+.heritage-card-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.heritage-card-field {
+  background: var(--color-bg);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--color-accent);
+}
+
+.heritage-card-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--color-accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+}
+
+.heritage-card-value {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.heritage-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+}
+
+.heritage-tag {
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  background: rgba(184, 134, 11, 0.1);
+  color: var(--color-accent-dark);
+  border-radius: 12px;
+  border: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+/* ---------- 辽塔线描示意 ---------- */
+.pagoda-line-drawing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.pagoda-svg {
+  width: 60px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.pagoda-svg-large {
+  width: 80px;
+  height: 130px;
+  flex-shrink: 0;
+}
+
+.pagoda-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-top: var(--space-xs);
+}
+
+.pagoda-line-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- 城市章节封面 ---------- */
+.city-chapter {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, rgba(26, 58, 42, 0.05), rgba(184, 134, 11, 0.05));
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.city-chapter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.city-chapter-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.city-chapter-num {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  font-weight: bold;
+  padding: var(--space-xs) var(--space-md);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.city-chapter-titles {
+  flex: 1;
+}
+
+.city-chapter-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.city-chapter-role {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.city-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.city-chapter-field {
+  background: var(--color-bg);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-accent);
+}
+
+.city-chapter-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--color-accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+}
+
+.city-chapter-value {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.city-chapter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+}
+
+.city-chapter-tag {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 12px;
+}
+
+/* ---------- 导游词摘句 ---------- */
+.guide-quote {
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.08), rgba(184, 134, 11, 0.02));
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.guide-quote-mark {
+  font-size: 2rem;
+  color: var(--color-accent);
+  line-height: 0;
+  vertical-align: -8px;
+  margin-right: 4px;
+}
+
+.guide-quote-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-primary);
+  display: inline;
+}
+
+.guide-quote-attribution {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: var(--space-xs);
+  display: block;
+  font-style: normal;
+}
+
+/* ---------- 路线故事线 ---------- */
+.story-arc-module {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.story-arc-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.story-arc-intro {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  font-size: 0.95rem;
+}
+
+.story-arc-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.story-arc-item {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border-left: 4px solid var(--color-primary);
+  position: relative;
+}
+
+.story-arc-num {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.story-arc-content {
+  flex: 1;
+}
+
+.story-arc-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.story-arc-act {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.story-arc-headline {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.story-arc-text {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-top: var(--space-sm);
+}
+
+/* ---------- 阅读层级优化 ---------- */
+.section-hint {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-accent-dark);
+  background: rgba(184, 134, 11, 0.08);
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-bottom: var(--space-sm);
+  border: 1px solid rgba(184, 134, 11, 0.2);
+  font-weight: 600;
+}
+
+.section-hint-priority {
+  background: rgba(192, 57, 43, 0.08);
+  color: #c0392b;
+  border-color: rgba(192, 57, 43, 0.3);
+}
+
+.section-hint-info {
+  background: rgba(52, 152, 219, 0.08);
+  color: #3498db;
+  border-color: rgba(52, 152, 219, 0.3);
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 768px) {
+  .heritage-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heritage-card-body {
+    grid-template-columns: 1fr;
+  }
+
+  .city-chapter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-arc-item {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .pagoda-line-drawing {
+    padding: var(--space-xs);
+  }
+}
+
+
 /* ============================================
    v0.6 资料与事实核对版样式
    ============================================ */
