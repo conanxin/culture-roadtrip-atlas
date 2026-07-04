@@ -6432,3 +6432,334 @@ p {
     white-space: nowrap;
   }
 }
+
+/* ============================================================
+   v1.4.4 · Out of Eden Walk China · Launch Package Styles
+   ============================================================ */
+
+/* ---------- 阅读进度条 ---------- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #b8860b 0%, #6b8e23 100%);
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* ---------- 快速阅读导航 ---------- */
+.quick-read-nav {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border-left: 3px solid #6b8e23;
+}
+
+.quick-read-nav-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.quick-read-nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.quick-read-link {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(107, 142, 35, 0.08);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(107, 142, 35, 0.2);
+  transition: all 0.2s;
+}
+
+.quick-read-link:hover {
+  background: #6b8e23;
+  color: #fff;
+  border-color: #6b8e23;
+}
+
+/* ---------- 本页状态卡 ---------- */
+.page-status-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-top: 3px solid #b8860b;
+  position: relative;
+}
+
+.page-status-tag {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: rgba(184, 134, 11, 0.15);
+  color: #8b6914;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.page-status-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.page-status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.page-status-item {
+  background: rgba(184, 134, 11, 0.05);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid #b8860b;
+}
+
+.page-status-label {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.page-status-value {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* ---------- 适合谁使用 ---------- */
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.audience-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-top: 3px solid;
+}
+
+.audience-card-for {
+  border-top-color: #6b8e23;
+}
+
+.audience-card-not {
+  border-top-color: #c0392b;
+}
+
+.audience-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.audience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.audience-list li {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+}
+
+.audience-list li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- 移动端长表格滚动 ---------- */
+.mobile-scroll-table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--space-md) 0;
+  border-radius: var(--radius-sm);
+}
+
+.scroll-hint {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: 4px;
+  background: rgba(184, 134, 11, 0.05);
+  margin-bottom: 4px;
+  display: none;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .scroll-hint {
+    display: block;
+  }
+}
+
+/* ---------- 返回顶部按钮 ---------- */
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 48px;
+  height: 48px;
+  background: #b8860b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+  z-index: 9998;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top.back-to-top-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: #8b6914;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- 发布文案模块 ---------- */
+.launch-copy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.launch-copy-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-left: 4px solid #b8860b;
+}
+
+.launch-copy-tag {
+  display: inline-block;
+  background: rgba(184, 134, 11, 0.15);
+  color: #8b6914;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.launch-copy-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.copy-block {
+  background: rgba(107, 142, 35, 0.05);
+  border-left: 3px solid #6b8e23;
+  padding: var(--space-lg);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+}
+
+.copy-block-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.copy-block-text:last-child {
+  margin-bottom: 0;
+}
+
+.copy-block-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  border-top: 1px dashed var(--color-divider);
+  padding-top: var(--space-sm);
+}
+
+/* ---------- 首页代表长线徽章 ---------- */
+.featured-route-badge {
+  background: linear-gradient(135deg, #b8860b 0%, #8b6914 100%);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.05em;
+}
+
+.trip-card-long {
+  border-left: 3px solid #b8860b;
+}
+
+/* ---------- 移动端响应式（v1.4.4 新模块） ---------- */
+@media (max-width: 768px) {
+  .quick-read-nav-buttons {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+
+  .page-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .launch-copy-card,
+  .copy-block,
+  .page-status-card {
+    padding: var(--space-md);
+  }
+}

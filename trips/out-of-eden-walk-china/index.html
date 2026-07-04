@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Out of Eden Walk 中国段复刻路线 - 从滇西边境到大连黄海，沿 Paul Salopek 的慢新闻足迹穿越中国。覆盖云南、四川、陕西、山西、河北、北京、辽宁。文化复刻路线，非原始 GPS 复刻。">
+  <meta name="description" content="Paul Salopek 与国家地理 Out of Eden Walk 中国段复刻路线：从滇西边境到大连黄海，穿越茶马古道、蜀道、黄土高原、北京、长城与东北海岸，含事实审校、可旅行化方案与随行导游词。">
   <meta name="author" content="Xin Conan">
-  <meta name="keywords" content="Out of Eden Walk, Paul Salopek, 国家地理, 慢新闻, 徒步中国, 茶马古道, 蜀道, 黄土高原, 长城, Out of Eden Walk 中国段">
+  <meta name="keywords" content="Out of Eden Walk, Paul Salopek, 国家地理, 慢新闻, 徒步中国, 茶马古道, 蜀道, 黄土高原, 长城, Out of Eden Walk 中国段, 中国地理剖面线">
   <meta property="og:title" content="Out of Eden Walk 中国段复刻路线 · 行旅图谱">
-  <meta property="og:description" content="从滇西边境到大连黄海：跟随 Paul Salopek 的慢新闻足迹，穿越古道、蜀道、黄土高原、长城与东北海岸。">
+  <meta property="og:description" content="沿 Paul Salopek 与国家地理 Out of Eden Walk 中国段足迹，从滇西边境到大连黄海，重建一条可阅读、可旅行、可传播的人文路线。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/">
-  <title>Out of Eden Walk 中国段复刻路线 · 行旅图谱</title>
+  <meta property="og:site_name" content="行旅图谱 · Culture Roadtrip Atlas">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Out of Eden Walk 中国段复刻路线 · 行旅图谱">
+  <meta name="twitter:description" content="从滇西边境到大连黄海，重建 Paul Salopek 国家地理慢新闻中国段路线。">
+  <link rel="canonical" href="https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/">
+  <title>Out of Eden Walk 中国段复刻路线｜Paul Salopek 国家地理慢新闻路线 · 行旅图谱</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
@@ -40,7 +46,7 @@
   <!-- Hero 首屏 -->
   <section class="hero trip-skeleton">
     <div class="container">
-      <div class="trip-skeleton-badge">🚧 规划中 · 文化复刻路线 · 基于 Paul Salopek 中国段公开材料整理</div>
+      <div class="trip-skeleton-badge">🌟 代表长线 · v1.4.4 · 事实审校 + 可旅行化 + 叙事导览 + 发布包装</div>
       <h1 class="hero-title">Out of Eden Walk 中国段复刻路线</h1>
       <p class="hero-subtitle">从滇西边境到大连黄海：跟随 Paul Salopek 的慢新闻足迹，<br>穿越古道、蜀道、黄土高原、长城与东北海岸</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -76,7 +82,7 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.4.3 · Out of Eden Walk 中国段复刻 · 事实审校 + 可旅行化 + 叙事导览 · 2026-07-04</span>
+        <span class="page-meta-value">v1.4.4 · Out of Eden Walk 中国段复刻 · 事实审校 + 可旅行化 + 叙事导览 + 发布包装 · 50% · 2026-07-04</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">原始项目：</span>
@@ -84,11 +90,78 @@
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">规划中 · 文化复刻 · 待实地复盘</span>
+        <span class="page-meta-value">v1.4.4 · 50% · 事实审校 + 可旅行化 + 叙事导览 + 发布包装</span>
       </div>
     </div>
   </section>
 
+<!-- 快速阅读 / 阅读进度 / 返回顶部（v1.4.4 新增） -->
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+
+  <!-- 快速阅读目录（v1.4.4 新增） -->
+  <section class="container" style="margin-top: var(--space-2xl);">
+    <div class="quick-read-nav">
+      <h3 class="quick-read-nav-title">📖 快速阅读</h3>
+      <div class="quick-read-nav-buttons">
+        <a href="#audit" class="quick-read-link">事实审校</a>
+        <a href="#scroll-map" class="quick-read-link">长卷地图</a>
+        <a href="#route" class="quick-read-link">分段路线</a>
+        <a href="#milestones" class="quick-read-link">Milestones</a>
+        <a href="#narrative-guide" class="quick-read-link">随行导游词</a>
+        <a href="#versions" class="quick-read-link">21–28 天精华版</a>
+        <a href="#versions" class="quick-read-link">六段短线</a>
+        <a href="#prep-pack" class="quick-read-link">行前资料包</a>
+        <a href="#share-summary" class="quick-read-link">传播摘要</a>
+        <a href="#sources" class="quick-read-link">来源资料</a>
+      </div>
+    </div>
+  </section>
+<!-- 本页状态 + 适合谁使用（v1.4.4 新增） -->
+  <section class="container" style="margin-top: var(--space-2xl);">
+    <div class="page-status-card">
+      <div class="page-status-tag">v1.4.4 · 50% · 发布包装完成</div>
+      <h3 class="page-status-title">本页状态</h3>
+      <div class="page-status-grid">
+        <div class="page-status-item">
+          <div class="page-status-label">当前版本</div>
+          <div class="page-status-value">v1.4.4</div>
+        </div>
+        <div class="page-status-item">
+          <div class="page-status-label">完成度</div>
+          <div class="page-status-value">50%</div>
+        </div>
+        <div class="page-status-item">
+          <div class="page-status-label">已交付</div>
+          <div class="page-status-value">事实审校 · 可旅行化 · 叙事导览 · 发布包装</div>
+        </div>
+        <div class="page-status-item">
+          <div class="page-status-label">仍待完善</div>
+          <div class="page-status-value">实地走访照片 · GPX/地图轨迹 · 住宿交通细表 · 更多中文资料</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="audience-grid">
+      <div class="audience-card audience-card-for">
+        <h4 class="audience-title">✅ 适合谁使用</h4>
+        <ul class="audience-list">
+          <li>想按 Paul Salopek 足迹做中国长线旅行的人</li>
+          <li>想做慢新闻 / 人文写作 / 纪录片选题的人</li>
+          <li>想把中国地理剖面线拆成年度旅行的人</li>
+          <li>想从国家地理报道进入中国古道、关隘、长城、城市空间的人</li>
+        </ul>
+      </div>
+      <div class="audience-card audience-card-not">
+        <h4 class="audience-title">❌ 不适合谁使用</h4>
+        <ul class="audience-list">
+          <li>只想拿现成 GPS 轨迹硬走的人</li>
+          <li>想无准备徒步高风险山地和边境地带的人</li>
+          <li>只想轻松打卡、不想读背景的人</li>
+          <li>追求逐段精确复刻 Paul 原始路线的人</li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <!-- 1. 路线总览 -->
   <section id="overview" class="trip-template-section container" style="margin-top: var(--space-2xl);">
     <div class="section-divider">
@@ -912,7 +985,7 @@
       按官方 Milestones 编号整理，每条对应一段具体地点、主题与发布年份
     </p>
 
-    <table class="milestone-table">
+    <div class="mobile-scroll-table"><div class="scroll-hint">← 左右滑动查看完整表格 →</div><table class="milestone-table"><table class="milestone-table">
       <thead>
         <tr>
           <th>编号</th>
@@ -950,7 +1023,7 @@
         <tr><td>94</td><td>Only We Were Outside</td><td>辽宁</td><td>2024-08</td><td>第 10 段</td><td>工业迁移、户外</td><td><span class="fact-status fact-status-confirmed">官方已核</span></td><td>不适合逐点复刻</td><td><a href="https://outofedenwalk.nationalgeographic.org/2024-08-milestone-94-only-we-were-outside/" target="_blank">🔗</a></td></tr>
         <tr><td>95</td><td>Feeling Gray</td><td>大连黄海</td><td>2024-08</td><td>第 10 段</td><td>告别中国、灰色</td><td><span class="fact-status fact-status-confirmed">官方已核</span></td><td>适合</td><td><a href="https://outofedenwalk.nationalgeographic.org/2024-08-milestone-95-feeling-gray/" target="_blank">🔗</a></td></tr>
       </tbody>
-    </table>
+    </table></table></div>
     <div class="route-note" style="margin-top: var(--space-md);">
       <strong>📝 备注</strong>：
       <ul style="margin-top: var(--space-sm); padding-left: var(--space-xl);">
@@ -1086,7 +1159,7 @@
     <!-- 21–28 天精华版日程表 -->
     <h3 class="text-center" style="margin-top: var(--space-3xl); margin-bottom: var(--space-md);">📅 21–28 天精华版 · 逐日框架</h3>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">可执行框架，不含实时交通时刻 / 住宿价格。请出发前核实。</p>
-    <table class="travel-version-table">
+    <div class="mobile-scroll-table"><div class="scroll-hint">← 左右滑动查看完整表格 →</div><table class="travel-version-table">
       <thead>
         <tr>
           <th>天数</th>
@@ -1109,7 +1182,7 @@
         <tr><td>D24–D25</td><td class="daily-theme">D24 司马台：墙的险峻 / D25 古北口到承德：清代的边疆秩序</td><td>京北长城</td><td>司马台 / 古北口 / 承德</td><td>火车 + 专线</td><td>长城 / 清代道路</td><td>司马台部分路段陡</td></tr>
         <tr><td>D26–D28</td><td class="daily-theme">D26 辽宁玉米地与工业迁移 / D27 大连港与黄海告别 / D28 Paul 的 Goodbye to China 复盘</td><td>东北收束</td><td>辽宁乡村 / 大连港 / 黄海</td><td>高铁 + 自驾</td><td>工业迁移 / 告别</td><td>村镇译名需实地核对</td></tr>
       </tbody>
-    </table>
+    </table></table></div>
 
     <!-- 6 段短线版本 -->
     <h3 class="text-center" style="margin-top: var(--space-3xl); margin-bottom: var(--space-md);">📌 6 段短线版本 · 分年度完成</h3>
@@ -1197,6 +1270,69 @@
     </div>
   </section>
 
+<!-- 10. 发布文案（v1.4.4 新增） -->
+  <section id="launch-copy" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">发布文案</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      v1.4.4 新增 · 4 个可复制文本块 · 朋友圈 / 小红书 / 公众号 / README 简介
+    </p>
+
+    <div class="launch-copy-grid">
+
+      <div class="launch-copy-card">
+        <div class="launch-copy-tag">朋友圈版</div>
+        <h4 class="launch-copy-title">100–180 字</h4>
+        <div class="copy-block">
+          <p class="copy-block-text">这不是一条打卡路线，而是一条沿 Paul Salopek 中国段足迹重新理解中国地理的慢新闻路线。<br><br>从滇西边境到大连黄海，约 6,000–6,700 公里，两年多，22 个官方 milestone。穿越茶马古道、蜀道、黄土高原、长城、东北海岸。<br><br>页面把它做成了可以分段走、可以阅读、可以传播的文化复刻路线，而不是单纯的攻略。📚</p>
+        </div>
+        <div class="copy-block-meta">适合：朋友圈 / 微博 / 状态</div>
+      </div>
+
+      <div class="launch-copy-card">
+        <div class="launch-copy-tag">小红书版</div>
+        <h4 class="launch-copy-title">标题 + 正文</h4>
+        <div class="copy-block">
+          <p class="copy-block-text"><strong>标题：从滇西走到黄海</strong></p>
+          <p class="copy-block-text">正文：</p>
+          <p class="copy-block-text">这是 Paul Salopek 与国家地理 Out of Eden Walk 中国段的复刻路线。</p>
+          <p class="copy-block-text">从滇西边境起步，到大连黄海收束，全程约 6,000–6,700 公里、两年多、22 个官方 milestone。</p>
+          <p class="copy-block-text">穿过茶马古道、蜀道、秦岭、黄土高原、雁门关、北京城市空间、长城、辽宁玉米地，最终在黄海边写下 Goodbye to China。</p>
+          <p class="copy-block-text">页面把它做成了一份可以分段走、可以阅读、可以传播的文化复刻路线。普通人不需要连续长距离徒步，可以火车 + 分段徒步 + 城市停留。</p>
+          <p class="copy-block-text">关键词：#国家地理 #PaulSalopek #OutOfEdenWalk #中国段 #滇西边境 #黄海 #茶马古道 #蜀道 #长城</p>
+        </div>
+        <div class="copy-block-meta">适合：小红书 / Instagram / 图文</div>
+      </div>
+
+      <div class="launch-copy-card">
+        <div class="launch-copy-tag">公众号导语版</div>
+        <h4 class="launch-copy-title">400–600 字</h4>
+        <div class="copy-block">
+          <p class="copy-block-text">这是一条两年多、约 6,000–6,700 公里的中国段慢新闻路线。</p>
+          <p class="copy-block-text">它来自 Paul Salopek 与国家地理 Out of Eden Walk 的全球七年行走项目——从东非一直走到南美，用脚步丈量人类迁徙的路径。中国段是这个全球项目的一段，对应官方 Milestone 74 到 95，全部 22 条。</p>
+          <p class="copy-block-text">页面把它改造成可阅读、可旅行、可分段完成的文化路线。</p>
+          <p class="copy-block-text">它不是 Paul 原始 GPS 的逐点复刻，而是一条文化复刻路线：理解他为什么这样走，比复制他的脚步更重要。普通人不需要模仿他连续长距离徒步——推荐采用"火车 / 汽车 + 分段徒步 + 城市停留"的方式，把全线拆成 6 条短线，每年走一段。</p>
+          <p class="copy-block-text">沿线穿过滇西边境、横断山、成都平原、剑门蜀道、秦岭、黄土高原、山西关隘、北京城市空间、长城、辽宁乡村、黄海港口。这是中国地形最复杂的一段剖面：从西南山地一直切到东北海岸，是观察中国地理多样性的天然截面。</p>
+          <p class="copy-block-text">页面适合慢新闻、人文旅行、中国地理和古道研究。它不是攻略，也不是打卡清单。它是一份可以读、可以走、可以传播的长卷——一份把 Paul Salopek 的中国段重新讲给中国人听的文化复刻路线。</p>
+        </div>
+        <div class="copy-block-meta">适合：公众号 / 长微博 / 视频简介</div>
+      </div>
+
+      <div class="launch-copy-card">
+        <div class="launch-copy-tag">项目 README 简介版</div>
+        <h4 class="launch-copy-title">120–200 字</h4>
+        <div class="copy-block">
+          <p class="copy-block-text">Out of Eden Walk 中国段复刻路线是基于 Paul Salopek 与国家地理 Out of Eden Walk 中国段公开材料整理的一份文化复刻路线页，对应官方 Milestone 74–95 全部 22 条，里程约 6,000–6,700 公里，从 2021 年秋至 2024 年 8 月历时两年多。</p>
+          <p class="copy-block-text">页面包含：事实审校（22/22 milestone、里程口径、黄海三层时间）、可旅行化（10 段路线 + 21–28 天精华版 + 6 段短线）、10 段随行导游词、长卷式文字地图、行前资料包、传播摘要、SEO 友好的发布包装。</p>
+          <p class="copy-block-text">v1.4.4 · 50% · 纯静态 HTML/CSS/Vanilla JS · 部署于 GitHub Pages。</p>
+        </div>
+        <div class="copy-block-meta">适合：GitHub README / 项目介绍 / 提交说明</div>
+      </div>
+
+    </div>
+  </section>
   <!-- 7. 资料与来源 -->
   <section id="sources" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
@@ -1482,10 +1618,73 @@
           <a href="../../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.4.3 · Out of Eden Walk 中国段复刻 · 叙事导览版 · 2026 · 此页为规划中文化复刻路线</div>
+        <div class="footer-credit">v1.4.4 · Out of Eden Walk 中国段复刻 · 发布包装版 · 50% · 2026 · 此页为规划中文化复刻路线</div>
       </div>
     </div>
   </footer>
+
+
+<!-- 返回顶部按钮（v1.4.4 新增） -->
+  <button class="back-to-top" id="back-to-top" aria-label="返回顶部" title="返回顶部">↑</button>
+
+  <!-- 阅读进度 + 返回顶部脚本（v1.4.4 新增 · 内联无依赖） -->
+  <script>
+    (function () {
+      'use strict';
+      // 阅读进度条
+      var progress = document.getElementById('reading-progress');
+      var backBtn = document.getElementById('back-to-top');
+      if (!progress && !backBtn) return;
+
+      function updateProgress() {
+        if (!progress) return;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var docHeight = (document.documentElement.scrollHeight - window.innerHeight) || 1;
+        var pct = Math.max(0, Math.min(100, (scrollTop / docHeight) * 100));
+        progress.style.width = pct + '%';
+      }
+
+      function updateBackToTop() {
+        if (!backBtn) return;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > 600) {
+          backBtn.classList.add('back-to-top-visible');
+        } else {
+          backBtn.classList.remove('back-to-top-visible');
+        }
+      }
+
+      function scrollToTop() {
+        try {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } catch (e) {
+          window.scrollTo(0, 0);
+        }
+      }
+
+      // 节流
+      var ticking = false;
+      function onScroll() {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            updateProgress();
+            updateBackToTop();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll, { passive: true });
+      if (backBtn) {
+        backBtn.addEventListener('click', scrollToTop);
+      }
+      // 初始
+      updateProgress();
+      updateBackToTop();
+    })();
+  </script>
 
 </body>
 </html>

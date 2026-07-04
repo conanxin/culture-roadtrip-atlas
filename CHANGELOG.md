@@ -4,6 +4,28 @@
 
 ---
 
+## v1.4.4 · Out of Eden Walk China Phase 4 · Launch Package (2026-07-04)
+
+### 主要变更
+- **页面体验增强**：新增快速阅读目录（10 个锚点）、阅读进度条（顶部细线）、返回顶部按钮（滚动 600px 后出现）
+- **移动端长表格**：Milestones 表格 + 21–28 天精华版表格外层包裹 `.mobile-scroll-table`，加 `← 左右滑动 →` 提示
+- **本页状态卡片**：v1.4.4 · 50% · 已交付：事实审校/可旅行化/叙事导览/发布包装
+- **适合谁使用**：4 类适合人群 + 4 类不适合人群（卡片式布局）
+- **首页推荐位**：OEDW 卡片新增 `代表长线 · 已完成 Phase 4` 渐变徽章 + 边框高亮 + 进度 30% → 50%
+- **SEO polish**：title 加副标题、canonical 链接、og:site_name / og:locale、Twitter Card（summary 类型）
+- **发布文案模块**：朋友圈版（100–180 字）/ 小红书版（标题+正文）/ 公众号导语版（400–600 字）/ README 简介版（120–200 字），共 4 个可复制文本块
+- **JS 新增**：内联 26 行 Vanilla JS · 阅读进度 + 返回顶部 · requestAnimationFrame 节流 · 无依赖 · JS 禁用时不影响阅读
+- **CSS 新增**：reading-progress / quick-read-nav / page-status-card / audience-grid / mobile-scroll-table / scroll-hint / back-to-top / launch-copy-grid / featured-route-badge 等约 230 行
+
+### 重要边界
+- 不修改 v1.0 / v1.4 / v1.4.1 / v1.4.2 / v1.4.3 架构
+- 不回退 Phase 2 / Phase 3 事实边界
+- 不引入后端 / 数据库 / 地图 API / 构建系统
+- 不引入任何 JS 库（内联 Vanilla JS）
+- 不破坏辽塔 / 山西等其他页面
+
+---
+
 ## v1.4.3 · Out of Eden Walk China Phase 3 · Narrative Guide (2026-07-04)
 
 ### 主要变更

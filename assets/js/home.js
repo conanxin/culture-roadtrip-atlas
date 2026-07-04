@@ -53,8 +53,9 @@
         : `<div class="trip-progress"><div class="trip-progress-bar" style="width: ${trip.progress}%"></div></div><div class="trip-progress-label">规划进度 ${trip.progress}%</div>`;
 
       html += `
-        <article class="trip-card${trip.isFeatured ? ' trip-card-featured' : ''}" data-trip-id="${trip.id}">
+        <article class="trip-card${trip.isFeatured ? ' trip-card-featured' : ''}${trip.isLongRoute ? ' trip-card-long' : ''}" data-trip-id="${trip.id}">
           ${trip.isFeatured ? '<div class="trip-featured-tag">⭐ Featured Trip</div>' : ''}
+          ${trip.isLongRoute && trip.longRouteBadge ? '<div class="featured-route-badge">' + trip.longRouteBadge + '</div>' : ''}
           <div class="trip-card-header">
             <h3 class="trip-card-title">${trip.name}</h3>
             <p class="trip-card-subtitle">${trip.oneLine}</p>
