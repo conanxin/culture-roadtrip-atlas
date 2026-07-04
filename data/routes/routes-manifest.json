@@ -1,0 +1,51 @@
+{
+  "version": "v1.4.7",
+  "updated_at": "2026-07-05",
+  "description": "Culture Roadtrip Atlas route data registry. All route data are cultural replica rough points, not real-time navigation data. Each entry is a static, reusable data asset for research, writing, and trip planning.",
+  "routes": [
+    {
+      "slug": "out-of-eden-walk-china",
+      "title": "Out of Eden Walk 中国段复刻路线",
+      "status": "50%",
+      "route_type": "cultural_replica",
+      "segments": 10,
+      "points": 42,
+      "geojson_features": 53,
+      "gpx_waypoints": 42,
+      "has_svg_preview": true,
+      "is_original_gps_track": false,
+      "for_navigation": false,
+      "approximate_distance_km": "6000-6700",
+      "time_span": "2021 秋 → 2023 冬 → 2024.6 → 2024.8",
+      "data_version": "v1.4.7",
+      "page_url": "../trips/out-of-eden-walk-china/",
+      "csv_url": "../data/routes/out-of-eden-walk-china.csv",
+      "geojson_url": "../data/routes/out-of-eden-walk-china.geojson",
+      "gpx_url": "../data/routes/out-of-eden-walk-china.gpx",
+      "svg_url": "../assets/img/routes/out-of-eden-walk-china-map.svg",
+      "route_template": "Long-distance cultural replica (Paul Salopek footprints)"
+    },
+    {
+      "slug": "liao-tower-roadtrip",
+      "title": "北京出发·辽塔巡礼自驾导游手册",
+      "status": "data-v0.1",
+      "route_type": "cultural_roadtrip",
+      "segments": 9,
+      "points": 20,
+      "geojson_features": 30,
+      "gpx_waypoints": 20,
+      "has_svg_preview": true,
+      "is_original_gps_track": false,
+      "for_navigation": false,
+      "approximate_distance_km": "2000-2400",
+      "time_span": "9 天 8 晚 闭环自驾",
+      "data_version": "v1.4.7",
+      "page_url": "../trips/liao-tower-roadtrip/",
+      "csv_url": "../data/routes/liao-tower-roadtrip.csv",
+      "geojson_url": "../data/routes/liao-tower-roadtrip.geojson",
+      "gpx_url": "../data/routes/liao-tower-roadtrip.gpx",
+      "svg_url": "../assets/img/routes/liao-tower-roadtrip-map.svg",
+      "route_template": "Self-driving cultural heritage route"
+    }
+  ]
+}

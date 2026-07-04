@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" preserveAspectRatio="xMidYMid meet">
+  <title>北京出发·辽塔巡礼自驾导游手册 · 文化自驾粗点路线 · 文化自驾静态示意图</title>
+  <desc>文化自驾 waypoints and generalized route only; not original GPS track; not for navigation; cultural replica. Not real-time road conditions; not for safety guidance. | 文化自驾粗点 + 概括路线;非原始 GPS 轨迹;非导航;不保证路况与开放状态。本数据为研究、写作与旅行规划参考;本数据为'北京出发·辽塔巡礼自驾导游手册'的文化自驾粗点数据;基于项目内路线页面整理;不是实时导航路线;不用于路况、安全、开放状态判断;坐标为城市/景区/地标粗点。</desc>
+  <style>
+    .bg { fill: #fbf7ec; }
+    .frame { fill: none; stroke: #d4c89a; stroke-width: 1; }
+    .route-main { fill: none; stroke: #6b8e23; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
+    .route-seg { fill: none; stroke: #9caf6f; stroke-width: 1.4; stroke-dasharray: 4 3; opacity: 0.7; }
+    .point { fill: #b8860b; stroke: #fff; stroke-width: 1.2; }
+    .point-start { fill: #5d8a3a; stroke: #fff; stroke-width: 1.6; }
+    .point-end { fill: #a8423a; stroke: #fff; stroke-width: 1.6; }
+    .seg-label { fill: #2a3d1f; font: 600 11px sans-serif; }
+    .point-label { fill: #6b7c5f; font: 9px sans-serif; }
+    .start-label { fill: #5d8a3a; font: 700 12px sans-serif; }
+    .end-label { fill: #a8423a; font: 700 12px sans-serif; }
+    .title { fill: #2a3d1f; font: 700 16px sans-serif; }
+    .subtitle { fill: #6b7c5f; font: 11px sans-serif; }
+    .legend-text { fill: #2a3d1f; font: 10px sans-serif; }
+    .disclaimer { fill: #c0392b; font: italic 11px sans-serif; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+  <rect class="frame" x="0.5" y="0.5" width="1199" height="759" fill="none"/>
+  <line x1="768.6" y1="0" x2="768.6" y2="760" stroke="#d4c89a" stroke-width="0.5" stroke-dasharray="1 4" opacity="0.4"/>
+  <line x1="0" y1="657.4" x2="1200" y2="657.4" stroke="#d4c89a" stroke-width="0.5" stroke-dasharray="1 4" opacity="0.4"/>
+  <g id="route-segments">
+    <polyline class="route-seg" points="109.1,670.9 975.4,502.6"/>
+    <polyline class="route-seg" points="996.2,441.1 999.9,436.1"/>
+    <polyline class="route-seg" points="1089.8,395.8 1090.9,395.3 1077.0,395.8"/>
+    <polyline class="route-seg" points="852.8,434.6 852.8,435.7"/>
+    <polyline class="route-seg" points="649.3,508.9 564.4,338.2"/>
+    <polyline class="route-seg" points="524.4,159.8 654.8,96.2"/>
+    <polyline class="route-seg" points="658.4,96.2 656.6,89.1"/>
+    <polyline class="route-seg" points="647.4,431.2 645.6,431.2 378.5,522.9"/>
+    <polyline class="route-seg" points="390.1,517.7 109.1,670.9"/>
+  </g>
+  <g id="route-main">
+    <polyline class="route-main" points="109.1,670.9 975.4,502.6 996.2,441.1 999.9,436.1 1089.8,395.8 1090.9,395.3 1077.0,395.8 852.8,434.6 852.8,435.7 649.3,508.9 564.4,338.2 524.4,159.8 654.8,96.2 658.4,96.2 656.6,89.1 647.4,431.2 645.6,431.2 378.5,522.9 390.1,517.7 109.1,670.9"/>
+  </g>
+  <g id="points">
+    <circle class="point-start" cx="109.1" cy="670.9" r="6"/>
+    <circle class="point" cx="975.4" cy="502.6" r="3.2"/>
+    <circle class="point" cx="996.2" cy="441.1" r="3.2"/>
+    <circle class="point" cx="999.9" cy="436.1" r="3.2"/>
+    <circle class="point" cx="1089.8" cy="395.8" r="3.2"/>
+    <circle class="point" cx="1090.9" cy="395.3" r="3.2"/>
+    <circle class="point" cx="1077.0" cy="395.8" r="3.2"/>
+    <circle class="point" cx="852.8" cy="434.6" r="3.2"/>
+    <circle class="point" cx="852.8" cy="435.7" r="3.2"/>
+    <circle class="point" cx="649.3" cy="508.9" r="3.2"/>
+    <circle class="point" cx="564.4" cy="338.2" r="3.2"/>
+    <circle class="point" cx="524.4" cy="159.8" r="3.2"/>
+    <circle class="point" cx="654.8" cy="96.2" r="3.2"/>
+    <circle class="point" cx="658.4" cy="96.2" r="3.2"/>
+    <circle class="point" cx="656.6" cy="89.1" r="3.2"/>
+    <circle class="point" cx="647.4" cy="431.2" r="3.2"/>
+    <circle class="point" cx="645.6" cy="431.2" r="3.2"/>
+    <circle class="point" cx="378.5" cy="522.9" r="3.2"/>
+    <circle class="point" cx="390.1" cy="517.7" r="3.2"/>
+    <circle class="point-end" cx="109.1" cy="670.9" r="6"/>
+  </g>
+  <g id="segment-labels">
+    <text class="seg-label" x="542.3" y="586.7" text-anchor="middle">S01</text>
+    <text class="seg-label" x="998.0" y="438.6" text-anchor="middle">S02</text>
+    <text class="seg-label" x="1085.9" y="395.7" text-anchor="middle">S03</text>
+    <text class="seg-label" x="852.8" y="435.1" text-anchor="middle">S04</text>
+    <text class="seg-label" x="606.8" y="423.6" text-anchor="middle">S05</text>
+    <text class="seg-label" x="589.6" y="128.0" text-anchor="middle">S06</text>
+    <text class="seg-label" x="657.5" y="92.6" text-anchor="middle">S07</text>
+    <text class="seg-label" x="557.2" y="461.8" text-anchor="middle">S08</text>
+    <text class="seg-label" x="249.6" y="594.3" text-anchor="middle">S09</text>
+  </g>
+  <g id="endpoint-labels">
+    <text class="start-label" x="119.1" y="662.9">起点:北京</text>
+    <text class="end-label" x="119.1" y="662.9">终点:北京</text>
+  </g>
+  <g id="header">
+    <text class="title" x="60" y="34">北京出发·辽塔巡礼自驾导游手册 · 文化自驾粗点路线 · 文化自驾静态示意图</text>
+    <text class="subtitle" x="60" y="52">约 2000-2400 公里 · 9 天 8 晚闭环自驾 · 20 个粗点 · 9 段路线 · v1.4.7</text>
+  </g>
+  <g id="legend" transform="translate(60, 680)">
+    <rect class="frame" x="0" y="0" width="540" height="64" rx="4" fill="#fff" opacity="0.92"/>
+    <circle class="point-start" cx="14" cy="14" r="6"/>
+    <text class="legend-text" x="28" y="18">起点</text>
+    <circle class="point" cx="120" cy="14" r="3.2"/>
+    <text class="legend-text" x="132" y="18">文化自驾粗点(20 个)</text>
+    <circle class="point-end" cx="370" cy="14" r="6"/>
+    <text class="legend-text" x="384" y="18">终点</text>
+    <line x1="14" y1="38" x2="40" y2="38" class="route-main"/>
+    <text class="legend-text" x="50" y="42">主路线(概括连接)</text>
+    <line x1="200" y1="38" x2="240" y2="38" class="route-seg"/>
+    <text class="legend-text" x="250" y="42">分段路线(S01-S09)</text>
+    <text class="disclaimer" x="0" y="60">⚠ 文化自驾粗点 · 非原始 GPS 轨迹 / not original GPS · 非导航 / not for navigation · 不保证路况与开放状态</text>
+  </g>
+  <g id="footer">
+    <text class="legend-text" x="1140" y="740" text-anchor="end">Generated by render-route-map-svg.py · 行旅图谱 v1.4.7 · 2026-07-05</text>
+  </g>
+</svg>

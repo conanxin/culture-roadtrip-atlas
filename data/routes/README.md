@@ -2,8 +2,8 @@
 
 > 把行旅图谱中的人文路线沉淀为可下载、可审校、可复用的数据资产。
 
-**最后更新：** 2026-07-04
-**项目版本：** v1.4.5
+**最后更新：** 2026-07-05
+**项目版本：** v1.4.7
 **数据精度：** 文化复刻粗点（approximate）
 
 ---
@@ -24,15 +24,14 @@
 
 ## 二、当前数据文件
 
-| 文件 | 格式 | 用途 | 大小 |
+| slug | 格式 | 用途 | 大小 |
 |------|------|------|------|
-| `out-of-eden-walk-china.csv` | CSV | 表格分析、Excel / Pandas | ~7 KB |
-| `out-of-eden-walk-china.geojson` | GeoJSON | QGIS / geojson.io / Leaflet 静态地图 | ~14 KB |
-| `out-of-eden-walk-china.gpx` | GPX 1.1 | 粗略 waypoint 查看（不可导航）| ~12 KB |
+| `out-of-eden-walk-china` | CSV / GeoJSON / GPX | 表格分析 + 静态地图 + 粗略 waypoint | 7 / 14 / 12 KB |
+| `liao-tower-roadtrip` | CSV / GeoJSON / GPX | 表格分析 + 静态地图 + 粗略 waypoint | 4.7 / 10 / 8 KB |
 
 未来规划：
-- `liao-tower-roadtrip.csv/geojson/gpx` （规划中）
-- `shanxi-ancient-architecture-roadtrip.csv/geojson/gpx` （规划中）
+- `shanxi-ancient-architecture-roadtrip.csv/geojson/gpx` （v1.5.0 规划中）
+- `beijing-periphery-roadtrip.csv/geojson/gpx` （v1.5.0 规划中）
 
 ---
 
@@ -183,10 +182,10 @@ open data/routes/out-of-eden-walk-china.gpx
 
 ---
 
-## 七、未来 Phase 6 可扩展方向
+## 七、未来可扩展方向
 
 1. **多路线数据化**
-   - 辽塔巡礼路线数据（v1.5.0）
+   - ✅ 辽塔巡礼路线数据（v1.4.7）
    - 山西古建路线数据（v1.5.0）
    - 其他规划中路线
 
@@ -203,6 +202,97 @@ open data/routes/out-of-eden-walk-china.gpx
    - 自动检查坐标范围（中国境内）
    - 自动检查字段完整性
    - 与路线页内容的一致性检查
+
+---
+
+## 八、路线 manifest（v1.4.7 新增）
+
+本目录下的 `routes-manifest.json` 是项目级路线登记表：
+
+```json
+{
+  "version": "v1.4.7",
+  "routes": [
+    { "slug": "out-of-eden-walk-china", "title": "...", "status": "50%", "points": 42, ... },
+    { "slug": "liao-tower-roadtrip", "title": "...", "status": "data-v0.1", "points": 20, ... }
+  ]
+}
+```
+
+manifest 用于：
+
+- `validate-route-data.py --all` 遍历所有路线
+- `render-route-map-svg.py --all` 生成所有 SVG
+- `routes/index.html` 展示多路线卡片
+- 其他脚本的数据资产清单
+
+新增或修改路线后必须同步更新 manifest。
+
+---
+
+## 九、多路线使用方式（v1.4.7 新增）
+
+```bash
+# 校验单条路线
+python3 scripts/validate-route-data.py out-of-eden-walk-china
+python3 scripts/validate-route-data.py liao-tower-roadtrip
+
+# 校验所有路线（读取 manifest）
+python3 scripts/validate-route-data.py --all
+
+# 生成单条路线 SVG
+python3 scripts/render-route-map-svg.py out-of-eden-walk-china
+python3 scripts/render-route-map-svg.py liao-tower-roadtrip
+
+# 生成所有路线 SVG（读取 manifest）
+python3 scripts/render-route-map-svg.py --all
+
+# 生成默认（兼容旧版）
+python3 scripts/validate-route-data.py
+python3 scripts/render-route-map-svg.py
+```
+
+详细规范见：
+
+- `docs/ROUTE_DATA_SPEC.md` · 通用路线数据规范
+- `docs/ROUTE_PAGE_TEMPLATE.md` · 通用路线页面模板
+
+---
+
+## 十、当前数据资产表（v1.4.7）
+
+| slug | route | status | csv | geojson | gpx | svg |
+|------|-------|--------|-----|---------|-----|-----|
+| `out-of-eden-walk-china` | Out of Eden Walk 中国段 | 50% | ✅ | ✅ | ✅ | ✅ |
+| `liao-tower-roadtrip` | 北京出发·辽塔巡礼 | data-v0.1 | ✅ | ✅ | ✅ | ✅ |
+
+---
+
+## Phase 7 · 路线数据模板化与多路线复用（v1.4.7 新增）
+
+### 本阶段变更
+
+- 新增通用路线数据规范：`docs/ROUTE_DATA_SPEC.md`
+- 新增通用路线页面模板：`docs/ROUTE_PAGE_TEMPLATE.md`
+- 新增路线 manifest：`data/routes/routes-manifest.json`
+- 增强 `validate-route-data.py`：支持任意路线 slug、--all 模式、路线级别阈值
+- 增强 `render-route-map-svg.py`：支持任意路线 slug、--all 模式、动态 title/desc
+- 新增辽塔巡礼路线 CSV / GeoJSON / GPX / SVG（20 个粗点、9 段路线）
+- 优化 `route-data-viewer.js`：去除 OEDW 硬编码、通用化 fallback 下载链接
+
+### 数据资产
+
+| slug | 状态 | CSV | GeoJSON | GPX | SVG |
+|------|------|-----|---------|-----|-----|
+| out-of-eden-walk-china | 50% | 42 行 | 53 features | 42 waypoints | ✅ |
+| liao-tower-roadtrip | data-v0.1 | 20 行 | 30 features | 20 waypoints | ✅ |
+
+### 路线样板定位
+
+- **OEDW**：长距离文化复刻样板（Paul Salopek 足迹）
+- **辽塔**：自驾人文路线样板（北京出发 9 天 8 晚闭环）
+
+后续山西古建、北京周边等路线可继续复用同一套规范与脚本。
 
 ---
 

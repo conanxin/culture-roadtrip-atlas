@@ -670,3 +670,33 @@ assets/img/routes/<slug>-map.svg
 
 ---
 
+
+## Phase 7 · 路线数据模板化与多路线复用（v1.4.7 · 2026-07-05）
+
+Phase 7 完成路线数据模板化与多路线复用：
+
+- **新增 ROUTE_DATA_SPEC**（docs/ROUTE_DATA_SPEC.md）· 通用路线数据规范 v1.0
+  - 定位 / 文件结构 / CSV 18 字段 / 4 类枚举 / GeoJSON / GPX / SVG 规范
+- **新增 ROUTE_PAGE_TEMPLATE**（docs/ROUTE_PAGE_TEMPLATE.md）· 通用路线页面模板 v1.0
+  - head 模板 / 19 个模块顺序 / 关键模块示例 / 状态进度建议
+- **新增 routes-manifest**（data/routes/routes-manifest.json）
+  - 项目级路线登记表 · v1.4.7 · 2 条路线
+- **校验脚本支持任意路线**：`scripts/validate-route-data.py`
+  - 任意 slug / `--all` / 路线级别阈值 / 通用化校验
+- **SVG 生成脚本支持任意路线**：`scripts/render-route-map-svg.py`
+  - 任意 slug / `--all` / 动态 title/desc / 中英文双语声明
+- **辽塔巡礼成为第二条路线数据资产**：
+  - CSV 20 行 · GeoJSON 30 features · GPX 20 waypoints · SVG 6.8 KB
+  - 文化自驾粗点 · 9 段路线 · 9 天 8 晚闭环
+- **路线数据查看器通用化**：`assets/js/route-data-viewer.js`
+  - 去除 OEDW 硬编码 · fallback 下载链接根据 geoUrl 推断 slug
+- **路线数据索引页增强**：`routes/index.html`
+  - 路线数据资产总览 + 辽塔巡礼数据卡片 + 多路线规范模块
+- **首页 trip 卡片增强**：
+  - "已接入路线数据" 标识 + 数据元信息链接
+- **事实边界严格保留**：
+  - OEDW 22/22 / 6,000–6,700 公里 / 两年多 / 黄海三层时间 / 文化复刻粗点
+- **反模式坚持**：
+  - 不引入地图 API / 不引入构建系统 / 不引入 npm 依赖
+
+后续山西古建、北京周边等路线可继续复用同一套规范与脚本。

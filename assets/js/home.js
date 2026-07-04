@@ -56,6 +56,7 @@
         <article class="trip-card${trip.isFeatured ? ' trip-card-featured' : ''}${trip.isLongRoute ? ' trip-card-long' : ''}" data-trip-id="${trip.id}">
           ${trip.isFeatured ? '<div class="trip-featured-tag">⭐ Featured Trip</div>' : ''}
           ${trip.isLongRoute && trip.longRouteBadge ? '<div class="featured-route-badge">' + trip.longRouteBadge + '</div>' : ''}
+          ${trip.hasRouteData ? '<div class="route-data-badge-inline" title="已接入路线数据资产">📊 已接入路线数据</div>' : ''}
           <div class="trip-card-header">
             <h3 class="trip-card-title">${trip.name}</h3>
             <p class="trip-card-subtitle">${trip.oneLine}</p>
@@ -90,6 +91,7 @@
             <span class="trip-status ${statusClass}">${trip.status}</span>
             ${buttonHtml}
           </div>
+          ${trip.hasRouteData ? `<div class="trip-card-data-meta">📊 路线数据：<a href="routes/index.html#${trip.dataAssetSlug}">${trip.dataAssetPoints} 个粗点 · ${trip.dataAssetSegments} 段 · ${trip.dataAssetStatus}</a></div>` : ''}
         </article>
       `;
     });

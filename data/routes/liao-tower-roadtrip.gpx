@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="行旅图谱 v1.4.7 · culture-roadtrip-atlas"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>北京出发·辽塔巡礼自驾导游手册 · 文化自驾粗点路线</name>
+    <desc>Cultural roadtrip waypoints and generalized self-driving preview only; not an original GPS track; not for navigation; cultural replica. 9-day self-driving loop from Beijing via Jinzhou, Yixian, Beizhen, Chaoyang, Chifeng, Lin Dong to Chengde and back. Not real-time road conditions.</desc>
+    <author>
+      <name>Xin Conan · 行旅图谱</name>
+      <email>conanxin@local</email>
+    </author>
+    <copyright author="Xin Conan">
+      <year>2026</year>
+      <license>CC BY-NC 4.0 (cultural roadtrip data only)</license>
+    </copyright>
+    <link href="https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/">
+      <text>北京出发·辽塔巡礼自驾导游手册</text>
+    </link>
+    <time>2026-07-05T00:00:00Z</time>
+    <keywords>Liao tower, self-driving, cultural roadtrip, Beijing, Liaoning, Inner Mongolia, Hebei, cultural replica, not for navigation, not original GPS</keywords>
+    <bounds minlat="39.9042" minlon="116.4074" maxlat="44.0200" maxlon="121.7560"/>
+  </metadata>
+
+  <wpt lat="39.9042" lon="116.4074">
+    <ele>0</ele>
+    <name>北京</name>
+    <cmt>北京出发线 · Beijing · 精度:city</cmt>
+    <desc>id=LTR-P001 · seq=1 · E_project_internal · high · 难度:easy · 最佳:Apr-Oct · 北京首都国际机场 / 北京大兴机场 / 高铁北京 · 风险:出发地,无特殊风险 · 来源:行旅图谱辽塔路线 S01 起点 · URL:https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/ · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.0950" lon="121.1268">
+    <ele>0</ele>
+    <name>锦州</name>
+    <cmt>北京出发线 · Jinzhou · 精度:city</cmt>
+    <desc>id=LTR-P002 · seq=2 · E_project_internal · medium · 难度:easy · 最佳:Apr-Oct · 京哈高速 G1 / 高铁锦州南 · 风险:长途自驾,注意疲劳 · 来源:行旅图谱辽塔路线 S01 当晚驻点 · URL:https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/ · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.5300" lon="121.2400">
+    <ele>0</ele>
+    <name>义县奉国寺</name>
+    <cmt>义县佛教遗存线 · Yixian · 精度:landmark</cmt>
+    <desc>id=LTR-P003 · seq=3 · E_project_internal · medium · 难度:easy · 最佳:May-Oct · 义县县城 / G2512 高速义县出口 · 风险:辽代木构大殿,需注意开放时间 · 来源:义县奉国寺 辽代木构 1961 国保 · URL:http://www.fengguosi.cn/ · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.5650" lon="121.2600">
+    <ele>0</ele>
+    <name>义县万佛堂石窟</name>
+    <cmt>义县佛教遗存线 · Yixian · 精度:landmark</cmt>
+    <desc>id=LTR-P004 · seq=4 · E_project_internal · medium · 难度:easy · 最佳:May-Oct · 义县西北 9 公里 / 大凌河西岸 · 风险:石窟小众点位,需关注保护情况 · 来源:万佛堂石窟 北魏石窟 1988 国保 · URL:https://baike.baidu.com/item/%E4%B8%87%E4%BD%9B%E5%A0%82%E7%9F%B3%E7%AA%9F · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.8500" lon="121.7500">
+    <ele>0</ele>
+    <name>北镇市区</name>
+    <cmt>北镇医巫闾山线 · Beizhen · 精度:city</cmt>
+    <desc>id=LTR-P005 · seq=5 · E_project_internal · medium · 难度:easy · 最佳:Apr-Oct · 京哈高速 G1 转 G16 / 北镇市区 · 风险:城市级驻点,周边餐饮成熟 · 来源:北镇原名广宁,辽代显州 · URL:https://baike.baidu.com/item/%E5%8C%97%E9%95%87 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.8540" lon="121.7560">
+    <ele>0</ele>
+    <name>北镇崇兴寺双塔</name>
+    <cmt>北镇医巫闾山线 · Beizhen · 精度:landmark</cmt>
+    <desc>id=LTR-P006 · seq=6 · E_project_internal · medium · 难度:easy · 最佳:Apr-Oct · 北镇市区东北 / 步行可达 · 风险:辽代双塔,2013 国保;周边有街区 · 来源:崇兴寺双塔 辽代 2013 国保第七批 · URL:https://baike.baidu.com/item/%E5%B4%87%E5%85%B4%E5%AF%BA%E5%8F%8C%E5%A1%94 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.8500" lon="121.6800">
+    <ele>0</ele>
+    <name>医巫闾山</name>
+    <cmt>北镇医巫闾山线 · Beizhen · 精度:region</cmt>
+    <desc>id=LTR-P007 · seq=7 · E_project_internal · medium · 难度:medium · 最佳:May-Oct · 北镇市区西 / 山体区域 · 风险:山地区域,需注意天气与封山 · 来源:医巫闾山 五镇山之一 1982 国家级 · URL:https://baike.baidu.com/item/%E5%8C%BB%E5%B7%AB%E9%97%B8%E5%B1%B1 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.5760" lon="120.4590">
+    <ele>0</ele>
+    <name>朝阳北塔</name>
+    <cmt>朝阳辽塔线 · Chaoyang · 精度:landmark</cmt>
+    <desc>id=LTR-P008 · seq=8 · E_project_internal · high · 难度:easy · 最佳:Apr-Oct · 朝阳市内 / 慕容街北端 · 风险:前燕 / 北魏 / 隋唐 / 辽多层;1988 国保 · 来源:朝阳北塔 五世同堂 1988 国保第三批 · URL:https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8C%97%E5%A1%94 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.5680" lon="120.4590">
+    <ele>0</ele>
+    <name>朝阳南塔</name>
+    <cmt>朝阳辽塔线 · Chaoyang · 精度:landmark</cmt>
+    <desc>id=LTR-P009 · seq=9 · E_project_internal · medium · 难度:easy · 最佳:Apr-Oct · 朝阳市内 / 北塔南侧 · 风险:辽代南塔,与北塔对望 · 来源:朝阳南塔 辽代砖塔 · URL:https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8D%97%E5%A1%94 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.0500" lon="119.3500">
+    <ele>0</ele>
+    <name>牛河梁国家考古遗址公园</name>
+    <cmt>朝阳赤峰转场线 · Niuheliang / Lingyuan · 精度:region</cmt>
+    <desc>id=LTR-P010 · seq=10 · E_project_internal · medium · 难度:medium · 最佳:May-Oct · 凌源市东 / 长深高速 G25 · 风险:红山文化核心;需提前预约 · 来源:牛河梁 红山文化 2012 入选国家考古遗址公园 · URL:https://baike.baidu.com/item/%E7%89%9B%E6%B2%B3%E6%A2%81%E9%81%97%E5%9D%80%E5%85%AC%E5%9B%AD · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="42.2580" lon="118.8880">
+    <ele>0</ele>
+    <name>赤峰市区</name>
+    <cmt>朝阳赤峰转场线 · Chifeng · 精度:city</cmt>
+    <desc>id=LTR-P011 · seq=11 · E_project_internal · medium · 难度:easy · 最佳:Apr-Oct · 长深高速 G25 转大广高速 G45 / 赤峰 · 风险:转场城市,餐饮齐全 · 来源:赤峰 红山命名地,辽代重要州城 · URL:https://baike.baidu.com/item/%E8%B5%A4%E5%B3%B0%E5%B8%82 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="43.5200" lon="118.6700">
+    <ele>0</ele>
+    <name>庆州白塔</name>
+    <cmt>庆州白塔林东线 · Bairin Right Banner · 精度:landmark</cmt>
+    <desc>id=LTR-P012 · seq=12 · E_project_internal · medium · 难度:medium · 最佳:May-Sep · 巴林右旗索博日嘎镇 / 远离高速 · 风险:辽代释迦佛舍利塔;偏远点位 · 来源:庆州白塔 辽代 2013 国保第七批 · URL:https://baike.baidu.com/item/%E5%BA%86%E5%B7%9E%E7%99%BD%E5%A1%94 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="43.9700" lon="119.3800">
+    <ele>0</ele>
+    <name>林东(巴林左旗)</name>
+    <cmt>庆州白塔林东线 · Bairin Left Banner · 精度:city</cmt>
+    <desc>id=LTR-P013 · seq=13 · E_project_internal · medium · 难度:easy · 最佳:May-Sep · G303 / 巴林左旗旗政府 · 风险:辽上京所在地,夜宿地 · 来源:巴林左旗 辽代祖州祖陵所在 · URL:https://baike.baidu.com/item/%E5%B7%B4%E6%9E%97%E5%B7%A6%E6%97%97 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="43.9700" lon="119.4000">
+    <ele>0</ele>
+    <name>辽上京遗址</name>
+    <cmt>辽上京核心日 · Bairin Left Banner · 精度:landmark</cmt>
+    <desc>id=LTR-P014 · seq=14 · E_project_internal · medium · 难度:easy · 最佳:May-Oct · 林东镇东南 / 步行可达 · 风险:契丹建国之都,1961 国保;现场保护有限 · 来源:辽上京遗址 1961 国保第一批 · URL:https://baike.baidu.com/item/%E8%BE%BD%E4%B8%8A%E5%8D%8A%E9%81%97%E5%9D%80 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="44.0200" lon="119.3900">
+    <ele>0</ele>
+    <name>真寂之寺</name>
+    <cmt>辽上京核心日 · Bairin Left Banner · 精度:landmark</cmt>
+    <desc>id=LTR-P015 · seq=15 · E_project_internal · medium · 难度:easy · 最佳:May-Oct · 林东镇北 / 杏花山下 · 风险:辽代石窟,较小众;关注开放 · 来源:真寂之寺 辽代石窟 · URL:https://baike.baidu.com/item/%E7%9C%9F%E5%AF%82%E4%B9%8B%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.6000" lon="119.3400">
+    <ele>0</ele>
+    <name>宁城</name>
+    <cmt>辽中京宁城承德线 · Ningcheng · 精度:city</cmt>
+    <desc>id=LTR-P016 · seq=16 · E_project_internal · medium · 难度:easy · 最佳:May-Oct · 赤凌高速 / 宁城县 · 风险:辽中京过境地 · 来源:宁城县 辽代中京道范围 · URL:https://baike.baidu.com/item/%E5%AE%81%E5%9F%8E%E5%8E%BF · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="41.6000" lon="119.3300">
+    <ele>0</ele>
+    <name>大明塔(辽中京塔)</name>
+    <cmt>辽中京宁城承德线 · Ningcheng · 精度:landmark</cmt>
+    <desc>id=LTR-P017 · seq=17 · E_project_internal · medium · 难度:easy · 最佳:May-Oct · 宁城县铁匠营子村 / 辽中京遗址 · 风险:现存辽塔第一高,82.6 米 · 来源:大明塔 辽代 2013 国保第七批 · URL:https://baike.baidu.com/item/%E5%A4%A7%E6%98%8E%E5%A1%94 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="40.9510" lon="117.8750">
+    <ele>0</ele>
+    <name>承德市区</name>
+    <cmt>辽中京宁城承德线 · Chengde · 精度:city</cmt>
+    <desc>id=LTR-P018 · seq=18 · E_project_internal · medium · 难度:easy · 最佳:Apr-Oct · 长深高速 G25 / 京承高铁 · 风险:清代热河;夜宿地 · 来源:承德 清代热河驻地 · URL:https://baike.baidu.com/item/%E6%89%BF%E5%BE%B7%E5%B8%82 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="40.9880" lon="117.9380">
+    <ele>0</ele>
+    <name>避暑山庄</name>
+    <cmt>承德北京收束线 · Chengde · 精度:landmark</cmt>
+    <desc>id=LTR-P019 · seq=19 · E_project_internal · medium · 难度:easy · 最佳:Apr-Oct · 承德市区北部 / 步行可达 · 风险:清代皇家园林,1961 国保 · 来源:避暑山庄 1994 列入世界文化遗产 · URL:https://baike.baidu.com/item/%E9%81%BF%E6%9A%91%E5%B1%B1%E5%BA%84 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="39.9042" lon="116.4074">
+    <ele>0</ele>
+    <name>北京</name>
+    <cmt>承德北京收束线 · Beijing · 精度:city</cmt>
+    <desc>id=LTR-P020 · seq=20 · E_project_internal · high · 难度:easy · 最佳:All year · 京承高速 G45 / 京哈高铁 · 风险:返程驻点,需注意回程拥堵 · 来源:行旅图谱辽塔路线 S09 终点 · URL:https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/ · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+
+  <trk>
+    <name>辽塔巡礼自驾概括路线</name>
+    <cmt>9-day self-driving loop · cultural roadtrip replica · not for navigation · not original GPS</cmt>
+    <desc>Generalized self-driving preview connecting 20 cultural roadtrip waypoints across 9 segments (S01-S09). Beijing → Jinzhou → Yixian → Beizhen → Chaoyang → Chifeng → Lin Dong → Chengde → Beijing. Cultural replica waypoints only, not for navigation, not original GPS track, not real-time road conditions.</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip track</type>
+    <trkseg>
+      <!-- Segment S01: 北京出发线 -->
+      <trkpt lat="39.9042" lon="116.4074">
+        <ele>0</ele>
+        <name>北京</name>
+      </trkpt>
+      <trkpt lat="41.0950" lon="121.1268">
+        <ele>0</ele>
+        <name>锦州</name>
+      </trkpt>
+      <!-- Segment S02: 义县佛教遗存线 -->
+      <trkpt lat="41.5300" lon="121.2400">
+        <ele>0</ele>
+        <name>义县奉国寺</name>
+      </trkpt>
+      <trkpt lat="41.5650" lon="121.2600">
+        <ele>0</ele>
+        <name>义县万佛堂石窟</name>
+      </trkpt>
+      <!-- Segment S03: 北镇医巫闾山线 -->
+      <trkpt lat="41.8500" lon="121.7500">
+        <ele>0</ele>
+        <name>北镇市区</name>
+      </trkpt>
+      <trkpt lat="41.8540" lon="121.7560">
+        <ele>0</ele>
+        <name>北镇崇兴寺双塔</name>
+      </trkpt>
+      <trkpt lat="41.8500" lon="121.6800">
+        <ele>0</ele>
+        <name>医巫闾山</name>
+      </trkpt>
+      <!-- Segment S04: 朝阳辽塔线 -->
+      <trkpt lat="41.5760" lon="120.4590">
+        <ele>0</ele>
+        <name>朝阳北塔</name>
+      </trkpt>
+      <trkpt lat="41.5680" lon="120.4590">
+        <ele>0</ele>
+        <name>朝阳南塔</name>
+      </trkpt>
+      <!-- Segment S05: 朝阳赤峰转场线 -->
+      <trkpt lat="41.0500" lon="119.3500">
+        <ele>0</ele>
+        <name>牛河梁国家考古遗址公园</name>
+      </trkpt>
+      <trkpt lat="42.2580" lon="118.8880">
+        <ele>0</ele>
+        <name>赤峰市区</name>
+      </trkpt>
+      <!-- Segment S06: 庆州白塔林东线 -->
+      <trkpt lat="43.5200" lon="118.6700">
+        <ele>0</ele>
+        <name>庆州白塔</name>
+      </trkpt>
+      <trkpt lat="43.9700" lon="119.3800">
+        <ele>0</ele>
+        <name>林东(巴林左旗)</name>
+      </trkpt>
+      <!-- Segment S07: 辽上京核心日 -->
+      <trkpt lat="43.9700" lon="119.4000">
+        <ele>0</ele>
+        <name>辽上京遗址</name>
+      </trkpt>
+      <trkpt lat="44.0200" lon="119.3900">
+        <ele>0</ele>
+        <name>真寂之寺</name>
+      </trkpt>
+      <!-- Segment S08: 辽中京宁城承德线 -->
+      <trkpt lat="41.6000" lon="119.3400">
+        <ele>0</ele>
+        <name>宁城</name>
+      </trkpt>
+      <trkpt lat="41.6000" lon="119.3300">
+        <ele>0</ele>
+        <name>大明塔(辽中京塔)</name>
+      </trkpt>
+      <trkpt lat="40.9510" lon="117.8750">
+        <ele>0</ele>
+        <name>承德市区</name>
+      </trkpt>
+      <!-- Segment S09: 承德北京收束线 -->
+      <trkpt lat="40.9880" lon="117.9380">
+        <ele>0</ele>
+        <name>避暑山庄</name>
+      </trkpt>
+      <trkpt lat="39.9042" lon="116.4074">
+        <ele>0</ele>
+        <name>北京</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

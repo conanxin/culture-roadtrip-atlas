@@ -4,6 +4,42 @@
 
 ---
 
+## v1.4.7 · Route data templates and multi-route reuse (2026-07-05)
+
+### 主要变更
+- **新增规范文档**：`docs/ROUTE_DATA_SPEC.md`（通用路线数据规范 v1.0）
+- **新增页面模板**：`docs/ROUTE_PAGE_TEMPLATE.md`（通用路线页面模板 v1.0）
+- **新增 manifest**：`data/routes/routes-manifest.json`（项目级路线登记表）
+- **增强 `validate-route-data.py`**：支持任意 slug + `--all` 模式 + 路线级别阈值（OEDW / liao / 默认）
+- **增强 `render-route-map-svg.py`**：支持任意 slug + `--all` 模式 + 动态 title/desc + 中英文双语声明
+- **新增辽塔巡礼路线数据**：
+  - `data/routes/liao-tower-roadtrip.csv`（20 行 · 18 字段 · 9 段）
+  - `data/routes/liao-tower-roadtrip.geojson`（20 Point + 10 LineString）
+  - `data/routes/liao-tower-roadtrip.gpx`（20 waypoint + 1 track）
+  - `assets/img/routes/liao-tower-roadtrip-map.svg`（6.8 KB · 1200×760）
+- **优化 `route-data-viewer.js`**：去除 OEDW 硬编码、通用化 fallback 下载链接、根据 geoUrl 推断 slug
+- **增强 `routes/index.html`**：路线数据资产总览 + 辽塔巡礼数据卡片 + 多路线规范模块 + 总览统计
+- **优化 `trips-data.js` / `home.js`**：trip 卡片支持 "已接入路线数据" 标识 + 数据元信息链接
+- **CSS 新增**：`.route-data-badge-inline`、`.trip-card-data-meta`
+- **辽塔页面新增**：「路线数据」轻量模块（不动既有内容）
+- **首页更新**：路线数据索引说明增加辽塔、版本徽章 v1.4.7 + 2 条路线
+- **新增命令**：
+  - `python3 scripts/validate-route-data.py --all`
+  - `python3 scripts/render-route-map-svg.py --all`
+
+### 重要边界
+- 所有路线数据仍为**文化复刻 / 文化自驾粗点**
+- OEDW 事实边界完整保留（22/22 milestones、6,000–6,700 公里、两年多、黄海三层时间、文化复刻粗点）
+- SVG 必须包含 "not for navigation" / "cultural replica" / "not original GPS"（中英文）
+- 不引入地图 API / 后端 / 数据库 / 构建系统 / npm 依赖
+- 不破坏 OEDW / 辽塔 / 山西等页面
+- 不改动 Phase 2–6 事实边界
+
+### 文档链接
+- [docs/ROUTE_DATA_SPEC.md](./docs/ROUTE_DATA_SPEC.md)
+- [docs/ROUTE_PAGE_TEMPLATE.md](./docs/ROUTE_PAGE_TEMPLATE.md)
+- [data/routes/routes-manifest.json](./data/routes/routes-manifest.json)
+
 ## v1.4.6 · Out of Eden Walk China Phase 6 · Data-driven Map Preview (2026-07-04)
 
 ### 主要变更

@@ -26,7 +26,9 @@
         <a href="../index.html" class="nav-brand">← 行旅图谱</a>
         <div class="nav-links">
           <a href="#oedw" class="nav-link">Out of Eden Walk</a>
+          <a href="#liao-tower" class="nav-link">辽塔巡礼</a>
           <a href="#spec" class="nav-link">规范</a>
+          <a href="#multi-route" class="nav-link">多路线</a>
           <a href="#process" class="nav-link">流程</a>
           <a href="#future" class="nav-link">未来路线</a>
           <a href="#about" class="nav-link">关于</a>
@@ -38,7 +40,7 @@
   <!-- Hero 首屏 -->
   <section class="hero">
     <div class="container">
-      <div class="trip-skeleton-badge">🗂️ 路线数据索引 · v1.4.5</div>
+      <div class="trip-skeleton-badge">🗂️ 路线数据索引 · v1.4.7</div>
       <h1 class="hero-title">路线数据索引</h1>
       <p class="hero-subtitle">把行旅图谱中的人文路线沉淀为可下载、可审校、可复用的数据资产。<br>CSV / GeoJSON / GPX 三种格式 · 纯静态 · 长期可维护</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -63,6 +65,42 @@
         <li>所有点位均为<strong>文化复刻粗点</strong>，不是 Paul Salopek 原始 GPS 轨迹。</li>
         <li>出行前请独立核实交通、天气、管制与安全条件。</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- 路线资产总览（v1.4.7 新增） -->
+  <section class="container" style="margin-top: var(--space-2xl);">
+    <div class="city-card" style="max-width: 900px; margin: 0 auto;">
+      <h3 class="text-center" style="margin-bottom: var(--space-lg);">📦 路线数据资产总览 · v1.4.7</h3>
+      <div class="data-meta-list">
+        <div class="data-meta-item">
+          <span class="data-meta-label">路线数据资产</span>
+          <span class="data-meta-value">2 条</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">CSV 点位总数</span>
+          <span class="data-meta-value">62 个</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">GeoJSON Feature 总数</span>
+          <span class="data-meta-value">83</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">GPX waypoint 总数</span>
+          <span class="data-meta-value">62</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">SVG 预览</span>
+          <span class="data-meta-value">2 张</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">数据规范</span>
+          <span class="data-meta-value">通用化 v1.0（见 docs/ROUTE_DATA_SPEC.md）</span>
+        </div>
+      </div>
+      <p style="margin-top: var(--space-md); text-align: center; color: var(--color-text-secondary);">
+        所有路线使用同一套 CSV / GeoJSON / GPX / SVG 规范。manifest 集中登记，--all 脚本一次验证。
+      </p>
     </div>
   </section>
 
@@ -103,7 +141,7 @@
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-md);">Out of Eden Walk 中国段 · 路线数据</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
-      v1.4.5 · 50% · 文化复刻粗点 · 42 个点位 · 10 段路线
+      v1.4.7 · 50% · 文化复刻粗点 · 42 个点位 · 10 段路线
     </p>
 
     <div class="route-data-card">
@@ -118,7 +156,7 @@
       <div class="data-meta-list">
         <div class="data-meta-item">
           <span class="data-meta-label">数据版本</span>
-          <span class="data-meta-value">v1.4.5</span>
+          <span class="data-meta-value">v1.4.7</span>
         </div>
         <div class="data-meta-item">
           <span class="data-meta-label">点位数量</span>
@@ -167,7 +205,7 @@
         </div>
         <div class="data-meta-item">
           <span class="data-meta-label">数据版本</span>
-          <span class="data-meta-value">v1.4.6</span>
+          <span class="data-meta-value">v1.4.7</span>
         </div>
         <div class="data-meta-item">
           <span class="data-meta-label">数据类型</span>
@@ -221,6 +259,131 @@
     </div>
   </section>
 
+  <!-- 辽塔巡礼 · 路线数据（v1.4.7 新增） -->
+  <section id="liao-tower" class="container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">北京出发·辽塔巡礼 · 路线数据</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      v1.4.7 · data-v0.1 · 文化自驾粗点 · 20 个点位 · 9 段路线
+    </p>
+
+    <div class="route-data-card">
+      <div class="route-data-header">
+        <div class="route-data-title-block">
+          <div class="data-status-badge">data-v0.1 · 文化自驾粗点</div>
+          <h3 class="route-data-title">北京出发·辽塔巡礼自驾导游手册</h3>
+          <p class="route-data-subtitle">9 天 8 晚闭环自驾 · 穿越辽宁、吉林、内蒙古、河北 · 拜访辽塔、契丹捺钵、辽五京古都、承德避暑山庄。</p>
+        </div>
+      </div>
+
+      <div class="data-meta-list">
+        <div class="data-meta-item">
+          <span class="data-meta-label">数据版本</span>
+          <span class="data-meta-value">v1.4.7</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">点位数量</span>
+          <span class="data-meta-value">20 个</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">段落数量</span>
+          <span class="data-meta-value">9 段 (S01–S09)</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">数据类型</span>
+          <span class="data-meta-value">文化自驾粗点</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">里程口径</span>
+          <span class="data-meta-value">约 2,000–2,400 公里</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">路线结构</span>
+          <span class="data-meta-value">闭环自驾 · 9 天 8 晚</span>
+        </div>
+      </div>
+
+      <h4 class="route-data-section-title">🗺️ 静态地图预览</h4>
+      <div class="route-map-preview">
+        <img src="../assets/img/routes/liao-tower-roadtrip-map.svg" alt="北京出发·辽塔巡礼自驾粗点路线预览">
+      </div>
+
+      <h4 class="route-data-section-title">📊 数据统计</h4>
+      <div class="data-meta-list">
+        <div class="data-meta-item">
+          <span class="data-meta-label">点位数</span>
+          <span class="data-meta-value">20</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">段落数</span>
+          <span class="data-meta-value">9</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">GeoJSON features</span>
+          <span class="data-meta-value">30</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">GPX waypoints</span>
+          <span class="data-meta-value">20</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">数据版本</span>
+          <span class="data-meta-value">v1.4.7</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">数据类型</span>
+          <span class="data-meta-value">文化自驾粗点</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">原始 GPS</span>
+          <span class="data-meta-value">否</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">用途</span>
+          <span class="data-meta-value">自驾规划 / 文化旅行 / 静态地图</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">限制</span>
+          <span class="data-meta-value">非导航 / 非实时路况 / 非开放状态判断</span>
+        </div>
+      </div>
+
+      <h4 class="route-data-section-title">📥 下载文件</h4>
+      <div class="route-data-downloads">
+        <a href="../data/routes/liao-tower-roadtrip.csv" class="route-data-button" download>
+          <span class="data-format-badge data-format-csv">CSV</span>
+          <span class="route-data-button-label">下载 CSV</span>
+          <span class="route-data-button-meta">~4.7 KB · 18 字段 · 20 个粗点 · 表格分析</span>
+        </a>
+        <a href="../data/routes/liao-tower-roadtrip.geojson" class="route-data-button" download>
+          <span class="data-format-badge data-format-geojson">GeoJSON</span>
+          <span class="route-data-button-label">下载 GeoJSON</span>
+          <span class="route-data-button-meta">~10 KB · 20 Point + 10 LineString · 静态地图</span>
+        </a>
+        <a href="../data/routes/liao-tower-roadtrip.gpx" class="route-data-button" download>
+          <span class="data-format-badge data-format-gpx">GPX</span>
+          <span class="route-data-button-label">下载 GPX</span>
+          <span class="route-data-button-meta">~8 KB · 20 waypoints + 1 track · 仅作粗略查看</span>
+        </a>
+      </div>
+
+      <h4 class="route-data-section-title">📖 数据说明</h4>
+      <ul class="data-disclaimer-list">
+        <li><strong>不是实时导航数据</strong>。本数据基于项目内路线页面整理，不用于任何导航设备、户外活动或紧急救援。</li>
+        <li><strong>不保证路况与开放状态</strong>。自驾前必须独立核实交通、天气、管制与安全条件。</li>
+        <li><strong>坐标为粗点</strong>。允许使用城市、景区、地标公开粗略经纬度，不伪造精确自驾轨迹。</li>
+        <li><strong>文保单位需核查</strong>。辽塔、博物馆、石窟的开放时间需以最新官方发布为准。</li>
+      </ul>
+
+      <div class="route-data-cta">
+        <a href="../trips/liao-tower-roadtrip/" class="btn btn-primary">查看路线页面 →</a>
+        <a href="../data/routes/README.md" class="btn btn-outline">查看数据 README</a>
+      </div>
+    </div>
+  </section>
+
   <!-- 未来路线 -->
   <section id="future" class="container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
@@ -228,20 +391,20 @@
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-md);">未来路线数据资产</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
-      未来 Phase 6 将逐步补足其他路线的 CSV / GeoJSON / GPX 数据
+      未来阶段将逐步补足其他路线的 CSV / GeoJSON / GPX 数据
     </p>
 
     <div class="data-index-grid">
       <div class="data-index-card data-index-planning">
         <div class="data-status-badge">规划中</div>
-        <h4 class="data-index-title">辽塔巡礼路线数据</h4>
-        <p class="data-index-desc">北京出发 · 9 天 8 晚闭环自驾 · 辽塔 / 契丹 / 捺钵 / 五京制度</p>
+        <h4 class="data-index-title">山西古建路线数据</h4>
+        <p class="data-index-desc">11 天 10 晚 · 山西古建 · 云冈 / 应县木塔 / 佛光寺 / 南禅寺 / 晋祠</p>
         <p class="data-index-meta">预计格式：CSV / GeoJSON / GPX · v1.5.0</p>
       </div>
       <div class="data-index-card data-index-planning">
         <div class="data-status-badge">规划中</div>
-        <h4 class="data-index-title">山西古建路线数据</h4>
-        <p class="data-index-desc">11 天 10 晚 · 山西古建 · 云冈 / 应县木塔 / 佛光寺 / 南禅寺 / 晋祠</p>
+        <h4 class="data-index-title">北京周边路线数据</h4>
+        <p class="data-index-desc">2–3 天短途 · 燕赵古道 / 长城 / 皇家园林 / 京畿文保</p>
         <p class="data-index-meta">预计格式：CSV / GeoJSON / GPX · v1.5.0</p>
       </div>
     </div>
@@ -254,18 +417,72 @@
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-md);">数据规范</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
-      v1.4.6 新增 · 统一字段定义 · 为未来辽塔巡礼 / 山西古建等路线复用同一规范
+      v1.4.7 全面通用化 · 独立 docs/ROUTE_DATA_SPEC.md / 独立 docs/ROUTE_PAGE_TEMPLATE.md / routes-manifest.json
     </p>
     <div class="city-card" style="max-width: 900px; margin: 0 auto;">
-      <p style="line-height: 1.9;">当前路线数据统一使用 <strong>CSV / GeoJSON / GPX</strong> 三格式。每个点位必须包含以下字段：</p>
+      <p style="line-height: 1.9;">当前路线数据统一使用 <strong>CSV / GeoJSON / GPX</strong> 三格式。每个点位必须包含 18 个字段：</p>
       <ul style="line-height: 1.9;">
-        <li><code>segment_id</code> · 段落编号（S01–S10）</li>
-        <li><code>source_level</code> · 来源等级（A_official_oedw / B_partner_or_education / C_chinese_media / D_reconstructed_for_travel）</li>
+        <li><code>segment_id</code> · 段落编号（S01–S10 或 S01–S09）</li>
+        <li><code>source_level</code> · 来源等级（A_official_oedw / B_partner_or_education / C_chinese_media / D_reconstructed_for_travel / <strong>E_project_internal</strong>）</li>
         <li><code>coordinate_precision</code> · 坐标精度（city / landmark / region / approximate / unknown）</li>
         <li><code>replication_feasibility</code> · 复刻可行性（high / medium / low / not_recommended / reading_only）</li>
+        <li><code>difficulty</code> · 旅行难度（easy / medium / hard / extreme / mixed / n/a）</li>
         <li><code>risk_note</code> · 风险提示</li>
       </ul>
-      <p style="margin-top: var(--space-md); line-height: 1.9;">所有格式 metadata / desc 中必须明确标注：<strong>非 Paul Salopek 原始 GPS 轨迹 + 非导航</strong>。</p>
+      <p style="margin-top: var(--space-md); line-height: 1.9;">所有格式 metadata / desc 中必须明确标注：<strong>非原始 GPS 轨迹 + 非导航</strong>。所有路线共享 <code>routes-manifest.json</code> 集中登记。</p>
+      <p style="margin-top: var(--space-md);">
+        详细规范：<a href="../docs/ROUTE_DATA_SPEC.md">docs/ROUTE_DATA_SPEC.md</a> ·
+        页面模板：<a href="../docs/ROUTE_PAGE_TEMPLATE.md">docs/ROUTE_PAGE_TEMPLATE.md</a> ·
+        数据目录说明：<a href="../data/routes/README.md">data/routes/README.md</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 多路线规范（v1.4.7 新增） -->
+  <section id="multi-route" class="container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">多路线规范 · v1.4.7</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      从 Phase 7 开始，所有路线都使用同一套 CSV / GeoJSON / GPX / SVG 规范与 manifest 登记
+    </p>
+
+    <div class="data-index-grid">
+      <div class="data-index-card" style="border-left: 4px solid #6b8e23;">
+        <div class="data-status-badge">长线样板</div>
+        <h4 class="data-index-title">Out of Eden Walk 中国段</h4>
+        <p class="data-index-desc">长距离文化复刻样板 · 42 个点位 · 10 段路线 · 6,000–6,700 公里 · 两年多</p>
+        <p class="data-index-meta">数据状态：50% · cultural_replica · A_official_oedw</p>
+      </div>
+      <div class="data-index-card" style="border-left: 4px solid #b8860b;">
+        <div class="data-status-badge">自驾样板</div>
+        <h4 class="data-index-title">辽塔巡礼自驾</h4>
+        <p class="data-index-desc">自驾人文路线样板 · 20 个点位 · 9 段路线 · 2,000–2,400 公里 · 9 天 8 晚</p>
+        <p class="data-index-meta">数据状态：data-v0.1 · cultural_roadtrip · E_project_internal</p>
+      </div>
+      <div class="data-index-card" style="border-left: 4px solid #6b7c5f; opacity: 0.7;">
+        <div class="data-status-badge">后续复用</div>
+        <h4 class="data-index-title">山西古建路线</h4>
+        <p class="data-index-desc">11 天 10 晚 · 山西古建路线数据</p>
+        <p class="data-index-meta">预计 v1.5.0 · 复用同一套规范</p>
+      </div>
+      <div class="data-index-card" style="border-left: 4px solid #6b7c5f; opacity: 0.7;">
+        <div class="data-status-badge">后续复用</div>
+        <h4 class="data-index-title">北京周边路线</h4>
+        <p class="data-index-desc">2–3 天短途 · 京畿文保 / 长城 / 皇家园林</p>
+        <p class="data-index-meta">预计 v1.5.0 · 复用同一套规范</p>
+      </div>
+    </div>
+
+    <div class="city-card" style="max-width: 900px; margin: var(--space-xl) auto 0;">
+      <p style="line-height: 1.9;"><strong>为什么需要多路线规范？</strong></p>
+      <ul style="line-height: 1.9;">
+        <li><strong>一致性</strong>：所有路线使用同一套字段、同一套 metadata 声明、同一种免责声明。</li>
+        <li><strong>可维护性</strong>：脚本与查看器只写一份，新增路线无需重写。</li>
+        <li><strong>可审校性</strong>：任何路线都遵守“非导航 / 非原始轨迹” 边界，不冒充精确数据。</li>
+        <li><strong>可扩展性</strong>：未来山西古建、北京周边等路线可直接复用。</li>
+      </ul>
     </div>
   </section>
 
@@ -275,7 +492,7 @@
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-md);">数据处理流程</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
-      v1.4.6 新增 · 从原始数据到页面展示的完整流程
+      v1.4.7 增强 · 脚本支持 --all · 路线级别阈值
     </p>
 
     <div class="data-process-flow">
@@ -340,7 +557,7 @@
           <a href="../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.4.6 · 路线数据索引 · 2026 · 文化复刻粗点 · 非导航</div>
+        <div class="footer-credit">v1.4.7 · 路线数据索引 · 2026 · 文化复刻 / 文化自驾粗点 · 非导航</div>
       </div>
     </div>
   </footer>

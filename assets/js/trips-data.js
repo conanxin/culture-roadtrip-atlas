@@ -19,7 +19,12 @@ const TRIPS_DATA = [
     categories: ['古建', '博物馆', '自驾', '边疆史'],
     url: 'trips/liao-tower-roadtrip/index.html',
     isFeatured: true,
-    isLive: true
+    isLive: true,
+    hasRouteData: true,
+    dataAssetSlug: 'liao-tower-roadtrip',
+    dataAssetStatus: 'data-v0.1',
+    dataAssetPoints: 20,
+    dataAssetSegments: 9
   },
   {
     id: 'shanxi-ancient-buildings',
@@ -40,6 +45,11 @@ const TRIPS_DATA = [
   },
   {
     id: 'out-of-eden-walk-china',
+    hasRouteData: true,
+    dataAssetSlug: 'out-of-eden-walk-china',
+    dataAssetStatus: '50%',
+    dataAssetPoints: 42,
+    dataAssetSegments: 10,
     name: 'Out of Eden Walk 中国段复刻路线',
     shortName: 'Out of Eden Walk 中国段',
     oneLine: '从滇西边境到大连黄海，沿 Paul Salopek 的慢新闻足迹，穿越茶马古道、蜀道、黄土高原、北京城市空间、长城与东北海岸。',

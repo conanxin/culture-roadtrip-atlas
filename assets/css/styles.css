@@ -7427,3 +7427,37 @@ p {
     padding: 6px 8px;
   }
 }
+
+/* ---------- v1.4.7 · 路线数据资产标识 ---------- */
+.route-data-badge-inline {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #5d8a3a;
+  background: rgba(107, 142, 35, 0.12);
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin: 0 var(--space-xs) var(--space-sm) 0;
+  border: 1px solid rgba(107, 142, 35, 0.25);
+  letter-spacing: 0.05em;
+}
+
+.trip-card-data-meta {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px dashed var(--color-divider);
+}
+
+.trip-card-data-meta a {
+  color: #5d8a3a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.trip-card-data-meta a:hover {
+  text-decoration: underline;
+}

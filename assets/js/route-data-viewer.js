@@ -11,13 +11,15 @@
  *
  * 使用:
  *   <section id="route-data-viewer"
- *            data-route-geojson="../../data/routes/out-of-eden-walk-china.geojson"
- *            data-route-name="Out of Eden Walk 中国段">
+ *            data-route-geojson="../../data/routes/<route-slug>.geojson"
+ *            data-route-name="<路线中文名>"
+ *            data-route-slug="<route-slug>">
  *     <div class="route-data-loading">正在加载路线数据……</div>
  *     <noscript>浏览器未启用 JavaScript。请直接下载 CSV / GeoJSON / GPX 文件查看路线数据。</noscript>
  *   </section>
  *
  * 历史:
+ *   v1.1 · 2026-07-05 · Phase 7 · 去除 OEDW 硬编码 · 通用化 fallback 下载链接 · slug 推断
  *   v1.0 · 2026-07-04 · Phase 6 首版
  */
 
@@ -211,18 +213,21 @@
 
   // ---------- Fallback ----------
 
-  function renderFallback(container, error) {
+  function renderFallback(container, error, slug, routeName) {
     var msg = error ? String(error.message || error) : '未知错误';
+    var s = slug || 'route';
+    var rn = routeName || '路线数据';
     container.innerHTML = '<div class="route-data-fallback">'
       + '<h4>⚠ 数据表加载失败</h4>'
       + '<p>无法 fetch() GeoJSON 数据。错误：' + escapeHtml(msg) + '</p>'
       + '<p>本页仍然可正常阅读。请直接下载 CSV / GeoJSON / GPX 文件查看路线数据：</p>'
       + '<ul>'
-      + '<li><a href="../../data/routes/out-of-eden-walk-china.csv" download>下载 CSV</a></li>'
-      + '<li><a href="../../data/routes/out-of-eden-walk-china.geojson" download>下载 GeoJSON</a></li>'
-      + '<li><a href="../../data/routes/out-of-eden-walk-china.gpx" download>下载 GPX</a></li>'
+      + '<li><a href="../../data/routes/' + escapeHtml(s) + '.csv" download>下载 CSV</a></li>'
+      + '<li><a href="../../data/routes/' + escapeHtml(s) + '.geojson" download>下载 GeoJSON</a></li>'
+      + '<li><a href="../../data/routes/' + escapeHtml(s) + '.gpx" download>下载 GPX</a></li>'
       + '</ul>'
-      + '<p><strong>所有数据均为文化复刻粗点，非 Paul Salopek 原始 GPS 轨迹，不用于导航。</strong></p>'
+      + '<p><strong>所有数据均为文化复刻 / 文化自驾粗点，非原始 GPS 轨迹，不用于导航。</strong></p>'
+      + '<p style="font-size: 0.9em; color: #6b7c5f;">当前路线：' + escapeHtml(rn) + ' (' + escapeHtml(s) + ')</p>'
       + '</div>';
   }
 
@@ -231,6 +236,13 @@
   function initViewer(container) {
     var geoUrl = container.getAttribute('data-route-geojson');
     var routeName = container.getAttribute('data-route-name') || '路线数据';
+    // 尝试从 geoUrl 推断 slug(取文件名去后缀),用于 fallback 下载链接
+    var inferredSlug = '';
+    if (geoUrl) {
+      var m = geoUrl.match(/([^/]+)\.geojson$/);
+      if (m) inferredSlug = m[1];
+    }
+    var slug = container.getAttribute('data-route-slug') || inferredSlug || 'route';
 
     container.innerHTML = '<h3 class="route-data-viewer-title">📊 ' + escapeHtml(routeName) + ' · 数据驱动路线表</h3>'
       + '<div class="route-data-summary" id="rdv-summary"></div>'
@@ -238,7 +250,7 @@
       + '<div class="route-data-table" id="rdv-table"></div>';
 
     if (!geoUrl) {
-      renderFallback(container, new Error('缺少 data-route-geojson 属性'));
+      renderFallback(container, new Error('缺少 data-route-geojson 属性'), slug, routeName);
       return;
     }
 
@@ -262,7 +274,7 @@
         renderTable(points, document.getElementById('rdv-table'));
       })
       .catch(function (err) {
-        renderFallback(container, err);
+        renderFallback(container, err, slug, routeName);
       });
   }
 

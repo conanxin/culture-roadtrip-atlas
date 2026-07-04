@@ -20,11 +20,22 @@
 
 ## 当前版本
 
-**v1.4.0 · Shanxi Cultural Guide Lite**（2026-07-04）
+**v1.4.7 · Route data templates and multi-route reuse**（2026-07-05）
 
-山西古建自驾线进入"文化导览草稿"阶段：12 个 A 级核心点位的完整导览草稿（30 秒导入 / 现场怎么看 / 观察点 / 300-600 字导游式讲解草稿 / 离开前回望 / 2-3 个自我提问 / 与整条路线的关系 / 草稿状态标签）、5 个 B 级点位简短导览、山西古建现场怎么看总导览模块、古建观察清单（10 项可勾选，localStorage）、山西古建关键词进阶（新增 8 个词条）。
+行旅图谱现在包含内容页面、路线数据资产、静态 SVG 预览、数据校验脚本和路线模板规范。
 
-v1.3.0（实用信息核验）+ v1.2.0（路线校准）+ v1.1.0（研究建档）+ v1.0.0（稳定发布）保留。
+v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.4.7 在 v1.4.6 基础上：
+- 新增通用路线数据规范 `docs/ROUTE_DATA_SPEC.md`
+- 新增通用路线页面模板 `docs/ROUTE_PAGE_TEMPLATE.md`
+- 新增路线 manifest `data/routes/routes-manifest.json`
+- 增强 `validate-route-data.py`：支持任意 slug + `--all` + 路线级别阈值
+- 增强 `render-route-map-svg.py`：支持任意 slug + `--all` + 动态 title/desc
+- 新增辽塔巡礼路线 CSV / GeoJSON / GPX / SVG（20 粗点、9 段、9 天 8 晚闭环）
+- 优化 `route-data-viewer.js`：去除 OEDW 硬编码、通用化 fallback 下载链接
+- 增强路线数据索引页：多路线卡片 + 总览统计 + 多路线规范模块
+- 优化 `trips-data.js` / `home.js`：trip 卡片支持"已接入路线数据" 标识
 
 v1.4 在 v1.3 基础上：
 - 12 个 A 级核心点位导览草稿（云冈石窟 / 华严寺 / 善化寺 / 应县木塔 / 佛光寺 / 南禅寺 / 晋祠 / 镇国寺 / 双林寺 / 小西天 / 玉皇庙 / 青莲寺）

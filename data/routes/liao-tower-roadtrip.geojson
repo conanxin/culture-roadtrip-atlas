@@ -1,0 +1,921 @@
+{
+  "type": "FeatureCollection",
+  "name": "liao-tower-roadtrip-cultural-roadtrip",
+  "metadata": {
+    "title": "北京出发·辽塔巡礼自驾导游手册 · 文化自驾粗点路线",
+    "version": "v1.4.7",
+    "route_type": "cultural_roadtrip",
+    "is_original_gps_track": false,
+    "disclaimer": "本数据为'北京出发·辽塔巡礼自驾导游手册'的文化自驾粗点数据;基于项目内路线页面整理;不是实时导航路线;不用于路况、安全、开放状态判断;坐标为城市/景区/地标粗点。",
+    "source_scope": "行旅图谱项目内整理,结合辽塔巡礼路线页面、文化遗址公开材料与自驾可达性评估。",
+    "updated_at": "2026-07-05",
+    "coordinate_systems": "WGS84",
+    "approximate_distance_km": "2000-2400",
+    "time_span": "9 天 8 晚闭环自驾",
+    "segments_count": 9,
+    "points_count": 20
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4074,
+          39.9042
+        ]
+      },
+      "properties": {
+        "id": "LTR-P001",
+        "sequence": 1,
+        "segment_id": "S01",
+        "segment_name": "北京出发线",
+        "point_name": "北京",
+        "province": "Beijing",
+        "city_or_area": "Beijing",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "北京首都国际机场 / 北京大兴机场 / 高铁北京",
+        "risk_note": "出发地,无特殊风险",
+        "source_note": "行旅图谱辽塔路线 S01 起点",
+        "url": "https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1268,
+          41.095
+        ]
+      },
+      "properties": {
+        "id": "LTR-P002",
+        "sequence": 2,
+        "segment_id": "S01",
+        "segment_name": "北京出发线",
+        "point_name": "锦州",
+        "province": "Liaoning",
+        "city_or_area": "Jinzhou",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "京哈高速 G1 / 高铁锦州南",
+        "risk_note": "长途自驾,注意疲劳",
+        "source_note": "行旅图谱辽塔路线 S01 当晚驻点",
+        "url": "https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.24,
+          41.53
+        ]
+      },
+      "properties": {
+        "id": "LTR-P003",
+        "sequence": 3,
+        "segment_id": "S02",
+        "segment_name": "义县佛教遗存线",
+        "point_name": "义县奉国寺",
+        "province": "Liaoning",
+        "city_or_area": "Yixian",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Oct",
+        "transport_hint": "义县县城 / G2512 高速义县出口",
+        "risk_note": "辽代木构大殿,需注意开放时间",
+        "source_note": "义县奉国寺 辽代木构 1961 国保",
+        "url": "http://www.fengguosi.cn/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.26,
+          41.565
+        ]
+      },
+      "properties": {
+        "id": "LTR-P004",
+        "sequence": 4,
+        "segment_id": "S02",
+        "segment_name": "义县佛教遗存线",
+        "point_name": "义县万佛堂石窟",
+        "province": "Liaoning",
+        "city_or_area": "Yixian",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Oct",
+        "transport_hint": "义县西北 9 公里 / 大凌河西岸",
+        "risk_note": "石窟小众点位,需关注保护情况",
+        "source_note": "万佛堂石窟 北魏石窟 1988 国保",
+        "url": "https://baike.baidu.com/item/%E4%B8%87%E4%BD%9B%E5%A0%82%E7%9F%B3%E7%AA%9F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.75,
+          41.85
+        ]
+      },
+      "properties": {
+        "id": "LTR-P005",
+        "sequence": 5,
+        "segment_id": "S03",
+        "segment_name": "北镇医巫闾山线",
+        "point_name": "北镇市区",
+        "province": "Liaoning",
+        "city_or_area": "Beizhen",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "京哈高速 G1 转 G16 / 北镇市区",
+        "risk_note": "城市级驻点,周边餐饮成熟",
+        "source_note": "北镇原名广宁,辽代显州",
+        "url": "https://baike.baidu.com/item/%E5%8C%97%E9%95%87"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.756,
+          41.854
+        ]
+      },
+      "properties": {
+        "id": "LTR-P006",
+        "sequence": 6,
+        "segment_id": "S03",
+        "segment_name": "北镇医巫闾山线",
+        "point_name": "北镇崇兴寺双塔",
+        "province": "Liaoning",
+        "city_or_area": "Beizhen",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "北镇市区东北 / 步行可达",
+        "risk_note": "辽代双塔,2013 国保;周边有街区",
+        "source_note": "崇兴寺双塔 辽代 2013 国保第七批",
+        "url": "https://baike.baidu.com/item/%E5%B4%87%E5%85%B4%E5%AF%BA%E5%8F%8C%E5%A1%94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.68,
+          41.85
+        ]
+      },
+      "properties": {
+        "id": "LTR-P007",
+        "sequence": 7,
+        "segment_id": "S03",
+        "segment_name": "北镇医巫闾山线",
+        "point_name": "医巫闾山",
+        "province": "Liaoning",
+        "city_or_area": "Beizhen",
+        "coordinate_precision": "region",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "北镇市区西 / 山体区域",
+        "risk_note": "山地区域,需注意天气与封山",
+        "source_note": "医巫闾山 五镇山之一 1982 国家级",
+        "url": "https://baike.baidu.com/item/%E5%8C%BB%E5%B7%AB%E9%97%B8%E5%B1%B1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.459,
+          41.576
+        ]
+      },
+      "properties": {
+        "id": "LTR-P008",
+        "sequence": 8,
+        "segment_id": "S04",
+        "segment_name": "朝阳辽塔线",
+        "point_name": "朝阳北塔",
+        "province": "Liaoning",
+        "city_or_area": "Chaoyang",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "朝阳市内 / 慕容街北端",
+        "risk_note": "前燕 / 北魏 / 隋唐 / 辽多层;1988 国保",
+        "source_note": "朝阳北塔 五世同堂 1988 国保第三批",
+        "url": "https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8C%97%E5%A1%94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.459,
+          41.568
+        ]
+      },
+      "properties": {
+        "id": "LTR-P009",
+        "sequence": 9,
+        "segment_id": "S04",
+        "segment_name": "朝阳辽塔线",
+        "point_name": "朝阳南塔",
+        "province": "Liaoning",
+        "city_or_area": "Chaoyang",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "朝阳市内 / 北塔南侧",
+        "risk_note": "辽代南塔,与北塔对望",
+        "source_note": "朝阳南塔 辽代砖塔",
+        "url": "https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8D%97%E5%A1%94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.35,
+          41.05
+        ]
+      },
+      "properties": {
+        "id": "LTR-P010",
+        "sequence": 10,
+        "segment_id": "S05",
+        "segment_name": "朝阳赤峰转场线",
+        "point_name": "牛河梁国家考古遗址公园",
+        "province": "Liaoning",
+        "city_or_area": "Niuheliang / Lingyuan",
+        "coordinate_precision": "region",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "凌源市东 / 长深高速 G25",
+        "risk_note": "红山文化核心;需提前预约",
+        "source_note": "牛河梁 红山文化 2012 入选国家考古遗址公园",
+        "url": "https://baike.baidu.com/item/%E7%89%9B%E6%B2%B3%E6%A2%81%E9%81%97%E5%9D%80%E5%85%AC%E5%9B%AD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.888,
+          42.258
+        ]
+      },
+      "properties": {
+        "id": "LTR-P011",
+        "sequence": 11,
+        "segment_id": "S05",
+        "segment_name": "朝阳赤峰转场线",
+        "point_name": "赤峰市区",
+        "province": "Inner Mongolia",
+        "city_or_area": "Chifeng",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "长深高速 G25 转大广高速 G45 / 赤峰",
+        "risk_note": "转场城市,餐饮齐全",
+        "source_note": "赤峰 红山命名地,辽代重要州城",
+        "url": "https://baike.baidu.com/item/%E8%B5%A4%E5%B3%B0%E5%B8%82"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.67,
+          43.52
+        ]
+      },
+      "properties": {
+        "id": "LTR-P012",
+        "sequence": 12,
+        "segment_id": "S06",
+        "segment_name": "庆州白塔林东线",
+        "point_name": "庆州白塔",
+        "province": "Inner Mongolia",
+        "city_or_area": "Bairin Right Banner",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Sep",
+        "transport_hint": "巴林右旗索博日嘎镇 / 远离高速",
+        "risk_note": "辽代释迦佛舍利塔;偏远点位",
+        "source_note": "庆州白塔 辽代 2013 国保第七批",
+        "url": "https://baike.baidu.com/item/%E5%BA%86%E5%B7%9E%E7%99%BD%E5%A1%94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38,
+          43.97
+        ]
+      },
+      "properties": {
+        "id": "LTR-P013",
+        "sequence": 13,
+        "segment_id": "S06",
+        "segment_name": "庆州白塔林东线",
+        "point_name": "林东(巴林左旗)",
+        "province": "Inner Mongolia",
+        "city_or_area": "Bairin Left Banner",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Sep",
+        "transport_hint": "G303 / 巴林左旗旗政府",
+        "risk_note": "辽上京所在地,夜宿地",
+        "source_note": "巴林左旗 辽代祖州祖陵所在",
+        "url": "https://baike.baidu.com/item/%E5%B7%B4%E6%9E%97%E5%B7%A6%E6%97%97"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4,
+          43.97
+        ]
+      },
+      "properties": {
+        "id": "LTR-P014",
+        "sequence": 14,
+        "segment_id": "S07",
+        "segment_name": "辽上京核心日",
+        "point_name": "辽上京遗址",
+        "province": "Inner Mongolia",
+        "city_or_area": "Bairin Left Banner",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Oct",
+        "transport_hint": "林东镇东南 / 步行可达",
+        "risk_note": "契丹建国之都,1961 国保;现场保护有限",
+        "source_note": "辽上京遗址 1961 国保第一批",
+        "url": "https://baike.baidu.com/item/%E8%BE%BD%E4%B8%8A%E5%8D%8A%E9%81%97%E5%9D%80"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.39,
+          44.02
+        ]
+      },
+      "properties": {
+        "id": "LTR-P015",
+        "sequence": 15,
+        "segment_id": "S07",
+        "segment_name": "辽上京核心日",
+        "point_name": "真寂之寺",
+        "province": "Inner Mongolia",
+        "city_or_area": "Bairin Left Banner",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Oct",
+        "transport_hint": "林东镇北 / 杏花山下",
+        "risk_note": "辽代石窟,较小众;关注开放",
+        "source_note": "真寂之寺 辽代石窟",
+        "url": "https://baike.baidu.com/item/%E7%9C%9F%E5%AF%82%E4%B9%8B%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.34,
+          41.6
+        ]
+      },
+      "properties": {
+        "id": "LTR-P016",
+        "sequence": 16,
+        "segment_id": "S08",
+        "segment_name": "辽中京宁城承德线",
+        "point_name": "宁城",
+        "province": "Inner Mongolia",
+        "city_or_area": "Ningcheng",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Oct",
+        "transport_hint": "赤凌高速 / 宁城县",
+        "risk_note": "辽中京过境地",
+        "source_note": "宁城县 辽代中京道范围",
+        "url": "https://baike.baidu.com/item/%E5%AE%81%E5%9F%8E%E5%8E%BF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33,
+          41.6
+        ]
+      },
+      "properties": {
+        "id": "LTR-P017",
+        "sequence": 17,
+        "segment_id": "S08",
+        "segment_name": "辽中京宁城承德线",
+        "point_name": "大明塔(辽中京塔)",
+        "province": "Inner Mongolia",
+        "city_or_area": "Ningcheng",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Oct",
+        "transport_hint": "宁城县铁匠营子村 / 辽中京遗址",
+        "risk_note": "现存辽塔第一高,82.6 米",
+        "source_note": "大明塔 辽代 2013 国保第七批",
+        "url": "https://baike.baidu.com/item/%E5%A4%A7%E6%98%8E%E5%A1%94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.875,
+          40.951
+        ]
+      },
+      "properties": {
+        "id": "LTR-P018",
+        "sequence": 18,
+        "segment_id": "S08",
+        "segment_name": "辽中京宁城承德线",
+        "point_name": "承德市区",
+        "province": "Hebei",
+        "city_or_area": "Chengde",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "长深高速 G25 / 京承高铁",
+        "risk_note": "清代热河;夜宿地",
+        "source_note": "承德 清代热河驻地",
+        "url": "https://baike.baidu.com/item/%E6%89%BF%E5%BE%B7%E5%B8%82"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.938,
+          40.988
+        ]
+      },
+      "properties": {
+        "id": "LTR-P019",
+        "sequence": 19,
+        "segment_id": "S09",
+        "segment_name": "承德北京收束线",
+        "point_name": "避暑山庄",
+        "province": "Hebei",
+        "city_or_area": "Chengde",
+        "coordinate_precision": "landmark",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "承德市区北部 / 步行可达",
+        "risk_note": "清代皇家园林,1961 国保",
+        "source_note": "避暑山庄 1994 列入世界文化遗产",
+        "url": "https://baike.baidu.com/item/%E9%81%BF%E6%9A%91%E5%B1%B1%E5%BA%84"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4074,
+          39.9042
+        ]
+      },
+      "properties": {
+        "id": "LTR-P020",
+        "sequence": 20,
+        "segment_id": "S09",
+        "segment_name": "承德北京收束线",
+        "point_name": "北京",
+        "province": "Beijing",
+        "city_or_area": "Beijing",
+        "coordinate_precision": "city",
+        "source_level": "E_project_internal",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "All year",
+        "transport_hint": "京承高速 G45 / 京哈高铁",
+        "risk_note": "返程驻点,需注意回程拥堵",
+        "source_note": "行旅图谱辽塔路线 S09 终点",
+        "url": "https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.4074,
+            39.9042
+          ],
+          [
+            121.1268,
+            41.095
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S01",
+        "segment_name": "北京出发线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S01 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "北京出发线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.24,
+            41.53
+          ],
+          [
+            121.26,
+            41.565
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S02",
+        "segment_name": "义县佛教遗存线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S02 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "义县佛教遗存线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.75,
+            41.85
+          ],
+          [
+            121.756,
+            41.854
+          ],
+          [
+            121.68,
+            41.85
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S03",
+        "segment_name": "北镇医巫闾山线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S03 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "北镇医巫闾山线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.459,
+            41.576
+          ],
+          [
+            120.459,
+            41.568
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S04",
+        "segment_name": "朝阳辽塔线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S04 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "朝阳辽塔线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.35,
+            41.05
+          ],
+          [
+            118.888,
+            42.258
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S05",
+        "segment_name": "朝阳赤峰转场线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S05 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "朝阳赤峰转场线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.67,
+            43.52
+          ],
+          [
+            119.38,
+            43.97
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S06",
+        "segment_name": "庆州白塔林东线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S06 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "庆州白塔林东线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.4,
+            43.97
+          ],
+          [
+            119.39,
+            44.02
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S07",
+        "segment_name": "辽上京核心日",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S07 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "辽上京核心日 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.34,
+            41.6
+          ],
+          [
+            119.33,
+            41.6
+          ],
+          [
+            117.875,
+            40.951
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S08",
+        "segment_name": "辽中京宁城承德线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S08 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "辽中京宁城承德线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.938,
+            40.988
+          ],
+          [
+            116.4074,
+            39.9042
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S09",
+        "segment_name": "承德北京收束线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S09 generalized line only. Not for navigation. Cultural replica.",
+        "disclaimer": "承德北京收束线 段概括路线;文化自驾粗点;非原始轨迹;非导航。",
+        "points_count": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.4074,
+            39.9042
+          ],
+          [
+            121.1268,
+            41.095
+          ],
+          [
+            121.24,
+            41.53
+          ],
+          [
+            121.26,
+            41.565
+          ],
+          [
+            121.75,
+            41.85
+          ],
+          [
+            121.756,
+            41.854
+          ],
+          [
+            121.68,
+            41.85
+          ],
+          [
+            120.459,
+            41.576
+          ],
+          [
+            120.459,
+            41.568
+          ],
+          [
+            119.35,
+            41.05
+          ],
+          [
+            118.888,
+            42.258
+          ],
+          [
+            118.67,
+            43.52
+          ],
+          [
+            119.38,
+            43.97
+          ],
+          [
+            119.4,
+            43.97
+          ],
+          [
+            119.39,
+            44.02
+          ],
+          [
+            119.34,
+            41.6
+          ],
+          [
+            119.33,
+            41.6
+          ],
+          [
+            117.875,
+            40.951
+          ],
+          [
+            117.938,
+            40.988
+          ],
+          [
+            116.4074,
+            39.9042
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "generalized_route_line",
+        "name": "北京出发·辽塔巡礼自驾导游概括路线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Generalized cultural roadtrip line only. Not for navigation. Not an original GPS track. Cultural replica waypoints for self-driving planning only.",
+        "disclaimer": "本 LineString 为辽塔巡礼自驾路线概括连接;非原始 GPS 轨迹;非导航;不保证路况和开放状态。",
+        "segments_count": 9,
+        "points_count": 20,
+        "route_type": "cultural_roadtrip"
+      }
+    }
+  ]
+}
