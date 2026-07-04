@@ -419,6 +419,9 @@
     // v0.5 路线可视化版
     initV5();
 
+    // v0.6 资料与事实核对版
+    initV6();
+
     // 渲染景点之间的关系
     renderSpotRelationships();
 
@@ -877,6 +880,114 @@
 
 
   
+
+
+  // ============ v0.6 资料与事实核对版功能 ============
+
+  /**
+   * 初始化出发前核对清单
+   */
+  function initChecklist() {
+    const items = document.querySelectorAll('.checklist-item');
+    const checked = getStorage('checklist_checked', []);
+
+    items.forEach(item => {
+      const id = item.dataset.id;
+      if (checked.includes(id)) {
+        item.classList.add('checked');
+        const checkbox = item.querySelector('.checklist-checkbox');
+        if (checkbox) checkbox.textContent = '✓';
+      }
+
+      item.addEventListener('click', () => {
+        let checkedItems = getStorage('checklist_checked', []);
+        if (checkedItems.includes(id)) {
+          checkedItems = checkedItems.filter(i => i !== id);
+          item.classList.remove('checked');
+          const checkbox = item.querySelector('.checklist-checkbox');
+          if (checkbox) checkbox.textContent = '';
+        } else {
+          checkedItems.push(id);
+          item.classList.add('checked');
+          const checkbox = item.querySelector('.checklist-checkbox');
+          if (checkbox) checkbox.textContent = '✓';
+        }
+        setStorage('checklist_checked', checkedItems);
+        updateChecklistProgress();
+      });
+    });
+
+    updateChecklistProgress();
+  }
+
+  /**
+   * 更新核对清单进度
+   */
+  function updateChecklistProgress() {
+    const total = document.querySelectorAll('.checklist-item').length;
+    const checked = getStorage('checklist_checked', []).length;
+    const valueEl = document.getElementById('checklist-progress-value');
+    if (valueEl) {
+      valueEl.textContent = checked + ' / ' + total;
+    }
+  }
+
+  /**
+   * 渲染资料来源索引
+   */
+  function renderSourceIndex() {
+    const container = document.getElementById('source-index-cards');
+    if (!container || !TRIP_DATA.sourceIndex) return;
+
+    const typeGroups = {};
+    TRIP_DATA.sourceIndex.forEach(src => {
+      if (!typeGroups[src.type]) typeGroups[src.type] = [];
+      typeGroups[src.type].push(src);
+    });
+
+    const typeOrder = ['官方资料', '博物馆/文旅资料', '纪录片/视频', '书籍/原典', '建筑史/研究资料', '旅行整理说明'];
+
+    let html = '';
+    typeOrder.forEach(type => {
+      if (!typeGroups[type]) return;
+      html += `<div class="source-type-group">`;
+      html += `<h3 class="source-type-group-title">${type}</h3>`;
+      html += `<div class="source-cards">`;
+      typeGroups[type].forEach(src => {
+        const confidenceClass = src.confidence === '官方确认' ? 'confidence-official' :
+                                src.confidence === '较可靠' ? 'confidence-reliable' :
+                                src.confidence === '旅行整理' ? 'confidence-travel' : 'confidence-check';
+
+        html += `<div class="source-card">`;
+        html += `<div class="source-card-name">${src.name}</div>`;
+        html += `<div class="source-card-purpose">${src.purpose}</div>`;
+        html += `<div class="source-card-meta">`;
+        html += `<span class="source-confidence-tag ${confidenceClass}">${src.confidence}</span>`;
+        html += `</div>`;
+        if (src.spots && src.spots.length > 0) {
+          html += `<div class="source-spots-tags">`;
+          src.spots.forEach(spot => {
+            html += `<span class="source-spot-tag">${spot}</span>`;
+          });
+          html += `</div>`;
+        }
+        html += `</div>`;
+      });
+      html += `</div>`;
+      html += `</div>`;
+    });
+
+    container.innerHTML = html;
+  }
+
+  /**
+   * 初始化 v0.6 功能
+   */
+  function initV6() {
+    renderSourceIndex();
+    initChecklist();
+  }
+
 
   // ============ v0.5 路线可视化版功能 ============
 

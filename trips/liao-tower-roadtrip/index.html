@@ -70,6 +70,25 @@
     </div>
   </section>
 
+  <!-- 页面版本信息 v0.6 -->
+  <section class="container">
+    <div class="page-meta">
+      <div class="page-meta-item">
+        <span class="page-meta-label">页面版本：</span>
+        <span class="page-meta-value">v0.6 source and fact audit</span>
+      </div>
+      <div class="page-meta-item">
+        <span class="page-meta-label">最近更新日期：</span>
+        <span class="page-meta-value" id="page-update-date">2026-07-04</span>
+      </div>
+      <div class="page-meta-item">
+        <span class="page-meta-label">资料状态：</span>
+        <span class="page-meta-value">规划资料，出发前需二次核对</span>
+      </div>
+    </div>
+  </section>
+
+
   <!-- 今日模式 v0.3 -->
   <section class="today-mode" id="today-mode">
     <div class="today-mode-header">
@@ -2926,6 +2945,117 @@
           <li>本作者亲身探访记录（2026年）</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+
+  
+  <!-- 出发前实时核对清单 v0.6 -->
+  <section class="checklist-module" id="pre-checklist">
+    <h2 class="checklist-title">✅ 出发前实时核对清单</h2>
+    <p class="checklist-intro">点击勾选每项，状态保存在本地浏览器（localStorage），换设备不继承</p>
+
+    <div class="checklist-grid">
+      <div class="checklist-item" data-id="hours">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">开放时间</div>
+          <div class="checklist-note">确认各景点当前开放时间（出发前 1-2 周查询）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="closed">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">闭馆日</div>
+          <div class="checklist-note">周一闭馆的博物馆是否避开（奉国寺、北塔博物馆等周一闭馆）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="tickets">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">门票</div>
+          <div class="checklist-note">现金/电子票/身份证要求（部分景点只收现金）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="reservation">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">预约</div>
+          <div class="checklist-note">博物馆/景区是否需要预约（朝阳博物馆、北塔博物馆等）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="parking">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">停车</div>
+          <div class="checklist-note">景区停车是否需要提前确认（庆州白塔、辽上京遗址等）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="roadwork">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">道路施工</div>
+          <div class="checklist-note">导航路线是否有施工封路（出发前 1 天查询）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="weather">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">天气</div>
+          <div class="checklist-note">查看行程期间天气预报（草原昼夜温差大）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="hotel">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">酒店</div>
+          <div class="checklist-note">再次确认酒店预订信息（特别是巴林左旗、宁城等小城市）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="exhibition">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">博物馆临展</div>
+          <div class="checklist-note">是否有特展或限展（赤峰辽文化博物馆、朝阳市博物馆）</div>
+        </div>
+      </div>
+
+      <div class="checklist-item" data-id="navigation">
+        <div class="checklist-checkbox"></div>
+        <div class="checklist-content">
+          <div class="checklist-label">导航终点</div>
+          <div class="checklist-note">导航目的地是否正确（同名地点较多，注意区分）</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checklist-progress">
+      已完成：<span class="checklist-progress-value" id="checklist-progress-value">0 / 10</span>
+    </div>
+  </section>
+
+  <!-- 资料来源索引 v0.6 -->
+  <section class="source-index-module" id="source-index">
+    <h2 class="source-index-title">📚 资料来源索引</h2>
+    <p class="source-index-intro">按资料类型分组，每条资料含可信度标签</p>
+
+    <div id="source-index-cards">
+      <!-- JS 渲染 -->
+    </div>
+  </section>
+
+  <!-- 内容风险说明 v0.6 -->
+  <section class="content-disclaimer" id="content-disclaimer">
+    <div class="content-disclaimer-text">
+      <strong>⚠️ 内容风险说明</strong>：本页面用于个人自驾规划和人文学习。历史与文化内容来自公开资料整理，景点开放时间、票价、预约、停车、路况可能变化，<strong>出发前请以官方公告和地图导航为准</strong>。
     </div>
   </section>
 

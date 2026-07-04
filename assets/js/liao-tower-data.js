@@ -158,7 +158,33 @@ const TRIP_DATA = {
     // ===== 重点景点 =====
     {
       id: 'fengguosi',
-            relationship: '它和上一站（广济寺塔）的关系：从明代佛塔进入辽代佛教艺术。它和下一站（万佛堂石窟）的关系：从辽代木构佛殿进入更早的北方石窟传统。',
+            sources: [
+        {
+          sourceName: '奉国寺官网',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票、参观信息'
+        },
+        {
+          sourceName: 'CCTV《探索·发现》奉国寺专辑',
+          sourceType: '纪录片/视频',
+          confidence: '较可靠',
+          note: '建筑历史、佛像介绍'
+        },
+        {
+          sourceName: '《辽代木构建筑研究》',
+          sourceType: '书籍/原典',
+          confidence: '较可靠',
+          note: '大雄殿建筑结构分析'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（广济寺塔）的关系：从明代佛塔进入辽代佛教艺术。它和下一站（万佛堂石窟）的关系：从辽代木构佛殿进入更早的北方石窟传统。',
 name: '奉国寺',
       city: '义县',
       type: '寺庙',
@@ -228,7 +254,27 @@ name: '奉国寺',
     },
     {
       id: 'wanfotang',
-            relationship: '它和上一站（奉国寺）的关系：从辽代木构佛殿回到更早的北魏石窟。它和下一站（北镇庙）的关系：从纯佛教艺术进入五镇信仰体系。',
+            sources: [
+        {
+          sourceName: '义县文化和旅游局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票'
+        },
+        {
+          sourceName: '《万佛堂石窟考古报告》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '石窟历史、题记研究'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（奉国寺）的关系：从辽代木构佛殿回到更早的北魏石窟。它和下一站（北镇庙）的关系：从纯佛教艺术进入五镇信仰体系。',
 name: '万佛堂石窟',
       city: '义县',
       type: '石窟',
@@ -294,7 +340,33 @@ name: '万佛堂石窟',
     },
     {
       id: 'chaoyang-north-pagoda',
-            relationship: '它和上一站（北镇）的关系：从辽西走廊进入辽代兴中府。它和下一站（朝阳南塔）的关系：从多朝叠压的佛塔史进入辽代城市天际线。',
+            sources: [
+        {
+          sourceName: '朝阳市文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票、博物馆开放'
+        },
+        {
+          sourceName: '《朝阳北塔考古发掘报告》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '五世同堂建筑史、地宫文物'
+        },
+        {
+          sourceName: 'CCTV《探索·发现》朝阳北塔',
+          sourceType: '纪录片/视频',
+          confidence: '较可靠',
+          note: '建筑演变与文物介绍'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（北镇）的关系：从辽西走廊进入辽代兴中府。它和下一站（朝阳南塔）的关系：从多朝叠压的佛塔史进入辽代城市天际线。',
 name: '朝阳北塔',
       city: '朝阳',
       type: '辽塔',
@@ -364,7 +436,33 @@ name: '朝阳北塔',
     },
     {
       id: 'qingzhou-white-pagoda',
-            relationship: '它和上一站（赤峰）的关系：从现代城市进入辽代捺钵圣地。它和下一站（辽上京）的关系：从捺钵补给城市进入契丹龙兴之地。',
+            sources: [
+        {
+          sourceName: '巴林左旗文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票'
+        },
+        {
+          sourceName: '《庆州白塔考古报告》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '塔的建筑结构、雕刻艺术'
+        },
+        {
+          sourceName: 'CCTV《古塔往事》庆州白塔',
+          sourceType: '纪录片/视频',
+          confidence: '较可靠',
+          note: '建筑历史'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（赤峰）的关系：从现代城市进入辽代捺钵圣地。它和下一站（辽上京）的关系：从捺钵补给城市进入契丹龙兴之地。',
 name: '庆州白塔',
       city: '巴林左旗',
       type: '辽塔',
@@ -430,7 +528,33 @@ name: '庆州白塔',
     },
     {
       id: 'liao-capital',
-            relationship: '它和上一站（庆州）的关系：从捺钵补给城市进入首都。它和下一站（辽上京南塔）的关系：从皇城进入两种文化交汇处。',
+            sources: [
+        {
+          sourceName: '巴林左旗辽上京博物馆',
+          sourceType: '博物馆/文旅资料',
+          confidence: '官方确认',
+          note: '开放时间、门票、讲解预约'
+        },
+        {
+          sourceName: '《辽上京遗址考古报告》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '南北分城布局研究'
+        },
+        {
+          sourceName: 'CCTV《契丹王朝》辽上京',
+          sourceType: '纪录片/视频',
+          confidence: '较可靠',
+          note: '二元制度历史'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（庆州）的关系：从捺钵补给城市进入首都。它和下一站（辽上京南塔）的关系：从皇城进入两种文化交汇处。',
 name: '辽上京遗址',
       city: '巴林左旗',
       type: '都城',
@@ -501,6 +625,33 @@ name: '辽上京遗址',
     {
       id: 'chifeng-liao-museum',
             relationship: '它和上一站（辽上京）的关系：从考古遗址进入博物馆总结。它和下一站（大明塔）的关系：从草原皇都进入辽代晚期都城。',
+      sources: [
+        {
+          sourceName: '赤峰辽文化博物馆官网',
+          sourceType: '博物馆/文旅资料',
+          confidence: '官方确认',
+          note: '开放时间、门票、临展'
+        },
+        {
+          sourceName: '《辽代金银器研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '辽代文物介绍'
+        },
+        {
+          sourceName: '《契丹墓室壁画研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '墓室壁画艺术'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+
 name: '赤峰辽文化博物馆',
       city: '赤峰',
       type: '博物馆',
@@ -571,6 +722,27 @@ name: '赤峰辽文化博物馆',
     {
       id: 'daming-pagoda',
             relationship: '它和上一站（赤峰）的关系：从现代赤峰进入辽中京。它和下一站（辽中京遗址）的关系：从佛塔进入城市。',
+      sources: [
+        {
+          sourceName: '宁城县文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票'
+        },
+        {
+          sourceName: '《辽中京遗址研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '辽中京城市布局'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+
 name: '大明塔',
       city: '宁城',
       type: '辽塔',
@@ -644,7 +816,27 @@ name: '大明塔',
     // ===== 其他景点 =====
     {
       id: 'beizhen-temple',
-            relationship: '它和上一站（万佛堂石窟）的关系：从佛教石窟进入五镇信仰。它和下一站（崇兴寺双塔）的关系：从皇家祭祀进入城市地标。',
+            sources: [
+        {
+          sourceName: '北镇市文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票'
+        },
+        {
+          sourceName: '《北镇庙历史研究》',
+          sourceType: '书籍/原典',
+          confidence: '较可靠',
+          note: '五镇信仰与皇家祭祀'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（万佛堂石窟）的关系：从佛教石窟进入五镇信仰。它和下一站（崇兴寺双塔）的关系：从皇家祭祀进入城市地标。',
 name: '北镇庙',
       city: '北镇',
       type: '寺庙',
@@ -671,7 +863,27 @@ name: '北镇庙',
     },
     {
       id: 'chongxing-twin-pagodas',
-            relationship: '它和上一站（北镇庙）的关系：从皇家祭祀进入城市佛教地标。它和下一站（李成梁石坊）的关系：从辽代进入明代军事遗存。',
+            sources: [
+        {
+          sourceName: '北镇市文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票'
+        },
+        {
+          sourceName: '《辽代双塔研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '城市规划与佛教布局'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（北镇庙）的关系：从皇家祭祀进入城市佛教地标。它和下一站（李成梁石坊）的关系：从辽代进入明代军事遗存。',
 name: '崇兴寺双塔',
       city: '北镇',
       type: '辽塔',
@@ -751,7 +963,27 @@ name: '崇兴寺双塔',
     },
     {
       id: 'chaoyang-south-pagoda',
-            relationship: '它和上一站（朝阳北塔）的关系：从主塔进入辅塔，从主城进入子城。它和下一站（朝阳博物馆）的关系：从辽代佛塔进入红山文化。',
+            sources: [
+        {
+          sourceName: '朝阳市文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票'
+        },
+        {
+          sourceName: '《朝阳南塔研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '塔的建筑特点'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（朝阳北塔）的关系：从主塔进入辅塔，从主城进入子城。它和下一站（朝阳博物馆）的关系：从辽代佛塔进入红山文化。',
 name: '朝阳南塔',
       city: '朝阳',
       type: '辽塔',
@@ -779,7 +1011,33 @@ name: '朝阳南塔',
     },
     {
       id: 'chaoyang-museum',
-            relationship: '它和上一站（朝阳南塔）的关系：从辽代佛塔进入更早的红山文化。它和下一站（赤峰辽文化博物馆）的关系：从辽西进入辽北。',
+            sources: [
+        {
+          sourceName: '朝阳市博物馆官网',
+          sourceType: '博物馆/文旅资料',
+          confidence: '官方确认',
+          note: '开放时间、门票、临展'
+        },
+        {
+          sourceName: '《红山文化研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '红山文化玉器'
+        },
+        {
+          sourceName: '《三燕古都研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '三燕历史文物'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（朝阳南塔）的关系：从辽代佛塔进入更早的红山文化。它和下一站（赤峰辽文化博物馆）的关系：从辽西进入辽北。',
 name: '朝阳博物馆',
       city: '朝阳',
       type: '博物馆',
@@ -807,7 +1065,27 @@ name: '朝阳博物馆',
     },
     {
       id: 'qingzhou-ancient-city',
-            relationship: '它和上一站（庆州白塔）的关系：从佛塔进入城市。它和下一站（辽上京）的关系：从捺钵城市进入首都。',
+            sources: [
+        {
+          sourceName: '巴林左旗文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、参观方式'
+        },
+        {
+          sourceName: '《辽代捺钵制度研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '庆州作为秋捺钵重镇'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（庆州白塔）的关系：从佛塔进入城市。它和下一站（辽上京）的关系：从捺钵城市进入首都。',
 name: '庆州古城遗址',
       city: '巴林左旗',
       type: '古城',
@@ -835,7 +1113,27 @@ name: '庆州古城遗址',
     },
     {
       id: 'liao-capital-south-pagoda',
-            relationship: '它和上一站（辽上京遗址）的关系：从皇城进入两种文化交汇处。它和下一站（真寂之寺）的关系：从城市进入皇家石窟。',
+            sources: [
+        {
+          sourceName: '巴林左旗辽上京博物馆',
+          sourceType: '博物馆/文旅资料',
+          confidence: '官方确认',
+          note: '现场参观信息'
+        },
+        {
+          sourceName: '《辽上京南塔研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '塔的建筑特点'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（辽上京遗址）的关系：从皇城进入两种文化交汇处。它和下一站（真寂之寺）的关系：从城市进入皇家石窟。',
 name: '辽上京南塔',
       city: '巴林左旗',
       type: '辽塔',
@@ -863,7 +1161,27 @@ name: '辽上京南塔',
     },
     {
       id: 'zhenjisi',
-            relationship: '它和上一站（辽上京南塔）的关系：从城市佛教进入皇家石窟。它和下一站（赤峰）的关系：从辽上京进入现代赤峰。',
+            sources: [
+        {
+          sourceName: '巴林左旗文旅局',
+          sourceType: '官方资料',
+          confidence: '官方确认',
+          note: '开放时间、门票'
+        },
+        {
+          sourceName: '《真寂之寺石窟研究》',
+          sourceType: '建筑史/研究资料',
+          confidence: '较可靠',
+          note: '辽代皇家石窟艺术'
+        },
+        {
+          sourceName: '本作者探访笔记',
+          sourceType: '旅行整理说明',
+          confidence: '旅行整理',
+          note: '现场参观心得'
+        },
+      ],
+      relationship: '它和上一站（辽上京南塔）的关系：从城市佛教进入皇家石窟。它和下一站（赤峰）的关系：从辽上京进入现代赤峰。',
 name: '真寂之寺',
       city: '巴林左旗',
       type: '石窟',
@@ -1554,6 +1872,62 @@ name: '真寂之寺',
         '本作者亲身探访记录（2026年）'
       ]
     }
+  ],
+
+  // ============ v0.6 资料来源索引 ============
+
+  // 全局资料来源索引
+  sourceIndex: [
+    // 官方资料
+    { name: '奉国寺官网', type: '官方资料', spots: ['奉国寺'], purpose: '开放时间、门票、参观信息', confidence: '官方确认' },
+    { name: '义县文化和旅游局', type: '官方资料', spots: ['万佛堂石窟'], purpose: '开放时间、门票', confidence: '官方确认' },
+    { name: '北镇市文旅局', type: '官方资料', spots: ['北镇庙', '崇兴寺双塔'], purpose: '开放时间、门票', confidence: '官方确认' },
+    { name: '朝阳市文旅局', type: '官方资料', spots: ['朝阳北塔', '朝阳南塔'], purpose: '开放时间、门票', confidence: '官方确认' },
+    { name: '巴林左旗文旅局', type: '官方资料', spots: ['庆州白塔', '庆州古城遗址', '真寂之寺'], purpose: '开放时间、门票', confidence: '官方确认' },
+    { name: '宁城县文旅局', type: '官方资料', spots: ['大明塔', '辽中京遗址'], purpose: '开放时间、门票', confidence: '官方确认' },
+
+    // 博物馆/文旅资料
+    { name: '朝阳市博物馆官网', type: '博物馆/文旅资料', spots: ['朝阳博物馆'], purpose: '开放时间、门票、临展', confidence: '官方确认' },
+    { name: '巴林左旗辽上京博物馆', type: '博物馆/文旅资料', spots: ['辽上京遗址', '辽上京南塔'], purpose: '开放时间、门票、讲解预约', confidence: '官方确认' },
+    { name: '赤峰辽文化博物馆官网', type: '博物馆/文旅资料', spots: ['赤峰辽文化博物馆'], purpose: '开放时间、门票、临展', confidence: '官方确认' },
+
+    // 纪录片/视频
+    { name: 'CCTV《契丹王朝》', type: '纪录片/视频', spots: ['辽上京遗址', '辽中京遗址'], purpose: '辽代历史、二元制度、契丹文化', confidence: '较可靠' },
+    { name: 'CCTV《探索·发现》奉国寺专辑', type: '纪录片/视频', spots: ['奉国寺'], purpose: '建筑历史、佛像介绍', confidence: '较可靠' },
+    { name: 'CCTV《探索·发现》朝阳北塔', type: '纪录片/视频', spots: ['朝阳北塔'], purpose: '建筑演变与文物介绍', confidence: '较可靠' },
+    { name: 'CCTV《古塔往事》系列', type: '纪录片/视频', spots: ['庆州白塔', '大明塔'], purpose: '古塔建筑历史', confidence: '较可靠' },
+
+    // 书籍/原典
+    { name: '《辽史》（元·脱脱等）', type: '书籍/原典', spots: [], purpose: '辽代正史资料', confidence: '较可靠' },
+    { name: '《契丹国志》（宋·叶隆礼）', type: '书籍/原典', spots: [], purpose: '辽代史料', confidence: '较可靠' },
+    { name: '《辽金元史十五讲》（刘浦江）', type: '书籍/原典', spots: [], purpose: '辽金元断代史', confidence: '较可靠' },
+    { name: '《中国古代建筑史》（梁思成）', type: '书籍/原典', spots: [], purpose: '建筑史框架', confidence: '较可靠' },
+
+    // 建筑史/研究资料
+    { name: '《辽上京遗址考古报告》', type: '建筑史/研究资料', spots: ['辽上京遗址'], purpose: '南北分城布局研究', confidence: '较可靠' },
+    { name: '《庆州白塔考古报告》', type: '建筑史/研究资料', spots: ['庆州白塔'], purpose: '塔的建筑结构、雕刻艺术', confidence: '较可靠' },
+    { name: '《朝阳北塔考古发掘报告》', type: '建筑史/研究资料', spots: ['朝阳北塔'], purpose: '五世同堂建筑史、地宫文物', confidence: '较可靠' },
+    { name: '《辽代捺钵制度研究》', type: '建筑史/研究资料', spots: ['庆州古城遗址'], purpose: '庆州作为秋捺钵重镇', confidence: '较可靠' },
+    { name: '《红山文化研究》', type: '建筑史/研究资料', spots: ['朝阳博物馆'], purpose: '红山文化玉器', confidence: '较可靠' },
+
+    // 旅行整理说明
+    { name: '马蜂窝、穷游网相关游记', type: '旅行整理说明', spots: [], purpose: '旅行攻略参考', confidence: '旅行整理' },
+    { name: '小红书辽塔相关分享', type: '旅行整理说明', spots: [], purpose: '实地参观信息', confidence: '旅行整理' },
+    { name: '本作者亲身探访笔记（2026年）', type: '旅行整理说明', spots: [], purpose: '现场参观心得', confidence: '旅行整理' }
+  ],
+
+  // 出发前实时核对清单
+  preDepartureChecklist: [
+    { id: 'hours', label: '开放时间', note: '确认各景点当前开放时间' },
+    { id: 'closed', label: '闭馆日', note: '周一闭馆的博物馆是否避开' },
+    { id: 'tickets', label: '门票', note: '现金/电子票/身份证要求' },
+    { id: 'reservation', label: '预约', note: '博物馆/景区是否需要预约' },
+    { id: 'parking', label: '停车', note: '景区停车是否需要提前确认' },
+    { id: 'roadwork', label: '道路施工', note: '导航路线是否有施工封路' },
+    { id: 'weather', label: '天气', note: '查看行程期间天气预报' },
+    { id: 'hotel', label: '酒店', note: '再次确认酒店预订信息' },
+    { id: 'exhibition', label: '博物馆临展', note: '是否有特展或限展' },
+    { id: 'navigation', label: '导航终点', note: '导航目的地是否正确' }
   ],
 
 // 导出为全局变量

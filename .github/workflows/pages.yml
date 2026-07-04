@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: '20'
+  ACTIONS_RUNNER_DEBUG: 'false'
 
 permissions:
   contents: read
@@ -23,6 +23,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
       - name: Checkout
         uses: actions/checkout@v4
 
