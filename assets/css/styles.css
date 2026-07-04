@@ -1904,6 +1904,184 @@ p {
 
 
 
+
+/* ============================================
+   v0.9 Trip Template & Skeleton 样式
+   ============================================ */
+
+/* ---------- 路线骨架标识 ---------- */
+.trip-skeleton {
+  position: relative;
+}
+
+.trip-skeleton-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  background: rgba(184, 134, 11, 0.15);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 20px;
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+/* ---------- 规划中提示 ---------- */
+.planning-note {
+  background: rgba(184, 134, 11, 0.08);
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.planning-note strong {
+  color: var(--color-accent-dark);
+}
+
+.link-inline {
+  color: var(--color-accent-dark);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* ---------- 路线模板章节 ---------- */
+.trip-template-section {
+  margin: var(--space-2xl) 0;
+}
+
+/* ---------- 候选点位 ---------- */
+.candidate-spot {
+  background: var(--color-bg-card);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  transition: all var(--transition-fast);
+}
+
+.candidate-spot:hover {
+  border-color: var(--color-accent);
+  border-style: solid;
+}
+
+.candidate-spot-name {
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.candidate-spot-meta {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-sm);
+}
+
+.candidate-spot-desc {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.candidate-spot-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+/* ---------- 路线状态视觉 ---------- */
+.trip-status {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.status-live {
+  background: rgba(39, 174, 96, 0.15);
+  color: #27ae60;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+.status-planning {
+  background: rgba(184, 134, 11, 0.1);
+  color: var(--color-accent-dark);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+.status-draft {
+  background: rgba(149, 165, 166, 0.15);
+  color: #7f8c8d;
+  border: 1px solid rgba(149, 165, 166, 0.3);
+}
+
+.status-reviewed {
+  background: rgba(52, 152, 219, 0.15);
+  color: #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+/* ---------- 状态说明 ---------- */
+.status-legend {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-lg);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.status-legend-title {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.status-legend-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.status-legend-item {
+  background: var(--color-bg);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+}
+
+.status-legend-name {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+  font-size: 0.95rem;
+}
+
+.status-legend-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 768px) {
+  .candidate-spot {
+    padding: var(--space-md);
+  }
+
+  .status-legend-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* ============================================
    v0.8 Multi Trip Framework 样式
    ============================================ */

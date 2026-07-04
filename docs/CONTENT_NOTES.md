@@ -211,3 +211,24 @@
 
 ### 现有行程页
 - trips/liao-tower-roadtrip/index.html：保持 v0.7 全部功能不变
+
+
+## v0.9 Trip Template & Second Route Skeleton (2026-07-04)
+
+### 新增功能
+- docs/TRIP_TEMPLATE.md：标准路线页面模板
+- trips/shanxi-ancient-architecture-roadtrip/index.html：第二条路线规划中骨架页
+- 首页山西古建卡片按钮从 disabled 改为「查看规划」
+- 状态样式区分：status-live / status-planning / status-draft / status-reviewed
+- 可复用样式类：trip-skeleton / planning-note / trip-template-section / candidate-spot
+
+### 第二条路线
+- 名称：山西古建自驾线
+- 状态：规划中 · 20%
+- 路线：北京 → 大同 → 应县 → 五台山周边 → 太原 → 平遥 / 介休 → 长治 / 晋城 → 北京
+- 17 个候选点位：云冈石窟、华严寺、善化寺、应县木塔、佛光寺、南禅寺、晋祠、双塔寺、镇国寺、双林寺、介休后土庙、长治观音堂、崇庆寺、法兴寺、小西天、玉皇庙、青莲寺
+- 全部点位标注「待核对」
+
+### 完整路线 vs 规划中路线
+- 辽塔巡礼：v0.7 完整路线（已上线 100%）
+- 山西古建：v0.9 规划中骨架页（20%）

@@ -44,7 +44,9 @@
       const statusClass = trip.isLive ? 'status-live' : 'status-planning';
       const buttonHtml = trip.isLive
         ? `<a href="${trip.url}" class="btn btn-primary">进入行程 →</a>`
-        : `<button class="btn btn-outline" disabled>规划中</button>`;
+        : trip.url && trip.url !== '#'
+          ? `<a href="${trip.url}" class="btn btn-outline">查看规划 →</a>`
+          : `<button class="btn btn-outline" disabled>规划中</button>`;
 
       const progressHtml = trip.isLive
         ? `<div class="trip-progress"><div class="trip-progress-bar" style="width: ${trip.progress}%"></div></div><div class="trip-progress-label">已上线 · v0.7</div>`

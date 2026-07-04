@@ -7,7 +7,7 @@
 
 ## 版本信息
 
-**当前版本**: v0.8.0 (Multi Trip Framework)
+**当前版本**: v0.9.0 (Trip Template & Second Route Skeleton)
 
 ### 版本历史
 - **v0.1.0**: 基础框架上线，行程页、景点卡片、导游词、语音朗读、打卡进度
@@ -18,6 +18,7 @@
 - **v0.6.0**: 资料来源与事实核对版，资料来源索引、出发前核对清单、景点 sources 字段、内容风险说明、页面版本信息、Workflow 升级 Node 24
 - **v0.7.0**: Heritage Visual Polish，重点景点档案卡、辽塔线描示意、城市章节封面、导游词摘句、路线故事线、阅读层级优化
 - **v0.8.0**: Multi Trip Framework，路线库首页、Featured Trip、筛选按钮、6 条路线卡片、项目方法论、trips-data.js + home.js
+- **v0.9.0**: Trip Template & Second Route Skeleton，新增 docs/TRIP_TEMPLATE.md 模板，第二条路线「山西古建自驾线」规划中骨架页，6 段路线 / 17 个候选点位，状态样式区分
 
 ## 项目概述
 
@@ -95,3 +96,29 @@ python3 -m http.server 8000
 ---
 
 *行旅图谱 · 让每一次出发都有迹可循*
+
+## 如何添加新路线
+
+**最小步骤（参考 docs/TRIP_TEMPLATE.md）：**
+
+1. **创建目录和文件**
+   - `trips/<route-id>/index.html`
+
+2. **更新首页数据**
+   - 编辑 `assets/js/trips-data.js`
+   - 添加路线条目，设置 `status: "规划中"`，`progress: <small>`
+
+3. **更新文档**
+   - `README.md`：在版本历史增加新条目
+   - `docs/CONTENT_NOTES.md`：增加开发进度说明
+
+4. **部署验证**
+   - commit + push to main
+   - 等待 GitHub Pages 部署
+   - 验证 HTTP 200
+   - 检查关键词
+
+**参考骨架：** `trips/shanxi-ancient-architecture-roadtrip/index.html`（v0.9 规划中路线）
+
+**参考完整路线：** `trips/liao-tower-roadtrip/index.html`（v0.7 已上线完整路线）
+
