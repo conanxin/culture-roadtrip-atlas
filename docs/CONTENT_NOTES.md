@@ -118,3 +118,23 @@
 - 9天行程：+ eveningReview (今晚复盘/明日预习/今晚建议)
 - 17个重点景点：+ arrivalIntro / stepGuide / beforeLeave
 - 全局：+ prepPlan (行前7天学习计划)
+
+
+## v0.4 知识深化版 (2026-07-04)
+
+### 新增功能
+- 辽代时间轴：9个关键节点（916-1125）可展开
+- 辽五京体系：5座都城卡片（标记本行程涉及）
+- 辽塔形制比较：6种塔形制对应本路线景点
+- 核心概念图谱：11个词条可展开（契丹/辽/捺钵/五京/二元制度等）
+- 出发前阅读路线：3种预习方案（30分钟/2小时/7天）
+- 资料来源与事实核对：5类资料 + 出发前必读提醒
+- 景点之间的关系：14个重点景点 relationship 字段
+
+### 数据更新
+- 全局：+ timeline(9), fiveCapitals(5), pagodaTypes(6), concepts(11), readingRoutes(3), sources(5)
+- 14个重点景点：+ relationship 字段
+
+### Workflow 改进
+- 增加 NODE_VERSION 环境变量
+- 移除 environment 引用避免保护规则
