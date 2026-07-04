@@ -4,6 +4,42 @@
 
 ---
 
+## v1.4.5 · Out of Eden Walk China Phase 5 · Route Data (2026-07-04)
+
+### 主要变更
+- **3 种路线数据文件**：CSV (42 行 / 18 字段) / GeoJSON (42 Point + 1 主 LineString + 10 段 LineString) / GPX 1.1 (42 waypoints + 1 track)
+- **数据目录**：`data/routes/` 新增 `out-of-eden-walk-china.csv` / `.geojson` / `.gpx` + `README.md`
+- **路线数据索引页**：`routes/index.html` 全新页面，含 Hero / 三种格式说明 / 路线数据卡片 / 下载按钮 / 未来路线 / 关于
+- **首页入口**：导航增加"路线数据"链接，新增 CTA 卡片"路线数据索引"
+- **OEDW 页面新增"下载路线数据"模块**：3 种格式下载按钮 + 数据摘要表 + 6 个字段（版本 / 类型 / 段点 / 精度 / 用途 / 限制）
+- **CSS 新增**：route-data-card / route-data-grid / route-data-downloads / route-data-button / data-format-badge / data-warning / data-index-grid / data-index-card / data-meta-list / data-file-list / data-status-badge / route-data-inline 约 250 行
+- **首页 + OEDW 版本号**：v1.4.4 → v1.4.5
+
+### 重要边界
+- 所有数据均为**文化复刻粗点**（cultural replica waypoints）
+- **不是 Paul Salopek 原始 GPS 轨迹**（明确标注在 CSV / GeoJSON / GPX 元数据中）
+- **不用于导航**（明确标注）
+- 不引入地图 API / 后端 / 构建系统
+- 不破坏辽塔 / 山西等其他页面
+
+### 数据精度分级
+- `city` - 城市级
+- `landmark` - 景区 / 地标级
+- `region` - 区域级
+- `approximate` - 近似坐标（不可精确导航）
+- `unknown` - 不确定位置
+
+### 来源等级
+- `A_official_oedw` - 官方 Out of Eden Walk milestone/dispatch
+- `B_partner_or_education` - 合作地图、NatGeo Education
+- `C_chinese_media` - 中文媒体、纪录片、展览
+- `D_reconstructed_for_travel` - 基于公开材料重建
+
+### 复刻可行性
+- `high` / `medium` / `low` / `not_recommended` / `reading_only`
+
+---
+
 ## v1.4.4 · Out of Eden Walk China Phase 4 · Launch Package (2026-07-04)
 
 ### 主要变更

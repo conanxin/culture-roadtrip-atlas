@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="行旅图谱 v1.4.5 · culture-roadtrip-atlas"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Out of Eden Walk 中国段文化复刻路线粗点</name>
+    <desc>Cultural replica waypoints and generalized route only; not Paul Salopek's original GPS track; not for navigation.</desc>
+    <author>
+      <name>Xin Conan · 行旅图谱</name>
+      <email>conanxin@local</email>
+    </author>
+    <copyright author="Xin Conan">
+      <year>2026</year>
+      <license>CC BY-NC 4.0 (cultural replica data only)</license>
+    </copyright>
+    <link href="https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/">
+      <text>Out of Eden Walk 中国段复刻路线</text>
+    </link>
+    <time>2026-07-04T00:00:00Z</time>
+    <keywords>Out of Eden Walk, Paul Salopek, China, cultural replica, waypoints</keywords>
+    <bounds minlat="24.83" minlon="98.48" maxlat="41.81" maxlon="123.43"/>
+  </metadata>
+
+  <wpt lat="25.02" lon="98.49">
+    <ele>0</ele>
+    <name>云南西部 / 缅中边境附近</name>
+    <cmt>滇西重启线 · Dehong · 精度:approximate</cmt>
+    <desc>id=OEDW-P001 · seq=1 · A_official_oedw · low · 难度:hard · 最佳:Oct-Apr · 边境管控禁止普通徒步 · 风险:边境地区无精确坐标，使用德宏州近似点 · 来源:Milestone 74 (2021-10)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="25.0204" lon="98.493">
+    <ele>0</ele>
+    <name>腾冲</name>
+    <cmt>滇西重启线 · Tengchong · 精度:city</cmt>
+    <desc>id=OEDW-P002 · seq=2 · A_official_oedw · high · 难度:easy · 最佳:Oct-Apr · 腾冲驼峰机场 / 高铁保山 · 风险:市区安全，可直接复刻 · 来源:Milestone 74-75 / Dispatch Crossroad of Memory</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="24.978" lon="98.488">
+    <ele>0</ele>
+    <name>和顺古镇</name>
+    <cmt>滇西重启线 · Tengchong · 精度:landmark</cmt>
+    <desc>id=OEDW-P003 · seq=3 · C_chinese_media · high · 难度:easy · 最佳:Year-round · 腾冲市区打车 15 分钟 · 风险:古镇商业化程度高，无特殊风险 · 来源:Dispatch Crossroad of Memory</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="24.835" lon="98.765">
+    <ele>0</ele>
+    <name>高黎贡山</name>
+    <cmt>滇西重启线 · Tengchong · 精度:region</cmt>
+    <desc>id=OEDW-P004 · seq=4 · A_official_oedw · medium · 难度:hard · 最佳:Nov-Apr · 需请当地向导 · 风险:生物多样性保护区·深山不可独自徒步 · 来源:Milestone 75 (2021-12) / Dispatch Green Ark</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="25.694" lon="100.166">
+    <ele>0</ele>
+    <name>大理古城</name>
+    <cmt>滇西重启线 · Dali · 精度:city</cmt>
+    <desc>id=OEDW-P005 · seq=5 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 大理凤仪机场 / 大理高铁站 · 风险:古城内步行安全 · 来源:Milestone 76 (2022-03)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="25.778" lon="100.136">
+    <ele>0</ele>
+    <name>喜洲</name>
+    <cmt>大理丽江雪山线 · Dali · 精度:landmark</cmt>
+    <desc>id=OEDW-P006 · seq=6 · C_chinese_media · high · 难度:easy · 最佳:Year-round · 大理古城打车 30 分钟 · 风险:白族民居密集区域 · 来源:Dispatch Astral Village</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="26.11" lon="99.953">
+    <ele>0</ele>
+    <name>洱源</name>
+    <cmt>大理丽江雪山线 · Eryuan · 精度:city</cmt>
+    <desc>id=OEDW-P007 · seq=7 · C_chinese_media · medium · 难度:easy · 最佳:Year-round · 大理自驾 1.5 小时 · 风险:高原湖泊地区 · 来源:Milestone 76</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="26.8721" lon="100.233">
+    <ele>0</ele>
+    <name>丽江古城</name>
+    <cmt>大理丽江雪山线 · Lijiang · 精度:city</cmt>
+    <desc>id=OEDW-P008 · seq=8 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 丽江三义机场 / 丽江高铁站 · 风险:古城海拔 2400m 注意休息 · 来源:Milestone 76 / NatGeo Education</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="27.09" lon="100.18">
+    <ele>0</ele>
+    <name>玉龙雪山</name>
+    <cmt>大理丽江雪山线 · Lijiang · 精度:landmark</cmt>
+    <desc>id=OEDW-P009 · seq=9 · A_official_oedw · medium · 难度:medium · 最佳:Nov-May · 丽江古城包车 1 小时 · 风险:高海拔 4506m·需防高反 · 来源:Milestone 76</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="27.703" lon="100.768">
+    <ele>0</ele>
+    <name>泸沽湖周边</name>
+    <cmt>茶马古道木里线 · Ninglang · 精度:landmark</cmt>
+    <desc>id=OEDW-P010 · seq=10 · B_partner_or_education · medium · 难度:medium · 最佳:Apr-Oct · 丽江包车 4 小时 · 风险:少数民族区域尊重当地习俗 · 来源:Milestone 77 (2022-03)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="27.926" lon="101.279">
+    <ele>0</ele>
+    <name>木里</name>
+    <cmt>茶马古道木里线 · Muli · 精度:city</cmt>
+    <desc>id=OEDW-P011 · seq=11 · B_partner_or_education · medium · 难度:hard · 最佳:May-Oct · 西昌转越野车 6 小时 · 风险:路况复杂需四驱越野 · 来源:Dispatch Looking for Muli</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="30.044" lon="101.964">
+    <ele>0</ele>
+    <name>康定</name>
+    <cmt>茶马古道木里线 · Kangding · 精度:city</cmt>
+    <desc>id=OEDW-P012 · seq=12 · A_official_oedw · high · 难度:medium · 最佳:May-Oct · 成都自驾 4 小时 / 康定机场 · 风险:海拔 2560m 注意高反 · 来源:Milestone 78 (2022-07)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="30.061" lon="102.759">
+    <ele>0</ele>
+    <name>天全</name>
+    <cmt>川西南雅安线 · Tianquan · 精度:city</cmt>
+    <desc>id=OEDW-P013 · seq=13 · C_chinese_media · medium · 难度:medium · 最佳:Apr-Oct · 雅安转汽车 · 风险:山区道路 · 来源:Dispatch 250 Pounds of Grief</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="29.98" lon="103.001">
+    <ele>0</ele>
+    <name>雅安</name>
+    <cmt>川西南雅安线 · Ya'an · 精度:city</cmt>
+    <desc>id=OEDW-P014 · seq=14 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 成都西站高铁 1.5 小时 · 风险:茶马古道重要节点 · 来源:Milestone 80 (2023-02)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="30.42" lon="103.314">
+    <ele>0</ele>
+    <name>平乐古镇</name>
+    <cmt>川西南雅安线 · Qianguang · 精度:landmark</cmt>
+    <desc>id=OEDW-P015 · seq=15 · C_chinese_media · high · 难度:easy · 最佳:Year-round · 雅安自驾 1 小时 · 风险:古镇内步行 · 来源:Milestone 80</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="30.992" lon="104.282">
+    <ele>0</ele>
+    <name>三星堆 / 广汉</name>
+    <cmt>川西南雅安线 · Guanghan · 精度:landmark</cmt>
+    <desc>id=OEDW-P016 · seq=16 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 成都东站高铁到广汉 30 分钟 · 风险:三星堆博物馆需预约 · 来源:Milestone 80</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="31.338" lon="104.221">
+    <ele>0</ele>
+    <name>绵竹</name>
+    <cmt>川西南雅安线 · Mianzhu · 精度:city</cmt>
+    <desc>id=OEDW-P017 · seq=17 · C_chinese_media · medium · 难度:easy · 最佳:Year-round · 成都自驾 1.5 小时 · 风险:年画村可顺便参观 · 来源:Milestone 80</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="32.24" lon="105.58">
+    <ele>0</ele>
+    <name>剑门关</name>
+    <cmt>剑门蜀道汉中线 · Jiange · 精度:landmark</cmt>
+    <desc>id=OEDW-P018 · seq=18 · A_official_oedw · high · 难度:medium · 最佳:Apr-Oct · 广元自驾 30 分钟 · 风险:需爬山 4-5 小时 · 来源:Milestone 81 (2023-04)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="32.435" lon="105.844">
+    <ele>0</ele>
+    <name>广元</name>
+    <cmt>剑门蜀道汉中线 · Guangyuan · 精度:city</cmt>
+    <desc>id=OEDW-P019 · seq=19 · B_partner_or_education · high · 难度:easy · 最佳:Year-round · 广元盘龙机场 / 高铁站 · 风险:蜀道北端起点 · 来源:Milestone 81</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="33.068" lon="107.028">
+    <ele>0</ele>
+    <name>汉中</name>
+    <cmt>剑门蜀道汉中线 · Hanzhong · 精度:city</cmt>
+    <desc>id=OEDW-P020 · seq=20 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 汉中机场 / 高铁站 · 风险:汉文化发源地之一 · 来源:Milestone 82 (2023-04)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="34.058" lon="108.318">
+    <ele>0</ele>
+    <name>秦岭北麓 / 楼观台</name>
+    <cmt>剑门蜀道汉中线 · Zhouzhi · 精度:region</cmt>
+    <desc>id=OEDW-P021 · seq=21 · A_official_oedw · low · 难度:medium · 最佳:May-Oct · 西安自驾 1 小时 · 风险:秦岭封控时期点位·2023 特殊情况 · 来源:Milestone 83 (2023-06)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="34.3416" lon="108.9398">
+    <ele>0</ele>
+    <name>西安</name>
+    <cmt>关中陕北线 · Xi'an · 精度:city</cmt>
+    <desc>id=OEDW-P022 · seq=22 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 西安咸阳国际机场 / 多高铁站 · 风险:帝都起点·人流密集 · 来源:Milestone 84 (2023-07)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="35.074" lon="109.081">
+    <ele>0</ele>
+    <name>宜君 / 铜川</name>
+    <cmt>关中陕北线 · Tongchuan · 精度:city</cmt>
+    <desc>id=OEDW-P023 · seq=23 · B_partner_or_education · medium · 难度:medium · 最佳:May-Oct · 西安自驾 1.5 小时 · 风险:黄土高原过渡带 · 来源:Milestone 84</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="36.5853" lon="109.4894">
+    <ele>0</ele>
+    <name>延安</name>
+    <cmt>关中陕北线 · Yan'an · 精度:city</cmt>
+    <desc>id=OEDW-P024 · seq=24 · A_official_oedw · high · 难度:medium · 最佳:May-Oct · 延安南泥湾机场 / 高铁站 · 风险:部分遗址需预约 · 来源:Milestone 85 (2023-08)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="36.156" lon="110.461">
+    <ele>0</ele>
+    <name>黄河壶口瀑布方向</name>
+    <cmt>关中陕北线 · Yichuan · 精度:landmark</cmt>
+    <desc>id=OEDW-P025 · seq=25 · B_partner_or_education · medium · 难度:medium · 最佳:May-Oct · 延安自驾 2.5 小时 · 风险:冬季关闭 · 来源:Milestone 84</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="37.5184" lon="111.1436">
+    <ele>0</ele>
+    <name>吕梁</name>
+    <cmt>晋西雁门关线 · Lvliang · 精度:city</cmt>
+    <desc>id=OEDW-P026 · seq=26 · A_official_oedw · high · 难度:medium · 最佳:May-Oct · 太原自驾 2 小时 · 风险:黄土高原城市 · 来源:Milestone 86 (2023-11)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="38.4167" lon="112.7341">
+    <ele>0</ele>
+    <name>忻州</name>
+    <cmt>晋西雁门关线 · Xinzhou · 精度:city</cmt>
+    <desc>id=OEDW-P027 · seq=27 · B_partner_or_education · high · 难度:easy · 最佳:Year-round · 太原自驾 1.5 小时 · 风险:晋北交通枢纽 · 来源:Milestone 86</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="39.188" lon="112.873">
+    <ele>0</ele>
+    <name>雁门关</name>
+    <cmt>晋西雁门关线 · Dai County · 精度:landmark</cmt>
+    <desc>id=OEDW-P028 · seq=28 · A_official_oedw · high · 难度:medium · 最佳:Apr-Oct · 忻州自驾 1 小时 · 风险:需爬山半天 · 来源:Milestone 86 / Dispatch Walled World</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="39.689" lon="115.926">
+    <ele>0</ele>
+    <name>周口店 / 田园洞</name>
+    <cmt>晋西雁门关线 · Fangshan · 精度:landmark</cmt>
+    <desc>id=OEDW-P029 · seq=29 · A_official_oedw · high · 难度:easy · 最佳:Apr-Oct · 北京西站公交 / 地铁 · 风险:遗址博物馆需预约 · 来源:Milestone 89 / Dispatch Meeting a Dawn Human</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="39.849" lon="116.213">
+    <ele>0</ele>
+    <name>卢沟桥</name>
+    <cmt>北京城市步行线 · Fengtai · 精度:landmark</cmt>
+    <desc>id=OEDW-P030 · seq=30 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 地铁 14 号线大瓦窑站 · 风险:1937 历史现场 · 来源:Dispatch Rediscovering China Capital / Walking Map Mazes of Beijing</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="39.9054" lon="116.3976">
+    <ele>0</ele>
+    <name>天安门周边</name>
+    <cmt>北京城市步行线 · Dongcheng · 精度:city</cmt>
+    <desc>id=OEDW-P031 · seq=31 · A_official_oedw · high · 难度:easy · 最佳:Year-round · 地铁 1 号线天安门东站 · 风险:节假日人流密集需预约 · 来源:Dispatch Rediscovering China Capital</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="39.918" lon="116.407">
+    <ele>0</ele>
+    <name>北京胡同 / 中轴线</name>
+    <cmt>北京城市步行线 · Dongcheng · 精度:region</cmt>
+    <desc>id=OEDW-P032 · seq=32 · A_official_oedw · medium · 难度:easy · 最佳:Apr-Oct · 地铁 + 步行 · 风险:胡同商业化区域 · 来源:Walking Map Mazes of Beijing</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="40.176" lon="116.387">
+    <ele>0</ele>
+    <name>小汤山</name>
+    <cmt>北京城市步行线 · Changping · 精度:landmark</cmt>
+    <desc>id=OEDW-P033 · seq=33 · C_chinese_media · medium · 难度:easy · 最佳:Apr-Oct · 地铁 5 号线转公交 · 风险:温泉度假区 · 来源:Dispatch Rediscovering China Capital</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="40.66" lon="117.27">
+    <ele>0</ele>
+    <name>司马台长城</name>
+    <cmt>京北长城承德线 · Miyun · 精度:landmark</cmt>
+    <desc>id=OEDW-P034 · seq=34 · A_official_oedw · medium · 难度:medium · 最佳:Apr-Oct · 东直门外包车 2 小时 · 风险:部分路段需手脚并用·景区分时段开放 · 来源:Milestone 90 (2024-05)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="40.632" lon="117.166">
+    <ele>0</ele>
+    <name>古北口 / 密云</name>
+    <cmt>京北长城承德线 · Miyun · 精度:city</cmt>
+    <desc>id=OEDW-P035 · seq=35 · B_partner_or_education · high · 难度:easy · 最佳:Apr-Oct · 北京自驾 2 小时 · 风险:长城关口小镇 · 来源:Dispatch Qing Roads</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="40.951" lon="117.963">
+    <ele>0</ele>
+    <name>承德</name>
+    <cmt>京北长城承德线 · Chengde · 精度:city</cmt>
+    <desc>id=OEDW-P036 · seq=36 · A_official_oedw · high · 难度:easy · 最佳:Apr-Oct · 承德普宁机场 / 高铁站 · 风险:清代边疆秩序空间化象征 · 来源:Dispatch Qing Roads</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="41.095" lon="121.141">
+    <ele>0</ele>
+    <name>锦州 / 辽西</name>
+    <cmt>辽宁大连黄海线 · Jinzhou · 精度:city</cmt>
+    <desc>id=OEDW-P037 · seq=37 · A_official_oedw · medium · 难度:medium · 最佳:May-Oct · 沈阳自驾 2.5 小时 · 风险:辽西走廊起点 · 来源:Milestone 91-92</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="41.8057" lon="123.4315">
+    <ele>0</ele>
+    <name>沈阳</name>
+    <cmt>辽宁大连黄海线 · Shenyang · 精度:city</cmt>
+    <desc>id=OEDW-P038 · seq=38 · B_partner_or_education · high · 难度:easy · 最佳:Year-round · 沈阳桃仙国际机场 · 风险:东北中心城市 · 来源:Milestone 92-93 / Dispatch Corn Corn Corn</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="41.268" lon="123.172">
+    <ele>0</ele>
+    <name>辽阳</name>
+    <cmt>辽宁大连黄海线 · Liaoyang · 精度:city</cmt>
+    <desc>id=OEDW-P039 · seq=39 · C_chinese_media · medium · 难度:easy · 最佳:May-Oct · 沈阳自驾 1 小时 · 风险:辽代古都 · 来源:Milestone 92</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="40.89" lon="122.75">
+    <ele>0</ele>
+    <name>辽宁乡村粗点</name>
+    <cmt>辽宁大连黄海线 · rural · 精度:approximate</cmt>
+    <desc>id=OEDW-P040 · seq=40 · A_official_oedw · low · 难度:medium · 最佳:May-Oct · 需包车或自驾 · 风险:玉米地/工业迁移区·具体村镇辨识度低 · 来源:Milestone 92-94</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="38.921" lon="121.63">
+    <ele>0</ele>
+    <name>大连港</name>
+    <cmt>辽宁大连黄海线 · Dalian · 精度:landmark</cmt>
+    <desc>id=OEDW-P041 · seq=41 · A_official_oedw · high · 难度:easy · 最佳:Apr-Oct · 大连周水子国际机场 / 高铁站 · 风险:2024.6 补齐大连港缺口 · 来源:Milestone 94-95 / Dispatch Goodbye to China</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <wpt lat="38.9" lon="121.7">
+    <ele>0</ele>
+    <name>黄海 / 大连近海粗点</name>
+    <cmt>辽宁大连黄海线 · Dalian coast · 精度:approximate</cmt>
+    <desc>id=OEDW-P042 · seq=42 · A_official_oedw · reading_only · 难度:n/a · 最佳:n/a · 远眺·不推荐近海徒步 · 风险:主体步行 2023 冬抵近此处 · 来源:Milestone 95 (2024-08)</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="">
+      <text>官方来源</text>
+    </link>
+    <sym>Waypoint</sym>
+    <type>waypoint</type>
+  </wpt>
+  <trk>
+    <name>Out of Eden Walk 中国段文化复刻概括路线</name>
+    <desc>Generalized cultural replica track connecting 10 segments and 42 waypoints. Not Paul Salopek's original GPS track. Not for navigation.</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <link href="https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/">
+      <text>路线页面</text>
+    </link>
+    <number>1</number>
+    <type>generalized_cultural_replica</type>
+    <trkseg>
+      <trkpt lat="25.02" lon="98.49">
+        <ele>0</ele>
+        <name>云南西部 / 缅中边境附近</name>
+      </trkpt>
+      <trkpt lat="25.0204" lon="98.493">
+        <ele>0</ele>
+        <name>腾冲</name>
+      </trkpt>
+      <trkpt lat="24.978" lon="98.488">
+        <ele>0</ele>
+        <name>和顺古镇</name>
+      </trkpt>
+      <trkpt lat="24.835" lon="98.765">
+        <ele>0</ele>
+        <name>高黎贡山</name>
+      </trkpt>
+      <trkpt lat="25.694" lon="100.166">
+        <ele>0</ele>
+        <name>大理古城</name>
+      </trkpt>
+      <trkpt lat="25.778" lon="100.136">
+        <ele>0</ele>
+        <name>喜洲</name>
+      </trkpt>
+      <trkpt lat="26.11" lon="99.953">
+        <ele>0</ele>
+        <name>洱源</name>
+      </trkpt>
+      <trkpt lat="26.8721" lon="100.233">
+        <ele>0</ele>
+        <name>丽江古城</name>
+      </trkpt>
+      <trkpt lat="27.09" lon="100.18">
+        <ele>0</ele>
+        <name>玉龙雪山</name>
+      </trkpt>
+      <trkpt lat="27.703" lon="100.768">
+        <ele>0</ele>
+        <name>泸沽湖周边</name>
+      </trkpt>
+      <trkpt lat="27.926" lon="101.279">
+        <ele>0</ele>
+        <name>木里</name>
+      </trkpt>
+      <trkpt lat="30.044" lon="101.964">
+        <ele>0</ele>
+        <name>康定</name>
+      </trkpt>
+      <trkpt lat="30.061" lon="102.759">
+        <ele>0</ele>
+        <name>天全</name>
+      </trkpt>
+      <trkpt lat="29.98" lon="103.001">
+        <ele>0</ele>
+        <name>雅安</name>
+      </trkpt>
+      <trkpt lat="30.42" lon="103.314">
+        <ele>0</ele>
+        <name>平乐古镇</name>
+      </trkpt>
+      <trkpt lat="30.992" lon="104.282">
+        <ele>0</ele>
+        <name>三星堆 / 广汉</name>
+      </trkpt>
+      <trkpt lat="31.338" lon="104.221">
+        <ele>0</ele>
+        <name>绵竹</name>
+      </trkpt>
+      <trkpt lat="32.24" lon="105.58">
+        <ele>0</ele>
+        <name>剑门关</name>
+      </trkpt>
+      <trkpt lat="32.435" lon="105.844">
+        <ele>0</ele>
+        <name>广元</name>
+      </trkpt>
+      <trkpt lat="33.068" lon="107.028">
+        <ele>0</ele>
+        <name>汉中</name>
+      </trkpt>
+      <trkpt lat="34.058" lon="108.318">
+        <ele>0</ele>
+        <name>秦岭北麓 / 楼观台</name>
+      </trkpt>
+      <trkpt lat="34.3416" lon="108.9398">
+        <ele>0</ele>
+        <name>西安</name>
+      </trkpt>
+      <trkpt lat="35.074" lon="109.081">
+        <ele>0</ele>
+        <name>宜君 / 铜川</name>
+      </trkpt>
+      <trkpt lat="36.5853" lon="109.4894">
+        <ele>0</ele>
+        <name>延安</name>
+      </trkpt>
+      <trkpt lat="36.156" lon="110.461">
+        <ele>0</ele>
+        <name>黄河壶口瀑布方向</name>
+      </trkpt>
+      <trkpt lat="37.5184" lon="111.1436">
+        <ele>0</ele>
+        <name>吕梁</name>
+      </trkpt>
+      <trkpt lat="38.4167" lon="112.7341">
+        <ele>0</ele>
+        <name>忻州</name>
+      </trkpt>
+      <trkpt lat="39.188" lon="112.873">
+        <ele>0</ele>
+        <name>雁门关</name>
+      </trkpt>
+      <trkpt lat="39.689" lon="115.926">
+        <ele>0</ele>
+        <name>周口店 / 田园洞</name>
+      </trkpt>
+      <trkpt lat="39.849" lon="116.213">
+        <ele>0</ele>
+        <name>卢沟桥</name>
+      </trkpt>
+      <trkpt lat="39.9054" lon="116.3976">
+        <ele>0</ele>
+        <name>天安门周边</name>
+      </trkpt>
+      <trkpt lat="39.918" lon="116.407">
+        <ele>0</ele>
+        <name>北京胡同 / 中轴线</name>
+      </trkpt>
+      <trkpt lat="40.176" lon="116.387">
+        <ele>0</ele>
+        <name>小汤山</name>
+      </trkpt>
+      <trkpt lat="40.66" lon="117.27">
+        <ele>0</ele>
+        <name>司马台长城</name>
+      </trkpt>
+      <trkpt lat="40.632" lon="117.166">
+        <ele>0</ele>
+        <name>古北口 / 密云</name>
+      </trkpt>
+      <trkpt lat="40.951" lon="117.963">
+        <ele>0</ele>
+        <name>承德</name>
+      </trkpt>
+      <trkpt lat="41.095" lon="121.141">
+        <ele>0</ele>
+        <name>锦州 / 辽西</name>
+      </trkpt>
+      <trkpt lat="41.8057" lon="123.4315">
+        <ele>0</ele>
+        <name>沈阳</name>
+      </trkpt>
+      <trkpt lat="41.268" lon="123.172">
+        <ele>0</ele>
+        <name>辽阳</name>
+      </trkpt>
+      <trkpt lat="40.89" lon="122.75">
+        <ele>0</ele>
+        <name>辽宁乡村粗点</name>
+      </trkpt>
+      <trkpt lat="38.921" lon="121.63">
+        <ele>0</ele>
+        <name>大连港</name>
+      </trkpt>
+      <trkpt lat="38.9" lon="121.7">
+        <ele>0</ele>
+        <name>黄海 / 大连近海粗点</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,1731 @@
+{
+  "type": "FeatureCollection",
+  "name": "out-of-eden-walk-china-cultural-replica",
+  "metadata": {
+    "title": "Out of Eden Walk 中国段文化复刻路线粗点",
+    "version": "v1.4.5",
+    "route_type": "cultural_replica",
+    "is_original_gps_track": false,
+    "disclaimer": "本数据不是 Paul Salopek 原始 GPS 轨迹，仅为文化复刻路线粗点。",
+    "source_scope": "Official Out of Eden Walk milestones / dispatches plus reconstructed travel nodes.",
+    "updated_at": "2026-07-04",
+    "coordinate_systems": "WGS84",
+    "approximate_distance_km": "6000-6700",
+    "time_span": "2021 秋 (云南西部重启) → 2023 冬 (抵达黄海附近) → 2024.6 (补齐大连港) → 2024.8 (Goodbye to China)",
+    "segments_count": 10,
+    "points_count": 42
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.49,
+          25.02
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P001",
+        "sequence": 1,
+        "segment_id": "S01",
+        "segment_name": "滇西重启线",
+        "point_name": "云南西部 / 缅中边境附近",
+        "province": "Yunnan",
+        "city_or_area": "Dehong",
+        "coordinate_precision": "approximate",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "low",
+        "difficulty": "hard",
+        "best_season": "Oct-Apr",
+        "transport_hint": "边境管控禁止普通徒步",
+        "risk_note": "边境地区无精确坐标，使用德宏州近似点",
+        "source_note": "Milestone 74 (2021-10)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.493,
+          25.0204
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P002",
+        "sequence": 2,
+        "segment_id": "S01",
+        "segment_name": "滇西重启线",
+        "point_name": "腾冲",
+        "province": "Yunnan",
+        "city_or_area": "Tengchong",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Oct-Apr",
+        "transport_hint": "腾冲驼峰机场 / 高铁保山",
+        "risk_note": "市区安全，可直接复刻",
+        "source_note": "Milestone 74-75 / Dispatch Crossroad of Memory",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.488,
+          24.978
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P003",
+        "sequence": 3,
+        "segment_id": "S01",
+        "segment_name": "滇西重启线",
+        "point_name": "和顺古镇",
+        "province": "Yunnan",
+        "city_or_area": "Tengchong",
+        "coordinate_precision": "landmark",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "腾冲市区打车 15 分钟",
+        "risk_note": "古镇商业化程度高，无特殊风险",
+        "source_note": "Dispatch Crossroad of Memory",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.765,
+          24.835
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P004",
+        "sequence": 4,
+        "segment_id": "S01",
+        "segment_name": "滇西重启线",
+        "point_name": "高黎贡山",
+        "province": "Yunnan",
+        "city_or_area": "Tengchong",
+        "coordinate_precision": "region",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "medium",
+        "difficulty": "hard",
+        "best_season": "Nov-Apr",
+        "transport_hint": "需请当地向导",
+        "risk_note": "生物多样性保护区·深山不可独自徒步",
+        "source_note": "Milestone 75 (2021-12) / Dispatch Green Ark",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.166,
+          25.694
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P005",
+        "sequence": 5,
+        "segment_id": "S01",
+        "segment_name": "滇西重启线",
+        "point_name": "大理古城",
+        "province": "Yunnan",
+        "city_or_area": "Dali",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "大理凤仪机场 / 大理高铁站",
+        "risk_note": "古城内步行安全",
+        "source_note": "Milestone 76 (2022-03)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.136,
+          25.778
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P006",
+        "sequence": 6,
+        "segment_id": "S02",
+        "segment_name": "大理丽江雪山线",
+        "point_name": "喜洲",
+        "province": "Yunnan",
+        "city_or_area": "Dali",
+        "coordinate_precision": "landmark",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "大理古城打车 30 分钟",
+        "risk_note": "白族民居密集区域",
+        "source_note": "Dispatch Astral Village",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.953,
+          26.11
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P007",
+        "sequence": 7,
+        "segment_id": "S02",
+        "segment_name": "大理丽江雪山线",
+        "point_name": "洱源",
+        "province": "Yunnan",
+        "city_or_area": "Eryuan",
+        "coordinate_precision": "city",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "大理自驾 1.5 小时",
+        "risk_note": "高原湖泊地区",
+        "source_note": "Milestone 76",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.233,
+          26.8721
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P008",
+        "sequence": 8,
+        "segment_id": "S02",
+        "segment_name": "大理丽江雪山线",
+        "point_name": "丽江古城",
+        "province": "Yunnan",
+        "city_or_area": "Lijiang",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "丽江三义机场 / 丽江高铁站",
+        "risk_note": "古城海拔 2400m 注意休息",
+        "source_note": "Milestone 76 / NatGeo Education",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.18,
+          27.09
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P009",
+        "sequence": 9,
+        "segment_id": "S02",
+        "segment_name": "大理丽江雪山线",
+        "point_name": "玉龙雪山",
+        "province": "Yunnan",
+        "city_or_area": "Lijiang",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Nov-May",
+        "transport_hint": "丽江古城包车 1 小时",
+        "risk_note": "高海拔 4506m·需防高反",
+        "source_note": "Milestone 76",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.768,
+          27.703
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P010",
+        "sequence": 10,
+        "segment_id": "S03",
+        "segment_name": "茶马古道木里线",
+        "point_name": "泸沽湖周边",
+        "province": "Yunnan-Sichuan border",
+        "city_or_area": "Ninglang",
+        "coordinate_precision": "landmark",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "丽江包车 4 小时",
+        "risk_note": "少数民族区域尊重当地习俗",
+        "source_note": "Milestone 77 (2022-03)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.279,
+          27.926
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P011",
+        "sequence": 11,
+        "segment_id": "S03",
+        "segment_name": "茶马古道木里线",
+        "point_name": "木里",
+        "province": "Sichuan",
+        "city_or_area": "Muli",
+        "coordinate_precision": "city",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "medium",
+        "difficulty": "hard",
+        "best_season": "May-Oct",
+        "transport_hint": "西昌转越野车 6 小时",
+        "risk_note": "路况复杂需四驱越野",
+        "source_note": "Dispatch Looking for Muli",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.964,
+          30.044
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P012",
+        "sequence": 12,
+        "segment_id": "S03",
+        "segment_name": "茶马古道木里线",
+        "point_name": "康定",
+        "province": "Sichuan",
+        "city_or_area": "Kangding",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "成都自驾 4 小时 / 康定机场",
+        "risk_note": "海拔 2560m 注意高反",
+        "source_note": "Milestone 78 (2022-07)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.759,
+          30.061
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P013",
+        "sequence": 13,
+        "segment_id": "S04",
+        "segment_name": "川西南雅安线",
+        "point_name": "天全",
+        "province": "Sichuan",
+        "city_or_area": "Tianquan",
+        "coordinate_precision": "city",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "雅安转汽车",
+        "risk_note": "山区道路",
+        "source_note": "Dispatch 250 Pounds of Grief",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.001,
+          29.98
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P014",
+        "sequence": 14,
+        "segment_id": "S04",
+        "segment_name": "川西南雅安线",
+        "point_name": "雅安",
+        "province": "Sichuan",
+        "city_or_area": "Ya'an",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "成都西站高铁 1.5 小时",
+        "risk_note": "茶马古道重要节点",
+        "source_note": "Milestone 80 (2023-02)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.314,
+          30.42
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P015",
+        "sequence": 15,
+        "segment_id": "S04",
+        "segment_name": "川西南雅安线",
+        "point_name": "平乐古镇",
+        "province": "Sichuan",
+        "city_or_area": "Qianguang",
+        "coordinate_precision": "landmark",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "雅安自驾 1 小时",
+        "risk_note": "古镇内步行",
+        "source_note": "Milestone 80",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.282,
+          30.992
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P016",
+        "sequence": 16,
+        "segment_id": "S04",
+        "segment_name": "川西南雅安线",
+        "point_name": "三星堆 / 广汉",
+        "province": "Sichuan",
+        "city_or_area": "Guanghan",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "成都东站高铁到广汉 30 分钟",
+        "risk_note": "三星堆博物馆需预约",
+        "source_note": "Milestone 80",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.221,
+          31.338
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P017",
+        "sequence": 17,
+        "segment_id": "S04",
+        "segment_name": "川西南雅安线",
+        "point_name": "绵竹",
+        "province": "Sichuan",
+        "city_or_area": "Mianzhu",
+        "coordinate_precision": "city",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "成都自驾 1.5 小时",
+        "risk_note": "年画村可顺便参观",
+        "source_note": "Milestone 80",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.58,
+          32.24
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P018",
+        "sequence": 18,
+        "segment_id": "S05",
+        "segment_name": "剑门蜀道汉中线",
+        "point_name": "剑门关",
+        "province": "Sichuan",
+        "city_or_area": "Jiange",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "广元自驾 30 分钟",
+        "risk_note": "需爬山 4-5 小时",
+        "source_note": "Milestone 81 (2023-04)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.844,
+          32.435
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P019",
+        "sequence": 19,
+        "segment_id": "S05",
+        "segment_name": "剑门蜀道汉中线",
+        "point_name": "广元",
+        "province": "Sichuan",
+        "city_or_area": "Guangyuan",
+        "coordinate_precision": "city",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "广元盘龙机场 / 高铁站",
+        "risk_note": "蜀道北端起点",
+        "source_note": "Milestone 81",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.028,
+          33.068
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P020",
+        "sequence": 20,
+        "segment_id": "S05",
+        "segment_name": "剑门蜀道汉中线",
+        "point_name": "汉中",
+        "province": "Shaanxi",
+        "city_or_area": "Hanzhong",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "汉中机场 / 高铁站",
+        "risk_note": "汉文化发源地之一",
+        "source_note": "Milestone 82 (2023-04)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.318,
+          34.058
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P021",
+        "sequence": 21,
+        "segment_id": "S05",
+        "segment_name": "剑门蜀道汉中线",
+        "point_name": "秦岭北麓 / 楼观台",
+        "province": "Shaanxi",
+        "city_or_area": "Zhouzhi",
+        "coordinate_precision": "region",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "low",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "西安自驾 1 小时",
+        "risk_note": "秦岭封控时期点位·2023 特殊情况",
+        "source_note": "Milestone 83 (2023-06)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.9398,
+          34.3416
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P022",
+        "sequence": 22,
+        "segment_id": "S06",
+        "segment_name": "关中陕北线",
+        "point_name": "西安",
+        "province": "Shaanxi",
+        "city_or_area": "Xi'an",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "西安咸阳国际机场 / 多高铁站",
+        "risk_note": "帝都起点·人流密集",
+        "source_note": "Milestone 84 (2023-07)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.081,
+          35.074
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P023",
+        "sequence": 23,
+        "segment_id": "S06",
+        "segment_name": "关中陕北线",
+        "point_name": "宜君 / 铜川",
+        "province": "Shaanxi",
+        "city_or_area": "Tongchuan",
+        "coordinate_precision": "city",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "西安自驾 1.5 小时",
+        "risk_note": "黄土高原过渡带",
+        "source_note": "Milestone 84",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.4894,
+          36.5853
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P024",
+        "sequence": 24,
+        "segment_id": "S06",
+        "segment_name": "关中陕北线",
+        "point_name": "延安",
+        "province": "Shaanxi",
+        "city_or_area": "Yan'an",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "延安南泥湾机场 / 高铁站",
+        "risk_note": "部分遗址需预约",
+        "source_note": "Milestone 85 (2023-08)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.461,
+          36.156
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P025",
+        "sequence": 25,
+        "segment_id": "S06",
+        "segment_name": "关中陕北线",
+        "point_name": "黄河壶口瀑布方向",
+        "province": "Shaanxi-Yun border",
+        "city_or_area": "Yichuan",
+        "coordinate_precision": "landmark",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "延安自驾 2.5 小时",
+        "risk_note": "冬季关闭",
+        "source_note": "Milestone 84",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.1436,
+          37.5184
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P026",
+        "sequence": 26,
+        "segment_id": "S07",
+        "segment_name": "晋西雁门关线",
+        "point_name": "吕梁",
+        "province": "Shanxi",
+        "city_or_area": "Lvliang",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "太原自驾 2 小时",
+        "risk_note": "黄土高原城市",
+        "source_note": "Milestone 86 (2023-11)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.7341,
+          38.4167
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P027",
+        "sequence": 27,
+        "segment_id": "S07",
+        "segment_name": "晋西雁门关线",
+        "point_name": "忻州",
+        "province": "Shanxi",
+        "city_or_area": "Xinzhou",
+        "coordinate_precision": "city",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "太原自驾 1.5 小时",
+        "risk_note": "晋北交通枢纽",
+        "source_note": "Milestone 86",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.873,
+          39.188
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P028",
+        "sequence": 28,
+        "segment_id": "S07",
+        "segment_name": "晋西雁门关线",
+        "point_name": "雁门关",
+        "province": "Shanxi",
+        "city_or_area": "Dai County",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "忻州自驾 1 小时",
+        "risk_note": "需爬山半天",
+        "source_note": "Milestone 86 / Dispatch Walled World",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.926,
+          39.689
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P029",
+        "sequence": 29,
+        "segment_id": "S07",
+        "segment_name": "晋西雁门关线",
+        "point_name": "周口店 / 田园洞",
+        "province": "Beijing",
+        "city_or_area": "Fangshan",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "北京西站公交 / 地铁",
+        "risk_note": "遗址博物馆需预约",
+        "source_note": "Milestone 89 / Dispatch Meeting a Dawn Human",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.213,
+          39.849
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P030",
+        "sequence": 30,
+        "segment_id": "S08",
+        "segment_name": "北京城市步行线",
+        "point_name": "卢沟桥",
+        "province": "Beijing",
+        "city_or_area": "Fengtai",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "地铁 14 号线大瓦窑站",
+        "risk_note": "1937 历史现场",
+        "source_note": "Dispatch Rediscovering China Capital / Walking Map Mazes of Beijing",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3976,
+          39.9054
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P031",
+        "sequence": 31,
+        "segment_id": "S08",
+        "segment_name": "北京城市步行线",
+        "point_name": "天安门周边",
+        "province": "Beijing",
+        "city_or_area": "Dongcheng",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "地铁 1 号线天安门东站",
+        "risk_note": "节假日人流密集需预约",
+        "source_note": "Dispatch Rediscovering China Capital",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.407,
+          39.918
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P032",
+        "sequence": 32,
+        "segment_id": "S08",
+        "segment_name": "北京城市步行线",
+        "point_name": "北京胡同 / 中轴线",
+        "province": "Beijing",
+        "city_or_area": "Dongcheng",
+        "coordinate_precision": "region",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "地铁 + 步行",
+        "risk_note": "胡同商业化区域",
+        "source_note": "Walking Map Mazes of Beijing",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.387,
+          40.176
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P033",
+        "sequence": 33,
+        "segment_id": "S08",
+        "segment_name": "北京城市步行线",
+        "point_name": "小汤山",
+        "province": "Beijing",
+        "city_or_area": "Changping",
+        "coordinate_precision": "landmark",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "地铁 5 号线转公交",
+        "risk_note": "温泉度假区",
+        "source_note": "Dispatch Rediscovering China Capital",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.27,
+          40.66
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P034",
+        "sequence": 34,
+        "segment_id": "S09",
+        "segment_name": "京北长城承德线",
+        "point_name": "司马台长城",
+        "province": "Beijing",
+        "city_or_area": "Miyun",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "东直门外包车 2 小时",
+        "risk_note": "部分路段需手脚并用·景区分时段开放",
+        "source_note": "Milestone 90 (2024-05)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.166,
+          40.632
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P035",
+        "sequence": 35,
+        "segment_id": "S09",
+        "segment_name": "京北长城承德线",
+        "point_name": "古北口 / 密云",
+        "province": "Beijing",
+        "city_or_area": "Miyun",
+        "coordinate_precision": "city",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "北京自驾 2 小时",
+        "risk_note": "长城关口小镇",
+        "source_note": "Dispatch Qing Roads",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.963,
+          40.951
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P036",
+        "sequence": 36,
+        "segment_id": "S09",
+        "segment_name": "京北长城承德线",
+        "point_name": "承德",
+        "province": "Hebei",
+        "city_or_area": "Chengde",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "承德普宁机场 / 高铁站",
+        "risk_note": "清代边疆秩序空间化象征",
+        "source_note": "Dispatch Qing Roads",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.141,
+          41.095
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P037",
+        "sequence": 37,
+        "segment_id": "S10",
+        "segment_name": "辽宁大连黄海线",
+        "point_name": "锦州 / 辽西",
+        "province": "Liaoning",
+        "city_or_area": "Jinzhou",
+        "coordinate_precision": "city",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "沈阳自驾 2.5 小时",
+        "risk_note": "辽西走廊起点",
+        "source_note": "Milestone 91-92",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.4315,
+          41.8057
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P038",
+        "sequence": 38,
+        "segment_id": "S10",
+        "segment_name": "辽宁大连黄海线",
+        "point_name": "沈阳",
+        "province": "Liaoning",
+        "city_or_area": "Shenyang",
+        "coordinate_precision": "city",
+        "source_level": "B_partner_or_education",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Year-round",
+        "transport_hint": "沈阳桃仙国际机场",
+        "risk_note": "东北中心城市",
+        "source_note": "Milestone 92-93 / Dispatch Corn Corn Corn",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.172,
+          41.268
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P039",
+        "sequence": 39,
+        "segment_id": "S10",
+        "segment_name": "辽宁大连黄海线",
+        "point_name": "辽阳",
+        "province": "Liaoning",
+        "city_or_area": "Liaoyang",
+        "coordinate_precision": "city",
+        "source_level": "C_chinese_media",
+        "replication_feasibility": "medium",
+        "difficulty": "easy",
+        "best_season": "May-Oct",
+        "transport_hint": "沈阳自驾 1 小时",
+        "risk_note": "辽代古都",
+        "source_note": "Milestone 92",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.75,
+          40.89
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P040",
+        "sequence": 40,
+        "segment_id": "S10",
+        "segment_name": "辽宁大连黄海线",
+        "point_name": "辽宁乡村粗点",
+        "province": "Liaoning",
+        "city_or_area": "rural",
+        "coordinate_precision": "approximate",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "low",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "需包车或自驾",
+        "risk_note": "玉米地/工业迁移区·具体村镇辨识度低",
+        "source_note": "Milestone 92-94",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.63,
+          38.921
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P041",
+        "sequence": 41,
+        "segment_id": "S10",
+        "segment_name": "辽宁大连黄海线",
+        "point_name": "大连港",
+        "province": "Liaoning",
+        "city_or_area": "Dalian",
+        "coordinate_precision": "landmark",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "high",
+        "difficulty": "easy",
+        "best_season": "Apr-Oct",
+        "transport_hint": "大连周水子国际机场 / 高铁站",
+        "risk_note": "2024.6 补齐大连港缺口",
+        "source_note": "Milestone 94-95 / Dispatch Goodbye to China",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7,
+          38.9
+        ]
+      },
+      "properties": {
+        "id": "OEDW-P042",
+        "sequence": 42,
+        "segment_id": "S10",
+        "segment_name": "辽宁大连黄海线",
+        "point_name": "黄海 / 大连近海粗点",
+        "province": "Liaoning",
+        "city_or_area": "Dalian coast",
+        "coordinate_precision": "approximate",
+        "source_level": "A_official_oedw",
+        "replication_feasibility": "reading_only",
+        "difficulty": "n/a",
+        "best_season": "n/a",
+        "transport_hint": "远眺·不推荐近海徒步",
+        "risk_note": "主体步行 2023 冬抵近此处",
+        "source_note": "Milestone 95 (2024-08)",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            98.49,
+            25.02
+          ],
+          [
+            98.493,
+            25.0204
+          ],
+          [
+            98.488,
+            24.978
+          ],
+          [
+            98.765,
+            24.835
+          ],
+          [
+            100.166,
+            25.694
+          ],
+          [
+            100.136,
+            25.778
+          ],
+          [
+            99.953,
+            26.11
+          ],
+          [
+            100.233,
+            26.8721
+          ],
+          [
+            100.18,
+            27.09
+          ],
+          [
+            100.768,
+            27.703
+          ],
+          [
+            101.279,
+            27.926
+          ],
+          [
+            101.964,
+            30.044
+          ],
+          [
+            102.759,
+            30.061
+          ],
+          [
+            103.001,
+            29.98
+          ],
+          [
+            103.314,
+            30.42
+          ],
+          [
+            104.282,
+            30.992
+          ],
+          [
+            104.221,
+            31.338
+          ],
+          [
+            105.58,
+            32.24
+          ],
+          [
+            105.844,
+            32.435
+          ],
+          [
+            107.028,
+            33.068
+          ],
+          [
+            108.318,
+            34.058
+          ],
+          [
+            108.9398,
+            34.3416
+          ],
+          [
+            109.081,
+            35.074
+          ],
+          [
+            109.4894,
+            36.5853
+          ],
+          [
+            110.461,
+            36.156
+          ],
+          [
+            111.1436,
+            37.5184
+          ],
+          [
+            112.7341,
+            38.4167
+          ],
+          [
+            112.873,
+            39.188
+          ],
+          [
+            115.926,
+            39.689
+          ],
+          [
+            116.213,
+            39.849
+          ],
+          [
+            116.3976,
+            39.9054
+          ],
+          [
+            116.407,
+            39.918
+          ],
+          [
+            116.387,
+            40.176
+          ],
+          [
+            117.27,
+            40.66
+          ],
+          [
+            117.166,
+            40.632
+          ],
+          [
+            117.963,
+            40.951
+          ],
+          [
+            121.141,
+            41.095
+          ],
+          [
+            123.4315,
+            41.8057
+          ],
+          [
+            123.172,
+            41.268
+          ],
+          [
+            122.75,
+            40.89
+          ],
+          [
+            121.63,
+            38.921
+          ],
+          [
+            121.7,
+            38.9
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "generalized_route_line",
+        "name": "Out of Eden Walk 中国段文化复刻概括路线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Generalized cultural replica line only. Not for navigation. Not Paul Salopek's original GPS track.",
+        "disclaimer": "本 LineString 为文化复刻概括路线，仅连接各段代表粗点；不是 Paul Salopek 原始 GPS 轨迹；不用于导航。",
+        "segments_count": 10,
+        "points_count": 42,
+        "approximate_distance_km": "6000-6700"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            98.49,
+            25.02
+          ],
+          [
+            98.493,
+            25.0204
+          ],
+          [
+            98.488,
+            24.978
+          ],
+          [
+            98.765,
+            24.835
+          ],
+          [
+            100.166,
+            25.694
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S01",
+        "segment_name": "滇西重启线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S01 generalized line only. Not for navigation.",
+        "disclaimer": "滇西重启线 段概括路线；不是原始轨迹。",
+        "points_count": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            100.136,
+            25.778
+          ],
+          [
+            99.953,
+            26.11
+          ],
+          [
+            100.233,
+            26.8721
+          ],
+          [
+            100.18,
+            27.09
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S02",
+        "segment_name": "大理丽江雪山线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S02 generalized line only. Not for navigation.",
+        "disclaimer": "大理丽江雪山线 段概括路线；不是原始轨迹。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            100.768,
+            27.703
+          ],
+          [
+            101.279,
+            27.926
+          ],
+          [
+            101.964,
+            30.044
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S03",
+        "segment_name": "茶马古道木里线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S03 generalized line only. Not for navigation.",
+        "disclaimer": "茶马古道木里线 段概括路线；不是原始轨迹。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            102.759,
+            30.061
+          ],
+          [
+            103.001,
+            29.98
+          ],
+          [
+            103.314,
+            30.42
+          ],
+          [
+            104.282,
+            30.992
+          ],
+          [
+            104.221,
+            31.338
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S04",
+        "segment_name": "川西南雅安线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S04 generalized line only. Not for navigation.",
+        "disclaimer": "川西南雅安线 段概括路线；不是原始轨迹。",
+        "points_count": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.58,
+            32.24
+          ],
+          [
+            105.844,
+            32.435
+          ],
+          [
+            107.028,
+            33.068
+          ],
+          [
+            108.318,
+            34.058
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S05",
+        "segment_name": "剑门蜀道汉中线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S05 generalized line only. Not for navigation.",
+        "disclaimer": "剑门蜀道汉中线 段概括路线；不是原始轨迹。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.9398,
+            34.3416
+          ],
+          [
+            109.081,
+            35.074
+          ],
+          [
+            109.4894,
+            36.5853
+          ],
+          [
+            110.461,
+            36.156
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S06",
+        "segment_name": "关中陕北线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S06 generalized line only. Not for navigation.",
+        "disclaimer": "关中陕北线 段概括路线；不是原始轨迹。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            111.1436,
+            37.5184
+          ],
+          [
+            112.7341,
+            38.4167
+          ],
+          [
+            112.873,
+            39.188
+          ],
+          [
+            115.926,
+            39.689
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S07",
+        "segment_name": "晋西雁门关线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S07 generalized line only. Not for navigation.",
+        "disclaimer": "晋西雁门关线 段概括路线；不是原始轨迹。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.213,
+            39.849
+          ],
+          [
+            116.3976,
+            39.9054
+          ],
+          [
+            116.407,
+            39.918
+          ],
+          [
+            116.387,
+            40.176
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S08",
+        "segment_name": "北京城市步行线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S08 generalized line only. Not for navigation.",
+        "disclaimer": "北京城市步行线 段概括路线；不是原始轨迹。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.27,
+            40.66
+          ],
+          [
+            117.166,
+            40.632
+          ],
+          [
+            117.963,
+            40.951
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S09",
+        "segment_name": "京北长城承德线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S09 generalized line only. Not for navigation.",
+        "disclaimer": "京北长城承德线 段概括路线；不是原始轨迹。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.141,
+            41.095
+          ],
+          [
+            123.4315,
+            41.8057
+          ],
+          [
+            123.172,
+            41.268
+          ],
+          [
+            122.75,
+            40.89
+          ],
+          [
+            121.63,
+            38.921
+          ],
+          [
+            121.7,
+            38.9
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S10",
+        "segment_name": "辽宁大连黄海线",
+        "is_original_gps_track": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S10 generalized line only. Not for navigation.",
+        "disclaimer": "辽宁大连黄海线 段概括路线；不是原始轨迹。",
+        "points_count": 6
+      }
+    }
+  ]
+}

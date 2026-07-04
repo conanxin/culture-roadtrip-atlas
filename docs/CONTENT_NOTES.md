@@ -526,3 +526,58 @@
 
 ---
 
+
+---
+
+## Out of Eden Walk 中国段 · Phase 5 路线数据资产（v1.4.5）
+
+### 范围
+本轮把 Out of Eden Walk 中国段页面从"公开代表页"升级为项目内可复用的路线数据资产。
+
+### 数据文件清单
+
+| 文件 | 格式 | 大小 | 用途 |
+|------|------|------|------|
+| `data/routes/out-of-eden-walk-china.csv` | CSV | ~7 KB | 表格分析、Excel、Pandas |
+| `data/routes/out-of-eden-walk-china.geojson` | GeoJSON | ~14 KB | QGIS、geojson.io、Leaflet 静态地图 |
+| `data/routes/out-of-eden-walk-china.gpx` | GPX 1.1 | ~12 KB | 粗略 waypoint 查看（不可导航）|
+| `data/routes/README.md` | Markdown | ~4 KB | 数据说明、字段定义、使用方法 |
+| `routes/index.html` | HTML | ~10 KB | 路线数据索引页 |
+
+### 数据规模
+
+- **42 个点位**（覆盖 10 个段落）
+- **18 个字段**（id / sequence / segment_id / segment_name / point_name / province / city_or_area / latitude / longitude / coordinate_precision / source_level / replication_feasibility / difficulty / best_season / transport_hint / risk_note / source_note / url）
+- **GeoJSON 53 个 Feature**：42 Point + 1 主 LineString + 10 段 LineString
+- **GPX 42 个 waypoints + 1 个 track**
+
+### 段覆盖
+
+| 段 | 点位数 | 代表点 |
+|---|------|------|
+| S01 滇西重启线 | 5 | 边境 / 腾冲 / 和顺 / 高黎贡山 / 大理 |
+| S02 大理丽江雪山线 | 4 | 喜洲 / 洱源 / 丽江 / 玉龙雪山 |
+| S03 茶马古道木里线 | 3 | 泸沽湖 / 木里 / 康定 |
+| S04 川西南雅安线 | 5 | 天全 / 雅安 / 平乐 / 三星堆 / 绵竹 |
+| S05 剑门蜀道汉中线 | 4 | 剑门关 / 广元 / 汉中 / 秦岭 |
+| S06 关中陕北线 | 4 | 西安 / 宜君 / 延安 / 壶口 |
+| S07 晋西雁门关线 | 4 | 吕梁 / 忻州 / 雁门关 / 周口店 |
+| S08 北京城市步行线 | 4 | 卢沟桥 / 天安门 / 胡同 / 小汤山 |
+| S09 京北长城承德线 | 3 | 司马台 / 古北口 / 承德 |
+| S10 辽宁大连黄海线 | 6 | 锦州 / 沈阳 / 辽阳 / 乡村粗点 / 大连港 / 黄海 |
+
+### 严格保留
+
+- 所有数据均标注 **"不是 Paul Salopek 原始 GPS 轨迹"**
+- 所有数据均标注 **"不用于导航"**
+- 顶部 metadata 包含 disclaimer / source_scope / updated_at / coordinate_systems / approximate_distance_km
+
+### Phase 6 可扩展
+
+1. 多路线数据化（辽塔、山西、其他 5 条规划中路线）
+2. 数据可视化（基于 GeoJSON 的 SVG 路线示意图）
+3. 数据校验工具（坐标范围、字段完整性、内容一致性）
+4. 多语言版本（中英对照）
+
+---
+

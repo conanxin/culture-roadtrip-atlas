@@ -6763,3 +6763,351 @@ p {
     padding: var(--space-md);
   }
 }
+
+/* ============================================================
+   v1.4.5 · 路线数据 / Atlas Index Styles
+   ============================================================ */
+
+/* ---------- 路线数据卡片（routes/index.html） ---------- */
+.route-data-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl);
+  border-left: 4px solid #b8860b;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.route-data-header {
+  margin-bottom: var(--space-xl);
+}
+
+.data-status-badge {
+  display: inline-block;
+  background: rgba(184, 134, 11, 0.15);
+  color: #8b6914;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.route-data-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.route-data-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* ---------- 数据字段表 ---------- */
+.data-meta-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md);
+  background: rgba(184, 134, 11, 0.05);
+  border-radius: var(--radius-sm);
+}
+
+.data-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.data-meta-label {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.data-meta-value {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* ---------- 下载按钮 ---------- */
+.route-data-section-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.route-data-downloads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.route-data-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-lg);
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.2s;
+}
+
+.route-data-button:hover {
+  border-color: #b8860b;
+  background: rgba(184, 134, 11, 0.05);
+  transform: translateY(-2px);
+}
+
+.route-data-button-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.route-data-button-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+/* ---------- 数据格式徽章 ---------- */
+.data-format-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-mono, monospace);
+  letter-spacing: 0.05em;
+}
+
+.data-format-csv {
+  background: #6b8e23;
+  color: #fff;
+}
+
+.data-format-geojson {
+  background: #b8860b;
+  color: #fff;
+}
+
+.data-format-gpx {
+  background: #4a6fa5;
+  color: #fff;
+}
+
+/* ---------- 数据警告 ---------- */
+.data-warning {
+  background: rgba(231, 76, 60, 0.05);
+  border-left: 3px solid #e74c3c;
+  padding: var(--space-lg);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.data-warning strong {
+  color: #c0392b;
+}
+
+.data-warning ul {
+  margin-top: var(--space-sm);
+  padding-left: var(--space-xl);
+}
+
+.data-warning li {
+  padding: 2px 0;
+}
+
+/* ---------- 数据声明列表 ---------- */
+.data-disclaimer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(107, 142, 35, 0.05);
+  padding: var(--space-lg);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid #6b8e23;
+}
+
+.data-disclaimer-list li {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+}
+
+.data-disclaimer-list li:last-child {
+  border-bottom: none;
+}
+
+.data-disclaimer-list strong {
+  color: #6b8e23;
+}
+
+/* ---------- 数据文件列表（说明卡） ---------- */
+.data-file-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.data-file-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(107, 142, 35, 0.05);
+  border-radius: var(--radius-sm);
+}
+
+.data-file-item .data-format-badge {
+  flex-shrink: 0;
+}
+
+.data-file-content strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.data-file-content p {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ---------- 未来路线 / 数据索引卡 ---------- */
+.data-index-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.data-index-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-top: 3px solid #6b8e23;
+}
+
+.data-index-planning {
+  border-top-color: var(--color-text-secondary);
+  opacity: 0.85;
+}
+
+.data-index-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.data-index-desc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.data-index-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+/* ---------- CTA 按钮组 ---------- */
+.route-data-cta {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px dashed var(--color-divider);
+}
+
+/* ---------- OEDW 内嵌下载模块 ---------- */
+.route-data-inline {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border-left: 4px solid #b8860b;
+  margin: var(--space-xl) 0;
+}
+
+.route-data-inline-downloads {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.route-data-inline-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border: 2px solid var(--color-divider);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.85rem;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.route-data-inline-button:hover {
+  border-color: #b8860b;
+  background: rgba(184, 134, 11, 0.05);
+}
+
+/* ---------- 移动端响应式（v1.4.5 新模块） ---------- */
+@media (max-width: 768px) {
+  .route-data-downloads {
+    grid-template-columns: 1fr;
+  }
+
+  .route-data-inline-downloads {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .data-meta-list {
+    grid-template-columns: 1fr;
+  }
+
+  .data-index-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .route-data-card {
+    padding: var(--space-md);
+  }
+
+  .route-data-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
