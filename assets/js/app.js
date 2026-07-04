@@ -408,6 +408,11 @@
     // 更新进度
     updateProgress();
 
+    // v0.3 现场使用版
+    initV3();
+    initArrivalButtons();
+    showSpeechNotice();
+
     // 平滑滚动到锚点
     initSmoothScroll();
   }
@@ -610,7 +615,227 @@
     }
   }
 
-  // 页面加载完成后初始化
+
+  // ============ v0.3 现场使用版功能 ============
+
+  /**
+   * 初始化今日模式
+   */
+  function initTodayMode() {
+    const dayBtns = document.querySelectorAll('.today-day-btn');
+    const todayContents = document.querySelectorAll('.today-content');
+
+    dayBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const day = btn.dataset.day;
+
+        // 更新按钮状态
+        dayBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // 切换内容
+        todayContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.dataset.day === day) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+  }
+
+  /**
+   * 初始化行前 7 天学习计划打卡
+   */
+  function initPrepPlan() {
+    const prepChecks = document.querySelectorAll('.prep-plan-check');
+    const completedDays = getStorage('prep_plan_completed', []);
+
+    // 恢复已打卡状态
+    prepChecks.forEach(btn => {
+      const day = parseInt(btn.dataset.day);
+      if (completedDays.includes(day)) {
+        btn.classList.add('checked');
+        btn.textContent = '✅ 已完成';
+        const item = btn.closest('.prep-plan-item');
+        if (item) item.classList.add('completed');
+      }
+
+      btn.addEventListener('click', () => {
+        const dayNum = parseInt(btn.dataset.day);
+        let completed = getStorage('prep_plan_completed', []);
+
+        if (completed.includes(dayNum)) {
+          completed = completed.filter(d => d !== dayNum);
+          btn.classList.remove('checked');
+          btn.textContent = '✅ 标记完成';
+          const item = btn.closest('.prep-plan-item');
+          if (item) item.classList.remove('completed');
+          showToast('已取消打卡');
+        } else {
+          completed.push(dayNum);
+          btn.classList.add('checked');
+          btn.textContent = '✅ 已完成';
+          const item = btn.closest('.prep-plan-item');
+          if (item) item.classList.add('completed');
+          showToast('已打卡');
+        }
+
+        setStorage('prep_plan_completed', completed);
+        updateProgressDashboard();
+      });
+    });
+  }
+
+  /**
+   * 更新进度面板
+   */
+  function updateProgressDashboard() {
+    const dashSpots = document.getElementById('dash-spots');
+    const dashListened = document.getElementById('dash-listened');
+    const dashResources = document.getElementById('dash-resources');
+    const dashPrep = document.getElementById('dash-prep');
+
+    if (dashSpots) {
+      const total = document.querySelectorAll('.spot-card').length;
+      const visited = getStorage('visited_spots').length;
+      dashSpots.textContent = visited + ' / ' + total;
+    }
+
+    if (dashListened) {
+      const total = document.querySelectorAll('[data-speak-btn]').length;
+      const listened = getStorage('listened_spots').length;
+      dashListened.textContent = listened + ' / ' + total;
+    }
+
+    if (dashResources) {
+      const total = document.querySelectorAll('.resource-card').length;
+      const read = getStorage('read_materials').length;
+      dashResources.textContent = read + ' / ' + total;
+    }
+
+    if (dashPrep) {
+      const total = document.querySelectorAll('.prep-plan-check').length;
+      const completed = getStorage('prep_plan_completed', []).length;
+      dashPrep.textContent = completed + ' / 7';
+    }
+  }
+
+  /**
+   * 初始化现场模式底部导航
+   */
+  function initFieldNav() {
+    const fieldNav = document.getElementById('field-nav');
+    if (!fieldNav) return;
+
+    // 只在移动端显示
+    function checkMobile() {
+      if (window.innerWidth <= 768) {
+        fieldNav.classList.add('show');
+        document.body.classList.add('has-field-nav');
+      } else {
+        fieldNav.classList.remove('show');
+        document.body.classList.remove('has-field-nav');
+      }
+    }
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    // 点击导航项
+    const navItems = fieldNav.querySelectorAll('.field-nav-item');
+    navItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = item.dataset.target;
+        if (target) {
+          const targetEl = document.querySelector(target);
+          if (targetEl) {
+            const offset = 70;
+            const top = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+
+            // 更新活动状态
+            navItems.forEach(n => n.classList.remove('active'));
+            item.classList.add('active');
+          }
+        }
+      });
+    });
+  }
+
+  /**
+   * 初始化 v0.3 功能
+   */
+  function initV3() {
+    initTodayMode();
+    initPrepPlan();
+    updateProgressDashboard();
+    initFieldNav();
+  }
+
+
+  
+
+  /**
+   * 朗读到达前导入
+   */
+  function speakArrivalIntro(spotId) {
+    const spot = SPOT_DATA.spots.find(s => s.id === spotId);
+    if (!spot || !spot.arrivalIntro) {
+      showToast('暂无导入内容');
+      return;
+    }
+    if (!('speechSynthesis' in window)) {
+      showToast('当前浏览器不支持朗读');
+      return;
+    }
+
+    speechSynthesis.cancel();
+    const text = `【到达前导入】${spot.arrivalIntro}`;
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'zh-CN';
+    u.rate = 0.9;
+    u.onend = () => {
+      // 标记为已听
+      let listened = getStorage('listened_spots');
+      if (!listened.includes(spotId + '_arrival')) {
+        listened.push(spotId + '_arrival');
+        setStorage('listened_spots', listened);
+      }
+    };
+    speechSynthesis.speak(u);
+  }
+
+  /**
+   * 初始化到达前按钮
+   */
+  function initArrivalButtons() {
+    document.querySelectorAll('[data-arrival-btn]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const spotId = btn.dataset.arrivalBtn;
+        speakArrivalIntro(spotId);
+      });
+    });
+  }
+
+  /**
+   * 显示语音不支持提示
+   */
+  function showSpeechNotice() {
+    if (!('speechSynthesis' in window)) {
+      const notice = document.createElement('div');
+      notice.className = 'speech-notice';
+      notice.textContent = '⚠️ 当前浏览器不支持朗读，可直接阅读导游词。';
+      const heroSection = document.querySelector('.hero');
+      if (heroSection) {
+        heroSection.appendChild(notice);
+      }
+    }
+  }
+
+
+    // 页面加载完成后初始化
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

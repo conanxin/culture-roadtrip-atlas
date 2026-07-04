@@ -1333,6 +1333,618 @@ p {
 }
 
 /* ---------- 响应式设计 ---------- */
+
+/* ============================================
+   v0.3 现场使用版样式
+   ============================================ */
+
+/* ---------- 今日模式 ---------- */
+.today-mode {
+  background: linear-gradient(135deg, var(--color-bg-card), rgba(184, 134, 11, 0.08));
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin: var(--space-2xl) 0;
+}
+
+.today-mode-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.today-mode-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.today-mode-icon {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+}
+
+.today-day-selector {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px dashed var(--color-divider);
+}
+
+.today-day-btn {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.today-day-btn:hover {
+  border-color: var(--color-accent);
+}
+
+.today-day-btn.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+.today-content {
+  display: none;
+}
+
+.today-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.today-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.today-info-item {
+  background: var(--color-bg);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-accent);
+}
+
+.today-info-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.today-info-value {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.today-spots-section {
+  background: var(--color-bg);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.today-spots-title {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.today-spot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.today-spot-tag {
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  background: rgba(26, 58, 42, 0.08);
+  color: var(--color-primary);
+  border-radius: 12px;
+  border: 1px solid rgba(26, 58, 42, 0.15);
+}
+
+.today-review-section {
+  background: var(--color-bg);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.today-review-title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.today-review-content {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+/* ---------- 到达前 1 分钟导入 ---------- */
+.arrival-intro {
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1), rgba(26, 58, 42, 0.08));
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+}
+
+.arrival-intro-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.arrival-intro-icon {
+  font-size: 1.2rem;
+}
+
+.arrival-intro-label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.arrival-intro-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--color-text);
+  font-style: italic;
+}
+
+/* ---------- 现场怎么看步骤 ---------- */
+.step-guide {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.step-guide-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px dashed var(--color-divider);
+}
+
+.step-guide-icon {
+  font-size: 1.2rem;
+}
+
+.step-guide-label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.step-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.step-item {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.step-text {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding-top: 4px;
+}
+
+/* ---------- 离开前回望 ---------- */
+.before-leave {
+  background: rgba(26, 58, 42, 0.05);
+  border-left: 3px solid var(--color-primary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+}
+
+.before-leave-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.before-leave-icon {
+  font-size: 1.2rem;
+}
+
+.before-leave-label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.before-leave-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* ---------- 行前 7 天学习计划 ---------- */
+.prep-plan {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.05), rgba(26, 58, 42, 0.05));
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-accent);
+}
+
+.prep-plan-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.prep-plan-subtitle {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-xl);
+}
+
+.prep-plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.prep-plan-item {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  transition: all var(--transition-fast);
+}
+
+.prep-plan-item.completed {
+  background: rgba(39, 174, 96, 0.05);
+  border-color: rgba(39, 174, 96, 0.3);
+}
+
+.prep-plan-day {
+  flex-shrink: 0;
+  width: 60px;
+  text-align: center;
+  padding: var(--space-sm);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+}
+
+.prep-plan-day-num {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.prep-plan-day-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.prep-plan-content {
+  flex: 1;
+}
+
+.prep-plan-day-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.prep-plan-tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-md) 0;
+}
+
+.prep-plan-tasks li {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+  padding-left: var(--space-md);
+  position: relative;
+  line-height: 1.6;
+}
+
+.prep-plan-tasks li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.prep-plan-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.prep-plan-check {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-alt);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.prep-plan-check:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+.prep-plan-check.checked {
+  background: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
+/* ---------- 今晚复盘 / 明日预习 ---------- */
+.evening-review {
+  background: rgba(184, 134, 11, 0.08);
+  border: 1px dashed var(--color-accent);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.evening-review-section {
+  margin-bottom: var(--space-md);
+}
+
+.evening-review-section:last-child {
+  margin-bottom: 0;
+}
+
+.evening-review-label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.evening-review-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding-left: var(--space-md);
+}
+
+/* ---------- 底部现场快捷导航 ---------- */
+.field-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26, 58, 42, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-around;
+  padding: var(--space-sm) 0;
+  z-index: 99;
+  border-top: 1px solid var(--color-accent);
+  display: none;
+}
+
+.field-nav.show {
+  display: flex;
+}
+
+.field-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: var(--space-xs) var(--space-sm);
+  color: rgba(250, 248, 242, 0.7);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  flex: 1;
+  text-align: center;
+}
+
+.field-nav-item:hover,
+.field-nav-item.active {
+  color: var(--color-bg);
+}
+
+.field-nav-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* ---------- 进度面板增强 ---------- */
+.progress-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.progress-stat {
+  text-align: center;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+}
+
+.progress-stat-value {
+  font-family: var(--font-mono);
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  font-weight: bold;
+  display: block;
+}
+
+.progress-stat-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--space-xs);
+  display: block;
+}
+
+/* ---------- 朗读按钮组 ---------- */
+.speak-btn-group {
+  display: inline-flex;
+  gap: 0;
+}
+
+.speak-btn-group .spot-action-btn {
+  border-radius: 0;
+  border-right-width: 0;
+}
+
+.speak-btn-group .spot-action-btn:first-child {
+  border-top-left-radius: var(--radius-sm);
+  border-bottom-left-radius: var(--radius-sm);
+}
+
+.speak-btn-group .spot-action-btn:last-child {
+  border-top-right-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+  border-right-width: 1px;
+}
+
+.speech-notice {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-text-light);
+}
+
+/* ---------- 响应式：现场模式底部导航 ---------- */
+
+
+@media (max-width: 768px) {
+  .field-nav.show {
+    display: flex;
+  }
+
+  /* Add bottom padding to body when field nav is shown */
+  body.has-field-nav {
+    padding-bottom: 60px;
+  }
+
+  .today-mode {
+    padding: var(--space-lg);
+  }
+
+  .today-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prep-plan-item {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .prep-plan-day {
+    width: 100%;
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .progress-dashboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-item {
+    gap: var(--space-sm);
+  }
+
+  .step-number {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 15px;
