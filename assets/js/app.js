@@ -416,6 +416,9 @@
     // v0.4 知识深化版
     initV4();
 
+    // v0.5 路线可视化版
+    initV5();
+
     // 渲染景点之间的关系
     renderSpotRelationships();
 
@@ -874,6 +877,237 @@
 
 
   
+
+  // ============ v0.5 路线可视化版功能 ============
+
+  /**
+   * 路线节点数据
+   */
+  const ROUTE_NODES = [
+    { id: 'beijing', name: '北京', day: 1, x: 120, y: 60 },
+    { id: 'jinzhou', name: '锦州', day: 1, x: 280, y: 80 },
+    { id: 'yixian', name: '义县', day: 2, x: 320, y: 140 },
+    { id: 'beizhen', name: '北镇', day: 3, x: 280, y: 220 },
+    { id: 'chaoyang', name: '朝阳', day: 4, x: 340, y: 320 },
+    { id: 'chifeng', name: '赤峰', day: 5, x: 220, y: 400 },
+    { id: 'balinzuoqi', name: '巴林左旗', day: 6, x: 320, y: 480 },
+    { id: 'ningcheng', name: '宁城', day: 9, x: 320, y: 580 },
+    { id: 'chengde', name: '承德', day: 9, x: 460, y: 540 },
+    { id: 'beijing2', name: '北京', day: 9, x: 580, y: 80 }
+  ];
+
+  const ROUTE_LINES = [
+    { from: 'beijing', to: 'jinzhou', days: [1] },
+    { from: 'jinzhou', to: 'yixian', days: [1, 2] },
+    { from: 'yixian', to: 'beizhen', days: [2, 3] },
+    { from: 'beizhen', to: 'chaoyang', days: [3, 4] },
+    { from: 'chaoyang', to: 'chifeng', days: [5] },
+    { from: 'chifeng', to: 'balinzuoqi', days: [6] },
+    { from: 'balinzuoqi', to: 'ningcheng', days: [9] },
+    { from: 'ningcheng', to: 'chengde', days: [9] },
+    { from: 'chengde', to: 'beijing2', days: [9] }
+  ];
+
+  const THEME_SPOTS = {
+    pagoda: ['崇兴寺双塔', '班吉塔', '朝阳北塔', '朝阳南塔', '庆州白塔', '辽上京南塔', '大明塔'],
+    cave: ['万佛堂石窟', '真寂之寺'],
+    capital: ['庆州古城遗址', '辽上京遗址', '辽中京遗址'],
+    museum: ['北塔博物馆', '朝阳博物馆', '辽上京博物馆', '赤峰辽文化博物馆'],
+    return: ['宁城', '承德', '大明塔', '辽中京遗址', '北京']
+  };
+
+  /**
+   * 初始化路线图
+   */
+  function initRouteMap() {
+    const dayBtns = document.querySelectorAll('.route-day-btn');
+    const themeBtns = document.querySelectorAll('.route-theme-btn');
+
+    dayBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const day = parseInt(btn.dataset.day);
+        dayBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        themeBtns.forEach(b => b.classList.remove('active'));
+        highlightRouteDay(day);
+      });
+    });
+
+    themeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const theme = btn.dataset.theme;
+        themeBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        dayBtns.forEach(b => b.classList.remove('active'));
+        highlightThemeRoute(theme);
+      });
+    });
+  }
+
+  /**
+   * 高亮某一天的路线
+   */
+  function highlightRouteDay(day) {
+    const lines = document.querySelectorAll('.route-line');
+    const nodes = document.querySelectorAll('.route-node');
+
+    lines.forEach(line => {
+      const lineDays = JSON.parse(line.dataset.days || '[]');
+      if (lineDays.includes(day)) {
+        line.classList.add('highlighted');
+      } else {
+        line.classList.remove('highlighted');
+      }
+    });
+
+    nodes.forEach(node => {
+      const nodeDay = parseInt(node.dataset.day || '0');
+      // 节点在当天的 day 或相邻 day 都高亮
+      const nodeId = node.dataset.id;
+      const isInDay = ROUTE_LINES.some(line => {
+        const days = line.days || [];
+        return days.includes(day) && (line.from === nodeId || line.to === nodeId);
+      });
+      if (isInDay || nodeDay === day) {
+        node.classList.add('highlighted');
+        node.classList.remove('dimmed');
+      } else {
+        node.classList.remove('highlighted');
+        node.classList.add('dimmed');
+      }
+    });
+
+    // 更新右侧信息
+    updateRouteInfo(day);
+  }
+
+  /**
+   * 高亮主题路线
+   */
+  function highlightThemeRoute(theme) {
+    const lines = document.querySelectorAll('.route-line');
+    const nodes = document.querySelectorAll('.route-node');
+
+    // 重置所有高亮
+    lines.forEach(line => line.classList.remove('highlighted'));
+    nodes.forEach(node => {
+      node.classList.remove('highlighted');
+      node.classList.remove('dimmed');
+    });
+
+    // 根据主题高亮相关城市
+    const themeCities = {
+      pagoda: ['jinzhou', 'yixian', 'beizhen', 'chaoyang', 'balinzuoqi', 'ningcheng'],
+      cave: ['yixian', 'balinzuoqi'],
+      capital: ['balinzuoqi', 'ningcheng'],
+      museum: ['chaoyang', 'chifeng', 'balinzuoqi'],
+      return: ['ningcheng', 'chengde', 'beijing2']
+    };
+
+    const cities = themeCities[theme] || [];
+    nodes.forEach(node => {
+      if (cities.includes(node.dataset.id)) {
+        node.classList.add('highlighted');
+      } else {
+        node.classList.add('dimmed');
+      }
+    });
+
+    lines.forEach(line => {
+      if (line.dataset.from && cities.includes(line.dataset.from) && cities.includes(line.dataset.to)) {
+        line.classList.add('highlighted');
+      }
+    });
+
+    // 更新信息显示
+    updateThemeInfo(theme);
+  }
+
+  /**
+   * 更新路线信息（按天）
+   */
+  function updateRouteInfo(day) {
+    const infoEl = document.getElementById('route-info-current');
+    if (!infoEl) return;
+
+    const dayInfo = TRIP_DATA.days.find(d => d.day === day);
+    if (dayInfo) {
+      infoEl.innerHTML = `
+        <div class="route-info-item">
+          <div class="route-info-label">今日主题</div>
+          <div class="route-info-value">${dayInfo.title || 'Day ' + day}</div>
+        </div>
+        <div class="route-info-item">
+          <div class="route-info-label">今日路线</div>
+          <div class="route-info-value">${dayInfo.route || '—'}</div>
+        </div>
+        <div class="route-info-item">
+          <div class="route-info-label">今日车程</div>
+          <div class="route-info-value">${dayInfo.drive || '—'}</div>
+        </div>
+        <div class="route-info-item">
+          <div class="route-info-label">今日住宿</div>
+          <div class="route-info-value">${dayInfo.stay || '—'}</div>
+        </div>
+      `;
+    }
+  }
+
+  /**
+   * 更新主题信息
+   */
+  function updateThemeInfo(theme) {
+    const infoEl = document.getElementById('route-info-current');
+    if (!infoEl) return;
+
+    const themeNames = {
+      all: '全部',
+      pagoda: '辽塔线',
+      cave: '石窟线',
+      capital: '都城线',
+      museum: '博物馆线',
+      return: '返程线'
+    };
+
+    infoEl.innerHTML = `
+      <div class="route-info-item" style="grid-column: 1 / -1;">
+        <div class="route-info-label">主题路径</div>
+        <div class="route-info-value">${themeNames[theme] || theme}</div>
+      </div>
+    `;
+  }
+
+  /**
+   * 初始化景点关系网络
+   */
+  function initRelationNetwork() {
+    const items = document.querySelectorAll('.relation-item');
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        const target = item.dataset.target;
+        if (target) {
+          const targetEl = document.querySelector(target);
+          if (targetEl) {
+            const offset = 70;
+            const top = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  }
+
+  /**
+   * 初始化 v0.5 功能
+   */
+  function initV5() {
+    initRouteMap();
+    initRelationNetwork();
+    // 默认高亮 Day 1
+    highlightRouteDay(1);
+  }
+
+
   // ============ v0.4 知识深化版功能 ============
 
   /**

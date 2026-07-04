@@ -527,6 +527,25 @@
         </div>
       </div>
 
+      <div class="route-overview-meta">
+        <div class="route-meta-card">
+          <div class="route-meta-label">推荐天数</div>
+          <div class="route-meta-value">9天8晚</div>
+        </div>
+        <div class="route-meta-card">
+          <div class="route-meta-label">路线类型</div>
+          <div class="route-meta-value">北京闭环自驾</div>
+        </div>
+        <div class="route-meta-card">
+          <div class="route-meta-label">核心主题</div>
+          <div class="route-meta-value">辽塔 · 契丹 · 捺钵 · 五京</div>
+        </div>
+        <div class="route-meta-card">
+          <div class="route-meta-label">路线阶段</div>
+          <div class="route-meta-value">5 段</div>
+        </div>
+      </div>
+
       <div style="margin-top: var(--space-xl); text-align: center;">
         <p style="font-size: 1.1rem; color: var(--color-text); line-height: 2;">
           <strong>北京</strong> → <strong>锦州</strong> → <strong>义县</strong> → <strong>北镇</strong> → <strong>朝阳</strong> → <strong>赤峰</strong> → <strong>巴林左旗</strong> → <strong>宁城/承德</strong> → <strong>北京</strong>
@@ -793,6 +812,204 @@
       </div>
     </div>
   </section>
+
+  
+  <!-- 路线示意图 v0.5 -->
+  <section class="route-map-module" id="route-map">
+    <h2 class="route-map-title">🗺️ 路线示意图</h2>
+    <p class="route-map-intro">点击 Day 按钮或主题按钮查看不同视图</p>
+
+    <div class="route-map-controls">
+      <div class="route-control-row">
+        <span class="route-control-label">按天查看</span>
+        <div class="route-day-btns">
+          <button class="route-day-btn active" data-day="1">Day 1</button>
+          <button class="route-day-btn" data-day="2">Day 2</button>
+          <button class="route-day-btn" data-day="3">Day 3</button>
+          <button class="route-day-btn" data-day="4">Day 4</button>
+          <button class="route-day-btn" data-day="5">Day 5</button>
+          <button class="route-day-btn" data-day="6">Day 6</button>
+          <button class="route-day-btn" data-day="7">Day 7</button>
+          <button class="route-day-btn" data-day="8">Day 8</button>
+          <button class="route-day-btn" data-day="9">Day 9</button>
+        </div>
+      </div>
+      <div class="route-control-row">
+        <span class="route-control-label">按主题</span>
+        <div class="route-theme-btns">
+          <button class="route-theme-btn" data-theme="pagoda">辽塔线</button>
+          <button class="route-theme-btn" data-theme="cave">石窟线</button>
+          <button class="route-theme-btn" data-theme="capital">都城线</button>
+          <button class="route-theme-btn" data-theme="museum">博物馆线</button>
+          <button class="route-theme-btn" data-theme="return">返程线</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="route-map-container">
+      <svg class="route-map-svg" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+        <!-- 路线连接线 -->
+        <line class="route-line" data-from="beijing" data-to="jinzhou" data-days='[1]' x1="120" y1="60" x2="280" y2="80" />
+        <line class="route-line" data-from="jinzhou" data-to="yixian" data-days='[1,2]' x1="280" y1="80" x2="320" y2="140" />
+        <line class="route-line" data-from="yixian" data-to="beizhen" data-days='[2,3]' x1="320" y1="140" x2="280" y2="220" />
+        <line class="route-line" data-from="beizhen" data-to="chaoyang" data-days='[3,4]' x1="280" y1="220" x2="340" y2="320" />
+        <line class="route-line" data-from="chaoyang" data-to="chifeng" data-days='[5]' x1="340" y1="320" x2="220" y2="400" />
+        <line class="route-line" data-from="chifeng" data-to="balinzuoqi" data-days='[6]' x1="220" y1="400" x2="320" y2="480" />
+        <line class="route-line" data-from="balinzuoqi" data-to="ningcheng" data-days='[9]' x1="320" y1="480" x2="320" y2="580" />
+        <line class="route-line" data-from="ningcheng" data-to="chengde" data-days='[9]' x1="320" y1="580" x2="460" y2="540" />
+        <line class="route-line" data-from="chengde" data-to="beijing2" data-days='[9]' x1="460" y1="540" x2="580" y2="80" />
+
+        <!-- 城市节点 -->
+        <g class="route-node" data-id="beijing" data-day="1">
+          <rect class="route-node-rect" x="80" y="40" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="120" y="60">北京</text>
+        </g>
+
+        <g class="route-node" data-id="jinzhou" data-day="1">
+          <rect class="route-node-rect" x="240" y="60" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="280" y="80">锦州</text>
+        </g>
+
+        <g class="route-node" data-id="yixian" data-day="2">
+          <rect class="route-node-rect" x="280" y="120" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="320" y="140">义县</text>
+        </g>
+
+        <g class="route-node" data-id="beizhen" data-day="3">
+          <rect class="route-node-rect" x="240" y="200" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="280" y="220">北镇</text>
+        </g>
+
+        <g class="route-node" data-id="chaoyang" data-day="4">
+          <rect class="route-node-rect" x="300" y="300" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="340" y="320">朝阳</text>
+        </g>
+
+        <g class="route-node" data-id="chifeng" data-day="5">
+          <rect class="route-node-rect" x="180" y="380" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="220" y="400">赤峰</text>
+        </g>
+
+        <g class="route-node" data-id="balinzuoqi" data-day="6">
+          <rect class="route-node-rect" x="280" y="460" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="320" y="480">巴林左旗</text>
+        </g>
+
+        <g class="route-node" data-id="ningcheng" data-day="9">
+          <rect class="route-node-rect" x="280" y="560" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="320" y="580">宁城</text>
+        </g>
+
+        <g class="route-node" data-id="chengde" data-day="9">
+          <rect class="route-node-rect" x="420" y="520" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="460" y="540">承德</text>
+        </g>
+
+        <g class="route-node" data-id="beijing2" data-day="9">
+          <rect class="route-node-rect" x="540" y="60" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="580" y="80">北京</text>
+        </g>
+
+        <!-- 主题图标 -->
+        <text class="route-node-label" x="120" y="100">出发地</text>
+        <text class="route-node-label" x="220" y="430">草原</text>
+        <text class="route-node-label" x="580" y="120">返京</text>
+      </svg>
+    </div>
+
+    <div class="route-map-info" id="route-info-current">
+      <div class="route-info-item">
+        <div class="route-info-label">今日主题</div>
+        <div class="route-info-value">进入辽西</div>
+      </div>
+      <div class="route-info-item">
+        <div class="route-info-label">今日路线</div>
+        <div class="route-info-value">北京 → 锦州 → 义县</div>
+      </div>
+      <div class="route-info-item">
+        <div class="route-info-label">今日车程</div>
+        <div class="route-info-value">约 400 公里 / 5 小时</div>
+      </div>
+      <div class="route-info-item">
+        <div class="route-info-label">今日住宿</div>
+        <div class="route-info-value">锦州</div>
+      </div>
+    </div>
+
+    <!-- 路线阶段 -->
+    <h3 class="text-center" style="margin-top: var(--space-xl); margin-bottom: var(--space-md); color: var(--color-primary);">路线阶段</h3>
+    <div class="route-stages">
+      <div class="route-stage-card">
+        <span class="route-stage-num">1</span>
+        <div class="route-stage-title">北京进入辽西</div>
+        <div class="route-stage-desc">Day 1：北京 → 锦州 → 义县，进入辽西走廊，感受锦州烧烤的烟火气。</div>
+      </div>
+      <div class="route-stage-card">
+        <span class="route-stage-num">2</span>
+        <div class="route-stage-title">辽西佛教遗存</div>
+        <div class="route-stage-desc">Day 2-3：义县、北镇，奉国寺、万佛堂石窟、北镇庙、崇兴寺双塔。</div>
+      </div>
+      <div class="route-stage-card">
+        <span class="route-stage-num">3</span>
+        <div class="route-stage-title">朝阳兴中府</div>
+        <div class="route-stage-desc">Day 4-5：朝阳，朝阳北塔、北塔博物馆、朝阳博物馆。</div>
+      </div>
+      <div class="route-stage-card">
+        <span class="route-stage-num">4</span>
+        <div class="route-stage-title">契丹草原腹地</div>
+        <div class="route-stage-desc">Day 6-8：赤峰、巴林左旗，庆州白塔、辽上京遗址、赤峰辽文化博物馆。</div>
+      </div>
+      <div class="route-stage-card">
+        <span class="route-stage-num">5</span>
+        <div class="route-stage-title">返程宁城承德</div>
+        <div class="route-stage-desc">Day 9：宁城大明塔、辽中京遗址 → 承德 → 北京，完成五京闭环。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 景点关系网络 v0.5 -->
+  <section class="relation-network" id="relation-network">
+    <h2 class="relation-network-title">🔗 景点关系网络</h2>
+    <p class="relation-network-intro">点击关系项跳转到对应景点卡片</p>
+
+    <div class="relation-list">
+      <div class="relation-item" data-target="#spot-fengguosi">
+        <span class="relation-from">奉国寺</span>
+        <span class="relation-arrow">→</span>
+        <span class="relation-to">万佛堂石窟</span>
+        <span class="relation-spots">从辽代木构佛殿进入更早的北方石窟传统</span>
+      </div>
+
+      <div class="relation-item" data-target="#spot-chaoyang-north-pagoda">
+        <span class="relation-from">朝阳北塔</span>
+        <span class="relation-arrow">→</span>
+        <span class="relation-to">朝阳南塔</span>
+        <span class="relation-spots">从多朝叠压的佛塔史进入辽代城市天际线</span>
+      </div>
+
+      <div class="relation-item" data-target="#spot-qingzhou-white-pagoda">
+        <span class="relation-from">庆州白塔</span>
+        <span class="relation-arrow">→</span>
+        <span class="relation-to">庆州古城</span>
+        <span class="relation-spots">从佛塔进入城市，理解捺钵补给城市</span>
+      </div>
+
+      <div class="relation-item" data-target="#spot-qingzhou-ancient-city">
+        <span class="relation-from">庆州</span>
+        <span class="relation-arrow">→</span>
+        <span class="relation-to">辽上京</span>
+        <span class="relation-spots">从捺钵补给城市进入契丹龙兴之地</span>
+      </div>
+
+      <div class="relation-item" data-target="#spot-liao-capital">
+        <span class="relation-from">辽上京</span>
+        <span class="relation-arrow">→</span>
+        <span class="relation-to">辽中京 / 大明塔</span>
+        <span class="relation-spots">从草原皇都回望辽代五京体系</span>
+      </div>
+    </div>
+  </section>
+
 
   <!-- 景点卡片 -->
   <section id="spots" class="container" style="margin-top: var(--space-3xl);">
