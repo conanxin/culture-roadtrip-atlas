@@ -144,13 +144,17 @@ $ grep -R "Goodbye to China" -n trips/out-of-eden-walk-china
 
 ## Commit Hash
 
-（将在 push 后填入）
+**`b25cedd78fcddcb1ed34bfa9e38fa19aa321ced8`** · Add Out of Eden Walk China route
 
 ---
 
 ## Push 状态
 
-（将在 push 后填入）
+✅ **Push 成功** · 已推送到 origin main（`4b8f577..b25cedd`）
+
+**部署说明**：GitHub Pages 首次部署运行 #28702766707 出现 "Deployment failed, try again later" 错误，属于 GitHub Pages 后端临时问题。第二次通过 force-with-lease 重推后部署运行 #28702977778 成功（部署运行时间 2026-07-04T10:13:21Z）。
+
+---
 
 ---
 
