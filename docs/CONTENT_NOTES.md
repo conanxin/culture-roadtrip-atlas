@@ -153,3 +153,22 @@
 ### JS 新增函数
 - initRouteMap, highlightRouteDay, highlightThemeRoute
 - initRelationNetwork, initV5
+
+
+## v0.6 资料来源与事实核对版 (2026-07-04)
+
+### 新增功能
+- 资料来源索引：6 类资料分组（官方资料/博物馆/纪录片/书籍/研究/旅行整理），含可信度标签
+- 14 个重点景点增加 sources 字段（每景点 3-4 条资料）
+- 出发前实时核对清单：10 项 localStorage 可勾选
+- 内容风险说明：出发前需二次核对提示
+- 页面版本信息：v0.6 / 2026-07-04 / 规划资料
+
+### 数据更新
+- 全局：+ sourceIndex(29), preDepartureChecklist(10)
+- 14 个重点景点：+ sources 字段
+
+### Workflow 改进
+- 升级 actions/setup-node@v4 with node-version: '24'
+- 解决 Node.js 20 deprecated 警告
+- 部署首次直接成功，无需重试
