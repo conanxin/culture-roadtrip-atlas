@@ -232,3 +232,25 @@
 ### 完整路线 vs 规划中路线
 - 辽塔巡礼：v0.7 完整路线（已上线 100%）
 - 山西古建：v0.9 规划中骨架页（20%）
+
+
+## v1.0 Stable Release (2026-07-04)
+
+### 主要变更
+- 统一项目版本为 v1.0.0 stable release
+- 首页 Hero 副标题明确：1 条完整路线 + 1 条规划中
+- 三页 SEO 基础 meta：title / description / og:title / og:description / og:type / og:url / keywords
+- README 重写：项目定位 / 当前路线列表 / 如何添加新路线 / 当前版本 / 页面链接
+- CHANGELOG.md 完整版本历史（v0.1 - v1.0）
+- scripts/verify-site.sh：41 项验证检查
+- Git tag v1.0.0
+
+### 当前页面状态
+- index.html：路线库首页
+- trips/liao-tower-roadtrip/index.html：辽塔巡礼（v0.7 完整路线）
+- trips/shanxi-ancient-architecture-roadtrip/index.html：山西古建（v0.9 规划中骨架页）
+
+### 路线角色
+- **辽塔页**：完整路线样板（v0.1 - v0.7），可作为正式出行方案
+- **山西页**：规划中骨架页（v0.9），仅列出候选点位，**不作为正式出行方案**
+- 其他 4 条规划中路线（河西走廊 / 滇越铁路 / Via Francigena / 北京周边辽金）：仅首页卡片
