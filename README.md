@@ -66,6 +66,8 @@ v1.0.0 · Stable Release（2026-07-04）
 | v1.1 | 山西路线研究建档 | 点位分级 A/B/C、5 段研究框架、资料来源、关键词、初步行程方案 |
 | v1.2 | 山西路线校准 | 11天主路线/8天压缩/14天慢行三版本、每日分时草案、路线取舍逻辑、待核验清单 |
 | v1.3 | 山西实用信息核验 | 17个点位实用信息卡（开放时间/门票/停车/拍照）、高风险提示、出发前核验面板 |
+| v1.4 | 山西文化导览草稿 | 12 A级 + 5 B级点位导览、山西古建现场怎么看、古建观察清单、关键词进阶 |
+| v1.4.1 | Out of Eden Walk 中国段 | Paul Salopek 中国段复刻路线，10 分段、Milestone 74-95、3 种复刻版本 |
 
 ---
 
@@ -79,11 +81,12 @@ v1.0.0 · Stable Release（2026-07-04）
 
 **辽塔巡礼**：9 天 8 晚 · 北京闭环自驾 · 核心主题：辽塔 / 契丹 / 捺钵 / 五京制度
 
-### 🚧 规划中路线（5 条）
+### 🚧 规划中路线（6 条）
 
 | 路线 | 状态 | 进度 | 链接 |
 |------|------|------|------|
 | 山西古建自驾线 | 规划中 · 文化导览草稿中（v1.4） | 70% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/) |
+| Out of Eden Walk 中国段复刻路线 | 规划中（v1.0） | 10% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/) |
 | 北京周边辽金古建线 | 规划中 | 30% | 首页卡片 |
 | 河西走廊文化线 | 规划中 | 10% | 首页卡片 |
 | 滇越铁路文化线 | 规划中 | 5% | 首页卡片 |
@@ -98,6 +101,7 @@ v1.0.0 · Stable Release（2026-07-04）
 | 首页（路线库） | https://conanxin.github.io/culture-roadtrip-atlas/ |
 | 辽塔巡礼（已上线完整路线） | https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/ |
 | 山西古建（规划中骨架页） | https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/ |
+| Out of Eden Walk 中国段（规划中文化复刻） | https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/ |
 
 ---
 
@@ -124,12 +128,14 @@ culture-roadtrip-atlas/
 │   ├── liao-tower-roadtrip/             # 已上线完整路线（v0.7）
 │   │   ├── index.html
 │   │   └── ...
-│   └── shanxi-ancient-architecture-roadtrip/  # 规划中骨架页（v0.9）
+│   └── shanxi-ancient-architecture-roadtrip/  # 规划中骨架页（v0.9-v1.4）
+│       └── index.html
+│   └── out-of-eden-walk-china/          # 规划中文化复刻路线（v1.4.1）
 │       └── index.html
 ├── assets/
 │   ├── css/styles.css                   # 统一样式（v0.1-v1.0 累计 ~4200 行）
 │   └── js/
-│       ├── trips-data.js                # 路线库数据（v0.8）
+│       ├── trips-data.js                # 路线库数据（v0.8，含 7 条路线）
 │       ├── home.js                      # 首页渲染/筛选（v0.8）
 │       ├── liao-tower-data.js           # 辽塔行程数据（v0.1-v0.6）
 │       └── app.js                       # 辽塔行程交互（v0.1-v0.7）
@@ -140,7 +146,8 @@ culture-roadtrip-atlas/
 │   ├── BUILD_AND_DEPLOY_REPORT.md
 │   ├── v0_2_content_route_calibration_report.md
 │   ├── ...
-│   └── v1_0_stable_release_report.md
+│   └── v1_4_shanxi_cultural_guide_lite_report.md
+│   └── OUT_OF_EDEN_WALK_CHINA_ROUTE_REPORT.md
 └── scripts/
     └── verify-site.sh                   # 网站验证脚本（v1.0）
 ```

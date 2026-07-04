@@ -39,6 +39,23 @@ const TRIPS_DATA = [
     isLive: false
   },
   {
+    id: 'out-of-eden-walk-china',
+    name: 'Out of Eden Walk 中国段复刻路线',
+    shortName: 'Out of Eden Walk 中国段',
+    oneLine: '从滇西边境到大连黄海，沿 Paul Salopek 的慢新闻足迹穿越中国',
+    status: '规划中',
+    days: '45-60天研究型 / 21-28天精华版 / 分省分段',
+    route: '云南腾冲/高黎贡山 → 大理/丽江 → 木里/康定 → 雅安/成都平原 → 剑门关/汉中 → 西安/延安 → 山西/雁门关 → 周口店/北京 → 司马台/承德 → 辽宁/大连黄海',
+    themes: ['慢新闻', '茶马古道', '蜀道', '黄土高原', '长城', '东北海岸'],
+    tags: ['Out of Eden Walk', '国家地理', '徒步中国', '茶马古道', '蜀道', '黄土高原', '长城', '慢新闻'],
+    suitableFor: ['深度旅行者', '慢新闻/写作爱好者', '人类学/历史地理研究者'],
+    progress: 10,
+    categories: ['徒步', '边疆史', '城市史'],
+    url: 'trips/out-of-eden-walk-china/index.html',
+    isFeatured: false,
+    isLive: false
+  },
+  {
     id: 'beijing-liao-jin-buildings',
     name: '北京周边辽金古建线',
     shortName: '北京辽金',

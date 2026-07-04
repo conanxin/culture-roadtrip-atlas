@@ -5486,3 +5486,371 @@ p {
     display: block !important;
   }
 }
+
+
+/* ============================================
+   v1.4.1 Out of Eden Walk China 路线样式
+   ============================================ */
+
+/* ---------- 分段路线卡片网格 ---------- */
+.route-segment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.route-segment-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.route-segment-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.route-segment-num {
+  position: absolute;
+  top: -16px;
+  left: var(--space-lg);
+  width: 36px;
+  height: 36px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.route-segment-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px dashed var(--color-divider);
+}
+
+.route-segment-locations,
+.route-segment-meta,
+.route-segment-spots,
+.route-segment-stories,
+.route-segment-tips {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.route-segment-locations strong,
+.route-segment-meta strong,
+.route-segment-spots strong,
+.route-segment-stories strong,
+.route-segment-tips strong {
+  color: var(--color-accent-dark);
+}
+
+.route-segment-stories ul,
+.route-segment-tips ul {
+  margin-top: var(--space-xs);
+  padding-left: var(--space-lg);
+}
+
+.route-segment-stories li,
+.route-segment-tips li {
+  margin-bottom: 4px;
+}
+
+.route-segment-tips {
+  background: rgba(184, 134, 11, 0.05);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-sm);
+}
+
+.route-segment-tips.route-warning-inline {
+  background: rgba(231, 76, 60, 0.05);
+  border-left-color: #e74c3c;
+}
+
+/* ---------- Milestones 表格 ---------- */
+.milestone-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.milestone-table thead {
+  background: var(--color-primary);
+  color: white;
+}
+
+.milestone-table th {
+  padding: var(--space-md);
+  text-align: left;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.milestone-table td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: top;
+}
+
+.milestone-table tbody tr:hover {
+  background: rgba(184, 134, 11, 0.05);
+}
+
+.milestone-table a {
+  color: var(--color-accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.milestone-table a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 时间线 ---------- */
+.timeline-list {
+  margin: var(--space-lg) 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-left: 2px solid var(--color-accent);
+  margin-bottom: var(--space-sm);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: var(--space-md);
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* ---------- 故事卡片 ---------- */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.story-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition: all var(--transition-fast);
+}
+
+.story-card:hover {
+  border-left-color: var(--color-accent);
+}
+
+.story-card-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.story-card-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+/* ---------- 复刻版本卡片 ---------- */
+.route-version-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.route-version-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  position: relative;
+}
+
+.route-version-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: white;
+  margin-bottom: var(--space-sm);
+}
+
+.route-version-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.route-version-days {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.route-version-route,
+.route-version-for {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.route-version-route ul {
+  margin-top: var(--space-xs);
+  padding-left: var(--space-lg);
+}
+
+.route-version-route li {
+  margin-bottom: 4px;
+}
+
+/* ---------- 来源清单 ---------- */
+.source-list-group {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.source-list-group-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px dashed var(--color-divider);
+}
+
+.source-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.source-list li {
+  padding: 6px 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+}
+
+.source-list li:last-child {
+  border-bottom: none;
+}
+
+.source-list a {
+  color: var(--color-accent-dark);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.source-list a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 注释与警告 ---------- */
+.route-note {
+  background: rgba(52, 152, 219, 0.05);
+  border-left: 3px solid #3498db;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.route-warning {
+  background: rgba(231, 76, 60, 0.05);
+  border-left: 3px solid #e74c3c;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 768px) {
+  .route-segment-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .milestone-table {
+    font-size: 0.75rem;
+  }
+  
+  .milestone-table th,
+  .milestone-table td {
+    padding: var(--space-xs);
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  
+  .story-grid,
+  .route-version-grid {
+    grid-template-columns: 1fr;
+  }
+}
