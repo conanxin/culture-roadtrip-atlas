@@ -26,10 +26,15 @@
           <a href="../../index.html" class="nav-link">路线库</a>
           <a href="#overview" class="nav-link">路线总览</a>
           <a href="#route" class="nav-link">路线研究</a>
+          <a href="#route-map" class="nav-link">路线图</a>
+          <a href="#rationale" class="nav-link">取舍逻辑</a>
+          <a href="#trip-versions" class="nav-link">行程版本</a>
+          <a href="#time-slots" class="nav-link">分时草案</a>
+          <a href="#spot-status" class="nav-link">点位状态</a>
+          <a href="#todo-list" class="nav-link">待核验</a>
           <a href="#candidates" class="nav-link">点位分级</a>
           <a href="#sources" class="nav-link">资料来源</a>
           <a href="#concepts" class="nav-link">关键词</a>
-          <a href="#plans" class="nav-link">初步行程</a>
         </div>
       </div>
     </div>
@@ -55,10 +60,10 @@
   <!-- 规划中提示 -->
   <section class="container" style="margin-top: var(--space-xl);">
     <div class="planning-note">
-      <strong>📝 这是一条研究建档中的路线</strong>。<br>
-      本页面（v1.1 shanxi route research）已完成<strong>候选点位分级、5 段路线研究框架、资料来源索引、初步关键词、初步行程方案</strong>。<br>
+      <strong>📝 这是一条路线校准中的路线</strong>。<br>
+      本页面（v1.2 shanxi route calibration）已完成<strong>3 种行程版本（11 天主路线 / 8 天压缩版 / 14 天慢行版）、11 天主路线每日分时草案、路线取舍逻辑、点位状态分级、下一步待核验清单</strong>。<br>
       <strong>点位顺序、车程、开放时间、门票、停车信息尚未完成最终核验</strong>，不作为正式出行方案。<br>
-      出发前请以各点位<strong>官方公告和地图导航为准</strong>。本页面使用的研究资料主要为公开资料整理，部分内容可能存在细节误差。
+      出发前请以各点位<strong>官方公告和地图导航为准</strong>。本页内容主要为研究整理，需实地走访后才能作为可靠出行依据。
     </div>
   </section>
 
@@ -67,15 +72,15 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.1 shanxi route research</span>
+        <span class="page-meta-value">v1.2 shanxi route calibration</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">最近更新日期：</span>
-        <span class="page-meta-value" id="page-update-date">2026-07-04 (v1.1)</span>
+        <span class="page-meta-value" id="page-update-date">2026-07-04 (v1.2)</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">研究建档中 · 已分级 · 待校准</span>
+        <span class="page-meta-value">路线校准中 · 已分日 · 待校准</span>
       </div>
     </div>
   </section>
@@ -445,6 +450,1416 @@
 
   </section>
 
+  <!-- 山西古建路线图示意 v1.2 -->
+  <section id="route-map" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">路线图示意</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      纯 SVG 简化示意，展示路线顺序与山西地理分区。<span class="fact-tag fact-tag-info">不追求真实比例</span>
+    </p>
+
+    <div class="route-map-container">
+      <svg class="route-map-svg-mini" viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+        <!-- 路线连接线 -->
+        <line class="route-line" x1="120" y1="80" x2="260" y2="80" />
+        <line class="route-line" x1="260" y1="80" x2="320" y2="120" />
+        <line class="route-line" x1="320" y1="120" x2="380" y2="160" />
+        <line class="route-line" x1="380" y1="160" x2="420" y2="200" />
+        <line class="route-line" x1="420" y1="200" x2="500" y2="240" />
+        <line class="route-line" x1="500" y1="240" x2="540" y2="280" />
+        <line class="route-line" x1="540" y1="280" x2="580" y2="340" />
+        <line class="route-line" x1="580" y1="340" x2="600" y2="400" />
+        <line class="route-line" x1="600" y1="400" x2="660" y2="440" />
+        <line class="route-line" x1="660" y1="440" x2="680" y2="100" />
+
+        <!-- 城市节点 -->
+        <g>
+          <rect class="route-node-rect" x="80" y="60" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="120" y="80">北京</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="220" y="60" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="260" y="80">大同</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="280" y="100" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="320" y="120">应县</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="340" y="140" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="380" y="160">五台山</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="380" y="180" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="420" y="200">太原</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="460" y="220" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="500" y="240">平遥</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="500" y="260" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="540" y="280">介休</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="540" y="320" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="580" y="340">隰县</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="560" y="380" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="600" y="400">长治</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="620" y="420" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="660" y="440">晋城</text>
+        </g>
+        <g>
+          <rect class="route-node-rect" x="640" y="80" width="80" height="40" rx="6" />
+          <text class="route-node-text" x="680" y="100">北京</text>
+        </g>
+
+        <!-- 地理分区标识 -->
+        <text class="region-text" x="180" y="40">晋北</text>
+        <text class="region-text" x="450" y="200">晋中</text>
+        <text class="region-text" x="540" y="300">晋南</text>
+        <text class="region-text" x="600" y="380">晋东南</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 路线取舍逻辑 v1.2 -->
+  <section id="rationale" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">路线取舍逻辑</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      为什么不能把所有山西古建都塞进一条短线？
+    </p>
+
+    <ul class="rationale-list">
+      <li><strong>山西古建点位密度极高</strong>全国 70% 以上的宋金元木构在山西。从大同到晋东南，直线距离超过 600 公里。</li>
+      <li><strong>晋北、晋中、晋东南不是一个小区域</strong>三个区域分别对应辽金、宋金、明清三种不同的建筑与艺术谱系。</li>
+      <li><strong>古建现场需要慢看</strong>云冈、佛光寺、双林寺、小西天、玉皇庙每个点都需要 2-4 小时的仔细观看。</li>
+      <li><strong>博物馆、寺庙、壁画和彩塑都受开放时间影响</strong>闭馆日、限流、季节性闭馆都可能改变行程。</li>
+      <li><strong>自驾不能每天都安排高强度</strong>连续 7 天每天 4 小时以上车程会严重影响游览质量。</li>
+      <li><strong>第一次路线应以主线建立认知</strong>不追求一次看尽。先建立"宋金元"和"辽金"两个时间锚点，再扩展。</li>
+    </ul>
+  </section>
+
+  <!-- 三种行程版本 v1.2 -->
+  <section id="trip-versions" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">三种行程版本</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      11 天主路线 / 8 天压缩版 / 14 天慢行版。<span class="fact-tag fact-tag-check">待校准</span>
+    </p>
+
+    <div class="route-version-tabs">
+      <button class="route-version-tab active" data-version="11day">11 天 10 晚深度版（推荐）</button>
+      <button class="route-version-tab" data-version="8day">8 天压缩版</button>
+      <button class="route-version-tab" data-version="14day">14 天慢行版</button>
+    </div>
+
+    <div class="route-version-content active" data-version="11day">
+      <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-md);">
+        <strong>推荐主路线</strong>。每天给出住宿城市、核心景点、备选景点、取舍提醒、Plan B。每天车程区间与驾驶强度分级。<span class="fact-tag fact-tag-check">出发前需核对</span>
+      </p>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 1</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">北京 → 大同 · 入山西</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>大同</strong></span>
+            <span>车程：<strong>约 350 公里 / 4-5 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">出发 + 行车</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">抵达后游览</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">华严寺 · 善化寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">大同古城墙（夜景） · 九龙壁</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天先不看云冈石窟，留到明天充分游览
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>今天若车程延误，下午只补看华严寺
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 2</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">大同 · 北魏石窟与辽金寺院</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>大同</strong></span>
+            <span>车程：<strong>市内 + 短途</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">游览</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">云冈石窟</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">云冈石窟</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">华严寺（补看） · 善化寺（补看）</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>云冈石窟需 3-4 小时，下午不要塞第二个大点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若云冈石窟今天关闭，改为全天看华严寺 + 善化寺 + 大同博物馆
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 3</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">大同 → 应县 · 辽塔孤例</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>应县</strong></span>
+            <span>车程：<strong>约 80 公里 / 1.5 小时</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">出发 + 行车</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">返程至五台山或休整</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">应县木塔</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">净土寺（应县）</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天专注木塔，不要塞入五台山
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若木塔当天关闭，改为去恒山或返回大同补充
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 4</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">应县 → 五台山周边 · 唐构现场</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>五台山</strong></span>
+            <span>车程：<strong>约 180 公里 / 2.5 小时</strong></span>
+            <span class="day-difficulty difficulty-heavy">驾驶强度：偏重</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">佛光寺 · 南禅寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">五台山台怀镇寺院群</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天包含山路与寺群，五台山台怀镇可只选 1-2 个寺院
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若时间不足，南禅寺可舍弃（与佛光寺同质）
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 5</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">五台山 → 太原 · 北宋祠庙</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>太原</strong></span>
+            <span>车程：<strong>约 250 公里 / 3-3.5 小时</strong></span>
+            <span class="day-difficulty difficulty-heavy">驾驶强度：偏重</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">晋祠 · 双塔寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">山西博物院</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>不要在太原老城内安排超过 2 个点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到太原太晚，晋祠改明天上午
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 6</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">太原 → 平遥 / 介休 · 五代与明代彩塑</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>平遥</strong></span>
+            <span>车程：<strong>约 100 公里 / 1.5 小时</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">镇国寺 · 双林寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">平遥古城 · 介休后土庙</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>双林寺彩塑需要慢看，不在今天塞入更多点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到平遥太晚，改为先看双林寺、明早镇国寺
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 7</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">平遥 → 临汾 / 隰县方向 · 悬塑巅峰</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>隰县</strong></span>
+            <span>车程：<strong>约 200 公里 / 3 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">小西天</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">平遥古城补看</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天车程偏长，建议中途在临汾休息
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到隰县太晚，改为明早看小西天
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 8</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">隰县 → 长治 · 山西中段过渡</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>长治</strong></span>
+            <span>车程：<strong>约 200 公里 / 3 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">长治观音堂</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">法兴寺（长子县，距长治约 30 公里）</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天从隰县到长治车程较长，避免在途中临时加塞点位
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若时间不够，舍弃长治观音堂
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 9</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">长治周边 · 宋金彩塑</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>长治</strong></span>
+            <span>车程：<strong>约 60 公里（崇庆寺与法兴寺都在长子县）</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">崇庆寺 · 法兴寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">长治博物馆</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>崇庆寺与法兴寺都在长子县，可一日连看，不要塞第三个大点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若体力不足，舍弃法兴寺
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 10</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">长治 → 晋城 · 元代道教彩塑</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>晋城</strong></span>
+            <span>车程：<strong>约 100 公里 / 2 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">玉皇庙 · 青莲寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">晋城博物馆</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>青莲寺分上下院，上午先看玉皇庙更合理
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到晋城太晚，玉皇庙改明天上午
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 11</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">晋城 → 北京 · 返程</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>北京</strong></span>
+            <span>车程：<strong>约 700 公里 / 8-9 小时</strong></span>
+            <span class="day-difficulty difficulty-heavy">驾驶强度：偏重</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">返程</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">途中可顺路访问石家庄正定古城</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>返程尽量在中午前出发，避免疲劳驾驶；不建议途中临时加塞点位
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若疲劳，前一天晚住长治或邯郸
+      </div>
+    </div>
+
+    </div>
+
+    <div class="route-version-content" data-version="8day">
+      <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-md);">
+        <strong>仅适合时间有限</strong>的旅行者。8 天会舍弃：
+        <span class="fact-tag fact-tag-info">双塔寺、介休后土庙、长治观音堂、青莲寺</span>
+        等点位。晋东南段落压缩为单日往返。<span class="fact-tag fact-tag-check">不建议硬塞</span>
+      </p>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 1 · 北京 → 大同</strong> · 住宿 大同<br>
+      <span style="font-size: 0.9rem;">景点：华严寺、善化寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 350 公里 / 4-5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 2 · 大同</strong> · 住宿 大同<br>
+      <span style="font-size: 0.9rem;">景点：云冈石窟</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：市内 + 短途</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 3 · 大同 → 应县 → 五台山</strong> · 住宿 五台山<br>
+      <span style="font-size: 0.9rem;">景点：应县木塔、佛光寺或南禅寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 260 公里 / 4 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 4 · 五台山 → 太原</strong> · 住宿 太原<br>
+      <span style="font-size: 0.9rem;">景点：晋祠</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 250 公里 / 3-3.5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 5 · 太原 → 平遥</strong> · 住宿 平遥<br>
+      <span style="font-size: 0.9rem;">景点：镇国寺、双林寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 100 公里 / 1.5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 6 · 平遥 → 隰县 → 长治</strong> · 住宿 长治<br>
+      <span style="font-size: 0.9rem;">景点：小西天</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 400 公里 / 5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 7 · 长治 → 晋城</strong> · 住宿 晋城<br>
+      <span style="font-size: 0.9rem;">景点：玉皇庙、崇庆寺或法兴寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 100 公里 / 2 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 8 · 晋城 → 北京</strong> · 住宿 北京<br>
+      <span style="font-size: 0.9rem;">景点：返程</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 700 公里 / 8-9 小时</span>
+    </div>
+
+    </div>
+
+    <div class="route-version-content" data-version="14day">
+      <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-md);">
+        <strong>慢行版</strong>。适合：慢速看古建、多留博物馆和壁画彩塑时间、减少连续长途驾驶、给晋东南更多时间。每日只写大结构。
+      </p>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 1-2 · 北京 → 大同（两天缓冲）</strong><br>
+      <span style="font-size: 0.9rem;">核心：云冈、华严、善化各占一天</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 3 · 大同 → 应县（独立一天）</strong><br>
+      <span style="font-size: 0.9rem;">核心：应县木塔 + 周边</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 4-5 · 应县 → 五台山（两天深度）</strong><br>
+      <span style="font-size: 0.9rem;">核心：佛光寺、南禅寺、五台山台怀镇寺院群</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 6 · 五台山 → 太原（车程日）</strong><br>
+      <span style="font-size: 0.9rem;">核心：太原休整、晋祠傍晚</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 7 · 太原 → 平遥</strong><br>
+      <span style="font-size: 0.9rem;">核心：平遥古城住一晚</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 8-9 · 平遥 → 介休（两天）</strong><br>
+      <span style="font-size: 0.9rem;">核心：镇国寺、双林寺、介休后土庙</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 10 · 平遥 → 隰县</strong><br>
+      <span style="font-size: 0.9rem;">核心：小西天</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 11 · 隰县 → 长治（车程日）</strong><br>
+      <span style="font-size: 0.9rem;">核心：途中休整</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 12-13 · 长治 → 晋城（两天）</strong><br>
+      <span style="font-size: 0.9rem;">核心：崇庆寺、法兴寺、玉皇庙、青莲寺</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 14 · 晋城 → 北京（分两天返程）</strong><br>
+      <span style="font-size: 0.9rem;">核心：中途可顺路正定古城或邯郸</span>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- 每日分时草案 v1.2 -->
+  <section id="time-slots" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">每日分时草案</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      11 天主路线的上午 / 中午 / 下午 / 晚上 分时草案。
+      <span class="fact-tag fact-tag-check">保持草案性质，未实地验证</span>
+    </p>
+
+    <table class="time-slot-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>住宿</th>
+          <th>上午</th>
+          <th>中午</th>
+          <th>下午</th>
+          <th>晚上</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>大同</td><td>北京出发 + 行车</td><td>大同午餐</td><td>华严寺</td><td>大同古城墙夜景 / 简餐</td></tr>
+        <tr><td>2</td><td>大同</td><td>云冈石窟深度游览</td><td>云冈附近午餐</td><td>善化寺</td><td>大同晚餐 + 休整</td></tr>
+        <tr><td>3</td><td>应县</td><td>大同出发 → 应县</td><td>应县午餐</td><td>应县木塔深度游览</td><td>应县住宿</td></tr>
+        <tr><td>4</td><td>五台山</td><td>佛光寺</td><td>五台山附近午餐</td><td>南禅寺</td><td>五台山住宿</td></tr>
+        <tr><td>5</td><td>太原</td><td>五台山 → 太原 + 太原老城游</td><td>太原午餐</td><td>晋祠</td><td>双塔寺夜景</td></tr>
+        <tr><td>6</td><td>平遥</td><td>太原 → 平遥</td><td>平遥午餐</td><td>镇国寺 + 双林寺</td><td>平遥古城夜景</td></tr>
+        <tr><td>7</td><td>隰县</td><td>平遥 → 临汾 → 隰县</td><td>途中午餐</td><td>小西天</td><td>隰县住宿</td></tr>
+        <tr><td>8</td><td>长治</td><td>隰县 → 长治</td><td>长治午餐</td><td>长治观音堂</td><td>长治住宿</td></tr>
+        <tr><td>9</td><td>长治</td><td>崇庆寺</td><td>长子县午餐</td><td>法兴寺</td><td>长治休整</td></tr>
+        <tr><td>10</td><td>晋城</td><td>长治 → 晋城</td><td>晋城午餐</td><td>玉皇庙 + 青莲寺</td><td>晋城住宿</td></tr>
+        <tr><td>11</td><td>北京</td><td>晋城 → 北京返程</td><td>途中服务区</td><td>途中服务区</td><td>抵达北京</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 候选点位状态 v1.2 -->
+  <section id="spot-status" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">候选点位状态</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      主线必入 / 主线强烈推荐 / 主线备选 / 压缩版可舍弃 / 后续专题路线
+    </p>
+
+<div class="todo-checklist"><div class="todo-item"><div class="todo-item-label">主线必入（12 个）</div><div class="todo-item-desc">云冈石窟 · 华严寺 · 善化寺 · 应县木塔 · 佛光寺 · 南禅寺 · 晋祠 · 镇国寺 · 双林寺 · 小西天 · 玉皇庙 · 青莲寺</div></div><div class="todo-item"><div class="todo-item-label">主线强烈推荐（5 个）</div><div class="todo-item-desc">双塔寺 · 介休后土庙 · 崇庆寺 · 法兴寺 · 长治观音堂</div></div><div class="todo-item"><div class="todo-item-label">主线备选（可舍弃）</div><div class="todo-item-desc>依时间与顺路程度调整，如北齐壁画、净土寺、应县周边小寺等。</div></div><div class="todo-item"><div class="todo-item-label">压缩版可舍弃</div><div class="todo-item-desc">双塔寺、介休后土庙、长治观音堂、青莲寺</div></div><div class="todo-item"><div class="todo-item-label">后续专题路线再看</div><div class="todo-item-desc">永乐宫、应县周边、岩山寺、平顺龙门寺、晋祠水母楼、高平开化寺等</div></div></div>
+  </section>
+
+  <!-- 下一步待核验清单 v1.2 -->
+  <section id="todo-list" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">下一步待核验清单</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      v1.3 之前必须核对的内容
+    </p>
+
+    <div class="todo-checklist">
+      <div class="todo-item">
+        <div class="todo-item-label">每个点位开放时间</div>
+        <div class="todo-item-desc">逐一查官方文旅 / 景区官网 / 公众号</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">闭馆日</div>
+        <div class="todo-item-desc">博物馆 / 寺院闭馆日是否一致（多为周一）</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">是否预约</div>
+        <div class="todo-item-desc">部分国保单位需提前预约（佛光寺等）</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">是否允许拍照</div>
+        <div class="todo-item-desc">彩塑与壁画点位拍照政策各不相同</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">停车点</div>
+        <div class="todo-item-desc">部分乡野寺院停车不便，需提前查</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">景区之间真实车程</div>
+        <div class="todo-item-desc">结合高德/百度地图实测车程</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">雨雪天气影响</div>
+        <div class="todo-item-desc">山区道路雨雪天关闭情况</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">冬季开放情况</div>
+        <div class="todo-item-desc">五台山 / 隰县等冬季闭山或缩短开放</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">是否维修</div>
+        <div class="todo-item-desc">维修期间可能封闭部分院落或彩塑</div>
+      </div>
+      <div class="todo-item">
+        <div class="todo-item-label">儿童/老人同行</div>
+        <div class="todo-item-desc">山路与寺群对老人/儿童的友好度</div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- 路线图示意 v1.2 -->
+<section id="route-map" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">路线图示意</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">纯 SVG 简化示意，展示路线顺序与山西地理分区。<span class="fact-tag fact-tag-info">不追求真实比例</span></p>
+<div class="route-map-container">
+<svg class="route-map-svg-mini" viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+<line class="route-line" x1="120" y1="80" x2="260" y2="80" />
+<line class="route-line" x1="260" y1="80" x2="320" y2="120" />
+<line class="route-line" x1="320" y1="120" x2="380" y2="160" />
+<line class="route-line" x1="380" y1="160" x2="420" y2="200" />
+<line class="route-line" x1="420" y1="200" x2="500" y2="240" />
+<line class="route-line" x1="500" y1="240" x2="540" y2="280" />
+<line class="route-line" x1="540" y1="280" x2="580" y2="340" />
+<line class="route-line" x1="580" y1="340" x2="600" y2="400" />
+<line class="route-line" x1="600" y1="400" x2="660" y2="440" />
+<line class="route-line" x1="660" y2="440" x2="680" y2="100" />
+<g><rect class="route-node-rect" x="80" y="60" width="80" height="40" rx="6" /><text class="route-node-text" x="120" y="80">北京</text></g>
+<g><rect class="route-node-rect" x="220" y="60" width="80" height="40" rx="6" /><text class="route-node-text" x="260" y="80">大同</text></g>
+<g><rect class="route-node-rect" x="280" y="100" width="80" height="40" rx="6" /><text class="route-node-text" x="320" y="120">应县</text></g>
+<g><rect class="route-node-rect" x="340" y="140" width="80" height="40" rx="6" /><text class="route-node-text" x="380" y="160">五台山</text></g>
+<g><rect class="route-node-rect" x="380" y="180" width="80" height="40" rx="6" /><text class="route-node-text" x="420" y="200">太原</text></g>
+<g><rect class="route-node-rect" x="460" y="220" width="80" height="40" rx="6" /><text class="route-node-text" x="500" y="240">平遥</text></g>
+<g><rect class="route-node-rect" x="500" y="260" width="80" height="40" rx="6" /><text class="route-node-text" x="540" y="280">介休</text></g>
+<g><rect class="route-node-rect" x="540" y="320" width="80" height="40" rx="6" /><text class="route-node-text" x="580" y="340">隰县</text></g>
+<g><rect class="route-node-rect" x="560" y="380" width="80" height="40" rx="6" /><text class="route-node-text" x="600" y="400">长治</text></g>
+<g><rect class="route-node-rect" x="620" y="420" width="80" height="40" rx="6" /><text class="route-node-text" x="660" y="440">晋城</text></g>
+<g><rect class="route-node-rect" x="640" y="80" width="80" height="40" rx="6" /><text class="route-node-text" x="680" y="100">北京</text></g>
+<text class="region-text" x="180" y="40">晋北</text>
+<text class="region-text" x="450" y="200">晋中</text>
+<text class="region-text" x="540" y="300">晋南</text>
+<text class="region-text" x="600" y="380">晋东南</text>
+</svg>
+</div>
+</section>
+
+<!-- 路线取舍逻辑 -->
+<section id="rationale" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">路线取舍逻辑</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">为什么不能把所有山西古建都塞进一条短线？</p>
+<ul class="rationale-list">
+<li><strong>山西古建点位密度极高</strong>全国 70% 以上的宋金元木构在山西。从大同到晋东南，直线距离超过 600 公里。</li>
+<li><strong>晋北、晋中、晋东南不是一个小区域</strong>三个区域分别对应辽金、宋金、明清三种不同的建筑与艺术谱系。</li>
+<li><strong>古建现场需要慢看</strong>云冈、佛光寺、双林寺、小西天、玉皇庙每个点都需要 2-4 小时的仔细观看。</li>
+<li><strong>博物馆、寺庙、壁画和彩塑都受开放时间影响</strong>闭馆日、限流、季节性闭馆都可能改变行程。</li>
+<li><strong>自驾不能每天都安排高强度</strong>连续 7 天每天 4 小时以上车程会严重影响游览质量。</li>
+<li><strong>第一次路线应以主线建立认知</strong>不追求一次看尽。先建立'宋金元'和'辽金'两个时间锚点，再扩展。</li>
+</ul>
+</section>
+
+  <!-- 三种行程版本 v1.2 -->
+<section id="trip-versions" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">三种行程版本</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">11 天主路线 / 8 天压缩版 / 14 天慢行版。<span class="fact-tag fact-tag-check">待校准</span></p>
+
+<div class="route-version-tabs">
+<button class="route-version-tab active" data-version="11day">11 天 10 晚深度版（推荐）</button>
+<button class="route-version-tab" data-version="8day">8 天压缩版</button>
+<button class="route-version-tab" data-version="14day">14 天慢行版</button>
+</div>
+
+<div class="route-version-content active" data-version="11day">
+<p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-md);"><strong>推荐主路线</strong>。每天给出住宿城市、核心景点、备选景点、取舍提醒、Plan B。<span class="fact-tag fact-tag-check">出发前需核对</span></p>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 1</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">北京 → 大同 · 入山西</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>大同</strong></span>
+            <span>车程：<strong>约 350 公里 / 4-5 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">出发 + 行车</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">抵达后游览</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">华严寺 · 善化寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">大同古城墙（夜景） · 九龙壁</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天先不看云冈石窟，留到明天充分游览
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>今天若车程延误，下午只补看华严寺
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 2</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">大同 · 北魏石窟与辽金寺院</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>大同</strong></span>
+            <span>车程：<strong>市内 + 短途</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">游览</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">云冈石窟</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">云冈石窟</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">华严寺（补看） · 善化寺（补看）</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>云冈石窟需 3-4 小时，下午不要塞第二个大点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若云冈石窟今天关闭，改为全天看华严寺 + 善化寺 + 大同博物馆
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 3</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">大同 → 应县 · 辽塔孤例</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>应县</strong></span>
+            <span>车程：<strong>约 80 公里 / 1.5 小时</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">出发 + 行车</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">返程至五台山或休整</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">应县木塔</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">净土寺（应县）</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天专注木塔，不要塞入五台山
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若木塔当天关闭，改为去恒山或返回大同补充
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 4</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">应县 → 五台山周边 · 唐构现场</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>五台山</strong></span>
+            <span>车程：<strong>约 180 公里 / 2.5 小时</strong></span>
+            <span class="day-difficulty difficulty-heavy">驾驶强度：偏重</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">佛光寺 · 南禅寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">五台山台怀镇寺院群</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天包含山路与寺群，五台山台怀镇可只选 1-2 个寺院
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若时间不足，南禅寺可舍弃（与佛光寺同质）
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 5</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">五台山 → 太原 · 北宋祠庙</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>太原</strong></span>
+            <span>车程：<strong>约 250 公里 / 3-3.5 小时</strong></span>
+            <span class="day-difficulty difficulty-heavy">驾驶强度：偏重</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">晋祠 · 双塔寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">山西博物院</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>不要在太原老城内安排超过 2 个点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到太原太晚，晋祠改明天上午
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 6</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">太原 → 平遥 / 介休 · 五代与明代彩塑</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>平遥</strong></span>
+            <span>车程：<strong>约 100 公里 / 1.5 小时</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">镇国寺 · 双林寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">平遥古城 · 介休后土庙</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>双林寺彩塑需要慢看，不在今天塞入更多点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到平遥太晚，改为先看双林寺、明早镇国寺
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 7</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">平遥 → 临汾 / 隰县方向 · 悬塑巅峰</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>隰县</strong></span>
+            <span>车程：<strong>约 200 公里 / 3 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">小西天</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">平遥古城补看</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天车程偏长，建议中途在临汾休息
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到隰县太晚，改为明早看小西天
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 8</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">隰县 → 长治 · 山西中段过渡</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>长治</strong></span>
+            <span>车程：<strong>约 200 公里 / 3 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">长治观音堂</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">法兴寺（长子县，距长治约 30 公里）</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>今天从隰县到长治车程较长，避免在途中临时加塞点位
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若时间不够，舍弃长治观音堂
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 9</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">长治周边 · 宋金彩塑</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>长治</strong></span>
+            <span>车程：<strong>约 60 公里（崇庆寺与法兴寺都在长子县）</strong></span>
+            <span class="day-difficulty difficulty-easy">驾驶强度：轻松</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">崇庆寺 · 法兴寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">长治博物馆</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>崇庆寺与法兴寺都在长子县，可一日连看，不要塞第三个大点
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若体力不足，舍弃法兴寺
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 10</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">长治 → 晋城 · 元代道教彩塑</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>晋城</strong></span>
+            <span>车程：<strong>约 100 公里 / 2 小时</strong></span>
+            <span class="day-difficulty difficulty-medium">驾驶强度：中等</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">玉皇庙 · 青莲寺</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">晋城博物馆</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>青莲寺分上下院，上午先看玉皇庙更合理
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若到晋城太晚，玉皇庙改明天上午
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <div class="day-card-num">Day 11</div>
+        <div class="day-card-titles">
+          <div class="day-card-title">晋城 → 北京 · 返程</div>
+          <div class="day-card-meta">
+            <span>住宿：<strong>北京</strong></span>
+            <span>车程：<strong>约 700 公里 / 8-9 小时</strong></span>
+            <span class="day-difficulty difficulty-heavy">驾驶强度：偏重</span>
+          </div>
+        </div>
+      </div>
+      <div class="day-card-body">
+        <div class="day-card-field">
+          <div class="day-card-field-label">上午</div>
+          <div class="day-card-field-value">核心点位上午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">下午</div>
+          <div class="day-card-field-value">核心点位下午场</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">核心景点</div>
+          <div class="day-card-field-value">返程</div>
+        </div>
+        <div class="day-card-field">
+          <div class="day-card-field-label">备选景点</div>
+          <div class="day-card-field-value">途中可顺路访问石家庄正定古城</div>
+        </div>
+      </div>
+      <div class="day-card-skip">
+        <strong>今天不要硬塞：</strong>返程尽量在中午前出发，避免疲劳驾驶；不建议途中临时加塞点位
+      </div>
+      <div class="day-card-planb">
+        <strong>Plan B：</strong>若疲劳，前一天晚住长治或邯郸
+      </div>
+    </div>
+
+</div>
+
+<div class="route-version-content" data-version="8day">
+<p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-md);"><strong>仅适合时间有限</strong>的旅行者。8 天会舍弃：<span class="fact-tag fact-tag-info">双塔寺、介休后土庙、长治观音堂、青莲寺</span>等点位。<span class="fact-tag fact-tag-check">不建议硬塞</span></p>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 1 · 北京 → 大同</strong> · 住宿 大同<br>
+      <span style="font-size: 0.9rem;">景点：华严寺、善化寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 350 公里 / 4-5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 2 · 大同</strong> · 住宿 大同<br>
+      <span style="font-size: 0.9rem;">景点：云冈石窟</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：市内 + 短途</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 3 · 大同 → 应县 → 五台山</strong> · 住宿 五台山<br>
+      <span style="font-size: 0.9rem;">景点：应县木塔、佛光寺或南禅寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 260 公里 / 4 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 4 · 五台山 → 太原</strong> · 住宿 太原<br>
+      <span style="font-size: 0.9rem;">景点：晋祠</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 250 公里 / 3-3.5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 5 · 太原 → 平遥</strong> · 住宿 平遥<br>
+      <span style="font-size: 0.9rem;">景点：镇国寺、双林寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 100 公里 / 1.5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 6 · 平遥 → 隰县 → 长治</strong> · 住宿 长治<br>
+      <span style="font-size: 0.9rem;">景点：小西天</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 400 公里 / 5 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 7 · 长治 → 晋城</strong> · 住宿 晋城<br>
+      <span style="font-size: 0.9rem;">景点：玉皇庙、崇庆寺或法兴寺</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 100 公里 / 2 小时</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-accent); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 8 · 晋城 → 北京</strong> · 住宿 北京<br>
+      <span style="font-size: 0.9rem;">景点：返程</span><br>
+      <span style="font-size: 0.8rem; color: var(--color-text-light);">车程：约 700 公里 / 8-9 小时</span>
+    </div>
+
+</div>
+
+<div class="route-version-content" data-version="14day">
+<p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-md);"><strong>慢行版</strong>。适合：慢速看古建、多留博物馆和壁画彩塑时间、减少连续长途驾驶、给晋东南更多时间。</p>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 1-2 · 北京 → 大同（两天缓冲）</strong><br>
+      <span style="font-size: 0.9rem;">核心：云冈、华严、善化各占一天</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 3 · 大同 → 应县（独立一天）</strong><br>
+      <span style="font-size: 0.9rem;">核心：应县木塔 + 周边</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 4-5 · 应县 → 五台山（两天深度）</strong><br>
+      <span style="font-size: 0.9rem;">核心：佛光寺、南禅寺、五台山台怀镇寺院群</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 6 · 五台山 → 太原（车程日）</strong><br>
+      <span style="font-size: 0.9rem;">核心：太原休整、晋祠傍晚</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 7 · 太原 → 平遥</strong><br>
+      <span style="font-size: 0.9rem;">核心：平遥古城住一晚</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 8-9 · 平遥 → 介休（两天）</strong><br>
+      <span style="font-size: 0.9rem;">核心：镇国寺、双林寺、介休后土庙</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 10 · 平遥 → 隰县</strong><br>
+      <span style="font-size: 0.9rem;">核心：小西天</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 11 · 隰县 → 长治（车程日）</strong><br>
+      <span style="font-size: 0.9rem;">核心：途中休整</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 12-13 · 长治 → 晋城（两天）</strong><br>
+      <span style="font-size: 0.9rem;">核心：崇庆寺、法兴寺、玉皇庙、青莲寺</span>
+    </div>
+
+    <div style="background: var(--color-bg-card); border-left: 3px solid var(--color-primary); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+      <strong>Day 14 · 晋城 → 北京（分两天返程）</strong><br>
+      <span style="font-size: 0.9rem;">核心：中途可顺路正定古城或邯郸</span>
+    </div>
+
+</div>
+</section>
+
+<!-- 每日分时草案 v1.2 -->
+<section id="time-slots" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">每日分时草案</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">11 天主路线的上午 / 中午 / 下午 / 晚上 分时草案。<span class="fact-tag fact-tag-check">保持草案性质，未实地验证</span></p>
+
+<table class="time-slot-table">
+<thead>
+<tr><th>Day</th><th>住宿</th><th>上午</th><th>中午</th><th>下午</th><th>晚上</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>大同</td><td>北京出发 + 行车</td><td>大同午餐</td><td>华严寺</td><td>大同古城墙夜景 / 简餐</td></tr>
+<tr><td>2</td><td>大同</td><td>云冈石窟深度游览</td><td>云冈附近午餐</td><td>善化寺</td><td>大同晚餐 + 休整</td></tr>
+<tr><td>3</td><td>应县</td><td>大同出发 → 应县</td><td>应县午餐</td><td>应县木塔深度游览</td><td>应县住宿</td></tr>
+<tr><td>4</td><td>五台山</td><td>佛光寺</td><td>五台山附近午餐</td><td>南禅寺</td><td>五台山住宿</td></tr>
+<tr><td>5</td><td>太原</td><td>五台山 → 太原 + 太原老城游</td><td>太原午餐</td><td>晋祠</td><td>双塔寺夜景</td></tr>
+<tr><td>6</td><td>平遥</td><td>太原 → 平遥</td><td>平遥午餐</td><td>镇国寺 + 双林寺</td><td>平遥古城夜景</td></tr>
+<tr><td>7</td><td>隰县</td><td>平遥 → 临汾 → 隰县</td><td>途中午餐</td><td>小西天</td><td>隰县住宿</td></tr>
+<tr><td>8</td><td>长治</td><td>隰县 → 长治</td><td>长治午餐</td><td>长治观音堂</td><td>长治住宿</td></tr>
+<tr><td>9</td><td>长治</td><td>崇庆寺</td><td>长子县午餐</td><td>法兴寺</td><td>长治休整</td></tr>
+<tr><td>10</td><td>晋城</td><td>长治 → 晋城</td><td>晋城午餐</td><td>玉皇庙 + 青莲寺</td><td>晋城住宿</td></tr>
+<tr><td>11</td><td>北京</td><td>晋城 → 北京返程</td><td>途中服务区</td><td>途中服务区</td><td>抵达北京</td></tr>
+</tbody>
+</table>
+</section>
+
+<!-- 候选点位状态 v1.2 -->
+<section id="spot-status" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">候选点位状态</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">主线必入 / 主线强烈推荐 / 主线备选 / 压缩版可舍弃 / 后续专题路线</p>
+<div class="todo-checklist"><div class="todo-item"><div class="todo-item-label">主线必入（12 个）</div><div class="todo-item-desc">云冈石窟 · 华严寺 · 善化寺 · 应县木塔 · 佛光寺 · 南禅寺 · 晋祠 · 镇国寺 · 双林寺 · 小西天 · 玉皇庙 · 青莲寺</div></div><div class="todo-item"><div class="todo-item-label">主线强烈推荐（5 个）</div><div class="todo-item-desc">双塔寺 · 介休后土庙 · 崇庆寺 · 法兴寺 · 长治观音堂</div></div><div class="todo-item"><div class="todo-item-label">主线备选（可舍弃）</div><div class="todo-item-desc>依时间与顺路程度调整，如北齐壁画、净土寺、应县周边小寺等。</div></div><div class="todo-item"><div class="todo-item-label">压缩版可舍弃</div><div class="todo-item-desc">双塔寺、介休后土庙、长治观音堂、青莲寺</div></div><div class="todo-item"><div class="todo-item-label">后续专题路线再看</div><div class="todo-item-desc">永乐宫、应县周边、岩山寺、平顺龙门寺、晋祠水母楼、高平开化寺等</div></div></div>
+</section>
+
+<!-- 下一步待核验清单 v1.2 -->
+<section id="todo-list" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">下一步待核验清单</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">v1.3 之前必须核对的内容</p>
+
+<div class="todo-checklist">
+<div class="todo-item"><div class="todo-item-label">每个点位开放时间</div><div class="todo-item-desc">逐一查官方文旅 / 景区官网 / 公众号</div></div>
+<div class="todo-item"><div class="todo-item-label">闭馆日</div><div class="todo-item-desc">博物馆 / 寺院闭馆日是否一致（多为周一）</div></div>
+<div class="todo-item"><div class="todo-item-label">是否预约</div><div class="todo-item-desc">部分国保单位需提前预约（佛光寺等）</div></div>
+<div class="todo-item"><div class="todo-item-label">是否允许拍照</div><div class="todo-item-desc">彩塑与壁画点位拍照政策各不相同</div></div>
+<div class="todo-item"><div class="todo-item-label">停车点</div><div class="todo-item-desc">部分乡野寺院停车不便，需提前查</div></div>
+<div class="todo-item"><div class="todo-item-label">景区之间真实车程</div><div class="todo-item-desc">结合高德/百度地图实测车程</div></div>
+<div class="todo-item"><div class="todo-item-label">雨雪天气影响</div><div class="todo-item-desc">山区道路雨雪天关闭情况</div></div>
+<div class="todo-item"><div class="todo-item-label">冬季开放情况</div><div class="todo-item-desc">五台山 / 隰县等冬季闭山或缩短开放</div></div>
+<div class="todo-item"><div class="todo-item-label">是否维修</div><div class="todo-item-desc">维修期间可能封闭部分院落或彩塑</div></div>
+<div class="todo-item"><div class="todo-item-label">儿童/老人同行</div><div class="todo-item-desc">山路与寺群对老人/儿童的友好度</div></div>
+</div>
+</section>
+
   <!-- 资料来源索引 -->
   <section id="sources" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
@@ -809,5 +2224,24 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // v1.2 行程版本 tab 切换
+    (function () {
+      const tabs = document.querySelectorAll('.route-version-tab');
+      const contents = document.querySelectorAll('.route-version-content');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const version = tab.dataset.version;
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          contents.forEach(c => {
+            c.classList.remove('active');
+            if (c.dataset.version === version) c.classList.add('active');
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
