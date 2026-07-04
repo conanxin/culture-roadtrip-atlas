@@ -1903,6 +1903,361 @@ p {
 
 
 
+
+/* ============================================
+   v0.8 Multi Trip Framework 样式
+   ============================================ */
+
+/* ---------- 项目定位 ---------- */
+.project-positioning {
+  background: var(--color-bg-card);
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin: var(--space-xl) 0;
+}
+
+.project-positioning-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.project-positioning-text strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ---------- Featured Trip ---------- */
+.featured-trip-section {
+  margin: var(--space-2xl) 0;
+  padding: 0;
+}
+
+.featured-trip-card {
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.08), rgba(26, 58, 42, 0.05));
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-trip-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+}
+
+.featured-trip-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+  background: rgba(184, 134, 11, 0.15);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 20px;
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.05em;
+}
+
+.featured-trip-title {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  line-height: 1.3;
+}
+
+.featured-trip-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+.featured-trip-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+}
+
+.featured-trip-meta-item {
+  text-align: left;
+}
+
+.featured-trip-meta-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.featured-trip-meta-value {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.featured-trip-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.featured-trip-footer {
+  text-align: center;
+}
+
+.featured-trip-note {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-top: var(--space-md);
+}
+
+/* ---------- 路线库筛选 ---------- */
+.trips-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: var(--space-xl) 0 var(--space-lg);
+  padding: var(--space-md);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.trip-filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.trip-filter-btn:hover {
+  border-color: var(--color-accent);
+}
+
+.trip-filter-btn.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+/* ---------- 路线库卡片网格 ---------- */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+.trip-card-featured {
+  border: 2px solid var(--color-accent);
+}
+
+.trip-featured-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+  background: rgba(184, 134, 11, 0.15);
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.05em;
+}
+
+.trip-status {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-right: var(--space-sm);
+}
+
+.status-live {
+  background: rgba(39, 174, 96, 0.15);
+  color: #27ae60;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+.status-planning {
+  background: rgba(184, 134, 11, 0.1);
+  color: var(--color-accent-dark);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+.trip-progress {
+  width: 100%;
+  height: 6px;
+  background: var(--color-bg-alt);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: var(--space-md) 0 var(--space-xs);
+}
+
+.trip-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  transition: width var(--transition-base);
+}
+
+.trip-progress-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-align: right;
+  margin-bottom: var(--space-sm);
+}
+
+.trip-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.trips-empty {
+  text-align: center;
+  padding: var(--space-3xl);
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* ---------- 项目方法论 ---------- */
+.methodology-section {
+  margin: var(--space-3xl) 0;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.methodology-item {
+  background: var(--color-bg-card);
+  border-left: 3px solid var(--color-primary);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+}
+
+.methodology-step {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.methodology-name {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.methodology-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ---------- 路线状态说明 ---------- */
+.status-legend {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-lg);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.status-legend-title {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.status-legend-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.status-legend-item {
+  background: var(--color-bg);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+}
+
+.status-legend-name {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.status-legend-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 768px) {
+  .trips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trips-filter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .featured-trip-title {
+    font-size: 1.4rem;
+  }
+
+  .featured-trip-card {
+    padding: var(--space-lg);
+  }
+
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-legend-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* ============================================
    v0.7 Heritage Visual Polish 样式
    ============================================ */
