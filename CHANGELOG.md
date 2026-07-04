@@ -4,6 +4,50 @@
 
 ---
 
+## v1.4.6 · Out of Eden Walk China Phase 6 · Data-driven Map Preview (2026-07-04)
+
+### 主要变更
+- **新增脚本**：`scripts/validate-route-data.py`（固化 Phase 5 临时校验）+ `scripts/render-route-map-svg.py`（GeoJSON → 纯静态 SVG）
+- **静态 SVG 地图**：`assets/img/routes/out-of-eden-walk-china-map.svg`（9.2 KB · 1200×760 · 墨绿/米白/暗金风格）
+- **前端数据查看器**：`assets/js/route-data-viewer.js`（Vanilla JS · 无依赖 · fetch GeoJSON · 4 筛选器 · 表格渲染 · fallback）
+- **OEDW 页面新增模块**：「静态路线示意图」+「数据驱动路线表」（含筛选器）
+- **routes/index.html 增强**：SVG 预览 + 9 项数据统计 + 数据规范 + 数据处理流程
+- **首页 CTA 更新**：明确"不依赖地图 API"
+- **CSS 新增**约 200 行：static-route-map / route-data-viewer / route-data-summary-grid / route-data-filters / route-data-table-wrap / route-data-viewer-table / route-data-badge 系列 / data-process-flow / route-map-preview
+
+### 重要边界
+- 所有路线数据仍为**文化复刻粗点**
+- SVG 必须包含 "not Paul Salopek original GPS track" / "not for navigation" / "cultural replica"
+- 不引入地图 API / 后端 / 数据库 / 构建系统 / npm 依赖
+- 不破坏辽塔 / 山西等其他页面
+- 不改动 Phase 2–5 事实边界
+
+### SVG 内容
+
+- **背景**：米白 #fbf7ec
+- **路线**：墨绿主路线（实线 2.5px）+ 10 段分路线（虚线 1.4px）
+- **点位**：暗金 42 个圆点 · 起点深墨绿 / 终点暗红
+- **段落标签**：S01–S10 居中标注于段落中心
+- **图例**：起点 / 终点 / 粗点 / 主路线 / 分路线 + 红色免责声明
+- **标题**：中文标题 + 副标题（版本 / 点位数 / 段数 / 里程）
+- **footer**：脚本生成标识
+
+### Phase 6 核心脚本
+
+```bash
+# 校验数据
+python3 scripts/validate-route-data.py
+
+# 生成 SVG
+python3 scripts/render-route-map-svg.py
+
+# 输出
+#  → data/routes/out-of-eden-walk-china.{csv,geojson,gpx}
+#  → assets/img/routes/out-of-eden-walk-china-map.svg
+```
+
+---
+
 ## v1.4.5 · Out of Eden Walk China Phase 5 · Route Data (2026-07-04)
 
 ### 主要变更

@@ -26,6 +26,8 @@
         <a href="../index.html" class="nav-brand">← 行旅图谱</a>
         <div class="nav-links">
           <a href="#oedw" class="nav-link">Out of Eden Walk</a>
+          <a href="#spec" class="nav-link">规范</a>
+          <a href="#process" class="nav-link">流程</a>
           <a href="#future" class="nav-link">未来路线</a>
           <a href="#about" class="nav-link">关于</a>
         </div>
@@ -140,7 +142,52 @@
         </div>
       </div>
 
-      <h4 class="route-data-section-title">📥 下载文件</h4>
+      <h4 class="route-data-section-title">🗺️ 静态地图预览</h4>
+      <div class="route-map-preview">
+        <img src="../assets/img/routes/out-of-eden-walk-china-map.svg" alt="Out of Eden Walk 中国段路线数据预览">
+      </div>
+
+      <h4 class="route-data-section-title">📊 数据统计</h4>
+      <div class="data-meta-list">
+        <div class="data-meta-item">
+          <span class="data-meta-label">点位数</span>
+          <span class="data-meta-value">42</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">段落数</span>
+          <span class="data-meta-value">10</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">GeoJSON features</span>
+          <span class="data-meta-value">53</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">GPX waypoints</span>
+          <span class="data-meta-value">42</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">数据版本</span>
+          <span class="data-meta-value">v1.4.6</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">数据类型</span>
+          <span class="data-meta-value">文化复刻粗点</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">原始 GPS</span>
+          <span class="data-meta-value">否</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">用途</span>
+          <span class="data-meta-value">研究 / 写作 / 静态地图 / 分段旅行规划</span>
+        </div>
+        <div class="data-meta-item">
+          <span class="data-meta-label">限制</span>
+          <span class="data-meta-value">非导航 / 非安全穿越指引</span>
+        </div>
+      </div>
+
+            <h4 class="route-data-section-title">📥 下载文件</h4>
       <div class="route-data-downloads">
         <a href="../data/routes/out-of-eden-walk-china.csv" class="route-data-button" download>
           <span class="data-format-badge data-format-csv">CSV</span>
@@ -201,7 +248,67 @@
   </section>
 
   <!-- 关于 -->
-  <section id="about" class="container" style="margin-top: var(--space-3xl);">
+  <section id="spec" class="container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">数据规范</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      v1.4.6 新增 · 统一字段定义 · 为未来辽塔巡礼 / 山西古建等路线复用同一规范
+    </p>
+    <div class="city-card" style="max-width: 900px; margin: 0 auto;">
+      <p style="line-height: 1.9;">当前路线数据统一使用 <strong>CSV / GeoJSON / GPX</strong> 三格式。每个点位必须包含以下字段：</p>
+      <ul style="line-height: 1.9;">
+        <li><code>segment_id</code> · 段落编号（S01–S10）</li>
+        <li><code>source_level</code> · 来源等级（A_official_oedw / B_partner_or_education / C_chinese_media / D_reconstructed_for_travel）</li>
+        <li><code>coordinate_precision</code> · 坐标精度（city / landmark / region / approximate / unknown）</li>
+        <li><code>replication_feasibility</code> · 复刻可行性（high / medium / low / not_recommended / reading_only）</li>
+        <li><code>risk_note</code> · 风险提示</li>
+      </ul>
+      <p style="margin-top: var(--space-md); line-height: 1.9;">所有格式 metadata / desc 中必须明确标注：<strong>非 Paul Salopek 原始 GPS 轨迹 + 非导航</strong>。</p>
+    </div>
+  </section>
+
+  <section id="process" class="container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">数据处理流程</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      v1.4.6 新增 · 从原始数据到页面展示的完整流程
+    </p>
+
+    <div class="data-process-flow">
+      <div class="data-process-step">
+        <div class="data-process-step-num">1</div>
+        <div class="data-process-step-title">数据源</div>
+        <div class="data-process-step-desc">CSV / GeoJSON / GPX</div>
+      </div>
+      <div class="data-process-step">
+        <div class="data-process-step-num">2</div>
+        <div class="data-process-step-title">校验</div>
+        <div class="data-process-step-desc">validate-route-data.py</div>
+      </div>
+      <div class="data-process-step">
+        <div class="data-process-step-num">3</div>
+        <div class="data-process-step-title">渲染</div>
+        <div class="data-process-step-desc">render-route-map-svg.py</div>
+      </div>
+      <div class="data-process-step">
+        <div class="data-process-step-num">4</div>
+        <div class="data-process-step-title">展示</div>
+        <div class="data-process-step-desc">route-data-viewer.js</div>
+      </div>
+    </div>
+
+    <div class="city-card" style="max-width: 900px; margin: var(--space-xl) auto 0;">
+      <p style="font-family: monospace; font-size: 0.9rem; background: rgba(107, 142, 35, 0.06); padding: var(--space-md); border-radius: var(--radius-sm);">
+        CSV / GeoJSON / GPX → validate-route-data.py 校验 → render-route-map-svg.py 生成静态 SVG → 页面读取 GeoJSON 展示数据表
+      </p>
+    </div>
+  </section>
+
+    <section id="about" class="container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
@@ -233,7 +340,7 @@
           <a href="../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.4.5 · 路线数据索引 · 2026 · 文化复刻粗点 · 非导航</div>
+        <div class="footer-credit">v1.4.6 · 路线数据索引 · 2026 · 文化复刻粗点 · 非导航</div>
       </div>
     </div>
   </footer>

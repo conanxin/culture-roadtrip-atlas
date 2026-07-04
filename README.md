@@ -72,6 +72,7 @@ v1.0.0 · Stable Release（2026-07-04）
 | v1.4.3 | Phase 3 叙事导览版 | 如何阅读路线、长卷文字地图、10 段随行导游词、每日主题、6 段短线适合人群、行前资料包、传播摘要 |
 | v1.4.4 | Phase 4 发布包装 | 快速阅读目录、阅读进度、返回顶部、移动端表格、SEO/OG/canonical、Twitter Card、本页状态、适合谁使用、代表长线徽章、发布文案 4 版 |
 | v1.4.5 | Phase 5 路线数据资产 | CSV 42 点 + GeoJSON + GPX + data/README + 路线数据索引页 routes/、OEDW 下载模块、首页入口 |
+| v1.4.6 | Phase 6 数据驱动展示 | validate-route-data.py + render-route-map-svg.py + 静态 SVG 地图 + route-data-viewer.js 数据驱动表 + 4 筛选器 |
 
 ---
 
@@ -90,7 +91,7 @@ v1.0.0 · Stable Release（2026-07-04）
 | 路线 | 状态 | 进度 | 链接 |
 |------|------|------|------|
 | 山西古建自驾线 | 规划中 · 文化导览草稿中（v1.4） | 70% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/) |
-| Out of Eden Walk 中国段复刻路线 | 规划中（v1.4.5 · 页面发布包装完成 + 路线数据资产完成） | 50% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/) |
+| Out of Eden Walk 中国段复刻路线 | 规划中（v1.4.6 · 页面发布包装完成 + 路线数据资产完成 + 数据驱动展示 + 静态 SVG 地图预览） | 50% | [查看规划](https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/) |
 | 北京周边辽金古建线 | 规划中 | 30% | 首页卡片 |
 | 河西走廊文化线 | 规划中 | 10% | 首页卡片 |
 | 滇越铁路文化线 | 规划中 | 5% | 首页卡片 |

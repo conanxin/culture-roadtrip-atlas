@@ -39,6 +39,7 @@
           <a href="#prep-pack" class="nav-link">资料包</a>
           <a href="#share-summary" class="nav-link">传播</a>
           <a href="#download-data" class="nav-link">下载数据</a>
+          <a href="#static-map" class="nav-link">地图预览</a>
         </div>
       </div>
     </div>
@@ -47,7 +48,7 @@
   <!-- Hero 首屏 -->
   <section class="hero trip-skeleton">
     <div class="container">
-      <div class="trip-skeleton-badge">🌟 代表长线 · v1.4.5 · 事实审校 + 可旅行化 + 叙事导览 + 发布包装 + 路线数据</div>
+      <div class="trip-skeleton-badge">🌟 代表长线 · v1.4.6 · 数据驱动展示 + 静态地图预览</div>
       <h1 class="hero-title">Out of Eden Walk 中国段复刻路线</h1>
       <p class="hero-subtitle">从滇西边境到大连黄海：跟随 Paul Salopek 的慢新闻足迹，<br>穿越古道、蜀道、黄土高原、长城与东北海岸</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -83,7 +84,7 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.4.5 · Out of Eden Walk 中国段复刻 · 事实审校 + 可旅行化 + 叙事导览 + 发布包装 + 路线数据 · 50% · 2026-07-04</span>
+        <span class="page-meta-value">v1.4.6 · Out of Eden Walk 中国段复刻 · 事实审校 + 可旅行化 + 叙事导览 + 发布包装 + 路线数据 + 静态地图预览 + 数据驱动表 · 50% · 2026-07-04</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">原始项目：</span>
@@ -91,7 +92,7 @@
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">v1.4.5 · 50% · 事实审校 + 可旅行化 + 叙事导览 + 发布包装 + 路线数据</span>
+        <span class="page-meta-value">v1.4.6 · 50% · 数据驱动展示 + 静态 SVG 地图预览</span>
       </div>
     </div>
   </section>
@@ -225,6 +226,40 @@
         </div>
       </div>
     </div>
+  </section>
+
+<!-- 静态路线示意图（v1.4.6 新增） -->
+  <section id="static-map" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">静态路线示意图</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      v1.4.6 新增 · 由本页 GeoJSON 数据自动生成 · 纯静态 SVG · 无地图 API
+    </p>
+    <figure class="static-route-map">
+      <img src="../../assets/img/routes/out-of-eden-walk-china-map.svg" alt="Out of Eden Walk 中国段文化复刻路线静态示意图">
+      <figcaption>文化复刻粗点 · 非 Paul Salopek 原始 GPS 轨迹 · 非导航</figcaption>
+    </figure>
+  </section>
+
+  <!-- 数据驱动路线表（v1.4.6 新增） -->
+  <section id="route-table" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">数据驱动路线表</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      v1.4.6 新增 · 直接读取 GeoJSON 文化复刻粗点 · 可按段落 / 省份 / 难度 / 复刻性筛选
+    </p>
+
+    <section id="route-data-viewer"
+             class="route-data-viewer"
+             data-route-geojson="../../data/routes/out-of-eden-walk-china.geojson"
+             data-route-name="Out of Eden Walk 中国段">
+      <div class="route-data-loading">正在加载路线数据……</div>
+      <noscript>浏览器未启用 JavaScript。请直接下载 CSV / GeoJSON / GPX 文件查看路线数据。</noscript>
+    </section>
   </section>
 
   <!-- 1. 路线总览 -->
@@ -1683,7 +1718,7 @@
           <a href="../../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.4.5 · Out of Eden Walk 中国段复刻 · 路线数据版 · 50% · 2026 · 此页为规划中文化复刻路线</div>
+        <div class="footer-credit">v1.4.6 · Out of Eden Walk 中国段复刻 · 数据驱动版 · 50% · 2026 · 此页为规划中文化复刻路线</div>
       </div>
     </div>
   </footer>
@@ -1750,6 +1785,8 @@
       updateBackToTop();
     })();
   </script>
+
+<script src="../../assets/js/route-data-viewer.js"></script>
 
 </body>
 </html>

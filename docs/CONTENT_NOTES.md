@@ -581,3 +581,92 @@
 
 ---
 
+
+---
+
+## Out of Eden Walk 中国段 · Phase 6 数据驱动展示与静态地图预览（v1.4.6）
+
+### 范围
+本轮把 OEDW 页面从"静态下载"升级为"数据驱动 + 可视化"。
+
+### 新增脚本
+
+#### `scripts/validate-route-data.py`
+- 固化 Phase 5 临时校验逻辑
+- 校验 CSV / GeoJSON / GPX 三种格式
+- 输出 PASS / FAIL 状态码
+- 默认校验 OEDW，可通过参数传入其他 slug
+- 用法：`python3 scripts/validate-route-data.py`
+
+#### `scripts/render-route-map-svg.py`
+- 基于 GeoJSON 生成纯静态 SVG 路线示意图
+- 使用 bounding-box equirectangular projection
+- 不使用外部底图、不调用地图 API
+- 输出：`assets/img/routes/<slug>-map.svg`
+- 用法：`python3 scripts/render-route-map-svg.py`
+
+### 新增文件
+
+| 文件 | 大小 | 用途 |
+|------|------|------|
+| `scripts/validate-route-data.py` | ~10 KB | 永久校验脚本 |
+| `scripts/render-route-map-svg.py` | ~14 KB | SVG 生成脚本 |
+| `assets/img/routes/out-of-eden-walk-china-map.svg` | ~9 KB | 静态 SVG 路线图 |
+| `assets/js/route-data-viewer.js` | ~12 KB | 前端数据查看器 |
+
+### 前端数据查看器功能
+
+- `fetch()` GeoJSON
+- 自动生成摘要（6 项：点位 / 段 / 省份 / 高复刻 / 中复刻 / 低复刻）
+- 自动生成段落分布（10 个段卡片）
+- 4 个筛选器：段落 / 省份 / 难度 / 可复刻性
+- 表格字段：序号 / 段落 / 点位 / 省份 / 地区 / 精度 / 难度 / 可复刻性 / 风险提示
+- 徽章样式：高（绿）/ 中（金）/ 低（浅金）/ 注意（红）
+- 失败 fallback：直接显示下载链接 + 错误信息
+- noscript fallback：直接显示下载链接
+
+### OEDW 页面新增模块
+
+1. **静态路线示意图**（`#static-map`）
+   - 嵌入 SVG 图片
+   - 图注明确"非 Paul Salopek 原始 GPS 轨迹 · 非导航"
+
+2. **数据驱动路线表**（`#route-table`）
+   - 容器 `<section id="route-data-viewer" data-route-geojson="..." data-route-name="...">`
+   - 引用 `assets/js/route-data-viewer.js`
+
+### routes/index.html 增强
+
+- 新增"数据规范"section
+- 新增"数据处理流程"section（4 步：数据源 → 校验 → 渲染 → 展示）
+- OEDW 卡片内新增 SVG 预览 + 9 项数据统计
+
+### 数据处理流程（标准化）
+
+```
+CSV / GeoJSON / GPX
+  ↓ validate-route-data.py
+PASS / FAIL
+  ↓ render-route-map-svg.py
+assets/img/routes/<slug>-map.svg
+  ↓ route-data-viewer.js (前端 fetch)
+#route-data-viewer 容器 → 摘要 + 筛选器 + 表格
+```
+
+### 严格保留
+
+- Phase 2-5 事实边界
+- "文化复刻粗点" 标注
+- "非 Paul Salopek 原始 GPS" 标注
+- "非导航" 标注
+
+### Phase 7 可扩展
+
+1. 多路线数据驱动（辽塔、山西、其他规划中路线）
+2. SVG 样式变体（多主题 / 多投影）
+3. 前端数据可视化（柱状图 / 饼图）
+4. 数据导出（PDF / Markdown 表格）
+5. POI 语义标注升级
+
+---
+

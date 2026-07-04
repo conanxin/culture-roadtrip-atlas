@@ -7111,3 +7111,319 @@ p {
     align-items: stretch;
   }
 }
+
+/* ============================================================
+   v1.4.6 · 数据驱动页面与静态地图预览 Styles
+   ============================================================ */
+
+/* ---------- 静态路线示意图 ---------- */
+.static-route-map {
+  margin: var(--space-xl) 0;
+  text-align: center;
+}
+
+.static-route-map img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-divider);
+  background: var(--color-bg-card);
+}
+
+.static-route-map figcaption {
+  font-size: 0.85rem;
+  color: #c0392b;
+  font-style: italic;
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+/* ---------- 数据驱动路线表容器 ---------- */
+.route-data-viewer {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0;
+  border-left: 4px solid #6b8e23;
+}
+
+.route-data-viewer-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+/* ---------- 摘要卡片 ---------- */
+.route-data-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.route-data-summary-card {
+  background: rgba(107, 142, 35, 0.06);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  text-align: center;
+  border: 1px solid rgba(107, 142, 35, 0.15);
+}
+
+.route-data-summary-num {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #6b8e23;
+  line-height: 1;
+}
+
+.route-data-summary-label {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+/* ---------- 筛选器 ---------- */
+.route-data-filters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(184, 134, 11, 0.05);
+  border-radius: var(--radius-sm);
+}
+
+.route-data-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.route-data-filter label {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.route-data-filter-select {
+  padding: 6px 10px;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.route-data-filter-select:focus {
+  outline: none;
+  border-color: #b8860b;
+}
+
+/* ---------- 表格 ---------- */
+.route-data-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-divider);
+}
+
+.route-data-viewer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.route-data-viewer-table thead {
+  background: rgba(184, 134, 11, 0.1);
+}
+
+.route-data-viewer-table th {
+  padding: 10px 12px;
+  text-align: left;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 2px solid var(--color-divider);
+}
+
+.route-data-viewer-table td {
+  padding: 8px 12px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+  vertical-align: top;
+}
+
+.route-data-viewer-table tbody tr:hover {
+  background: rgba(184, 134, 11, 0.04);
+}
+
+.route-data-risk {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  max-width: 240px;
+}
+
+.route-data-table-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  text-align: right;
+  margin-top: var(--space-sm);
+  font-style: italic;
+}
+
+.route-data-empty {
+  padding: var(--space-xl);
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+/* ---------- 徽章 ---------- */
+.route-data-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.route-data-badge-high {
+  background: rgba(107, 142, 35, 0.15);
+  color: #4a6b1e;
+}
+
+.route-data-badge-medium {
+  background: rgba(184, 134, 11, 0.15);
+  color: #8b6914;
+}
+
+.route-data-badge-low {
+  background: rgba(180, 130, 50, 0.15);
+  color: #8a6420;
+}
+
+.route-data-badge-caution {
+  background: rgba(192, 57, 43, 0.12);
+  color: #a04030;
+}
+
+/* ---------- Fallback / noscript ---------- */
+.route-data-fallback {
+  background: rgba(231, 76, 60, 0.05);
+  border-left: 3px solid #e74c3c;
+  padding: var(--space-lg);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.route-data-fallback h4 {
+  color: #c0392b;
+  margin-bottom: var(--space-md);
+}
+
+.route-data-fallback ul {
+  margin: var(--space-sm) 0;
+  padding-left: var(--space-xl);
+}
+
+.route-data-fallback a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 134, 11, 0.4);
+}
+
+/* ---------- 数据处理流程（routes/index.html） ---------- */
+.data-process-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.data-process-step {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  text-align: center;
+  border-top: 3px solid #b8860b;
+  position: relative;
+}
+
+.data-process-step-num {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  background: #b8860b;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.data-process-step-title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: var(--space-sm);
+}
+
+.data-process-step-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* ---------- 路线索引页 SVG 预览 ---------- */
+.route-map-preview {
+  margin: var(--space-lg) 0;
+  text-align: center;
+}
+
+.route-map-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-divider);
+}
+
+/* ---------- 移动端响应式（v1.4.6 新模块） ---------- */
+@media (max-width: 768px) {
+  .route-data-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .route-data-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .data-process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .route-data-viewer {
+    padding: var(--space-md);
+  }
+
+  .route-data-viewer-table {
+    font-size: 0.75rem;
+  }
+
+  .route-data-viewer-table th,
+  .route-data-viewer-table td {
+    padding: 6px 8px;
+  }
+}

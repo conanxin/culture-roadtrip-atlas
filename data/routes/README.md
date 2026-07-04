@@ -207,3 +207,96 @@ open data/routes/out-of-eden-walk-china.gpx
 ---
 
 _辛 🔮 · 行旅图谱 · 数据资产 · 2026-07-04_
+---
+
+## Phase 6 · 数据处理流程（v1.4.6 新增）
+
+### 处理流程
+
+```
+CSV / GeoJSON / GPX
+  ↓ validate-route-data.py 校验
+PASS / FAIL
+  ↓ render-route-map-svg.py 渲染
+assets/img/routes/<slug>-map.svg
+  ↓ route-data-viewer.js (前端 fetch)
+#route-data-viewer 容器 → 摘要 + 筛选器 + 表格
+```
+
+### 脚本使用方式
+
+#### 1. 校验数据
+
+```bash
+python3 scripts/validate-route-data.py
+```
+
+输出示例：
+```
+行旅图谱 · 路线数据校验
+route: out-of-eden-walk-china
+--------------------------------------------------
+CSV: out-of-eden-walk-china.csv · 42 行 · PASS
+GeoJSON: out-of-eden-walk-china.geojson · 42 points · 11 lines · PASS
+GPX: out-of-eden-walk-china.gpx · 42 waypoints · PASS
+--------------------------------------------------
+PASS route data validation
+```
+
+退出码：
+- 0 = PASS
+- 1 = FAIL
+
+#### 2. 生成 SVG 静态地图
+
+```bash
+python3 scripts/render-route-map-svg.py
+```
+
+输出：
+- `assets/img/routes/out-of-eden-walk-china-map.svg`（~9 KB）
+- SVG 必含 `not Paul Salopek original GPS track` / `not for navigation` / `cultural replica`
+
+#### 3. 自定义 slug
+
+两个脚本都支持传入其他 route slug：
+
+```bash
+python3 scripts/validate-route-data.py liao-tower-roadtrip
+python3 scripts/render-route-map-svg.py liao-tower-roadtrip
+```
+
+### SVG 预览说明
+
+- 宽高 1200 × 760
+- 米白背景 + 墨绿路线 + 暗金点位
+- 起点（深墨绿）+ 终点（暗红）特别标注
+- 10 段 S01–S10 编号标签
+- 顶部标题 + 底部图例 + 红色免责声明
+- 移动端可缩放（viewBox 缩放）
+
+### 数据驱动页面说明
+
+`assets/js/route-data-viewer.js` 用 fetch() 加载 GeoJSON，渲染到 `<section id="route-data-viewer">` 容器中：
+
+```html
+<section id="route-data-viewer"
+         class="route-data-viewer"
+         data-route-geojson="../../data/routes/out-of-eden-walk-china.geojson"
+         data-route-name="Out of Eden Walk 中国段">
+  <div class="route-data-loading">正在加载路线数据……</div>
+  <noscript>浏览器未启用 JavaScript。请直接下载 CSV / GeoJSON / GPX 文件查看路线数据。</noscript>
+</section>
+```
+
+页面底部引入：
+```html
+<script src="../../assets/js/route-data-viewer.js"></script>
+```
+
+特性：
+- 4 个筛选器（段落 / 省份 / 难度 / 可复刻性）
+- 表格字段：序号 / 段落 / 点位 / 省份 / 地区 / 精度 / 难度 / 可复刻性 / 风险提示
+- 失败 fallback 显示下载链接
+- 无依赖、纯 Vanilla JS
+
