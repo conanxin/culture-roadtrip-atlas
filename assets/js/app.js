@@ -882,6 +882,56 @@
   
 
 
+  // ============ v1.3 山西实用信息核验 ============
+
+  /**
+   * 初始化核验面板
+   */
+  function initAuditPanel() {
+    const items = document.querySelectorAll('.audit-item');
+    const checked = getStorage('audit_checked', []);
+
+    items.forEach(item => {
+      const id = item.dataset.id;
+      if (checked.includes(id)) {
+        item.classList.add('checked');
+        const checkbox = item.querySelector('.audit-checkbox');
+        if (checkbox) checkbox.textContent = '✓';
+      }
+
+      item.addEventListener('click', () => {
+        let checkedItems = getStorage('audit_checked', []);
+        if (checkedItems.includes(id)) {
+          checkedItems = checkedItems.filter(i => i !== id);
+          item.classList.remove('checked');
+          const checkbox = item.querySelector('.audit-checkbox');
+          if (checkbox) checkbox.textContent = '';
+        } else {
+          checkedItems.push(id);
+          item.classList.add('checked');
+          const checkbox = item.querySelector('.audit-checkbox');
+          if (checkbox) checkbox.textContent = '✓';
+        }
+        setStorage('audit_checked', checkedItems);
+        updateAuditProgress();
+      });
+    });
+
+    updateAuditProgress();
+  }
+
+  /**
+   * 更新核验进度
+   */
+  function updateAuditProgress() {
+    const total = document.querySelectorAll('.audit-item').length;
+    const checked = getStorage('audit_checked', []).length;
+    const valueEl = document.getElementById('audit-progress-value');
+    if (valueEl) {
+      valueEl.textContent = checked + ' / ' + total;
+    }
+  }
+
   // ============ v0.6 资料与事实核对版功能 ============
 
   /**
@@ -986,6 +1036,7 @@
   function initV6() {
     renderSourceIndex();
     initChecklist();
+    initAuditPanel();
   }
 
 

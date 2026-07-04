@@ -31,10 +31,10 @@
           <a href="#trip-versions" class="nav-link">行程版本</a>
           <a href="#time-slots" class="nav-link">分时草案</a>
           <a href="#spot-status" class="nav-link">点位状态</a>
-          <a href="#todo-list" class="nav-link">待核验</a>
-          <a href="#candidates" class="nav-link">点位分级</a>
+          <a href="#spot-info" class="nav-link">实用信息</a>
+          <a href="#high-risk" class="nav-link">高风险</a>
+          <a href="#audit" class="nav-link">核验面板</a>
           <a href="#sources" class="nav-link">资料来源</a>
-          <a href="#concepts" class="nav-link">关键词</a>
         </div>
       </div>
     </div>
@@ -60,10 +60,12 @@
   <!-- 规划中提示 -->
   <section class="container" style="margin-top: var(--space-xl);">
     <div class="planning-note">
-      <strong>📝 这是一条路线校准中的路线</strong>。<br>
-      本页面（v1.2 shanxi route calibration）已完成<strong>3 种行程版本（11 天主路线 / 8 天压缩版 / 14 天慢行版）、11 天主路线每日分时草案、路线取舍逻辑、点位状态分级、下一步待核验清单</strong>。<br>
-      <strong>点位顺序、车程、开放时间、门票、停车信息尚未完成最终核验</strong>，不作为正式出行方案。<br>
-      出发前请以各点位<strong>官方公告和地图导航为准</strong>。本页内容主要为研究整理，需实地走访后才能作为可靠出行依据。
+      <strong>📝 这是一条出发前实用信息核验中的路线</strong>。<br>
+      本页面（v1.3 shanxi practical fact audit）已完成<strong>17 个 A/B 级点位的实用信息卡（开放时间 / 闭馆日 / 门票 / 预约 / 停车 / 拍照限制 / 建议停留 / 地图搜索）、高风险点位提示（7 个）、出发前必须核验面板（10 项）、每日核对事项</strong>。<br>
+      <span style="font-size: 0.85rem; color: var(--color-text-light);">路线历史：v0.9 规划中骨架页 → v1.1 研究建档 → v1.2 路线校准中 → v1.3 实用信息核验（当前）。v1.3 保留了 v1.2 的 3 种行程版本、路线取舍逻辑、点位分级、每日分时草案。</span><br>
+      <span style="font-size: 0.85rem; color: var(--color-text-light);">路线历史：v0.9 规划中骨架页 → v1.1 研究建档 → v1.2 路线校准 → v1.3 实用信息核验（当前）。v1.3 保留了 v1.2 的 3 种行程版本、路线取舍逻辑、点位分级、每日分时草案。</span><br>
+      <strong>所有具体信息（开放时间、门票、预约、停车、拍照限制、维修状态）出发前必须二次核对</strong>，本页不作为正式出行方案。<br>
+      出发前请以各点位<strong>官方公告、博物馆官网、文旅局信息、地图导航</strong>为准。
     </div>
   </section>
 
@@ -72,15 +74,15 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.2 shanxi route calibration</span>
+        <span class="page-meta-value">v1.3 shanxi practical fact audit</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">最近更新日期：</span>
-        <span class="page-meta-value" id="page-update-date">2026-07-04 (v1.2)</span>
+        <span class="page-meta-value" id="page-update-date">2026-07-04 (v1.3)</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">路线校准中 · 已分日 · 待校准</span>
+        <span class="page-meta-value">实用信息核验中 · 待实地复盘</span>
       </div>
     </div>
   </section>
@@ -1860,15 +1862,892 @@
 </div>
 </section>
 
+  <!-- 出发前必须核验面板 v1.3 -->
+<section id="audit" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">出发前必须核验</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+本节列出山西行程出发前必须<strong>二次核对</strong>的事项。<span class="fact-tag fact-tag-check">每项可勾选</span>
+</p>
+<div class="audit-panel">
+      <div class="audit-item" data-id="audit-1">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">每个点位开放时间</div>
+          <div class="audit-note">逐一查官方文旅 / 景区官网 / 公众号 / 电话</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-2">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">博物馆/寺庙闭馆日</div>
+          <div class="audit-note">大部分博物馆周一闭馆，但部分寺院不闭馆，需逐个查</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-3">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">门票与预约</div>
+          <div class="audit-note">部分国保单位需提前预约（佛光寺、云冈等）</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-4">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">是否维修</div>
+          <div class="audit-note">部分点位可能因维修关闭部分院落，需提前查</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-5">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">是否允许拍照</div>
+          <div class="audit-note">彩塑与壁画点位几乎全部殿堂内禁止拍照</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-6">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">停车点</div>
+          <div class="audit-note">乡野寺院停车不便，需提前查</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-7">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">景区之间真实车程</div>
+          <div class="audit-note">结合高德/百度地图实测车程</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-8">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">天气与山路风险</div>
+          <div class="audit-note">雨雪天山区道路可能关闭</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-9">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">酒店位置</div>
+          <div class="audit-note">建议预订在景区附近，避免疲劳驾驶</div>
+        </div>
+      </div>
+      <div class="audit-item" data-id="audit-10">
+        <div class="audit-checkbox"></div>
+        <div class="audit-content">
+          <div class="audit-label">儿童/老人同行适配性</div>
+          <div class="audit-note">山路与寺群对老人/儿童的友好度</div>
+        </div>
+      </div>
+    </div>
+    <div class="audit-progress">
+      已完成：<span class="audit-progress-value" id="audit-progress-value">0 / 10</span>
+    </div>
+</section>
+
+<!-- 高风险点位提示 v1.3 -->
+<section id="high-risk" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">高风险点位提示</h2>
+
+    <div class="high-risk-box">
+      <h3 class="high-risk-box-title">⚠️ 高风险点位提示</h3>
+      <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: var(--space-md);">
+        以下点位存在特殊风险，<strong>出发前必须专门核对</strong>开放、维修、预约、停车等情况。
+      </p>
+      <ul class="high-risk-list">
+        <li><strong>佛光寺</strong><em>高风险：位置偏远，需自驾深入五台山外围。**需提前确认是否开放及预约要求**。</em></li><li><strong>南禅寺</strong><em>高风险：位置偏远，与佛光寺同方向。建议与佛光寺同日连看。</em></li><li><strong>小西天</strong><em>高风险：位置偏远（在吕梁山区）。明代悬塑艺术巅峰，**千佛悬塑不允许拍照**。彩塑空间狭窄，人流控制。</em></li><li><strong>玉皇庙</strong><em>高风险：二十八宿彩塑位置偏僻。元代道教塑像群，**严禁触摸**。</em></li><li><strong>青莲寺</strong><em>高风险：分上下院。**部分石窟可能因维修关闭**。下院唐代石塔需提前确认开放。</em></li><li><strong>崇庆寺</strong><em>高风险：位置在长子县山区。宋代彩塑三大处之一，**部分殿堂可能因维修关闭**。</em></li><li><strong>法兴寺</strong><em>高风险：与崇庆寺同方向，位置偏远。**唐代石塔周边可能有围栏维修**。</em></li>
+      </ul>
+    </div>
+</section>
+
+<!-- 点位实用信息表 v1.3 -->
+<section id="spot-info" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">点位实用信息表</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+17 个 A/B 级点位的实用信息。<span class="fact-tag fact-tag-check">所有信息出发前需二次核对</span>
+</p>
+<div class="spot-info-table">
+
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">云冈石窟</span>
+            <span class="spot-info-card-region">大同 · 晋北</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对（一般为 8:30-17:00）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 120 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">景区停车场，到现场核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">洞窟内禁止拍照，外部可拍</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">3-4 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">山西最大石窟群，建议请讲解。洞窟内禁止拍照（部分洞窟可拍照但禁止闪光）。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,云冈石窟&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/云冈石窟" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">华严寺</span>
+            <span class="spot-info-card-region">大同</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对（周一可能闭馆）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 65 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺院周边停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂可拍照（注意禁拍标志）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1.5-2 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">下寺薄伽教藏殿的辽代小木作与露齿菩萨是核心。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,大同华严寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/大同华严寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">善化寺</span>
+            <span class="spot-info-card-region">大同</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 50 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺院周边停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1-1.5 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">辽代建筑布局完整实例，大雄宝殿金代塑像保存完好。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,大同善化寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/大同善化寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">应县木塔</span>
+            <span class="spot-info-card-region">朔州 · 应县</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对（一般为 8:00-18:00）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 50 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">景区停车场，到现场核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">外部可拍照，内部禁止登塔（结构倾斜原因）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1-1.5 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">佛宫寺释迦塔，全木结构。**目前仅可外观，内部登塔已长期关闭**，需提前确认。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,应县木塔&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/应县木塔" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card high-risk">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">佛光寺</span>
+            <span class="spot-info-card-region">忻州 · 五台山</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            <span class="high-risk-badge">⚠ 高风险</span>
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 50 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场（山间）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂内禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1.5-2 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">高风险：位置偏远，需自驾深入五台山外围。**需提前确认是否开放及预约要求**。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,佛光寺 五台山&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/佛光寺 五台山" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card high-risk">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">南禅寺</span>
+            <span class="spot-info-card-region">忻州 · 五台山</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            <span class="high-risk-badge">⚠ 高风险</span>
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 30 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">殿堂内禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">高风险：位置偏远，与佛光寺同方向。建议与佛光寺同日连看。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,南禅寺 五台山&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/南禅寺 五台山" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">晋祠</span>
+            <span class="spot-info-card-region">太原</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对（一般为 8:00-18:00）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 80 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">景区停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">圣母殿内禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">2-3 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">圣母殿（宋）、鱼沼飞梁（宋）、周柏唐槐是核心。宋塑侍女像是国宝级文物。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,太原晋祠&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/太原晋祠" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">镇国寺</span>
+            <span class="spot-info-card-region">晋中 · 平遥</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 35 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">殿堂内禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">万佛殿是五代北汉时期唯一木构，11 尊五代彩塑是国宝。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,平遥镇国寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/平遥镇国寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">双林寺</span>
+            <span class="spot-info-card-region">晋中 · 平遥</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 35 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">殿堂内禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">2-3 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">明代彩塑艺术博物馆，2000 余尊彩塑。韦驮像被誉为"全国韦驮之冠"。**彩塑必须慢看**。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,平遥双林寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/平遥双林寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card high-risk">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">小西天</span>
+            <span class="spot-info-card-region">临汾 · 隰县</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            <span class="high-risk-badge">⚠ 高风险</span>
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 50 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">景区停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">殿堂内禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1-1.5 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">高风险：位置偏远（在吕梁山区）。明代悬塑艺术巅峰，**千佛悬塑不允许拍照**。彩塑空间狭窄，人流控制。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,隰县小西天&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/隰县小西天" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card high-risk">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">玉皇庙</span>
+            <span class="spot-info-card-region">晋城</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            <span class="high-risk-badge">⚠ 高风险</span>
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 40 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">景区停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1.5-2 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">高风险：二十八宿彩塑位置偏僻。元代道教塑像群，**严禁触摸**。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,晋城玉皇庙&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/晋城玉皇庙" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card high-risk">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">青莲寺</span>
+            <span class="spot-info-card-region">晋城</span>
+            <span class="tier-badge tier-a-badge">A</span>
+            <span class="high-risk-badge">⚠ 高风险</span>
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1.5-2 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">高风险：分上下院。**部分石窟可能因维修关闭**。下院唐代石塔需提前确认开放。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,晋城青莲寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/晋城青莲寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">双塔寺</span>
+            <span class="spot-info-card-region">太原</span>
+            <span class="tier-badge tier-b-badge">B</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对（参考约 30 元）</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺院周边停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">外部可拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">太原地标，明代双塔。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,太原双塔寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/太原双塔寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">介休后土庙</span>
+            <span class="spot-info-card-region">晋中 · 介休</span>
+            <span class="tier-badge tier-b-badge">B</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">景区停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">道教庙宇建筑群，琉璃艺术与彩塑并存。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,介休后土庙&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/介休后土庙" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card high-risk">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">崇庆寺</span>
+            <span class="spot-info-card-region">长治 · 长子县</span>
+            <span class="tier-badge tier-b-badge">B</span>
+            <span class="high-risk-badge">⚠ 高风险</span>
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">高风险：位置在长子县山区。宋代彩塑三大处之一，**部分殿堂可能因维修关闭**。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,长子县崇庆寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/长子县崇庆寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card high-risk">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">法兴寺</span>
+            <span class="spot-info-card-region">长治 · 长子县</span>
+            <span class="tier-badge tier-b-badge">B</span>
+            <span class="high-risk-badge">⚠ 高风险</span>
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">部分殿堂禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">1 小时</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">高风险：与崇庆寺同方向，位置偏远。**唐代石塔周边可能有围栏维修**。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,长子县法兴寺&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/长子县法兴寺" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+        <div class="spot-info-card">
+          <div class="spot-info-card-header">
+            <span class="spot-info-card-name">长治观音堂</span>
+            <span class="spot-info-card-region">长治</span>
+            <span class="tier-badge tier-b-badge">B</span>
+            
+            <span class="spot-info-audit">最近核对：2026-07-04 · 出发前需二次核对</span>
+          </div>
+          <div class="spot-info-fields">
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">开放时间</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">闭馆日</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">门票/预约</div>
+              <div class="spot-info-field-value">出发前需核对</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">停车</div>
+              <div class="spot-info-field-value">寺外停车场</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">拍照/参观限制 / 地图搜索词</div>
+              <div class="spot-info-field-value">殿堂内禁止拍照</div>
+            </div>
+            <div class="spot-info-field">
+              <div class="spot-info-field-label">建议停留时间</div>
+              <div class="spot-info-field-value">45 分钟</div>
+            </div>
+            <div class="spot-info-field" style="grid-column: 1 / -1;"><div class="spot-info-field-label">特别提示</div><div class="spot-info-field-value">明代彩塑精品。</div></div>
+          </div>
+          <div class="spot-info-actions">
+            <a href="https://uri.amap.com/marker?markers=,,长治观音堂&src=01" target="_blank" class="spot-info-link">🗺️ 高德地图搜索</a>
+            <a href="https://map.baidu.com/search/长治观音堂" target="_blank" class="spot-info-link">🗺️ 百度地图搜索</a>
+          </div>
+        </div>
+</div>
+</section>
+
+<!-- 每日核对事项 v1.3 -->
+<section id="daily-audit" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+<div class="section-divider"><span class="section-divider-icon">◇</span></div>
+<h2 class="text-center" style="margin-bottom: var(--space-2xl);">11 天主路线每日核对事项</h2>
+<p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+每天出发前需专门核对的事项。<span class="fact-tag fact-tag-check">出发前需核对</span>
+</p>
+
+    <div class="day-audit-card" data-day-audit="1">
+      <div class="day-audit-title">Day 1 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>高德/百度地图确认大同停车点</li><li>华严寺/善化寺开放状态电话核对</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="2">
+      <div class="day-audit-title">Day 2 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>云冈石窟预约（旺季建议提前一天）</li><li>讲解员预约（旺季可能满员）</li><li>云冈周边午餐地点（景区内外可选）</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="3">
+      <div class="day-audit-title">Day 3 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>应县木塔是否内部登塔（一般长期关闭）</li><li>应县住宿位置（仅 1-2 家可选）</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="4">
+      <div class="day-audit-title">Day 4 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>佛光寺是否需预约</li><li>南禅寺位置交通（山路）</li><li>五台山住宿是否紧张（旺季）</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="5">
+      <div class="day-audit-title">Day 5 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>太原老城交通（拥堵风险）</li><li>晋祠到太原老城车程</li><li>双塔寺是否夜景开放</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="6">
+      <div class="day-audit-title">Day 6 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>镇国寺/双林寺彩塑参观时间</li><li>平遥古城是否逛（可放晚上）</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="7">
+      <div class="day-audit-title">Day 7 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>隰县住宿紧张（县城小）</li><li>临汾中途午餐地点</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="8">
+      <div class="day-audit-title">Day 8 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>长治观音堂开放时间</li><li>长子县住宿（衔接 Day 9）</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="9">
+      <div class="day-audit-title">Day 9 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>崇庆寺/法兴寺是否开放</li><li>维修状态</li><li>法兴寺石塔周边安全</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="10">
+      <div class="day-audit-title">Day 10 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>玉皇庙开放状态</li><li>青莲寺上下院是否都开放</li><li>晋城到北京返程时间（建议中午前出发）</li>
+      </ul>
+    </div>
+    <div class="day-audit-card" data-day-audit="11">
+      <div class="day-audit-title">Day 11 · 当日必须提前核对</div>
+      <ul class="day-audit-list">
+        <li>北京出发避开晚高峰</li><li>服务区充电桩（电动车）</li>
+      </ul>
+    </div>
+</section>
+
   <!-- 资料来源索引 -->
   <section id="sources" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-2xl);">资料来源索引</h2>
-    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
       本节为山西路线研究建档使用的主要资料，按类型分组。<strong>所有具体信息均以官方公告为准</strong>。
     </p>
+    <div class="planning-note" style="margin-bottom: var(--space-xl);">
+      <strong>📌 v1.3 增强说明：</strong>
+      <ul style="margin-top: var(--space-sm); padding-left: var(--space-xl);">
+        <li><strong>官方信息来源</strong>：开放时间、门票以景区官方公告为准，不参考第三方整合数据</li>
+        <li><strong>地图信息说明</strong>：本页面所有地图链接为<strong>搜索词链接</strong>，非精确坐标，请用手机地图现场确认</li>
+        <li><strong>核验日期</strong>：本页面所有实用信息的<strong>最近核对日期</strong>均为 <strong>2026-07-04</strong>。出发前必须二次核对</li>
+        <li><strong>旅行整理说明</strong>：本页信息为公开资料整理，可能存在细节误差。如发现错漏，欢迎 issue 反馈</li>
+      </ul>
+    </div>
 
     <div class="source-index-group">
       <h3 class="source-type-group-title">官方文旅资料</h3>
