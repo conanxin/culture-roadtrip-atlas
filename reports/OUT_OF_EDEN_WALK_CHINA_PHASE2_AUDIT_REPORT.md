@@ -27,7 +27,17 @@
 | 阶段 | commit | 说明 |
 |------|--------|------|
 | 基线 | `f1f3692` | Update Out of Eden Walk report with commit hash and deploy notes |
-| Phase 2 | 待 push | 见下方"修改文件列表" |
+| Phase 2 | `2c22831` | Refine Out of Eden Walk China route audit and travelability |
+
+---
+
+## Push 状态
+
+✅ **Push 成功** · `f1f3692 → 2c22831` 推送到 `origin main`
+
+部署运行 #28704021412 · `completed / success` · 2026-07-04T10:58:29Z
+
+---
 
 ---
 
@@ -235,17 +245,13 @@ $ bash scripts/verify-site.sh
 
 ## GitHub Pages 部署结果
 
-待 push 后等待 GitHub Actions 完成部署。预计 2-5 分钟。
-
-部署运行监控点：
-- 第 1 次 push 后约 60 秒可观察到 workflow run
-- 若出现 "Deployment failed, try again later"，使用 force-with-lease 重推（参考 v1.4.1 经验）
+✅ **部署成功** · GitHub Actions 运行 #28704021412 / `success` · 2026-07-04T10:58:29Z
 
 ---
 
 ## 线上页面 HTTP 200 结果
 
-待部署完成后验证：
+✅ 全部 200：
 - https://conanxin.github.io/culture-roadtrip-atlas/
 - https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/
 - https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/
