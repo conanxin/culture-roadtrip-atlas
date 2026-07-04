@@ -68,6 +68,7 @@ v1.0.0 · Stable Release（2026-07-04）
 | v1.3 | 山西实用信息核验 | 17个点位实用信息卡（开放时间/门票/停车/拍照）、高风险提示、出发前核验面板 |
 | v1.4 | 山西文化导览草稿 | 12 A级 + 5 B级点位导览、山西古建现场怎么看、古建观察清单、关键词进阶 |
 | v1.4.1 | Out of Eden Walk 中国段 | Paul Salopek 中国段复刻路线，10 分段、Milestone 74-95、3 种复刻版本 |
+| v1.4.2 | Phase 2 事实审校与可旅行化 | 事实审校模块、Milestones 表格升级、10 段可旅行化字段、21-28 天精华版日程、6 段短线版、不建议硬走清单 |
 
 ---
 
@@ -130,7 +131,7 @@ culture-roadtrip-atlas/
 │   │   └── ...
 │   └── shanxi-ancient-architecture-roadtrip/  # 规划中骨架页（v0.9-v1.4）
 │       └── index.html
-│   └── out-of-eden-walk-china/          # 规划中文化复刻路线（v1.4.1）
+│   └── out-of-eden-walk-china/          # 规划中文化复刻路线（v1.4.1-v1.4.2）
 │       └── index.html
 ├── assets/
 │   ├── css/styles.css                   # 统一样式（v0.1-v1.0 累计 ~4200 行）

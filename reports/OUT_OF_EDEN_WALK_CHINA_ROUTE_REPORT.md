@@ -83,7 +83,7 @@
 
 **Milestone 96 以后**：已进入黄海渡船段，不属于中国陆上行走，**不计入本复刻路线**。
 
-**总覆盖率**：22 / 23（含 Milestone 91 占位，96+ 不计入）
+**总覆盖率**：22 / 22（Milestone 91 URL 通过相邻 Milestone 92 页 Previous 链接追到 `milestone-91-im-satisfied-man`，本次验证返回 200。96+ 不计入中国陆上复刻路线）
 
 ---
 

@@ -5854,3 +5854,211 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ============================================
+   v1.4.2 Out of Eden Walk China Phase 2 样式
+   ============================================ */
+
+/* ---------- 事实审校卡片 ---------- */
+.source-audit-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border-top: 4px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.source-audit-card.source-audit-a {
+  border-top-color: #27ae60;
+}
+
+.source-audit-card.source-audit-b {
+  border-top-color: #3498db;
+}
+
+.source-audit-card.source-audit-c {
+  border-top-color: #95a5a6;
+}
+
+.source-audit-level {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.source-audit-card.source-audit-a .source-audit-level {
+  color: #27ae60;
+}
+
+.source-audit-card.source-audit-b .source-audit-level {
+  color: #3498db;
+}
+
+.source-audit-card.source-audit-c .source-audit-level {
+  color: #7f8c8d;
+}
+
+.source-audit-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.source-level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+/* ---------- 可旅行化字段 ---------- */
+.route-segment-travel {
+  background: rgba(39, 174, 96, 0.05);
+  border-left: 3px solid #27ae60;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-sm);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.route-segment-travel strong {
+  color: #27ae60;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ---------- 事实审校状态标签 ---------- */
+.fact-status {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.fact-status-confirmed {
+  background: rgba(39, 174, 96, 0.12);
+  color: #1e8449;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+.fact-status-pending {
+  background: rgba(243, 156, 18, 0.12);
+  color: #b9770e;
+  border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+.fact-status-caution {
+  background: rgba(231, 76, 60, 0.12);
+  color: #c0392b;
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+/* ---------- 旅行版本表 ---------- */
+.travel-version-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-size: 0.85rem;
+  margin-top: var(--space-md);
+  display: block;
+  overflow-x: auto;
+}
+
+.travel-version-table thead {
+  background: var(--color-primary);
+  color: white;
+}
+
+.travel-version-table th,
+.travel-version-table td {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: top;
+}
+
+.travel-version-table th {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.travel-version-table tbody tr:hover {
+  background: rgba(184, 134, 11, 0.05);
+}
+
+/* ---------- 不要硬走列表 ---------- */
+.do-not-replicate-list {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border-left: 4px solid #e74c3c;
+}
+
+.do-not-replicate-list ul li {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+}
+
+.do-not-replicate-list ul li:last-child {
+  border-bottom: none;
+}
+
+.do-not-replicate-list strong {
+  color: #c0392b;
+}
+
+/* ---------- 风险提示 ---------- */
+.risk-note {
+  background: rgba(231, 76, 60, 0.05);
+  border-left: 3px solid #e74c3c;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: var(--space-md) 0;
+}
+
+.risk-note strong {
+  color: #c0392b;
+}
+
+/* ---------- 移动端表格响应式 ---------- */
+@media (max-width: 768px) {
+  .source-level-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .milestone-table {
+    font-size: 0.7rem;
+  }
+
+  .milestone-table th,
+  .milestone-table td {
+    padding: 4px 6px;
+    white-space: nowrap;
+  }
+
+  .travel-version-table {
+    font-size: 0.75rem;
+  }
+
+  .travel-version-table th,
+  .travel-version-table td {
+    padding: 4px 6px;
+  }
+}
