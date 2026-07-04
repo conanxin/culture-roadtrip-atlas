@@ -25,9 +25,11 @@
         <div class="nav-links">
           <a href="../../index.html" class="nav-link">路线库</a>
           <a href="#overview" class="nav-link">路线总览</a>
-          <a href="#route" class="nav-link">路线方向</a>
-          <a href="#candidates" class="nav-link">候选点位</a>
-          <a href="#status" class="nav-link">规划状态</a>
+          <a href="#route" class="nav-link">路线研究</a>
+          <a href="#candidates" class="nav-link">点位分级</a>
+          <a href="#sources" class="nav-link">资料来源</a>
+          <a href="#concepts" class="nav-link">关键词</a>
+          <a href="#plans" class="nav-link">初步行程</a>
         </div>
       </div>
     </div>
@@ -53,9 +55,10 @@
   <!-- 规划中提示 -->
   <section class="container" style="margin-top: var(--space-xl);">
     <div class="planning-note">
-      <strong>📝 这是一条规划中路线</strong>。<br>
-      以下页面内容仅为路线骨架与候选点位。<strong>景点顺序、开放时间、车程、资料来源尚未完成核验</strong>，不作为正式出行方案。<br>
-      如需正式出行规划，请参考已上线路线：<a href="../liao-tower-roadtrip/index.html" class="link-inline">北京出发·辽塔巡礼自驾导游手册</a>。
+      <strong>📝 这是一条研究建档中的路线</strong>。<br>
+      本页面（v1.1 shanxi route research）已完成<strong>候选点位分级、5 段路线研究框架、资料来源索引、初步关键词、初步行程方案</strong>。<br>
+      <strong>点位顺序、车程、开放时间、门票、停车信息尚未完成最终核验</strong>，不作为正式出行方案。<br>
+      出发前请以各点位<strong>官方公告和地图导航为准</strong>。本页面使用的研究资料主要为公开资料整理，部分内容可能存在细节误差。
     </div>
   </section>
 
@@ -64,15 +67,15 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v0.9 trip template skeleton</span>
+        <span class="page-meta-value">v1.1 shanxi route research</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">最近更新日期：</span>
-        <span class="page-meta-value" id="page-update-date">2026-07-04 (v0.9)</span>
+        <span class="page-meta-value" id="page-update-date">2026-07-04 (v1.1)</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">规划中 · 候选点位 · 待核对</span>
+        <span class="page-meta-value">研究建档中 · 已分级 · 待校准</span>
       </div>
     </div>
   </section>
@@ -115,49 +118,77 @@
     </div>
   </section>
 
-  <!-- 路线方向 -->
+  <!-- 路线研究框架 -->
   <section id="route" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">路线方向</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">路线研究框架</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      全线拆为 5 个研究段落 + 返程，各段主题明确，点位相对集中
+    </p>
 
     <div class="route-stages">
+
       <div class="route-stage-card">
         <span class="route-stage-num">1</span>
         <div class="route-stage-title">北京 → 大同</div>
-        <div class="route-stage-desc">约 350 公里 / 4-5 小时。沿途可顺路游览云冈石窟、华严寺、善化寺等北魏辽金遗存。<span class="fact-tag fact-tag-check">待核对</span></div>
+        <div class="route-stage-desc">
+          <strong>主题</strong>：云冈石窟、辽金寺院与北方边地城市。<br>
+          <strong>重点</strong>：云冈石窟（北魏）、华严寺（辽）、善化寺（辽金）。<br>
+          <strong>研究价值</strong>：本段汇集北魏石窟艺术与辽金寺院建筑两大核心主题。<span class="fact-tag fact-tag-check">待核对</span>
+        </div>
       </div>
 
       <div class="route-stage-card">
         <span class="route-stage-num">2</span>
         <div class="route-stage-title">大同 → 应县 → 五台山周边</div>
-        <div class="route-stage-desc">约 200 公里。应县木塔是必看；佛光寺、南禅寺是唐代木构的活化石。<span class="fact-tag fact-tag-check">待核对</span></div>
+        <div class="route-stage-desc">
+          <strong>主题</strong>：木塔、唐代木构、佛教圣地与早期木构遗存。<br>
+          <strong>重点</strong>：应县木塔（辽）、佛光寺（唐）、南禅寺（唐）。<br>
+          <strong>研究价值</strong>：本段是全线的"唐构高分"。佛光寺、南禅寺是梁思成"中国古建筑发现之旅"的核心节点。<span class="fact-tag fact-tag-check">待核对</span>
+        </div>
       </div>
 
       <div class="route-stage-card">
         <span class="route-stage-num">3</span>
-        <div class="route-stage-title">五台山 → 太原</div>
-        <div class="route-stage-desc">约 250 公里。太原有晋祠，是北宋建筑与周柏唐槐的现场。<span class="fact-tag fact-tag-check">待核对</span></div>
+        <div class="route-stage-title">太原 → 晋中</div>
+        <div class="route-stage-desc">
+          <strong>主题</strong>：晋祠、双塔寺、平遥、镇国寺、双林寺与城市商贸文化。<br>
+          <strong>重点</strong>：晋祠（宋）、镇国寺（五代）、双林寺（明彩塑）。<br>
+          <strong>研究价值</strong>：本段由晋祠切入宋代祭祀建筑，由平遥切入明清晋商城市。<span class="fact-tag fact-tag-check">待核对</span>
+        </div>
       </div>
 
       <div class="route-stage-card">
         <span class="route-stage-num">4</span>
-        <div class="route-stage-title">太原 → 平遥 / 介休</div>
-        <div class="route-stage-desc">约 100 公里。平遥古城看晋商城市，介休看后土庙与双林寺彩塑。<span class="fact-tag fact-tag-check">待核对</span></div>
+        <div class="route-stage-title">临汾 / 隰县方向</div>
+        <div class="route-stage-desc">
+          <strong>主题</strong>：小西天、彩塑、佛教视觉空间。<br>
+          <strong>重点</strong>：小西天（明悬塑）。<br>
+          <strong>研究价值</strong>：小西天被誉为"中国悬塑之冠"，是研究明代佛教视觉艺术的稀有实例。<span class="fact-tag fact-tag-check">待核对</span>
+        </div>
       </div>
 
       <div class="route-stage-card">
         <span class="route-stage-num">5</span>
-        <div class="route-stage-title">介休 → 长治 → 晋城</div>
-        <div class="route-stage-desc">约 400 公里。晋东南是中国宋金元古建最密集的区域，崇庆寺、法兴寺、小西天都在这里。<span class="fact-tag fact-tag-check">待核对</span></div>
+        <div class="route-stage-title">长治 / 晋城 / 晋东南</div>
+        <div class="route-stage-desc">
+          <strong>主题</strong>：宋金元古建密集区、村镇庙宇、彩塑壁画与地方信仰。<br>
+          <strong>重点</strong>：崇庆寺（宋）、法兴寺（唐宋）、玉皇庙（元）、青莲寺（唐宋）。<br>
+          <strong>研究价值</strong>：晋东南是全国宋金元木构最密集的区域，本段汇集宋金元彩塑壁画的核心现场。<span class="fact-tag fact-tag-check">待核对</span>
+        </div>
       </div>
 
       <div class="route-stage-card">
-        <span class="route-stage-num">6</span>
-        <div class="route-stage-title">晋城 → 北京</div>
-        <div class="route-stage-desc">约 700 公里 / 8-9 小时。返程较长，可分两天完成。<span class="fact-tag fact-tag-check">待核对</span></div>
+        <span class="route-stage-num">↩</span>
+        <div class="route-stage-title">晋城 → 北京（返程）</div>
+        <div class="route-stage-desc">
+          <strong>主题</strong>：返程。<br>
+          <strong>说明</strong>：根据出发地与时段选择不同路线。具体返程里程与时长待校准。<span class="fact-tag fact-tag-check">待核对</span>
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -182,174 +213,524 @@
     </div>
   </section>
 
-  <!-- 候选点位 -->
+  <!-- 候选点位分级 -->
   <section id="candidates" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">候选点位</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">候选点位分级</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
-      以下点位均为候选，<strong>开放时间、车程、门票、停车均需出发前再次核对</strong>
+      分级参考：研究价值 + 可达性 + 资料可信度。<strong>所有具体信息（开放时间/门票/停车）均需出发前再次核对</strong>
+    </p>
+
+    <div class="candidate-tier">
+      <h3 class="candidate-tier-title">A. 核心必看（12 个）</h3>
+      <p class="candidate-tier-desc">本研究框架下，全线研究与观光的最高优先点位。<strong>开放时间、门票、停车均需出发前再次核对</strong>。</p>
+      <div class="city-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">云冈石窟 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">大同 · 北魏 · 世界文化遗产</div>
+          <div class="candidate-spot-desc">中国三大石窟之一，北魏雕刻艺术的巅峰。昙曜五窟是研究北魏宫廷与佛教关系的关键现场。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 1 段主核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+            <span class="fact-tag fact-tag-check">门票待核对</span>
+            <span class="fact-tag fact-tag-check">停车待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">华严寺 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">大同 · 辽金 · 国保</div>
+          <div class="candidate-spot-desc">现存辽代最大佛殿，下寺薄伽教藏殿是辽代小木作的代表，"露齿菩萨"是辽代彩塑艺术的标志作品。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 1 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">善化寺 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">大同 · 辽金 · 国保</div>
+          <div class="candidate-spot-desc">辽代单体建筑布局的完整实例，三座主殿均为辽金遗构。大雄宝殿内的金代塑像保存完好。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 1 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">应县木塔 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">应县 · 辽清宁二年（1056）· 国保</div>
+          <div class="candidate-spot-desc">世界现存最高大的木塔，与比萨斜塔、埃菲尔铁塔并称世界三大奇塔。释迦塔，全木结构，无一铁钉。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 2 段主核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+            <span class="fact-tag fact-tag-check">门票待核对</span>
+            <span class="fact-tag fact-tag-travel">旅行整理</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">佛光寺 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">五台山 · 唐大中十一年（857）· 国保</div>
+          <div class="candidate-spot-desc">梁思成发现的中国现存唐代木构建筑，东大殿是国宝中的国宝。"四绝"：唐代木构、唐代彩塑、唐代壁画、唐代题记。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 2 段主核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+            <span class="fact-tag fact-tag-check">需预约</span>
+            <span class="fact-tag fact-tag-travel">旅行整理</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">南禅寺 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">五台山 · 唐建中三年（782）· 国保</div>
+          <div class="candidate-spot-desc">中国现存最古老的木构建筑，比佛光寺早 75 年。大殿内的唐代塑像是国宝级文物。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 2 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">晋祠 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">太原 · 北宋 · 国保</div>
+          <div class="candidate-spot-desc">纪念晋国始祖唐叔虞的祠庙。圣母殿（宋）、鱼沼飞梁（宋）、周柏（周）、难老泉（春秋）——"晋祠三绝"。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 3 段主核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+            <span class="fact-tag fact-tag-check">门票待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">镇国寺 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">平遥 · 北汉天会七年（963）· 国保</div>
+          <div class="candidate-spot-desc">现存五代时期唯一木构建筑，万佛殿是国宝。殿内五代彩塑 11 尊，是中国现存最早的木构建筑。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 3 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">双林寺 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">平遥 · 明 · 国保</div>
+          <div class="candidate-spot-desc">明代彩塑艺术博物馆，被誉为"彩塑艺术宝库"。2000 余尊彩塑，韦驮像被誉为"全国韦驮之冠"。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 3 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">小西天 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">隰县 · 明崇祯二年（1629）· 国保</div>
+          <div class="candidate-spot-desc">明代悬塑艺术巅峰之作，被誉为"中国悬塑之冠"。千佛悬塑布满大雄宝殿顶部，视觉冲击力极强。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 4 段主核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">玉皇庙 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">晋城 · 宋元 · 国保</div>
+          <div class="candidate-spot-desc">元代道教壁画与二十八宿彩塑。二十八宿彩塑是中国现存唯一的元代二十八宿塑像群，被视为中国古代雕塑艺术的高峰。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 5 段主核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-a">
+          <div class="candidate-spot-name">青莲寺 <span class="tier-badge tier-a-badge">A</span></div>
+          <div class="candidate-spot-meta">晋城 · 唐宋 · 国保</div>
+          <div class="candidate-spot-desc">唐代石窟与宋代建筑并存。下院的唐代石塔和上院的宋代建筑是中国早期佛教艺术的实例。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 5 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="candidate-tier">
+      <h3 class="candidate-tier-title">B. 强烈推荐（5 个）</h3>
+      <p class="candidate-tier-desc">时间和路线允许时，强烈建议纳入。</p>
+      <div class="city-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
+
+        <div class="candidate-spot tier-b">
+          <div class="candidate-spot-name">双塔寺 <span class="tier-badge tier-b-badge">B</span></div>
+          <div class="candidate-spot-meta">太原 · 明 · 国保</div>
+          <div class="candidate-spot-desc">太原标志性建筑，明代双塔，太原地标。登塔可俯瞰太原。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 3 段补充</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-b">
+          <div class="candidate-spot-name">介休后土庙 <span class="tier-badge tier-b-badge">B</span></div>
+          <div class="candidate-spot-meta">介休 · 明清 · 国保</div>
+          <div class="candidate-spot-desc">道教庙宇建筑群，琉璃艺术与彩塑并存。是研究明清道教建筑与琉璃工艺的重要现场。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 3-5 段衔接</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-b">
+          <div class="candidate-spot-name">崇庆寺 <span class="tier-badge tier-b-badge">B</span></div>
+          <div class="candidate-spot-meta">长子县 · 宋 · 国保</div>
+          <div class="candidate-spot-desc">宋代彩塑三大处之一。十八罗汉像被誉为"宋塑之冠"。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 5 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-b">
+          <div class="candidate-spot-name">法兴寺 <span class="tier-badge tier-b-badge">B</span></div>
+          <div class="candidate-spot-meta">长子县 · 唐宋 · 国保</div>
+          <div class="candidate-spot-desc">唐代石塔与宋代彩塑并存。长子法兴寺的唐塔是中国现存唐代石塔实例之一。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 5 段核心</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-b">
+          <div class="candidate-spot-name">长治观音堂 <span class="tier-badge tier-b-badge">B</span></div>
+          <div class="candidate-spot-meta">长治 · 明 · 国保</div>
+          <div class="candidate-spot-desc">明代彩塑精品。观音殿内的悬塑与彩塑组合是明代佛教艺术的代表。</div>
+          <div class="candidate-spot-role"><strong>路线角色</strong>：第 5 段补充</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="candidate-tier">
+      <h3 class="candidate-tier-title">C. 可选补充</h3>
+      <p class="candidate-tier-desc">依据路线顺路程度和开放情况补充，不强行纳入正式路线。</p>
+      <div class="city-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
+
+        <div class="candidate-spot tier-c">
+          <div class="candidate-spot-name">平遥古城 <span class="tier-badge tier-c-badge">C</span></div>
+          <div class="candidate-spot-meta">平遥 · 明清 · 世界文化遗产</div>
+          <div class="candidate-spot-desc">明清晋商城市典范。如时间允许，可在平遥古城住一晚。</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+            <span class="fact-tag fact-tag-check">门票待核对</span>
+          </div>
+        </div>
+
+        <div class="candidate-spot tier-c">
+          <div class="candidate-spot-name">云冈石窟周边博物馆 <span class="tier-badge tier-c-badge">C</span></div>
+          <div class="candidate-spot-meta">大同 · 现代</div>
+          <div class="candidate-spot-desc">云冈石窟博物馆、研究院等。如对北魏艺术深度研究，可纳入。</div>
+          <div class="candidate-spot-status">
+            <span class="fact-tag fact-tag-check">开放时间待核对</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 资料来源索引 -->
+  <section id="sources" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">资料来源索引</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      本节为山西路线研究建档使用的主要资料，按类型分组。<strong>所有具体信息均以官方公告为准</strong>。
+    </p>
+
+    <div class="source-index-group">
+      <h3 class="source-type-group-title">官方文旅资料</h3>
+      <div class="source-cards-mini">
+        <div class="source-mini-card">
+          <div class="source-mini-name">山西省文化和旅游厅</div>
+          <div class="source-mini-desc">山西省内文旅资源汇总、A 级景区名单、文旅政策</div>
+          <span class="fact-tag fact-tag-info">官方</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">大同市文化和旅游局</div>
+          <div class="source-mini-desc">大同市景区（云冈、华严、善化）官方信息</div>
+          <span class="fact-tag fact-tag-info">官方</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">忻州市 / 太原市 / 晋中市 / 临汾市 / 长治市 / 晋城市 文旅局</div>
+          <div class="source-mini-desc">沿线各市景区开放、票价、预约信息</div>
+          <span class="fact-tag fact-tag-info">官方</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="source-index-group">
+      <h3 class="source-type-group-title">文物 / 博物馆资料</h3>
+      <div class="source-cards-mini">
+        <div class="source-mini-card">
+          <div class="source-mini-name">各点位的全国重点文物保护单位名录</div>
+          <div class="source-mini-desc">国保单位级别、批次、保护范围（国家文物局公布）</div>
+          <span class="fact-tag fact-tag-info">官方</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">云冈研究院 / 山西博物院 / 各寺博物馆</div>
+          <div class="source-mini-desc">现场博物馆藏品与陈列资料</div>
+          <span class="fact-tag fact-tag-info">官方</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="source-index-group">
+      <h3 class="source-type-group-title">建筑史资料</h3>
+      <div class="source-cards-mini">
+        <div class="source-mini-card">
+          <div class="source-mini-name">《中国建筑史》梁思成</div>
+          <div class="source-mini-desc">佛光寺东大殿的发现与断代原文，辽金建筑分析</div>
+          <span class="fact-tag fact-tag-check">较可靠</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">《图像中国建筑史》梁思成</div>
+          <div class="source-mini-desc">应县木塔、佛光寺等手绘图纸与建筑分析</div>
+          <span class="fact-tag fact-tag-check">较可靠</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">柴泽俊《山西古建筑概述》等山西古建专著</div>
+          <div class="source-mini-desc">山西本地古建研究</div>
+          <span class="fact-tag fact-tag-check">较可靠</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="source-index-group">
+      <h3 class="source-type-group-title">纪录片 / 视频</h3>
+      <div class="source-cards-mini">
+        <div class="source-mini-card">
+          <div class="source-mini-name">CCTV《故宫 100》/《中国古建筑》系列</div>
+          <div class="source-mini-desc">古建筑普及纪录片</div>
+          <span class="fact-tag fact-tag-check">较可靠</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">CCTV《探索·发现》佛光寺、应县木塔专题</div>
+          <div class="source-mini-desc">梁思成发现之旅</div>
+          <span class="fact-tag fact-tag-check">较可靠</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="source-index-group">
+      <h3 class="source-type-group-title">书籍 / 论文</h3>
+      <div class="source-cards-mini">
+        <div class="source-mini-card">
+          <div class="source-mini-name">《中国古代建筑史》刘敦桢 / 中国建筑工业出版社相关图录</div>
+          <div class="source-mini-desc">学术框架</div>
+          <span class="fact-tag fact-tag-check">较可靠</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">《文物》《考古》期刊相关论文</div>
+          <div class="source-mini-desc">云冈、佛光寺、应县木塔等专题研究</div>
+          <span class="fact-tag fact-tag-check">较可靠</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="source-index-group">
+      <h3 class="source-type-group-title">旅行整理说明</h3>
+      <div class="source-cards-mini">
+        <div class="source-mini-card">
+          <div class="source-mini-name">马蜂窝、穷游网、小红书等社区攻略</div>
+          <div class="source-mini-desc">实地路线、住宿、餐饮建议（须与官方信息交叉核对）</div>
+          <span class="fact-tag fact-tag-travel">旅行整理</span>
+        </div>
+        <div class="source-mini-card">
+          <div class="source-mini-name">本作者研究笔记</div>
+          <div class="source-mini-desc">基于公开资料整理的内容结构与分级</div>
+          <span class="fact-tag fact-tag-travel">旅行整理</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 山西古建关键词 -->
+  <section id="concepts" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">山西古建关键词</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      理解以下概念，是看懂山西古建的基础。
     </p>
 
     <div class="city-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">云冈石窟</div>
-        <div class="candidate-spot-meta">大同 · 北魏 · 世界文化遗产</div>
-        <div class="candidate-spot-desc">中国三大石窟之一，北魏雕刻艺术的巅峰。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-          <span class="fact-tag fact-tag-check">门票待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">木构建筑</div>
+        <div class="concept-one-line">以木结构梁柱承重的建筑体系，是中国古代建筑的主流。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">山西保存了中国 70% 以上的宋金元木构。理解木构是看懂山西古建的基础。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">佛光寺、南禅寺、晋祠、应县木塔、镇国寺</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">华严寺</div>
-        <div class="candidate-spot-meta">大同 · 辽金 · 国保</div>
-        <div class="candidate-spot-desc">现存辽代最大佛殿，下寺薄伽教藏殿是辽代小木作的代表。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">斗栱</div>
+        <div class="concept-one-line">中国古建筑特有的"柱顶"承重结构，兼具力学与装饰功能。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">斗栱是判断古建筑年代的"年轮"，唐宋辽金元的斗栱形制有明显差异。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">佛光寺（唐）、晋祠圣母殿（宋）、应县木塔（辽）</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">善化寺</div>
-        <div class="candidate-spot-meta">大同 · 辽金 · 国保</div>
-        <div class="candidate-spot-desc">辽代单体建筑布局的完整实例，三座主殿均为辽金遗构。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">梁架</div>
+        <div class="concept-one-line">中国古建筑屋顶的承重木结构，决定屋顶形制。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">梁架结构直接决定建筑的等级（庑殿、歇山、悬山、硬山、攒尖）。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">佛光寺、应县木塔</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">应县木塔</div>
-        <div class="candidate-spot-meta">应县 · 辽清宁二年（1056）· 国保</div>
-        <div class="candidate-spot-desc">世界现存最高大的木塔，与比萨斜塔、埃菲尔铁塔并称世界三大奇塔。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-          <span class="fact-tag fact-tag-travel">旅行整理</span>
+      <div class="concept-card">
+        <div class="concept-name">彩塑</div>
+        <div class="concept-one-line">彩绘泥塑像，是中国古代佛教造像的主流形式。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">山西彩塑从唐到明一脉相承，是研究中国雕塑史的重要现场。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">佛光寺（唐）、镇国寺（五代）、双林寺（明）、小西天（明悬塑）、玉皇庙（元）</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">佛光寺</div>
-        <div class="candidate-spot-meta">五台山 · 唐大中十一年（857）· 国保</div>
-        <div class="candidate-spot-desc">梁思成发现的中国现存唐代木构建筑，东大殿是国宝中的国宝。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-          <span class="fact-tag fact-tag-travel">旅行整理</span>
+      <div class="concept-card">
+        <div class="concept-name">壁画</div>
+        <div class="concept-one-line">绘于建筑构件上的绘画，是寺观艺术的重要组成。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">山西壁画以寺观壁画为主，与敦煌石窟壁画形成南北对照。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">佛光寺、玉皇庙、晋祠、青莲寺</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">南禅寺</div>
-        <div class="candidate-spot-meta">五台山 · 唐建中三年（782）· 国保</div>
-        <div class="candidate-spot-desc">中国现存最古老的木构建筑，比佛光寺早 75 年。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">密檐塔</div>
+        <div class="concept-one-line">第一层较高、以上各层檐密集的佛塔形式，辽金元时期在北方流行。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">山西现存多座辽金密檐塔，与辽塔巡礼路线相关。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">法兴寺唐塔、晋祠舍利生生塔</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">晋祠</div>
-        <div class="candidate-spot-meta">太原 · 北宋 · 国保</div>
-        <div class="candidate-spot-desc">纪念晋国始祖唐叔虞的祠庙，圣母殿、鱼沼飞梁是宋代建筑实例。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">辽金寺院</div>
+        <div class="concept-one-line">辽金时期（10-13 世纪）中国北方佛教寺院的建筑与艺术。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">大同的华严寺、善化寺是辽金寺院建筑的代表，与辽塔巡礼直接呼应。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">华严寺、善化寺、应县木塔</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">双塔寺</div>
-        <div class="candidate-spot-meta">太原 · 明 · 国保</div>
-        <div class="candidate-spot-desc">太原标志性建筑，明代双塔，太原地标。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">晋东南古建</div>
+        <div class="concept-one-line">山西东南部（长治、晋城）宋金元木构最密集的区域。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">全国 70% 以上的宋金元木构在山西，其中晋东南占多数。本路线第 5 段是晋东南古建的高密度区。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">崇庆寺、法兴寺、玉皇庙、青莲寺、长治观音堂</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">镇国寺</div>
-        <div class="candidate-spot-meta">平遥 · 北汉 · 国保</div>
-        <div class="candidate-spot-desc">现存五代时期唯一木构建筑，万佛殿是国宝。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">地方信仰</div>
+        <div class="concept-one-line">晋东南的民间信仰体系——神祠、庙宇、村社。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">晋东南是中国地方信仰最浓郁的区域，许多宋金元古建来源于民间信仰而非官式建筑。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">玉皇庙（道教）、崇庆寺（佛教）、青莲寺（佛教）</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">双林寺</div>
-        <div class="candidate-spot-meta">平遥 · 明 · 国保</div>
-        <div class="candidate-spot-desc">明代彩塑艺术博物馆，被誉为"彩塑艺术宝库"。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="concept-card">
+        <div class="concept-name">佛教空间</div>
+        <div class="concept-one-line">寺院内部的佛、菩萨、罗汉、护法的视觉空间组织。</div>
+        <div class="concept-extra">
+          <div class="concept-aspect"><div class="concept-aspect-label">为什么和本路线有关</div>
+          <div class="concept-aspect-value">从云冈到小西天，可以看到佛教空间从石窟到木构、从殿堂到悬塑的演化。</div></div>
+          <div class="concept-aspect"><div class="concept-aspect-label">对应点位</div>
+          <div class="concept-aspect-value">云冈石窟、华严寺、双林寺、小西天</div></div>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">介休后土庙</div>
-        <div class="candidate-spot-meta">介休 · 明清 · 国保</div>
-        <div class="candidate-spot-desc">道教庙宇建筑群，琉璃艺术与彩塑并存。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+    </div>
+  </section>
+
+  <!-- 初步行程方案 -->
+  <section id="plans" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">初步行程方案</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+      以下为两个版本的大方向。<strong>具体车程、时间、住宿、点位顺序均需出发前再次核对</strong>。
+    </p>
+
+    <div class="route-stages">
+
+      <div class="route-stage-card">
+        <span class="route-stage-num">A</span>
+        <div class="route-stage-title">8 天压缩版</div>
+        <div class="route-stage-desc">
+          <strong>路线</strong>：北京 → 大同 → 应县/五台 → 太原 → 平遥/介休 → 临汾/隰县 → 长治/晋城 → 北京<br>
+          <strong>重点</strong>：第 1-5 段全部触及，但每段精选 A 级核心点位。<br>
+          <strong>适合</strong>：时间紧张但想覆盖全线的研究/学习者。<span class="fact-tag fact-tag-check">待校准</span>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">长治观音堂</div>
-        <div class="candidate-spot-meta">长治 · 明 · 国保</div>
-        <div class="candidate-spot-desc">明代彩塑精品。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
+      <div class="route-stage-card">
+        <span class="route-stage-num">B</span>
+        <div class="route-stage-title">11-12 天深度版</div>
+        <div class="route-stage-desc">
+          <strong>路线</strong>：北京 → 大同 → 应县 → 五台山周边 → 太原 → 平遥/介休 → 临汾/隰县 → 长治 → 晋城 → 北京<br>
+          <strong>重点</strong>：在 8 天版基础上加入应县独立一天、五台山独立一天、长治独立一天、晋城独立一天。<br>
+          <strong>适合</strong>：希望深度研究建筑与彩塑、壁画的研究者。<span class="fact-tag fact-tag-check">待校准</span>
         </div>
       </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">崇庆寺</div>
-        <div class="candidate-spot-meta">长子县 · 宋 · 国保</div>
-        <div class="candidate-spot-desc">宋代彩塑三大处之一。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-        </div>
-      </div>
+    </div>
 
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">法兴寺</div>
-        <div class="candidate-spot-meta">长子县 · 唐宋 · 国保</div>
-        <div class="candidate-spot-desc">唐代石塔与宋代彩塑并存。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-        </div>
-      </div>
-
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">小西天</div>
-        <div class="candidate-spot-meta">隰县 · 明 · 国保</div>
-        <div class="candidate-spot-desc">明代悬塑艺术巅峰之作，被誉为"中国悬塑之冠"。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-        </div>
-      </div>
-
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">玉皇庙</div>
-        <div class="candidate-spot-meta">晋城 · 宋元 · 国保</div>
-        <div class="candidate-spot-desc">元代道教壁画与二十八宿彩塑。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-        </div>
-      </div>
-
-      <div class="candidate-spot">
-        <div class="candidate-spot-name">青莲寺</div>
-        <div class="candidate-spot-meta">晋城 · 唐宋 · 国保</div>
-        <div class="candidate-spot-desc">唐代石窟与宋代建筑并存。</div>
-        <div class="candidate-spot-tags">
-          <span class="fact-tag fact-tag-check">开放时间待核对</span>
-        </div>
-      </div>
-
+    <div class="planning-note" style="margin-top: var(--space-lg);">
+      <strong>⚠️ 行程方案使用注意</strong>：
+      <ul style="margin-top: var(--space-sm); padding-left: var(--space-xl);">
+        <li>本方案仅为路线大方向，不是最终行程表</li>
+        <li>具体每天的行车时长、住宿、点位顺序应根据季节、天气、体力调整</li>
+        <li>5 月至 10 月是山西自驾的最佳时段，冬季山区可能封路</li>
+        <li>每个 A 级核心点位的内部参观时间建议 1.5-3 小时</li>
+        <li>出发前请与各点位官方确认是否需要预约</li>
+      </ul>
     </div>
   </section>
 
