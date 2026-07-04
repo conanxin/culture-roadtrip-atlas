@@ -1899,6 +1899,639 @@ p {
 /* ---------- 响应式：现场模式底部导航 ---------- */
 
 
+
+/* ============================================
+   v0.4 知识深化版样式
+   ============================================ */
+
+/* ---------- 辽代时间轴 ---------- */
+.timeline-module {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.timeline-container {
+  position: relative;
+  padding: var(--space-lg) 0;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 80px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-primary));
+  opacity: 0.4;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  margin-bottom: var(--space-lg);
+  padding-left: var(--space-md);
+}
+
+.timeline-year {
+  flex-shrink: 0;
+  width: 80px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-weight: bold;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  padding-top: 4px;
+  z-index: 1;
+  background: var(--color-bg);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 75px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  margin-top: 8px;
+  z-index: 2;
+}
+
+.timeline-content {
+  flex: 1;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  border-left: 3px solid var(--color-accent);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.timeline-content:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-event-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.timeline-event-detail {
+  display: none;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-top: var(--space-sm);
+}
+
+.timeline-content.expanded .timeline-event-detail {
+  display: block;
+}
+
+.timeline-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.timeline-related-tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background: rgba(184, 134, 11, 0.1);
+  color: var(--color-accent-dark);
+  border-radius: 10px;
+}
+
+/* ---------- 辽五京体系 ---------- */
+.five-capitals-module {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.05), rgba(26, 58, 42, 0.05));
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-accent);
+}
+
+.five-capitals-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.five-capitals-intro {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  font-size: 0.95rem;
+}
+
+.five-capitals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.capital-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.capital-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.capital-card.in-this-route {
+  border-color: var(--color-accent);
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.05), var(--color-bg));
+}
+
+.capital-card.in-this-route::before {
+  content: '⭐';
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 1.2rem;
+}
+
+.capital-name {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.capital-pinyin {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.capital-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px dashed var(--color-divider);
+}
+
+.capital-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.capital-significance {
+  background: rgba(184, 134, 11, 0.05);
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  border-left: 2px solid var(--color-accent);
+}
+
+/* ---------- 辽塔形制比较 ---------- */
+.pagoda-types-module {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.pagoda-types-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.pagoda-types-intro {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  font-size: 0.95rem;
+}
+
+.pagoda-type-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  border-left: 4px solid var(--color-accent);
+}
+
+.pagoda-type-name {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.pagoda-type-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.pagoda-type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.pagoda-type-aspect {
+  background: var(--color-bg);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+}
+
+.pagoda-type-aspect-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.pagoda-type-aspect-value {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.pagoda-type-spots {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px dashed var(--color-divider);
+}
+
+.pagoda-type-spots-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.pagoda-type-spots-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.pagoda-type-spot-tag {
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-radius: 12px;
+}
+
+.pagoda-type-spot-tag.empty {
+  background: var(--color-bg-alt);
+  color: var(--color-text-light);
+}
+
+/* ---------- 核心概念图谱 ---------- */
+.concepts-module {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, rgba(26, 58, 42, 0.05), var(--color-bg));
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-primary);
+}
+
+.concepts-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.concepts-intro {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  font-size: 0.95rem;
+}
+
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.concept-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.concept-card:hover {
+  border-color: var(--color-accent);
+}
+
+.concept-name {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.concept-toggle {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.concept-card.expanded .concept-toggle {
+  transform: rotate(180deg);
+}
+
+.concept-one-line {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.concept-extra {
+  display: none;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px dashed var(--color-divider);
+}
+
+.concept-card.expanded .concept-extra {
+  display: block;
+}
+
+.concept-aspect {
+  margin-bottom: var(--space-sm);
+}
+
+.concept-aspect-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.concept-aspect-value {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.concept-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+.concept-related-tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background: rgba(26, 58, 42, 0.08);
+  color: var(--color-primary);
+  border-radius: 10px;
+}
+
+.concept-reading {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* ---------- 阅读路线 ---------- */
+.reading-routes-module {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.reading-routes-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.reading-routes-intro {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  font-size: 0.95rem;
+}
+
+.reading-route-tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-divider);
+  overflow-x: auto;
+}
+
+.reading-route-tab {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  padding: var(--space-md) var(--space-lg);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.reading-route-tab.active {
+  color: var(--color-accent-dark);
+  border-bottom-color: var(--color-accent);
+}
+
+.reading-route-content {
+  display: none;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+.reading-route-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.reading-route-time {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.reading-route-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.reading-route-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reading-route-steps li {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.reading-route-steps li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+/* ---------- 资料来源 ---------- */
+.sources-module {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.sources-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.sources-notice {
+  background: rgba(184, 134, 11, 0.1);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-accent);
+  font-size: 0.9rem;
+  color: var(--color-accent-dark);
+  margin-bottom: var(--space-xl);
+}
+
+.sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.source-type {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  border-left: 3px solid var(--color-primary);
+}
+
+.source-type-name {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.source-type-description {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+  line-height: 1.6;
+}
+
+.source-type-examples {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.source-type-examples li {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.source-type-examples li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+/* ---------- 景点关系 ---------- */
+.spot-relationship {
+  background: linear-gradient(135deg, rgba(26, 58, 42, 0.05), rgba(184, 134, 11, 0.05));
+  border: 1px dashed var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.spot-relationship-label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.spot-relationship-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  font-style: italic;
+}
+
+/* ---------- 响应式 ---------- */
 @media (max-width: 768px) {
   .field-nav.show {
     display: flex;

@@ -413,6 +413,12 @@
     initArrivalButtons();
     showSpeechNotice();
 
+    // v0.4 知识深化版
+    initV4();
+
+    // 渲染景点之间的关系
+    renderSpotRelationships();
+
     // 平滑滚动到锚点
     initSmoothScroll();
   }
@@ -613,6 +619,38 @@
       dot.classList.remove('supported');
       text.textContent = '语音朗读: 不支持';
     }
+  }
+
+
+
+
+  /**
+   * 渲染景点之间的关系
+   */
+  function renderSpotRelationships() {
+    const spotCards = document.querySelectorAll('.spot-card');
+    spotCards.forEach(card => {
+      const spotId = card.dataset.spotId || (card.id || '').replace('spot-', '');
+      if (!spotId) return;
+
+      const spot = SPOT_DATA.spots.find(s => s.id === spotId);
+      if (!spot || !spot.relationship) return;
+
+      // Check if relationship div already exists
+      if (card.querySelector('.spot-relationship')) return;
+
+      // Find the spot-actions section to insert before it
+      const actions = card.querySelector('.spot-actions');
+      if (!actions) return;
+
+      const relDiv = document.createElement('div');
+      relDiv.className = 'spot-relationship';
+      relDiv.innerHTML = `
+        <div class="spot-relationship-label">🔗 它和上一站 / 下一站的关系</div>
+        <div class="spot-relationship-text">${spot.relationship}</div>
+      `;
+      actions.parentNode.insertBefore(relDiv, actions);
+    });
   }
 
 
@@ -832,6 +870,69 @@
         heroSection.appendChild(notice);
       }
     }
+  }
+
+
+  
+  // ============ v0.4 知识深化版功能 ============
+
+  /**
+   * 初始化辽代时间轴
+   */
+  function initTimeline() {
+    const timelineItems = document.querySelectorAll('.timeline-content');
+    timelineItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('expanded');
+      });
+    });
+  }
+
+  /**
+   * 初始化核心概念图谱
+   */
+  function initConcepts() {
+    const conceptCards = document.querySelectorAll('.concept-card');
+    conceptCards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('expanded');
+      });
+    });
+  }
+
+  /**
+   * 初始化阅读路线切换
+   */
+  function initReadingRoutes() {
+    const tabs = document.querySelectorAll('.reading-route-tab');
+    const contents = document.querySelectorAll('.reading-route-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const route = tab.dataset.route;
+
+        // 更新 tab 状态
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // 切换内容
+        contents.forEach(content => {
+          content.classList.remove('active');
+          if (content.dataset.route === route) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+  }
+
+  /**
+   * 初始化 v0.4 功能
+   */
+  function initV4() {
+    initTimeline();
+    initConcepts();
+    initReadingRoutes();
   }
 
 
