@@ -9,13 +9,13 @@
 |------|---|
 | **工作分支** | main |
 | **基线 commit** | bd0c3f4 (v1.4.9 · Shanxi Ancient Architecture Route Data Production) |
-| **新 commit** | _pending_（commit 后回填） |
-| **push 状态** | _pending_ |
-| **部署状态** | _pending_ |
+| **新 commit** | e086678 · Enhance route index search and comparison |
+| **push 状态** | ✅ origin/main pushed |
+| **部署状态** | ✅ GitHub Pages 已部署（2026-07-05 23:14:28 UTC） |
 | **本地命令验证** | 全部 PASS |
 | **本地 HTTP** | 全部 200 |
-| **线上 HTTP 200** | _pending_（push 后回填） |
-| **GitHub Actions run** | _pending_ |
+| **线上 HTTP 200** | ✅ 6/6 endpoints 200 |
+| **GitHub Actions run** | ✅ success · run 28758240913 · 10s |
 
 ---
 
@@ -464,30 +464,29 @@ shanxi-ancient-architecture · architecture · v0.1 · 30 pts
 
 ## 16. GitHub Actions 验证
 
-_pending_（push 后回填）：
+✅ **success · run 28758240913 · 10s**
 
 ```
-$ gh run list --workflow "Route Data Quality Gate" --limit 5
+$ gh run list --workflow "Route Data Quality Gate" --limit 3
+completed	success	Enhance route index search and comparison	Route Data Quality Gate	main	push	28758240913	10s	2026-07-05T23:14:28Z
+completed	success	Produce Shanxi ancient architecture route data	Route Data Quality Gate	main	push	28725412598	12s	2026-07-05T01:15:45Z
+completed	success	Produce Shanxi ancient architecture route data	Route Data Quality Gate	main	push	28725377586	11s	2026-07-05T01:14:10Z
 ```
-
-预期本次 commit run 为 success。
 
 ---
 
 ## 17. 线上 HTTP 200 验证
 
-_pending_（push 后回填）：
+✅ **6/6 endpoints 200**
 
 ```
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/routes/
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/assets/js/routes-index.js
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/data/routes/routes-manifest.json
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/docs/ROUTE_FACTORY_GUIDE.md
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/reports/PHASE10_ROUTE_INDEX_SEARCH_REPORT.md
+200 https://conanxin.github.io/culture-roadtrip-atlas/
+200 https://conanxin.github.io/culture-roadtrip-atlas/routes/
+200 https://conanxin.github.io/culture-roadtrip-atlas/assets/js/routes-index.js
+200 https://conanxin.github.io/culture-roadtrip-atlas/data/routes/routes-manifest.json
+200 https://conanxin.github.io/culture-roadtrip-atlas/docs/ROUTE_FACTORY_GUIDE.md
+200 https://conanxin.github.io/culture-roadtrip-atlas/reports/PHASE10_ROUTE_INDEX_SEARCH_REPORT.md
 ```
-
-全部应为 200。
 
 ---
 
