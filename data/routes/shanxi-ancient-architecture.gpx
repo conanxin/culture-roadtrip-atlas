@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="行旅图谱 v1.4.9 · culture-roadtrip-atlas"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>山西古建路线文化自驾粗点路线</name>
+    <desc>Cultural roadtrip rough points and generalized self-driving preview only; not an original GPS track; not for navigation; cultural replica. 11-day 10-night self-driving loop from Datong via Wutaishan, Taiyuan, Pingyao, Jiexiu, Hongdong, Yuncheng, Changzhi, Jincheng back. Not real-time road conditions; opening status and road conditions must be checked before travel.</desc>
+    <author>
+      <name>Xin Conan · 行旅图谱</name>
+      <email>conanxin@local</email>
+    </author>
+    <copyright author="Xin Conan">
+      <year>2026</year>
+      <license>CC BY-NC 4.0 (cultural roadtrip data only)</license>
+    </copyright>
+    <link href="https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/">
+      <text>山西古建自驾线</text>
+    </link>
+    <time>2026-07-05T00:00:00Z</time>
+    <keywords>Shanxi, ancient architecture, self-driving, cultural roadtrip, Tang, Song, Liao, Jin, wood structures, cultural replica, not for navigation, not original GPS</keywords>
+    <bounds minlat="34.7000" minlon="110.6850" maxlat="40.1100" maxlon="113.7250"/>
+  </metadata>
+
+  <wpt lat="40.0900" lon="113.2950">
+    <ele>0</ele>
+    <name>大同</name>
+    <cmt>大同古都与云冈线 · Datong · 精度:city</cmt>
+    <desc>id=SXA-P001 · seq=1 · D_reconstructed_for_travel · high · 难度:easy · 最佳:May-Oct · 大同云冈机场 / 大同南站 · 风险:文保开放时间需核查;非实时导航 · 来源:山西古建路线 S01 起点 · 北魏都城遗韵 · URL:https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/ · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="40.1100" lon="113.1400">
+    <ele>0</ele>
+    <name>云冈石窟</name>
+    <cmt>大同古都与云冈线 · Datong · 精度:landmark</cmt>
+    <desc>id=SXA-P002 · seq=2 · D_reconstructed_for_travel · high · 难度:easy · 最佳:Apr-Oct · 大同市区西 16 公里 / G55 二广高速 · 风险:石窟拥挤时段需预约;非实时导航 · 来源:云冈石窟 2001 列入世界文化遗产 · 国保 第一批 · URL:http://www.yungang.org/ · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="40.0830" lon="113.2930">
+    <ele>0</ele>
+    <name>大同华严寺</name>
+    <cmt>大同古都与云冈线 · Datong · 精度:landmark</cmt>
+    <desc>id=SXA-P003 · seq=3 · D_reconstructed_for_travel · high · 难度:easy · 最佳:Apr-Oct · 大同古城内 / 步行可达 · 风险:古城内景区需核查开放;非实时导航 · 来源:华严寺 辽金木构 1961 国保 第一批 · URL:https://baike.baidu.com/item/%E5%A4%A7%E5%90%8C%E5%8D%8E%E4%B8%A5%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="40.0950" lon="113.2920">
+    <ele>0</ele>
+    <name>大同善化寺</name>
+    <cmt>大同古都与云冈线 · Datong · 精度:landmark</cmt>
+    <desc>id=SXA-P004 · seq=4 · D_reconstructed_for_travel · high · 难度:easy · 最佳:Apr-Oct · 大同古城南部 / 步行可达 · 风险:古城内景区需核查开放;非实时导航 · 来源:善化寺 辽金木构 1961 国保 第一批 · URL:https://baike.baidu.com/item/%E5%96%84%E5%8C%96%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="39.6900" lon="113.6900">
+    <ele>0</ele>
+    <name>浑源古城</name>
+    <cmt>浑源恒山应县木构线 · Hunyuan · 精度:city</cmt>
+    <desc>id=SXA-P005 · seq=5 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:May-Oct · 大涞高速 / S303 · 风险:县城住宿;非实时导航 · 来源:浑源 北岳恒山所在县 · URL:https://baike.baidu.com/item/%E6%B5%91%E6%BA%90%E5%8E%BF · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="39.6580" lon="113.7050">
+    <ele>0</ele>
+    <name>悬空寺</name>
+    <cmt>浑源恒山应县木构线 · Hunyuan · 精度:landmark</cmt>
+    <desc>id=SXA-P006 · seq=6 · D_reconstructed_for_travel · high · 难度:easy · 最佳:Apr-Oct · 浑源东南 5 公里 / S303 · 风险:景区拥挤;非实时导航 · 来源:悬空寺 北魏 1982 国保 第二批 · URL:https://baike.baidu.com/item/%E6%82%AC%E7%A9%BA%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="39.6750" lon="113.7250">
+    <ele>0</ele>
+    <name>北岳恒山</name>
+    <cmt>浑源恒山应县木构线 · Hunyuan · 精度:region</cmt>
+    <desc>id=SXA-P007 · seq=7 · D_reconstructed_for_travel · medium · 难度:extreme · 最佳:May-Oct · 浑源县城东南 / 索道可达 · 风险:山路天气需核查;非实时导航 · 来源:恒山 五岳北岳 国家级 · URL:https://baike.baidu.com/item/%E6%81%92%E5%B1%B1 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="39.5580" lon="113.1900">
+    <ele>0</ele>
+    <name>应县木塔</name>
+    <cmt>浑源恒山应县木构线 · Yingxian · 精度:landmark</cmt>
+    <desc>id=SXA-P008 · seq=8 · D_reconstructed_for_travel · high · 难度:easy · 最佳:Apr-Oct · 应县县城 / G208 国道 · 风险:木塔近年限流;非实时导航 · 来源:佛宫寺释迦塔 辽代 1961 国保 第一批 · 全世界最高木塔 · URL:https://baike.baidu.com/item/%E5%BA%94%E5%8E%BF%E6%9C%A8%E5%A1%94 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="38.9750" lon="113.5800">
+    <ele>0</ele>
+    <name>五台山台怀镇</name>
+    <cmt>五台山早期木构线 · Wutaishan · 精度:region</cmt>
+    <desc>id=SXA-P009 · seq=9 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:May-Oct · 五台山机场 / G5 京昆高速 / 砂河至台怀 · 风险:高山气候多变;非实时导航 · 来源:五台山 文殊道场 2009 列入世界文化遗产 · URL:https://baike.baidu.com/item/%E4%BA%94%E5%8F%B0%E5%B1%B1 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="38.9450" lon="113.6100">
+    <ele>0</ele>
+    <name>佛光寺</name>
+    <cmt>五台山早期木构线 · Wutaishan · 精度:landmark</cmt>
+    <desc>id=SXA-P010 · seq=10 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:May-Oct · 五台山东北 / 豆村 · 风险:偏远文保需预约;非实时导航 · 来源:佛光寺 东大殿 857 年 唐 1961 国保 第一批 · 梁思成 1937 发现 · URL:https://baike.baidu.com/item/%E4%BD%9B%E5%85%89%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="38.9370" lon="113.4000">
+    <ele>0</ele>
+    <name>南禅寺</name>
+    <cmt>五台山早期木构线 · Wutaishan · 精度:landmark</cmt>
+    <desc>id=SXA-P011 · seq=11 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:May-Oct · 五台山西南 / 冶河畔李家庄 · 风险:偏远文保需预约;非实时导航 · 来源:南禅寺大殿 782 年 唐 1961 国保 第一批 · 中国现存最早木构 · URL:https://baike.baidu.com/item/%E5%8D%97%E7%A6%85%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.8700" lon="112.5500">
+    <ele>0</ele>
+    <name>太原</name>
+    <cmt>太原晋祠府城线 · Taiyuan · 精度:city</cmt>
+    <desc>id=SXA-P012 · seq=12 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 太原武宿机场 / 太原南站 · 风险:城市驻点,无特殊风险;非实时导航 · 来源:太原 山西省会 · URL:https://baike.baidu.com/item/%E5%A4%AA%E5%8E%9F · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.7050" lon="112.4500">
+    <ele>0</ele>
+    <name>晋祠</name>
+    <cmt>太原晋祠府城线 · Taiyuan · 精度:landmark</cmt>
+    <desc>id=SXA-P013 · seq=13 · D_reconstructed_for_travel · high · 难度:easy · 最佳:Apr-Oct · 太原西南 25 公里 / G5 京昆高速 · 风险:景区拥挤;非实时导航 · 来源:晋祠 1961 国保 第一批 · 宋金元明清延续 · URL:https://baike.baidu.com/item/%E6%99%8B%E7%A5%A0 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.8680" lon="112.5600">
+    <ele>0</ele>
+    <name>山西博物院</name>
+    <cmt>太原晋祠府城线 · Taiyuan · 精度:landmark</cmt>
+    <desc>id=SXA-P014 · seq=14 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 太原市区 / 步行或公交 · 风险:需提前预约;非实时导航 · 来源:山西博物院 馆藏晋国文物 / 佛光寺东大殿模型 / 侯马盟书 · URL:https://www.shanximuseum.com/ · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.1900" lon="112.1700">
+    <ele>0</ele>
+    <name>平遥古城</name>
+    <cmt>平遥双林镇国线 · Pingyao · 精度:city</cmt>
+    <desc>id=SXA-P015 · seq=15 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 平遥古城站 / G5 京昆高速 · 风险:古城内住宿,需提前预订;非实时导航 · 来源:平遥古城 1997 列入世界文化遗产 · URL:https://baike.baidu.com/item/%E5%B9%B3%E9%81%A5%E5%8F%A4%E5%9F%8E · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.1800" lon="112.1200">
+    <ele>0</ele>
+    <name>双林寺</name>
+    <cmt>平遥双林镇国线 · Pingyao · 精度:landmark</cmt>
+    <desc>id=SXA-P016 · seq=16 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 平遥古城西南 6 公里 · 风险:彩塑国宝;非实时导航 · 来源:双林寺 彩塑 1988 国保 第三批 · URL:https://baike.baidu.com/item/%E5%8F%8C%E6%9E%97%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.2200" lon="112.1500">
+    <ele>0</ele>
+    <name>镇国寺</name>
+    <cmt>平遥双林镇国线 · Pingyao · 精度:landmark</cmt>
+    <desc>id=SXA-P017 · seq=17 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 平遥古城东北 12 公里 / 郝洞村 · 风险:五代木构;非实时导航 · 来源:镇国寺 万佛殿 963 年五代 1988 国保 第三批 · URL:https://baike.baidu.com/item/%E9%95%87%E5%9B%BD%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.0250" lon="111.9180">
+    <ele>0</ele>
+    <name>介休后土庙</name>
+    <cmt>介休灵石霍州线 · Jiexiu · 精度:landmark</cmt>
+    <desc>id=SXA-P018 · seq=18 · D_reconstructed_for_travel · medium · 难度:easy · 最佳:All year · 介休市区 / G5 京昆高速 · 风险:市区可达;非实时导航 · 来源:后土庙 明清道教庙宇 2001 国保 第五批 · 琉璃艺术 · URL:https://baike.baidu.com/item/%E5%90%8E%E5%9C%9F%E5%BA%99 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="37.0000" lon="111.9700">
+    <ele>0</ele>
+    <name>张壁古堡</name>
+    <cmt>介休灵石霍州线 · Jiexiu · 精度:landmark</cmt>
+    <desc>id=SXA-P019 · seq=19 · D_reconstructed_for_travel · medium · 难度:easy · 最佳:Apr-Oct · 介休东南 10 公里 / 绵山脚下 · 风险:需提前确认开放;非实时导航 · 来源:张壁古堡 隋唐至明清古堡 2001 国保 第五批 · URL:https://baike.baidu.com/item/%E5%BC%A0%E5%A3%81%E5%8F%A4%E5%A0%A1 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="36.5700" lon="111.7200">
+    <ele>0</ele>
+    <name>霍州署</name>
+    <cmt>介休灵石霍州线 · Huozhou · 精度:landmark</cmt>
+    <desc>id=SXA-P020 · seq=20 · D_reconstructed_for_travel · medium · 难度:easy · 最佳:All year · 霍州市区 / G108 国道 · 风险:市区可达;非实时导航 · 来源:霍州署 元代至明清州署 1996 国保 第四批 · URL:https://baike.baidu.com/item/%E9%9C%8D%E5%B7%9E%E7%BD%B2 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="36.2600" lon="111.6650">
+    <ele>0</ele>
+    <name>洪洞广胜寺</name>
+    <cmt>临汾洪洞隰县线 · Hongdong · 精度:landmark</cmt>
+    <desc>id=SXA-P021 · seq=21 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:Apr-Oct · 洪洞东北 17 公里 / 霍山南麓 · 风险:山路天气需核查;非实时导航 · 来源:广胜寺 上下寺 + 飞虹塔 1961 国保 第一批 · URL:https://baike.baidu.com/item/%E5%B9%BF%E8%83%9C%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="36.2600" lon="111.6650">
+    <ele>0</ele>
+    <name>洪洞飞虹塔</name>
+    <cmt>临汾洪洞隰县线 · Hongdong · 精度:landmark</cmt>
+    <desc>id=SXA-P022 · seq=22 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:Apr-Oct · 广胜寺上寺内 · 风险:与广胜寺同址;非实时导航 · 来源:飞虹塔 琉璃塔 1961 国保 第一批 · URL:https://baike.baidu.com/item/%E9%A3%9E%E8%99%B9%E5%A1%94 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="36.6900" lon="110.9400">
+    <ele>0</ele>
+    <name>隰县小西天</name>
+    <cmt>临汾洪洞隰县线 · Xi County · 精度:landmark</cmt>
+    <desc>id=SXA-P023 · seq=23 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:May-Oct · 隰县城北 1 公里 / S224 · 风险:山区县城,需核查开放;非实时导航 · 来源:小西天 千佛庵 明代悬塑 1988 国保 第三批 · URL:https://baike.baidu.com/item/%E5%B0%8F%E8%A5%BF%E5%A4%A9 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="35.0250" lon="110.9800">
+    <ele>0</ele>
+    <name>运城</name>
+    <cmt>运城永乐解州线 · Yuncheng · 精度:city</cmt>
+    <desc>id=SXA-P024 · seq=24 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 运城张孝机场 / 运城北站 · 风险:城市驻点;非实时导航 · 来源:运城 关公故里 盐运之城 · URL:https://baike.baidu.com/item/%E8%BF%90%E5%9F%8E · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="34.7000" lon="110.6850">
+    <ele>0</ele>
+    <name>芮城永乐宫</name>
+    <cmt>运城永乐解州线 · Ruicheng · 精度:landmark</cmt>
+    <desc>id=SXA-P025 · seq=25 · D_reconstructed_for_travel · high · 难度:easy · 最佳:Apr-Oct · 芮城北 3 公里 / 县城可达 · 风险:壁画国宝;非实时导航 · 来源:永乐宫 元代道教宫观 1961 国保 第一批 · 三清殿壁画 · URL:https://baike.baidu.com/item/%E6%B0%B8%E4%B9%90%E5%AE%AB · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="34.9100" lon="110.8700">
+    <ele>0</ele>
+    <name>解州关帝庙</name>
+    <cmt>运城永乐解州线 · Yuncheng · 精度:landmark</cmt>
+    <desc>id=SXA-P026 · seq=26 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 运城西南 20 公里 / 解州镇 · 风险:关帝祖庙;非实时导航 · 来源:解州关帝庙 1988 国保 第三批 · URL:https://baike.baidu.com/item/%E8%A7%A3%E5%B7%9E%E5%85%B3%E5%B8%9D%E5%BA%99 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="36.1950" lon="113.1050">
+    <ele>0</ele>
+    <name>长治</name>
+    <cmt>晋东南长治晋城线 · Changzhi · 精度:city</cmt>
+    <desc>id=SXA-P027 · seq=27 · D_reconstructed_for_travel · high · 难度:easy · 最佳:All year · 长治王村机场 / 长治东站 · 风险:城市驻点;非实时导航 · 来源:长治 古上党地区 · URL:https://baike.baidu.com/item/%E9%95%BF%E6%B2%BB · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="36.1100" lon="113.0800">
+    <ele>0</ele>
+    <name>长子法兴寺</name>
+    <cmt>晋东南长治晋城线 · Changzhi · 精度:landmark</cmt>
+    <desc>id=SXA-P028 · seq=28 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:May-Oct · 长治南 25 公里 / 长子县 · 风险:偏远文保需预约;非实时导航 · 来源:法兴寺 唐宋石塔 + 明代琉璃 1988 国保 第三批 · URL:https://baike.baidu.com/item/%E6%B3%95%E5%85%B4%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="35.4900" lon="112.8300">
+    <ele>0</ele>
+    <name>晋城青莲寺</name>
+    <cmt>晋东南长治晋城线 · Jincheng · 精度:landmark</cmt>
+    <desc>id=SXA-P029 · seq=29 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:Apr-Oct · 晋城东南 17 公里 / 硖石山 · 风险:山路可达;非实时导航 · 来源:青莲寺 唐宋至明清 2001 国保 第五批 · URL:https://baike.baidu.com/item/%E9%9D%92%E8%8E%B2%E5%AF%BA · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+  <wpt lat="35.4900" lon="112.8500">
+    <ele>0</ele>
+    <name>晋城府城玉皇庙</name>
+    <cmt>晋东南长治晋城线 · Jincheng · 精度:landmark</cmt>
+    <desc>id=SXA-P030 · seq=30 · D_reconstructed_for_travel · medium · 难度:medium · 最佳:Apr-Oct · 晋城东 13 公里 / 府城村 · 风险:宋金元二十八宿彩塑;非实时导航 · 来源:府城玉皇庙 宋金元 2001 国保 第五批 · 二十八宿塑像 · URL:https://baike.baidu.com/item/%E7%9C%9F%E6%AE%BF%E7%8E%89%E7%9A%87%E5%BA%99 · cultural replica · not for navigation · not original GPS</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip waypoint</type>
+  </wpt>
+
+  <trk>
+    <name>山西古建自驾概括路线</name>
+    <cmt>11-day self-driving loop · cultural roadtrip replica · not for navigation · not original GPS</cmt>
+    <desc>Generalized self-driving preview connecting 30 cultural roadtrip waypoints across 9 segments (S01-S09). Datong → Hunyuan → Wutaishan → Taiyuan → Pingyao → Jiexiu → Hongdong → Yuncheng → Changzhi/Jincheng. Cultural replica waypoints only, not for navigation, not original GPS track, not real-time road conditions. Opening status and road conditions must be checked before travel.</desc>
+    <src>行旅图谱 · culture-roadtrip-atlas</src>
+    <type>cultural roadtrip track</type>
+    <trkseg>
+      <!-- Segment S01: 大同古都与云冈线 -->
+      <trkpt lat="40.0900" lon="113.2950">
+        <ele>0</ele>
+        <name>大同</name>
+      </trkpt>
+      <trkpt lat="40.1100" lon="113.1400">
+        <ele>0</ele>
+        <name>云冈石窟</name>
+      </trkpt>
+      <trkpt lat="40.0830" lon="113.2930">
+        <ele>0</ele>
+        <name>大同华严寺</name>
+      </trkpt>
+      <trkpt lat="40.0950" lon="113.2920">
+        <ele>0</ele>
+        <name>大同善化寺</name>
+      </trkpt>
+      <!-- Segment S02: 浑源恒山应县木构线 -->
+      <trkpt lat="39.6900" lon="113.6900">
+        <ele>0</ele>
+        <name>浑源古城</name>
+      </trkpt>
+      <trkpt lat="39.6580" lon="113.7050">
+        <ele>0</ele>
+        <name>悬空寺</name>
+      </trkpt>
+      <trkpt lat="39.6750" lon="113.7250">
+        <ele>0</ele>
+        <name>北岳恒山</name>
+      </trkpt>
+      <trkpt lat="39.5580" lon="113.1900">
+        <ele>0</ele>
+        <name>应县木塔</name>
+      </trkpt>
+      <!-- Segment S03: 五台山早期木构线 -->
+      <trkpt lat="38.9750" lon="113.5800">
+        <ele>0</ele>
+        <name>五台山台怀镇</name>
+      </trkpt>
+      <trkpt lat="38.9450" lon="113.6100">
+        <ele>0</ele>
+        <name>佛光寺</name>
+      </trkpt>
+      <trkpt lat="38.9370" lon="113.4000">
+        <ele>0</ele>
+        <name>南禅寺</name>
+      </trkpt>
+      <!-- Segment S04: 太原晋祠府城线 -->
+      <trkpt lat="37.8700" lon="112.5500">
+        <ele>0</ele>
+        <name>太原</name>
+      </trkpt>
+      <trkpt lat="37.7050" lon="112.4500">
+        <ele>0</ele>
+        <name>晋祠</name>
+      </trkpt>
+      <trkpt lat="37.8680" lon="112.5600">
+        <ele>0</ele>
+        <name>山西博物院</name>
+      </trkpt>
+      <!-- Segment S05: 平遥双林镇国线 -->
+      <trkpt lat="37.1900" lon="112.1700">
+        <ele>0</ele>
+        <name>平遥古城</name>
+      </trkpt>
+      <trkpt lat="37.1800" lon="112.1200">
+        <ele>0</ele>
+        <name>双林寺</name>
+      </trkpt>
+      <trkpt lat="37.2200" lon="112.1500">
+        <ele>0</ele>
+        <name>镇国寺</name>
+      </trkpt>
+      <!-- Segment S06: 介休灵石霍州线 -->
+      <trkpt lat="37.0250" lon="111.9180">
+        <ele>0</ele>
+        <name>介休后土庙</name>
+      </trkpt>
+      <trkpt lat="37.0000" lon="111.9700">
+        <ele>0</ele>
+        <name>张壁古堡</name>
+      </trkpt>
+      <trkpt lat="36.5700" lon="111.7200">
+        <ele>0</ele>
+        <name>霍州署</name>
+      </trkpt>
+      <!-- Segment S07: 临汾洪洞隰县线 -->
+      <trkpt lat="36.2600" lon="111.6650">
+        <ele>0</ele>
+        <name>洪洞广胜寺</name>
+      </trkpt>
+      <trkpt lat="36.2600" lon="111.6650">
+        <ele>0</ele>
+        <name>洪洞飞虹塔</name>
+      </trkpt>
+      <trkpt lat="36.6900" lon="110.9400">
+        <ele>0</ele>
+        <name>隰县小西天</name>
+      </trkpt>
+      <!-- Segment S08: 运城永乐解州线 -->
+      <trkpt lat="35.0250" lon="110.9800">
+        <ele>0</ele>
+        <name>运城</name>
+      </trkpt>
+      <trkpt lat="34.7000" lon="110.6850">
+        <ele>0</ele>
+        <name>芮城永乐宫</name>
+      </trkpt>
+      <trkpt lat="34.9100" lon="110.8700">
+        <ele>0</ele>
+        <name>解州关帝庙</name>
+      </trkpt>
+      <!-- Segment S09: 晋东南长治晋城线 -->
+      <trkpt lat="36.1950" lon="113.1050">
+        <ele>0</ele>
+        <name>长治</name>
+      </trkpt>
+      <trkpt lat="36.1100" lon="113.0800">
+        <ele>0</ele>
+        <name>长子法兴寺</name>
+      </trkpt>
+      <trkpt lat="35.4900" lon="112.8300">
+        <ele>0</ele>
+        <name>晋城青莲寺</name>
+      </trkpt>
+      <trkpt lat="35.4900" lon="112.8500">
+        <ele>0</ele>
+        <name>晋城府城玉皇庙</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

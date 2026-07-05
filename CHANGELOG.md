@@ -4,6 +4,51 @@
 
 ---
 
+## v1.4.9 · Shanxi Ancient Architecture Route Data Production (2026-07-05)
+
+### 主要变更
+- **新增数据资产**：`data/routes/shanxi-ancient-architecture.csv`（30 行 · 18 字段 · 9 段）
+- **新增数据资产**：`data/routes/shanxi-ancient-architecture.geojson`（30 Point + 10 LineString = 40 features）
+- **新增数据资产**：`data/routes/shanxi-ancient-architecture.gpx`（30 waypoint + 1 track）
+- **新增静态地图**：`assets/img/routes/shanxi-ancient-architecture-map.svg`（7.6 KB · 1200×760）
+- **manifest 升级**：`shanxi-ancient-architecture` 从 planned-data 升级为 data-v0.1
+  - `points: 30` · `segments: 9` · `geojson_features: 40` · `geojson_points: 30` · `geojson_lines: 10` · `gpx_waypoints: 30` · `has_svg_preview: true`
+- **manifest page_url 修正**：`../trips/shanxi-ancient-architecture-roadtrip/`（匹配实际页面路径）
+- **山西页面新增模块**：「路线数据」轻量模块（CSV / GeoJSON / GPX 下载 + SVG 预览）
+- **routes/index.html 增强**：
+  - 山西路线数据卡片（v1.4.9 新增 · 30 个点位 · 9 段 · 2,400–2,800 公里）
+  - 总览统计更新：3 条 / 0 规划中 / 92 CSV / 123 features / 92 waypoints / 3 张 SVG
+  - 山西路线样板定位为「长线木构遗产样板」
+- **assets/js/trips-data.js**：山西 trip 卡片增加 hasRouteData 字段
+- **data/routes/README.md**：山西数据资产入表 + Phase 9 章节
+- **docs/ROUTE_DATA_SPEC.md**：增加「当前已接入路线」章节（OEDW + 辽塔 + 山西）
+- **验证**：路线工厂门禁 + verify-site.sh + GitHub Actions 全部 PASS（3 条路线）
+
+### 重要边界
+- 所有路线数据仍为**文化复刻 / 文化自驾粗点**
+- OEDW 事实边界完整保留
+- 辽塔数据未回退
+- 山西数据声明：文化自驾粗点 / 非实时导航 / 不保证开放状态、门票、预约、维修闭馆
+- 不引入地图 API / 后端 / 数据库 / 构建系统 / npm 依赖
+- 不破坏 OEDW / 辽塔 / 山西等页面
+- 不改动 Phase 2–8 事实边界
+
+### 山西 9 段分布
+- S01 大同古都与云冈线（4 点 · 大同 / 云冈石窟 / 华严寺 / 善化寺）
+- S02 浑源恒山应县木构线（4 点 · 浑源 / 悬空寺 / 恒山 / 应县木塔）
+- S03 五台山早期木构线（3 点 · 五台山 / 佛光寺 / 南禅寺）
+- S04 太原晋祠府城线（3 点 · 太原 / 晋祠 / 山西博物院）
+- S05 平遥双林镇国线（3 点 · 平遥古城 / 双林寺 / 镇国寺）
+- S06 介休灵石霍州线（3 点 · 后土庙 / 张壁古堡 / 霍州署）
+- S07 临汾洪洞隰县线（3 点 · 广胜寺飞虹塔 / 小西天）
+- S08 运城永乐解州线（3 点 · 运城 / 永乐宫 / 解州关帝庙）
+- S09 晋东南长治晋城线（4 点 · 长治 / 法兴寺 / 青莲寺 / 玉皇庙）
+
+### 文档链接
+- [docs/ROUTE_DATA_SPEC.md](./docs/ROUTE_DATA_SPEC.md)
+- [data/routes/routes-manifest.json](./data/routes/routes-manifest.json)
+- [reports/PHASE9_SHANXI_ROUTE_DATA_REPORT.md](./reports/PHASE9_SHANXI_ROUTE_DATA_REPORT.md)
+
 ## v1.4.8 · Route Factory Automation and Quality Gates (2026-07-05)
 
 ### 主要变更

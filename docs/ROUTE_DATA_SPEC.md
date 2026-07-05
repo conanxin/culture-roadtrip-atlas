@@ -316,3 +316,25 @@ Workflow 名：`Route Data Quality Gate`
 ---
 
 _辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（Phase 8）· 2026-07-05_
+
+## 12. 当前已接入路线（v1.4.9）
+
+行旅图谱 v1.4.9 已接入 3 条路线数据资产：
+
+| slug | 路线名 | 状态 | 类型 | 段数 | 点位 |
+|------|--------|------|------|------|------|
+| `out-of-eden-walk-china` | Out of Eden Walk 中国段复刻路线 | 50% | cultural_replica | 10 | 42 |
+| `liao-tower-roadtrip` | 北京出发·辽塔巡礼自驾导游手册 | data-v0.1 | cultural_roadtrip | 9 | 20 |
+| `shanxi-ancient-architecture` | 山西古建路线 | data-v0.1 | cultural_roadtrip | 9 | 30 |
+
+三种路线样板：
+
+- **OEDW**：长距离文化复刻样板（Paul Salopek 足迹 · 22 个 milestone · 6,000–6,700 公里）
+- **辽塔**：自驾人文路线样板（北京 9 天 8 晚闭环 · 契丹/辽塔）
+- **山西**：长距离木构遗产样板（11 天 10 晚 · 唐宋辽金元明清）
+
+新增路线数据时，沿用同一规范 + 同一套校验脚本 + 同一套 SVG 生成器 + 同一套索引页模板。
+
+---
+
+_辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（Phase 8）+ v1.4.9 山西接入（Phase 9）· 2026-07-05_

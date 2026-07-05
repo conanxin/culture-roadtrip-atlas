@@ -41,7 +41,12 @@ const TRIPS_DATA = [
     categories: ['古建', '自驾'],
     url: 'trips/shanxi-ancient-architecture-roadtrip/index.html',
     isFeatured: false,
-    isLive: false
+    isLive: false,
+    hasRouteData: true,
+    dataAssetSlug: 'shanxi-ancient-architecture',
+    dataAssetStatus: 'data-v0.1',
+    dataAssetPoints: 30,
+    dataAssetSegments: 9
   },
   {
     id: 'out-of-eden-walk-china',

@@ -208,6 +208,8 @@ def build_one(
     # 3) 统计
     stats = collect_route_stats(slug, data_dir, img_dir)
     return True, stats
+    # 注:失败路径已在上面提前 return False, {}
+
 
 
 def check_manifest(repo_root: Path) -> tuple[bool, list[str]]:
@@ -361,7 +363,12 @@ def main() -> int:
         if not passed:
             all_passed = False
             continue
-        # 输出统计
+        # 输出统计(必须保证 stats 含有必需字段)
+        if not stats or "points" not in stats:
+            print(f"    ✗ 统计缺失,跳过 manifest 更新")
+            new_routes.append(entry)
+            all_passed = False
+            continue
         print(
             f"    → {stats['points']} points, "
             f"{stats['geojson_features']} features, "

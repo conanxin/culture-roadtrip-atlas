@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" preserveAspectRatio="xMidYMid meet">
+  <title>山西古建路线文化自驾粗点路线 · 文化自驾静态示意图</title>
+  <desc>文化自驾 waypoints and generalized route only; not original GPS track; not for navigation; cultural replica. Not real-time road conditions; not for safety guidance. | 文化自驾粗点 + 概括路线;非原始 GPS 轨迹;非导航;不保证路况与开放状态。本数据为研究、写作与旅行规划参考;本数据为'山西古建路线'的文化自驾粗点数据;用于研究、写作、静态地图和分段旅行规划;不是实时导航路线;不保证路况、开放状态、门票、预约、维修闭馆或预约信息;坐标为城市/景区/文保单位/区域粗点。</desc>
+  <style>
+    .bg { fill: #fbf7ec; }
+    .frame { fill: none; stroke: #d4c89a; stroke-width: 1; }
+    .route-main { fill: none; stroke: #6b8e23; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
+    .route-seg { fill: none; stroke: #9caf6f; stroke-width: 1.4; stroke-dasharray: 4 3; opacity: 0.7; }
+    .point { fill: #b8860b; stroke: #fff; stroke-width: 1.2; }
+    .point-start { fill: #5d8a3a; stroke: #fff; stroke-width: 1.6; }
+    .point-end { fill: #a8423a; stroke: #fff; stroke-width: 1.6; }
+    .seg-label { fill: #2a3d1f; font: 600 11px sans-serif; }
+    .point-label { fill: #6b7c5f; font: 9px sans-serif; }
+    .start-label { fill: #5d8a3a; font: 700 12px sans-serif; }
+    .end-label { fill: #a8423a; font: 700 12px sans-serif; }
+    .title { fill: #2a3d1f; font: 700 16px sans-serif; }
+    .subtitle { fill: #6b7c5f; font: 11px sans-serif; }
+    .legend-text { fill: #2a3d1f; font: 10px sans-serif; }
+    .disclaimer { fill: #c0392b; font: italic 11px sans-serif; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+  <rect class="frame" x="0.5" y="0.5" width="1199" height="759" fill="none"/>
+  <line x1="0" y1="638.6" x2="1200" y2="638.6" stroke="#d4c89a" stroke-width="0.5" stroke-dasharray="1 4" opacity="0.4"/>
+  <line x1="0" y1="100.9" x2="1200" y2="100.9" stroke="#d4c89a" stroke-width="0.5" stroke-dasharray="1 4" opacity="0.4"/>
+  <g id="route-segments">
+    <polyline class="route-seg" points="952.0,91.2 902.0,89.1 951.4,92.0 951.1,90.7"/>
+    <polyline class="route-seg" points="1079.6,134.3 1084.4,137.7 1090.9,135.9 918.1,148.5"/>
+    <polyline class="route-seg" points="1044.1,211.2 1053.8,214.4 985.9,215.2"/>
+    <polyline class="route-seg" points="711.4,330.0 679.1,347.7 714.7,330.2"/>
+    <polyline class="route-seg" points="588.7,403.1 572.5,404.2 582.2,399.9"/>
+    <polyline class="route-seg" points="507.3,420.9 524.1,423.6 443.4,469.8"/>
+    <polyline class="route-seg" points="425.6,503.1 425.6,503.1 191.4,456.9"/>
+    <polyline class="route-seg" points="204.4,636.0 109.1,670.9 168.8,648.3"/>
+    <polyline class="route-seg" points="890.7,510.1 882.6,519.3 801.9,585.9 808.3,585.9"/>
+  </g>
+  <g id="route-main">
+    <polyline class="route-main" points="952.0,91.2 902.0,89.1 951.4,92.0 951.1,90.7 1079.6,134.3 1084.4,137.7 1090.9,135.9 918.1,148.5 1044.1,211.2 1053.8,214.4 985.9,215.2 711.4,330.0 679.1,347.7 714.7,330.2 588.7,403.1 572.5,404.2 582.2,399.9 507.3,420.9 524.1,423.6 443.4,469.8 425.6,503.1 425.6,503.1 191.4,456.9 204.4,636.0 109.1,670.9 168.8,648.3 890.7,510.1 882.6,519.3 801.9,585.9 808.3,585.9"/>
+  </g>
+  <g id="points">
+    <circle class="point-start" cx="952.0" cy="91.2" r="6"/>
+    <circle class="point" cx="902.0" cy="89.1" r="3.2"/>
+    <circle class="point" cx="951.4" cy="92.0" r="3.2"/>
+    <circle class="point" cx="951.1" cy="90.7" r="3.2"/>
+    <circle class="point" cx="1079.6" cy="134.3" r="3.2"/>
+    <circle class="point" cx="1084.4" cy="137.7" r="3.2"/>
+    <circle class="point" cx="1090.9" cy="135.9" r="3.2"/>
+    <circle class="point" cx="918.1" cy="148.5" r="3.2"/>
+    <circle class="point" cx="1044.1" cy="211.2" r="3.2"/>
+    <circle class="point" cx="1053.8" cy="214.4" r="3.2"/>
+    <circle class="point" cx="985.9" cy="215.2" r="3.2"/>
+    <circle class="point" cx="711.4" cy="330.0" r="3.2"/>
+    <circle class="point" cx="679.1" cy="347.7" r="3.2"/>
+    <circle class="point" cx="714.7" cy="330.2" r="3.2"/>
+    <circle class="point" cx="588.7" cy="403.1" r="3.2"/>
+    <circle class="point" cx="572.5" cy="404.2" r="3.2"/>
+    <circle class="point" cx="582.2" cy="399.9" r="3.2"/>
+    <circle class="point" cx="507.3" cy="420.9" r="3.2"/>
+    <circle class="point" cx="524.1" cy="423.6" r="3.2"/>
+    <circle class="point" cx="443.4" cy="469.8" r="3.2"/>
+    <circle class="point" cx="425.6" cy="503.1" r="3.2"/>
+    <circle class="point" cx="425.6" cy="503.1" r="3.2"/>
+    <circle class="point" cx="191.4" cy="456.9" r="3.2"/>
+    <circle class="point" cx="204.4" cy="636.0" r="3.2"/>
+    <circle class="point" cx="109.1" cy="670.9" r="3.2"/>
+    <circle class="point" cx="168.8" cy="648.3" r="3.2"/>
+    <circle class="point" cx="890.7" cy="510.1" r="3.2"/>
+    <circle class="point" cx="882.6" cy="519.3" r="3.2"/>
+    <circle class="point" cx="801.9" cy="585.9" r="3.2"/>
+    <circle class="point-end" cx="808.3" cy="585.9" r="6"/>
+  </g>
+  <g id="segment-labels">
+    <text class="seg-label" x="939.1" y="90.8" text-anchor="middle">S01</text>
+    <text class="seg-label" x="1043.3" y="139.1" text-anchor="middle">S02</text>
+    <text class="seg-label" x="1027.9" y="213.6" text-anchor="middle">S03</text>
+    <text class="seg-label" x="701.7" y="336.0" text-anchor="middle">S04</text>
+    <text class="seg-label" x="581.2" y="402.4" text-anchor="middle">S05</text>
+    <text class="seg-label" x="491.6" y="438.1" text-anchor="middle">S06</text>
+    <text class="seg-label" x="347.5" y="487.7" text-anchor="middle">S07</text>
+    <text class="seg-label" x="160.8" y="651.7" text-anchor="middle">S08</text>
+    <text class="seg-label" x="845.9" y="550.3" text-anchor="middle">S09</text>
+  </g>
+  <g id="endpoint-labels">
+    <text class="start-label" x="962.0" y="83.2">起点:大同</text>
+    <text class="end-label" x="818.3" y="577.9">终点:晋城府城玉皇庙</text>
+  </g>
+  <g id="header">
+    <text class="title" x="60" y="34">山西古建路线文化自驾粗点路线 · 文化自驾静态示意图</text>
+    <text class="subtitle" x="60" y="52">约 2400-2800 公里 · 11 天 10 晚 / 8 天压缩 / 14 天慢行 · 30 个粗点 · 9 段路线 · v1.4.9</text>
+  </g>
+  <g id="legend" transform="translate(60, 680)">
+    <rect class="frame" x="0" y="0" width="540" height="64" rx="4" fill="#fff" opacity="0.92"/>
+    <circle class="point-start" cx="14" cy="14" r="6"/>
+    <text class="legend-text" x="28" y="18">起点</text>
+    <circle class="point" cx="120" cy="14" r="3.2"/>
+    <text class="legend-text" x="132" y="18">文化自驾粗点(30 个)</text>
+    <circle class="point-end" cx="370" cy="14" r="6"/>
+    <text class="legend-text" x="384" y="18">终点</text>
+    <line x1="14" y1="38" x2="40" y2="38" class="route-main"/>
+    <text class="legend-text" x="50" y="42">主路线(概括连接)</text>
+    <line x1="200" y1="38" x2="240" y2="38" class="route-seg"/>
+    <text class="legend-text" x="250" y="42">分段路线(S01-S09)</text>
+    <text class="disclaimer" x="0" y="60">⚠ 文化自驾粗点 · 非原始 GPS 轨迹 / not original GPS · 非导航 / not for navigation · 不保证路况与开放状态</text>
+  </g>
+  <g id="footer">
+    <text class="legend-text" x="1140" y="740" text-anchor="end">Generated by render-route-map-svg.py · 行旅图谱 v1.4.9 · 2026-07-05</text>
+  </g>
+</svg>

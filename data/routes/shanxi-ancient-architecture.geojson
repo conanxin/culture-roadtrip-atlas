@@ -1,0 +1,1292 @@
+{
+  "type": "FeatureCollection",
+  "name": "shanxi-ancient-architecture-cultural-roadtrip",
+  "metadata": {
+    "title": "山西古建路线文化自驾粗点路线",
+    "version": "v1.4.9",
+    "route_type": "cultural_roadtrip",
+    "is_original_gps_track": false,
+    "for_navigation": false,
+    "disclaimer": "本数据为'山西古建路线'的文化自驾粗点数据;用于研究、写作、静态地图和分段旅行规划;不是实时导航路线;不保证路况、开放状态、门票、预约、维修闭馆或预约信息;坐标为城市/景区/文保单位/区域粗点。",
+    "source_scope": "行旅图谱项目内整理,结合山西古建路线页面、A 级与 B 级国保单位公开材料与自驾可达性评估。",
+    "updated_at": "2026-07-05",
+    "coordinate_systems": "WGS84",
+    "approximate_distance_km": "2400-2800",
+    "time_span": "11 天 10 晚 / 8 天压缩 / 14 天慢行",
+    "segments_count": 9,
+    "points_count": 30
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.295,
+          40.09
+        ]
+      },
+      "properties": {
+        "id": "SXA-P001",
+        "sequence": 1,
+        "segment_id": "S01",
+        "segment_name": "大同古都与云冈线",
+        "point_name": "大同",
+        "province": "Shanxi",
+        "city_or_area": "Datong",
+        "coordinate_precision": "city",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "May-Oct",
+        "transport_hint": "大同云冈机场 / 大同南站",
+        "risk_note": "文保开放时间需核查;非实时导航",
+        "source_note": "山西古建路线 S01 起点 · 北魏都城遗韵",
+        "url": "https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.14,
+          40.11
+        ]
+      },
+      "properties": {
+        "id": "SXA-P002",
+        "sequence": 2,
+        "segment_id": "S01",
+        "segment_name": "大同古都与云冈线",
+        "point_name": "云冈石窟",
+        "province": "Shanxi",
+        "city_or_area": "Datong",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "大同市区西 16 公里 / G55 二广高速",
+        "risk_note": "石窟拥挤时段需预约;非实时导航",
+        "source_note": "云冈石窟 2001 列入世界文化遗产 · 国保 第一批",
+        "url": "http://www.yungang.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.293,
+          40.083
+        ]
+      },
+      "properties": {
+        "id": "SXA-P003",
+        "sequence": 3,
+        "segment_id": "S01",
+        "segment_name": "大同古都与云冈线",
+        "point_name": "大同华严寺",
+        "province": "Shanxi",
+        "city_or_area": "Datong",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "大同古城内 / 步行可达",
+        "risk_note": "古城内景区需核查开放;非实时导航",
+        "source_note": "华严寺 辽金木构 1961 国保 第一批",
+        "url": "https://baike.baidu.com/item/%E5%A4%A7%E5%90%8C%E5%8D%8E%E4%B8%A5%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.292,
+          40.095
+        ]
+      },
+      "properties": {
+        "id": "SXA-P004",
+        "sequence": 4,
+        "segment_id": "S01",
+        "segment_name": "大同古都与云冈线",
+        "point_name": "大同善化寺",
+        "province": "Shanxi",
+        "city_or_area": "Datong",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "大同古城南部 / 步行可达",
+        "risk_note": "古城内景区需核查开放;非实时导航",
+        "source_note": "善化寺 辽金木构 1961 国保 第一批",
+        "url": "https://baike.baidu.com/item/%E5%96%84%E5%8C%96%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.69,
+          39.69
+        ]
+      },
+      "properties": {
+        "id": "SXA-P005",
+        "sequence": 5,
+        "segment_id": "S02",
+        "segment_name": "浑源恒山应县木构线",
+        "point_name": "浑源古城",
+        "province": "Shanxi",
+        "city_or_area": "Hunyuan",
+        "coordinate_precision": "city",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "大涞高速 / S303",
+        "risk_note": "县城住宿;非实时导航",
+        "source_note": "浑源 北岳恒山所在县",
+        "url": "https://baike.baidu.com/item/%E6%B5%91%E6%BA%90%E5%8E%BF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.705,
+          39.658
+        ]
+      },
+      "properties": {
+        "id": "SXA-P006",
+        "sequence": 6,
+        "segment_id": "S02",
+        "segment_name": "浑源恒山应县木构线",
+        "point_name": "悬空寺",
+        "province": "Shanxi",
+        "city_or_area": "Hunyuan",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "浑源东南 5 公里 / S303",
+        "risk_note": "景区拥挤;非实时导航",
+        "source_note": "悬空寺 北魏 1982 国保 第二批",
+        "url": "https://baike.baidu.com/item/%E6%82%AC%E7%A9%BA%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.725,
+          39.675
+        ]
+      },
+      "properties": {
+        "id": "SXA-P007",
+        "sequence": 7,
+        "segment_id": "S02",
+        "segment_name": "浑源恒山应县木构线",
+        "point_name": "北岳恒山",
+        "province": "Shanxi",
+        "city_or_area": "Hunyuan",
+        "coordinate_precision": "region",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "high",
+        "best_season": "May-Oct",
+        "transport_hint": "浑源县城东南 / 索道可达",
+        "risk_note": "山路天气需核查;非实时导航",
+        "source_note": "恒山 五岳北岳 国家级",
+        "url": "https://baike.baidu.com/item/%E6%81%92%E5%B1%B1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.19,
+          39.558
+        ]
+      },
+      "properties": {
+        "id": "SXA-P008",
+        "sequence": 8,
+        "segment_id": "S02",
+        "segment_name": "浑源恒山应县木构线",
+        "point_name": "应县木塔",
+        "province": "Shanxi",
+        "city_or_area": "Yingxian",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "应县县城 / G208 国道",
+        "risk_note": "木塔近年限流;非实时导航",
+        "source_note": "佛宫寺释迦塔 辽代 1961 国保 第一批 · 全世界最高木塔",
+        "url": "https://baike.baidu.com/item/%E5%BA%94%E5%8E%BF%E6%9C%A8%E5%A1%94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.58,
+          38.975
+        ]
+      },
+      "properties": {
+        "id": "SXA-P009",
+        "sequence": 9,
+        "segment_id": "S03",
+        "segment_name": "五台山早期木构线",
+        "point_name": "五台山台怀镇",
+        "province": "Shanxi",
+        "city_or_area": "Wutaishan",
+        "coordinate_precision": "region",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "五台山机场 / G5 京昆高速 / 砂河至台怀",
+        "risk_note": "高山气候多变;非实时导航",
+        "source_note": "五台山 文殊道场 2009 列入世界文化遗产",
+        "url": "https://baike.baidu.com/item/%E4%BA%94%E5%8F%B0%E5%B1%B1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.61,
+          38.945
+        ]
+      },
+      "properties": {
+        "id": "SXA-P010",
+        "sequence": 10,
+        "segment_id": "S03",
+        "segment_name": "五台山早期木构线",
+        "point_name": "佛光寺",
+        "province": "Shanxi",
+        "city_or_area": "Wutaishan",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "五台山东北 / 豆村",
+        "risk_note": "偏远文保需预约;非实时导航",
+        "source_note": "佛光寺 东大殿 857 年 唐 1961 国保 第一批 · 梁思成 1937 发现",
+        "url": "https://baike.baidu.com/item/%E4%BD%9B%E5%85%89%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.4,
+          38.937
+        ]
+      },
+      "properties": {
+        "id": "SXA-P011",
+        "sequence": 11,
+        "segment_id": "S03",
+        "segment_name": "五台山早期木构线",
+        "point_name": "南禅寺",
+        "province": "Shanxi",
+        "city_or_area": "Wutaishan",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "五台山西南 / 冶河畔李家庄",
+        "risk_note": "偏远文保需预约;非实时导航",
+        "source_note": "南禅寺大殿 782 年 唐 1961 国保 第一批 · 中国现存最早木构",
+        "url": "https://baike.baidu.com/item/%E5%8D%97%E7%A6%85%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.55,
+          37.87
+        ]
+      },
+      "properties": {
+        "id": "SXA-P012",
+        "sequence": 12,
+        "segment_id": "S04",
+        "segment_name": "太原晋祠府城线",
+        "point_name": "太原",
+        "province": "Shanxi",
+        "city_or_area": "Taiyuan",
+        "coordinate_precision": "city",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "太原武宿机场 / 太原南站",
+        "risk_note": "城市驻点,无特殊风险;非实时导航",
+        "source_note": "太原 山西省会",
+        "url": "https://baike.baidu.com/item/%E5%A4%AA%E5%8E%9F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.45,
+          37.705
+        ]
+      },
+      "properties": {
+        "id": "SXA-P013",
+        "sequence": 13,
+        "segment_id": "S04",
+        "segment_name": "太原晋祠府城线",
+        "point_name": "晋祠",
+        "province": "Shanxi",
+        "city_or_area": "Taiyuan",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "太原西南 25 公里 / G5 京昆高速",
+        "risk_note": "景区拥挤;非实时导航",
+        "source_note": "晋祠 1961 国保 第一批 · 宋金元明清延续",
+        "url": "https://baike.baidu.com/item/%E6%99%8B%E7%A5%A0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.56,
+          37.868
+        ]
+      },
+      "properties": {
+        "id": "SXA-P014",
+        "sequence": 14,
+        "segment_id": "S04",
+        "segment_name": "太原晋祠府城线",
+        "point_name": "山西博物院",
+        "province": "Shanxi",
+        "city_or_area": "Taiyuan",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "太原市区 / 步行或公交",
+        "risk_note": "需提前预约;非实时导航",
+        "source_note": "山西博物院 馆藏晋国文物 / 佛光寺东大殿模型 / 侯马盟书",
+        "url": "https://www.shanximuseum.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.17,
+          37.19
+        ]
+      },
+      "properties": {
+        "id": "SXA-P015",
+        "sequence": 15,
+        "segment_id": "S05",
+        "segment_name": "平遥双林镇国线",
+        "point_name": "平遥古城",
+        "province": "Shanxi",
+        "city_or_area": "Pingyao",
+        "coordinate_precision": "city",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "平遥古城站 / G5 京昆高速",
+        "risk_note": "古城内住宿,需提前预订;非实时导航",
+        "source_note": "平遥古城 1997 列入世界文化遗产",
+        "url": "https://baike.baidu.com/item/%E5%B9%B3%E9%81%A5%E5%8F%A4%E5%9F%8E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.12,
+          37.18
+        ]
+      },
+      "properties": {
+        "id": "SXA-P016",
+        "sequence": 16,
+        "segment_id": "S05",
+        "segment_name": "平遥双林镇国线",
+        "point_name": "双林寺",
+        "province": "Shanxi",
+        "city_or_area": "Pingyao",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "平遥古城西南 6 公里",
+        "risk_note": "彩塑国宝;非实时导航",
+        "source_note": "双林寺 彩塑 1988 国保 第三批",
+        "url": "https://baike.baidu.com/item/%E5%8F%8C%E6%9E%97%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.15,
+          37.22
+        ]
+      },
+      "properties": {
+        "id": "SXA-P017",
+        "sequence": 17,
+        "segment_id": "S05",
+        "segment_name": "平遥双林镇国线",
+        "point_name": "镇国寺",
+        "province": "Shanxi",
+        "city_or_area": "Pingyao",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "平遥古城东北 12 公里 / 郝洞村",
+        "risk_note": "五代木构;非实时导航",
+        "source_note": "镇国寺 万佛殿 963 年五代 1988 国保 第三批",
+        "url": "https://baike.baidu.com/item/%E9%95%87%E5%9B%BD%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.918,
+          37.025
+        ]
+      },
+      "properties": {
+        "id": "SXA-P018",
+        "sequence": 18,
+        "segment_id": "S06",
+        "segment_name": "介休灵石霍州线",
+        "point_name": "介休后土庙",
+        "province": "Shanxi",
+        "city_or_area": "Jiexiu",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "介休市区 / G5 京昆高速",
+        "risk_note": "市区可达;非实时导航",
+        "source_note": "后土庙 明清道教庙宇 2001 国保 第五批 · 琉璃艺术",
+        "url": "https://baike.baidu.com/item/%E5%90%8E%E5%9C%9F%E5%BA%99"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.97,
+          37.0
+        ]
+      },
+      "properties": {
+        "id": "SXA-P019",
+        "sequence": 19,
+        "segment_id": "S06",
+        "segment_name": "介休灵石霍州线",
+        "point_name": "张壁古堡",
+        "province": "Shanxi",
+        "city_or_area": "Jiexiu",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "介休东南 10 公里 / 绵山脚下",
+        "risk_note": "需提前确认开放;非实时导航",
+        "source_note": "张壁古堡 隋唐至明清古堡 2001 国保 第五批",
+        "url": "https://baike.baidu.com/item/%E5%BC%A0%E5%A3%81%E5%8F%A4%E5%A0%A1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.72,
+          36.57
+        ]
+      },
+      "properties": {
+        "id": "SXA-P020",
+        "sequence": 20,
+        "segment_id": "S06",
+        "segment_name": "介休灵石霍州线",
+        "point_name": "霍州署",
+        "province": "Shanxi",
+        "city_or_area": "Huozhou",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "霍州市区 / G108 国道",
+        "risk_note": "市区可达;非实时导航",
+        "source_note": "霍州署 元代至明清州署 1996 国保 第四批",
+        "url": "https://baike.baidu.com/item/%E9%9C%8D%E5%B7%9E%E7%BD%B2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.665,
+          36.26
+        ]
+      },
+      "properties": {
+        "id": "SXA-P021",
+        "sequence": 21,
+        "segment_id": "S07",
+        "segment_name": "临汾洪洞隰县线",
+        "point_name": "洪洞广胜寺",
+        "province": "Shanxi",
+        "city_or_area": "Hongdong",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "洪洞东北 17 公里 / 霍山南麓",
+        "risk_note": "山路天气需核查;非实时导航",
+        "source_note": "广胜寺 上下寺 + 飞虹塔 1961 国保 第一批",
+        "url": "https://baike.baidu.com/item/%E5%B9%BF%E8%83%9C%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.665,
+          36.26
+        ]
+      },
+      "properties": {
+        "id": "SXA-P022",
+        "sequence": 22,
+        "segment_id": "S07",
+        "segment_name": "临汾洪洞隰县线",
+        "point_name": "洪洞飞虹塔",
+        "province": "Shanxi",
+        "city_or_area": "Hongdong",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "广胜寺上寺内",
+        "risk_note": "与广胜寺同址;非实时导航",
+        "source_note": "飞虹塔 琉璃塔 1961 国保 第一批",
+        "url": "https://baike.baidu.com/item/%E9%A3%9E%E8%99%B9%E5%A1%94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.94,
+          36.69
+        ]
+      },
+      "properties": {
+        "id": "SXA-P023",
+        "sequence": 23,
+        "segment_id": "S07",
+        "segment_name": "临汾洪洞隰县线",
+        "point_name": "隰县小西天",
+        "province": "Shanxi",
+        "city_or_area": "Xi County",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "隰县城北 1 公里 / S224",
+        "risk_note": "山区县城,需核查开放;非实时导航",
+        "source_note": "小西天 千佛庵 明代悬塑 1988 国保 第三批",
+        "url": "https://baike.baidu.com/item/%E5%B0%8F%E8%A5%BF%E5%A4%A9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.98,
+          35.025
+        ]
+      },
+      "properties": {
+        "id": "SXA-P024",
+        "sequence": 24,
+        "segment_id": "S08",
+        "segment_name": "运城永乐解州线",
+        "point_name": "运城",
+        "province": "Shanxi",
+        "city_or_area": "Yuncheng",
+        "coordinate_precision": "city",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "运城张孝机场 / 运城北站",
+        "risk_note": "城市驻点;非实时导航",
+        "source_note": "运城 关公故里 盐运之城",
+        "url": "https://baike.baidu.com/item/%E8%BF%90%E5%9F%8E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.685,
+          34.7
+        ]
+      },
+      "properties": {
+        "id": "SXA-P025",
+        "sequence": 25,
+        "segment_id": "S08",
+        "segment_name": "运城永乐解州线",
+        "point_name": "芮城永乐宫",
+        "province": "Shanxi",
+        "city_or_area": "Ruicheng",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "Apr-Oct",
+        "transport_hint": "芮城北 3 公里 / 县城可达",
+        "risk_note": "壁画国宝;非实时导航",
+        "source_note": "永乐宫 元代道教宫观 1961 国保 第一批 · 三清殿壁画",
+        "url": "https://baike.baidu.com/item/%E6%B0%B8%E4%B9%90%E5%AE%AB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.87,
+          34.91
+        ]
+      },
+      "properties": {
+        "id": "SXA-P026",
+        "sequence": 26,
+        "segment_id": "S08",
+        "segment_name": "运城永乐解州线",
+        "point_name": "解州关帝庙",
+        "province": "Shanxi",
+        "city_or_area": "Yuncheng",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "运城西南 20 公里 / 解州镇",
+        "risk_note": "关帝祖庙;非实时导航",
+        "source_note": "解州关帝庙 1988 国保 第三批",
+        "url": "https://baike.baidu.com/item/%E8%A7%A3%E5%B7%9E%E5%85%B3%E5%B8%9D%E5%BA%99"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.105,
+          36.195
+        ]
+      },
+      "properties": {
+        "id": "SXA-P027",
+        "sequence": 27,
+        "segment_id": "S09",
+        "segment_name": "晋东南长治晋城线",
+        "point_name": "长治",
+        "province": "Shanxi",
+        "city_or_area": "Changzhi",
+        "coordinate_precision": "city",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "high",
+        "difficulty": "low",
+        "best_season": "All year",
+        "transport_hint": "长治王村机场 / 长治东站",
+        "risk_note": "城市驻点;非实时导航",
+        "source_note": "长治 古上党地区",
+        "url": "https://baike.baidu.com/item/%E9%95%BF%E6%B2%BB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.08,
+          36.11
+        ]
+      },
+      "properties": {
+        "id": "SXA-P028",
+        "sequence": 28,
+        "segment_id": "S09",
+        "segment_name": "晋东南长治晋城线",
+        "point_name": "长子法兴寺",
+        "province": "Shanxi",
+        "city_or_area": "Changzhi",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "May-Oct",
+        "transport_hint": "长治南 25 公里 / 长子县",
+        "risk_note": "偏远文保需预约;非实时导航",
+        "source_note": "法兴寺 唐宋石塔 + 明代琉璃 1988 国保 第三批",
+        "url": "https://baike.baidu.com/item/%E6%B3%95%E5%85%B4%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.83,
+          35.49
+        ]
+      },
+      "properties": {
+        "id": "SXA-P029",
+        "sequence": 29,
+        "segment_id": "S09",
+        "segment_name": "晋东南长治晋城线",
+        "point_name": "晋城青莲寺",
+        "province": "Shanxi",
+        "city_or_area": "Jincheng",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "晋城东南 17 公里 / 硖石山",
+        "risk_note": "山路可达;非实时导航",
+        "source_note": "青莲寺 唐宋至明清 2001 国保 第五批",
+        "url": "https://baike.baidu.com/item/%E9%9D%92%E8%8E%B2%E5%AF%BA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.85,
+          35.49
+        ]
+      },
+      "properties": {
+        "id": "SXA-P030",
+        "sequence": 30,
+        "segment_id": "S09",
+        "segment_name": "晋东南长治晋城线",
+        "point_name": "晋城府城玉皇庙",
+        "province": "Shanxi",
+        "city_or_area": "Jincheng",
+        "coordinate_precision": "landmark",
+        "source_level": "D_reconstructed_for_travel",
+        "replication_feasibility": "medium",
+        "difficulty": "medium",
+        "best_season": "Apr-Oct",
+        "transport_hint": "晋城东 13 公里 / 府城村",
+        "risk_note": "宋金元二十八宿彩塑;非实时导航",
+        "source_note": "府城玉皇庙 宋金元 2001 国保 第五批 · 二十八宿塑像",
+        "url": "https://baike.baidu.com/item/%E7%9C%9F%E6%AE%BF%E7%8E%89%E7%9A%87%E5%BA%99"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.295,
+            40.09
+          ],
+          [
+            113.14,
+            40.11
+          ],
+          [
+            113.293,
+            40.083
+          ],
+          [
+            113.292,
+            40.095
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S01",
+        "segment_name": "大同古都与云冈线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S01 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "大同古都与云冈线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.69,
+            39.69
+          ],
+          [
+            113.705,
+            39.658
+          ],
+          [
+            113.725,
+            39.675
+          ],
+          [
+            113.19,
+            39.558
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S02",
+        "segment_name": "浑源恒山应县木构线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S02 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "浑源恒山应县木构线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.58,
+            38.975
+          ],
+          [
+            113.61,
+            38.945
+          ],
+          [
+            113.4,
+            38.937
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S03",
+        "segment_name": "五台山早期木构线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S03 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "五台山早期木构线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.55,
+            37.87
+          ],
+          [
+            112.45,
+            37.705
+          ],
+          [
+            112.56,
+            37.868
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S04",
+        "segment_name": "太原晋祠府城线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S04 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "太原晋祠府城线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.17,
+            37.19
+          ],
+          [
+            112.12,
+            37.18
+          ],
+          [
+            112.15,
+            37.22
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S05",
+        "segment_name": "平遥双林镇国线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S05 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "平遥双林镇国线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            111.918,
+            37.025
+          ],
+          [
+            111.97,
+            37.0
+          ],
+          [
+            111.72,
+            36.57
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S06",
+        "segment_name": "介休灵石霍州线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S06 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "介休灵石霍州线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            111.665,
+            36.26
+          ],
+          [
+            111.665,
+            36.26
+          ],
+          [
+            110.94,
+            36.69
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S07",
+        "segment_name": "临汾洪洞隰县线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S07 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "临汾洪洞隰县线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            110.98,
+            35.025
+          ],
+          [
+            110.685,
+            34.7
+          ],
+          [
+            110.87,
+            34.91
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S08",
+        "segment_name": "运城永乐解州线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S08 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "运城永乐解州线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.105,
+            36.195
+          ],
+          [
+            113.08,
+            36.11
+          ],
+          [
+            112.83,
+            35.49
+          ],
+          [
+            112.85,
+            35.49
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "segment_generalized_line",
+        "segment_id": "S09",
+        "segment_name": "晋东南长治晋城线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Segment S09 generalized line only. Not for navigation. Not an original GPS track. Cultural roadtrip replica.",
+        "disclaimer": "晋东南长治晋城线 段概括路线;文化自驾粗点;非原始轨迹;非导航;不保证开放状态。",
+        "points_count": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.295,
+            40.09
+          ],
+          [
+            113.14,
+            40.11
+          ],
+          [
+            113.293,
+            40.083
+          ],
+          [
+            113.292,
+            40.095
+          ],
+          [
+            113.69,
+            39.69
+          ],
+          [
+            113.705,
+            39.658
+          ],
+          [
+            113.725,
+            39.675
+          ],
+          [
+            113.19,
+            39.558
+          ],
+          [
+            113.58,
+            38.975
+          ],
+          [
+            113.61,
+            38.945
+          ],
+          [
+            113.4,
+            38.937
+          ],
+          [
+            112.55,
+            37.87
+          ],
+          [
+            112.45,
+            37.705
+          ],
+          [
+            112.56,
+            37.868
+          ],
+          [
+            112.17,
+            37.19
+          ],
+          [
+            112.12,
+            37.18
+          ],
+          [
+            112.15,
+            37.22
+          ],
+          [
+            111.918,
+            37.025
+          ],
+          [
+            111.97,
+            37.0
+          ],
+          [
+            111.72,
+            36.57
+          ],
+          [
+            111.665,
+            36.26
+          ],
+          [
+            111.665,
+            36.26
+          ],
+          [
+            110.94,
+            36.69
+          ],
+          [
+            110.98,
+            35.025
+          ],
+          [
+            110.685,
+            34.7
+          ],
+          [
+            110.87,
+            34.91
+          ],
+          [
+            113.105,
+            36.195
+          ],
+          [
+            113.08,
+            36.11
+          ],
+          [
+            112.83,
+            35.49
+          ],
+          [
+            112.85,
+            35.49
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "generalized_route_line",
+        "name": "山西古建路线文化自驾概括路线",
+        "is_original_gps_track": false,
+        "for_navigation": false,
+        "coordinate_precision": "approximate",
+        "warning": "Generalized cultural roadtrip line only. Not for navigation. Not an original GPS track. Cultural replica waypoints for self-driving planning only.",
+        "disclaimer": "本 LineString 为山西古建路线概括连接;非原始 GPS 轨迹;非导航;不保证路况、开放状态、门票、预约、维修闭馆信息。",
+        "segments_count": 9,
+        "points_count": 30,
+        "route_type": "cultural_roadtrip"
+      }
+    }
+  ]
+}

@@ -20,22 +20,47 @@
 
 ## 当前版本
 
-**v1.4.8 · Route factory automation and quality gates**（2026-07-05）
+**v1.4.9 · Shanxi ancient architecture route data production**（2026-07-05）
 
-行旅图谱现在具备路线内容页面、路线数据资产、静态 SVG 预览、路线 manifest、自动校验脚本、路线工厂构建脚本和 GitHub Actions 质量门禁。
+路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。
 
-v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
 
-v1.4.8 在 v1.4.7 基础上：
+v1.4.9 在 v1.4.8 基础上：
 
-- 新增 `scripts/build-route-assets.py` 路线工厂入口
-- 增强 `validate-route-data.py` · `--json` · `--manifest-check`
-- 增强 `render-route-map-svg.py` · `--check` 模式
-- 新增 `scripts/check-routes-index-sync.py` 减少 manifest/index 漂移
-- 增强 `verify-site.sh` 接入路线数据门禁
-- 新增 `.github/workflows/route-data.yml` Route Data Quality Gate
-- 山西古建路线 manifest 增加 `planned-data` 条目
+- `shanxi-ancient-architecture` 从 planned-data 升级为 data-v0.1
+- 新增山西古建路线 CSV / GeoJSON / GPX / SVG（30 粗点、9 段、11 天 10 晚）
+- 路线工厂一次完成校验 + SVG + manifest 同步
+- 山西页面增加「路线数据」轻量模块
+- 验证 Phase 8 全部门禁通过 3 条路线
 
+
+
+## 山西古建路线数据（v1.4.9）
+
+```bash
+# 三条路线统一路线工厂命令
+python3 scripts/build-route-assets.py --all
+
+# 校验
+python3 scripts/validate-route-data.py shanxi-ancient-architecture
+python3 scripts/validate-route-data.py --all --manifest-check
+python3 scripts/render-route-map-svg.py --all --check
+python3 scripts/check-routes-index-sync.py
+./verify-site.sh
+```
+
+山西古建路线是 v1.4.9 投入的第三条真实数据路线：
+- CSV 30 行 / 18 字段 / 9 段 S01-S09
+- GeoJSON 30 Point + 10 LineString = 40 features
+- GPX 30 waypoint + 1 track
+- SVG 7.6 KB / 1200×760
+- 类型：cultural_roadtrip / D_reconstructed_for_travel
+- 9 段分布：S01 大同云冈 / S02 浑源恒山应县 / S03 五台山早期木构 / S04 太原晋祠 / S05 平遥双林镇国 / S06 介休灵石霍州 / S07 临汾洪洞隰县 / S08 运城永乐解州 / S09 晋东南长治晋城
+
+---
+
+---
 
 ## 路线工厂与质量门禁（v1.4.8）
 

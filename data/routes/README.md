@@ -28,9 +28,9 @@
 |------|------|------|------|
 | `out-of-eden-walk-china` | CSV / GeoJSON / GPX | 表格分析 + 静态地图 + 粗略 waypoint | 7 / 14 / 12 KB |
 | `liao-tower-roadtrip` | CSV / GeoJSON / GPX | 表格分析 + 静态地图 + 粗略 waypoint | 4.7 / 10 / 8 KB |
+| `shanxi-ancient-architecture` | CSV / GeoJSON / GPX | 表格分析 + 静态地图 + 粗略 waypoint | 7 / 14 / 12 KB |
 
 未来规划：
-- `shanxi-ancient-architecture-roadtrip.csv/geojson/gpx` （v1.5.0 规划中）
 - `beijing-periphery-roadtrip.csv/geojson/gpx` （v1.5.0 规划中）
 
 ---
@@ -259,12 +259,15 @@ python3 scripts/render-route-map-svg.py
 
 ---
 
-## 十、当前数据资产表（v1.4.7）
+## 十、当前数据资产表（v1.4.9）
 
 | slug | route | status | csv | geojson | gpx | svg |
 |------|-------|--------|-----|---------|-----|-----|
 | `out-of-eden-walk-china` | Out of Eden Walk 中国段 | 50% | ✅ | ✅ | ✅ | ✅ |
 | `liao-tower-roadtrip` | 北京出发·辽塔巡礼 | data-v0.1 | ✅ | ✅ | ✅ | ✅ |
+| `shanxi-ancient-architecture` | 山西古建路线 | data-v0.1 | ✅ | ✅ | ✅ | ✅ |
+
+山西古建路线是第三条路线数据资产，用于验证 Phase 8 路线工厂的多路线扩展能力。
 
 ---
 
@@ -389,4 +392,28 @@ python3 scripts/render-route-map-svg.py liao-tower-roadtrip
 - 表格字段：序号 / 段落 / 点位 / 省份 / 地区 / 精度 / 难度 / 可复刻性 / 风险提示
 - 失败 fallback 显示下载链接
 - 无依赖、纯 Vanilla JS
+
+
+## Phase 9 · 山西古建路线数据生产（v1.4.9 · 2026-07-05）
+
+### 本阶段变更
+
+- `shanxi-ancient-architecture` 从 planned-data 升级为 data-v0.1
+- 新增山西古建路线 CSV / GeoJSON / GPX / SVG（30 个粗点、9 段路线、11 天 10 晚）
+- 通过 build-route-assets.py 路线工厂一次完成校验 + SVG 生成 + manifest 同步
+- 通过 Phase 8 全部门禁
+
+### 数据资产
+
+| slug | 状态 | CSV | GeoJSON | GPX | SVG |
+|------|------|-----|---------|-----|-----|
+| out-of-eden-walk-china | 50% | 42 行 | 53 features | 42 waypoints | ✅ |
+| liao-tower-roadtrip | data-v0.1 | 20 行 | 30 features | 20 waypoints | ✅ |
+| shanxi-ancient-architecture | data-v0.1 | 30 行 | 40 features | 30 waypoints | ✅ |
+
+### 路线样板定位
+
+- **OEDW**：长距离文化复刻样板（Paul Salopek 足迹）
+- **辽塔**：自驾人文路线样板（契丹/辽塔）
+- **山西**：长距离木构遗产样板（唐宋辽金元明清）
 
