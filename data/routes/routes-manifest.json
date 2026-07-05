@@ -1,5 +1,5 @@
 {
-  "version": "v1.4.7",
+  "version": "v1.4.8",
   "updated_at": "2026-07-05",
   "description": "Culture Roadtrip Atlas route data registry. All route data are cultural replica rough points, not real-time navigation data. Each entry is a static, reusable data asset for research, writing, and trip planning.",
   "routes": [
@@ -23,7 +23,9 @@
       "geojson_url": "../data/routes/out-of-eden-walk-china.geojson",
       "gpx_url": "../data/routes/out-of-eden-walk-china.gpx",
       "svg_url": "../assets/img/routes/out-of-eden-walk-china-map.svg",
-      "route_template": "Long-distance cultural replica (Paul Salopek footprints)"
+      "route_template": "Long-distance cultural replica (Paul Salopek footprints)",
+      "geojson_points": 42,
+      "geojson_lines": 11
     },
     {
       "slug": "liao-tower-roadtrip",
@@ -45,7 +47,33 @@
       "geojson_url": "../data/routes/liao-tower-roadtrip.geojson",
       "gpx_url": "../data/routes/liao-tower-roadtrip.gpx",
       "svg_url": "../assets/img/routes/liao-tower-roadtrip-map.svg",
-      "route_template": "Self-driving cultural heritage route"
+      "route_template": "Self-driving cultural heritage route",
+      "geojson_points": 20,
+      "geojson_lines": 10
+    },
+    {
+      "slug": "shanxi-ancient-architecture",
+      "title": "山西古建路线",
+      "status": "planned-data",
+      "route_type": "cultural_roadtrip",
+      "segments": 0,
+      "points": 0,
+      "geojson_features": 0,
+      "geojson_points": 0,
+      "geojson_lines": 0,
+      "gpx_waypoints": 0,
+      "has_svg_preview": false,
+      "is_original_gps_track": false,
+      "for_navigation": false,
+      "approximate_distance_km": null,
+      "time_span": "11 天 10 晚 / 8 天压缩 / 14 天慢行",
+      "data_version": null,
+      "page_url": "../trips/shanxi-ancient-architecture/",
+      "csv_url": null,
+      "geojson_url": null,
+      "gpx_url": null,
+      "svg_url": null,
+      "route_template": "Long-distance cultural roadtrip (Tang/Song/Liao/Jin wood structures)"
     }
   ]
 }

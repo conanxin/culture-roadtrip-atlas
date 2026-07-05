@@ -4,6 +4,47 @@
 
 ---
 
+## v1.4.8 · Route Factory Automation and Quality Gates (2026-07-05)
+
+### 主要变更
+- **新增脚本**：`scripts/build-route-assets.py`（路线工厂入口 · 校验 + SVG + manifest 同步）
+- **新增脚本**：`scripts/check-routes-index-sync.py`（manifest / index.html 漂移检查）
+- **新增 workflow**：`.github/workflows/route-data.yml`（Route Data Quality Gate · CI 自动验证）
+- **增强 `validate-route-data.py`**：v1.2 · 支持 `--json` 输出 + `--manifest-check` 模式
+- **增强 `render-route-map-svg.py`**：v1.2 · 支持 `--check` 模式（只校验不生成）
+- **增强 `verify-site.sh`**：增加 9 项 Route data gates（70 → 79 项）
+- **manifest 增强**：
+  - 增加 `geojson_points` / `geojson_lines` 统计字段
+  - 增加山西古建路线 `planned-data` 条目
+- **routes/index.html 增强**：
+  - 资产总览显示 3 条路线（2 已有 + 1 规划中）
+  - 新增「质量门禁」模块
+  - 新增「路线工厂流程」模块
+  - 山西古建显示为 planned-data 卡片
+- **docs/ROUTE_DATA_SPEC.md 增强**：新增 §11 路线工厂脚本说明
+- **新增命令**：
+  - `python3 scripts/build-route-assets.py --all`
+  - `python3 scripts/build-route-assets.py --check`
+  - `python3 scripts/validate-route-data.py --all --json`
+  - `python3 scripts/validate-route-data.py --all --manifest-check`
+  - `python3 scripts/render-route-map-svg.py --all --check`
+  - `python3 scripts/check-routes-index-sync.py`
+
+### 重要边界
+- 所有路线数据仍为**文化复刻 / 文化自驾粗点**
+- OEDW 事实边界完整保留（22/22 / 6,000–6,700 / 两年多 / 黄海三层 / 文化复刻粗点）
+- 辽塔数据未回退
+- planned-data 路线不创建空数据文件
+- 不引入地图 API / 后端 / 数据库 / 构建系统 / npm 依赖
+- 不破坏 OEDW / 辽塔 / 山西等页面
+- 不改动 Phase 2–7 事实边界
+
+### 文档链接
+- [docs/ROUTE_DATA_SPEC.md](./docs/ROUTE_DATA_SPEC.md)
+- [docs/ROUTE_PAGE_TEMPLATE.md](./docs/ROUTE_PAGE_TEMPLATE.md)
+- [data/routes/routes-manifest.json](./data/routes/routes-manifest.json)
+- [reports/PHASE8_ROUTE_FACTORY_QUALITY_GATES_REPORT.md](./reports/PHASE8_ROUTE_FACTORY_QUALITY_GATES_REPORT.md)
+
 ## v1.4.7 · Route data templates and multi-route reuse (2026-07-05)
 
 ### 主要变更

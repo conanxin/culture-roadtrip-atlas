@@ -22,6 +22,7 @@ Usage:
     * 必须包含 "not for navigation"、"cultural replica"、"not original GPS track"
 
 历史:
+    v1.2 · 2026-07-05 · Phase 8 · --check 不生成 / 跳过 planned-data
     v1.1 · 2026-07-05 · Phase 7 · --all / 通用化标题与图例 / 短路线防重叠
     v1.0 · 2026-07-04 · Phase 6 · OEDW 静态 SVG 首版
 """
@@ -439,6 +440,37 @@ def render_one(slug: str, data_dir: Path, output_dir: Path, width: int, height: 
     }
 
 
+def check_svg(slug: str, output_dir: Path) -> tuple[bool, dict]:
+    """只检查 SVG 文件是否存在 + 包含必要声明,不重新生成。"""
+    output_path = output_dir / f"{slug}-map.svg"
+    fail_reasons: list[str] = []
+    info: dict = {"slug": slug, "size": 0, "fail_reasons": fail_reasons}
+
+    if not output_path.exists():
+        fail_reasons.append(f"SVG 文件不存在: {output_path}")
+        return False, info
+
+    size = output_path.stat().st_size
+    if size == 0:
+        fail_reasons.append(f"SVG 文件为空: {output_path}")
+        return False, info
+    info["size"] = size
+
+    svg_text = output_path.read_text(encoding="utf-8").lower()
+    required = _required_phrases("cultural_replica")
+    missing = [p for p in required if p not in svg_text]
+    for p in required:
+        present = p in svg_text
+        print(f"    {'✓' if present else '✗'} contains: {p!r}")
+    if missing:
+        for p in missing:
+            fail_reasons.append(f"SVG 缺少必要声明: {p!r}")
+        return False, info
+
+    print(f"  OK: {slug} · {output_path.name} · {size} bytes")
+    return True, info
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="行旅图谱 · 路线静态 SVG 生成脚本",
@@ -453,6 +485,7 @@ def main() -> int:
     )
     parser.add_argument("slug", nargs="?", default=None, help="路线 slug(默认: out-of-eden-walk-china)")
     parser.add_argument("--all", action="store_true", help="遍历 manifest 所有 route slug 批量生成")
+    parser.add_argument("--check", action="store_true", help="只检查 SVG 是否存在且包含必要声明,不重新生成")
     parser.add_argument("--data-dir", default="data/routes", help="GeoJSON 目录")
     parser.add_argument("--output-dir", default="assets/img/routes", help="SVG 输出目录")
     parser.add_argument("--manifest", default="data/routes/routes-manifest.json", help="manifest 路径")
@@ -462,6 +495,62 @@ def main() -> int:
 
     data_dir = Path(args.data_dir)
     output_dir = Path(args.output_dir)
+
+    # --check 模式:只校验 SVG
+    if args.check:
+        if args.all:
+            manifest_path = Path(args.manifest)
+            if not manifest_path.exists():
+                print(f"FAIL: manifest 不存在: {manifest_path}")
+                return 1
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            routes = manifest.get("routes", [])
+            if not routes:
+                print("FAIL: manifest 中没有 routes")
+                return 1
+            print(f"行旅图谱 · 路线 SVG 检查 (--all --check)")
+            print(f"manifest: {manifest_path}")
+            print(f"routes: {len(routes)}")
+            print("=" * 50)
+            all_ok = True
+            checked = 0
+            for r in routes:
+                slug = r.get("slug")
+                if not slug:
+                    continue
+                # planned-data 跳过
+                if (r.get("status") == "planned-data" or
+                        all(r.get(f) is None for f in ("csv_url", "geojson_url", "gpx_url", "svg_url"))):
+                    print(f"  · {slug}: planned-data 跳过 SVG 检查")
+                    continue
+                ok, info = check_svg(slug, output_dir)
+                checked += 1
+                if not ok:
+                    all_ok = False
+            print("=" * 50)
+            if all_ok:
+                print(f"PASS all route SVG check")
+                print(f"routes: {checked}")
+                return 0
+            else:
+                print(f"FAIL all route SVG check")
+                return 1
+        else:
+            slug = args.slug or "out-of-eden-walk-china"
+            print(f"行旅图谱 · 路线 SVG 检查")
+            print(f"slug: {slug}")
+            print("-" * 50)
+            ok, info = check_svg(slug, output_dir)
+            print()
+            if ok:
+                print(f"PASS route SVG check")
+                print(f"  size: {info['size']} bytes")
+                return 0
+            else:
+                print(f"FAIL route SVG check")
+                for reason in info.get("fail_reasons", []):
+                    print(f"  ✗ {reason}")
+                return 1
 
     # --all 模式
     if args.all:
@@ -484,6 +573,11 @@ def main() -> int:
         for r in routes:
             slug = r.get("slug")
             if not slug:
+                continue
+            # planned-data 跳过
+            if (r.get("status") == "planned-data" or
+                    all(r.get(f) is None for f in ("csv_url", "geojson_url", "gpx_url", "svg_url"))):
+                print(f"  · {slug}: planned-data 跳过生成")
                 continue
             ok, _info = render_one(slug, data_dir, output_dir, args.width, args.height)
             if not ok:

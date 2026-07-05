@@ -1,0 +1,55 @@
+name: Route Data Quality Gate
+
+on:
+  push:
+    paths:
+      - "data/routes/**"
+      - "assets/img/routes/**"
+      - "scripts/**"
+      - "routes/**"
+      - "trips/**"
+      - "docs/ROUTE_DATA_SPEC.md"
+      - ".github/workflows/route-data.yml"
+  pull_request:
+    paths:
+      - "data/routes/**"
+      - "assets/img/routes/**"
+      - "scripts/**"
+      - "routes/**"
+      - "trips/**"
+      - "docs/ROUTE_DATA_SPEC.md"
+      - ".github/workflows/route-data.yml"
+
+jobs:
+  route-data-gate:
+    name: Route Data Quality Gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate route data
+        run: |
+          python3 scripts/validate-route-data.py --all --manifest-check
+
+      - name: Check route map SVG
+        run: |
+          python3 scripts/render-route-map-svg.py --all --check
+
+      - name: Check route factory
+        run: |
+          python3 scripts/build-route-assets.py --check
+
+      - name: Check routes index sync
+        run: |
+          python3 scripts/check-routes-index-sync.py
+
+      - name: Run verify-site.sh
+        run: |
+          bash scripts/verify-site.sh

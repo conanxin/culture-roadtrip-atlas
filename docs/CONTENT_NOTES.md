@@ -700,3 +700,22 @@ Phase 7 完成路线数据模板化与多路线复用：
   - 不引入地图 API / 不引入构建系统 / 不引入 npm 依赖
 
 后续山西古建、北京周边等路线可继续复用同一套规范与脚本。
+
+## Phase 8 · 路线工厂自动化与质量门禁（v1.4.8 · 2026-07-05）
+
+Phase 8 完成路线工厂自动化与质量门禁：
+
+- **新增 build-route-assets.py**：路线工厂入口，一条命令完成「校验 + SVG 生成 + manifest 统计同步」
+- **增强 validate-route-data.py**：新增 `--json` 输出 + `--manifest-check` 模式
+- **增强 render-route-map-svg.py**：新增 `--check` 模式（只校验不生成）+ 自动跳过 planned-data 路线
+- **新增 check-routes-index-sync.py**：manifest 与 routes/index.html 漂移检查
+- **verify-site.sh 接入路线数据门禁**：70 → 79 项检查
+- **新增 GitHub Actions route-data workflow**：Route Data Quality Gate
+- **manifest 增强**：增加 `geojson_points` / `geojson_lines` 字段
+- **新增山西古建 planned-data 条目**：status=planned-data · URL 全 null · 不创建空数据
+- **routes/index.html 增强**：质量门禁模块 + 路线工厂流程模块
+
+OEDW 事实边界完整保留。辽塔数据未回退。所有 planned-data 路线不会误生成空文件。
+
+---
+

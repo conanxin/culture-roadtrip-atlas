@@ -238,3 +238,81 @@ python3 scripts/render-route-map-svg.py --all
 ---
 
 _辛 🔮 · 行旅图谱 · 数据规范 · 2026-07-05_
+---
+
+## 11. Route factory 脚本（v1.4.8 新增）
+
+### 11.1 `build-route-assets.py` 入口
+
+```bash
+python3 scripts/build-route-assets.py            # 同 --all
+python3 scripts/build-route-assets.py --all       # 构建所有 manifest 路线
+python3 scripts/build-route-assets.py <slug>      # 构建单条路线
+python3 scripts/build-route-assets.py --check     # CI 校验,不回写不生成
+```
+
+功能：
+
+1. 读取 `data/routes/routes-manifest.json`
+2. 对每条路线运行数据校验（调用 `validate-route-data.py`）
+3. 为每条路线生成 SVG（调用 `render-route-map-svg.py`）
+4. 统计每条路线的 CSV / GeoJSON / GPX / SVG 数据
+5. 将统计值回写到 manifest
+6. planned-data 路线自动跳过
+
+输出示例：
+
+```
+PASS route factory build
+routes: 2
+- out-of-eden-walk-china: 42 points, 53 features, 42 waypoints, 10 segments, svg ok
+- liao-tower-roadtrip: 20 points, 30 features, 20 waypoints, 9 segments, svg ok
+manifest updated: data/routes/routes-manifest.json
+```
+
+### 11.2 Manifest 统计字段
+
+| 字段 | 含义 | 来源 |
+|------|------|------|
+| `points` | CSV 数据行数 | CSV |
+| `segments` | 段编号数量 | CSV / GeoJSON |
+| `geojson_features` | GeoJSON features 总数 | GeoJSON |
+| `geojson_points` | GeoJSON Point feature 数 | GeoJSON |
+| `geojson_lines` | GeoJSON LineString feature 数 | GeoJSON |
+| `gpx_waypoints` | GPX `<wpt>` 元素数 | GPX |
+| `has_svg_preview` | SVG 文件是否存在且非空 | SVG |
+
+### 11.3 Planned route 说明
+
+`status = "planned-data"` 且 `csv_url` / `geojson_url` / `gpx_url` / `svg_url` 全部为 `null` 时：
+
+- 校验脚本跳过文件校验
+- 工厂脚本跳过构建
+- 索引页显示"规划中"卡片,不提供下载按钮
+- 不创建空 CSV / GeoJSON / GPX / SVG
+
+### 11.4 Quality gate 说明
+
+路线数据通过以下 5 道门禁保证质量：
+
+1. **`validate-route-data.py --all --manifest-check`**：数据校验 + manifest 统计一致
+2. **`render-route-map-svg.py --all --check`**：SVG 存在 + 包含必要声明
+3. **`build-route-assets.py --check`**：工厂入口只读校验
+4. **`check-routes-index-sync.py`**：manifest 与 routes/index.html 不漂移
+5. **`verify-site.sh`**：本地综合门禁（已包含上述 4 项 + 70 项传统检查）
+
+GitHub Actions 触发：
+
+- `data/routes/**`
+- `assets/img/routes/**`
+- `scripts/**`
+- `routes/**`
+- `trips/**`
+- `docs/ROUTE_DATA_SPEC.md`
+- `.github/workflows/route-data.yml`
+
+Workflow 名：`Route Data Quality Gate`
+
+---
+
+_辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（Phase 8）· 2026-07-05_

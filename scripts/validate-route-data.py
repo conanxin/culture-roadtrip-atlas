@@ -358,6 +358,14 @@ def validate_route(slug: str, data_dir: Path, verbose: bool = True) -> tuple[boo
 # ---------- 主函数 ----------
 
 
+def _is_planned_route(entry: dict) -> bool:
+    """planned-data 路线判定。"""
+    if entry.get("status") == "planned-data":
+        return True
+    url_fields = ("csv_url", "geojson_url", "gpx_url", "svg_url")
+    return all(entry.get(f) is None for f in url_fields)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="行旅图谱 · 路线数据校验脚本",
@@ -396,6 +404,16 @@ def main() -> int:
         action="store_true",
         help="严格模式:任何警告都视为失败",
     )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="输出 JSON 格式结果(适合 CI / 脚本解析)",
+    )
+    parser.add_argument(
+        "--manifest-check",
+        action="store_true",
+        help="校验 manifest 统计字段与实际数据一致(对已存在数据的路线)",
+    )
     args = parser.parse_args()
 
     data_dir = Path(args.data_dir)
@@ -416,10 +434,11 @@ def main() -> int:
             print("FAIL: manifest 中没有 routes")
             return 1
 
-        print(f"行旅图谱 · 路线数据校验 (--all 模式)")
-        print(f"manifest: {manifest_path}")
-        print(f"routes: {len(routes)}")
-        print("=" * 50)
+        if not args.json:
+            print(f"行旅图谱 · 路线数据校验 (--all 模式)")
+            print(f"manifest: {manifest_path}")
+            print(f"routes: {len(routes)}")
+            print("=" * 50)
 
         all_passed = True
         summaries = []
@@ -429,30 +448,115 @@ def main() -> int:
                 print(f"  ✗ manifest 中 route 缺少 slug: {r}")
                 all_passed = False
                 continue
-            passed, summary = validate_route(slug, data_dir, verbose=True)
+            # planned-data 路线:跳过文件校验
+            if _is_planned_route(r):
+                if not args.json:
+                    print(f"  · {slug}: planned-data 跳过文件校验")
+                continue
+            passed, summary = validate_route(slug, data_dir, verbose=not args.json)
             summaries.append(summary)
             if not passed:
                 all_passed = False
 
+        # --manifest-check:对照 manifest 统计字段
+        manifest_errors: list[str] = []
+        if args.manifest_check:
+            from collections import defaultdict
+            for r in routes:
+                slug = r.get("slug")
+                if not slug or _is_planned_route(r):
+                    continue
+                csv_path = data_dir / f"{slug}.csv"
+                if not csv_path.exists():
+                    continue
+                # 重新统计
+                with csv_path.open(newline="", encoding="utf-8") as f:
+                    rows = list(csv.DictReader(f))
+                geo_path = data_dir / f"{slug}.geojson"
+                geo_stats = {"features": 0, "points": 0, "lines": 0}
+                if geo_path.exists():
+                    try:
+                        geo = json.loads(geo_path.read_text(encoding="utf-8"))
+                        feats = geo.get("features", [])
+                        geo_stats["features"] = len(feats)
+                        geo_stats["points"] = sum(1 for f in feats if f.get("geometry", {}).get("type") == "Point")
+                        geo_stats["lines"] = sum(1 for f in feats if f.get("geometry", {}).get("type") == "LineString")
+                    except Exception:
+                        pass
+                gpx_path = data_dir / f"{slug}.gpx"
+                gpx_count = 0
+                if gpx_path.exists():
+                    try:
+                        ns = {"gpx": "http://www.topografix.com/GPX/1/1"}
+                        root = ET.parse(gpx_path).getroot()
+                        wpts = root.findall(".//gpx:wpt", ns)
+                        if not wpts:
+                            wpts = [el for el in root.iter() if el.tag.endswith("wpt")]
+                        gpx_count = len(wpts)
+                    except Exception:
+                        pass
+                seg_ids = sorted({row.get("segment_id", "") for row in rows if row.get("segment_id")})
+                # 校验
+                for key, actual in [
+                    ("points", len(rows)),
+                    ("segments", len(seg_ids)),
+                    ("geojson_features", geo_stats["features"]),
+                    ("geojson_points", geo_stats["points"]),
+                    ("geojson_lines", geo_stats["lines"]),
+                    ("gpx_waypoints", gpx_count),
+                ]:
+                    expected = r.get(key)
+                    if expected is None:
+                        manifest_errors.append(f"{slug}: manifest 缺少字段 {key}")
+                    elif expected != actual:
+                        manifest_errors.append(
+                            f"{slug}.{key}: manifest={expected} 实际={actual} 不一致"
+                        )
+
+        if args.json:
+            payload = {
+                "status": "PASS" if (all_passed and not manifest_errors) else "FAIL",
+                "routes": summaries,
+            }
+            if args.manifest_check:
+                payload["manifest_errors"] = manifest_errors
+            print(json.dumps(payload, ensure_ascii=False, indent=2))
+            return 0 if (all_passed and not manifest_errors) else 1
+
         print("=" * 50)
-        if all_passed:
+        if all_passed and not manifest_errors:
             print(f"PASS all route data validation")
+            if args.manifest_check:
+                print("manifest matches generated statistics")
             print(f"routes: {len(summaries)}")
             return 0
         else:
-            failed = [s["slug"] for s in summaries if not s["passed"]]
             print(f"FAIL all route data validation")
-            print(f"failed: {failed}")
+            failed = [s["slug"] for s in summaries if not s["passed"]]
+            if failed:
+                print(f"data failed: {failed}")
+            for e in manifest_errors:
+                print(f"  ✗ {e}")
             return 1
 
     # 单路线模式
     slug = args.slug or "out-of-eden-walk-china"
-    print(f"行旅图谱 · 路线数据校验")
-    print(f"route: {slug}")
-    print(f"data dir: {data_dir}")
-    print("-" * 50)
 
-    passed, summary = validate_route(slug, data_dir, verbose=True)
+    if not args.json:
+        print(f"行旅图谱 · 路线数据校验")
+        print(f"route: {slug}")
+        print(f"data dir: {data_dir}")
+        print("-" * 50)
+
+    passed, summary = validate_route(slug, data_dir, verbose=not args.json)
+    if args.json:
+        payload = {
+            "status": "PASS" if passed else "FAIL",
+            "routes": [summary],
+        }
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
+        return 0 if passed else 1
+
     if passed:
         print("PASS route data validation")
         return 0

@@ -20,13 +20,51 @@
 
 ## 当前版本
 
-**v1.4.7 · Route data templates and multi-route reuse**（2026-07-05）
+**v1.4.8 · Route factory automation and quality gates**（2026-07-05）
 
-行旅图谱现在包含内容页面、路线数据资产、静态 SVG 预览、数据校验脚本和路线模板规范。
+行旅图谱现在具备路线内容页面、路线数据资产、静态 SVG 预览、路线 manifest、自动校验脚本、路线工厂构建脚本和 GitHub Actions 质量门禁。
 
-v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.4.8 在 v1.4.7 基础上：
+
+- 新增 `scripts/build-route-assets.py` 路线工厂入口
+- 增强 `validate-route-data.py` · `--json` · `--manifest-check`
+- 增强 `render-route-map-svg.py` · `--check` 模式
+- 新增 `scripts/check-routes-index-sync.py` 减少 manifest/index 漂移
+- 增强 `verify-site.sh` 接入路线数据门禁
+- 新增 `.github/workflows/route-data.yml` Route Data Quality Gate
+- 山西古建路线 manifest 增加 `planned-data` 条目
+
+
+## 路线工厂与质量门禁（v1.4.8）
+
+```bash
+# 路线工厂 · 构建所有 manifest 路线
+python3 scripts/build-route-assets.py --all
+
+# 路线工厂 · CI 校验（不回写）
+python3 scripts/build-route-assets.py --check
+
+# 数据校验 + manifest 统计一致
+python3 scripts/validate-route-data.py --all --manifest-check
+
+# SVG 检查
+python3 scripts/render-route-map-svg.py --all --check
+
+# 索引页同步检查
+python3 scripts/check-routes-index-sync.py
+
+# 本地综合门禁
+./verify-site.sh
+```
+
+GitHub Actions `Route Data Quality Gate` 在 push / PR 时自动运行上述 5 项 + `verify-site.sh`。
+
+---
 
 v1.4.7 在 v1.4.6 基础上：
+
 - 新增通用路线数据规范 `docs/ROUTE_DATA_SPEC.md`
 - 新增通用路线页面模板 `docs/ROUTE_PAGE_TEMPLATE.md`
 - 新增路线 manifest `data/routes/routes-manifest.json`
