@@ -29,7 +29,7 @@ check_fail() {
 
 echo "================================"
 echo "  行旅图谱 · 网站验证脚本"
-echo "  v1.4.8 route factory + quality gates"
+echo "  v1.5.0 route index experience + multi-route search"
 echo "================================"
 echo ""
 
@@ -226,7 +226,7 @@ echo -e "通过: ${GREEN}${PASS_COUNT}${NC}"
 echo -e "失败: ${RED}${FAIL_COUNT}${NC}"
 echo ""
 
-# 8. Route data gates (v1.4.8 新增 · 路线数据门禁)
+# 8. Route data gates (v1.4.8 新增 · v1.5.0 增强)
 echo "🛡 Route data gates"
 echo "----------------------------------------"
 
@@ -234,8 +234,12 @@ ROUTE_DATA_FILES=(
   "data/routes/routes-manifest.json"
   "data/routes/out-of-eden-walk-china.csv"
   "data/routes/liao-tower-roadtrip.csv"
+  "data/routes/shanxi-ancient-architecture.csv"
   "assets/img/routes/out-of-eden-walk-china-map.svg"
   "assets/img/routes/liao-tower-roadtrip-map.svg"
+  "assets/img/routes/shanxi-ancient-architecture-map.svg"
+  "assets/js/routes-index.js"
+  "docs/ROUTE_FACTORY_GUIDE.md"
 )
 
 for file in "${ROUTE_DATA_FILES[@]}"; do
@@ -243,6 +247,41 @@ for file in "${ROUTE_DATA_FILES[@]}"; do
     check_pass "$file"
   else
     check_fail "$file (缺失或为空)"
+  fi
+done
+
+# v1.5.0 增强 · 路线索引体验门禁
+echo ""
+echo "🧭 Route index experience gates (v1.5.0)"
+echo "----------------------------------------"
+
+# routes-manifest.json 必出现在 index.html 或 routes-index.js
+if grep -R "routes-manifest.json" -q routes/index.html assets/js/routes-index.js 2>/dev/null; then
+  check_pass "routes-manifest.json 引用（routes/index.html 或 routes-index.js）"
+else
+  check_fail "routes-manifest.json 未在 routes/index.html 或 routes-index.js 引用"
+fi
+
+# routes-index.js 被 routes/index.html 引入
+if grep -R "routes-index.js" -q routes/index.html 2>/dev/null; then
+  check_pass "routes-index.js 被 routes/index.html 引入"
+else
+  check_fail "routes-index.js 未被 routes/index.html 引入"
+fi
+
+# #routes-manifest-dashboard 容器存在
+if grep -R "routes-manifest-dashboard" -q routes/index.html 2>/dev/null; then
+  check_pass "#routes-manifest-dashboard 容器存在"
+else
+  check_fail "#routes-manifest-dashboard 容器缺失"
+fi
+
+# ROUTE_FACTORY_GUIDE.md 必含新增路线流程关键词
+for keyword in "新增路线标准流程" "CSV 编写规则" "坐标规则" "数据安全边界" "必跑命令"; do
+  if grep -R "$keyword" -q docs/ROUTE_FACTORY_GUIDE.md 2>/dev/null; then
+    check_pass "ROUTE_FACTORY_GUIDE.md 含关键词：$keyword"
+  else
+    check_fail "ROUTE_FACTORY_GUIDE.md 缺关键词：$keyword"
   fi
 done
 

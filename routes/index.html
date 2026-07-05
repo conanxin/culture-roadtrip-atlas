@@ -25,6 +25,7 @@
       <div class="nav-inner">
         <a href="../index.html" class="nav-brand">← 行旅图谱</a>
         <div class="nav-links">
+          <a href="#dashboard" class="nav-link">仪表盘</a>
           <a href="#oedw" class="nav-link">Out of Eden Walk</a>
           <a href="#liao-tower" class="nav-link">辽塔巡礼</a>
           <a href="#shanxi" class="nav-link">山西古建</a>
@@ -42,7 +43,7 @@
   <!-- Hero 首屏 -->
   <section class="hero">
     <div class="container">
-      <div class="trip-skeleton-badge">🗂️ 路线数据索引 · v1.4.9</div>
+      <div class="trip-skeleton-badge">🗂️ 路线数据索引 · v1.5.0</div>
       <h1 class="hero-title">路线数据索引</h1>
       <p class="hero-subtitle">把行旅图谱中的人文路线沉淀为可下载、可审校、可复用的数据资产。<br>CSV / GeoJSON / GPX 三种格式 · 纯静态 · 长期可维护</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -73,7 +74,7 @@
   <!-- 路线资产总览（v1.4.7 新增） -->
   <section class="container" style="margin-top: var(--space-2xl);">
     <div class="city-card" style="max-width: 900px; margin: 0 auto;">
-      <h3 class="text-center" style="margin-bottom: var(--space-lg);">📦 路线数据资产总览 · v1.4.9</h3>
+      <h3 class="text-center" style="margin-bottom: var(--space-lg);">📦 路线数据资产总览 · v1.5.0</h3>
       <div class="data-meta-list">
         <div class="data-meta-item">
           <span class="data-meta-label">路线数据资产</span>
@@ -115,6 +116,20 @@
       <p style="margin-top: var(--space-md); text-align: center; color: var(--color-text-secondary);">
         所有路线使用同一套 CSV / GeoJSON / GPX / SVG 规范。manifest 集中登记，--all 脚本一次验证。路线工厂 <code>build-route-assets.py</code> 一条命令构建 + 回写 manifest。
       </p>
+    </div>
+  </section>
+
+  <!-- v1.5.0 动态路线仪表盘（搜索 / 筛选 / 对比） -->
+  <section id="dashboard" class="container" style="margin-top: var(--space-2xl);">
+    <div class="city-card" style="max-width: 1100px; margin: 0 auto;">
+      <h3 class="text-center" style="margin-bottom: var(--space-md);">🧭 路线仪表盘 · 搜索 / 筛选 / 对比</h3>
+      <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+        动态加载 <code>routes-manifest.json</code> · 搜索 / 筛选 / 排序 / 对比 · 无依赖纯 Vanilla JS
+      </p>
+      <section id="routes-manifest-dashboard" class="routes-manifest-dashboard">
+        <div class="route-index-loading">正在加载路线索引数据……</div>
+        <noscript>浏览器未启用 JavaScript。请使用下方静态路线数据卡片（已硬编码 fallback）。</noscript>
+      </section>
     </div>
   </section>
 
@@ -790,10 +805,11 @@
           <a href="../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.4.9 · 路线数据索引 · 2026 · 文化复刻 / 文化自驾粗点 · 非导航</div>
+        <div class="footer-credit">v1.5.0 · 路线数据索引 · 2026 · 文化复刻 / 文化自驾粗点 · 非导航</div>
       </div>
     </div>
   </footer>
 
+  <script src="../assets/js/routes-index.js"></script>
 </body>
 </html>

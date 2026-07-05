@@ -337,4 +337,22 @@ _辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（
 
 ---
 
-_辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（Phase 8）+ v1.4.9 山西接入（Phase 9）· 2026-07-05_
+## 13. manifest 与索引页（v1.5.0）
+
+从 v1.5.0 开始，`data/routes/routes-manifest.json` 不只用于校验，也用于路线索引页的搜索、筛选和比较展示：
+
+- **检索字段**：每条 route 增加 `category` / `theme_tags` / `region_tags` / `data_status_label` / `difficulty_label` / `best_season` / `route_summary` / `data_completeness` / `featured`
+- **驱动脚本**：`assets/js/routes-index.js` 从 `routes-manifest.json` fetch 后渲染路线仪表盘
+- **支持能力**：搜索（title / summary / theme_tags / region_tags）+ 筛选（category / data_completeness / region_tags）+ 排序（featured / points / name）+ 对比表
+- **同步门禁**：`scripts/check-routes-index-sync.py` v1.1 检查 routes-index.js 必填字段与 dashboard 容器
+- **失败回退**：保留三条路线硬编码卡片（OEDW / 辽塔 / 山西）作为无 JS / fetch 失败时的静态索引
+
+新增第 4 条路线时，只需：
+
+1. 沿用 §1–§11 规范准备 CSV / GeoJSON / GPX / SVG
+2. 在 `routes-manifest.json` 中补充新路线的 §13 检索字段
+3. `assets/js/routes-index.js` 无需修改即可自动渲染新路线卡片
+
+---
+
+_辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（Phase 8）+ v1.4.9 山西接入（Phase 9）+ v1.5.0 manifest 与索引页（Phase 10）· 2026-07-06_

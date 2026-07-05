@@ -1,5 +1,5 @@
 {
-  "version": "v1.4.9",
+  "version": "v1.5.0",
   "updated_at": "2026-07-05",
   "description": "Culture Roadtrip Atlas route data registry. All route data are cultural replica rough points, not real-time navigation data. Each entry is a static, reusable data asset for research, writing, and trip planning.",
   "routes": [
@@ -25,7 +25,29 @@
       "svg_url": "../assets/img/routes/out-of-eden-walk-china-map.svg",
       "route_template": "Long-distance cultural replica (Paul Salopek footprints)",
       "geojson_points": 42,
-      "geojson_lines": 11
+      "geojson_lines": 11,
+      "category": "long_walk",
+      "theme_tags": [
+        "慢新闻",
+        "国家地理",
+        "古道",
+        "长线",
+        "人类迁徙"
+      ],
+      "region_tags": [
+        "云南",
+        "四川",
+        "陕西",
+        "山西",
+        "北京",
+        "辽宁"
+      ],
+      "data_status_label": "长线文化复刻样板",
+      "difficulty_label": "高 · 分段复刻",
+      "best_season": "分段选择，山地避开恶劣天气",
+      "route_summary": "从滇西边境到大连黄海，沿 Paul Salopek 的 Out of Eden Walk 中国段重建的文化复刻路线。",
+      "data_completeness": "full",
+      "featured": true
     },
     {
       "slug": "liao-tower-roadtrip",
@@ -49,7 +71,27 @@
       "svg_url": "../assets/img/routes/liao-tower-roadtrip-map.svg",
       "route_template": "Self-driving cultural heritage route",
       "geojson_points": 20,
-      "geojson_lines": 10
+      "geojson_lines": 10,
+      "category": "roadtrip",
+      "theme_tags": [
+        "辽代",
+        "佛塔",
+        "契丹",
+        "博物馆",
+        "自驾"
+      ],
+      "region_tags": [
+        "北京",
+        "辽宁",
+        "内蒙古",
+        "河北"
+      ],
+      "data_status_label": "自驾人文路线样板",
+      "difficulty_label": "中 · 自驾为主",
+      "best_season": "5–10 月",
+      "route_summary": "从北京出发，经辽西走廊、朝阳、赤峰、辽上京与承德，串联辽塔与契丹历史遗存。",
+      "data_completeness": "v0.1",
+      "featured": true
     },
     {
       "slug": "shanxi-ancient-architecture",
@@ -73,7 +115,29 @@
       "geojson_url": "../data/routes/shanxi-ancient-architecture.geojson",
       "gpx_url": "../data/routes/shanxi-ancient-architecture.gpx",
       "svg_url": "../assets/img/routes/shanxi-ancient-architecture-map.svg",
-      "route_template": "Long-distance cultural roadtrip (Tang/Song/Liao/Jin wood structures)"
+      "route_template": "Long-distance cultural roadtrip (Tang/Song/Liao/Jin wood structures)",
+      "category": "architecture",
+      "theme_tags": [
+        "古建",
+        "木构",
+        "寺庙",
+        "壁画",
+        "自驾"
+      ],
+      "region_tags": [
+        "山西",
+        "大同",
+        "五台山",
+        "太原",
+        "平遥",
+        "晋东南"
+      ],
+      "data_status_label": "古建自驾路线样板",
+      "difficulty_label": "中高 · 点位分散",
+      "best_season": "4–10 月",
+      "route_summary": "串联大同、应县、五台山、晋祠、平遥、临汾、运城与晋东南的山西古建自驾粗点路线。",
+      "data_completeness": "v0.1",
+      "featured": true
     }
   ]
 }

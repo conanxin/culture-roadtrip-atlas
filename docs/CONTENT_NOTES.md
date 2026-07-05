@@ -732,3 +732,25 @@ Phase 9 完成山西古建路线数据生产：
 - OEDW / 辽塔数据未回退
 - 实际页面路径 `trips/shanxi-ancient-architecture-roadtrip/` 已同步到 manifest
 
+---
+
+## Phase 10 · 路线索引体验与多路线检索（v1.5.0 · 2026-07-06）
+
+Phase 10 完成路线索引体验与多路线检索：
+
+- `routes/index.html` 升级为「路线资产管理页」，从「下载索引页」升级为带搜索 / 筛选 / 排序 / 对比 / 统计的仪表盘
+- 新增 `assets/js/routes-index.js`（381 行），纯 Vanilla JS · 无依赖 · 从 `routes-manifest.json` 动态渲染路线卡片、对比表与统计区
+- manifest 检索字段增强：每条 route 增加 `category` / `theme_tags` / `region_tags` / `data_status_label` / `difficulty_label` / `best_season` / `route_summary` / `data_completeness` / `featured`
+- 首页（`index.html`）Hero subtitle + meta description 同步更新到 v1.5.0 / 3 条路线 / 92 个文化复刻粗点 / 3 张 SVG
+- 新增 `docs/ROUTE_FACTORY_GUIDE.md`（285 行），写清楚以后新增第 4 条路线的实操步骤、CSV 规则、坐标规则、数据安全边界、必跑命令、常见错误
+- CSS 增强 `assets/css/styles.css`（+ 334 行），统一墨绿 / 米白 / 暗金风格，新增 dashboard / toolbar / cards / compare / status badge / category badge 等样式
+- `scripts/check-routes-index-sync.py` v1.1 增强：检查 routes-index.js 必填字段 + dashboard 容器 + manifest 引用 + JS 动态渲染支持
+- `scripts/verify-site.sh` v1.5.0 增强：增加 routes-index.js / ROUTE_FACTORY_GUIDE / routes-manifest.json grep 检查
+- `.github/workflows/route-data.yml` 同步加入 `check-routes-index-sync.py` 与 `verify-site.sh` step
+- `assets/js/route-data-viewer.js` 保持完全通用化（Phase 7 已完成，本次仅注释更新）
+- 路线数据声明：3 条路线统一标注 **文化复刻粗点 / 文化自驾粗点 / 非实时导航 / 不保证开放状态**
+- 不引入地图 API / npm 依赖 / 构建系统 / 后端
+- OEDW 事实边界完整保留：6,000–6,700 公里 / 22/22 milestones / 卢沟桥→天安门→小汤山 / 黄海三层时间
+- 路线统计：3 路线 / 92 点位 / 28 段落 / 3 SVG / 0 planned-data
+- categories：long_walk / roadtrip / architecture
+

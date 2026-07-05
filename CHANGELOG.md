@@ -4,6 +4,108 @@
 
 ---
 
+## v1.5.0 · Route Index Experience and Multi-Route Search (2026-07-06)
+
+### 主要变更
+
+- **routes/index.html 升级为路线资产管理页**
+  - 新增「路线仪表盘」section（`#dashboard`），由 `assets/js/routes-index.js` 从 `routes-manifest.json` 动态渲染
+  - 仪表盘包含：统计区（路线总数 / 已有数据路线 / CSV 点位总数 / 段落总数 / GeoJSON Feature / SVG 预览）+ 搜索 + 分类筛选 + 完整度筛选 + 地区筛选 + 排序 + 路线卡片列表 + 路线对比表
+  - 保留无 JS fallback（noscript 提示 + 下方三条路线硬编码卡片）
+  - fetch 失败 fallback：提示 manifest 加载失败，引导使用静态索引
+  - 版本号徽章：v1.4.9 → v1.5.0
+- **新增前端脚本 `assets/js/routes-index.js`（381 行）**
+  - 纯 Vanilla JS · 无依赖
+  - 使用 `data-route-slug` / `data-route-geojson` / `data-route-name` 模式，与 `route-data-viewer.js` 保持一致
+  - 工具函数 `$` / `escapeHtml` / `basename` 复用
+  - 渲染统计 / 渲染卡片 / 过滤 + 排序 / 渲染对比表 / 渲染筛选控件
+  - 失败 / 空结果状态处理
+- **manifest 检索字段增强**
+  - `version`: v1.5.0
+  - 每条 route 增加：`category` / `theme_tags` / `region_tags` / `data_status_label` / `difficulty_label` / `best_season` / `route_summary` / `data_completeness` / `featured`
+  - OEDW: long_walk / 5 theme tags / 6 region tags / 长线文化复刻样板 / 高·分段复刻 / 分段选择·山地避开恶劣天气 / full / featured
+  - 辽塔: roadtrip / 5 theme tags / 4 region tags / 自驾人文路线样板 / 中·自驾为主 / 5–10 月 / v0.1 / featured
+  - 山西: architecture / 5 theme tags / 6 region tags / 古建自驾路线样板 / 中高·点位分散 / 4–10 月 / v0.1 / featured
+- **首页（index.html）路线数据资产统计**
+  - Hero subtitle 更新：3 条路线 / 92 个文化复刻粗点 / 3 张 SVG 路线图
+  - meta description：v1.5.0 接入 3 条路线数据资产、92 个文化复刻粗点、3 张静态 SVG 路线图
+  - 路线数据索引 section：从「两条路线」更新为「三条路线」，版本标签 v1.4.9 → v1.5.0
+- **新增文档 `docs/ROUTE_FACTORY_GUIDE.md`（285 行）**
+  - 面向以后新增第 4 条路线（或更多路线）时的实操指南
+  - 1. 新增路线标准流程（10 步）
+  - 2. CSV 编写规则（18 字段、枚举、命名规范）
+  - 3. 坐标规则（粗点不伪造、不导航、不写道路级导航坐标）
+  - 4. 数据安全边界（文化复刻粗点 / 文化自驾粗点声明）
+  - 5. 必跑命令（5 条核心 + verify-site.sh）
+  - 6. 常见错误（manifest 统计漂移 / HTML 未同步 / SVG 缺 not for navigation / GPX waypoint 不一致 / planned-data 不应创建空 CSV / URL 与真实路径不一致）
+  - 7. 当前三条路线示例（OEDW / 辽塔 / 山西）
+- **CSS 增强 `assets/css/styles.css`（+ 334 行）**
+  - 新增 `.routes-manifest-dashboard` / `.route-index-toolbar` / `.route-index-search` / `.route-index-cards` / `.route-index-card` / `.route-index-card-featured` / `.route-index-tags` / `.route-index-tag` / `.route-data-stat-grid` / `.route-data-stat-card` / `.route-data-stat-num` / `.route-data-stat-label` / `.route-compare-table` / `.route-status-badge` / `.route-status-full` / `.route-status-v01` / `.route-status-planned` / `.route-category-badge` / `.route-category-long-walk` / `.route-category-roadtrip` / `.route-category-architecture` / `.route-index-empty` / `.route-index-loading` / `.route-index-section-title`
+  - 墨绿 / 米白 / 暗金风格延续
+  - 移动端卡片单列 / 表格可横向滚动 / 筛选器自动换行
+- **`scripts/check-routes-index-sync.py` v1.1**
+  - 增加检查 routes-index.js 必填字段（slug / title / category / theme_tags / region_tags / points / segments / has_svg_preview）
+  - 增加检查 #routes-manifest-dashboard 容器
+  - 增加检查 routes/index.html 引入 routes-index.js
+  - 增加检查 routes-manifest.json 引用
+  - PASS 输出：`dynamic manifest rendering: yes`
+- **`scripts/verify-site.sh` v1.5.0 增强**
+  - 增加 routes-index.js / ROUTE_FACTORY_GUIDE.md / routes-manifest.json grep 检查
+  - 保留 Phase 8 / Phase 9 79 项门禁
+- **`.github/workflows/route-data.yml` 同步**
+  - 加入 `python3 scripts/check-routes-index-sync.py` step
+  - 加入 `bash scripts/verify-site.sh` step
+- **`assets/js/route-data-viewer.js`**：保持完全通用化（已 Phase 7 完成），本次仅注释更新
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+- 时间跨度 manifest 字段：「2021 秋 → 2023 冬 → 2024.6 → 2024.8」 ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：**文化自驾粗点** / **非实时导航** / **不保证开放状态、门票、预约、维修闭馆**
+
+### 路线统计
+
+- 路线总数：**3**
+- 已有数据路线：**3**（OEDW / 辽塔 / 山西）
+- planned-data：0
+- CSV 点位总数：**92**（OEDW 42 + 辽塔 20 + 山西 30）
+- 总段落数：**28**（OEDW 10 + 辽塔 9 + 山西 9）
+- GeoJSON Feature：123
+- SVG 预览：**3**
+- categories：long_walk / roadtrip / architecture
+
+### 不引入
+
+- ❌ 地图 API
+- ❌ 后端 / 数据库
+- ❌ 构建系统 / npm 依赖
+- ❌ 第三方 JS 库
+
+### 验证
+
+- `python3 scripts/build-route-assets.py --all` PASS
+- `python3 scripts/build-route-assets.py --check` PASS
+- `python3 scripts/validate-route-data.py --all --manifest-check` PASS
+- `python3 scripts/render-route-map-svg.py --all --check` PASS
+- `python3 scripts/check-routes-index-sync.py` PASS · routes checked: 3 · dynamic manifest rendering: yes
+- `bash scripts/verify-site.sh` PASS（79+ 项门禁）
+- `.github/workflows/route-data.yml` 同步
+
+### 报告
+
+- `reports/PHASE10_ROUTE_INDEX_SEARCH_REPORT.md`
+
+---
+
 ## v1.4.9 · Shanxi Ancient Architecture Route Data Production (2026-07-05)
 
 ### 主要变更

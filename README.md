@@ -20,21 +20,52 @@
 
 ## 当前版本
 
-**v1.4.9 · Shanxi ancient architecture route data production**（2026-07-05）
+**v1.5.0 · Route Index Experience and Multi-Route Search**（2026-07-06）
 
-路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。
+路线数据索引现支持多路线搜索、筛选、排序、对比，并通过 `routes-manifest.json` 驱动展示。
 
-v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
-v1.4.9 在 v1.4.8 基础上：
+v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
 
-- `shanxi-ancient-architecture` 从 planned-data 升级为 data-v0.1
-- 新增山西古建路线 CSV / GeoJSON / GPX / SVG（30 粗点、9 段、11 天 10 晚）
-- 路线工厂一次完成校验 + SVG + manifest 同步
-- 山西页面增加「路线数据」轻量模块
-- 验证 Phase 8 全部门禁通过 3 条路线
+v1.5.0 在 v1.4.9 基础上：
+
+- **路线数据索引升级为资产管理页**：`routes/index.html` 引入 manifest 驱动的「路线仪表盘」，支持搜索 / 筛选 / 排序 / 对比 / 统计
+- **新增前端脚本** `assets/js/routes-index.js`：纯 Vanilla JS · 无依赖 · 从 `routes-manifest.json` 渲染多路线卡片、对比表、统计区
+- **manifest 检索字段增强**：每条路线增加 `category` / `theme_tags` / `region_tags` / `data_status_label` / `difficulty_label` / `best_season` / `route_summary` / `data_completeness` / `featured` 字段
+- **首页路线数据资产统计**：新增三张小统计卡（路线 / 点位 / SVG）
+- **新增文档**：[`docs/ROUTE_FACTORY_GUIDE.md`](./docs/ROUTE_FACTORY_GUIDE.md) — 面向以后新增第 4 条路线的实操指南
+- **路线工厂门禁增强**：`scripts/check-routes-index-sync.py` v1.1 检查 routes-index.js 必填字段 + dashboard 容器 + manifest 引用
+- **GitHub Actions 同步**：`.github/workflows/route-data.yml` 加入 `check-routes-index-sync.py` 与 `verify-site.sh`
+- **路线数据声明**：3 条路线统一标注 **文化复刻粗点 / 文化自驾粗点 / 非实时导航 / 不保证开放状态**
+- **零依赖**：不引入地图 API、不引入 npm、不引入构建系统
+- **保留 OEDW 事实边界**：6,000–6,700 公里 / 22/22 milestones / 卢沟桥→天安门→小汤山 / 黄海三层时间
 
 
+
+## 路线索引体验（v1.5.0）
+
+行旅图谱路线数据索引升级为「路线资产管理页」：
+
+- **路线仪表盘**（`routes/index.html#dashboard`）：从 `routes-manifest.json` 动态加载 · 路线总数 / 已有数据路线 / 总点位数 / 总段落数 / GeoJSON Feature / SVG 预览实时统计
+- **搜索**：搜索 `title` / `route_summary` / `theme_tags` / `region_tags` / `data_status_label`
+- **筛选**：分类（长线徒步 / 自驾 / 古建）/ 完整度（full / v0.1 / planned）/ 地区（从 region_tags 自动生成）
+- **排序**：推荐 / 点位数从高到低 / 名称
+- **路线对比表**：路线 · 分类 · 状态 · 点位 · 段落 · SVG · 最佳季节 · 难度 · 主题
+- **无 JS fallback**：保留三条路线硬编码卡片（OEDW / 辽塔 / 山西）+ 路线工厂流程 + 质量门禁
+- **fetch 失败 fallback**：提示「路线 manifest 加载失败」，引导使用静态索引
+
+### 路线工厂文档
+
+新增 [`docs/ROUTE_FACTORY_GUIDE.md`](./docs/ROUTE_FACTORY_GUIDE.md)，包括：
+
+1. 新增路线标准流程（10 步）
+2. CSV 编写规则（18 字段、枚举、命名规范）
+3. 坐标规则（粗点不伪造、不导航）
+4. 数据安全边界（文化复刻 / 文化自驾粗点声明）
+5. 必跑命令（5 条核心 + verify-site.sh）
+6. 常见错误（6 类）
+7. 当前三条路线示例（OEDW / 辽塔 / 山西）
 
 ## 山西古建路线数据（v1.4.9）
 
