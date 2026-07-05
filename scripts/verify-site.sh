@@ -29,7 +29,7 @@ check_fail() {
 
 echo "================================"
 echo "  行旅图谱 · 网站验证脚本"
-echo "  v1.4 shanxi cultural guide lite"
+echo "  v1.4.8 route factory + quality gates"
 echo "================================"
 echo ""
 
@@ -215,6 +215,76 @@ for fn in "${JS_FUNCTIONS[@]}"; do
     check_fail "JS 缺: $fn"
   fi
 done
+
+echo ""
+
+# 总结
+echo "================================"
+echo "  验证结果"
+echo "================================"
+echo -e "通过: ${GREEN}${PASS_COUNT}${NC}"
+echo -e "失败: ${RED}${FAIL_COUNT}${NC}"
+echo ""
+
+# 8. Route data gates (v1.4.8 新增 · 路线数据门禁)
+echo "🛡 Route data gates"
+echo "----------------------------------------"
+
+ROUTE_DATA_FILES=(
+  "data/routes/routes-manifest.json"
+  "data/routes/out-of-eden-walk-china.csv"
+  "data/routes/liao-tower-roadtrip.csv"
+  "assets/img/routes/out-of-eden-walk-china-map.svg"
+  "assets/img/routes/liao-tower-roadtrip-map.svg"
+)
+
+for file in "${ROUTE_DATA_FILES[@]}"; do
+  if [ -s "$file" ]; then
+    check_pass "$file"
+  else
+    check_fail "$file (缺失或为空)"
+  fi
+done
+
+# validate-route-data.py --all --manifest-check
+if [ -f "scripts/validate-route-data.py" ]; then
+  if python3 scripts/validate-route-data.py --all --manifest-check >/tmp/verify-rd.log 2>&1; then
+    check_pass "validate-route-data.py --all --manifest-check"
+  else
+    check_fail "validate-route-data.py --all --manifest-check (查看 /tmp/verify-rd.log)"
+    cat /tmp/verify-rd.log | sed 's/^/    /'
+  fi
+fi
+
+# render-route-map-svg.py --all --check
+if [ -f "scripts/render-route-map-svg.py" ]; then
+  if python3 scripts/render-route-map-svg.py --all --check >/tmp/verify-svg.log 2>&1; then
+    check_pass "render-route-map-svg.py --all --check"
+  else
+    check_fail "render-route-map-svg.py --all --check (查看 /tmp/verify-svg.log)"
+    cat /tmp/verify-svg.log | sed 's/^/    /'
+  fi
+fi
+
+# build-route-assets.py --check
+if [ -f "scripts/build-route-assets.py" ]; then
+  if python3 scripts/build-route-assets.py --check >/tmp/verify-build.log 2>&1; then
+    check_pass "build-route-assets.py --check"
+  else
+    check_fail "build-route-assets.py --check (查看 /tmp/verify-build.log)"
+    cat /tmp/verify-build.log | sed 's/^/    /'
+  fi
+fi
+
+# check-routes-index-sync.py
+if [ -f "scripts/check-routes-index-sync.py" ]; then
+  if python3 scripts/check-routes-index-sync.py >/tmp/verify-sync.log 2>&1; then
+    check_pass "check-routes-index-sync.py"
+  else
+    check_fail "check-routes-index-sync.py (查看 /tmp/verify-sync.log)"
+    cat /tmp/verify-sync.log | sed 's/^/    /'
+  fi
+fi
 
 echo ""
 
