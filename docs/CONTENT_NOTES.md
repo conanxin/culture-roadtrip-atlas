@@ -754,3 +754,31 @@ Phase 10 完成路线索引体验与多路线检索：
 - 路线统计：3 路线 / 92 点位 / 28 段落 / 3 SVG / 0 planned-data
 - categories：long_walk / roadtrip / architecture
 
+---
+
+## Phase 11 · 路线页面统一数据徽章与跨页面推荐（v1.5.1 · 2026-07-06）
+
+Phase 11 完成路线页面统一数据徽章与跨页面推荐：
+
+- 新增 `assets/js/route-page-badges.js`（375 行），从 `routes-manifest.json` 读取并渲染统一模块：
+  - 状态徽章（数据完整度 / 分类 / 点位 / 段 / SVG / 非导航）
+  - 路线数据摘要卡（8 字段）+ theme_tags / region_tags
+  - 数据下载入口（CSV / GeoJSON / GPX / SVG / 数据索引）
+  - 数据安全边界提示
+  - 相关路线推荐（最多 2 条，按 category / theme_tags / region_tags / featured / points 排序）
+  - URL 转换（manifest 的 `../data/...` / `../trips/...` 按 `data-site-root` 重写）
+- 三条路线详情页接入统一面板：
+  - OEDW：`trips/out-of-eden-walk-china/index.html`
+  - 辽塔：`trips/liao-tower-roadtrip/index.html`
+  - 山西：`trips/shanxi-ancient-architecture-roadtrip/index.html`
+- CSS 增强 `assets/css/styles.css`（+304 行），统一墨绿 / 米白 / 暗金风格，新增 route-page-data-panel / summary / actions / warning / related 样式
+- 新增 `docs/ROUTE_PAGE_INTEGRATION_GUIDE.md`（287 行，10 章节）
+- 新增 `scripts/check-route-page-integration.py`：检查 8 项（manifest 路由 / 页面文件 / data-route-slug 一致 / 容器存在 / 脚本引入 / data-site-root / 数据路线关键词 / 文件存在性）
+- `scripts/verify-site.sh` v1.5.1 增强：增加 6 项 v1.5.1 检查（1 项 integration check + 3 项详情页接入 + 2 项文件存在性），总门禁 91 → 97
+- `.github/workflows/route-data.yml` 加入 `check-route-page-integration.py` step
+- `docs/ROUTE_PAGE_TEMPLATE.md` 加入统一数据徽章模块章节
+- `docs/ROUTE_FACTORY_GUIDE.md` 加入 §8 路线页面接入步骤
+- 不引入地图 API / npm 依赖 / 构建系统 / 后端
+- OEDW 事实边界完整保留
+- 形成 首页 → 路线索引 → 路线详情页 → 相关路线 → 数据下载 闭环
+

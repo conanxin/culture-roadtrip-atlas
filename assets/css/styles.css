@@ -7795,3 +7795,320 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===========================================================
+ * v1.5.1 · Phase 11 · 路线详情页统一数据徽章样式
+ * =========================================================== */
+
+:root {
+  --color-route-badge-full-bg: rgba(107, 142, 35, 0.18);
+  --color-route-badge-full-border: rgba(107, 142, 35, 0.6);
+  --color-route-badge-v01-bg: rgba(212, 167, 75, 0.18);
+  --color-route-badge-v01-border: rgba(212, 167, 75, 0.6);
+  --color-route-badge-planned-bg: rgba(140, 130, 110, 0.16);
+  --color-route-badge-planned-border: rgba(140, 130, 110, 0.5);
+  --color-route-badge-svg-bg: rgba(46, 79, 79, 0.18);
+  --color-route-badge-svg-border: rgba(46, 79, 79, 0.6);
+  --color-route-badge-points-bg: rgba(70, 90, 60, 0.14);
+  --color-route-badge-points-border: rgba(70, 90, 60, 0.5);
+  --color-route-badge-not-nav-bg: rgba(192, 57, 43, 0.14);
+  --color-route-badge-not-nav-border: rgba(192, 57, 43, 0.5);
+  --color-route-badge-cat-long-walk: rgba(70, 90, 60, 0.18);
+  --color-route-badge-cat-roadtrip: rgba(212, 167, 75, 0.18);
+  --color-route-badge-cat-architecture: rgba(46, 79, 79, 0.18);
+}
+
+/* ----- 容器 ----- */
+.route-page-data-panel {
+  margin: var(--space-2xl) auto;
+}
+
+/* ----- 索引卡片顶部“详情页徽章”指示器 (v1.5.1) ----- */
+.route-index-page-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-bottom: var(--space-xs, 6px);
+  background: rgba(46, 79, 79, 0.12);
+  border: 1px solid rgba(46, 79, 79, 0.4);
+  border-radius: 10px;
+  font-size: 0.7rem;
+  color: #2e4f4f;
+  font-weight: 500;
+}
+
+/* ----- 头部 ----- */
+.route-page-data-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+.route-page-data-title {
+  font-family: serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-primary, #2d3a2a);
+}
+.route-page-data-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs, 6px);
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- 徽章 ----- */
+.route-page-data-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.4;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.route-page-data-badge-full {
+  background: var(--color-route-badge-full-bg);
+  border-color: var(--color-route-badge-full-border);
+  color: #4a5e30;
+}
+.route-page-data-badge-v01 {
+  background: var(--color-route-badge-v01-bg);
+  border-color: var(--color-route-badge-v01-border);
+  color: #8a6a2c;
+}
+.route-page-data-badge-planned {
+  background: var(--color-route-badge-planned-bg);
+  border-color: var(--color-route-badge-planned-border);
+  color: #5a5448;
+}
+.route-page-data-badge-svg {
+  background: var(--color-route-badge-svg-bg);
+  border-color: var(--color-route-badge-svg-border);
+  color: #2e4f4f;
+}
+.route-page-data-badge-points {
+  background: var(--color-route-badge-points-bg);
+  border-color: var(--color-route-badge-points-border);
+  color: #465a3c;
+}
+.route-page-data-badge-segments {
+  background: var(--color-route-badge-points-bg);
+  border-color: var(--color-route-badge-points-border);
+  color: #465a3c;
+}
+.route-page-data-badge-not-nav {
+  background: var(--color-route-badge-not-nav-bg);
+  border-color: var(--color-route-badge-not-nav-border);
+  color: #8a3527;
+}
+.route-page-data-badge-category {
+  font-weight: 500;
+}
+.route-page-data-badge-category-long_walk {
+  background: var(--color-route-badge-cat-long-walk);
+  color: #4a5e30;
+}
+.route-page-data-badge-category-roadtrip {
+  background: var(--color-route-badge-cat-roadtrip);
+  color: #8a6a2c;
+}
+.route-page-data-badge-category-architecture {
+  background: var(--color-route-badge-cat-architecture);
+  color: #2e4f4f;
+}
+
+/* ----- 摘要卡 ----- */
+.route-page-data-summary {
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background: rgba(107, 142, 35, 0.04);
+  border-radius: var(--radius-sm, 6px);
+  border-left: 3px solid rgba(107, 142, 35, 0.5);
+}
+.route-page-data-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm, 8px);
+}
+.route-page-data-summary-item {
+  padding: var(--space-xs, 6px);
+}
+.route-page-data-summary-label {
+  font-size: 0.72rem;
+  color: var(--color-text-secondary, #6b7c5f);
+  margin-bottom: 2px;
+}
+.route-page-data-summary-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-primary, #2d3a2a);
+}
+.route-page-data-summary-text {
+  margin-top: var(--space-sm, 8px);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--color-text-primary, #2d3a2a);
+}
+.route-page-data-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: var(--space-xs, 6px);
+}
+
+/* ----- 章节小标题 ----- */
+.route-page-data-section-title {
+  font-family: serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: var(--space-lg) 0 var(--space-sm);
+  color: var(--color-text-primary, #2d3a2a);
+}
+
+/* ----- 下载入口 ----- */
+.route-page-data-actions-wrap {
+  margin-top: var(--space-md);
+}
+.route-page-data-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs, 6px);
+}
+.route-page-data-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm, 6px);
+  background: rgba(107, 142, 35, 0.08);
+  border: 1px solid rgba(107, 142, 35, 0.25);
+  color: #3a4a30;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.route-page-data-action:hover {
+  background: rgba(107, 142, 35, 0.16);
+}
+.route-page-data-action-icon {
+  font-size: 0.9rem;
+}
+.route-page-data-action-label {
+  font-weight: 500;
+}
+
+/* ----- 数据安全边界提示 ----- */
+.route-page-data-warning {
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(212, 167, 75, 0.08);
+  border-left: 3px solid rgba(212, 167, 75, 0.6);
+  border-radius: var(--radius-sm, 6px);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #5a4416;
+}
+.route-page-data-warning strong {
+  display: block;
+  margin-bottom: var(--space-xs, 6px);
+  font-size: 0.95rem;
+}
+.route-page-data-warning ul {
+  margin: 0;
+  padding-left: var(--space-md, 16px);
+}
+.route-page-data-warning li {
+  margin: 2px 0;
+}
+
+/* ----- 相关路线 ----- */
+.route-related-section {
+  margin-top: var(--space-lg);
+}
+.route-related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md, 12px);
+  margin-top: var(--space-sm, 8px);
+}
+.route-related-card {
+  padding: var(--space-md, 12px);
+  background: rgba(245, 240, 230, 0.5);
+  border-radius: var(--radius-sm, 6px);
+  border: 1px solid rgba(107, 142, 35, 0.15);
+}
+.route-related-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--space-xs, 6px);
+}
+.route-related-title {
+  font-family: serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: var(--space-xs, 6px) 0;
+  color: var(--color-text-primary, #2d3a2a);
+}
+.route-related-summary {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary, #5a6a4f);
+  margin: 0 0 var(--space-xs, 6px);
+}
+.route-related-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--space-xs, 6px);
+}
+.route-related-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  background: rgba(107, 142, 35, 0.1);
+  border-radius: 10px;
+  font-size: 0.72rem;
+  color: #465a3c;
+}
+.route-related-tag-region {
+  background: rgba(46, 79, 79, 0.1);
+  color: #2e4f4f;
+}
+.route-related-actions {
+  display: flex;
+  gap: var(--space-xs, 6px);
+  margin-top: var(--space-xs, 6px);
+}
+.route-related-empty {
+  padding: var(--space-md, 12px);
+  text-align: center;
+  color: var(--color-text-secondary, #6b7c5f);
+  font-size: 0.85rem;
+}
+
+/* ----- fallback ----- */
+.route-page-data-fallback {
+  padding: var(--space-md, 12px);
+  text-align: center;
+  color: var(--color-text-secondary, #6b7c5f);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ----- 移动端 ----- */
+@media (max-width: 768px) {
+  .route-page-data-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .route-related-grid {
+    grid-template-columns: 1fr;
+  }
+  .route-page-data-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .route-page-data-action {
+    justify-content: center;
+  }
+}

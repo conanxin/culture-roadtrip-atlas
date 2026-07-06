@@ -283,4 +283,44 @@ python3 scripts/check-routes-index-sync.py
 
 ---
 
-_辛 🔮 · 行旅图谱 · 路线工厂指南 · 2026-07-05_
+## 13. 路线页面接入步骤（v1.5.1 新增）
+
+完成路线数据资产后，还需要在路线详情页接入统一面板，让用户从页面直接看到状态徽章与下载入口。
+
+### 13.1 接入代码
+
+在 `trips/<slug>/index.html` 中加入：
+
+```html
+<section
+ id="route-page-data-panel"
+ class="route-page-data-panel"
+ data-route-slug="<slug>"
+ data-manifest-url="../../data/routes/routes-manifest.json"
+ data-site-root="../..//">
+ <div class="route-page-data-fallback">
+  本路线已接入路线数据资产。
+ </div>
+</section>
+
+<script src="../../assets/js/route-page-badges.js"></script>
+```
+
+### 13.2 推荐插入位置
+
+放在「Hero + 路线总览」之后、「下载路线数据」之前。
+
+### 13.3 必跑检查
+
+```bash
+python3 scripts/check-route-page-integration.py
+./scripts/verify-site.sh
+```
+
+### 13.4 详细接入指南
+
+见 [`docs/ROUTE_PAGE_INTEGRATION_GUIDE.md`](./ROUTE_PAGE_INTEGRATION_GUIDE.md)。
+
+---
+
+_辛 🔮 · 行旅图谱 · 路线工厂指南 · v1.0 (Phase 10) + v1.5.1 页面接入补充 (Phase 11) · 2026-07-06_

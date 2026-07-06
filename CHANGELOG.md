@@ -4,6 +4,88 @@
 
 ---
 
+## v1.5.1 · Route Page Unified Data Badges and Related Routes (2026-07-06)
+
+### 主要变更
+
+- **新增 `assets/js/route-page-badges.js`（375 行）**
+  - 读取 routes-manifest.json · 按 `data-route-slug` 渲染统一模块
+  - 状态徽章：数据完整度 / 分类 / 点位 / 段 / SVG / 非导航
+  - 摘要卡：8 字段（路线名 / 数据状态 / 最佳季节 / 难度 / 点位 / 段落 / GeoJSON / GPX）+ theme_tags / region_tags
+  - 下载入口：CSV / GeoJSON / GPX / SVG / 数据索引
+  - 数据安全边界提示
+  - 相关路线推荐：最多 2 条 · 按 category（+10）/ theme_tags 交集（×3）/ region_tags 交集（×2）/ featured（+1）/ points 排序
+  - URL 转换：manifest 的 `../data/...` `../trips/...` 路径按 `data-site-root` 重写
+  - fetch 失败 fallback / 无 JS fallback / 不推荐自己
+  - 无依赖、纯 Vanilla JS
+- **三条路线详情页接入统一模块**
+  - OEDW：`trips/out-of-eden-walk-china/index.html` · `data-route-slug="out-of-eden-walk-china"`
+  - 辽塔：`trips/liao-tower-roadtrip/index.html` · `data-route-slug="liao-tower-roadtrip"`
+  - 山西：`trips/shanxi-ancient-architecture-roadtrip/index.html` · `data-route-slug="shanxi-ancient-architecture"`
+  - 三页均插入 `route-page-data-panel` 容器 + 引入 `route-page-badges.js`
+- **CSS 增强 `assets/css/styles.css`（+304 行）**
+  - `.route-page-data-panel` / `.route-page-data-header` / `.route-page-data-title` / `.route-page-data-badges` / `.route-page-data-badge-*`（full / v01 / planned / svg / points / segments / not-nav / category-long_walk / category-roadtrip / category-architecture）
+  - `.route-page-data-summary-grid` / `.route-page-data-summary-item` / `.route-page-data-summary-text` / `.route-page-data-tags`
+  - `.route-page-data-actions` / `.route-page-data-action`
+  - `.route-page-data-warning`
+  - `.route-related-section` / `.route-related-grid` / `.route-related-card` / `.route-related-tags` / `.route-related-tag`
+  - `.route-page-data-fallback`
+  - 移动端单列 / 按钮可堆叠 / 标签自动换行
+- **新增 `docs/ROUTE_PAGE_INTEGRATION_GUIDE.md`（287 行）**
+  - 10 章节：目标 / 必备条件 / 接入代码 / 推荐插入位置 / URL 规则 / 必跑检查 / 常见错误 / 推荐逻辑 / 不引入依赖 / 当前状态
+  - 包含 OEDW / 辽塔 / 山西 三条路线接入示例
+- **新增 `scripts/check-route-page-integration.py`**
+  - 检查 8 项：manifest 路由 / 页面文件 / data-route-slug 一致 / 容器存在 / 脚本引入 / data-site-root 声明 / 数据完整路线含「路线数据」关键词 / badges JS + guide 文件存在
+- **`scripts/verify-site.sh` v1.5.1 增强**
+  - 增加 `route-page-badges.js` / `ROUTE_PAGE_INTEGRATION_GUIDE.md` 文件存在性检查
+  - 增加 `check-route-page-integration.py` 调用
+  - 增加三条详情页接入检查（data-route-slug + route-page-badges.js + route-page-data-panel）
+  - 总门禁 91 → 97
+- **`.github/workflows/route-data.yml` 同步**
+  - 加入 `python3 scripts/check-route-page-integration.py` step
+- **`docs/ROUTE_PAGE_TEMPLATE.md` 同步**
+  - 加入统一数据徽章模块章节
+  - 更新推荐页面结构：Hero → 本页状态 → 路线数据状态徽章 → 快速阅读 → 路线总览 → ... → 下载路线数据 → 静态路线示意图 → 数据驱动路线表 → 相关路线推荐 → 来源资料
+- **`docs/ROUTE_FACTORY_GUIDE.md` 同步**
+  - §8 新增：路线页面接入步骤（新增路线完成后，运行 check-route-page-integration.py）
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：**文化自驾粗点** / **非实时导航** / **不保证开放状态、门票、预约、维修闭馆**
+
+### 不引入
+
+- ❌ 地图 API
+- ❌ 后端 / 数据库
+- ❌ 构建系统 / npm 依赖
+- ❌ 第三方 JS 库
+
+### 验证
+
+- `python3 scripts/build-route-assets.py --check` PASS
+- `python3 scripts/validate-route-data.py --all --manifest-check` PASS
+- `python3 scripts/render-route-map-svg.py --all --check` PASS
+- `python3 scripts/check-routes-index-sync.py` PASS · routes checked: 3 · dynamic manifest rendering: yes
+- `python3 scripts/check-route-page-integration.py` PASS · routes checked: 3
+- `bash scripts/verify-site.sh` PASS · **97 项门禁全 PASS**（v1.5.0 91 项 + v1.5.1 新增 6 项）
+- `.github/workflows/route-data.yml` 同步
+
+### 报告
+
+- `reports/PHASE11_ROUTE_PAGE_INTEGRATION_REPORT.md`
+
+---
+
 ## v1.5.0 · Route Index Experience and Multi-Route Search (2026-07-06)
 
 ### 主要变更

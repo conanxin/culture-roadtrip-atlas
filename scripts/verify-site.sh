@@ -29,7 +29,7 @@ check_fail() {
 
 echo "================================"
 echo "  行旅图谱 · 网站验证脚本"
-echo "  v1.5.0 route index experience + multi-route search"
+echo "  v1.5.1 route page integration + related routes"
 echo "================================"
 echo ""
 
@@ -239,7 +239,9 @@ ROUTE_DATA_FILES=(
   "assets/img/routes/liao-tower-roadtrip-map.svg"
   "assets/img/routes/shanxi-ancient-architecture-map.svg"
   "assets/js/routes-index.js"
+  "assets/js/route-page-badges.js"
   "docs/ROUTE_FACTORY_GUIDE.md"
+  "docs/ROUTE_PAGE_INTEGRATION_GUIDE.md"
 )
 
 for file in "${ROUTE_DATA_FILES[@]}"; do
@@ -324,6 +326,37 @@ if [ -f "scripts/check-routes-index-sync.py" ]; then
     cat /tmp/verify-sync.log | sed 's/^/    /'
   fi
 fi
+
+# v1.5.1 新增 · check-route-page-integration.py
+if [ -f "scripts/check-route-page-integration.py" ]; then
+  if python3 scripts/check-route-page-integration.py >/tmp/verify-page.log 2>&1; then
+    check_pass "check-route-page-integration.py"
+  else
+    check_fail "check-route-page-integration.py (查看 /tmp/verify-page.log)"
+    cat /tmp/verify-page.log | sed 's/^/    /'
+  fi
+fi
+
+# v1.5.1 新增 · 三个详情页含统一面板
+for slug in "out-of-eden-walk-china" "liao-tower-roadtrip" "shanxi-ancient-architecture"; do
+  page_path=""
+  case "$slug" in
+    out-of-eden-walk-china) page_path="trips/out-of-eden-walk-china/index.html" ;;
+    liao-tower-roadtrip) page_path="trips/liao-tower-roadtrip/index.html" ;;
+    shanxi-ancient-architecture) page_path="trips/shanxi-ancient-architecture-roadtrip/index.html" ;;
+  esac
+  if [ -f "$page_path" ]; then
+    if grep -q "data-route-slug=\"$slug\"" "$page_path" && \
+       grep -q "route-page-badges.js" "$page_path" && \
+       grep -q "route-page-data-panel" "$page_path"; then
+      check_pass "$slug · 路线页面接入统一面板"
+    else
+      check_fail "$slug · 路线页面接入不完整（缺 data-route-slug / route-page-badges.js / route-page-data-panel）"
+    fi
+  else
+    check_fail "$page_path 缺失"
+  fi
+done
 
 echo ""
 

@@ -165,6 +165,25 @@
     </div>
   </section>
 
+<!-- 路线数据状态 · v1.5.1 统一徽章（Phase 11 新增） -->
+  <section id="route-page-data-panel"
+           class="route-page-data-panel trip-template-section container"
+           data-route-slug="out-of-eden-walk-china"
+           data-manifest-url="../../data/routes/routes-manifest.json"
+           data-site-root="../../"
+           style="margin-top: var(--space-2xl);">
+    <div class="section-divider"><span class="section-divider-icon">◇</span></div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">路线数据状态</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+      v1.5.1 新增 · 由 routes-manifest.json 驱动 · 状态徽章 · 摘要 · 下载 · 相关路线推荐
+    </p>
+    <div class="city-card" style="max-width: 1100px; margin: 0 auto;">
+      <div class="route-page-data-fallback">
+        本路线已接入路线数据资产。可前往路线数据索引查看 CSV / GeoJSON / GPX 与 SVG 预览。
+      </div>
+    </div>
+  </section>
+
 <!-- 下载路线数据（v1.4.5 新增） -->
   <section id="download-data" class="trip-template-section container" style="margin-top: var(--space-2xl);">
     <div class="section-divider">
@@ -1787,6 +1806,7 @@
   </script>
 
 <script src="../../assets/js/route-data-viewer.js"></script>
+<script src="../../assets/js/route-page-badges.js"></script>
 
 </body>
 </html>

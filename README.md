@@ -20,13 +20,27 @@
 
 ## 当前版本
 
-**v1.5.0 · Route Index Experience and Multi-Route Search**（2026-07-06）
+**v1.5.1 · Route Page Unified Data Badges and Related Routes**（2026-07-06）
+
+三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
 路线数据索引现支持多路线搜索、筛选、排序、对比，并通过 `routes-manifest.json` 驱动展示。
 
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
-v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.1 在 v1.5.0 基础上：
+
+- **三条路线详情页统一数据状态徽章**：`assets/js/route-page-badges.js` 从 routes-manifest.json 动态渲染徽章 / 摘要 / 下载 / 数据安全边界 / 相关路线推荐
+- **三个面板插入位置**：OEDW / 辽塔 / 山西 详情页在「Hero + 路线总览」之后、「下载路线数据」之前插入 `route-page-data-panel`
+- **相关路线推荐**：每页最多推荐 2 条，按 category（+10）/ theme_tags 交集（×3）/ region_tags 交集（×2）/ featured（+1）/ points（÷100）排序
+- **新增文档**：[`docs/ROUTE_PAGE_INTEGRATION_GUIDE.md`](./docs/ROUTE_PAGE_INTEGRATION_GUIDE.md) — 面向以后接入第 4 条路线详情页的实操指南
+- **新增检查脚本**：`scripts/check-route-page-integration.py` 检查每条有 page_url 的 route：页面存在 / `data-route-slug` 一致 / 容器存在 / 脚本引入 / `data-site-root` 声明 / 数据路线含「路线数据」关键词
+- **verify-site.sh 增强**：增加 6 项 v1.5.1 检查（1 项 integration check + 3 项详情页接入 + 2 项文件存在性），总门禁 91 → 97
+- **GitHub Actions 同步**：`.github/workflows/route-data.yml` 加入 `check-route-page-integration.py`
+- **零依赖**：不引入地图 API / npm 依赖 / 构建系统 / 后端
+- **保留 OEDW 事实边界**：6,000–6,700 公里 / 22/22 milestones / 卢沟桥→天安门→小汤山 / 黄海三层时间
 
 v1.5.0 在 v1.4.9 基础上：
 

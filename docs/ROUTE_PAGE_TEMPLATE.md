@@ -228,4 +228,66 @@ OEDW 是长线文化复刻样板，辽塔是自驾人文路线样板，后续山
 
 ---
 
-_辛 🔮 · 行旅图谱 · 页面模板 · 2026-07-05_
+## 9. 统一数据徽章模块（v1.5.1 · Phase 11）
+
+从 v1.5.1 开始，所有接入 manifest 的路线详情页都要包含「统一数据徽章模块」：
+
+### 9.1 容器位置
+
+建议插入顺序（v1.5.1 推荐页面结构）：
+
+```
+Hero
+本页状态
+路线数据状态徽章           ← 新统一模块
+快速阅读
+路线总览
+...
+下载路线数据              ← 旧轻量模块（保留）
+静态路线示意图
+数据驱动路线表
+相关路线推荐              ← 新统一模块内部
+来源资料
+```
+
+### 9.2 HTML 代码
+
+```html
+<section
+ id="route-page-data-panel"
+ class="route-page-data-panel"
+ data-route-slug="<route-slug>"
+ data-manifest-url="../../data/routes/routes-manifest.json"
+ data-site-root="../..//">
+ <div class="route-page-data-fallback">
+  本路线已接入路线数据资产。可前往路线数据索引查看 CSV / GeoJSON / GPX 与 SVG 预览。
+ </div>
+</section>
+```
+
+### 9.3 脚本
+
+```html
+<script src="../../assets/js/route-page-badges.js"></script>
+```
+
+### 9.4 模块能力
+
+- 状态徽章：数据完整度 / 分类 / 点位 / 段 / SVG / 非导航
+- 摘要卡：8 字段 + theme_tags + region_tags
+- 下载入口：CSV / GeoJSON / GPX / SVG / 数据索引
+- 数据安全边界提示
+- 相关路线推荐：最多 2 条
+
+### 9.5 静态 fallback 保留
+
+- 无 JS：`<noscript>` + 容器内的 `<div class="route-page-data-fallback">` 文案
+- fetch 失败：脚本自动显示「路线数据模块加载失败」+ 数据索引入口
+
+### 9.6 完整接入指南
+
+见 [`docs/ROUTE_PAGE_INTEGRATION_GUIDE.md`](./ROUTE_PAGE_INTEGRATION_GUIDE.md)
+
+---
+
+_辛 🔮 · 行旅图谱 · 页面模板 · v1.0 (Phase 7) + v1.4.7 多路线规范 + v1.5.1 统一徽章 · 2026-07-06_

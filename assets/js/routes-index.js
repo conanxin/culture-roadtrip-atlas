@@ -144,6 +144,7 @@
 
     return ''
       + '<article class="route-index-card' + featuredClass + '" data-route-slug="' + escapeHtml(route.slug) + '">'
+      + '<div class="route-index-page-badge">详情页徽章：已接入</div>'
       + '<div class="route-index-card-header">'
       + '<div class="route-index-badges">'
       + '<span class="route-category-badge route-category-' + escapeHtml(route.category || '') + '">' + escapeHtml(categoryBadge(route.category)) + '</span>'
