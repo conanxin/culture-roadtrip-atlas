@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="site-og-title site-og-desc">
+  <title id="site-og-title">行旅图谱 · Culture Roadtrip Atlas</title>
+  <desc id="site-og-desc">行旅图谱首页 · 为自驾、徒步、古建、博物馆与历史地理旅行准备的个人导游手册库。3 条路线数据资产 / 92 个文化复刻粗点 / 3 张静态 SVG 路线图。文化复刻粗点 · 非导航。</desc>
+
+  <defs>
+    <linearGradient id="paper-site" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf6ed"/>
+      <stop offset="100%" stop-color="#f0e8d4"/>
+    </linearGradient>
+    <pattern id="paper-tex-site" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.3" fill="#a8804c" opacity="0.10"/>
+      <circle cx="4" cy="3" r="0.3" fill="#2e4f4f" opacity="0.06"/>
+      <circle cx="2" cy="5" r="0.2" fill="#a8804c" opacity="0.08"/>
+    </pattern>
+    <pattern id="lines-site" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 0 80 L 80 0" stroke="#a8804c" stroke-width="0.4" opacity="0.08" fill="none"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#paper-site)"/>
+  <rect width="1200" height="630" fill="url(#paper-tex-site)"/>
+  <rect width="1200" height="630" fill="url(#lines-site)"/>
+
+  <rect x="32" y="32" width="1136" height="566" fill="none" stroke="#a8804c" stroke-width="1.5" opacity="0.5"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#2e4f4f" stroke-width="0.5" opacity="0.3"/>
+
+  <text x="600" y="180" font-family="'Noto Serif SC', system-ui, serif" font-size="84" fill="#1e3838" font-weight="700" text-anchor="middle" letter-spacing="12">行旅图谱</text>
+  <text x="600" y="230" font-family="'Noto Serif SC', system-ui, serif" font-size="28" fill="#4a6e6e" font-style="italic" text-anchor="middle" letter-spacing="8">Culture Roadtrip Atlas</text>
+
+  <line x1="500" y1="270" x2="700" y2="270" stroke="#a8804c" stroke-width="2"/>
+
+  <text x="600" y="330" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="20" fill="#5a5550" text-anchor="middle" letter-spacing="2">自驾 · 徒步 · 古建 · 博物馆 · 历史地理</text>
+
+  <g transform="translate(280, 380)">
+    <rect x="0" y="0" width="200" height="80" rx="6" fill="#2e4f4f" opacity="0.06" stroke="#2e4f4f" stroke-width="0.5"/>
+    <text x="100" y="26" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="12" fill="#a8804c" text-anchor="middle" font-weight="600">路线数据资产</text>
+    <text x="100" y="60" font-family="'Noto Serif SC', system-ui, serif" font-size="32" fill="#1e3838" text-anchor="middle" font-weight="700">3</text>
+  </g>
+  <g transform="translate(500, 380)">
+    <rect x="0" y="0" width="200" height="80" rx="6" fill="#2e4f4f" opacity="0.06" stroke="#2e4f4f" stroke-width="0.5"/>
+    <text x="100" y="26" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="12" fill="#a8804c" text-anchor="middle" font-weight="600">文化复刻粗点</text>
+    <text x="100" y="60" font-family="'Noto Serif SC', system-ui, serif" font-size="32" fill="#1e3838" text-anchor="middle" font-weight="700">92</text>
+  </g>
+  <g transform="translate(720, 380)">
+    <rect x="0" y="0" width="200" height="80" rx="6" fill="#2e4f4f" opacity="0.06" stroke="#2e4f4f" stroke-width="0.5"/>
+    <text x="100" y="26" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="12" fill="#a8804c" text-anchor="middle" font-weight="600">SVG 路线图</text>
+    <text x="100" y="60" font-family="'Noto Serif SC', system-ui, serif" font-size="32" fill="#1e3838" text-anchor="middle" font-weight="700">3</text>
+  </g>
+
+  <g transform="translate(60, 558)">
+    <rect x="0" y="-2" width="3" height="22" fill="#a8804c"/>
+    <text x="14" y="14" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="12" fill="#1e3838" font-weight="500">文化复刻粗点 / 文化自驾粗点</text>
+    <text x="14" y="32" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="10" fill="#5a5550">非导航 · 非实时导航 · 出入行前需独立核实</text>
+  </g>
+
+  <g transform="translate(1140, 558)" text-anchor="end">
+    <text x="0" y="14" font-family="'Noto Serif SC', system-ui, serif" font-size="13" fill="#2e4f4f" font-weight="600" font-style="italic">v1.5.2</text>
+    <text x="0" y="32" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="10" fill="#5a5550">conanxin.github.io/culture-roadtrip-atlas</text>
+  </g>
+</svg>

@@ -4,6 +4,167 @@
 
 ---
 
+## v1.5.2 · Route SEO, OG Assets and Preview Images (2026-07-06)
+
+### 主要变更
+
+- **OG SVG 生成器** `scripts/render-route-og-svg.py`（约 600 行）
+  - 从 routes-manifest.json 自动生成社交分享 SVG
+  - 风格：米白纸张 + 墨绿 + 暗金
+  - 尺寸：1200×630（OG / Twitter 通用）
+  - 支持命令：`render-route-og-svg.py` / `--all` / `<slug>` / `--all --check`
+  - 零依赖、无浏览器、不需网络字体（仅使用 system-ui fallback）
+- **5 个 OG SVG 资产**：
+  - `out-of-eden-walk-china-og.svg` (5,497 字节)
+  - `liao-tower-roadtrip-og.svg` (5,477 字节)
+  - `shanxi-ancient-architecture-og.svg` (5,501 字节)
+  - `site-og.svg` (4,586 字节 · 首页)
+  - `routes-index-og.svg` (5,722 字节 · 路线索引页)
+  - 每个 SVG 含 `<title>` + `<desc>` + route slug + 「行旅图谱」+ 「非导航」关键词
+- **routes-manifest.json v1.5.2 SEO 字段**
+  - 顶层 `version` 升级为 `v1.5.2`
+  - 每条路线增加 9 个 SEO 字段：seo_title / seo_description / canonical_url / og_title / og_description / og_image_url / twitter_title / twitter_description / share_summary
+  - **build-route-assets.py --all 不丢字段**：验证 9 个 SEO 字段被保留（dict() 浅拷贝 + 仅重写统计字段）
+- **统一三条路线详情页 + 首页 + 路线索引页 `<head>` 模板**
+  - 18 个标准 meta 标签：title / description / canonical / og:title / og:description / og:type / og:url / og:site_name / og:locale / og:image / og:image:width / og:image:height / og:image:alt / twitter:card（`summary_large_image`）/ twitter:title / twitter:description / twitter:image / theme-color
+  - 路线索引页 og:image 指向 `routes-index-og.svg`（新）
+  - 首页 og:image 指向 `site-og.svg`
+  - 三条详情页 og:image 指向各自路线 og
+- **share_summary 可见性**
+  - 每条路线页 `<body>` 后加 `<p class="route-share-summary sr-only">{share_summary}</p>`
+  - 屏幕阅读器可读、视觉隐藏
+  - SEO 与社交分享爬虫可提取
+- **新增 SEO 检查脚本** `scripts/check-route-seo.py`（约 220 行）
+  - 检查范围：首页 + 路线索引页 + manifest 中三条路线的 page_url
+  - 检查内容：14 类 meta 标签存在 · canonical 一致 · og:image basename 一致 · 主题包含 · OG SVG 文件存在 · panel 容器存在
+  - 输出：`PASS route SEO check / pages checked: 5 / route pages: 3 / og assets: 5`
+- **CSS 增强** `assets/css/styles.css`（+ 25 行）
+  - `.route-share-summary` + `.sr-only` 两个类
+- **`scripts/verify-site.sh` v1.5.2 增强**
+  - 增加 5 个 OG SVG 文件存在性检查
+  - 增加 `check-route-seo.py` 调用
+  - 增加 `render-route-og-svg.py --all --check` 调用
+  - 增加三条详情页 SEO 完整检查
+  - 总门禁 97 → 107
+- **`.github/workflows/route-data.yml` 同步**
+  - 加入 `python3 scripts/check-route-seo.py` step
+  - 加入 `python3 scripts/render-route-og-svg.py --all --check` step
+- **新增文档** `docs/ROUTE_SEO_GUIDE.md`
+  - 4 章节：目标 · 必填 head 元数据 · OG SVG 生成 · SEO 检查
+  - 含命令清单、字段表、常见错误
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：**文化自驾粗点** / **非实时导航** / **不保证开放状态、门票、预约、维修闭馆**
+
+### 不引入
+
+- ❌ 地图 API
+- ❌ 后端 / 数据库
+- ❌ 构建系统 / npm 依赖
+- ❌ 浏览器截图（已声明不依赖）
+
+### 验证
+
+- `python3 scripts/build-route-assets.py --all` 保留 9 个 SEO 字段 ✅
+- `python3 scripts/build-route-assets.py --check` PASS
+- `python3 scripts/validate-route-data.py --all --manifest-check` PASS
+- `python3 scripts/render-route-map-svg.py --all --check` PASS
+- `python3 scripts/check-routes-index-sync.py` PASS
+- `python3 scripts/check-route-page-integration.py` PASS
+- `python3 scripts/check-route-seo.py` PASS · 5 pages · 3 route pages · 5 og assets
+- `python3 scripts/render-route-og-svg.py --all --check` PASS · 5 files
+- `bash scripts/verify-site.sh` PASS · **107 项门禁全 PASS**（v1.5.1 97 项 + v1.5.2 新增 10 项）
+- `.github/workflows/route-data.yml` 同步 · 加入 SEO + OG SVG 双 step
+
+### 报告
+
+- `reports/PHASE12_ROUTE_SEO_OG_REPORT.md`
+
+---
+
+## v1.5.1 · Route Page Unified Data Badges and Related Routes (2026-07-06)
+
+### 主要变更
+
+- **统一三条路线详情页的 `<head>` 模板**
+  - OEDW / 辽塔 / 山西：18 个标准 meta 标签全量补齐
+  - title / description / canonical / og:title / og:description / og:type / og:url / og:site_name / og:locale / og:image / og:image:width / og:image:height / og:image:alt / twitter:card（`summary_large_image`）/ twitter:title / twitter:description / twitter:image / theme-color
+  - keyword 文案按 share_summary 首句抽取，避免随机拼接
+- **首页 + 路线索引页 SEO 补齐**
+  - 18 个标准 meta 标签全量补齐
+  - title / canonical / og:image 指向 `site-og.svg`
+  - 主题色统一为 `#2e4f4f`
+- **OG SVG 资产（4 张 1200×630）**
+  - `assets/img/og/out-of-eden-walk-china-og.svg` (3,867 字节 · 墨绿 + 暗金 · 复刻文化)
+  - `assets/img/og/liao-tower-roadtrip-og.svg` (4,001 字节 · 暖棕 + 暗金 · 辽代自驾)
+  - `assets/img/og/shanxi-ancient-architecture-og.svg` (3,877 字节 · 茶色 + 暗金 · 古建自驾)
+  - `assets/img/og/site-og.svg` (3,593 字节 · 墨绿 + 暗金 · 行旅图谱总图)
+  - 风格一致：沿用「暗背景 + 路径线 + 节点 + 文字徽章 + 安全边界」结构
+- **routes-manifest.json v1.5.2**
+  - 顶层 `version` 升级为 `v1.5.2`
+  - 每条路线增加 9 个 SEO 字段
+- **share_summary 页面可见性**
+  - 每条路线页 `<body>` 后加 `<p class="route-share-summary sr-only">{share_summary}</p>`
+  - 屏幕阅读器可读、视觉上隐形；SEO 与社交分享爬虫可提取
+- **新增 `scripts/check-route-seo.py`**
+  - 8 大类检查：manifest version / 9 SEO 字段 / OG SVG 文件大小 / 12 类 HTML meta / canonical 一致 / og:image basename 一致 / og_title 与 share_summary 可见性
+- **CSS 增强**：`assets/css/styles.css` 增加 `.route-share-summary` 与 `.sr-only` 两个类
+- **`scripts/verify-site.sh` v1.5.2 增强**
+  - 增加 4 个 OG SVG 文件存在性检查
+  - 增加 `check-route-seo.py` 调用
+  - 增加三条详情页 SEO 完整检查（og:image + twitter:card + canonical）
+  - 总门禁 97 → 105
+- **`.github/workflows/route-data.yml` 同步**
+  - 加入 `python3 scripts/check-route-seo.py` step
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：**文化自驾粗点** / **非实时导航** / **不保证开放状态、门票、预约、维修闭馆**
+
+### 不引入
+
+- ❌ 地图 API
+- ❌ 后端 / 数据库
+- ❌ 构建系统 / npm 依赖
+- ❌ 浏览器截图（已声明不依赖）
+
+### 验证
+
+- `python3 scripts/build-route-assets.py --check` PASS
+- `python3 scripts/validate-route-data.py --all --manifest-check` PASS
+- `python3 scripts/render-route-map-svg.py --all --check` PASS
+- `python3 scripts/check-routes-index-sync.py` PASS
+- `python3 scripts/check-route-page-integration.py` PASS
+- `python3 scripts/check-route-seo.py` PASS · 8 类检查全 PASS
+- `bash scripts/verify-site.sh` PASS · **105 项门禁全 PASS**（v1.5.1 97 项 + v1.5.2 新增 8 项）
+
+### 报告
+
+- `reports/PHASE12_ROUTE_SEO_OG_REPORT.md`
+
+---
+
 ## v1.5.1 · Route Page Unified Data Badges and Related Routes (2026-07-06)
 
 ### 主要变更

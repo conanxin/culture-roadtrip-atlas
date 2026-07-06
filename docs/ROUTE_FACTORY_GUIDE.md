@@ -323,4 +323,76 @@ python3 scripts/check-route-page-integration.py
 
 ---
 
-_辛 🔮 · 行旅图谱 · 路线工厂指南 · v1.0 (Phase 10) + v1.5.1 页面接入补充 (Phase 11) · 2026-07-06_
+## 14. 路线页面 SEO 与 OG 资产（v1.5.2 新增）
+
+完成路线页面接入后，还需补齐 SEO 与 OG 资产，确保可被搜索引擎与社交平台优雅分发。
+
+### 14.1 manifest SEO 字段
+
+为新路线补充 9 个字段：
+
+```json
+{
+  "seo_title": "...",
+  "seo_description": "...",
+  "canonical_url": "https://.../trips/<slug>/",
+  "og_title": "...",
+  "og_description": "...",
+  "og_image_url": "https://.../assets/img/og/<slug>-og.svg",
+  "twitter_title": "...",
+  "twitter_description": "...",
+  "share_summary": "一句话路线说明（用于 SEO 与社交分享）"
+}
+```
+
+### 14.2 生成 OG SVG 资产
+
+**推荐方式：使用 `render-route-og-svg.py` 自动化生成**
+
+```bash
+# 为新路线生成 OG SVG
+python3 scripts/render-route-og-svg.py <new-slug>
+```
+
+- 输出路径：`assets/img/og/<slug>-og.svg`
+- 尺寸：1200×630
+- 风格：米白纸张 + 墨绿 + 暗金
+- 含 `<title>` + `<desc>` + route slug + 「行旅图谱」+ 「非导航」关键词
+- 零依赖、无 JavaScript、无网络字体
+
+**手动生成参考（如果脚本不适用）**
+
+- 路径：`assets/img/og/<slug>-og.svg`
+- 尺寸：1200×630
+- 背景：米白纸张
+- 元素：路线节点 + 暗金徽章 + 文字主体 + 数据资产条
+- 底部安全声明：非原始 GPS / 非实时导航 / 不保证开放状态
+
+可参考已有 OEDW / 辽塔 / 山西 OG 模板。
+
+### 14.3 HTML head 替换
+
+参考 OEDW 页面 head，复制 18 个 meta 标签结构，替换内容为本路线字段。
+
+### 14.4 share_summary 可见性
+
+在 `<body>` 后插入：
+
+```html
+<p class="route-share-summary sr-only" aria-label="路线分享摘要">{share_summary}</p>
+```
+
+### 14.5 必跑检查
+
+```bash
+python3 scripts/check-route-seo.py
+./scripts/verify-site.sh
+```
+
+### 14.6 详细 SEO 规范
+
+见 [`docs/ROUTE_PAGE_TEMPLATE.md` §10](./ROUTE_PAGE_TEMPLATE.md)。
+
+---
+
+_辛 🔮 · 行旅图谱 · 路线工厂指南 · v1.0 (Phase 10) + v1.5.1 页面接入补充 (Phase 11) + v1.5.2 SEO 与 OG 资产 (Phase 12) · 2026-07-06_

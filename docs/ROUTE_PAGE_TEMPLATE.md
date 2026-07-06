@@ -290,4 +290,120 @@ Hero
 
 ---
 
-_辛 🔮 · 行旅图谱 · 页面模板 · v1.0 (Phase 7) + v1.4.7 多路线规范 + v1.5.1 统一徽章 · 2026-07-06_
+## 10. SEO 与 OG 资产统一（v1.5.2 · Phase 12）
+
+从 v1.5.2 开始，所有接入 manifest 的路线详情页都必须在 `<head>` 中包含统一的 18 个 SEO meta 标签。
+
+### 10.1 manifest 必填字段
+
+每条 route 必填 9 个字段：
+
+```
+seo_title, seo_description, canonical_url,
+og_title, og_description, og_image_url,
+twitter_title, twitter_description, share_summary
+```
+
+### 10.2 HTML head 必填标签
+
+- `<title>{seo_title}</title>`
+- `<meta name="description" content="{seo_description}">`
+- `<link rel="canonical" href="{canonical_url}">`
+- `<meta property="og:title" content="{og_title}">`
+- `<meta property="og:description" content="{og_description}">`
+- `<meta property="og:type" content="article">`
+- `<meta property="og:url" content="{canonical_url}">`
+- `<meta property="og:site_name" content="行旅图谱 · Culture Roadtrip Atlas">`
+- `<meta property="og:locale" content="zh_CN">`
+- `<meta property="og:image" content="{og_image_url}">`
+- `<meta property="og:image:width" content="1200">`
+- `<meta property="og:image:height" content="630">`
+- `<meta property="og:image:alt" content="{og_title}">`
+- `<meta name="twitter:card" content="summary_large_image">`
+- `<meta name="twitter:title" content="{twitter_title}">`
+- `<meta name="twitter:description" content="{twitter_description}">`
+- `<meta name="twitter:image" content="{og_image_url}">`
+- `<meta name="theme-color" content="#2e4f4f">`
+
+### 10.3 OG SVG 资产规范
+
+- 路径：`assets/img/og/<slug>-og.svg`
+- 尺寸：1200×630
+- 颜色：暗背景 + 路径线 + 节点 + 暗金文字徽章 + 安全边界
+- 必须含 `<svg xmlns="http://www.w3.org/2000/svg">` + `viewBox="0 0 1200 630"`
+- 推荐包含 `role="img"` + `aria-label` 增强可达性
+
+### 10.4 share_summary 可见性
+
+页面 `<body>` 后加：
+
+```html
+<p class="route-share-summary sr-only" aria-label="路线分享摘要">{share_summary}</p>
+```
+
+- 屏幕阅读器可读
+- 视觉隐藏（sr-only）
+- SEO 与社交分享爬虫可提取
+- 与 manifest 的 `share_summary` 字段保持一致
+
+### 10.5 新增路线 SEO 接入步骤
+
+1. 在 manifest 中补充 9 个 SEO 字段
+2. 运行 `python3 scripts/render-route-og-svg.py --all` 自动生成 5 个 OG SVG
+3. 替换 HTML `<head>` 18 个 meta
+4. 在 `<body>` 后加 share_summary 可见性段落
+5. 运行 `python3 scripts/check-route-seo.py`
+6. 运行 `python3 scripts/render-route-og-svg.py --all --check`
+
+### 10.6 SEO 检查脚本
+
+`scripts/check-route-seo.py` 覆盖 8 大类：
+
+- manifest version = v1.5.2
+- 9 SEO 字段完整
+- OG SVG 文件存在且大小 > 500 字节
+- 12 类 HTML meta 标签存在
+- canonical 与 manifest 一致
+- og:image basename 与 manifest 一致
+- og_title 文本在页面可见
+- share_summary 文本在页面可见（`<p class="route-share-summary">`）
+
+### 10.7 OG SVG 生成器（v1.5.2 新增）
+
+`scripts/render-route-og-svg.py` 是从 manifest 自动化生成 OG SVG 的脚本：
+
+```bash
+# 默认（生成全部）
+python3 scripts/render-route-og-svg.py
+
+# 生成全部
+python3 scripts/render-route-og-svg.py --all
+
+# 生成单条路线
+python3 scripts/render-route-og-svg.py out-of-eden-walk-china
+
+# 检查
+python3 scripts/render-route-og-svg.py --all --check
+```
+
+输出：
+
+- `assets/img/og/<slug>-og.svg` × 3（路线）
+- `assets/img/og/site-og.svg`（首页）
+- `assets/img/og/routes-index-og.svg`（路线索引页）
+
+风格：
+
+- 米白纸张（`#faf6ed` → `#f0e8d4`）+ 墨绿 + 暗金
+- 1200×630（OG / Twitter 通用）
+- 含 `<title>` + `<desc>` + route slug + 「行旅图谱」+ 「非导航」关键词
+- 零外部依赖（仅 system-ui fallback）
+- 无 JavaScript / 无网络字体 / 无外部图片
+
+### 10.8 详细 SEO 文档
+
+见 [`docs/ROUTE_SEO_GUIDE.md`](./ROUTE_SEO_GUIDE.md)
+
+---
+
+_辛 🔮 · 行旅图谱 · 页面模板 · v1.0 (Phase 7) + v1.4.7 多路线规范 + v1.5.1 统一徽章 + v1.5.2 SEO 与 OG 资产 · 2026-07-06_

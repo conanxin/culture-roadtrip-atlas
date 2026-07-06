@@ -54,6 +54,14 @@ jobs:
         run: |
           python3 scripts/check-route-page-integration.py
 
+      - name: Check route SEO
+        run: |
+          python3 scripts/check-route-seo.py
+
+      - name: Check route OG SVG
+        run: |
+          python3 scripts/render-route-og-svg.py --all --check
+
       - name: Run verify-site.sh
         run: |
           bash scripts/verify-site.sh

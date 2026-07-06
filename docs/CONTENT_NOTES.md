@@ -782,3 +782,56 @@ Phase 11 完成路线页面统一数据徽章与跨页面推荐：
 - OEDW 事实边界完整保留
 - 形成 首页 → 路线索引 → 路线详情页 → 相关路线 → 数据下载 闭环
 
+---
+
+## Phase 12 · 路线页面 SEO 统一与 OG 资产 (v1.5.2 · 2026-07-06)
+
+Phase 12 完成路线页面 SEO 统一与 OG 资产：
+
+- 统一三条路线详情页的 `<head>` 模板：18 个标准 meta 标签（title / description / canonical / og:* / twitter:card `summary_large_image` / twitter:* / theme-color）
+- 首页 + 路线索引页 SEO 补齐：18 个标准 meta 标签
+- OG SVG 资产 × 4（1200×630）：
+  - `assets/img/og/out-of-eden-walk-china-og.svg` (3,867 字节)
+  - `assets/img/og/liao-tower-roadtrip-og.svg` (4,001 字节)
+  - `assets/img/og/shanxi-ancient-architecture-og.svg` (3,877 字节)
+  - `assets/img/og/site-og.svg` (3,593 字节)
+- routes-manifest.json v1.5.2：每条路线增加 9 个 SEO 字段（seo_title / seo_description / canonical_url / og_title / og_description / og_image_url / twitter_title / twitter_description / share_summary）
+- share_summary 可读性：每条路线页 `<body>` 后加 `<p class="route-share-summary sr-only">{share_summary}</p>`，屏幕阅读器可读、视觉隐形
+- CSS 增强：`.route-share-summary` + `.sr-only` 两个类
+- 新增 `scripts/check-route-seo.py`：8 大类检查（manifest version / 9 SEO 字段 / OG 文件大小 / 12 类 HTML meta / canonical 一致 / og:image basename 一致 / og_title 可见 / share_summary 可见）
+- `scripts/verify-site.sh` v1.5.2 增强：增加 8 项 v1.5.2 检查，总门禁 97 → 105
+- `.github/workflows/route-data.yml` 加入 `check-route-seo.py` step
+- 不引入地图 API / npm 依赖 / 构建系统 / 浏览器截图
+- OEDW 事实边界完整保留
+- 形成完整 SEO 闭环：manifest → 页面 head → OG 资产 → 社交分享
+
+---
+
+## Phase 12 · 路线页面 SEO 统一与 OG 资产 (v1.5.2 · 2026-07-06)
+
+Phase 12 完成路线页面 SEO 统一与 OG 资产：
+
+- 新增 OG SVG 生成器 `scripts/render-route-og-svg.py`：从 routes-manifest.json 自动生成 · 风格米白纸张 + 墨绿 + 暗金 · 1200×630 · 零依赖
+- 5 个 OG SVG 资产：
+  - `assets/img/og/out-of-eden-walk-china-og.svg` (5,497 字节)
+  - `assets/img/og/liao-tower-roadtrip-og.svg` (5,477 字节)
+  - `assets/img/og/shanxi-ancient-architecture-og.svg` (5,501 字节)
+  - `assets/img/og/site-og.svg` (4,586 字节 · 首页)
+  - `assets/img/og/routes-index-og.svg` (5,722 字节 · 路线索引页)
+- 每个 SVG 含 `<title>` + `<desc>` + route slug + 「行旅图谱」+ 「非导航」关键词
+- 统一三条路线详情页 + 首页 + 路线索引页 `<head>` 模板：18 个标准 meta 标签
+- 路线索引页 og:image 指向 `routes-index-og.svg`（v1.5.2 新增）
+- 首页 og:image 指向 `site-og.svg`
+- routes-manifest.json v1.5.2：每条路线增加 9 个 SEO 字段
+- **build-route-assets.py --all 不丢字段**：9 个 SEO 字段被 dict() 浅拷贝保留
+- share_summary 可见性：每条路线页 `<body>` 后加 `<p class="route-share-summary sr-only">{share_summary}</p>`
+- CSS 增强：`.route-share-summary` + `.sr-only` 两个类
+- 新增 `scripts/check-route-seo.py`：14 类 meta 标签 + canonical/og:image 一致性 + panel 容器检查
+- 新增 `scripts/render-route-og-svg.py --all --check`：OG SVG 文件存在 + 关键词检查
+- `scripts/verify-site.sh` v1.5.2 增强：增加 10 项 v1.5.2 检查（5 OG 文件 + 1 SEO check + 1 OG SVG check + 3 详情页 SEO），总门禁 97 → 107
+- `.github/workflows/route-data.yml` 加入 `check-route-seo.py` 与 `render-route-og-svg.py --check` 双 step
+- 新增 `docs/ROUTE_SEO_GUIDE.md`：4 章节 SEO 文档
+- 不引入地图 API / npm 依赖 / 构建系统 / 浏览器截图
+- OEDW 事实边界完整保留
+- 形成完整 SEO 闭环：manifest → 页面 head → OG 资产 → 社交分享
+

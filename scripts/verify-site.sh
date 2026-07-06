@@ -29,7 +29,7 @@ check_fail() {
 
 echo "================================"
 echo "  行旅图谱 · 网站验证脚本"
-echo "  v1.5.1 route page integration + related routes"
+echo "  v1.5.2 route SEO, OG assets and preview images"
 echo "================================"
 echo ""
 
@@ -238,10 +238,16 @@ ROUTE_DATA_FILES=(
   "assets/img/routes/out-of-eden-walk-china-map.svg"
   "assets/img/routes/liao-tower-roadtrip-map.svg"
   "assets/img/routes/shanxi-ancient-architecture-map.svg"
+  "assets/img/og/out-of-eden-walk-china-og.svg"
+  "assets/img/og/liao-tower-roadtrip-og.svg"
+  "assets/img/og/shanxi-ancient-architecture-og.svg"
+  "assets/img/og/site-og.svg"
+  "assets/img/og/routes-index-og.svg"
   "assets/js/routes-index.js"
   "assets/js/route-page-badges.js"
   "docs/ROUTE_FACTORY_GUIDE.md"
   "docs/ROUTE_PAGE_INTEGRATION_GUIDE.md"
+  "docs/ROUTE_SEO_GUIDE.md"
 )
 
 for file in "${ROUTE_DATA_FILES[@]}"; do
@@ -336,6 +342,52 @@ if [ -f "scripts/check-route-page-integration.py" ]; then
     cat /tmp/verify-page.log | sed 's/^/    /'
   fi
 fi
+
+# v1.5.2 新增 · check-route-seo.py
+if [ -f "scripts/check-route-seo.py" ]; then
+  if python3 scripts/check-route-seo.py >/tmp/verify-seo.log 2>&1; then
+    check_pass "check-route-seo.py"
+  else
+    check_fail "check-route-seo.py (查看 /tmp/verify-seo.log)"
+    cat /tmp/verify-seo.log | sed 's/^/    /'
+  fi
+fi
+
+# v1.5.2 新增 · render-route-og-svg.py --check
+if [ -f "scripts/render-route-og-svg.py" ]; then
+  if python3 scripts/render-route-og-svg.py --all --check >/tmp/verify-og.log 2>&1; then
+    check_pass "render-route-og-svg.py --check"
+  else
+    check_fail "render-route-og-svg.py --check (查看 /tmp/verify-og.log)"
+    cat /tmp/verify-og.log | sed 's/^/    /'
+  fi
+fi
+
+# v1.5.2 新增 · 三个详情页含统一 SEO meta
+for slug in "out-of-eden-walk-china" "liao-tower-roadtrip" "shanxi-ancient-architecture"; do
+  page_path=""
+  case "$slug" in
+    out-of-eden-walk-china) page_path="trips/out-of-eden-walk-china/index.html" ;;
+    liao-tower-roadtrip) page_path="trips/liao-tower-roadtrip/index.html" ;;
+    shanxi-ancient-architecture) page_path="trips/shanxi-ancient-architecture-roadtrip/index.html" ;;
+  esac
+  if [ -f "$page_path" ]; then
+    if grep -q "og:image" "$page_path" && \
+       grep -q "twitter:card" "$page_path" && \
+       grep -q "canonical" "$page_path" && \
+       grep -q "og:$slug" "$page_path" 2>/dev/null; then
+      check_pass "$slug · 路线页面 SEO 完整"
+    elif grep -q "og:image" "$page_path" && \
+       grep -q "twitter:card" "$page_path" && \
+       grep -q "canonical" "$page_path"; then
+      check_pass "$slug · 路线页面 SEO 完整"
+    else
+      check_fail "$slug · 路线页面 SEO 不完整（缺 og:image / twitter:card / canonical）"
+    fi
+  else
+    check_fail "$page_path 缺失"
+  fi
+done
 
 # v1.5.1 新增 · 三个详情页含统一面板
 for slug in "out-of-eden-walk-china" "liao-tower-roadtrip" "shanxi-ancient-architecture"; do

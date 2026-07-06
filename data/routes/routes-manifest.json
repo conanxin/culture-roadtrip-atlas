@@ -1,6 +1,6 @@
 {
-  "version": "v1.5.0",
-  "updated_at": "2026-07-05",
+  "version": "v1.5.2",
+  "updated_at": "2026-07-06",
   "description": "Culture Roadtrip Atlas route data registry. All route data are cultural replica rough points, not real-time navigation data. Each entry is a static, reusable data asset for research, writing, and trip planning.",
   "routes": [
     {
@@ -47,7 +47,16 @@
       "best_season": "分段选择，山地避开恶劣天气",
       "route_summary": "从滇西边境到大连黄海，沿 Paul Salopek 的 Out of Eden Walk 中国段重建的文化复刻路线。",
       "data_completeness": "full",
-      "featured": true
+      "featured": true,
+      "seo_title": "Out of Eden Walk 中国段复刻路线｜Paul Salopek 国家地理慢新闻路线 · 行旅图谱",
+      "seo_description": "Paul Salopek 与国家地理 Out of Eden Walk 中国段复刻路线：从滇西边境到大连黄海，穿越茶马古道、蜀道、黄土高原、北京、长城与东北海岸，含事实审校、可旅行化方案、数据下载与静态路线图。",
+      "canonical_url": "https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/",
+      "og_title": "Out of Eden Walk 中国段复刻路线 · 行旅图谱",
+      "og_description": "沿 Paul Salopek 与国家地理 Out of Eden Walk 中国段足迹，从滇西边境到大连黄海，重建一条可阅读、可旅行、可下载数据的人文路线。",
+      "og_image_url": "https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/out-of-eden-walk-china-og.svg",
+      "twitter_title": "Out of Eden Walk 中国段复刻路线 · 行旅图谱",
+      "twitter_description": "从滇西边境到大连黄海，重建 Paul Salopek 国家地理慢新闻中国段路线。",
+      "share_summary": "从滇西边境到大连黄海，沿 Paul Salopek 的慢新闻足迹重建一条穿越中国地理剖面的文化复刻路线。"
     },
     {
       "slug": "liao-tower-roadtrip",
@@ -91,7 +100,16 @@
       "best_season": "5–10 月",
       "route_summary": "从北京出发，经辽西走廊、朝阳、赤峰、辽上京与承德，串联辽塔与契丹历史遗存。",
       "data_completeness": "v0.1",
-      "featured": true
+      "featured": true,
+      "seo_title": "北京出发·辽塔巡礼自驾导游手册｜辽代佛塔与契丹文明路线 · 行旅图谱",
+      "seo_description": "北京出发的辽塔巡礼自驾路线，串联锦州、义县、北镇、朝阳、赤峰、辽上京、宁城与承德，覆盖奉国寺、万佛堂石窟、朝阳北塔、庆州白塔、辽上京遗址与大明塔。",
+      "canonical_url": "https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/",
+      "og_title": "北京出发·辽塔巡礼自驾导游手册 · 行旅图谱",
+      "og_description": "从辽西走廊到契丹草原腹地，一条关于辽代佛塔、都城遗址、博物馆与契丹文明的自驾人文路线。",
+      "og_image_url": "https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/liao-tower-roadtrip-og.svg",
+      "twitter_title": "北京出发·辽塔巡礼自驾导游手册 · 行旅图谱",
+      "twitter_description": "从北京出发，沿辽西走廊进入契丹草原腹地，巡礼辽塔与辽代都城遗址。",
+      "share_summary": "一条从北京出发，穿越辽西走廊、朝阳、赤峰、辽上京与承德的辽代佛塔与契丹文明自驾路线。"
     },
     {
       "slug": "shanxi-ancient-architecture",
@@ -137,7 +155,16 @@
       "best_season": "4–10 月",
       "route_summary": "串联大同、应县、五台山、晋祠、平遥、临汾、运城与晋东南的山西古建自驾粗点路线。",
       "data_completeness": "v0.1",
-      "featured": true
+      "featured": true,
+      "seo_title": "山西古建路线｜木构、壁画、寺庙与晋地古建筑自驾图谱 · 行旅图谱",
+      "seo_description": "山西古建路线串联大同、应县、五台山、太原、平遥、介休、临汾、运城与晋东南，覆盖云冈石窟、华严寺、应县木塔、佛光寺、南禅寺、晋祠、双林寺、小西天、永乐宫与青莲寺等古建点位。",
+      "canonical_url": "https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/",
+      "og_title": "山西古建路线 · 行旅图谱",
+      "og_description": "从大同到晋东南，串联山西木构、壁画、寺庙、石窟与古城的文化自驾粗点路线。",
+      "og_image_url": "https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/shanxi-ancient-architecture-og.svg",
+      "twitter_title": "山西古建路线 · 行旅图谱",
+      "twitter_description": "从大同到晋东南，沿山西古建点位建立可下载、可审校、可复用的人文自驾路线。",
+      "share_summary": "一条串联大同、应县、五台山、太原、平遥、临汾、运城与晋东南的山西古建自驾路线。"
     }
   ]
 }

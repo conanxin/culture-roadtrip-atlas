@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="og-title og-desc">
+  <title id="og-title">山西古建路线 · 行旅图谱</title>
+  <desc id="og-desc">串联大同、应县、五台山、晋祠、平遥、临汾、运城与晋东南的山西古建自驾粗点路线。 行旅图谱 · Culture Roadtrip Atlas · 路线 slug=shanxi-ancient-architecture · 文化自驾粗点 · 非导航</desc>
+
+  <defs>
+    <linearGradient id="paper-shanxi-ancient-architecture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf6ed"/>
+      <stop offset="100%" stop-color="#f0e8d4"/>
+    </linearGradient>
+    <pattern id="paper-tex-shanxi-ancient-architecture" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.3" fill="#a8804c" opacity="0.10"/>
+      <circle cx="4" cy="3" r="0.3" fill="#2e4f4f" opacity="0.06"/>
+      <circle cx="2" cy="5" r="0.2" fill="#a8804c" opacity="0.08"/>
+    </pattern>
+    <pattern id="lines-shanxi-ancient-architecture" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 0 80 L 80 0" stroke="#a8804c" stroke-width="0.4" opacity="0.08" fill="none"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#paper-shanxi-ancient-architecture)"/>
+  <rect width="1200" height="630" fill="url(#paper-tex-shanxi-ancient-architecture)"/>
+  <rect width="1200" height="630" fill="url(#lines-shanxi-ancient-architecture)"/>
+
+  <rect x="32" y="32" width="1136" height="566" fill="none" stroke="#a8804c" stroke-width="1.5" opacity="0.5"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#2e4f4f" stroke-width="0.5" opacity="0.3"/>
+
+  <g>
+    <rect x="60" y="60" width="160" height="36" rx="18" fill="#2e4f4f" opacity="0.92"/>
+    <text x="140" y="84" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="16" fill="#faf6ed" text-anchor="middle" font-weight="600" letter-spacing="2">行旅图谱</text>
+  </g>
+
+  <g>
+    <rect x="60" y="110" width="200" height="32" rx="6" fill="#a8804c" opacity="0.18"/>
+    <text x="160" y="131" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="14" fill="#a8804c" text-anchor="middle" font-weight="500">v1.5.2 · 古建</text>
+  </g>
+
+  <text x="60" y="220" font-family="'Noto Serif SC', system-ui, serif" font-size="64" fill="#1e3838" font-weight="700" letter-spacing="2">山西古建路线</text>
+  <text x="60" y="290" font-family="'Noto Serif SC', system-ui, serif" font-size="40" fill="#4a6e6e" font-weight="500" letter-spacing="2"></text>
+
+  <line x1="60" y1="320" x2="280" y2="320" stroke="#a8804c" stroke-width="2"/>
+
+  <text x="60" y="370" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="20" fill="#5a5550">串联大同、应县、五台山、晋祠、平遥、临汾、运城与晋东南的山西古建自驾粗点路线…</text>
+  <text x="60" y="402" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="20" fill="#5a5550">。</text>
+
+  <g transform="translate(60, 460)">
+    <rect x="0" y="0" width="120" height="70" rx="6" fill="#2e4f4f" opacity="0.06" stroke="#2e4f4f" stroke-width="0.5"/>
+    <text x="60" y="22" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="11" fill="#a8804c" text-anchor="middle" font-weight="600">点位</text>
+    <text x="60" y="52" font-family="'Noto Serif SC', system-ui, serif" font-size="28" fill="#1e3838" text-anchor="middle" font-weight="700">30</text>
+  </g>
+  <g transform="translate(200, 460)">
+    <rect x="0" y="0" width="120" height="70" rx="6" fill="#2e4f4f" opacity="0.06" stroke="#2e4f4f" stroke-width="0.5"/>
+    <text x="60" y="22" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="11" fill="#a8804c" text-anchor="middle" font-weight="600">段落</text>
+    <text x="60" y="52" font-family="'Noto Serif SC', system-ui, serif" font-size="28" fill="#1e3838" text-anchor="middle" font-weight="700">9</text>
+  </g>
+  <g transform="translate(340, 460)">
+    <rect x="0" y="0" width="200" height="70" rx="6" fill="#2e4f4f" opacity="0.06" stroke="#2e4f4f" stroke-width="0.5"/>
+    <text x="100" y="22" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="11" fill="#a8804c" text-anchor="middle" font-weight="600">数据状态</text>
+    <text x="100" y="48" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="13" fill="#1e3838" text-anchor="middle" font-weight="500">古建自驾路线样板</text>
+    <text x="100" y="64" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="11" fill="#a8804c" text-anchor="middle" font-weight="500">有 SVG</text>
+  </g>
+
+  <g transform="translate(60, 558)">
+    <rect x="0" y="-2" width="3" height="22" fill="#a8804c"/>
+    <text x="14" y="14" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="12" fill="#1e3838" font-weight="500">文化自驾粗点</text>
+    <text x="14" y="32" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="10" fill="#5a5550">非导航 · 出入行前需独立核实 · slug: shanxi-ancient-architecture</text>
+  </g>
+
+  <g transform="translate(1140, 558)" text-anchor="end">
+    <text x="0" y="14" font-family="'Noto Serif SC', system-ui, serif" font-size="13" fill="#2e4f4f" font-weight="600" font-style="italic">Culture Roadtrip Atlas</text>
+    <text x="0" y="32" font-family="'Noto Sans SC', system-ui, sans-serif" font-size="10" fill="#5a5550">行旅图谱 · 路线数据资产</text>
+  </g>
+</svg>

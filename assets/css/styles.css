@@ -8112,3 +8112,27 @@ p {
     justify-content: center;
   }
 }
+
+/* ----- v1.5.2 SEO 共享文本 (Phase 12) ----- */
+.route-share-summary {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary, #5a5550);
+  font-style: italic;
+  margin: var(--space-md, 16px) auto;
+  max-width: 760px;
+  padding: 0 var(--space-md, 16px);
+  line-height: 1.7;
+}
+
+/* 屏幕阅读器可读、视觉隐藏（v1.5.2 SEO 共享文本） */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

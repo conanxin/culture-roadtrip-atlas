@@ -20,7 +20,7 @@
 
 ## 当前版本
 
-**v1.5.1 · Route Page Unified Data Badges and Related Routes**（2026-07-06）
+**v1.5.2 · Route SEO, OG Assets and Preview Images**（2026-07-06）
 
 三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
@@ -29,6 +29,26 @@
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
 v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.2 在 v1.5.1 基础上：
+
+- **统一三条路线详情页的 `<head>` 模板**：title / description / canonical / og:title / og:description / og:image / og:url / og:type / og:site_name / og:locale / og:image:width / og:image:height / og:image:alt / twitter:card（升级为 `summary_large_image`）/ twitter:title / twitter:description / twitter:image / theme-color
+- **新增 OG SVG 生成器** `scripts/render-route-og-svg.py`：从 routes-manifest.json 自动生成 · 支持 `python3 scripts/render-route-og-svg.py` / `--all` / `<slug>` / `--all --check`
+- **5 个 OG SVG 资产**（1200×630 · 米白纸张风格 · 含 `<title>` 与 `<desc>`）：
+  - `assets/img/og/out-of-eden-walk-china-og.svg` (5,497 字节)
+  - `assets/img/og/liao-tower-roadtrip-og.svg` (5,477 字节)
+  - `assets/img/og/shanxi-ancient-architecture-og.svg` (5,501 字节)
+  - `assets/img/og/site-og.svg` (4,586 字节 · 首页)
+  - `assets/img/og/routes-index-og.svg` (5,722 字节 · 路线索引页)
+- **首页 + 路线索引页 SEO 补齐**：title / description / canonical / og:* / twitter:* 全套元数据 + 主题色
+- **routes-manifest.json v1.5.2**：每条路线增加 9 个 SEO 字段（seo_title / seo_description / canonical_url / og_title / og_description / og_image_url / twitter_title / twitter_description / share_summary）
+- **新增 路线页面 SEO 检查脚本** `scripts/check-route-seo.py`：8 大类检查（manifest version · 9 SEO 字段 · og 文件大小 · title/description/canonical/og/twitter 12 类 meta · canonical 一致 · og:image basename 一致 · og_title / share_summary 可读）
+- **verify-site.sh 增强**：增加 v1.5.2 检查（1 项 SEO check + 1 项 OG SVG check + 3 项详情页 SEO 完整 + 1 项 routes-index-og 存在性），总门禁 97 → 107
+- **GitHub Actions 同步**：`.github/workflows/route-data.yml` 加入 `check-route-seo.py` 与 `render-route-og-svg.py --check` 两个 step
+- **路线详情页 share-summary**：每页加 `<p class="route-share-summary sr-only">{share_summary}</p>`，供 SEO 与社交分享使用
+- **`build-route-assets.py --all` 不丢字段**：验证 9 个 SEO 字段被保留
+- **零依赖**：不引入构建系统 / npm / 外部图像 API / 浏览器截图
+- **保留 OEDW 事实边界**：6,000–6,700 公里 / 22/22 milestones / 卢沟桥→天安门→小汤山 / 黄海三层时间 / 文化复刻粗点
 
 v1.5.1 在 v1.5.0 基础上：
 
