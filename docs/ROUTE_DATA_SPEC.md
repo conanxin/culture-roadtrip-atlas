@@ -355,4 +355,50 @@ _辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（
 
 ---
 
-_辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（Phase 8）+ v1.4.9 山西接入（Phase 9）+ v1.5.0 manifest 与索引页（Phase 10）· 2026-07-06_
+## 14. manifest SEO / OG 字段（v1.5.2 新增）
+
+从 v1.5.2 开始，`data/routes/routes-manifest.json` 也包含 SEO / OG 字段，为路线详情页提供可被搜索引擎与社交平台优雅分发的元数据。
+
+### 14.1 9 个 SEO 字段
+
+每条 route 必填：
+
+```
+seo_title           路线页 <title> 与 og:title 来源
+seo_description     路线页 <meta name=description> 与 og:description 来源
+canonical_url       路线页 <link rel=canonical> 与 og:url 来源
+og_title            og:title 内容
+og_description      og:description 内容
+og_image_url        og:image 指向的 SVG 资产 URL
+twitter_title       twitter:title 内容
+twitter_description twitter:description 内容
+share_summary       <p class=route-share-summary> 可见文本
+```
+
+### 14.2 字段约束
+
+- `canonical_url` 必须以 `https://conanxin.github.io/culture-roadtrip-atlas/` 开头
+- `og_image_url` 必须以 `.svg` 结尾
+- `og_image_url` 必须包含 `/assets/img/og/`
+- 文件名必须与 `assets/img/og/<slug>-og.svg` 一致
+
+### 14.3 字段保留
+
+`scripts/build-route-assets.py --all` 使用 `dict()` 浅拷贝 + 仅重写统计字段，9 个 SEO 字段**不会**被刷新统计时丢失。
+
+### 14.4 新增路线 SEO 步骤
+
+1. 沿用 §1–§13 准备路线数据资产
+2. 在 `routes-manifest.json` 中补充 §14.1 9 个 SEO 字段
+3. `python3 scripts/render-route-og-svg.py --all` 生成 OG SVG
+4. 在 HTML `<head>` 中加入 18 个 SEO meta 标签
+5. `<body>` 后加 `<p class="route-share-summary sr-only">{share_summary}</p>`
+6. `python3 scripts/check-route-seo.py` 验证
+
+### 14.5 详细 SEO 规范
+
+见 [`docs/ROUTE_SEO_GUIDE.md`](./ROUTE_SEO_GUIDE.md)
+
+---
+
+_辛 🔮 · 行旅图谱 · 数据规范 · v1.0（Phase 7）+ v1.4.8 增强（Phase 8）+ v1.4.9 山西接入（Phase 9）+ v1.5.0 manifest 与索引页（Phase 10）+ v1.5.2 SEO / OG 字段（Phase 12）· 2026-07-06_

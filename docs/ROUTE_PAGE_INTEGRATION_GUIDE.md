@@ -241,4 +241,37 @@ function scoreRelated(route, other) {
 
 ---
 
-_辛 🔮 · 行旅图谱 · 路线页面接入指南 · v1.0 · 2026-07-06_
+## 11. SEO / OG 补齐（v1.5.2 新增）
+
+完成统一数据徽章接入后，还需要补齐 SEO / OG 资产，确保页面可被搜索引擎与社交平台优雅分发。
+
+### 11.1 必跑步骤
+
+```bash
+# 1. 在 routes-manifest.json 补 9 个 SEO 字段
+#    (seo_title / seo_description / canonical_url / og_title / og_description
+#     / og_image_url / twitter_title / twitter_description / share_summary)
+
+# 2. 生成 OG SVG 资产
+python3 scripts/render-route-og-svg.py --all
+
+# 3. 路由页 head 引用 canonical / og:image / Twitter Card
+#    (title / description / canonical / og:title / og:description
+#     / og:type=article / og:url / og:image / og:site_name / og:locale
+#     / twitter:card=summary_large_image / twitter:title / twitter:description / twitter:image)
+
+# 4. SEO 一致性检查
+python3 scripts/check-route-seo.py
+
+# 5. 提交并等待 GitHub Actions
+git commit -m "..."
+git push origin main
+```
+
+### 11.2 详细 SEO 规范
+
+见 [`docs/ROUTE_SEO_GUIDE.md`](./ROUTE_SEO_GUIDE.md)
+
+---
+
+_辛 🔮 · 行旅图谱 · 路线页面接入指南 · v1.0 + v1.5.2 SEO / OG 补充 · 2026-07-06_
