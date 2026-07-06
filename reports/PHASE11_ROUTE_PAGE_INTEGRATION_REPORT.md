@@ -9,13 +9,14 @@
 |------|---|
 | **工作分支** | main |
 | **基线 commit** | db06764 (v1.5.0 Phase 10 backfill) |
-| **新 commit** | _pending_（commit 后回填） |
-| **push 状态** | _pending_ |
-| **部署状态** | _pending_ |
+| **新 commit** | 6753f25 · Add unified route page data badges（Phase 11 主交付）|
+| **辅 commit** | 703dda0 · Trigger redeploy（首次 Deploy run transient failure 后的补 deploy）|
+| **push 状态** | ✅ origin/main 已推送（6753f25 + 703dda0）|
+| **部署状态** | ✅ GitHub Pages 已部署（703dda0 Deploy run success · 28s）|
 | **本地命令验证** | 全部 PASS |
 | **本地 HTTP** | 全部 200 |
-| **线上 HTTP 200** | _pending_（push 后回填） |
-| **GitHub Actions run** | _pending_ |
+| **线上 HTTP 200** | ✅ 8/8 endpoints 200 |
+| **GitHub Actions run** | ✅ Route Data Quality Gate · run 28765902855 · 9s · success |
 
 ---
 
@@ -373,32 +374,33 @@ $ curl -I http://127.0.0.1:8000/docs/ROUTE_PAGE_INTEGRATION_GUIDE.md            
 
 ## 15. GitHub Actions 验证
 
-_pending_（push 后回填）：
+✅ **success · run 28765902855 · 9s**
 
 ```
-$ gh run list --workflow "Route Data Quality Gate" --limit 5
+$ gh run list --workflow "Route Data Quality Gate" --limit 3
+completed	success	Add unified route page data badges	Route Data Quality Gate	main	push	28765902855	9s	2026-07-06T03:30:40Z
+completed	success	Enhance route index search and comparison	Route Data Quality Gate	main	push	28758240913	10s	2026-07-05T23:14:28Z
+completed	success	Produce Shanxi ancient architecture route data	Route Data Quality Gate	main	push	28725412598	12s	2026-07-05T01:15:45Z
 ```
 
-预期本次 commit run 为 success。
+⚠️ **首次 Deploy run (28765902876) 因 GitHub Pages transient failure 失败**，已通过空提交 `703dda0 Trigger redeploy` 补 deploy 成功 (run 28766065628 · 28s)。
 
 ---
 
 ## 16. 线上 HTTP 200 验证
 
-_pending_（push 后回填）：
+✅ **8/8 endpoints 200**
 
 ```
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/routes/
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/assets/js/route-page-badges.js
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/docs/ROUTE_PAGE_INTEGRATION_GUIDE.md
-$ curl -I https://conanxin.github.io/culture-roadtrip-atlas/reports/PHASE11_ROUTE_PAGE_INTEGRATION_REPORT.md
+200 https://conanxin.github.io/culture-roadtrip-atlas/
+200 https://conanxin.github.io/culture-roadtrip-atlas/routes/
+200 https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/
+200 https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/
+200 https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/
+200 https://conanxin.github.io/culture-roadtrip-atlas/assets/js/route-page-badges.js
+200 https://conanxin.github.io/culture-roadtrip-atlas/docs/ROUTE_PAGE_INTEGRATION_GUIDE.md
+200 https://conanxin.github.io/culture-roadtrip-atlas/reports/PHASE11_ROUTE_PAGE_INTEGRATION_REPORT.md
 ```
-
-全部应为 200。
 
 ---
 
