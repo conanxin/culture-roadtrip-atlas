@@ -9,13 +9,13 @@
 |------|---|
 | **工作分支** | main |
 | **基线 commit** | 1301fa6 (Sprint 2 报告回填) |
-| **新 commit** | _pending_（commit 后回填） |
-| **push 状态** | _pending_ |
-| **部署状态** | _pending_ |
+| **新 commit** | bed2df7 (Deepen OEDW China route execution guide) |
+| **push 状态** | ✅ origin/main 已推送 (1301fa6..bed2df7) |
+| **部署状态** | ✅ GitHub Pages 已部署 (Deploy run 28778936284 · 24s · success) |
 | **本地命令验证** | 全部 PASS |
 | **本地 HTTP** | ✅ 4/4 endpoints 200 |
-| **线上 HTTP 200** | _pending_（push 后回填） |
-| **GitHub Actions run** | _pending_ |
+| **线上 HTTP 200** | ✅ 4/4 endpoints 200 (2026-07-06) |
+| **GitHub Actions run** | ✅ Route Data Quality Gate · run 28778936301 · 9s · success |
 
 ---
 
