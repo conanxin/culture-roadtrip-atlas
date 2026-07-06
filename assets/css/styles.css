@@ -9601,3 +9601,281 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ----- v1.5.10 OEDW 可信度、风险与读者入口样式 ----- */
+.oedw-reader-entry {
+  margin: var(--space-3xl, 40px) auto;
+}
+
+.oedw-reader-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-reader-entry-card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-top: 4px solid #2e4f4f;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.oedw-reader-entry-card--gold { border-top-color: #c8a96a; }
+.oedw-reader-entry-card--teal { border-top-color: #6b8e23; }
+.oedw-reader-entry-card--purple { border-top-color: #6b4f7a; }
+.oedw-reader-entry-card--olive { border-top-color: #5a5550; }
+.oedw-reader-entry-card--rose { border-top-color: #8b5a4a; }
+
+.oedw-reader-entry-card h4 {
+  margin: 0 0 6px;
+  color: #2e4f4f;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.oedw-reader-entry-card p {
+  margin: 0 0 6px;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4a4540;
+}
+
+.oedw-status-table-wrap {
+  overflow-x: auto;
+  margin-top: var(--space-md, 16px);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+}
+
+.oedw-status-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  min-width: 880px;
+  line-height: 1.55;
+}
+
+.oedw-status-table th,
+.oedw-status-table td {
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(46, 79, 79, 0.08);
+}
+
+.oedw-status-table th {
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.4px;
+}
+
+.oedw-status-table tr:last-child td {
+  border-bottom: none;
+}
+
+.oedw-status-table tbody tr:nth-child(even) {
+  background: rgba(200, 169, 106, 0.04);
+}
+
+.oedw-trust-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-trust-card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-left: 5px solid #2e4f4f;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.oedw-trust-card--a { border-left-color: #6b8e23; }
+.oedw-trust-card--b { border-left-color: #2e4f4f; }
+.oedw-trust-card--c { border-left-color: #c8a96a; }
+.oedw-trust-card--d { border-left-color: #b43c28; }
+
+.oedw-trust-card h4 {
+  margin: 0 0 6px;
+  color: #2e4f4f;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.oedw-trust-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 8px;
+  margin-right: 4px;
+}
+
+.oedw-trust-a { background: rgba(107, 142, 35, 0.22); color: #3d5a10; }
+.oedw-trust-b { background: rgba(46, 79, 79, 0.18); color: #1e3838; }
+.oedw-trust-c { background: rgba(200, 169, 106, 0.28); color: #5a4318; }
+.oedw-trust-d { background: rgba(180, 60, 40, 0.18); color: #8a2818; }
+
+.oedw-trust-card p {
+  margin: 6px 0;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: #4a4540;
+}
+
+.oedw-trust-card strong {
+  color: #2e4f4f;
+  font-size: 0.82rem;
+}
+
+.oedw-risk-audit {
+  margin: var(--space-3xl, 40px) auto;
+}
+
+.oedw-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-risk-card {
+  background: rgba(180, 60, 40, 0.04);
+  border: 1px solid rgba(180, 60, 40, 0.18);
+  border-left: 4px solid #b43c28;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.oedw-risk-card h4 {
+  margin: 0 0 6px;
+  color: #5a2820;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.oedw-risk-card p {
+  margin: 0 0 4px;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: #4a4540;
+}
+
+.oedw-risk-card strong {
+  color: #2e4f4f;
+  font-size: 0.78rem;
+  display: block;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
+.oedw-accessibility-table-wrap {
+  overflow-x: auto;
+  margin-top: var(--space-md, 16px);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+}
+
+.oedw-accessibility-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  min-width: 820px;
+  line-height: 1.55;
+}
+
+.oedw-accessibility-table th,
+.oedw-accessibility-table td {
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(46, 79, 79, 0.08);
+}
+
+.oedw-accessibility-table th {
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.4px;
+}
+
+.oedw-accessibility-table tr:last-child td {
+  border-bottom: none;
+}
+
+.oedw-observation-table-wrap {
+  overflow-x: auto;
+  margin-top: var(--space-md, 16px);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+}
+
+.oedw-observation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  min-width: 880px;
+  line-height: 1.55;
+}
+
+.oedw-observation-table th,
+.oedw-observation-table td {
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(46, 79, 79, 0.08);
+}
+
+.oedw-observation-table th {
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.4px;
+}
+
+.oedw-observation-table tr:last-child td {
+  border-bottom: none;
+}
+
+.oedw-faq-list {
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-faq-item {
+  background: rgba(46, 79, 79, 0.04);
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-left: 4px solid #2e4f4f;
+  border-radius: 6px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+  margin: 0 0 var(--space-sm, 10px) 0;
+}
+
+.oedw-faq-item h4 {
+  margin: 0 0 6px;
+  color: #2e4f4f;
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.oedw-faq-item p {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: #4a4540;
+}
+
+@media (max-width: 640px) {
+  .oedw-reader-entry-grid,
+  .oedw-trust-levels,
+  .oedw-risk-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,6 +4,104 @@
 
 ---
 
+## v1.5.10 · OEDW Trust Risk Reader Entry Audit (2026-07-06)
+
+### 主要变更
+
+- **OEDW 页面从「视觉资料准备版」升级为「可信度与风险审计版」**
+- **页面顶部状态保持**：93% · 可信度与风险审计版（不强行升到 95% 或 100%）
+- **明确说明**：93% 指页面资料结构成熟度，不代表路线实地验证完成
+- **新增「你应该从哪里开始」**（6 卡片）：
+  - 📖 只想了解项目
+  - 🧳 想实际旅行
+  - 📚 想研究官方资料
+  - 📷 想拍摄 / 写作
+  - 📊 想下载数据
+  - ⚖️ 想判断可信度和风险
+- **新增「本路线多维完成状态」**（9 维表格）：
+  - 事实审校（高）
+  - 官方 Milestones（高 · 22/22）
+  - Dispatch 基础复核（中高）
+  - 行程执行卡（高）
+  - 视觉资料矩阵（中）
+  - 交通与可达性（中）
+  - 开放状态（低 · 待核查）
+  - 实地验证（低 · 未完成）
+  - 参考书目（中）
+- **新增「资料可信度说明」**（4 级）：
+  - A 级：官方已复核
+  - B 级：官方链接可访问，细节待二次深读
+  - C 级：基于标题、位置与路线语境的中文解读
+  - D 级：待实地验证
+- **新增「不建议普通旅行者逐点复刻的场景」**（8 类）：
+  - 🛂 边境附近
+  - 🌲 高黎贡山 / 横断山深处
+  - 🏔 高海拔山路
+  - 🌳 保护区 / 林区
+  - 🧱 长城野段
+  - ⚓ 港口 / 工业区
+  - 🏘 乡村私域
+  - 🌙 夜间跨城赶路
+- **新增「交通与可达性分级」**（10 段 × 5 字段）：
+  - 普通公共交通 / 自驾包车 / 徒步 / 建议等级 / 说明
+  - 覆盖现有 10 段路线
+- **新增「官方故事如何变成旅行观察任务」**（8 类官方主题 → 现场观察问题）：
+  - 边境 / 古道 / 山地 / 城市入口 / 黄土高原 / 长城 / 港口 / 日常生活
+- **新增「FAQ」**（12 条）：
+  - GPS / 官方路线 / 普通人能不能走 / 为什么不逐点 / 7天选段 / 28天适合 / GPX导航 / 实地验证 / 100%状态 / 如何帮助 / 保留不确定性 / 阅读模式
+- **顶部主状态**：「93% · 视觉资料准备版」→「93% · 可信度与风险审计版」
+- **导航简化**：8 个核心锚点（总览/入口/状态/可信度/风险/可达性/FAQ/待验证）
+- **更新「仍需实地验证」**：从 8 项扩展为 13 项
+- **页面版本号全量更新**：v1.5.9 → v1.5.10（hero badge / page-meta × 2 / footer / 状态卡 / 风险说明）
+- **manifest v1.5.10**：
+  - 顶层 `version` = `v1.5.10`
+  - OEDW data_status_label：**长线文化复刻样板 · 可信度与风险审计版**
+  - OEDW route_summary 补齐 7 个新模块
+  - 9/9 SEO 字段保留
+- **check-route-seo.py**：`manifest version` 接受 v1.5.2 - v1.5.10
+- **CSS 增强**：`assets/css/styles.css` + 200 行（.oedw-reader-entry / .oedw-reader-entry-grid / .oedw-reader-entry-card / .oedw-status-table-wrap / .oedw-status-table / .oedw-trust-levels / .oedw-trust-card / .oedw-trust-badge / .oedw-trust-a / .oedw-trust-b / .oedw-trust-c / .oedw-trust-d / .oedw-risk-audit / .oedw-risk-grid / .oedw-risk-card / .oedw-accessibility-table-wrap / .oedw-accessibility-table / .oedw-observation-table-wrap / .oedw-observation-table / .oedw-faq-list / .oedw-faq-item 等 22 个新类）
+
+### 不修改
+
+- ❌ 辽塔页面（v1.5.4 状态保留）
+- ❌ 山西页面（v1.5.4 状态保留）
+- ❌ CSV / GeoJSON / GPX 坐标数据
+- ❌ SVG 路线示意图
+- ❌ OG SVG（SEO 检查不要求）
+- ❌ 路线工厂门禁脚本
+- ❌ 地图 API / 后端 / 数据库 / npm 依赖
+- ❌ 任何官方或第三方图片
+- ❌ 不强行提高完成度百分比（保持 93%）
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：v1.5.4 状态保留
+
+### 验证
+
+- 路线工厂门禁：全部 PASS
+- SEO / OG 门禁：全部 PASS
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+- 数量校验：22/22 Milestone 编号（74-95）全部出现
+- 不强行升到 95% 或 100%
+
+### 报告
+
+- `reports/OEDW_TRUST_RISK_READER_ENTRY_AUDIT_REPORT.md`
+
+---
+
 ## v1.5.9 · OEDW Visual Bibliography Pack (Granular) (2026-07-06)
 
 ### 主要变更
