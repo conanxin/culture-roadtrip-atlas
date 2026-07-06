@@ -9,13 +9,13 @@
 |------|---|
 | **工作分支** | main |
 | **基线 commit** | 4bfb825 (Phase 12 report backfill) |
-| **新 commit** | _pending_（commit 后回填） |
-| **push 状态** | _pending_ |
-| **部署状态** | _pending_ |
+| **新 commit** | 87183c4 · Optimize route itineraries for three routes（v1.5.3 主交付 · 12 files · 1,087+ lines）|
+| **push 状态** | ✅ origin/main 已推送（87183c4）|
+| **部署状态** | ✅ GitHub Pages 已部署（Deploy run 28768199695 · 27s · success）|
 | **本地命令验证** | 全部 PASS |
-| **本地 HTTP** | 全部 200 |
-| **线上 HTTP 200** | _pending_（push 后回填） |
-| **GitHub Actions run** | _pending_ |
+| **本地 HTTP** | ✅ 5/5 endpoints 200 |
+| **线上 HTTP 200** | ✅ 6/6 endpoints 200 |
+| **GitHub Actions run** | ✅ Route Data Quality Gate · run 28768199673 · 10s · success |
 
 ---
 
