@@ -4,6 +4,71 @@
 
 ---
 
+## v1.5.3 · Route Itinerary Optimization Sprint 1 (2026-07-06)
+
+### 主要变更
+
+- **从系统建设回到具体路线**：补充不同时间预算下的行程版本与取舍原则
+- **OEDW 增强**：
+  - 新增 28 天推荐节奏表（13 段 · 含驾驶强度 / 可压缩性 / 取舍建议）
+  - 6 条短线升级为「年度分段完成版本」· 补齐入口城市 / 出口城市 / 交通 / 适合人群 / 核心看点 / 最佳季节 / 难度 / 不可错过 / 可以删减 / 不建议做法
+  - 新增「如何取舍这条长线」原则：6 门判断（只走 7 天 / 走 14 天 / 写作/摄影项目 / 核心提示）
+- **辽塔增强**：
+  - 新增 9 天优化版自驾节奏表（9 段 · 含驾驶强度 / 参观强度 / 当日重点 / 备选删减）
+  - 新增 5 天压缩版（D1–D5 佛塔主轴）· 辆牲北镇 / 牛河梁 / 部分博物馆
+  - 新增 12 天深度版（12 段 · 增加医巫闾山 / 牛河梁 / 博物馆多点）
+  - 新增「辽塔路线取舍原则」：4 门判断（时间不足 / 博物馆型 / 自然地理型 / 亲子轻松型）
+- **山西增强**：
+  - 路线总览补充 4 主题拆分（北部石窟与辽金木构 / 中部晋祠与平遥体系 / 南部壁画与道教建筑 / 晋东南早期木构）
+  - 新增 10–12 天标准版（12 段）· 可压缩性标注
+  - 新增 7 天压缩版（7 段 · 首次去山西优先北部 + 中部）
+  - 新增 15 天深度版（9 段 · 拍摄 / 写作 / 古建学习 · 每 3–4 天安排一个低强度日）
+  - 新增「山西古建取舍原则」：4 门判断（初次 / 壁画爱好者 / 木构爱好者 / 注意事项）
+- **manifest v1.5.3**：
+  - 顶层 `version` = `v1.5.3`
+  - 三条路线的 `data_status_label` 改为「已完成线路优化」
+  - `route_summary` 补齐「已补充压缩版/标准版/深度版」描述
+  - 9 SEO 字段保留不变
+- **CSS 增强**：`assets/css/styles.css` + 195 行（.itinerary-optimization-section / .itinerary-version-card / .itinerary-table / .route-choice-principles / .route-cut-list / .route-intensity-badge 等 14 个新类）
+- **首页 + 路线索引页轻量更新**：
+  - index.html 增加「三条路线已补充压缩版 / 标准版 / 深度版」说明
+  - routes/index.html 增加「路线详情页已开始补充不同时间预算下的线路版本」说明
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：**文化自驾粗点** / **非实时导航** / **不保证开放状态、门票、预约、维修闭馆**
+
+### 不引入
+
+- ❌ 地图 API
+- ❌ 后端 / 数据库
+- ❌ 构建系统 / npm 依赖
+- ❌ 浏览器截图
+- ❌ 实时交通 / 实时路况 / 实时门票价格
+
+### 验证
+
+- 路线工厂门禁：全部 PASS（build-route-assets / validate-route-data / render-route-map-svg）
+- SEO / OG 门禁：全部 PASS（check-routes-index-sync / check-route-page-integration / render-route-og-svg / check-route-seo）
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+
+### 报告
+
+- `reports/ROUTE_ITINERARY_OPTIMIZATION_SPRINT1_REPORT.md`
+
+---
+
 ## v1.5.2 · Route SEO, OG Assets and Preview Images (2026-07-06)
 
 ### 主要变更

@@ -835,3 +835,16 @@ Phase 12 完成路线页面 SEO 统一与 OG 资产：
 - OEDW 事实边界完整保留
 - 形成完整 SEO 闭环：manifest → 页面 head → OG 资产 → 社交分享
 
+
+## Phase 13 · 线路优化专项 v1.5.3 (2026-07-06)
+
+从系统建设回到具体路线。补充不同时间预算下的行程版本与取舍原则：
+
+- OEDW 新增 28 天推荐节奏表 · 6 条年度短线升级 · 「如何取舍这条长线」原则
+- 辽塔新增 9 天优化版 · 5 天压缩版 · 12 天深度版 · 「辽塔路线取舍原则」
+- 山西新增 10–12 天标准版 · 7 天压缩版 · 15 天深度版 · 「山西古建取舍原则」
+- manifest v1.5.3：data_status_label + route_summary 轻微更新
+- CSS 增强 195 行（.itinerary-optimization-section / .itinerary-table / .route-choice-principles / .route-intensity-badge 等 14 个新类）
+- 首页 + 路线索引页轻量更新
+- 不引入地图 API / npm / 构建系统 / 浏览器截图 / 实时交通
+- OEDW 事实边界完整保留

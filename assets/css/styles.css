@@ -8136,3 +8136,206 @@ p {
   white-space: nowrap;
   border: 0;
 }
+
+/* ----- v1.5.3 线路优化样式 (Phase 13 Sprint 1) ----- */
+.itinerary-optimization-section {
+  margin: var(--space-3xl) auto;
+  max-width: 1100px;
+}
+
+.itinerary-version-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg, 20px);
+  margin-top: var(--space-lg, 20px);
+}
+
+.itinerary-version-card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-left: 4px solid #6b8e23;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.itinerary-version-card-itinerary-version-card--compact {
+  border-left-color: #c8a96a;
+}
+
+.itinerary-version-card--standard {
+  border-left-color: #6b8e23;
+}
+
+.itinerary-version-card--deep {
+  border-left-color: #2e4f4f;
+}
+
+.itinerary-version-card h4 {
+  margin: 0 0 var(--space-xs, 8px);
+  color: #2e4f4f;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.itinerary-version-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #5a5550;
+}
+
+.itinerary-table-wrap {
+  overflow-x: auto;
+  margin-top: var(--space-md, 16px);
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-radius: 8px;
+}
+
+.itinerary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  min-width: 720px;
+}
+
+.itinerary-table th,
+.itinerary-table td {
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(46, 79, 79, 0.08);
+  line-height: 1.55;
+}
+
+.itinerary-table th {
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+}
+
+.itinerary-table tr:last-child td {
+  border-bottom: none;
+}
+
+.itinerary-table tbody tr:nth-child(even) {
+  background: rgba(200, 169, 106, 0.04);
+}
+
+.route-choice-principles {
+  margin-top: var(--space-2xl, 32px);
+  background: rgba(46, 79, 79, 0.04);
+  border-radius: 10px;
+  padding: var(--space-lg, 20px) var(--space-xl, 24px);
+}
+
+.route-choice-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(46, 79, 79, 0.12);
+  border-radius: 8px;
+  padding: var(--space-md, 16px);
+  margin-bottom: var(--space-sm, 10px);
+}
+
+.route-choice-card h4 {
+  margin: 0 0 var(--space-xs, 8px);
+  color: #2e4f4f;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.route-choice-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #5a5550;
+}
+
+.route-cut-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-sm, 10px);
+  margin-top: var(--space-sm, 10px);
+}
+
+.route-cut-list-item {
+  background: rgba(46, 79, 79, 0.06);
+  border-radius: 6px;
+  padding: var(--space-xs, 8px) var(--space-sm, 12px);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.route-cut-list-item strong {
+  color: #2e4f4f;
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.85rem;
+}
+
+.route-intensity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.route-intensity-low {
+  background: rgba(107, 142, 35, 0.18);
+  color: #4a6320;
+}
+
+.route-intensity-medium {
+  background: rgba(200, 169, 106, 0.22);
+  color: #7a5e1c;
+}
+
+.route-intensity-high {
+  background: rgba(180, 60, 40, 0.16);
+  color: #8a2818;
+}
+
+.short-line-card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(46, 79, 79, 0.12);
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+  margin-bottom: var(--space-md, 16px);
+}
+
+.short-line-card h4 {
+  margin: 0 0 var(--space-xs, 8px);
+  color: #2e4f4f;
+  font-size: 1.05rem;
+}
+
+.short-line-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-xs, 8px);
+  margin-top: var(--space-sm, 10px);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #5a5550;
+}
+
+.short-line-card-grid div strong {
+  color: #2e4f4f;
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .itinerary-version-grid {
+    grid-template-columns: 1fr;
+  }
+  .itinerary-table {
+    font-size: 0.82rem;
+  }
+}
