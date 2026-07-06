@@ -10,7 +10,9 @@
 | **工作分支** | main |
 | **基线 commit** | bbf2156 (v1.5.1 Phase 11 report backfill) |
 | **新 commit** | bcc8ca7 · Add route SEO, OG assets and preview images（Phase 12 主交付 · 23 files · 1,706+ lines）|
-| **push 状态** | ✅ origin/main 已推送（bcc8ca7）|
+| **补送 commit** | b407c2e · docs: backfill Phase 12 report with commit hashes + GA run + live HTTP（报告回填）|
+| **增量 commit** | f1d8e8b · docs: add Phase 12 small enhancements (section 12-14)（§12.3 / §12.4 / §13 / §14 补全 spec 剩余项）|
+| **push 状态** | ✅ origin/main 已推送（bcc8ca7 + b407c2e + f1d8e8b）|
 | **部署状态** | ✅ GitHub Pages 已部署（Deploy run 28767110940 · 27s · success）|
 | **本地命令验证** | 全部 PASS |
 | **本地 HTTP** | 全部 200 |
