@@ -4,6 +4,90 @@
 
 ---
 
+## v1.5.6 · OEDW Milestones Chinese Story Index (2026-07-06)
+
+### 主要变更
+
+- **OEDW Milestones 74–95 全部完成 22/22 中文摘要**
+- **页面顶部状态**：完成度 85% → 88% 可用草案 v0.9（中文摘要已完成，剩余 12% 是视觉资料 + 实地核验）
+- **Milestones 74–95 中文故事索引（22 张卡片）**：
+  - 每条 6 字段：中文摘要 / 路线意义 / 复刻建议 / 不确定点 / 可复刻程度 / 官方链接
+  - 22 条 milestone 编号：74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95
+  - 每条 80-160 字中文摘要
+- **可复刻程度分级**（5 个 badge）：
+  - **易复刻** (5 条)：74, 80, 81, 85, 86, 89, 95
+  - **可分段** (4 条)：76, 82, 84, 90
+  - **主题** (5 条)：79, 83, 87, 88, 91
+  - **避免** (7 条)：75, 77, 78, 92, 93, 94
+  - **待核验** (1 条)：无（91 已用 "仅作阅读背景" 归入主题类）
+- **新增「如何从官方 Milestone 读到旅行路线」**（4 张说明卡）：
+  1. 官方 Milestone 是叙事节点
+  2. Dispatch 是故事，不是攻略
+  3. 文化复刻要看主题
+  4. 普通旅行者要降维
+- **更新「仍需实地验证」中"细节资料"清单**：
+  - ✅ Milestones 74–95 共 22 条基础中文摘要已完成
+  - 官方 dispatch 深度复核（待逐条展开）
+  - 每条 milestone 的代表图片（待补充）
+  - 现场实拍图（待贡献）
+  - 点位开放状态 + 实地可达性
+  - 中文参考书目与延伸阅读
+- **页面顶部导航更新**：新增「故事索引」锚点
+- **页面版本号全量更新**：v1.5.5 → v1.5.6（hero badge / page-meta / footer / 状态卡）
+- **manifest v1.5.6**：
+  - 顶层 `version` = `v1.5.6`
+  - OEDW data_status_label：**长线文化复刻样板 · Milestones 中文索引版**
+  - OEDW route_summary 补齐 22 条中文摘要
+  - 9/9 SEO 字段保留
+- **check-route-seo.py**：`manifest version` 接受 v1.5.2 / v1.5.3 / v1.5.4 / v1.5.5 / v1.5.6
+- **CSS 增强**：`assets/css/styles.css` + 120 行（.oedw-milestone-index / .oedw-milestone-grid / .oedw-milestone-card / .oedw-milestone-number / .oedw-milestone-title / .oedw-milestone-meta / .oedw-milestone-block / .oedw-replication-badge / .oedw-replication-easy / .oedw-replication-segment / .oedw-replication-theme / .oedw-replication-avoid / .oedw-replication-pending / .oedw-milestone-link / .oedw-official-reading-grid / .oedw-official-reading-card 等 16 个新类）
+
+### 不复制官方长文
+
+- ❌ 不复制 National Geographic / Out of Eden Walk 原文
+- ❌ 不做全文翻译
+- ❌ 不伪造 Paul Salopek 原始 GPS
+- ❌ 不写成官方旅行路线
+- ✅ 仅做中文摘要、转述、引用短标题、引用官方 URL
+
+### 不修改
+
+- ❌ 辽塔页面（v1.5.4 状态保留）
+- ❌ 山西页面（v1.5.4 状态保留）
+- ❌ CSV / GeoJSON / GPX 坐标数据
+- ❌ SVG 路线示意图
+- ❌ OG SVG（SEO 检查不要求）
+- ❌ 路线工厂门禁脚本
+- ❌ 地图 API / 后端 / 数据库 / npm 依赖
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅（再次确认 22 条全部有中文摘要）
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：v1.5.4 状态保留
+
+### 验证
+
+- 路线工厂门禁：全部 PASS
+- SEO / OG 门禁：全部 PASS
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+- 数量校验：22/22 Milestone 编号（74-95）全部出现
+
+### 报告
+
+- `reports/OEDW_MILESTONES_CHINESE_STORY_INDEX_REPORT.md`
+
+---
+
 ## v1.5.5 · OEDW China Route Deep Optimization (2026-07-06)
 
 ### 主要变更

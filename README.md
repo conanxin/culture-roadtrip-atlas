@@ -20,7 +20,7 @@
 
 ## 当前版本
 
-**v1.5.5 · OEDW China Route Deep Optimization**（2026-07-06）
+**v1.5.6 · OEDW Milestones Chinese Story Index**（2026-07-06）
 
 三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
@@ -29,6 +29,21 @@
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
 v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.6 在 v1.5.5 基础上：
+
+- **v1.5.6 · Out of Eden Walk 中国段 Milestones 中文故事索引**：Milestones 74–95 共 22 条已补充中文摘要、路线意义、复刻建议和待验证点；新增「如何从官方 Milestone 读到旅行路线」4 张说明卡
+- OEDW 页面顶部状态：85% → 88% 可用草案 v0.9
+- 新增 Milestones 74–95 中文故事索引（22 张卡片 · 6 字段 · 中文摘要/路线意义/复刻建议/不确定点/可复刻程度/官方链接）
+- 新增「如何从官方 Milestone 读到旅行路线」4 张卡片
+- 可复刻程度分级：易复刻 / 可分段 / 主题 / 避免 / 待核验
+- 更新「仍需实地验证」中"细节资料"清单：中文摘要已完成，待视觉资料
+- OEDW 页面顶部导航锚点新增「故事索引」
+- manifest v1.5.6：OEDW data_status_label = 长线文化复刻样板 · Milestones 中文索引版
+- check-route-seo.py：接受 v1.5.2 / v1.5.3 / v1.5.4 / v1.5.5 / v1.5.6
+- CSS 增强（.oedw-milestone-index / .oedw-milestone-grid / .oedw-milestone-card / .oedw-milestone-meta / .oedw-replication-badge / .oedw-official-reading-grid / .oedw-official-reading-card 等 14 个新类）
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标 / 不复制官方长文 / 不引入地图 API
+- 所有 22 条 milestone 仅做中文摘要、转述和路线解读，不做全文翻译
 
 v1.5.5 在 v1.5.4 基础上：
 

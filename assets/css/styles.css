@@ -8853,3 +8853,161 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ----- v1.5.6 OEDW Milestones 中文故事索引样式 ----- */
+.oedw-milestone-index {
+  margin: var(--space-3xl, 40px) auto;
+}
+
+.oedw-milestone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-milestone-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(46, 79, 79, 0.2);
+  border-left: 5px solid #2e4f4f;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.oedw-milestone-card--theme { border-left-color: #c8a96a; }
+.oedw-milestone-card--avoid { border-left-color: #b43c28; }
+.oedw-milestone-card--pending { border-left-color: #8b6a3f; }
+
+.oedw-milestone-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0 0 8px;
+}
+
+.oedw-milestone-number {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #2e4f4f;
+  background: rgba(46, 79, 79, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+}
+
+.oedw-milestone-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2e4f4f;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.oedw-milestone-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.72rem;
+  margin: 0 0 8px;
+}
+
+.oedw-milestone-meta span {
+  background: rgba(107, 142, 35, 0.12);
+  color: #3d4f15;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.oedw-milestone-block {
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: #4a4540;
+  margin: 6px 0;
+}
+
+.oedw-milestone-block strong {
+  display: block;
+  color: #2e4f4f;
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.oedw-replication-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+}
+
+.oedw-replication-easy {
+  background: rgba(107, 142, 35, 0.22);
+  color: #3d5a10;
+}
+
+.oedw-replication-segment {
+  background: rgba(46, 79, 79, 0.18);
+  color: #1e3838;
+}
+
+.oedw-replication-theme {
+  background: rgba(200, 169, 106, 0.28);
+  color: #5a4318;
+}
+
+.oedw-replication-avoid {
+  background: rgba(180, 60, 40, 0.18);
+  color: #8a2818;
+}
+
+.oedw-replication-pending {
+  background: rgba(139, 106, 63, 0.22);
+  color: #5a3818;
+}
+
+.oedw-milestone-link {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: #2e4f4f;
+  text-decoration: underline;
+  margin-top: 4px;
+}
+
+.oedw-official-reading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-official-reading-card {
+  background: rgba(46, 79, 79, 0.06);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.oedw-official-reading-card h4 {
+  margin: 0 0 6px;
+  color: #2e4f4f;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.oedw-official-reading-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #4a4540;
+}
+
+@media (max-width: 640px) {
+  .oedw-milestone-grid,
+  .oedw-official-reading-grid {
+    grid-template-columns: 1fr;
+  }
+}
