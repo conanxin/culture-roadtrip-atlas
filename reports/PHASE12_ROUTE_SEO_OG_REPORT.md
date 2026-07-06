@@ -9,13 +9,13 @@
 |------|---|
 | **工作分支** | main |
 | **基线 commit** | bbf2156 (v1.5.1 Phase 11 report backfill) |
-| **新 commit** | _pending_（commit 后回填）|
-| **push 状态** | _pending_ |
-| **部署状态** | _pending_ |
+| **新 commit** | bcc8ca7 · Add route SEO, OG assets and preview images（Phase 12 主交付 · 23 files · 1,706+ lines）|
+| **push 状态** | ✅ origin/main 已推送（bcc8ca7）|
+| **部署状态** | ✅ GitHub Pages 已部署（Deploy run 28767110940 · 27s · success）|
 | **本地命令验证** | 全部 PASS |
 | **本地 HTTP** | 全部 200 |
-| **线上 HTTP 200** | _pending_（push 后回填）|
-| **GitHub Actions run** | _pending_ |
+| **线上 HTTP 200** | ✅ 14/14 endpoints 200 |
+| **GitHub Actions run** | ✅ Route Data Quality Gate · run 28767110941 · 12s · success |
 
 ---
 
@@ -371,7 +371,56 @@ git push origin main
 
 ---
 
-## 14. Phase 13 建议
+## 14. GitHub Actions 验证（push 后回填）
+
+✅ **success · run 28767110941 · 12s**
+
+```
+$ gh run list --limit 3
+completed	success	Add route SEO, OG assets and preview images	Route Data Quality Gate	main	push	28767110941	12s	2026-07-06T04:08:54Z
+completed	success	Add route SEO, OG assets and preview images	Deploy to GitHub Pages	main	push	28767110940	27s	2026-07-06T04:08:54Z
+completed	success	docs: backfill Phase 11 report with commit hashes + GA run + live HTTP	Deploy to GitHub Pages	main	push	28766151175	13s	2026-07-06T03:41:19Z
+```
+
+## 15. 线上 HTTP 200 验证（push 后回填）
+
+✅ **14/14 endpoints 200**
+
+```
+200 https://conanxin.github.io/culture-roadtrip-atlas/
+200 https://conanxin.github.io/culture-roadtrip-atlas/routes/
+200 https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/
+200 https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/
+200 https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/
+200 https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/out-of-eden-walk-china-og.svg
+200 https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/liao-tower-roadtrip-og.svg
+200 https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/shanxi-ancient-architecture-og.svg
+200 https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/site-og.svg
+200 https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/routes-index-og.svg
+200 https://conanxin.github.io/culture-roadtrip-atlas/scripts/render-route-og-svg.py
+200 https://conanxin.github.io/culture-roadtrip-atlas/scripts/check-route-seo.py
+200 https://conanxin.github.io/culture-roadtrip-atlas/docs/ROUTE_SEO_GUIDE.md
+200 https://conanxin.github.io/culture-roadtrip-atlas/reports/PHASE12_ROUTE_SEO_OG_REPORT.md
+```
+
+## 16. 页面 URL
+
+- 首页：https://conanxin.github.io/culture-roadtrip-atlas/
+- 路线数据索引：https://conanxin.github.io/culture-roadtrip-atlas/routes/
+- OEDW 详情页：https://conanxin.github.io/culture-roadtrip-atlas/trips/out-of-eden-walk-china/
+- 辽塔详情页：https://conanxin.github.io/culture-roadtrip-atlas/trips/liao-tower-roadtrip/
+- 山西详情页：https://conanxin.github.io/culture-roadtrip-atlas/trips/shanxi-ancient-architecture-roadtrip/
+- OEDW OG：https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/out-of-eden-walk-china-og.svg
+- 辽塔 OG：https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/liao-tower-roadtrip-og.svg
+- 山西 OG：https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/shanxi-ancient-architecture-og.svg
+- site OG：https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/site-og.svg
+- routes-index OG：https://conanxin.github.io/culture-roadtrip-atlas/assets/img/og/routes-index-og.svg
+- render-route-og-svg.py：https://conanxin.github.io/culture-roadtrip-atlas/scripts/render-route-og-svg.py
+- check-route-seo.py：https://conanxin.github.io/culture-roadtrip-atlas/scripts/check-route-seo.py
+- ROUTE_SEO_GUIDE：https://conanxin.github.io/culture-roadtrip-atlas/docs/ROUTE_SEO_GUIDE.md
+- Phase 12 报告：https://conanxin.github.io/culture-roadtrip-atlas/reports/PHASE12_ROUTE_SEO_OG_REPORT.md
+
+## 17. Phase 13 建议
 
 1. **i18n SEO**
    - 英文版 `<html lang="en">` 路线页面
