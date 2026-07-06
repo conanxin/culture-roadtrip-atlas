@@ -39,11 +39,10 @@
         <a href="../../index.html" class="nav-brand">← 行旅图谱</a>
         <div class="nav-links">
           <a href="#overview" class="nav-link">总览</a>
-          <a href="#oedw-reader-entry" class="nav-link">入口</a>
+          <a href="#oedw-reading-map" class="nav-link">阅读地图</a>
           <a href="#oedw-status-matrix" class="nav-link">状态</a>
           <a href="#oedw-trust-levels" class="nav-link">可信度</a>
           <a href="#oedw-risk-audit" class="nav-link">风险</a>
-          <a href="#oedw-accessibility" class="nav-link">可达性</a>
           <a href="#oedw-faq" class="nav-link">FAQ</a>
           <a href="#oedw-pending" class="nav-link">待验证</a>
         </div>
@@ -54,7 +53,7 @@
   <!-- Hero 首屏 -->
   <section class="hero trip-skeleton">
     <div class="container">
-      <div class="trip-skeleton-badge">🌟 代表长线 · v1.5.10 · 可用草案 v0.9 · 93% · 可信度与风险审计</div>
+      <div class="trip-skeleton-badge">🌟 代表长线 · v1.5.11 · 可用草案 v0.9 · 93% · 结构化阅读版</div>
       <h1 class="hero-title">Out of Eden Walk 中国段复刻路线</h1>
       <p class="hero-subtitle">从滇西边境到大连黄海：跟随 Paul Salopek 的慢新闻足迹，<br>穿越古道、蜀道、黄土高原、长城与东北海岸</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -90,7 +89,7 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.5.10 · 可用草案 v0.9 · 93% · 2026-07-06 · 读者入口 + 可信度 + 风险 + FAQ</span>
+        <span class="page-meta-value">v1.5.11 · 可用草案 v0.9 · 93% · 2026-07-07 · 结构化阅读 + 折叠资料 + 模块标识</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">原始项目：</span>
@@ -98,7 +97,7 @@
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">v1.5.10 · 可用草案 v0.9 · 93% · 2026-07-06 · 读者入口 + 可信度 + 风险 + FAQ</span>
+        <span class="page-meta-value">v1.5.11 · 可用草案 v0.9 · 93% · 2026-07-07 · 结构化阅读 + 折叠资料 + 模块标识</span>
       </div>
     </div>
   </section>
@@ -106,45 +105,45 @@
 <!-- 快速阅读 / 阅读进度 / 返回顶部（v1.4.4 新增） -->
   <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
 
-  <!-- 快速阅读目录（v1.4.4 新增） -->
+  <!-- 快速阅读目录（v1.4.4 新增，v1.5.11 精简为 pill 样式） -->
   <section class="container" style="margin-top: var(--space-2xl);">
     <div class="quick-read-nav">
       <h3 class="quick-read-nav-title">📖 快速阅读</h3>
-      <div class="quick-read-nav-buttons">
-        <a href="#audit" class="quick-read-link">事实审校</a>
-        <a href="#scroll-map" class="quick-read-link">长卷地图</a>
-        <a href="#route" class="quick-read-link">分段路线</a>
-        <a href="#milestones" class="quick-read-link">Milestones</a>
-        <a href="#narrative-guide" class="quick-read-link">随行导游词</a>
-        <a href="#versions" class="quick-read-link">21–28 天精华版</a>
-        <a href="#versions" class="quick-read-link">六段短线</a>
-        <a href="#prep-pack" class="quick-read-link">行前资料包</a>
-        <a href="#share-summary" class="quick-read-link">传播摘要</a>
-        <a href="#sources" class="quick-read-link">来源资料</a>
+      <div class="oedw-quick-nav-compact">
+        <a href="#oedw-status-matrix">状态</a>
+        <a href="#oedw-reading-map">阅读地图</a>
+        <a href="#audit">事实审校</a>
+        <a href="#oedw-official-reading">官方故事</a>
+        <a href="#narrative-guide">随行导游词</a>
+        <a href="#versions">21–28 天</a>
+        <a href="#oedw-execution-cards">执行卡</a>
+        <a href="#oedw-bibliography">参考书目</a>
+        <a href="#oedw-visual-materials">视觉资料</a>
+        <a href="#oedw-faq">FAQ</a>
       </div>
     </div>
   </section>
-<!-- 本页状态 + 适合谁使用（v1.4.4 新增） -->
+<!-- 本页状态 + 适合谁使用（v1.4.4 新增，v1.5.11 同步至结构化阅读版） -->
   <section class="container" style="margin-top: var(--space-2xl);">
     <div class="page-status-card">
-      <div class="page-status-tag">v1.4.4 · 50% · 发布包装完成</div>
+      <div class="page-status-tag">v1.5.11 · 93% · 结构化阅读版</div>
       <h3 class="page-status-title">本页状态</h3>
       <div class="page-status-grid">
         <div class="page-status-item">
           <div class="page-status-label">当前版本</div>
-          <div class="page-status-value">v1.4.4</div>
+          <div class="page-status-value">v1.5.11</div>
         </div>
         <div class="page-status-item">
           <div class="page-status-label">完成度</div>
-          <div class="page-status-value">50%</div>
+          <div class="page-status-value">93%</div>
         </div>
         <div class="page-status-item">
           <div class="page-status-label">已交付</div>
-          <div class="page-status-value">事实审校 · 可旅行化 · 叙事导览 · 发布包装</div>
+          <div class="page-status-value">页面阅读地图 · 三条核心阅读路径 · 折叠式资料模块 · 模块类型标识 · 精简导航</div>
         </div>
         <div class="page-status-item">
           <div class="page-status-label">仍待完善</div>
-          <div class="page-status-value">实地走访照片 · GPX/地图轨迹 · 住宿交通细表 · 更多中文资料</div>
+          <div class="page-status-value">实地走访照片 · 授权图片 · 开放状态 · 交通现实 · 实走反馈 · 中文参考书目原著</div>
         </div>
       </div>
     </div>
@@ -167,6 +166,189 @@
           <li>只想轻松打卡、不想读背景的人</li>
           <li>追求逐段精确复刻 Paul 原始路线的人</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- v1.5.11 页面阅读地图 + 三条核心阅读路径 -->
+  <section id="oedw-reading-map" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">
+      <span class="module-type module-type-core">核心</span>
+      页面阅读地图
+    </h2>
+    <p class="text-center" style="color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+      这是一页很长的研究型路线档案，可以按目标分层阅读，不必从头读到尾。
+    </p>
+    <div class="oedw-reading-map">
+      <p class="oedw-reading-map-intro">
+        下面把页面分成 5 个大区。每个大区都是一类阅读需求，不必全部阅读，按目标选一个入口即可。
+      </p>
+      <div class="oedw-reading-map-grid">
+        <div class="oedw-reading-map-card oedw-reading-map-card--core">
+          <span class="oedw-reading-map-tag">核心 · 第一次打开页面</span>
+          <h4>1. 先理解这条路线</h4>
+          <ul>
+            <li>路线总览</li>
+            <li>本路线当前状态</li>
+            <li>事实审校说明</li>
+            <li>资料可信度说明（4 级）</li>
+            <li>FAQ（12 条）</li>
+          </ul>
+          <p>适合：第一次打开页面，只想知道这是什么路线、能不能走、风险边界。</p>
+        </div>
+        <div class="oedw-reading-map-card oedw-reading-map-card--travel">
+          <span class="oedw-reading-map-tag">行程 · 准备实际走一段</span>
+          <h4>2. 想实际走一段</h4>
+          <ul>
+            <li>7 / 14 / 28 天路线选择器</li>
+            <li>28 天每日执行卡</li>
+            <li>住宿区域与交通方式总表</li>
+            <li>交通与可达性分级（10 段）</li>
+            <li>不建议复刻场景（8 类）</li>
+            <li>出发前核查清单</li>
+          </ul>
+          <p>适合：准备旅行、做行程规划、判断风险与时间预算。</p>
+        </div>
+        <div class="oedw-reading-map-card oedw-reading-map-card--story">
+          <span class="oedw-reading-map-tag">资料 · 研究官方叙事</span>
+          <h4>3. 想读官方故事</h4>
+          <ul>
+            <li>Milestones 74–95 中文故事索引</li>
+            <li>官方 Dispatch 资料对照表</li>
+            <li>如何阅读 Dispatch</li>
+            <li>从官方故事到复刻路线</li>
+          </ul>
+          <p>适合：研究 Out of Eden Walk 官方叙事，作为中文资料索引使用。</p>
+        </div>
+        <div class="oedw-reading-map-card oedw-reading-map-card--photo">
+          <span class="oedw-reading-map-tag">资料 · 拍摄 / 写作</span>
+          <h4>4. 想拍摄 / 写作</h4>
+          <ul>
+            <li>28 天每日导游词</li>
+            <li>现场记录模板</li>
+            <li>拍摄 / 记录建议</li>
+            <li>Milestone 视觉资料矩阵</li>
+            <li>22 条 Milestone 补图清单</li>
+            <li>OEDW 现场实拍计划</li>
+            <li>视觉资料命名与归档规范</li>
+          </ul>
+          <p>适合：摄影、写作、实地观察项目，重点是道路、人、地貌、边界和日常。</p>
+        </div>
+        <div class="oedw-reading-map-card oedw-reading-map-card--data">
+          <span class="oedw-reading-map-tag">数据 · 下载和复用</span>
+          <h4>5. 想下载和复用数据</h4>
+          <ul>
+            <li>路线数据状态</li>
+            <li>CSV / GeoJSON / GPX / SVG 下载</li>
+            <li>静态路线图</li>
+            <li>route-page-badges</li>
+            <li>manifest 数据</li>
+          </ul>
+          <p>适合：数据复用、地图制作、路线研究。所有数据均为文化复刻粗点，不作为实时导航。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-center" style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">
+      <span class="module-type module-type-core">核心</span>
+      三条核心阅读路径
+    </h3>
+    <div class="oedw-reading-paths">
+      <div class="oedw-reading-path-grid">
+        <div class="oedw-reading-path-card">
+          <span class="oedw-reading-path-time">⏱ 10 分钟快速了解</span>
+          <h4>第一次打开页面</h4>
+          <ol>
+            <li>路线总览</li>
+            <li>本路线当前状态</li>
+            <li>事实审校说明</li>
+            <li>7 / 14 / 28 天选择器</li>
+            <li>FAQ（12 条）</li>
+          </ol>
+          <p>适合：只想知道这条路线是什么、能不能走、不用细看资料。</p>
+        </div>
+        <div class="oedw-reading-path-card">
+          <span class="oedw-reading-path-time">⏱ 30 分钟做旅行判断</span>
+          <h4>准备实际出发</h4>
+          <ol>
+            <li>多维完成状态表</li>
+            <li>不建议复刻场景</li>
+            <li>交通与可达性分级</li>
+            <li>28 天每日执行卡</li>
+            <li>住宿区域与交通方式总表</li>
+            <li>出发前核查清单</li>
+          </ol>
+          <p>适合：判断自己是否适合走、选哪一段、哪些风险要避开。</p>
+        </div>
+        <div class="oedw-reading-path-card">
+          <span class="oedw-reading-path-time">⏱ 90 分钟做研究阅读</span>
+          <h4>把页面当资料库</h4>
+          <ol>
+            <li>Milestones 中文故事索引</li>
+            <li>官方 Dispatch 资料对照表</li>
+            <li>如何阅读 Dispatch</li>
+            <li>官方故事到旅行观察任务</li>
+            <li>视觉资料矩阵</li>
+            <li>参考书目与资料入口</li>
+          </ol>
+          <p>适合：把页面作为 OEDW 中国段中文研究索引使用。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 精简 quick nav（v1.5.11 收紧为 10 个 pill） -->
+    <h3 class="text-center" style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">
+      <span class="module-type module-type-core">核心</span>
+      页面太长怎么办？快速跳转
+    </h3>
+    <div class="oedw-quick-nav-compact">
+      <a href="#oedw-status-matrix">状态</a>
+      <a href="#oedw-reading-map">阅读地图</a>
+      <a href="#oedw-official-reading">官方故事</a>
+      <a href="#oedw-execution-cards">28 天执行卡</a>
+      <a href="#oedw-bibliography">参考书目</a>
+      <a href="#oedw-visual-materials">视觉资料</a>
+      <a href="#oedw-pre-departure">出发前核查</a>
+      <a href="#oedw-risk-audit">风险</a>
+      <a href="#route-page-data-panel">下载数据</a>
+      <a href="#oedw-faq">FAQ</a>
+    </div>
+  </section>
+
+<!-- v1.5.11 页面太长怎么办 -->
+  <section id="oedw-long-page-help" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    <div class="section-divider">
+      <span class="section-divider-icon">◇</span>
+    </div>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);">
+      <span class="module-type module-type-core">核心</span>
+      页面太长怎么办？
+    </h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+      这页不是为一次性读完设计的，而是一个可反复查阅的路线档案。
+    </p>
+    <div class="oedw-long-page-help">
+      <p>以下 4 条建议，对应 4 类读者。按需选一种阅读顺序，不必按页面顺序逐字读。</p>
+      <div class="oedw-long-page-help-grid">
+        <div class="oedw-long-page-help-card">
+          <h4>1. 先按 “10 分钟快速了解” 读</h4>
+          <p>第一次打开页面，只读阅读地图 · 本路线当前状态 · 事实审校 · 7/14/28 天选择器 · FAQ。读完即可判断这条路线是什么、适不适合走。</p>
+        </div>
+        <div class="oedw-long-page-help-card">
+          <h4>2. 如果要旅行，只读 “行程 + 风险 + 交通”</h4>
+          <p>读 28 天每日执行卡 · 住宿交通总表 · 不建议复刻场景 · 交通可达性分级 · 出发前核查清单。其他都是背景阅读。</p>
+        </div>
+        <div class="oedw-long-page-help-card">
+          <h4>3. 如果要研究，只读 “Milestones + Dispatch + 参考书目”</h4>
+          <p>读 Milestones 中文故事索引 · 官方 Dispatch 对照表 · 如何阅读 Dispatch · 参考书目与资料入口。这是最适合中文研究者的入口。</p>
+        </div>
+        <div class="oedw-long-page-help-card">
+          <h4>4. 如果要实地拍摄，只读 “导游词 + 视觉资料 + 补图清单”</h4>
+          <p>读 28 天每日导游词 · Milestone 视觉资料矩阵 · 22 条补图清单 · 现场实拍计划 · 现场记录模板。</p>
+        </div>
       </div>
     </div>
   </section>
@@ -195,7 +377,7 @@
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-md);">下载路线数据</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-data">数据</span> 下载路线数据</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
       v1.4.5 新增 · CSV / GeoJSON / GPX 三种格式 · 仅作研究、写作、静态地图与个人旅行规划参考
     </p>
@@ -258,7 +440,7 @@
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-md);">静态路线示意图</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-data">数据</span> 静态路线示意图</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
       v1.4.6 新增 · 由本页 GeoJSON 数据自动生成 · 纯静态 SVG · 无地图 API
     </p>
@@ -273,7 +455,7 @@
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-md);">数据驱动路线表</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-data">数据</span> 数据驱动路线表</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
       v1.4.6 新增 · 直接读取 GeoJSON 文化复刻粗点 · 可按段落 / 省份 / 难度 / 复刻性筛选
     </p>
@@ -349,7 +531,7 @@
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-md);">事实审校说明</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-core">核心</span> 事实审校说明</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
       Phase 2 审校。以官方 milestone / dispatch 为主要凭据、中文材料为补充，不提供 Paul 原始 GPS 逐点复刻。
     </p>
@@ -1161,11 +1343,16 @@
   </section>
 
   <!-- v1.5.6 Milestones 74–95 中文故事索引 -->
-  <section id="oedw-milestone-index" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <details class="oedw-collapsible" id="oedw-milestone-index">
+    <summary>
+      <span class="oedw-collapsible-summary">Milestones 74–95 中文故事索引</span>
+      <small class="oedw-collapsible-hint">22 条官方里程碑的中文摘要、复刻建议与原文链接</small>
+    </summary>
+    <section id="oedw-milestone-index" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📚 Milestones 74–95 中文故事索引</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-source">资料</span> 📚 Milestones 74–95 中文故事索引</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       这不是官方全文翻译，而是面向中文读者的故事摘要、路线意义和复刻提醒。<br>
       所有旅行建议均为<strong>文化复刻解读</strong>，不代表 Paul Salopek 原始 GPS 或 National Geographic 官方旅行路线。
@@ -1550,6 +1737,7 @@
         </div>
     </div>
   </section>
+    </details>
 
   <!-- v1.5.6 如何从官方 Milestone 读到旅行路线 -->
   <section id="oedw-official-reading" class="trip-template-section container" style="margin-top: var(--space-3xl);">
@@ -1581,11 +1769,16 @@
   </section>
 
   <!-- v1.5.7 官方 Dispatch 资料对照表 -->
-  <section id="oedw-dispatch-concordance" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <details class="oedw-collapsible" id="oedw-dispatch-concordance">
+    <summary>
+      <span class="oedw-collapsible-summary">官方 Dispatch 资料对照表</span>
+      <small class="oedw-collapsible-hint">22 条 milestone 对应的官方 dispatches 与中文解读</small>
+    </summary>
+    <section id="oedw-dispatch-concordance" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📋 官方 Dispatch 资料对照表</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-source">资料</span> 📋 官方 Dispatch 资料对照表</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       以下内容基于官方 milestone / dispatch 页面、现有路线资料和中文复刻路线进行结构化对照。<br>
       它不是官方全文翻译，而是帮助中文读者理解每个官方叙事节点与旅行路线之间的关系。
@@ -1855,6 +2048,7 @@
       </table>
     </div>
   </section>
+    </details>
 
   <!-- v1.5.7 如何阅读 Out of Eden Walk 的 Dispatch -->
   <section id="oedw-dispatch-method" class="trip-template-section container" style="margin-top: var(--space-3xl);">
@@ -1923,11 +2117,16 @@
   </section>
 
   <!-- v1.5.8 视觉资料占位与来源管理 -->
-  <section id="oedw-visual-materials" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <details class="oedw-collapsible" id="oedw-visual-materials">
+    <summary>
+      <span class="oedw-collapsible-summary">Milestone 视觉资料矩阵</span>
+      <small class="oedw-collapsible-hint">22 行 × 4 字段：状态 · 主题 · 来源 · 备注</small>
+    </summary>
+    <section id="oedw-visual-materials" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📷 Milestone 视觉资料矩阵</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-source">资料</span> 📷 Milestone 视觉资料矩阵</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       本矩阵用于管理每条官方 Milestone 对应的视觉资料。当前不复制官方图片，只记录视觉主题、补图需求、来源状态和后续实拍计划。
     </p>
@@ -2083,13 +2282,19 @@
       </table>
     </div>
   </section>
+    </details>
 
   <!-- v1.5.8 参考书目与延伸阅读 -->
-  <section id="oedw-bibliography" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <details class="oedw-collapsible" id="oedw-bibliography">
+    <summary>
+      <span class="oedw-collapsible-summary">参考书目与资料入口</span>
+      <small class="oedw-collapsible-hint">5 类：官方 / 英文 / 中文 / 学术 / 衍生</small>
+    </summary>
+    <section id="oedw-bibliography" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📚 参考书目与资料入口</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-source">资料</span> 📚 参考书目与资料入口</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       中文 / 英文 / 官方三层参考来源。所有 URL 保留指向原始页面，不复制原文。
     </p>
@@ -2153,13 +2358,19 @@
       实际阅读时应通过图书馆或正规渠道获取原著，本页面不存储或分发任何版权材料。
     </div>
   </section>
+    </details>
 
   <!-- v1.5.8 出发前核查清单 -->
-  <section id="oedw-pre-departure" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <details class="oedw-collapsible" id="oedw-pre-departure">
+    <summary>
+      <span class="oedw-collapsible-summary">出发前核查清单</span>
+      <small class="oedw-collapsible-hint">8 类：天气 · 开放 · 交通 · 住宿 · 拍摄 · 安全 · 资料 · 撤退</small>
+    </summary>
+    <section id="oedw-pre-departure" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">✅ 出发前核查清单</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-risk">风险</span> ✅ 出发前核查清单</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       5 类出发前必查项。所有清单都基于<strong>已公开信息</strong>，不假设任何实时数据。
     </p>
@@ -2246,13 +2457,19 @@
       </div>
     </div>
   </section>
+    </details>
 
   <!-- v1.5.9 22 条 Milestone 补图清单 -->
-  <section id="oedw-shot-list" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <details class="oedw-collapsible" id="oedw-shot-list">
+    <summary>
+      <span class="oedw-collapsible-summary">22 条 Milestone 补图清单</span>
+      <small class="oedw-collapsible-hint">必补 / 可选 / 不建议 / 拍摄难度 / 备注</small>
+    </summary>
+    <section id="oedw-shot-list" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📷 22 条 Milestone 补图清单</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-appendix">附录</span> 📷 22 条 Milestone 补图清单</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       对每条 Milestone 区分<strong>必补 / 可选 / 不建议</strong>三类画面，并按<strong>拍摄难度</strong>分级。<br>
       高风险区域写清楚：<strong>不要为补图而冒险</strong>进入边境、深山、保护区或危险山路。
@@ -2452,13 +2669,14 @@
       </div>
     </div>
   </section>
+    </details>
 
   <!-- v1.5.9 OEDW 现场实拍计划 -->
   <section id="oedw-fieldwork" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📸 OEDW 现场实拍计划</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-appendix">附录</span> 📸 OEDW 现场实拍计划</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       6 类现场记录主题：道路 / 人 / 地貌 / 边界 / 日常 / 资料照。<br>
       拍人先征得同意；不适合拍就写文字观察；不进危险路段；不硬闯边境/保护区。
@@ -2504,7 +2722,7 @@
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">🗂 视觉资料命名与归档规范</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-appendix">附录</span> 🗂 视觉资料命名与归档规范</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       此为<strong>后续实拍归档规范</strong>，不代表仓库已有这些图片。<br>
       当前不引用不存在的本地图片路径；如创建目录，仅放 <code>README.md</code> 说明用途。
@@ -2552,8 +2770,13 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     </div>
   </section>
 
-  <!-- v1.5.10 你应该从哪里开始 -->
-  <section id="oedw-reader-entry" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <!-- v1.5.11 读者入口（含阅读地图与三条路径） -->
+  <details class="oedw-collapsible" open id="oedw-reader-entry">
+    <summary>
+      <span class="oedw-collapsible-summary">你应该从哪里开始</span>
+      <small class="oedw-collapsible-hint">按目标选择 6 类入口</small>
+    </summary>
+    <section id="oedw-reader-entry" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
@@ -2595,14 +2818,20 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       </div>
     </div>
   </section>
-  <!-- v1.5.10 多维完成状态表 -->
-  <section id="oedw-status-matrix" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+    </details>
+  <!-- v1.5.10 多维完成状态表（v1.5.11 保留） -->
+  <details class="oedw-collapsible" open id="oedw-status-matrix">
+    <summary>
+      <span class="oedw-collapsible-summary">本路线多维完成状态</span>
+      <small class="oedw-collapsible-hint">9 维结构化状态，不再只看单一百分比</small>
+    </summary>
+    <section id="oedw-status-matrix" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📊 本路线多维完成状态</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
-      主状态 <strong>93% · 可信度与风险审计版</strong>。<br>
+      主状态 <strong>93% · 结构化阅读版</strong>。<br>
       93% 指<strong>页面资料结构成熟度</strong>，不代表路线实地验证完成。
     </p>
     <div class="oedw-status-table-wrap">
@@ -2630,12 +2859,13 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       </table>
     </div>
   </section>
-  <!-- v1.5.10 资料可信度说明 -->
+    </details>
+  <!-- v1.5.10 资料可信度说明（v1.5.11 保留） -->
   <section id="oedw-trust-levels" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">🔍 资料可信度说明</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-core">核心</span> 🔍 资料可信度说明</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       本页把资料分成四层，避免把官方叙事、中文解读和旅行复刻混在一起。
     </p>
@@ -2666,12 +2896,17 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       本页的"旅行复刻"不是从官方故事直接复制一条路线，而是把官方叙事降维为普通旅行者可接近的城市、县域、公共景区、博物馆和安全观察点。
     </div>
   </section>
-  <!-- v1.5.10 不建议普通旅行者复刻的场景 -->
-  <section id="oedw-risk-audit" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <!-- v1.5.10 不建议普通旅行者复刻的场景（v1.5.11 保留） -->
+  <details class="oedw-collapsible" open id="oedw-risk-audit">
+    <summary>
+      <span class="oedw-collapsible-summary">不建议普通旅行者逐点复刻的场景</span>
+      <small class="oedw-collapsible-hint">8 类风险场景与替代方式</small>
+    </summary>
+    <section id="oedw-risk-audit" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">⚠️ 不建议普通旅行者逐点复刻的场景</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-risk">风险</span> ⚠️ 不建议普通旅行者逐点复刻的场景</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       这不是恐吓，是<strong>负责任的旅行建议</strong>。下列场景都基于历史风险和官方边界。
     </p>
@@ -2726,12 +2961,13 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       </div>
     </div>
   </section>
-  <!-- v1.5.10 交通与可达性分级 -->
+    </details>
+  <!-- v1.5.10 交通与可达性分级（v1.5.11 保留） -->
   <section id="oedw-accessibility" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">🚆 交通与可达性分级</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-risk">风险</span> 🚆 交通与可达性分级</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       这不是实时交通表，而是普通旅行者理解路线难度的分级。
     </p>
@@ -2762,7 +2998,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       </table>
     </div>
   </section>
-  <!-- v1.5.10 官方故事如何变成旅行观察任务 -->
+  <!-- v1.5.10 官方故事如何变成旅行观察任务（v1.5.11 保留） -->
   <section id="oedw-observation" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
@@ -2795,12 +3031,17 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       </table>
     </div>
   </section>
-  <!-- v1.5.10 FAQ -->
-  <section id="oedw-faq" class="trip-template-section container" style="margin-top: var(--space-3xl);">
+  <!-- v1.5.10 FAQ（v1.5.11 保留） -->
+  <details class="oedw-collapsible" open id="oedw-faq">
+    <summary>
+      <span class="oedw-collapsible-summary">常见问题 FAQ</span>
+      <small class="oedw-collapsible-hint">12 条常见误解与澄清</small>
+    </summary>
+    <section id="oedw-faq" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">❓ 常见问题</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-risk">风险</span> ❓ 常见问题</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
       12 个常见误解与澄清。
     </p>
@@ -2855,6 +3096,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       </div>
     </div>
   </section>
+    </details>
   <!-- 5. 关键故事模块 -->
   <section id="stories" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
@@ -3091,7 +3333,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
 
     <!-- v1.5.3 线路优化 · 28 天推荐节奏 -->
     <section class="itinerary-optimization-section" id="oedw-28day-rhythm" style="margin-top: var(--space-3xl);">
-      <h3 class="text-center" style="margin-bottom: var(--space-md);">🧭 28 天推荐节奏 · 可执行版</h3>
+      <h3 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-itinerary">行程</span> 🧭 28 天推荐节奏 · 可执行版</h3>
       <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">不是必须 28 天走完，而是给想一次性走完的人一个可调框架。允许在该表中减掉 1–2 个高风险段、或在某段拉长。</p>
       <div class="itinerary-table-wrap">
         <table class="itinerary-table">
@@ -3125,8 +3367,13 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     </section>
 
     <!-- v1.5.4 28 天每日导游词 -->
+    <details class="oedw-collapsible" id="oedw-28day-narration">
+    <summary>
+      <span class="oedw-collapsible-summary">28 天每日导游词</span>
+      <small class="oedw-collapsible-hint">Day 1–28 段落级叙事导览</small>
+    </summary>
     <section class="field-guide-section" id="oedw-28day-narration" style="margin-top: var(--space-3xl);">
-      <h3 class="text-center" style="margin-bottom: var(--space-md);">🗣️ 28 天每日导游词</h3>
+      <h3 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-itinerary">行程</span> 🗣️ 28 天每日导游词</h3>
       <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">出发前阅读一遍。现场不要折返回查 — 选三个词写进脑子里就够了。</p>
       <div class="field-guide-table-wrap">
         <table class="field-guide-table">
@@ -3173,6 +3420,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
         </table>
       </div>
     </section>
+    </details>
 
     <!-- v1.5.4 OEDW 现场记录模板 -->
     <section class="field-guide-section" id="oedw-field-template" style="margin-top: var(--space-3xl);">
@@ -3228,8 +3476,13 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     </section>
 
     <!-- v1.5.5 28 天每日执行卡 -->
+    <details class="oedw-collapsible" id="oedw-execution-cards">
+    <summary>
+      <span class="oedw-collapsible-summary">28 天每日执行卡</span>
+      <small class="oedw-collapsible-hint">Day 1–28 最小完成版 / 可选加点 / 撤退策略</small>
+    </summary>
     <section class="field-guide-section" id="oedw-execution-cards" style="margin-top: var(--space-3xl);">
-      <h3 class="text-center" style="margin-bottom: var(--space-md);">📋 28 天每日执行卡</h3>
+      <h3 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-itinerary">行程</span> 📋 28 天每日执行卡</h3>
       <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">每天一张执行卡。住宿只写区域。撤退策略是真实选项，不是装饰。</p>
       <div class="oedw-execution-grid">
         <div class="oedw-execution-card">
@@ -3598,10 +3851,11 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
         </div>
       </div>
     </section>
+    </details>
 
     <!-- v1.5.3 6 条短线 · 年度分段完成版本 -->
     <section class="itinerary-optimization-section" id="oedw-short-lines" style="margin-top: var(--space-3xl);">
-      <h3 class="text-center" style="margin-bottom: var(--space-md);">🧩 6 条短线 · 年度分段完成版本</h3>
+      <h3 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-itinerary">行程</span> 🧩 6 条短线 · 年度分段完成版本</h3>
       <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">推荐按年度完成一条短线。8–7 天一条 · 3–5 年走完 · 适合人文、写作、摄影与研究型旅行者。</p>
 
       <div class="short-line-card">
@@ -3708,8 +3962,13 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     </section>
 
     <!-- v1.5.5 住宿区域与交通方式总表 -->
+    <details class="oedw-collapsible" id="oedw-transport">
+    <summary>
+      <span class="oedw-collapsible-summary">住宿区域与交通方式总表</span>
+      <small class="oedw-collapsible-hint">6 条短线 + 区域住宿与交通方式参考</small>
+    </summary>
     <section class="field-guide-section" id="oedw-transport" style="margin-top: var(--space-3xl);">
-      <h3 class="text-center" style="margin-bottom: var(--space-md);">🚆 住宿区域与交通方式总表</h3>
+      <h3 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-itinerary">行程</span> 🚆 住宿区域与交通方式总表</h3>
       <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-md);">只写区域与交通方式级别，不写具体酒店与车次。出发前必须再次核查交通与开放状态。</p>
       <div class="oedw-transport-table-wrap">
         <table class="oedw-transport-table">
@@ -3840,6 +4099,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
         </table>
       </div>
     </section>
+    </details>
 
     <!-- v1.5.5 仍需实地验证的部分 -->
     <section class="field-guide-section" id="oedw-pending" style="margin-top: var(--space-3xl);">
@@ -3891,6 +4151,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
             <li>✅ 交通与可达性分级 10 段已建立（v1.5.10）</li>
             <li>✅ 官方故事到旅行观察任务 8 类已建立（v1.5.10）</li>
             <li>✅ FAQ 12 条已建立（v1.5.10）</li>
+            <li>✅ 页面阅读地图 + 三条核心阅读路径 + 折叠资料模块 + 模块类型标识已建立（v1.5.11）</li>
             <li>对 22 条 dispatch 进行二次深读（待逐条展开）</li>
             <li>现场实拍图（待贡献 · 不下载官方图片）</li>
             <li>视觉授权（待授权 · 不复制第三方图片）</li>
@@ -3911,7 +4172,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
 
     <!-- v1.5.3 OEDW 取舍原则 -->
     <section class="route-choice-principles" id="oedw-tradeoff">
-      <h3 class="text-center" style="margin-bottom: var(--space-md);">🧩 如何取舍这条长线</h3>
+      <h3 class="text-center" style="margin-bottom: var(--space-md);"><span class="module-type module-type-itinerary">行程</span> 🧩 如何取舍这条长线</h3>
       <p style="color: var(--color-text-secondary); margin-bottom: var(--space-md); text-align: center;">第一次走不推荐追求全线。推荐按以下思路选股：</p>
       <div class="route-choice-card">
         <h4>如果只走 7 天</h4>
@@ -4227,10 +4488,10 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     <h2 class="text-center" style="margin-bottom: var(--space-2xl);">规划状态</h2>
 
     <div class="status-legend">
-      <h3 class="status-legend-title">📋 本路线当前状态</h3>
+      <h3 class="status-legend-title"><span class="module-type module-type-core">核心</span> 📋 本路线当前状态</h3>
       <div class="status-legend-list">
         <div class="status-legend-item">
-          <div class="status-legend-name">完成度：<span class="trip-status status-planning" style="background:rgba(107,142,35,0.2);color:#3d5a10;">93%</span> · 可信度与风险审计版</div>
+          <div class="status-legend-name">完成度：<span class="trip-status status-planning" style="background:rgba(107,142,35,0.2);color:#3d5a10;">93%</span> · 结构化阅读版</div>
           <div class="status-legend-desc">已完成：10 段路线 · Milestones 74–95 共 22 条覆盖 · 中文摘要 + 路线意义 + 复刻建议 · 官方 Dispatch 资料对照表 · 22/22 URL 200 · Milestone 视觉资料矩阵 · 22 条补图清单 · 现场实拍计划 · 视觉资料命名与归档规范 · 参考书目 5 类 · 出发前核查清单 8 类 · 读者入口 6 类 · 多维完成状态表 9 维 · 资料可信度 4 级 · 不建议复刻场景 8 类 · 交通可达性 10 段 · 观察任务 8 类 · FAQ 12 条 · 28 天节奏 · 28 天每日导游词 · 28 天每日执行卡 · 6 条短线 · 现场记录模板 · CSV/GeoJSON/GPX/SVG 数据 · SEO/OG/下载入口
         </div>
         <div class="status-legend-item">
@@ -4254,7 +4515,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">如何使用这条路线</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-itinerary">行程</span> 如何使用这条路线</h2>
 
     <div class="oedw-use-guide">
       <div class="oedw-use-card">
@@ -4289,7 +4550,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);">按时间选择你的 OEDW 中国段</h2>
+    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-itinerary">行程</span> 按时间选择你的 OEDW 中国段</h2>
 
     <div class="oedw-use-guide" style="margin-top:var(--space-lg);">
       <div class="oedw-use-card">
@@ -4389,7 +4650,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
           <a href="../../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.5.10 · Out of Eden Walk 中国段 · 可用草案 v0.9 · 93% · 2026 · 可信度与风险审计</div>
+        <div class="footer-credit">v1.5.11 · Out of Eden Walk 中国段 · 可用草案 v0.9 · 93% · 2026 · 结构化阅读版</div>
       </div>
     </div>
   </footer>

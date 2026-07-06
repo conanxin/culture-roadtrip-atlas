@@ -20,7 +20,7 @@
 
 ## 当前版本
 
-**v1.5.10 · OEDW Trust Risk Reader Entry Audit**（2026-07-06）
+**v1.5.11 · OEDW Page Information Architecture Cleanup**（2026-07-07）
 
 三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
@@ -29,6 +29,22 @@
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
 v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.11 在 v1.5.10 基础上：
+
+- **v1.5.11 · OEDW 页面减负与信息架构优化**：页面从「可信度与风险审计版」升级为「结构化阅读版」
+- OEDW 页面状态保持 93% · 结构化阅读版（不强行升到 95% 或 100%）
+- 新增「页面阅读地图」模块（5 大区：先理解 · 实际走一段 · 读官方故事 · 拍摄写作 · 下载复用）
+- 新增「三条核心阅读路径」模块（10 分钟快速了解 / 30 分钟做旅行判断 / 90 分钟做研究阅读）
+- 核心 / 行程 / 资料 / 风险 / 数据 / 附录 模块类型标识 (6 类 badge)
+- 新增「页面太长怎么办？」模块（4 条按读者类型选择阅读顺序）
+- 9 个长资料模块改为原生 `<details>` 折叠（默认折叠：28 天每日执行卡 / 28 天每日导游词 / Milestones 中文故事索引 / 官方 Dispatch 对照表 / Milestone 视觉资料矩阵 / 22 条补图清单 / 住宿交通总表 / 参考书目 / 出发前核查清单；默认展开：读者入口 / 多维状态表 / 不建议复刻场景 / FAQ）
+- 精简 quick nav 为 10 个 pill 入口（状态 / 阅读地图 / 官方故事 / 28 天执行卡 / 参考书目 / 视觉资料 / 出发前核查 / 风险 / 下载数据 / FAQ）
+- 顶部主状态从「93% · 可信度与风险审计版」改为「93% · 结构化阅读版」
+- 显式说明：93% 指页面资料结构成熟度，不代表实地验证完成
+- manifest v1.5.11：OEDW data_status_label = 长线文化复刻样板 · 结构化阅读版
+- check-route-seo.py：接受 v1.5.2-1.5.11
+- CSS 增强 130+ 行（.module-type / .module-type-core / .module-type-itinerary / .module-type-source / .module-type-risk / .module-type-data / .module-type-appendix / .oedw-reading-map / .oedw-reading-map-grid / .oedw-reading-map-card / .oedw-reading-paths / .oedw-reading-path-grid / .oedw-quick-nav-compact / .oedw-collapsible / .oedw-collapsible-summary / .oedw-collapsible-hint / .oedw-long-page-help / .oedw-long-page-help-grid / .oedw-long-page-help-card）
 
 v1.5.10 在 v1.5.9 基础上：
 

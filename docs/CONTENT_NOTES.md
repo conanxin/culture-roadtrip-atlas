@@ -973,6 +973,30 @@ Out of Eden Walk 中国段 Milestones 74–95 共 22 条视觉资料占位 + 参
 - 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
 - OEDW 事实边界完整保留
 
+## OEDW 页面信息架构整理 v1.5.11 (OEDW Page Information Architecture Cleanup) (2026-07-07)
+
+Out of Eden Walk 中国段新增页面阅读地图、三条核心阅读路径、模块类型标识、折叠式资料模块、页面太长怎么办提示和精简导航；页面从可信度与风险审计版升级为结构化阅读版。
+
+- 页面状态：完成度 93% · 结构化阅读版（保持 93%，不强行升到 95% 或 100%）
+- 明确说明：93% 指页面资料结构成熟度，不代表实地验证完成
+- 新增「页面阅读地图」5 大区卡片
+- 新增「三条核心阅读路径」10 / 30 / 90 分钟
+- 新增「页面太长怎么办？」4 类读者阅读建议
+- 新增模块类型标识 6 类：核心 / 行程 / 资料 / 风险 / 数据 / 附录
+- 9 个长资料模块改为原生 `<details>` 折叠（默认折叠 / 默认展开）
+- 顶部快速导航精简为 10 个 pill 入口
+- 顶部粘性导航精简为 7 个核心铺点（增加阅读地图）
+- 页面版本号全量更新：v1.5.10 → v1.5.11
+- manifest v1.5.11：OEDW data_status_label = 长线文化复刻样板 · 结构化阅读版
+- check-route-seo.py 接受 v1.5.2-1.5.11
+- CSS 增强 130+ 行（.module-type / .oedw-reading-map / .oedw-reading-paths / .oedw-quick-nav-compact / .oedw-collapsible / .oedw-long-page-help 等）
+- 不下载 / 不复制 / 不搬运任何官方或第三方图片
+- 不强行提高完成度百分比
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
+- 不新增地图 API / npm / 构建系统
+- 不修改页面外部依赖
+- OEDW 事实边界完整保留（跨越六年 / 22/23 / 10% / 100% / 规划中 全部清理）
+
 ## OEDW 可信度、风险与读者入口审计 v1.5.10 (OEDW Trust Risk Reader Entry Audit) (2026-07-06)
 
 Out of Eden Walk 中国段新增读者入口、多维完成状态、资料可信度说明、风险边界、交通可达性分级、观察任务和 FAQ；页面从视觉资料准备版升级为可信度与风险审计版。

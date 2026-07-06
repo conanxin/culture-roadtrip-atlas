@@ -9879,3 +9879,259 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+ * OEDW v1.5.11 · 信息架构整理
+ * 页面阅读地图 / 三条核心阅读路径 / 折叠模块 / 模块类型标识
+ * ============================================================ */
+
+/* 模块类型标识（核心 / 行程 / 资料 / 风险 / 数据 / 附录） */
+.module-type {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+.module-type-core      { background: rgba(46,79,79,0.10); color: #2e4f4f; border-color: rgba(46,79,79,0.30); }
+.module-type-itinerary { background: rgba(200,169,106,0.12); color: #8a6d2a; border-color: rgba(200,169,106,0.40); }
+.module-type-source    { background: rgba(107,142,35,0.12); color: #4f6821; border-color: rgba(107,142,35,0.40); }
+.module-type-risk      { background: rgba(139,90,74,0.12); color: #7a3e2e; border-color: rgba(139,90,74,0.40); }
+.module-type-data      { background: rgba(107,79,122,0.12); color: #5a3f6e; border-color: rgba(107,79,122,0.40); }
+.module-type-appendix  { background: rgba(90,85,80,0.12); color: #4a4540; border-color: rgba(90,85,80,0.40); }
+
+h2 .module-type,
+h3 .module-type,
+h4 .module-type { font-size: 0.62rem; }
+
+/* 页面阅读地图 */
+.oedw-reading-map {
+  background: rgba(46, 79, 79, 0.04);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+  padding: var(--space-lg, 20px);
+  margin-bottom: var(--space-2xl, 32px);
+}
+.oedw-reading-map-intro {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #4a4540;
+  margin: 0 0 var(--space-md, 16px);
+  max-width: 880px;
+}
+.oedw-reading-map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md, 16px);
+}
+.oedw-reading-map-card {
+  background: #fff;
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-top: 3px solid #2e4f4f;
+  border-radius: 6px;
+  padding: var(--space-md, 16px);
+}
+.oedw-reading-map-card--core      { border-top-color: #2e4f4f; }
+.oedw-reading-map-card--travel    { border-top-color: #c8a96a; }
+.oedw-reading-map-card--story     { border-top-color: #6b8e23; }
+.oedw-reading-map-card--photo     { border-top-color: #6b4f7a; }
+.oedw-reading-map-card--data      { border-top-color: #5a5550; }
+.oedw-reading-map-card h4 {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #2e4f4f;
+}
+.oedw-reading-map-card .oedw-reading-map-tag {
+  display: inline-block;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  color: #6c6660;
+  margin-bottom: 8px;
+}
+.oedw-reading-map-card ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: #4a4540;
+}
+.oedw-reading-map-card p {
+  margin: 6px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: #6c6660;
+}
+
+/* 三条核心阅读路径 */
+.oedw-reading-paths {
+  margin-bottom: var(--space-2xl, 32px);
+}
+.oedw-reading-path-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md, 16px);
+}
+.oedw-reading-path-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+  padding: var(--space-md, 16px);
+}
+.oedw-reading-path-card h4 {
+  margin: 0 0 8px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #2e4f4f;
+}
+.oedw-reading-path-card .oedw-reading-path-time {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.oedw-reading-path-card ol {
+  margin: 6px 0;
+  padding-left: 20px;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #4a4540;
+}
+.oedw-reading-path-card p {
+  margin: 6px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: #6c6660;
+}
+
+/* 精简版 quick nav（pill 样式，可换行） */
+.oedw-quick-nav-compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 6px 0 0;
+}
+.oedw-quick-nav-compact a {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  text-decoration: none;
+  border: 1px solid rgba(46, 79, 79, 0.18);
+}
+.oedw-quick-nav-compact a:hover {
+  background: rgba(46, 79, 79, 0.15);
+  text-decoration: none;
+}
+
+/* 原生 details/summary 折叠模块 */
+.oedw-collapsible {
+  margin: 0 0 var(--space-md, 16px);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0;
+}
+.oedw-collapsible > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+.oedw-collapsible > summary::-webkit-details-marker { display: none; }
+.oedw-collapsible > summary::after {
+  content: "▾";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: #2e4f4f;
+  transition: transform 0.15s ease;
+}
+.oedw-collapsible[open] > summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.oedw-collapsible-summary {
+  font-size: 1.04rem;
+  font-weight: 700;
+  color: #2e4f4f;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.oedw-collapsible-hint {
+  font-size: 0.78rem;
+  color: #6c6660;
+  font-weight: 400;
+  line-height: 1.55;
+}
+.oedw-collapsible > div,
+.oedw-collapsible > section {
+  padding: 0 var(--space-lg, 20px) var(--space-lg, 20px);
+}
+
+/* 页面太长怎么办 */
+.oedw-long-page-help {
+  background: rgba(200, 169, 106, 0.06);
+  border: 1px solid rgba(200, 169, 106, 0.30);
+  border-radius: 8px;
+  padding: var(--space-lg, 20px);
+  margin-bottom: var(--space-2xl, 32px);
+}
+.oedw-long-page-help h2,
+.oedw-long-page-help h3 {
+  margin-top: 0;
+}
+.oedw-long-page-help p {
+  font-size: 0.86rem;
+  line-height: 1.7;
+  color: #4a4540;
+  margin: 0 0 var(--space-md, 16px);
+}
+.oedw-long-page-help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md, 16px);
+}
+.oedw-long-page-help-card {
+  background: #fff;
+  border: 1px solid rgba(200, 169, 106, 0.30);
+  border-radius: 6px;
+  padding: var(--space-md, 16px);
+}
+.oedw-long-page-help-card h4 {
+  margin: 0 0 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8a6d2a;
+}
+.oedw-long-page-help-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: #4a4540;
+}
+
+@media (max-width: 640px) {
+  .oedw-reading-map-grid,
+  .oedw-reading-path-grid,
+  .oedw-long-page-help-grid {
+    grid-template-columns: 1fr;
+  }
+}
