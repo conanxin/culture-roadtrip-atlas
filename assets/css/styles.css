@@ -9387,3 +9387,217 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ----- v1.5.9 OEDW 视觉资料细粒度扩展样式 ----- */
+.oedw-shot-list {
+  margin: var(--space-md, 16px) 0;
+}
+
+.oedw-shot-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-shot-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  min-width: 860px;
+  line-height: 1.55;
+}
+
+.oedw-shot-table th,
+.oedw-shot-table td {
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(46, 79, 79, 0.08);
+}
+
+.oedw-shot-table th {
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.4px;
+}
+
+.oedw-shot-table tr:last-child td {
+  border-bottom: none;
+}
+
+.oedw-shot-table tbody tr:nth-child(even) {
+  background: rgba(200, 169, 106, 0.04);
+}
+
+.oedw-difficulty {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.oedw-difficulty-low {
+  background: rgba(107, 142, 35, 0.22);
+  color: #3d5a10;
+}
+
+.oedw-difficulty-medium {
+  background: rgba(200, 169, 106, 0.28);
+  color: #5a4318;
+}
+
+.oedw-difficulty-high {
+  background: rgba(180, 60, 40, 0.18);
+  color: #8a2818;
+}
+
+.oedw-fieldwork-plan {
+  margin: var(--space-md, 16px) 0;
+}
+
+.oedw-fieldwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-fieldwork-card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-left: 4px solid #2e4f4f;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.oedw-fieldwork-card h4 {
+  margin: 0 0 6px;
+  color: #2e4f4f;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.oedw-fieldwork-card p {
+  margin: 0 0 6px;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: #4a4540;
+}
+
+.oedw-fieldwork-card .fieldwork-shoot {
+  margin: 4px 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.oedw-fieldwork-card .fieldwork-record {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: #5a5550;
+  font-style: italic;
+}
+
+.oedw-archive-rule {
+  background: rgba(46, 79, 79, 0.06);
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+  margin: var(--space-md, 16px) 0;
+}
+
+.oedw-archive-rule h4 {
+  margin: 0 0 8px;
+  color: #2e4f4f;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.oedw-archive-rule pre {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #2e4f4f;
+  margin: 4px 0;
+  overflow-x: auto;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.oedw-archive-rule code {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.84rem;
+  color: #2e4f4f;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.oedw-archive-rule ul {
+  margin: 6px 0;
+  padding-left: 1.1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4a4540;
+}
+
+.oedw-archive-rule li {
+  margin-bottom: 3px;
+}
+
+.oedw-bibliography-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+
+.oedw-bibliography-card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-top: 4px solid #2e4f4f;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.oedw-bibliography-card--gold { border-top-color: #c8a96a; }
+.oedw-bibliography-card--teal { border-top-color: #6b8e23; }
+.oedw-bibliography-card--purple { border-top-color: #6b4f7a; }
+.oedw-bibliography-card--olive { border-top-color: #5a5550; }
+.oedw-bibliography-card--rose { border-top-color: #8b5a4a; }
+
+.oedw-bibliography-card h4 {
+  margin: 0 0 8px;
+  color: #2e4f4f;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.oedw-bibliography-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4a4540;
+}
+
+.oedw-bibliography-card li {
+  margin-bottom: 4px;
+}
+
+.oedw-bibliography-card a {
+  color: #2e4f4f;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .oedw-fieldwork-grid,
+  .oedw-bibliography-grid {
+    grid-template-columns: 1fr;
+  }
+}

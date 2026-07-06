@@ -4,6 +4,96 @@
 
 ---
 
+## v1.5.9 · OEDW Visual Bibliography Pack (Granular) (2026-07-06)
+
+### 主要变更
+
+- **OEDW 视觉资料与参考书目细粒度扩展**
+- **页面顶部状态**：完成度 92% → 93% · 视觉资料准备版
+- **新增「22 条 Milestone 补图清单」**（22 行 × 6 字段）：
+  - Milestone / 必补画面 / 可选画面 / 不建议拍摄 / 拍摄难度 / 备注
+  - 拍摄难度：低 (8) / 中 (10) / 高 (4)
+  - 高风险区域明确写「不要为补图而冒险」
+- **新增「OEDW 现场实拍计划」**（6 类）：
+  - 🛣 道路（路肩/岔路/桥/隧道口/老路痕迹/公路与村庄交界）
+  - 👥 人（摊主/司机/村民/游客/修路工/店主/赶路的人）— 拍人先征得同意
+  - 🏔 地貌（山口/河谷/塬梁/平原边缘/海岸线/城市边缘地带）
+  - 🚧 边界（城门/关口/长城/港口/桥/行政边界/语言/饮食/建筑风格变化）
+  - 🍜 日常（早餐店/公交站/学校门口/集市/广场/小卖部/路边修车点）
+  - 📋 资料照（导览牌/地名牌/博物馆说明牌/道路牌/保护区提示牌/公共交通站牌）
+- **新增「视觉资料命名与归档规范」**（4 部分）：
+  - 📁 建议目录：assets/img/oedw-fieldwork/（仅用于未来自有实拍 / 已授权图片）
+  - 🏷 命名规则：oedw-mXX-主题-NN.jpg（4 字段：项目/milestone 编号/主题/序号）
+  - 📂 分类建议：road / people / landform / boundary / daily-life / source-sign
+  - 📜 版权/授权备注字段：拍摄者/拍摄时间/拍摄地点/授权协议/原创说明
+- **出发前核查清单从 5 类扩展为 8 类**：
+  - 🌦 路线与天气（山区天气/雨季/高海拔/道路施工/季节性封闭）
+  - 🏛 开放状态（博物馆预约/遗址/景区/古道/保护区）
+  - 🚆 交通衔接（高铁/火车/长途汽车/包车/自驾停车/边境不自驾）
+  - 🛏 住宿区域（只确认区域/不压到太晚/预留弹性/边境提前 24h/高反严寒不过夜）
+  - 📷 拍摄与记录（相机/录音/命名规则/授权协议/现场记录模板）
+  - 🛡 安全与伦理（拍人先同意/不危险路段/不硬闯边境/尊重当地/不带违禁）
+  - 📚 资料复核（官方 milestone/dispatch 对照/地名核对/文旅局/景区公告）
+  - ↩ 撤退策略（下雨/闭馆/疲劳/交通延误/最小完成版）
+- **重命名**：
+  - 「视觉资料占位与来源管理」→「Milestone 视觉资料矩阵」
+  - 「参考书目与延伸阅读」→「参考书目与资料入口」
+- **页面顶部导航更新**：新增「补图清单 / 实拍计划 / 归档规范」3 个锚点
+- **页面版本号全量更新**：v1.5.8 → v1.5.9（hero badge / page-meta × 2 / footer / 状态卡 / 风险说明）
+- **manifest v1.5.9**：
+  - 顶层 `version` = `v1.5.9`
+  - OEDW data_status_label：**长线文化复刻样板 · 视觉资料准备版**
+  - OEDW route_summary 补齐 Milestone 视觉资料矩阵 + 22 条补图清单 + 现场实拍计划 + 归档规范 + 出发前核查清单 8 类
+  - 9/9 SEO 字段保留
+- **check-route-seo.py**：`manifest version` 接受 v1.5.2 - v1.5.9
+- **CSS 增强**：`assets/css/styles.css` + 130 行（.oedw-shot-list / .oedw-shot-table / .oedw-difficulty / .oedw-difficulty-low / .oedw-difficulty-medium / .oedw-difficulty-high / .oedw-fieldwork-plan / .oedw-fieldwork-grid / .oedw-fieldwork-card / .oedw-archive-rule / .oedw-bibliography-grid / .oedw-bibliography-card / .oedw-bibliography-card--gold / .oedw-bibliography-card--teal / .oedw-bibliography-card--purple / .oedw-bibliography-card--olive / .oedw-bibliography-card--rose 等 17 个新类）
+
+### 版权与图片处理边界
+
+- ✅ 允许：22 条补图清单 / 6 类实拍计划 / 命名归档规范 / 8 类出发前清单
+- ❌ 不下载任何官方或第三方图片到仓库
+- ❌ 不引用不存在的本地图片路径
+- ❌ 不为补图而冒险进入边境 / 深山 / 保护区
+
+### 不修改
+
+- ❌ 辽塔页面（v1.5.4 状态保留）
+- ❌ 山西页面（v1.5.4 状态保留）
+- ❌ CSV / GeoJSON / GPX 坐标数据
+- ❌ SVG 路线示意图
+- ❌ OG SVG（SEO 检查不要求）
+- ❌ 路线工厂门禁脚本
+- ❌ 地图 API / 后端 / 数据库 / npm 依赖
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：v1.5.4 状态保留
+
+### 验证
+
+- 路线工厂门禁：全部 PASS
+- SEO / OG 门禁：全部 PASS
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+- 数量校验：22/22 Milestone 编号（74-95）全部出现
+- 官方 URL 校验：22/22 全部 200
+
+### 报告
+
+- `reports/OEDW_VISUAL_BIBLIOGRAPHY_PACK_REPORT.md`
+
+---
+
 ## v1.5.8 · OEDW Visual Materials and Bibliography Pack (2026-07-06)
 
 ### 主要变更
