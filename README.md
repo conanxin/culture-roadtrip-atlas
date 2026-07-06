@@ -20,7 +20,7 @@
 
 ## 当前版本
 
-**v1.5.6 · OEDW Milestones Chinese Story Index**（2026-07-06）
+**v1.5.7 · OEDW Dispatch Deep Review and Source Concordance**（2026-07-06）
 
 三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
@@ -29,6 +29,22 @@
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
 v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.7 在 v1.5.6 基础上：
+
+- **v1.5.7 · OEDW Dispatch 深度复核与资料对照**：Milestones 74–95 共 22 条补充官方资料状态、核心主题、关键词、人物/场景/地貌、复刻段落映射和 28 天执行卡映射
+- 22 条 milestone 官方 URL 全部 200（v1.5.7 验证）
+- 新增「官方 Dispatch 资料对照表」22 行（9 字段：Milestone/官方标题/官方资料状态/核心主题/人物场景地貌/复刻段落/28天执行卡/复刻提醒/官方链接）
+- 新增「如何阅读 Out of Eden Walk 的 Dispatch」5 张卡片
+- 新增「从官方故事到复刻路线」4 步流程
+- 官方资料状态：21 条「官方页面已复核」+ 1 条「官方页面可访问」(M91)
+- OEDW 页面状态 88% → 90% · Dispatch 基础复核版
+- OEDW 页面顶部导航新增「Dispatch」锚点
+- manifest v1.5.7：OEDW data_status_label = 长线文化复刻样板 · Dispatch 基础复核版
+- check-route-seo.py：接受 v1.5.2/3/4/5/6/7
+- CSS 增强（.oedw-dispatch-review / .oedw-dispatch-table / .oedw-dispatch-status / .oedw-dispatch-keywords / .oedw-dispatch-method-grid / .oedw-source-concordance / .oedw-source-flow / .oedw-excerpt-note 等 14 个新类）
+- 不复制官方长文 / 不做全文翻译 / 不伪造 Paul Salopek 原始 GPS
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
 
 v1.5.6 在 v1.5.5 基础上：
 

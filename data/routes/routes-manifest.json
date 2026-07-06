@@ -1,5 +1,5 @@
 {
-  "version": "v1.5.6",
+  "version": "v1.5.7",
   "updated_at": "2026-07-06",
   "description": "Culture Roadtrip Atlas route data registry. All route data are cultural replica rough points, not real-time navigation data. Each entry is a static, reusable data asset for research, writing, and trip planning.",
   "routes": [
@@ -42,10 +42,10 @@
         "北京",
         "辽宁"
       ],
-      "data_status_label": "长线文化复刻样板 · Milestones 中文索引版",
+      "data_status_label": "长线文化复刻样板 · Dispatch 基础复核版",
       "difficulty_label": "高 · 分段复刻",
       "best_season": "分段选择，山地避开恶劣天气",
-      "route_summary": "从滇西边境到大连黄海，沿 Paul Salopek 的 Out of Eden Walk 中国段重建的文化复刻路线。已补充 28 天推荐节奏 + 6 条年度短线 + 28 天每日导游词 + 现场记录模板 + 拍摄建议 + 7/14/28 天选择器 + 28 天每日执行卡 + 住宿区域与交通方式总表 + 不同人群版本 + 仍需实地验证清单 + Milestones 74–95 共 22 条中文故事摘要 + 故事索引。",
+      "route_summary": "从滇西边境到大连黄海，沿 Paul Salopek 的 Out of Eden Walk 中国段重建的文化复刻路线。已补充 28 天推荐节奏 + 6 条年度短线 + 28 天每日导游词 + 现场记录模板 + 拍摄建议 + 7/14/28 天选择器 + 28 天每日执行卡 + 住宿区域与交通方式总表 + 不同人群版本 + Milestones 74–95 共 22 条中文故事摘要 + 故事索引 + 官方 Dispatch 资料对照表 + Dispatch 阅读方法。",
       "data_completeness": "full",
       "featured": true,
       "seo_title": "Out of Eden Walk 中国段复刻路线｜Paul Salopek 国家地理慢新闻路线 · 行旅图谱",

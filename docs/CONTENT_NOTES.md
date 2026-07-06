@@ -906,3 +906,28 @@ Out of Eden Walk 中国段 Milestones 74–95 共 22 条已补充中文摘要、
 - 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
 - 不新增地图 API / npm / 构建系统
 - OEDW 事实边界完整保留
+
+## OEDW Dispatch 深度复核与资料对照 v1.5.7 (OEDW Dispatch Deep Review and Source Concordance) (2026-07-06)
+
+Out of Eden Walk 中国段 Milestones 74–95 共 22 条补充官方资料状态、核心主题、关键词、人物/场景/地貌、复刻段落映射和 28 天执行卡映射；页面从 Milestones 中文故事索引版升级为官方 Dispatch 对照解读版。
+
+- 页面状态：完成度 90% · Dispatch 基础复核版
+- 22 条 milestone 官方 URL 全部 200（v1.5.7 验证 2026-07-06）
+- 22/22 全部建立对照
+- 22 条核心主题 + 关键词覆盖（100+ 关键词）
+- 22 条人物/场景/地貌字段覆盖
+- 22 条复刻段落映射（10 段）
+- 22 条 28 天执行卡映射
+- 21 条「官方页面已复核」+ 1 条「官方页面可访问」(M91)
+- 新增「官方 Dispatch 资料对照表」22 行 × 9 字段
+- 新增「如何阅读 Out of Eden Walk 的 Dispatch」5 张卡片
+- 新增「从官方故事到复刻路线」4 步流程
+- OEDW 页面顶部导航新增「Dispatch」锚点
+- 页面版本号全量更新：v1.5.6 → v1.5.7
+- manifest v1.5.7：OEDW data_status_label = 长线文化复刻样板 · Dispatch 基础复核版
+- check-route-seo.py 接受 v1.5.2/3/4/5/6/7
+- CSS 增强 130 行
+- 不整段搬运官方正文 / 不做全文翻译 / 不伪造 Paul Salopek 原始 GPS
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
+- 不新增地图 API / npm / 构建系统
+- OEDW 事实边界完整保留

@@ -4,6 +4,113 @@
 
 ---
 
+## v1.5.7 · OEDW Dispatch Deep Review and Source Concordance (2026-07-06)
+
+### 主要变更
+
+- **OEDW 页面从 Milestones 中文故事索引版升级为官方 Dispatch 对照解读版**
+- **页面顶部状态**：完成度 88% → 90% · Dispatch 基础复核版
+- **22 条 milestone 官方 URL 全部 200**（v1.5.7 验证，2026-07-06）
+- **官方 Dispatch 资料对照表**（22 行 × 9 字段）：
+  - Milestone / 官方标题 / 官方资料状态 / 核心主题+关键词 / 人物场景地貌 / 复刻段落 / 28天执行卡 / 复刻提醒 / 官方链接
+  - 22/22 全部已建立对照
+- **22 条 milestone 核心主题 + 关键词覆盖**：
+  - 22 条每条 3-6 个关键词标签
+  - 总计关键词 100+ 个（边境/雨季/绿色方舟/村落/茶马古道/木里旧王国/长征/蜀道/空城/秦岭/黄土/窑洞/民间艺术/山西古城/城乡过渡/早期现代人/长城/玉米/乌鸦/工业迁移/黄海等）
+- **22 条 milestone 人物/场景/地貌字段**：
+  - 22 条每条 1-2 句中文概括
+  - 覆盖：人物（Paul/当地人/手工艺人/边境检查员/外卖骑手）+ 场景（空城/等待/告别）+ 地貌（雨林/雪山/草原/黄土塬/沿海工业）
+- **复刻段落映射**（22/22 完成）：
+  - 第 1 段: 74, 75
+  - 第 2 段: 76
+  - 第 3 段: 77, 78
+  - 第 4 段: 79, 80
+  - 第 5 段: 81, 82, 83
+  - 第 6 段: 84, 85
+  - 第 7 段: 86, 87, 88, 89
+  - 第 9 段: 90
+  - 第 10 段: 91, 92, 93, 94, 95
+- **28 天执行卡映射**（22/22 完成）：
+  - D1-D2 / D3 / D4-D6 / D7 / D8 / D9 / D9-D10 / D12 / D13 / D13 / D15-D16 / D16 / D18-D19 / D19 / D19 / D20 / D24 / D26 / D26 / D26 / D26-D27 / D27-D28
+- **官方资料状态统计**：
+  - 21 条「官方页面已复核」(reviewed)
+  - 1 条「官方页面可访问」(readable) - M91
+  - 0 条「官方链接待复核」/「访问受限」
+- **新增「如何阅读 Out of Eden Walk 的 Dispatch」**（5 张卡片）：
+  1. 它不是景点说明
+  2. 它不是 GPS 路书
+  3. 它把大历史放进小场景
+  4. 它适合慢读
+  5. 中文复刻要保留不确定性
+- **新增「从官方故事到复刻路线」**（4 步流程）：
+  1. 官方 Milestone（叙事节点和故事入口）
+  2. Dispatch 主题（人物、场景、地貌和历史线索）
+  3. 中文路线解读（地理、文化和旅行主题）
+  4. 文化复刻行程（城市、县域、公共景区、博物馆和安全观察点）
+- **更新「仍需实地验证 · 细节资料」**：
+  - ✅ Milestones 74–95 共 22 条基础中文摘要已完成
+  - ✅ 官方 dispatch 基础复核已完成（v1.5.7 · 22/22 URL 200）
+  - 对 22 条 dispatch 进行二次深读（待逐条展开）
+  - 每条 milestone 的代表图片（待补充）
+  - 现场实拍图（待贡献）
+  - 点位开放状态 + 实地可达性
+  - 中文参考书目与延伸阅读
+- **页面顶部导航更新**：新增「Dispatch」锚点
+- **页面版本号全量更新**：v1.5.6 → v1.5.7（hero badge / page-meta × 2 / footer / 状态卡 / 描述 / 风险说明）
+- **manifest v1.5.7**：
+  - 顶层 `version` = `v1.5.7`
+  - OEDW data_status_label：**长线文化复刻样板 · Dispatch 基础复核版**
+  - OEDW route_summary 补齐官方 Dispatch 资料对照表
+  - 9/9 SEO 字段保留
+- **check-route-seo.py**：`manifest version` 接受 v1.5.2 / v1.5.3 / v1.5.4 / v1.5.5 / v1.5.6 / v1.5.7
+- **CSS 增强**：`assets/css/styles.css` + 130 行（.oedw-dispatch-review / .oedw-dispatch-table-wrap / .oedw-dispatch-table / .oedw-dispatch-status-reviewed / .oedw-dispatch-status-readable / .oedw-dispatch-status-pending / .oedw-dispatch-status-limited / .oedw-dispatch-keywords / .oedw-dispatch-keyword / .oedw-dispatch-method-grid / .oedw-dispatch-method-card / .oedw-source-concordance / .oedw-source-flow / .oedw-source-flow-step / .oedw-excerpt-note 等 15 个新类）
+
+### 版权与引用边界
+
+- ✅ 允许：中文摘要 / 中文转述 / 主题提炼 / 关键词整理 / 官方链接
+- ❌ 不整段搬运官方正文
+- ❌ 不做全文翻译
+- ❌ 不复制官方 dispatch 全文作为景区攻略
+
+### 不修改
+
+- ❌ 辽塔页面（v1.5.4 状态保留）
+- ❌ 山西页面（v1.5.4 状态保留）
+- ❌ CSV / GeoJSON / GPX 坐标数据
+- ❌ SVG 路线示意图
+- ❌ OG SVG（SEO 检查不要求）
+- ❌ 路线工厂门禁脚本
+- ❌ 地图 API / 后端 / 数据库 / npm 依赖
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅（再次确认 22 条全部完成）
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：v1.5.4 状态保留
+
+### 验证
+
+- 路线工厂门禁：全部 PASS
+- SEO / OG 门禁：全部 PASS
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+- 数量校验：22/22 Milestone 编号（74-95）全部出现
+- 官方 URL 校验：22/22 全部 200
+
+### 报告
+
+- `reports/OEDW_DISPATCH_DEEP_REVIEW_REPORT.md`
+
+---
+
 ## v1.5.6 · OEDW Milestones Chinese Story Index (2026-07-06)
 
 ### 主要变更
