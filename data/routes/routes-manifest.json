@@ -1,5 +1,5 @@
 {
-  "version": "v1.5.3",
+  "version": "v1.5.4",
   "updated_at": "2026-07-06",
   "description": "Culture Roadtrip Atlas route data registry. All route data are cultural replica rough points, not real-time navigation data. Each entry is a static, reusable data asset for research, writing, and trip planning.",
   "routes": [
@@ -42,10 +42,10 @@
         "北京",
         "辽宁"
       ],
-      "data_status_label": "长线文化复刻样板 · 已完成线路优化",
+      "data_status_label": "长线文化复刻样板 · 已完成每日导游词",
       "difficulty_label": "高 · 分段复刻",
       "best_season": "分段选择，山地避开恶劣天气",
-      "route_summary": "从滇西边境到大连黄海，沿 Paul Salopek 的 Out of Eden Walk 中国段重建的文化复刻路线。已补充 28 天推荐节奏 + 6 条年度短线 + 取舍原则。",
+      "route_summary": "从滇西边境到大连黄海，沿 Paul Salopek 的 Out of Eden Walk 中国段重建的文化复刻路线。已补充 28 天推荐节奏 + 6 条年度短线 + 28 天每日导游词 + 现场记录模板 + 拍摄建议 + 取舍原则。",
       "data_completeness": "full",
       "featured": true,
       "seo_title": "Out of Eden Walk 中国段复刻路线｜Paul Salopek 国家地理慢新闻路线 · 行旅图谱",
@@ -95,10 +95,10 @@
         "内蒙古",
         "河北"
       ],
-      "data_status_label": "自驾人文路线样板 · 已完成线路优化",
+      "data_status_label": "自驾人文路线样板 · 已完成读塔顺序",
       "difficulty_label": "中 · 自驾为主",
       "best_season": "5–10 月",
-      "route_summary": "北京出发的辽塔巡礼自驾路线，串联锦州、义县、北镇、朝阳、赤峰、辽上京、宁城与承德。已补充 5 天压缩版 / 9 天优化版 / 12 天深度版 + 取舍原则。",
+      "route_summary": "北京出发的辽塔巡礼自驾路线，串联锦州、义县、北镇、朝阳、赤峰、辽上京、宁城与承德。已补充 5 天压缩版 / 9 天优化版 / 12 天深度版 + 9 天每日导游词 + 核心点停留时长 + 读塔顺序 + 拍摄建议 + 取舍原则。",
       "data_completeness": "v0.1",
       "featured": true,
       "seo_title": "北京出发·辽塔巡礼自驾导游手册｜辽代佛塔与契丹文明路线 · 行旅图谱",
@@ -150,10 +150,10 @@
         "平遥",
         "晋东南"
       ],
-      "data_status_label": "古建自驾路线样板 · 已完成线路优化",
+      "data_status_label": "古建自驾路线样板 · 已完成古建读图顺序",
       "difficulty_label": "中高 · 点位分散",
       "best_season": "4–10 月",
-      "route_summary": "一条串联大同、应县、五台山、太原、平遥、临汾、运城与晋东南的山西古建自驾路线。已补充 7 天压缩版 / 10–12 天标准版 / 15 天深度版 + 取舍原则。",
+      "route_summary": "一条串联大同、应县、五台山、太原、平遥、临汾、运城与晋东南的山西古建自驾路线。已补充 7 天压缩版 / 10–12 天标准版 / 15 天深度版 + 12 天每日导游词 + 核心古建停留时长 + 古建读图顺序 + 拍摄建议 + 取舍原则。",
       "data_completeness": "v0.1",
       "featured": true,
       "seo_title": "山西古建路线｜木构、壁画、寺庙与晋地古建筑自驾图谱 · 行旅图谱",

@@ -32,7 +32,7 @@
 | `routes/index.html` | M | +3 | 路线数据资产总览后增加「不同时间预算下的线路版本」说明 |
 | `README.md` | M | +12 | v1.5.3 当前版本 + 描述 |
 | `CHANGELOG.md` | M | +90 | v1.5.3 详细变更日志 |
-| `docs/CONTENT_NOTES.md` | M | +18 | Phase 13 章节 |
+| `docs/CONTENT_NOTES.md` | M | +18 | 线路优化专项章节 |
 | `scripts/check-route-seo.py` | M | +2 | manifest version 接受 v1.5.2 / v1.5.3 |
 | `reports/ROUTE_ITINERARY_OPTIMIZATION_SPRINT1_REPORT.md` | A | +500 | 本报告 |
 

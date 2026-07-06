@@ -20,7 +20,7 @@
 
 ## 当前版本
 
-**v1.5.3 · Route Itinerary Optimization Sprint 1**（2026-07-06）
+**v1.5.4 · Route Itinerary Field Guide Sprint 2**（2026-07-06）
 
 三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
@@ -29,6 +29,16 @@
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
 v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.4 在 v1.5.3 基础上：
+
+- **v1.5.4 · 每日导游词、停留时长与读图顺序**：三条路线补充每日导游词、核心点停留时长、拍摄观察建议和古建 / 辽塔读图顺序
+- OEDW 新增 28 天每日导游词 + 现场记录模板 + 拍摄记录建议 + 今日不要硬加点
+- 辽塔新增 9 天每日导游词 + 核心点停留时长 + 如何读一座辽塔 + 拍摄建议 + 今日不要硬加点
+- 山西新增 12 天每日导游词 + 核心古建停留时长 + 如何读一座山西古建 + 拍摄观察建议 + 今日不要硬加点
+- manifest v1.5.4：data_status_label / route_summary 轻微更新
+- cleanup: 修正上轮 Phase 13 阶段标注误写 + 辽塔「辆牲」错字 → 「牺牲」
+- CSS 增强 213 行（.field-guide-section / .field-guide-grid / .field-guide-card / .field-guide-table / .duration-badge / .observation-list / .photo-tip-grid / .photo-tip-card / .reading-sequence / .do-not-add-note 等 14 个新类）
 
 v1.5.3 在 v1.5.2 基础上：
 

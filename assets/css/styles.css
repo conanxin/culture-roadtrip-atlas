@@ -8339,3 +8339,216 @@ p {
     font-size: 0.82rem;
   }
 }
+
+/* ----- v1.5.4 线路随身导游手册样式 (Phase Sprint 2) ----- */
+.field-guide-section {
+  margin: var(--space-3xl) auto;
+  max-width: 1100px;
+}
+
+.field-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-lg, 20px);
+}
+
+.field-guide-card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-left: 4px solid #6b8e23;
+  border-radius: 8px;
+  padding: var(--space-md, 16px) var(--space-lg, 20px);
+}
+
+.field-guide-card--observation {
+  border-left-color: #c8a96a;
+}
+
+.field-guide-card--photo {
+  border-left-color: #2e4f4f;
+}
+
+.field-guide-card h4 {
+  margin: 0 0 var(--space-xs, 8px);
+  color: #2e4f4f;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.field-guide-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #5a5550;
+}
+
+.field-guide-table-wrap {
+  overflow-x: auto;
+  margin-top: var(--space-md, 16px);
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-radius: 8px;
+}
+
+.field-guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  min-width: 720px;
+}
+
+.field-guide-table th,
+.field-guide-table td {
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(46, 79, 79, 0.08);
+  line-height: 1.55;
+}
+
+.field-guide-table th {
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+}
+
+.field-guide-table tr:last-child td {
+  border-bottom: none;
+}
+
+.field-guide-table tbody tr:nth-child(even) {
+  background: rgba(200, 169, 106, 0.04);
+}
+
+.duration-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  background: rgba(107, 142, 35, 0.18);
+  color: #4a6320;
+}
+
+.duration-badge--short {
+  background: rgba(107, 142, 35, 0.18);
+  color: #4a6320;
+}
+
+.duration-badge--medium {
+  background: rgba(200, 169, 106, 0.22);
+  color: #7a5e1c;
+}
+
+.duration-badge--long {
+  background: rgba(46, 79, 79, 0.20);
+  color: #1e3838;
+}
+
+.observation-list {
+  margin: var(--space-sm, 10px) 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #5a5550;
+}
+
+.observation-list li {
+  margin-bottom: 4px;
+}
+
+.photo-tip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-sm, 10px);
+  margin-top: var(--space-md, 16px);
+}
+
+.photo-tip-card {
+  background: rgba(46, 79, 79, 0.06);
+  border-radius: 6px;
+  padding: var(--space-sm, 12px);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.photo-tip-card strong {
+  color: #2e4f4f;
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.reading-sequence {
+  counter-reset: step;
+  margin: var(--space-md, 16px) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reading-sequence-step {
+  counter-increment: step;
+  position: relative;
+  padding: 8px 0 8px 2.6rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #2e4f4f;
+  border-bottom: 1px dashed rgba(46, 79, 79, 0.18);
+}
+
+.reading-sequence-step:last-child {
+  border-bottom: none;
+}
+
+.reading-sequence-step::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: #2e4f4f;
+  color: #f5e9c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.do-not-add-note {
+  background: rgba(180, 60, 40, 0.08);
+  border-left: 4px solid #b43c28;
+  border-radius: 6px;
+  padding: var(--space-sm, 12px) var(--space-md, 16px);
+  margin: var(--space-sm, 10px) 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #5a2820;
+}
+
+.do-not-add-note strong {
+  color: #8a2818;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 640px) {
+  .field-guide-grid {
+    grid-template-columns: 1fr;
+  }
+  .field-guide-table {
+    font-size: 0.82rem;
+  }
+  .photo-tip-grid {
+    grid-template-columns: 1fr;
+  }
+}

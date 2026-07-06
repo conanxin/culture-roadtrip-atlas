@@ -836,7 +836,7 @@ Phase 12 完成路线页面 SEO 统一与 OG 资产：
 - 形成完整 SEO 闭环：manifest → 页面 head → OG 资产 → 社交分享
 
 
-## Phase 13 · 线路优化专项 v1.5.3 (2026-07-06)
+## 线路优化专项 v1.5.3 (Route Itinerary Optimization Sprint 1) (2026-07-06)
 
 从系统建设回到具体路线。补充不同时间预算下的行程版本与取舍原则：
 
@@ -845,6 +845,21 @@ Phase 12 完成路线页面 SEO 统一与 OG 资产：
 - 山西新增 10–12 天标准版 · 7 天压缩版 · 15 天深度版 · 「山西古建取舍原则」
 - manifest v1.5.3：data_status_label + route_summary 轻微更新
 - CSS 增强 195 行（.itinerary-optimization-section / .itinerary-table / .route-choice-principles / .route-intensity-badge 等 14 个新类）
+- 首页 + 路线索引页轻量更新
+- 不引入地图 API / npm / 构建系统 / 浏览器截图 / 实时交通
+- OEDW 事实边界完整保留
+
+## 线路优化专项 v1.5.4 (Route Itinerary Field Guide Sprint 2) (2026-07-06)
+
+从可执行行程升级为随身导游手册。三条路线补充每日导游词、核心点停留时长、拍摄观察建议和读图顺序：
+
+- OEDW 新增 28 天每日导游词 · 现场记录模板 · 拍摄记录建议 · 今日不要硬加点
+- 辽塔新增 9 天每日导游词 · 核心点停留时长 · 如何读一座辽塔 · 拍摄建议 · 今日不要硬加点
+- 山西新增 12 天每日导游词 · 核心古建停留时长 · 如何读一座山西古建 · 拍摄观察建议 · 今日不要硬加点
+- cleanup: 修正上轮 Phase 13 误写 + 辽塔「辆牲」错字为「牺牲」
+- manifest v1.5.4：data_status_label / route_summary 轻微更新
+- CSS 增强 213 行（.field-guide-section / .field-guide-table / .duration-badge / .reading-sequence / .do-not-add-note 等 14 个新类）
+- check-route-seo.py 接受 v1.5.2 / v1.5.3 / v1.5.4
 - 首页 + 路线索引页轻量更新
 - 不引入地图 API / npm / 构建系统 / 浏览器截图 / 实时交通
 - OEDW 事实边界完整保留

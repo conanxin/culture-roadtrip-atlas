@@ -82,7 +82,7 @@ def check_manifest():
     return 1
   err = 0
   version = manifest.get("version", "")
-  if version not in ("v1.5.2", "v1.5.3"):
+  if version not in ("v1.5.2", "v1.5.3", "v1.5.4"):
     err += fail(f"manifest version={version!r} != 'v1.5.2'")
   else:
     err += ok("manifest version = v1.5.2")

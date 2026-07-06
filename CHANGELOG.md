@@ -4,6 +4,78 @@
 
 ---
 
+## v1.5.4 · Route Itinerary Field Guide Sprint 2 (2026-07-06)
+
+### 主要变更
+
+- **从可执行行程升级为随身导游手册**
+- **OEDW 增强**：
+  - 新增 28 天每日导游词表（28 段 · 含今日导游词 / 建议停留 / 现场观察 / 拍摄点 / 今日不要硬做）
+  - 新增 OEDW 现场记录模板（8 个问题 · 路/人/声/动/旧/失/得/主角）
+  - 新增 OEDW 拍摄 / 记录建议（5 类 · 道路 / 人 / 地貌 / 边界 / 日常）
+- **辽塔增强**：
+  - 新增 9 天每日导游词表（9 段）
+  - 新增 核心点建议停留时长表（10 点 · 含奉国寺 / 万佛堂 / 朝阳北塔 / 庆州白塔 / 辽上京 / 大明塔 / 北镇庙 / 牛河梁 / 赤峰辽文化 / 承德避暑山庄）
+  - 新增 如何读一座辽塔（6 步读图顺序 · 位置→轮廓→基座→塔身→檐部→环境）
+  - 新增 辽塔拍摄与观察建议（6 类 · 全景/中景/近景/逆光/侧光/黄昏）
+- **山西增强**：
+  - 新增 12 天每日导游词表（12 段）
+  - 新增 核心古建建议停留时长表（16 点 · 云冈 / 华严 / 善化 / 应县木塔 / 佛光 / 南禅 / 晋祠 / 双林 / 镇国 / 广胜 / 小西天 / 永乐宫 / 法兴 / 崇庆 / 青莲 / 府城玉皇庙）
+  - 新增 如何读一座山西古建（7 步读图顺序 · 山门轴线→台基屋顶→梁架→塑像→壁画→修缮→环境）
+  - 新增 古建拍摄与观察建议（6 类 · 结构/空间/细部/壁画/环境/修缮）
+- **三条路线统一「今日不要硬加点」字段**：跨城日 + 高原 / 边境 / 古建 / 博物馆阅读疲劳明确提示
+- **cleanup**：
+  - 修正上轮 Phase 13 误写（CONTENT_NOTES.md / ROUTE_ITINERARY_OPTIMIZATION_SPRINT1_REPORT.md）
+  - 修正辽塔「辆牲」错字为「牺牲」（trips/liao-tower-roadtrip/index.html + CHANGELOG.md）
+- **manifest v1.5.4**：
+  - 顶层 `version` = `v1.5.4`
+  - OEDW data_status_label：长线文化复刻样板 · 已完成每日导游词
+  - 辽塔 data_status_label：自驾人文路线样板 · 已完成读塔顺序
+  - 山西 data_status_label：古建自驾路线样板 · 已完成古建读图顺序
+  - 3 路线 route_summary 补齐「每日导游词 / 停留时长 / 拍摄点 / 读图顺序」
+  - 9 SEO 字段保留
+- **CSS 增强**：`assets/css/styles.css` + 213 行（.field-guide-section / .field-guide-grid / .field-guide-card / .field-guide-table / .duration-badge / .observation-list / .photo-tip-grid / .photo-tip-card / .reading-sequence / .do-not-add-note 等 14 个新类）
+- **check-route-seo.py**：`manifest version` 接受 v1.5.2 / v1.5.3 / v1.5.4
+- **首页 + 路线索引页轻量更新**：
+  - index.html 增加「每日导游词 / 停留时长 / 拍摄点 / 读图顺序」说明
+  - routes/index.html 增加「现场导览信息 / 每日导游词 / 停留时长」说明
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：**文化自驾粗点** / **非实时导航** / **不保证开放状态、门票、预约、维修闭馆**
+
+### 不引入
+
+- ❌ 地图 API
+- ❌ 后端 / 数据库
+- ❌ 构建系统 / npm 依赖
+- ❌ 浏览器截图
+- ❌ 实时交通 / 实时路况 / 实时门票价格
+- ❌ IntersectionObserver / 复杂性能优化
+
+### 验证
+
+- 路线工厂门禁：全部 PASS（build-route-assets / validate-route-data / render-route-map-svg）
+- SEO / OG 门禁：全部 PASS（check-routes-index-sync / check-route-page-integration / render-route-og-svg / check-route-seo）
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+
+### 报告
+
+- `reports/ROUTE_ITINERARY_FIELD_GUIDE_SPRINT2_REPORT.md`
+
+---
+
 ## v1.5.3 · Route Itinerary Optimization Sprint 1 (2026-07-06)
 
 ### 主要变更
@@ -15,7 +87,7 @@
   - 新增「如何取舍这条长线」原则：6 门判断（只走 7 天 / 走 14 天 / 写作/摄影项目 / 核心提示）
 - **辽塔增强**：
   - 新增 9 天优化版自驾节奏表（9 段 · 含驾驶强度 / 参观强度 / 当日重点 / 备选删减）
-  - 新增 5 天压缩版（D1–D5 佛塔主轴）· 辆牲北镇 / 牛河梁 / 部分博物馆
+  - 新增 5 天压缩版（D1–D5 佛塔主轴）· 牺牲北镇 / 牛河梁 / 部分博物馆
   - 新增 12 天深度版（12 段 · 增加医巫闾山 / 牛河梁 / 博物馆多点）
   - 新增「辽塔路线取舍原则」：4 门判断（时间不足 / 博物馆型 / 自然地理型 / 亲子轻松型）
 - **山西增强**：
