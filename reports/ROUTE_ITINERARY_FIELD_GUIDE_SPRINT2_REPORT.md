@@ -9,13 +9,13 @@
 |------|---|
 | **工作分支** | main |
 | **基线 commit** | 4e73592 (Sprint 1 报告回填) |
-| **新 commit** | _pending_（commit 后回填） |
-| **push 状态** | _pending_ |
-| **部署状态** | _pending_ |
+| **新 commit** | 9a06944 (Add field guide details to route itineraries) |
+| **push 状态** | ✅ origin/main 已推送 (4e73592..9a06944) |
+| **部署状态** | ✅ GitHub Pages 已部署 (Deploy run 28772537379 · 28s · success) |
 | **本地命令验证** | 全部 PASS |
 | **本地 HTTP** | ✅ 5/5 endpoints 200 |
-| **线上 HTTP 200** | _pending_（push 后回填） |
-| **GitHub Actions run** | _pending_ |
+| **线上 HTTP 200** | ✅ 6/6 endpoints 200 (2026-07-06) |
+| **GitHub Actions run** | ✅ Route Data Quality Gate · run 28772537388 · 15s · success |
 
 ---
 
