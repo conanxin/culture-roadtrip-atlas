@@ -4,6 +4,69 @@
 
 ---
 
+## v1.5.5 · OEDW China Route Deep Optimization (2026-07-06)
+
+### 主要变更
+
+- **OEDW 中国段从可执行行程升级为深度执行版**
+- **页面顶部状态修正**：进度 10% 规划中 → 完成度 85% 可用草案 v0.9（仍未做实地验证）
+- **6 个新模块**：
+  1. **如何使用这条路线**（4 张卡片 · 7 天 / 14 天 / 28 天 / 阅读版）
+  2. **按时间选择你的 OEDW 中国段**（7 / 14 / 28 天三列选择器）
+  3. **不同人群怎么走**（5 卡片 · 第一次走 / 摄影者 / 写作者 / 亲子家庭 / 高强度旅行者）
+  4. **28 天每日执行卡**（28 张 · 7 字段：Day / 过夜建议 / 上午 / 下午 / 傍晚 / 最小完成版 / 可选加点 / 撤退策略 / 今日不要硬加点）
+  5. **住宿区域与交通方式总表**（14 区域 · 6 字段：区域 / 过夜地 / 进入方式 / 离开方式 / 适合停留 / 风险提醒）
+  6. **仍需实地验证的部分**（5 类：实地可达性 / 住宿交通 / 开放状态 / 细节资料 / 用户反馈）
+- **页面顶部导航更新**：使用 / 导游词 / 执行卡 / 7/14/28 / 住宿交通 / 人群 / 待验证 / 数据
+- **页面版本号全量更新**：v1.4.6 → v1.5.5（hero badge / page-meta / footer）
+- **manifest v1.5.5**：
+  - 顶层 `version` = `v1.5.5`
+  - OEDW data_status_label：**长线文化复刻样板 · OEDW 深度执行版**
+  - OEDW route_summary 补齐 7/14/28 天选择器 + 28 天每日执行卡 + 住宿交通总表
+  - 9/9 SEO 字段保留
+- **check-route-seo.py**：`manifest version` 接受 v1.5.2 / v1.5.3 / v1.5.4 / v1.5.5
+- **CSS 增强**：`assets/css/styles.css` + 200+ 行（14 个新类：.oedw-status-updated / .oedw-use-guide / .oedw-use-card / .oedw-execution-section / .oedw-execution-grid / .oedw-execution-card / .oedw-execution-meta / .oedw-minimum-box / .oedw-addon-box / .oedw-fallback-box / .oedw-do-not-box / .oedw-audience-grid / .oedw-audience-card / .oedw-transport-table / .oedw-pending-verification / .oedw-pending-card）
+- **OEDW 路线导航 + 状态文案同步更新**：
+  - 旧文案「本条路线尚在规划中。如需查看已上线的完整路线，请参考辽塔巡礼路线」已被替换
+  - 旧文案「本页为规划中路线...不作为正式出行方案」已更新为「可用草案 v0.9 · 85% ...出发前请以最新官方材料与实地核实为准」
+
+### 不修改
+
+- ❌ 辽塔页面（v1.5.4 状态保留）
+- ❌ 山西页面（v1.5.4 状态保留）
+- ❌ CSV / GeoJSON / GPX 坐标数据
+- ❌ SVG 路线示意图
+- ❌ OG SVG（SEO 检查不要求）
+- ❌ 路线工厂门禁脚本
+- ❌ 地图 API / 后端 / 数据库 / npm 依赖
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：v1.5.4 状态保留
+
+### 验证
+
+- 路线工厂门禁：全部 PASS
+- SEO / OG 门禁：全部 PASS
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+
+### 报告
+
+- `reports/OEDW_CHINA_ROUTE_DEEP_OPTIMIZATION_REPORT.md`
+
+---
+
 ## v1.5.4 · Route Itinerary Field Guide Sprint 2 (2026-07-06)
 
 ### 主要变更

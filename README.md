@@ -20,7 +20,7 @@
 
 ## 当前版本
 
-**v1.5.4 · Route Itinerary Field Guide Sprint 2**（2026-07-06）
+**v1.5.5 · OEDW China Route Deep Optimization**（2026-07-06）
 
 三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
@@ -29,6 +29,22 @@
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
 v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.5 在 v1.5.4 基础上：
+
+- **v1.5.5 · Out of Eden Walk 中国段深度执行版**：OEDW 中国段页面更新为可用草案 v0.9 (85%)，补充 7/14/28 天选择器、28 天每日执行卡、住宿区域与交通方式总表、不同人群版本和仍需实地验证清单
+- OEDW 页面顶部状态：10% 规划中 → 85% 可用草案 v0.9
+- 新增「如何使用这条路线」4 张卡片（7/14/28/阅读）
+- 新增「按时间选择你的 OEDW 中国段」三列选择器
+- 新增 28 天每日执行卡（28 张 · 7 字段 · Day/过夜/上午/下午/傍晚/最小完成版/可选加点/撤退策略/今日不要硬加点）
+- 新增 住宿区域与交通方式总表（14 区域 · 6 字段）
+- 新增 不同人群怎么走（5 卡片：第一次走/摄影者/写作者/亲子家庭/高强度旅行者）
+- 新增 仍需实地验证的部分（5 类：实地可达性/住宿交通/开放状态/细节资料/用户反馈）
+- OEDW 页面顶部导航锚点更新为：使用/导游词/执行卡/7/14/28/住宿交通/人群/待验证/数据
+- manifest v1.5.5：OEDW data_status_label = 长线文化复刻样板 · OEDW 深度执行版
+- check-route-seo.py：接受 v1.5.2 / v1.5.3 / v1.5.4 / v1.5.5
+- CSS 增强 200+ 行（.oedw-status-updated / .oedw-use-guide / .oedw-use-card / .oedw-execution-section / .oedw-execution-card / .oedw-minimum-box / .oedw-addon-box / .oedw-fallback-box / .oedw-do-not-box / .oedw-audience-grid / .oedw-audience-card / .oedw-transport-table / .oedw-pending-verification / .oedw-pending-card 等 14 个新类）
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标 / 不新增地图 API / 不引入 npm
 
 v1.5.4 在 v1.5.3 基础上：
 
