@@ -20,7 +20,7 @@
 
 ## 当前版本
 
-**v1.5.7 · OEDW Dispatch Deep Review and Source Concordance**（2026-07-06）
+**v1.5.8 · OEDW Visual Materials and Bibliography Pack**（2026-07-06）
 
 三条路线详情页已接入统一数据状态徽章、数据摘要、下载入口和相关路线推荐。
 
@@ -29,6 +29,23 @@
 路线数据索引现已包含 3 条真实数据路线：Out of Eden Walk 中国段、辽塔巡礼、山西古建。已接入 3 条路线数据资产，包含 **92 个文化复刻粗点、28 个路线段、3 张静态 SVG 路线图**，支持 CSV / GeoJSON / GPX 下载。
 
 v1.5.0（路线索引体验与多路线检索）+ v1.4.9（山西古建路线数据生产）+ v1.4.8（路线工厂自动化与质量门禁）+ v1.4.7（路线模板化与多路线复用）+ v1.4.6（数据驱动页面与静态地图预览）+ v1.4.5（路线数据资产）+ v1.4.3-1.4.4（叙事/发布包装）保留。
+
+v1.5.8 在 v1.5.7 基础上：
+
+- **v1.5.8 · OEDW 视觉资料与参考书目补全**：页面新增视觉资料占位表、参考书目 5 类、出发前核查清单 5 类
+- OEDW 页面状态 90% → 92% · 视觉资料与书目准备版
+- 新增「视觉资料占位与来源管理」表格（22 行 · Milestone/视觉状态/需要补拍/官方链接）
+- 新增「参考书目与延伸阅读」5 类（官方/英文/中文/学术/衍生）
+- 新增「出发前核查清单」5 类（证件与手续/健康与安全/交通与时段/开放状态/资料与装备）
+- 视觉资料状态：22 条全部「官方图片链接 · 待实拍」（不下载官方图片到仓库）
+- OEDW 页面顶部导航新增「视觉/书目/出发前」3 个锚点
+- 页面版本号全量更新：v1.5.7 → v1.5.8（hero badge / page-meta × 2 / footer / 状态卡 / 描述 / 风险说明）
+- manifest v1.5.8：OEDW data_status_label = 长线文化复刻样板 · 视觉资料与书目准备版
+- check-route-seo.py：接受 v1.5.2/3/4/5/6/7/8
+- CSS 增强（.oedw-visual-pack / .oedw-visual-table / .oedw-visual-status-* / .oedw-bibliography / .oedw-bibliography-section-* / .oedw-checklist-grid / .oedw-checklist-card / .oedw-source-note 等 16 个新类）
+- 不下载 / 不复制 / 不搬运官方图片到仓库
+- 不把视觉占位写成已经实拍完成
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
 
 v1.5.7 在 v1.5.6 基础上：
 

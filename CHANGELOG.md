@@ -4,6 +4,94 @@
 
 ---
 
+## v1.5.8 · OEDW Visual Materials and Bibliography Pack (2026-07-06)
+
+### 主要变更
+
+- **OEDW 页面从官方 Dispatch 对照解读版升级为视觉资料与参考书目准备版**
+- **页面顶部状态**：完成度 90% → 92% · 视觉资料与书目准备版
+- **视觉资料占位与来源管理**（22 行 × 4 字段）：
+  - Milestone / 视觉状态 / 需要补拍或已有线索 / 官方 Milestone 链接
+  - 22/22 全部「官方图片链接 · 待实拍」
+  - 明确不下载、不复制、不搬运官方图片到仓库
+- **参考书目与延伸阅读**（5 类）：
+  - 📕 官方资料 (Official)：Out of Eden Walk 官方页面 / 22 篇 dispatch 全文
+  - 📘 英文文献 (English)：Salopek 新书项目 / National Geographic 报道合集 / Pulitzer Center
+  - 📗 中文资料 (Chinese)：《永远的行走：与中国相遇》/ 国家地理中文网 / 慢新闻实践
+  - 📙 学术参考 (Academic)：人类迁徙 / 早现代人遗址 / 茶马古道 / 蜀道 / 黄土高原 / 长城
+  - 📓 衍生阅读 (Recommended)：Newby / Chatwin / Leigh Fermor / 何伟三部曲 / Salopek 中文译介
+- **出发前核查清单**（5 类）：
+  - 🪪 证件与手续（身份证 / 护照 / 边防证 / 港澳台 / 学生老年军警）
+  - 🏔 健康与安全（高反 / 雨季 / 冬季 / 药品 / 应急联系）
+  - 🚆 交通与时段（班次复核 / 山区封闭 / 包车预约 / 夜路）
+  - 🏛 开放状态（博物馆预约 / 遗址季节性 / 边境管控 / 维修闭馆 / 节假日）
+  - 📚 资料与装备（执行卡 / 住宿表 / 故事索引 / 离线地图 / 相机）
+- **更新「仍需实地验证 · 细节资料」**：
+  - ✅ 视觉资料占位与来源管理已建立（v1.5.8 · 22/22）
+  - ✅ 参考书目 5 类已建立（v1.5.8）
+  - ✅ 出发前核查清单 5 类已建立（v1.5.8）
+  - 现场实拍图（待贡献 · 不下载官方图片）
+  - 视觉授权（待授权 · 不复制第三方图片）
+  - 点位开放状态 + 实地可达性
+  - 中文参考书目原著获取
+- **页面顶部导航更新**：新增「视觉 / 书目 / 出发前」3 个锚点
+- **页面版本号全量更新**：v1.5.7 → v1.5.8（hero badge / page-meta × 2 / footer / 状态卡 / 描述 / 风险说明）
+- **manifest v1.5.8**：
+  - 顶层 `version` = `v1.5.8`
+  - OEDW data_status_label：**长线文化复刻样板 · 视觉资料与书目准备版**
+  - OEDW route_summary 补齐视觉资料 + 书目 + 出发前清单
+  - 9/9 SEO 字段保留
+- **check-route-seo.py**：`manifest version` 接受 v1.5.2 / v1.5.3 / v1.5.4 / v1.5.5 / v1.5.6 / v1.5.7 / v1.5.8
+- **CSS 增强**：`assets/css/styles.css` + 130 行（.oedw-visual-pack / .oedw-visual-table / .oedw-visual-status-official / .oedw-visual-status-pending / .oedw-visual-status-todo / .oedw-visual-status-na / .oedw-bibliography / .oedw-bibliography-section / .oedw-bibliography-section--gold / .oedw-bibliography-section--teal / .oedw-bibliography-section--purple / .oedw-bibliography-section--olive / .oedw-checklist-grid / .oedw-checklist-card / .oedw-source-note 等 15 个新类）
+
+### 版权与图片处理边界
+
+- ✅ 允许：代表视觉资料占位 / 官方图片链接 / 需要补拍什么 / 现场实拍计划 / 图片来源备注 / 参考书目
+- ❌ 不下载 National Geographic / Out of Eden Walk 图片到仓库
+- ❌ 不把第三方图片当成本地资产发布
+- ❌ 不使用无法确认来源的图片
+- ❌ 不把视觉占位写成已经实拍完成
+
+### 不修改
+
+- ❌ 辽塔页面（v1.5.4 状态保留）
+- ❌ 山西页面（v1.5.4 状态保留）
+- ❌ CSV / GeoJSON / GPX 坐标数据
+- ❌ SVG 路线示意图
+- ❌ OG SVG（SEO 检查不要求）
+- ❌ 路线工厂门禁脚本
+- ❌ 地图 API / 后端 / 数据库 / npm 依赖
+
+### 重要边界（OEDW）
+
+- 不出现「跨越六年」❌
+- 不出现「22/23」❌
+- Milestones 74–95 = **22/22** ✅（再次确认 22 条全部完成）
+- 里程口径：**约 6,000–6,700 公里** ✅
+- 北京段：**卢沟桥 → 天安门 → 小汤山** ✅
+- 黄海终点：**2023 冬 / 2024.6 / 2024.8** ✅
+
+### 路线数据声明
+
+- OEDW：**文化复刻粗点** / **非原始 GPS** / **非导航**
+- 辽塔 / 山西：v1.5.4 状态保留
+
+### 验证
+
+- 路线工厂门禁：全部 PASS
+- SEO / OG 门禁：全部 PASS
+- verify-site.sh：全部 PASS
+- GitHub Actions：Route Data Quality Gate success
+- 数量校验：22/22 Milestone 编号（74-95）全部出现
+- 官方 URL 校验：22/22 全部 200
+- 视觉状态：22/22 全部「官方图片链接 · 待实拍」
+
+### 报告
+
+- `reports/OEDW_VISUAL_MATERIALS_BIBLIOGRAPHY_REPORT.md`
+
+---
+
 ## v1.5.7 · OEDW Dispatch Deep Review and Source Concordance (2026-07-06)
 
 ### 主要变更

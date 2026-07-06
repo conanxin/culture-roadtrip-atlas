@@ -931,3 +931,22 @@ Out of Eden Walk 中国段 Milestones 74–95 共 22 条补充官方资料状态
 - 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
 - 不新增地图 API / npm / 构建系统
 - OEDW 事实边界完整保留
+
+## OEDW 视觉资料与参考书目 v1.5.8 (OEDW Visual Materials and Bibliography Pack) (2026-07-06)
+
+Out of Eden Walk 中国段 Milestones 74–95 共 22 条视觉资料占位 + 参考书目 5 类 + 出发前核查清单 5 类；页面从官方 Dispatch 对照解读版升级为视觉资料与参考书目准备版。
+
+- 页面状态：完成度 92% · 视觉资料与书目准备版
+- 视觉资料占位与来源管理 22/22
+- 视觉状态：22 条全部「官方图片链接 · 待实拍」
+- 不下载 / 不复制 / 不搬运官方图片到仓库
+- 参考书目 5 类（官方/英文/中文/学术/衍生）
+- 出发前核查清单 5 类（证件/健康/交通/开放/装备）
+- OEDW 页面顶部导航新增「视觉/书目/出发前」3 个锚点
+- 页面版本号全量更新：v1.5.7 → v1.5.8
+- manifest v1.5.8：OEDW data_status_label = 长线文化复刻样板 · 视觉资料与书目准备版
+- check-route-seo.py 接受 v1.5.2/3/4/5/6/7/8
+- CSS 增强 130 行
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
+- 不新增地图 API / npm / 构建系统
+- OEDW 事实边界完整保留
