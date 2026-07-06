@@ -9,15 +9,15 @@
 |------|---|
 | **工作分支** | main |
 | **基线 commit** | cbf909f (OEDW Milestones 报告回填) |
-| **新 commit** | _pending_（commit 后回填） |
-| **push 状态** | _pending_ |
-| **部署状态** | _pending_ |
+| **新 commit** | 609ab49 (Add OEDW dispatch deep review concordance) |
+| **push 状态** | ✅ origin/main 已推送 (cbf909f..609ab49) |
+| **部署状态** | ✅ GitHub Pages 已部署 (Deploy run 28785362197 · 重试后 14s · success；首次 26s 失败，gh run rerun 修复) |
 | **本地命令验证** | 全部 PASS |
-| **本地 HTTP** | ✅ 3/3 已有 endpoints 200（报告待生成） |
+| **本地 HTTP** | ✅ 4/4 endpoints 200 |
 | **数量校验** | ✅ 22/22 Milestone 编号（74-95）全部出现 |
 | **官方 URL 校验** | ✅ 22/22 全部 200 (2026-07-06 验证) |
-| **线上 HTTP 200** | _pending_（push 后回填） |
-| **GitHub Actions run** | _pending_ |
+| **线上 HTTP 200** | ✅ 4/4 endpoints 200 (2026-07-06) |
+| **GitHub Actions run** | ✅ Route Data Quality Gate · run 28785362138 · 10s · success |
 
 ---
 
