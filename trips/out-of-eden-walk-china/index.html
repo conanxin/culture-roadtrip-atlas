@@ -53,7 +53,7 @@
   <!-- Hero 首屏 -->
   <section class="hero trip-skeleton">
     <div class="container">
-      <div class="trip-skeleton-badge">🌟 代表长线 · v1.5.12 · 可用草案 v0.9 · 93% · 参考资料增强版</div>
+      <div class="trip-skeleton-badge">🌟 代表长线 · v1.5.13 · 可用草案 v0.9 · 93% · 稳定版候选</div>
       <h1 class="hero-title">Out of Eden Walk 中国段复刻路线</h1>
       <p class="hero-subtitle">从滇西边境到大连黄海：跟随 Paul Salopek 的慢新闻足迹，<br>穿越古道、蜀道、黄土高原、长城与东北海岸</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -89,7 +89,7 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.5.12 · 可用草案 v0.9 · 93% · 2026-07-07 · 参考资料增强 + 参考书目地图 + 10 主题资料</span>
+        <span class="page-meta-value">v1.5.13 · 可用草案 v0.9 · 93% · 2026-07-07 · 稳定版候选 + 页面健康检查 + 锚点与折叠体检</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">原始项目：</span>
@@ -97,7 +97,7 @@
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">v1.5.12 · 可用草案 v0.9 · 93% · 2026-07-07 · 参考资料增强 + 参考书目地图 + 10 主题资料</span>
+        <span class="page-meta-value">v1.5.13 · 可用草案 v0.9 · 93% · 2026-07-07 · 稳定版候选 + 页面健康检查 + 锚点与折叠体检</span>
       </div>
     </div>
   </section>
@@ -126,12 +126,12 @@
 <!-- 本页状态 + 适合谁使用（v1.4.4 新增，v1.5.11 同步至结构化阅读版） -->
   <section class="container" style="margin-top: var(--space-2xl);">
     <div class="page-status-card">
-      <div class="page-status-tag">v1.5.12 · 93% · 参考资料增强版</div>
+      <div class="page-status-tag">v1.5.13 · 93% · 稳定版候选</div>
       <h3 class="page-status-title">本页状态</h3>
       <div class="page-status-grid">
         <div class="page-status-item">
           <div class="page-status-label">当前版本</div>
-          <div class="page-status-value">v1.5.12</div>
+          <div class="page-status-value">v1.5.13</div>
         </div>
         <div class="page-status-item">
           <div class="page-status-label">完成度</div>
@@ -139,13 +139,79 @@
         </div>
         <div class="page-status-item">
           <div class="page-status-label">已交付</div>
-          <div class="page-status-value">页面阅读地图 · 三条核心阅读路径 · 折叠式资料模块 · 模块类型标识 · 精简导航</div>
+          <div class="page-status-value">页面阅读地图 · 三条核心阅读路径 · 折叠式资料模块 · 模块类型标识 · 参考书目地图 · 稳定版候选</div>
         </div>
         <div class="page-status-item">
           <div class="page-status-label">仍待完善</div>
           <div class="page-status-value">实地走访照片 · 授权图片 · 开放状态 · 交通现实 · 实走反馈 · 中文参考书目原著</div>
         </div>
       </div>
+    </div>
+
+    <!-- v1.5.13 页面健康检查摘要 -->
+    <div class="oedw-health-summary">
+      <h3 class="oedw-health-summary-title">
+        <span class="module-type module-type-core">体检</span>
+        页面健康检查摘要
+      </h3>
+      <p class="oedw-health-summary-intro">
+        这页已经进入<strong>稳定版候选</strong>状态，<strong>不是实地验证完成版</strong>。下面 10 项核心检查由 <code>scripts/check-oedw-page-health.py</code> 自动化扫描，作为页面健康度的最小指标集。
+      </p>
+      <div class="oedw-health-grid">
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>内容结构</h4>
+          <p>阅读地图 / 三条路径 / 折叠模块 / 模块类型标识 / 参考书目地图 / FAQ 等 11 个核心模块齐全。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>Milestones 覆盖</h4>
+          <p>Milestones 74–95 共 22 条全部覆盖；Milestone 96+ 仅作为黄海渡船 disclaimer 保留。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>折叠结构</h4>
+          <p>13 对 <code>&lt;details&gt;</code> 标签全部闭合，且每个 <code>&lt;details&gt;</code> 内都有 <code>&lt;summary&gt;</code>。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>quick nav 锚点</h4>
+          <p>10 个 quick nav pill 的 href 目标 id 全部存在于页面（状态 / 阅读地图 / 故事 / 执行卡 / 参考书目 / 视觉资料 / 出发前 / 风险 / 数据 / FAQ）。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>长表格容器</h4>
+          <p>12 张 <code>&lt;table&gt;</code> 全部包在 <code>mobile-scroll-table</code> 或对应 wrapper 内，移动端可横向滚动。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>事实边界</h4>
+          <p>22/22 · 6,000–6,700 · 文化复刻粗点 · 非原始 GPS · 非导航 标记齐全；所有可疑旧状态标记（百分比完成度 / 错误分母 / 规划中）均已清理。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>参考资料链接</h4>
+          <p>30 条参考资料的 27 条独立外链核验完成；其余 3 条以站内资源（CSV/GeoJSON/SVG）补足；详见报告。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>Milestone 官方 URL</h4>
+          <p>22 条 Milestone 官方 URL 全部来自 outofedenwalk.nationalgeographic.org；详见报告。</p>
+        </div>
+        <div class="oedw-health-card">
+          <span class="oedw-health-status oedw-health-pass">PASS</span>
+          <h4>数据资产</h4>
+          <p>CSV / GeoJSON / GPX / SVG 4 种数据资产已接入 <code>route-page-data-panel</code>；OG SVG 同步渲染。</p>
+        </div>
+        <div class="oedw-health-card oedw-health-card--pending">
+          <span class="oedw-health-status oedw-health-pending">PENDING</span>
+          <h4>实地验证</h4>
+          <p>本路线仍处于<strong>文化复刻路线</strong>阶段；点位开放状态 / 交通现实 / 自有实拍图 / 实地走访反馈 等仍需实地补充。</p>
+        </div>
+      </div>
+      <p class="oedw-stable-candidate">
+        <strong>稳定版候选说明：</strong>稳定版候选不是最终完成，而是表示页面结构、资料索引、路线执行、风险边界和数据资产已具备公开阅读与持续维护基础。后续主要进入实地核查、图像补充和参考资料深读。
+      </p>
     </div>
 
     <div class="audience-grid">
@@ -3367,7 +3433,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📊 本路线多维完成状态</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
-      主状态 <strong>93% · 参考资料增强版</strong>。<br>
+      主状态 <strong>93% · 稳定版候选</strong>。<br>
       93% 指<strong>页面资料结构成熟度</strong>，不代表路线实地验证完成。
     </p>
     <div class="oedw-status-table-wrap">
@@ -5027,7 +5093,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       <h3 class="status-legend-title"><span class="module-type module-type-core">核心</span> 📋 本路线当前状态</h3>
       <div class="status-legend-list">
         <div class="status-legend-item">
-          <div class="status-legend-name">完成度：<span class="trip-status status-planning" style="background:rgba(107,142,35,0.2);color:#3d5a10;">93%</span> · 参考资料增强版</div>
+          <div class="status-legend-name">完成度：<span class="trip-status status-planning" style="background:rgba(107,142,35,0.2);color:#3d5a10;">93%</span> · 稳定版候选</div>
           <div class="status-legend-desc">已完成：10 段路线 · Milestones 74–95 共 22 条覆盖 · 中文摘要 + 路线意义 + 复刻建议 · 官方 Dispatch 资料对照表 · 22/22 URL 200 · Milestone 视觉资料矩阵 · 22 条补图清单 · 现场实拍计划 · 视觉资料命名与归档规范 · 参考书目 5 类 · 出发前核查清单 8 类 · 读者入口 6 类 · 多维完成状态表 9 维 · 资料可信度 4 级 · 不建议复刻场景 8 类 · 交通可达性 10 段 · 观察任务 8 类 · FAQ 12 条 · 28 天节奏 · 28 天每日导游词 · 28 天每日执行卡 · 6 条短线 · 现场记录模板 · CSV/GeoJSON/GPX/SVG 数据 · SEO/OG/下载入口
         </div>
         <div class="status-legend-item">
@@ -5186,7 +5252,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
           <a href="../../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.5.12 · Out of Eden Walk 中国段 · 可用草案 v0.9 · 93% · 2026 · 参考资料增强版</div>
+        <div class="footer-credit">v1.5.13 · Out of Eden Walk 中国段 · 可用草案 v0.9 · 93% · 2026 · 稳定版候选</div>
       </div>
     </div>
   </footer>

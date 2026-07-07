@@ -10381,3 +10381,116 @@ h4 .module-type { font-size: 0.62rem; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+ * OEDW v1.5.13 · 页面健康检查 + 稳定版候选
+ * ============================================================ */
+
+.oedw-health-summary {
+  background: linear-gradient(180deg, rgba(46, 79, 79, 0.04) 0%, rgba(107, 142, 35, 0.04) 100%);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 8px;
+  padding: var(--space-lg, 20px) var(--space-md, 16px);
+  margin-top: var(--space-lg, 20px);
+}
+.oedw-health-summary-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2e4f4f;
+  margin: 0 0 var(--space-sm, 12px);
+}
+.oedw-health-summary-intro {
+  font-size: 0.86rem;
+  color: #4a4540;
+  line-height: 1.7;
+  margin: 0 0 var(--space-md, 16px);
+  max-width: 920px;
+}
+.oedw-health-summary-intro code {
+  font-size: 0.78rem;
+  background: rgba(46, 79, 79, 0.08);
+  padding: 1px 6px;
+  border-radius: 3px;
+  color: #2e4f4f;
+}
+
+.oedw-health-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-sm, 12px);
+  margin-bottom: var(--space-md, 16px);
+}
+.oedw-health-card {
+  background: #fff;
+  border: 1px solid rgba(46, 79, 79, 0.15);
+  border-left: 4px solid #6b8e23;
+  border-radius: 5px;
+  padding: var(--space-sm, 12px) var(--space-md, 16px);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+.oedw-health-card--pending {
+  border-left-color: #b06b1a;
+  background: rgba(176, 107, 26, 0.04);
+}
+.oedw-health-card h4 {
+  margin: 4px 0 4px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #2e4f4f;
+}
+.oedw-health-card p {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+  color: #4a4540;
+  line-height: 1.55;
+}
+.oedw-health-card code {
+  font-size: 0.74rem;
+  background: rgba(46, 79, 79, 0.06);
+  padding: 0 4px;
+  border-radius: 2px;
+  color: #2e4f4f;
+}
+
+.oedw-health-status {
+  display: inline-block;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.oedw-health-pass {
+  background: rgba(107, 142, 35, 0.18);
+  color: #3d5a10;
+  border-color: rgba(107, 142, 35, 0.45);
+}
+.oedw-health-warn {
+  background: rgba(200, 169, 106, 0.18);
+  color: #8a6d2a;
+  border-color: rgba(200, 169, 106, 0.45);
+}
+.oedw-health-pending {
+  background: rgba(176, 107, 26, 0.18);
+  color: #8a4f10;
+  border-color: rgba(176, 107, 26, 0.45);
+}
+
+.oedw-stable-candidate {
+  font-size: 0.84rem;
+  color: #2e4f4f;
+  background: rgba(255, 255, 255, 0.55);
+  border-left: 3px solid #2e4f4f;
+  padding: 10px 14px;
+  border-radius: 0 4px 4px 0;
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .oedw-health-grid {
+    grid-template-columns: 1fr;
+  }
+}

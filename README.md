@@ -20,6 +20,8 @@
 
 ## 当前版本
 
+**v1.5.13 · OEDW 页面质量收束与稳定版候选**（2026-07-07）
+
 **v1.5.12 · OEDW 参考书目深度补全**（2026-07-07）
 
 **v1.5.11 · OEDW Page Information Architecture Cleanup**（2026-07-07）
