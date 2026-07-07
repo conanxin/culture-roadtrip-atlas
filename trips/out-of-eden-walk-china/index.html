@@ -53,7 +53,7 @@
   <!-- Hero 首屏 -->
   <section class="hero trip-skeleton">
     <div class="container">
-      <div class="trip-skeleton-badge">🌟 代表长线 · v1.5.11 · 可用草案 v0.9 · 93% · 结构化阅读版</div>
+      <div class="trip-skeleton-badge">🌟 代表长线 · v1.5.12 · 可用草案 v0.9 · 93% · 参考资料增强版</div>
       <h1 class="hero-title">Out of Eden Walk 中国段复刻路线</h1>
       <p class="hero-subtitle">从滇西边境到大连黄海：跟随 Paul Salopek 的慢新闻足迹，<br>穿越古道、蜀道、黄土高原、长城与东北海岸</p>
       <div class="trip-tags" style="justify-content: center; margin-top: var(--space-xl);">
@@ -89,7 +89,7 @@
     <div class="page-meta">
       <div class="page-meta-item">
         <span class="page-meta-label">页面版本：</span>
-        <span class="page-meta-value">v1.5.11 · 可用草案 v0.9 · 93% · 2026-07-07 · 结构化阅读 + 折叠资料 + 模块标识</span>
+        <span class="page-meta-value">v1.5.12 · 可用草案 v0.9 · 93% · 2026-07-07 · 参考资料增强 + 参考书目地图 + 10 主题资料</span>
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">原始项目：</span>
@@ -97,7 +97,7 @@
       </div>
       <div class="page-meta-item">
         <span class="page-meta-label">资料状态：</span>
-        <span class="page-meta-value">v1.5.11 · 可用草案 v0.9 · 93% · 2026-07-07 · 结构化阅读 + 折叠资料 + 模块标识</span>
+        <span class="page-meta-value">v1.5.12 · 可用草案 v0.9 · 93% · 2026-07-07 · 参考资料增强 + 参考书目地图 + 10 主题资料</span>
       </div>
     </div>
   </section>
@@ -126,12 +126,12 @@
 <!-- 本页状态 + 适合谁使用（v1.4.4 新增，v1.5.11 同步至结构化阅读版） -->
   <section class="container" style="margin-top: var(--space-2xl);">
     <div class="page-status-card">
-      <div class="page-status-tag">v1.5.11 · 93% · 结构化阅读版</div>
+      <div class="page-status-tag">v1.5.12 · 93% · 参考资料增强版</div>
       <h3 class="page-status-title">本页状态</h3>
       <div class="page-status-grid">
         <div class="page-status-item">
           <div class="page-status-label">当前版本</div>
-          <div class="page-status-value">v1.5.11</div>
+          <div class="page-status-value">v1.5.12</div>
         </div>
         <div class="page-status-item">
           <div class="page-status-label">完成度</div>
@@ -2287,79 +2287,615 @@
   <!-- v1.5.8 参考书目与延伸阅读 -->
   <details class="oedw-collapsible" id="oedw-bibliography">
     <summary>
-      <span class="oedw-collapsible-summary">参考书目与资料入口</span>
-      <small class="oedw-collapsible-hint">5 类：官方 / 英文 / 中文 / 学术 / 衍生</small>
+      <span class="oedw-collapsible-summary">OEDW 参考书目地图</span>
+      <small class="oedw-collapsible-hint">10 主题 · 类型 · 语言 · 可信度 · 核验状态</small>
     </summary>
     <section id="oedw-bibliography" class="trip-template-section container" style="margin-top: var(--space-3xl);">
     <div class="section-divider">
       <span class="section-divider-icon">◇</span>
     </div>
-    <h2 class="text-center" style="margin-bottom: var(--space-2xl);"><span class="module-type module-type-source">资料</span> 📚 参考书目与资料入口</h2>
-    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
-      中文 / 英文 / 官方三层参考来源。所有 URL 保留指向原始页面，不复制原文。
+    <h2 class="text-center" style="margin-bottom: var(--space-lg);"><span class="module-type module-type-source">资料</span> 📚 OEDW 参考书目地图</h2>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 820px; margin-left: auto; margin-right: auto; font-size: 0.88rem; line-height: 1.7;">
+      这些资料<strong>不是旅行必读清单</strong>，而是帮助理解 Out of Eden Walk 中国段背后的慢新闻方法、道路、边界、山地、古道、城市和海岸语境。所有资料均保留原始链接，不复制版权内容。
     </p>
-    <div class="oedw-bibliography">
-      <div class="oedw-bibliography-section">
-        <h4>📕 官方资料 (Official)</h4>
-        <ul>
-          <li><a href="https://outofedenwalk.nationalgeographic.org/" target="_blank" rel="noopener">Out of Eden Walk · 官方项目首页</a></li>
-          <li><a href="https://outofedenwalk.nationalgeographic.org/2021-10-milestone-74-milestone-asterisk/" target="_blank" rel="noopener">Milestone 74 · Every Story Contains Silences</a></li>
-          <li><a href="https://outofedenwalk.nationalgeographic.org/2024-08-milestone-95-feeling-gray/" target="_blank" rel="noopener">Milestone 95 · Feeling Gray</a></li>
-          <li>Paul Salopek · National Geographic 同步报道</li>
-          <li>官方 Dispatch 全文合集（22 篇）</li>
-        </ul>
+
+    <div class="oedw-bibliography-topic-grid">
+
+      <!-- 主题 1：Out of Eden Walk 与 Paul Salopek -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>1 · Out of Eden Walk 与 Paul Salopek</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 官方项目 / 机构 / 访谈</span>
+
+        <div class="oedw-source-item">
+          <h5>Out of Eden Walk · 官方项目首页</h5>
+          <div class="oedw-source-item-author">National Geographic Society</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方项目</span></span>
+            <span><span class="oedw-source-language">英文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>Milestones 列表、Dispatch 全文、项目介绍、方法论说明。OEDW 所有内容的最权威出处。</p>
+          <a class="oedw-source-item-link" href="https://outofedenwalk.nationalgeographic.org/" target="_blank" rel="noopener">https://outofedenwalk.nationalgeographic.org/</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>Paul Salopek · National Geographic Explorer</h5>
+          <div class="oedw-source-item-author">National Geographic</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方机构</span></span>
+            <span><span class="oedw-source-language">英文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>Paul Salopek 个人页面、奖项介绍、项目概述。了解其记者背景与行走方法的第一手来源。</p>
+          <a class="oedw-source-item-link" href="https://www.nationalgeographic.com/impact/article/paul-salopek-explorer-story" target="_blank" rel="noopener">nationalgeographic.com/impact/article/paul-salopek-explorer-story</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>Out of Eden Walk · Social Media & Feeds</h5>
+          <div class="oedw-source-item-author">National Geographic Society</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方项目</span></span>
+            <span><span class="oedw-source-language">英文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>官方 Bluesky / Instagram / YouTube / Facebook / TikTok / LinkedIn / SoundCloud 账号，可追踪最新动态与 Dispatch 配图。</p>
+          <a class="oedw-source-item-link" href="https://outofedenwalk.nationalgeographic.org/" target="_blank" rel="noopener">outofedenwalk.nationalgeographic.org · 底部社交链接</a>
+        </div>
       </div>
-      <div class="oedw-bibliography-section oedw-bibliography-section--gold">
-        <h4>📘 英文文献 (English)</h4>
-        <ul>
-          <li>Salopek, Paul. <em>Out of Eden: A Walk Through Time</em> (forthcoming book project)</li>
-          <li>National Geographic Society · Out of Eden Walk archive</li>
-          <li><em>Dispatches from the Silk Road</em> · Paul Salopek · National Geographic</li>
-          <li>Walking as slow journalism essays (2013-2024)</li>
-          <li>Pulitzer Center · Out of Eden Walk coverage</li>
-        </ul>
+
+      <!-- 主题 2：慢新闻 / 行走写作 / 长时段报道 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>2 · 慢新闻 / 行走写作 / 长时段报道</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 方法论 / 背景阅读</span>
+
+        <div class="oedw-source-item">
+          <h5>Slow Journalism and the Out of Eden Walk Curriculum</h5>
+          <div class="oedw-source-item-author">Pulitzer Center</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">方法论</span></span>
+            <span><span class="oedw-source-language">英文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>Pulitzer Center 出品的 OEDW 教学课程，将行走写作方法引入课堂的新闻教育框架。</p>
+          <a class="oedw-source-item-link" href="https://pulitzercenter.org/education/slow-journalism-and-out-eden-walk-curriculum" target="_blank" rel="noopener">pulitzercenter.org/education/slow-journalism-and-out-eden-walk-curriculum</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>Chronicles the Mass Migrations That Define Our Age</h5>
+          <div class="oedw-source-item-author">Paul Salopek · National Geographic</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">访谈</span></span>
+            <span><span class="oedw-source-language">英文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>Paul Salopek 自述六年徒步的缘起与方法，自述从埃塞俄比亚赫托布里出发，徒步穿越非洲、亚洲走向南美的叙事逻辑。</p>
+          <a class="oedw-source-item-link" href="https://www.nationalgeographic.com/culture/2019/07/paul-salopek-chronicles-the-mass-migrations-that-define-our-age-feature.html" target="_blank" rel="noopener">nationalgeographic.com · Paul Salopek 2019 专题</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>用 3 英里的时速漫游世界</h5>
+          <div class="oedw-source-item-author">搜狐 / 保罗·萨洛佩克</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">基础核验</span></span>
+          </div>
+          <p>Paul Salopek 行走故事的中文介绍，约 33,796 公里 / 7 年 / 从埃塞俄比亚到火地岛的计划。说明 OEDW 整体背景。</p>
+          <a class="oedw-source-item-link" href="https://www.sohu.com/a/815221606_121882534" target="_blank" rel="noopener">sohu.com · 用 3 英里的时速漫游世界</a>
+        </div>
       </div>
-      <div class="oedw-bibliography-section oedw-bibliography-section--teal">
-        <h4>📗 中文资料 (Chinese)</h4>
-        <ul>
-          <li>《永远的行走：与中国相遇》中文纪录片材料</li>
-          <li>国家地理中文网 · OEDW 报道合集</li>
-          <li>Paul Salopek 中国段中文译介文章</li>
-          <li>慢新闻 / 慢速写作中文实践文献</li>
-          <li>茶马古道 / 蜀道 / 黄土高原中文研究</li>
-        </ul>
+
+      <!-- 主题 3：茶马古道与滇西边地 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>3 · 茶马古道与滇西边地</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 学术 / 官方保护区 / 地方志</span>
+
+        <div class="oedw-source-item">
+          <h5>茶马古道：民族交流的纽带</h5>
+          <div class="oedw-source-item-author">期刊网 / 木霁弘 · 陈保亚</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">论文 / 学术资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>1990 年，木霁弘（云南大学）、陈保亚（北京大学）等 6 人徒步三月考察滇藏川深山峡谷马帮古道，首次提出"茶马古道"概念。核心文献。</p>
+          <a class="oedw-source-item-link" href="https://www.qikanchina.com/thesis/view/1163460" target="_blank" rel="noopener">qikanchina.com · 茶马古道：民族交流的纽带</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>高黎贡山国家级自然保护区</h5>
+          <div class="oedw-source-item-author">高黎贡山保山管护局</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>1983 年建区，1992 年 IUCN A 级，2000 年世界生物圈保护区，2003 年三江并流世界自然遗产组成部分。OEDW 云南段核心生态背景。</p>
+          <a class="oedw-source-item-link" href="http://nnr0208.ftourcn.com/" target="_blank" rel="noopener">nnr0208.ftourcn.com · 高黎贡山国家级自然保护区</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>超越极限：茶马古道大环绕</h5>
+          <div class="oedw-source-item-author">木霁弘 · 陈保亚 · 《科学中国人》2011</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">待深读</span></span>
+          </div>
+          <p>20 周年纪念考察回顾文章，"六君子"重走茶马古道。茶马古道概念提出背景与学术史。</p>
+          <a class="oedw-source-item-link" href="https://mall.cnki.net/magazine/Article/KXZG201110017.htm" target="_blank" rel="noopener">mall.cnki.net · 超越极限：茶马古道大环绕</a>
+        </div>
       </div>
-      <div class="oedw-bibliography-section oedw-bibliography-section--purple">
-        <h4>📙 学术参考 (Academic)</h4>
-        <ul>
-          <li>人类迁徙 / 走出非洲学术综述</li>
-          <li>早现代人遗址研究（田园洞 / 周口店）</li>
-          <li>茶马古道交通史研究</li>
-          <li>蜀道与秦蜀交界地理</li>
-          <li>黄土高原水土流失与现代化</li>
-          <li>长城作为边界系统的研究</li>
-        </ul>
+
+      <!-- 主题 4：横断山与西南山地 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>4 · 横断山与西南山地</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 地理 / 生物多样性 / 保护区</span>
+
+        <div class="oedw-source-item">
+          <h5>高黎贡山国家级自然保护区（地理百科）</h5>
+          <div class="oedw-source-item-author">查字典地理网</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">基础核验</span></span>
+          </div>
+          <p>高黎贡山保护区基本信息：新石器晚期人类遗址、1983 年建区、免费开放。与 OEDW 云南段直接相关。</p>
+          <a class="oedw-source-item-link" href="https://dili.chazidian.com/baike-21769/" target="_blank" rel="noopener">dili.chazidian.com · 高黎贡山国家级自然保护区</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>2025 年高黎贡山旅游攻略</h5>
+          <div class="oedw-source-item-author">搜狐 / 保山管护局</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">基础核验</span></span>
+          </div>
+          <p>高黎贡山进入规定：实名登记、管护局隆阳/腾冲分局登记点。实地走访前必读。</p>
+          <a class="oedw-source-item-link" href="https://www.sohu.com/a/858413179_121924581" target="_blank" rel="noopener">sohu.com · 2025 高黎贡山旅游攻略</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>三江并流世界自然遗产（高黎贡山组成）</h5>
+          <div class="oedw-source-item-author">UNESCO / 高黎贡山管护局</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方项目</span></span>
+            <span><span class="oedw-source-language">双语</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>2003 年列入世界自然遗产，包含高黎贡山。OEDW 云南段生态与地质背景。</p>
+          <a class="oedw-source-item-link" href="https://whc.unesco.org/en/list/1083" target="_blank" rel="noopener">whc.unesco.org · Three Parallel Rivers of Yunnan</a>
+        </div>
       </div>
-      <div class="oedw-bibliography-section oedw-bibliography-section--olive">
-        <h4>📓 衍生阅读 (Recommended)</h4>
-        <ul>
-          <li>Eric Newby · <em>A Short Walk in the Hindu Kush</em></li>
-          <li>Bruce Chatwin · <em>The Songlines</em></li>
-          <li>Patrick Leigh Fermor · <em>A Time of Gifts</em></li>
-          <li>比尔 · 布莱森《徒步中国》相关书籍</li>
-          <li>何伟（Peter Hessler）中国三部曲</li>
-          <li>Paul Salopek 中文译介文集</li>
-        </ul>
+
+      <!-- 主题 5：蜀道、秦岭与古代交通 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>5 · 蜀道、秦岭与古代交通</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 文保 / 官方景区 / 学术</span>
+
+        <div class="oedw-source-item">
+          <h5>剑门蜀道剑门关旅游区</h5>
+          <div class="oedw-source-item-author">百度百科 / 剑阁县官方</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>蜀道核心段，肇始于西周、先秦古蜀道金牛道核心。1982 年首批国家重点风景名胜区；2006 年第六批全国重点文物保护单位；国家 AAAAA 级景区。</p>
+          <a class="oedw-source-item-link" href="https://baike.baidu.com/item/广元市剑门蜀道剑门关旅游区/20126481" target="_blank" rel="noopener">baike.baidu.com · 剑门蜀道剑门关旅游区</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>剑门关景区 · 官方简介</h5>
+          <div class="oedw-source-item-author">剑门关景区官网</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>首批国家重点风景名胜区、国家自然与文化双遗产、世界自然与文化双遗产预备名录、国家 AAAAA 级旅游景区、国家森林公园、国家地质公园、全国重点文物保护单位。</p>
+          <a class="oedw-source-item-link" href="http://www.jmgly.com/introduction" target="_blank" rel="noopener">jmgly.com · 剑门关景区官方简介</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>剑门蜀道简介</h5>
+          <div class="oedw-source-item-author">剑阁家乡通</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-c">可信度 C</span></span>
+            <span><span class="oedw-source-type">待深读</span></span>
+          </div>
+          <p>蜀道历史概述：陕西汉中、宁强入川，至广元、剑阁、梓潼的古栈道，绵亘 150 公里余。沿线地势险要、风光峻丽。</p>
+          <a class="oedw-source-item-link" href="http://www.jiange.ccoo.cn/bendi/info-72619.html" target="_blank" rel="noopener">jiange.ccoo.cn · 剑门蜀道简介</a>
+        </div>
+      </div>
+
+      <!-- 主题 6：黄土高原、陕北与乡村社会 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>6 · 黄土高原、陕北与乡村社会</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 官方文保 / 政府 / 背景阅读</span>
+
+        <div class="oedw-source-item">
+          <h5>延安宝塔山 · 延安市文化和旅游局</h5>
+          <div class="oedw-source-item-author">延安市文化和旅游局</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>宝塔山唐代始建、明代重建，高 44 米九层，国务院将延安宝塔归入第一批全国重点文物保护单位延安革命旧址。OEDW 陕西段核心标志点。</p>
+          <a class="oedw-source-item-link" href="http://wlj.yanan.gov.cn/zjya/lyjq/1570765644759146498.html" target="_blank" rel="noopener">wlj.yanan.gov.cn · 延安市宝塔山景区</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>延安宝塔山（搜狗百科）</h5>
+          <div class="oedw-source-item-author">搜狗百科</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">基础核验</span></span>
+          </div>
+          <p>宝塔山高 1135.5 米，明代建筑宝塔 44 米九层，革命圣地延安的象征，中国革命的精神标识。</p>
+          <a class="oedw-source-item-link" href="https://baike.sogou.com/v564069.htm" target="_blank" rel="noopener">baike.sogou.com · 延安宝塔山</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>Peter Hessler「寻路中国」系列（豆瓣阅读）</h5>
+          <div class="oedw-source-item-author">彼得·海斯勒（何伟）· 上海译文出版社</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">待深读</span></span>
+          </div>
+          <p>何伟中国三部曲：《寻路中国》《江城》《奇石》。非虚构中国乡村与工厂自驾旅行书写，方法论上与 OEDW 相近。OEDW 陕西/山西段重要参照阅读。</p>
+          <a class="oedw-source-item-link" href="https://read.douban.com/ebook/1224434/related_bundles" target="_blank" rel="noopener">read.douban.com · 何伟三部曲套装</a>
+        </div>
+      </div>
+
+      <!-- 主题 7：长城、边地与北方通道 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>7 · 长城、边地与北方通道</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 文保 / 世界遗产 / 官方</span>
+
+        <div class="oedw-source-item">
+          <h5>司马台长城</h5>
+          <div class="oedw-source-item-author">百度百科 / 官方文保记录</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>北京市密云区古北口镇，1987 年列入世界遗产，"原始长城"，明代原貌保存最完整段落。罗哲文评价"中国长城之最"。OEDW 北京段北部关键节点。</p>
+          <a class="oedw-source-item-link" href="https://baike.baidu.com/item/司马台长城/430336" target="_blank" rel="noopener">baike.baidu.com · 司马台长城</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>长城（司马台段）· 全国重点文物保护单位</h5>
+          <div class="oedw-source-item-author">国务院 / 第五批全国重点文物保护单位</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方机构</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>第五批全国重点文物保护单位地址、批次、所在地区官方记录。司马台长城保护身份确认。</p>
+          <a class="oedw-source-item-link" href="https://baike.baidu.com/item/长城(司马台段)/53958391" target="_blank" rel="noopener">baike.baidu.com · 长城（司马台段）</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>承德避暑山庄及周围寺庙 · 世界文化遗产</h5>
+          <div class="oedw-source-item-author">UNESCO / 承德市政府</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">双语</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>1994 年列入世界遗产，清代皇帝夏日避暑和处理政务场所。扼襟喉、趋朔漠、天留锁钥枕雄关。清代帝国北方战略空间。OEDW 北京段历史语境补充。</p>
+          <a class="oedw-source-item-link" href="https://whc.unesco.org/en/list/747" target="_blank" rel="noopener">whc.unesco.org · Mountain Resort, Chengde</a>
+        </div>
+      </div>
+
+      <!-- 主题 8：北京城市空间与中轴线 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>8 · 北京城市空间与中轴线</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 官方 / UNESCO / 文保</span>
+
+        <div class="oedw-source-item">
+          <h5>北京中轴线 · UNESCO 世界遗产</h5>
+          <div class="oedw-source-item-author">UNESCO / 第 46 届世界遗产大会 2024</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方项目</span></span>
+            <span><span class="oedw-source-language">双语</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>2024 年 7 月 27 日第 46 届世界遗产大会通过，北京中轴线列入《世界遗产名录》，全长 7.8 公里。OEDW 北京段城市空间核心背景。</p>
+          <a class="oedw-source-item-link" href="https://whc.unesco.org/en/list/1604" target="_blank" rel="noopener">whc.unesco.org · Beijing Central Axis</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>周口店北京人遗址博物馆 · 首都之窗</h5>
+          <div class="oedw-source-item-author">北京市人民政府门户网站</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>世界著名的古人类和古脊椎动物考古遗址，"北京人"发祥地，距北京市区约 48 公里，国家一级博物馆、全国重点文物保护单位、世界文化遗产。OEDW 北京段重要历史背景点。</p>
+          <a class="oedw-source-item-link" href="https://www.beijing.gov.cn/renwen/rwzyd/bwg/zkdbjryzbwg/202301/t20230112_2897804.html" target="_blank" rel="noopener">beijing.gov.cn · 周口店北京人遗址博物馆</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>卢沟桥 · 宛平城 · 全国重点文物保护单位</h5>
+          <div class="oedw-source-item-author">全国爱国主义教育基地 / 全国红色旅游经典景区</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-b">可信度 B</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>全国重点文物保护单位、全国爱国主义教育基地、全国红色旅游经典景区。北京西南永定河畔，距天安门 15 公里。OEDW 北京段起点（卢沟桥 → 天安门 → 小汤山）。</p>
+          <a class="oedw-source-item-link" href="https://www.sohu.com/a/1023550749_121123744" target="_blank" rel="noopener">sohu.com · 宛平城免费登城墙活动 2026</a>
+        </div>
+      </div>
+
+      <!-- 主题 9：东北乡村、辽宁通道与大连港 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>9 · 东北乡村、辽宁通道与大连港</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 政府 / 地方志 / 背景阅读</span>
+
+        <div class="oedw-source-item">
+          <h5>旅顺口区 · 走进旅顺口</h5>
+          <div class="oedw-source-item-author">大连市旅顺口区人民政府</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方机构</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>旅顺口历史：汉代沓氏县，东晋名"马石津"，隋唐"都里镇"，元代"狮子口"，明洪武四年（1371）朱元璋派马云、叶旺率军渡海收复辽东，因海上旅途一帆风顺改名"旅顺口"。</p>
+          <a class="oedw-source-item-link" href="http://www.dllsk.gov.cn/lsk.asp" target="_blank" rel="noopener">dllsk.gov.cn · 中国大连旅顺口区政务信息网</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>大连旅顺港 · 地理与历史</h5>
+          <div class="oedw-source-item-author">抖音 / 地方文献整理</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">背景阅读</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-c">可信度 C</span></span>
+            <span><span class="oedw-source-type">待深读</span></span>
+          </div>
+          <p>旅顺港位于辽东半岛最南端黄海北岸，港阔水深，东北地区主要出海口之一。清末以来军事与工业港口历史背景。</p>
+          <a class="oedw-source-item-link" href="https://www.douyin.com/video/7397590428838595840" target="_blank" rel="noopener">douyin.com · 大连旅顺港介绍</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>周口店遗址 50 年来首次发现更新世人类化石（房山区政府）</h5>
+          <div class="oedw-source-item-author">北京市房山区人民政府</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">博物馆 / 文保资料</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>周口店遗址群第 27 个地点田园洞，2003 年出土，距今约 4.2—3.85 万年，迄今欧亚大陆东部最早的现代型人类遗骸之一。OEDW 北京段人类演化背景资料。</p>
+          <a class="oedw-source-item-link" href="http://travel.china.com.cn/txt/2024-01/11/content_116933196.shtml" target="_blank" rel="noopener">travel.china.com.cn · 周口店国家考古遗址公园</a>
+        </div>
+      </div>
+
+      <!-- 主题 10：地图、路线数据与地理方法 -->
+      <div class="oedw-bibliography-topic-card">
+        <h4>10 · 地图、路线数据与地理方法</h4>
+        <span class="oedw-bibliography-topic-meta">3 条资料 · 地图数据 / 工具方法</span>
+
+        <div class="oedw-source-item">
+          <h5>OpenStreetMap</h5>
+          <div class="oedw-source-item-author">OpenStreetMap Foundation</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">地图 / 数据</span></span>
+            <span><span class="oedw-source-language">英文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>免费协作世界地图，GPX / GeoJSON 数据来源。本页面所有路线数据下载均为 GeoJSON / GPX 格式，可导入 OSM 相关工具使用。</p>
+          <a class="oedw-source-item-link" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">openstreetmap.org</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>Out of Eden Walk MapRoom（官方地图）</h5>
+          <div class="oedw-source-item-author">National Geographic Society</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">官方项目</span></span>
+            <span><span class="oedw-source-language">英文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>官方 MapRoom 页面，可视化 Paul Salopek 全球路线与 Milestones。与本页面文化复刻路线数据互为对照：官方 vs 复刻。</p>
+          <a class="oedw-source-item-link" href="https://outofedenwalk.nationalgeographic.org/" target="_blank" rel="noopener">outofedenwalk.nationalgeographic.org · MapRoom</a>
+        </div>
+
+        <div class="oedw-source-item">
+          <h5>Culture Roadtrip Atlas 路线数据（本站）</h5>
+          <div class="oedw-source-item-author">Culture Roadtrip Atlas</div>
+          <div class="oedw-source-meta">
+            <span><span class="oedw-source-type">地图 / 数据</span></span>
+            <span><span class="oedw-source-language">中文</span></span>
+            <span><span class="oedw-source-confidence oedw-source-confidence-a">可信度 A</span></span>
+            <span><span class="oedw-source-type">已核验</span></span>
+          </div>
+          <p>本项目 OEDW 中国段路线数据：CSV / GeoJSON / GPX / SVG 均标注"文化复刻粗点 · 非原始 GPS · 非导航"，与官方 MapRoom 数据性质明确区分。</p>
+          <a class="oedw-source-item-link" href="../data/routes/out-of-eden-walk-china.geojson" target="_blank" rel="noopener">/data/routes/out-of-eden-walk-china.geojson</a>
+        </div>
+      </div>
+
+    </div><!-- /.oedw-bibliography-topic-grid -->
+
+    <hr style="margin: var(--space-xl) 0; border: none; border-top: 1px solid rgba(46,79,79,0.15);">
+
+    <!-- 参考资料阅读优先级 -->
+    <div class="oedw-reading-priority">
+      <h3 style="text-align:center; font-size: 1.05rem; font-weight:700; color: #2e4f4f; margin-bottom: var(--space-lg);">
+        📖 参考资料阅读优先级
+      </h3>
+      <div class="oedw-reading-priority-grid">
+        <div class="oedw-reading-priority-card oedw-reading-priority-card--must">
+          <h4>① 必读</h4>
+          <span class="oedw-reading-priority-level">理解路线事实边界</span>
+          <ul>
+            <li>Out of Eden Walk 官方资料</li>
+            <li>Milestones 74–95（中文摘要）</li>
+            <li>OEDW 官方 MapRoom 地图</li>
+            <li>本页事实审校与 Dispatch 对照</li>
+          </ul>
+          <p>目的：先弄清路线事实边界，不要把复刻路线误认为原始 GPS。</p>
+        </div>
+        <div class="oedw-reading-priority-card oedw-reading-priority-card--read">
+          <h4>② 推荐</h4>
+          <span class="oedw-reading-priority-level">理解地理与历史语境</span>
+          <ul>
+            <li>茶马古道研究</li>
+            <li>蜀道与剑门关</li>
+            <li>长城与司马台</li>
+            <li>北京中轴线（UNESCO 2024）</li>
+            <li>黄土高原与延安宝塔山</li>
+            <li>旅顺口与大连港历史</li>
+          </ul>
+          <p>目的：理解中国段地理与历史语境，不把路线当成景点清单。</p>
+        </div>
+        <div class="oedw-reading-priority-card oedw-reading-priority-card--deep">
+          <h4>③ 深读</h4>
+          <span class="oedw-reading-priority-level">写作、研究与长期项目</span>
+          <ul>
+            <li>慢新闻方法论文献</li>
+            <li>行走写作与长时段报道</li>
+            <li>地图叙事与 critical cartography</li>
+            <li>边地研究与长城学</li>
+            <li>城市空间研究与北京城市史</li>
+            <li>何伟中国三部曲（非虚构写作范本）</li>
+          </ul>
+          <p>目的：用于写作、研究和长期文化项目，不适合作为旅行指南。</p>
+        </div>
+        <div class="oedw-reading-priority-card oedw-reading-priority-card--gap">
+          <h4>④ 待补</h4>
+          <span class="oedw-reading-priority-level">后续实地验证与版本升级</span>
+          <ul>
+            <li>茶马古道中文研究专著深读</li>
+            <li>横断山地质与生物多样性资料</li>
+            <li>蜀道交通史专著</li>
+            <li>陕北乡村社会田野报告</li>
+            <li>东北工业遗存与港口变迁资料</li>
+            <li>现场实拍图与视觉授权</li>
+          </ul>
+          <p>目的：后续实地验证与版本升级，当前为空白或待核验状态。</p>
+        </div>
       </div>
     </div>
-    <div class="oedw-source-note">
-      <strong>📝 书目说明</strong>
-      以上书单为<strong>方向性参考</strong>，不表示本页面已完整引用。<br>
-      实际阅读时应通过图书馆或正规渠道获取原著，本页面不存储或分发任何版权材料。
+
+    <!-- 如何使用这些参考资料 -->
+    <div class="oedw-source-use-guide">
+      <h4>如何使用这些参考资料</h4>
+      <ol>
+        <li><strong>先用官方资料确认事实边界。</strong> 先读 Out of Eden Walk 官方 Milestones 与 MapRoom，弄清路线事实边界，再读本页中文复刻资料。</li>
+        <li><strong>再用主题资料理解地理和历史语境。</strong> 10 个主题资料分组帮助理解路线背后的地理、历史、社会背景。</li>
+        <li><strong>不要把参考资料直接转成旅行路线。</strong> 参考资料的目的是理解，不是复制成旅游产品。本页所有路线数据都标注为文化复刻粗点，非官方旅行路线。</li>
+        <li><strong>每次引用都要区分：官方事实、中文解读、旅行复刻建议。</strong> 三种性质不同，引用时应明确区分，避免混淆。</li>
+        <li><strong>如果资料与现场经验冲突，优先记录冲突，不要强行统一。</strong> 资料是静态参考，现场是动态现实。应以现场为准，资料仅作参考。</li>
+      </ol>
+    </div>
+
+    <!-- 待补书目与资料缺口 -->
+    <div style="margin-top: var(--space-xl);">
+      <h3 style="text-align:center; font-size: 1.05rem; font-weight:700; color: #7a3e2e; margin-bottom: var(--space-lg);">
+        📋 待补书目与资料缺口
+      </h3>
+      <div class="oedw-source-gap-list">
+        <div class="oedw-source-gap-card">
+          <h4>茶马古道中文研究书目</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：概念提出背景（木霁弘/陈保亚 1990 年徒步）<br>缺口：《滇藏川大三角文化探秘》原书未核验；茶马古道具体路线研究中文专著待补<br>下一步：通过 WorldCat / 中国知网检索云南大学茶马古道研究中心出版成果</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>横断山与西南山地资料</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：高黎贡山保护区信息<br>缺口：横断山地质构造、冰川、峡谷公路史；西南民族走廊学术资料<br>下一步：通过中国知网检索"横断山"地质地貌研究；UNESCO 三江并流详细文献</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>蜀道与秦岭交通史</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：剑门关官方景区信息<br>缺口：蜀道交通史学术专著；秦岭古道考古研究；栈道维修记录<br>下一步：通过国家图书馆 / 高校考古资料库检索蜀道专项研究</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>黄土高原与陕北乡村研究</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：延安宝塔山官方资料<br>缺口：黄土高原水土保持与生态治理系统资料；陕北窑洞建筑文化研究；延安时期社会史专著<br>下一步：通过中国知网 / 高校社会学资料库检索陕北乡村研究</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>长城边地研究</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：司马台长城文保信息<br>缺口：司马台文字砖专题研究；古北口整体边墙研究；承德与清代帝国北方战略专著<br>下一步：通过长城研究机构 / 文物出版社检索长城专项学术出版</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>北京城市空间研究</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：北京中轴线 UNESCO 信息、周口店官方资料<br>缺口：北京小汤山郊区化研究；卢沟桥历史与建筑研究；北京城市中轴线形成史专著<br>下一步：通过北京市文物局 / 首都博物馆检索城市史出版成果</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>东北乡村与大连港资料</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：旅顺口区政府官方历史<br>缺口：大连港工业史与港口变迁专著；辽宁乡村社会近现代变迁研究；黄海海岸线历史地理<br>下一步：通过东北师范大学 / 大连理工大学图书馆检索东北区域研究</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>Paul Salopek 访谈与项目方法资料</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：Pulitzer Center 课程页面、National Geographic 2019 专题<br>缺口：Paul Salopek TED 演讲全文；更多项目方法论文献；中文语境慢新闻实践案例<br>下一步：通过 TED.com / Pulitzer Center 检索 Salopek 相关教育材料</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>地图叙事与路线数据方法</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：OpenStreetMap、官方 MapRoom<br>缺口：critical cartography 学术专著；public history mapping 方法论文献；文化路线数据可视化案例<br>下一步：通过图书馆检索"mapping culture" / "critical cartography" 学术出版</p>
+        </div>
+        <div class="oedw-source-gap-card">
+          <h4>地方博物馆 / 文旅 / 文保资料</h4>
+          <span class="oedw-source-gap-state">待补</span>
+          <p>已有：部分官方文保与景区信息<br>缺口：OEDW 沿线地方博物馆（保山/大理/成都/西安/延安/承德/旅顺）详细开放信息与馆藏资料<br>下一步：逐一检索各地方博物馆官网，补充开放状态与参观信息</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 资料说明 -->
+    <div class="oedw-source-note" style="margin-top: var(--space-xl);">
+      <strong>📝 资料说明</strong><br>
+      以上书目为<strong>方向性参考</strong>，不表示本页面已完整引用每一条资料。所有资料均保留原始链接指向原始页面。<br>
+      实际阅读时应通过图书馆、出版社或正规渠道获取原著，本页面不存储或分发任何版权材料。<br>
+      可信度等级：A = 官方 / 出版 / 学术来源；B = 可靠机构 / 博物馆 / 文保资料；C = 背景参考；D = 待补 / 待核验。
     </div>
   </section>
     </details>
 
+  <!-- v1.5.8 出发前核查清单 -->
   <!-- v1.5.8 出发前核查清单 -->
   <details class="oedw-collapsible" id="oedw-pre-departure">
     <summary>
@@ -2831,7 +3367,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
     </div>
     <h2 class="text-center" style="margin-bottom: var(--space-2xl);">📊 本路线多维完成状态</h2>
     <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-xl); max-width: 880px; margin-left: auto; margin-right: auto;">
-      主状态 <strong>93% · 结构化阅读版</strong>。<br>
+      主状态 <strong>93% · 参考资料增强版</strong>。<br>
       93% 指<strong>页面资料结构成熟度</strong>，不代表路线实地验证完成。
     </p>
     <div class="oedw-status-table-wrap">
@@ -4491,7 +5027,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
       <h3 class="status-legend-title"><span class="module-type module-type-core">核心</span> 📋 本路线当前状态</h3>
       <div class="status-legend-list">
         <div class="status-legend-item">
-          <div class="status-legend-name">完成度：<span class="trip-status status-planning" style="background:rgba(107,142,35,0.2);color:#3d5a10;">93%</span> · 结构化阅读版</div>
+          <div class="status-legend-name">完成度：<span class="trip-status status-planning" style="background:rgba(107,142,35,0.2);color:#3d5a10;">93%</span> · 参考资料增强版</div>
           <div class="status-legend-desc">已完成：10 段路线 · Milestones 74–95 共 22 条覆盖 · 中文摘要 + 路线意义 + 复刻建议 · 官方 Dispatch 资料对照表 · 22/22 URL 200 · Milestone 视觉资料矩阵 · 22 条补图清单 · 现场实拍计划 · 视觉资料命名与归档规范 · 参考书目 5 类 · 出发前核查清单 8 类 · 读者入口 6 类 · 多维完成状态表 9 维 · 资料可信度 4 级 · 不建议复刻场景 8 类 · 交通可达性 10 段 · 观察任务 8 类 · FAQ 12 条 · 28 天节奏 · 28 天每日导游词 · 28 天每日执行卡 · 6 条短线 · 现场记录模板 · CSV/GeoJSON/GPX/SVG 数据 · SEO/OG/下载入口
         </div>
         <div class="status-legend-item">
@@ -4650,7 +5186,7 @@ oedw-m95-yellow-sea-port-01.jpg</pre>
           <a href="../../index.html#trips" class="footer-link">路线库</a>
           <a href="https://github.com/conanxin/culture-roadtrip-atlas" class="footer-link" target="_blank">GitHub</a>
         </div>
-        <div class="footer-credit">v1.5.11 · Out of Eden Walk 中国段 · 可用草案 v0.9 · 93% · 2026 · 结构化阅读版</div>
+        <div class="footer-credit">v1.5.12 · Out of Eden Walk 中国段 · 可用草案 v0.9 · 93% · 2026 · 参考资料增强版</div>
       </div>
     </div>
   </footer>

@@ -10135,3 +10135,249 @@ h4 .module-type { font-size: 0.62rem; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+ * OEDW v1.5.12 · 参考资料增强
+ * 参考书目地图 / 阅读优先级 / 可信度 badge
+ * ============================================================ */
+
+/* 主题资料卡片网格 */
+.oedw-bibliography-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+.oedw-bibliography-topic-card {
+  background: #fff;
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-top: 3px solid #2e4f4f;
+  border-radius: 6px;
+  padding: var(--space-md, 16px);
+}
+.oedw-bibliography-topic-card h4 {
+  margin: 0 0 8px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #2e4f4f;
+}
+.oedw-bibliography-topic-card .oedw-bibliography-topic-meta {
+  display: inline-block;
+  font-size: 0.66rem;
+  color: #6c6660;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+/* 资料条目 */
+.oedw-source-item {
+  border: 1px solid rgba(46, 79, 79, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+.oedw-source-item h5 {
+  margin: 0 0 4px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #2e4f4f;
+}
+.oedw-source-item .oedw-source-item-author {
+  font-size: 0.76rem;
+  color: #6c6660;
+  margin: 0 0 6px;
+}
+.oedw-source-item p {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+  color: #4a4540;
+}
+.oedw-source-item .oedw-source-item-link {
+  display: inline-block;
+  font-size: 0.74rem;
+  margin-top: 4px;
+  color: #2e4f4f;
+  text-decoration: none;
+  word-break: break-all;
+}
+.oedw-source-item .oedw-source-item-link:hover {
+  text-decoration: underline;
+}
+
+/* 资料元信息行 */
+.oedw-source-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin: 6px 0 4px;
+  font-size: 0.72rem;
+  color: #4a4540;
+}
+.oedw-source-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* 类型 / 语言 / 可信度 badge */
+.oedw-source-type,
+.oedw-source-language,
+.oedw-source-confidence {
+  display: inline-block;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+.oedw-source-type {
+  background: rgba(46, 79, 79, 0.08);
+  color: #2e4f4f;
+  border-color: rgba(46, 79, 79, 0.25);
+}
+.oedw-source-language {
+  background: rgba(107, 142, 35, 0.10);
+  color: #4f6821;
+  border-color: rgba(107, 142, 35, 0.30);
+}
+.oedw-source-confidence {
+  background: rgba(200, 169, 106, 0.12);
+  color: #8a6d2a;
+  border-color: rgba(200, 169, 106, 0.35);
+}
+.oedw-source-confidence-a {
+  background: rgba(46, 79, 79, 0.18);
+  color: #1f3a3a;
+  border-color: rgba(46, 79, 79, 0.45);
+}
+.oedw-source-confidence-b {
+  background: rgba(107, 142, 35, 0.18);
+  color: #3d5a10;
+  border-color: rgba(107, 142, 35, 0.45);
+}
+.oedw-source-confidence-c {
+  background: rgba(200, 169, 106, 0.18);
+  color: #8a6d2a;
+  border-color: rgba(200, 169, 106, 0.45);
+}
+.oedw-source-confidence-d {
+  background: rgba(139, 90, 74, 0.15);
+  color: #7a3e2e;
+  border-color: rgba(139, 90, 74, 0.40);
+}
+
+/* 阅读优先级卡片 */
+.oedw-reading-priority {
+  margin-top: var(--space-lg, 20px);
+}
+.oedw-reading-priority-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md, 16px);
+}
+.oedw-reading-priority-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(46, 79, 79, 0.18);
+  border-radius: 6px;
+  padding: var(--space-md, 16px);
+}
+.oedw-reading-priority-card--must  { border-top: 4px solid #2e4f4f; }
+.oedw-reading-priority-card--read  { border-top: 4px solid #6b8e23; }
+.oedw-reading-priority-card--deep  { border-top: 4px solid #6b4f7a; }
+.oedw-reading-priority-card--gap   { border-top: 4px solid #8b5a4a; }
+.oedw-reading-priority-card h4 {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #2e4f4f;
+}
+.oedw-reading-priority-card .oedw-reading-priority-level {
+  display: inline-block;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  color: #6c6660;
+  margin-bottom: 8px;
+}
+.oedw-reading-priority-card ul {
+  margin: 6px 0;
+  padding-left: 18px;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: #4a4540;
+}
+.oedw-reading-priority-card p {
+  margin: 6px 0 0;
+  font-size: 0.76rem;
+  color: #6c6660;
+}
+
+/* 参考资料使用指南 */
+.oedw-source-use-guide {
+  background: rgba(107, 142, 35, 0.05);
+  border: 1px solid rgba(107, 142, 35, 0.20);
+  border-radius: 6px;
+  padding: var(--space-md, 16px);
+  margin-top: var(--space-lg, 20px);
+}
+.oedw-source-use-guide h4 {
+  margin: 0 0 8px;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #4f6821;
+}
+.oedw-source-use-guide ol {
+  margin: 6px 0;
+  padding-left: 22px;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #4a4540;
+}
+
+/* 待补资料缺口 */
+.oedw-source-gap-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md, 16px);
+  margin-top: var(--space-md, 16px);
+}
+.oedw-source-gap-card {
+  background: rgba(139, 90, 74, 0.05);
+  border: 1px solid rgba(139, 90, 74, 0.25);
+  border-radius: 6px;
+  padding: var(--space-md, 16px);
+}
+.oedw-source-gap-card h4 {
+  margin: 0 0 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #7a3e2e;
+}
+.oedw-source-gap-card .oedw-source-gap-state {
+  display: inline-block;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  background: rgba(139, 90, 74, 0.10);
+  color: #7a3e2e;
+  padding: 1px 7px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+  border: 1px solid rgba(139, 90, 74, 0.25);
+}
+.oedw-source-gap-card p {
+  margin: 4px 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: #4a4540;
+}
+
+@media (max-width: 640px) {
+  .oedw-bibliography-topic-grid,
+  .oedw-reading-priority-grid,
+  .oedw-source-gap-list {
+    grid-template-columns: 1fr;
+  }
+}
