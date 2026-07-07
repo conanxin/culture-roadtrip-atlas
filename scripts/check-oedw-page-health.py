@@ -225,10 +225,10 @@ def check_manifest(
 ) -> None:
     section("manifest 一致性")
     version = manifest.get("version", "")
-    if version == "v1.5.13":
+    if version == "v1.5.14":
         ok(f"manifest version = {version}")
     else:
-        fail(f"manifest version = {version} 期望 v1.5.13", errs)
+        fail(f"manifest version = {version} 期望 v1.5.14", errs)
     routes = manifest.get("routes", [])
     oedw = next((r for r in routes if r.get("slug") == "out-of-eden-walk-china"), None)
     if not oedw:
@@ -267,6 +267,33 @@ def check_manifest(
             lbl = r.get("data_status_label", "")
             if "已完成" not in lbl:
                 warn(f"{slug} data_status_label = {lbl}（未动确认）", warns)
+
+
+def check_maintenance_period(html: str, manifest: dict, errs: List[str]) -> None:
+    section("v1.5.14 · 维护期状态")
+    markers = [
+        ("OEDW 稳定版候选维护计划", "OEDW 稳定版候选维护计划"),
+        ("OEDW 后续维护看板", "OEDW 后续维护看板"),
+        ("问题反馈与变更记录规则", "问题反馈与变更记录规则"),
+        ("稳定版候选边界声明", "稳定版候选边界声明"),
+    ]
+    for name, m in markers:
+        if m in html:
+            ok(f"{name} 存在")
+        else:
+            fail(f"{name} 缺失", errs)
+    if "维护期" in html:
+        ok("页面含'维护期'")
+    else:
+        fail("页面不含'维护期'", errs)
+    routes = manifest.get("routes", [])
+    oedw = next((r for r in routes if r.get("slug") == "out-of-eden-walk-china"), None)
+    if oedw:
+        label = oedw.get("data_status_label", "")
+        if "维护期" in label or "稳定版候选" in label:
+            ok(f"OEDW data_status_label = {label}")
+        else:
+            fail(f"OEDW data_status_label = {label} 不含'维护期'/'稳定版候选'", errs)
 
 
 def check_old_residue(html: str, errs: List[str], warns: List[str]) -> None:
@@ -342,6 +369,7 @@ def main() -> int:
     check_quicknav(html, errs, warns)
     check_table_wrappers(html, errs)
     check_manifest(manifest, errs, warns)
+    check_maintenance_period(html, manifest, errs)
     check_old_residue(html, errs, warns)
 
     print("\n========================================")
@@ -356,6 +384,8 @@ def main() -> int:
         print("\nSTATUS: FAIL")
         return 1
     print("\nSTATUS: PASS")
+    print(f"maintenance_plan: PASS")
+    print(f"stable_candidate_boundary: PASS")
     return 0
 
 

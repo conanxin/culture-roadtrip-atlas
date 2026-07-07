@@ -10494,3 +10494,163 @@ h4 .module-type { font-size: 0.62rem; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ── v1.5.14: OEDW 稳定版候选维护计划 ─────────────────────────── */
+.oedw-maintenance-plan-intro {
+  background: var(--bg-secondary, #f8f9fa);
+  border-left: 4px solid #28a745;
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-md) 0;
+  border-radius: 0 4px 4px 0;
+}
+.oedw-maint-note {
+  color: #856404;
+  font-size: 0.85em;
+  margin-top: var(--space-sm);
+}
+.oedw-maint-section {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid #e9ecef;
+}
+.oedw-maint-section:last-of-type { border-bottom: none; }
+.oedw-maint-badge-row {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin: var(--space-sm) 0;
+}
+.oedw-maint-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.oedw-maint-badge-stable {
+  background: rgba(40, 167, 69, 0.15);
+  color: #155724;
+  border: 1px solid rgba(40, 167, 69, 0.4);
+}
+.oedw-maint-patch-list {
+  columns: 2;
+  column-gap: var(--space-xl);
+}
+@media (max-width: 640px) {
+  .oedw-maint-patch-list { columns: 1; }
+}
+.oedw-maint-fieldwork { background: rgba(255, 193, 7, 0.08); }
+.oedw-maint-cycle-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: var(--space-sm) 0;
+}
+.oedw-maint-cycle-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-md);
+  font-size: 0.88em;
+}
+.oedw-maint-cycle-row span:first-child { font-weight: 600; color: var(--text-muted, #6c757d); }
+
+/* ── v1.5.14: 后续维护看板 ─────────────────────────────────────── */
+.oedw-board-note {
+  background: var(--bg-secondary, #f8f9fa);
+  border-left: 4px solid #17a2b8;
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-md);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9em;
+}
+.oedw-maint-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--space-md) 0;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+.oedw-maint-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82em;
+  white-space: nowrap;
+}
+.oedw-maint-table th {
+  background: var(--bg-secondary, #f1f3f5);
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+  position: sticky;
+  top: 0;
+}
+.oedw-maint-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: top;
+}
+.oedw-maint-table tr:last-child td { border-bottom: none; }
+.oedw-maint-table tr:hover td { background: rgba(0, 123, 255, 0.03); }
+.oedw-status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.82em;
+  font-weight: 500;
+}
+.oedw-status-done    { background: rgba(40, 167, 69, 0.15); color: #155724; }
+.oedw-status-pending { background: rgba(108, 117, 125, 0.15); color: #495057; }
+.oedw-status-fieldwork { background: rgba(255, 193, 7, 0.15); color: #856404; }
+.oedw-status-pending-auth { background: rgba(23, 162, 184, 0.15); color: #0c5460; }
+.oedw-status-cycle    { background: rgba(0, 123, 255, 0.12); color: #004494; }
+.oedw-priority {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.82em;
+  font-weight: 600;
+}
+.oedw-priority-high { background: rgba(220, 53, 69, 0.12); color: #a71d2a; }
+.oedw-priority-med  { background: rgba(255, 193, 7, 0.15); color: #856404; }
+.oedw-priority-low  { background: rgba(108, 117, 125, 0.12); color: #495057; }
+
+/* ── v1.5.14: 问题反馈与变更记录规则 ───────────────────────────── */
+.oedw-feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+}
+.oedw-feedback-card {
+  background: var(--bg-secondary, #f8f9fa);
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: var(--space-md);
+}
+.oedw-feedback-card h4 { margin: 0 0 var(--space-sm); font-size: 0.9em; }
+.oedw-feedback-card p { font-size: 0.82em; margin: 4px 0; color: #495057; }
+.oedw-feedback-card p strong { color: #212529; }
+
+/* ── v1.5.14: 稳定版候选边界声明 ───────────────────────────────── */
+.oedw-boundary-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin: var(--space-md) 0;
+}
+.oedw-boundary-col { padding: 0; }
+.oedw-boundary-col h4 { margin: 0 0 var(--space-sm); }
+.oedw-boundary-col ul { padding-left: 1.2em; font-size: 0.88em; }
+.oedw-boundary-col ul li { margin: 4px 0; }
+.oedw-boundary-conclusion {
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(40, 167, 69, 0.08);
+  border-left: 4px solid #28a745;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .oedw-boundary-two-col { grid-template-columns: 1fr; }
+  .oedw-feedback-grid { grid-template-columns: 1fr; }
+}

@@ -1059,3 +1059,19 @@ Out of Eden Walk 中国段完成页面健康检查、折叠结构体检、quick 
 - 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
 - 不新增地图 API / npm / 构建系统
 - OEDW 事实边界完整保留
+
+## OEDW 稳定版候选维护计划 v1.5.14 (OEDW Stable Candidate Maintenance Plan) (2026-07-07)
+
+Out of Eden Walk 中国段从建设期转入维护期。新增维护计划、patch 规则、链接复查周期、图片授权维护规则、后续维护看板、问题反馈与变更记录规则和稳定版候选边界声明。页面状态保持 93% · 稳定版候选 / 维护期。
+
+- 页面状态：完成度 93% · 稳定版候选 / 维护期（保持 93%，不强行升到 95% 或 100%）
+- 新增「OEDW 稳定版候选维护计划」模块（6 张子卡片）：当前阶段 / 允许 patch / 需实地验证 / 链接复查周期 / 图片授权规则 / 版本升级规则
+- 新增「OEDW 后续维护看板」：12 项维护任务（Milestone 官方链接复查 / 参考资料链接复查 / 图片授权状态 / 自有实拍图 / 点位开放状态 / 交通现实核查 / 参考书目深读 / Dispatch 二次深读 / 移动端页面体检 / SEO OG 微调 / 路线数据下载复查 / 用户反馈收集）
+- 新增「问题反馈与变更记录规则」：5 类（事实错误 / 链接失效 / 旅行现实变化 / 图片与授权 / 体验问题）
+- 新增「稳定版候选边界声明」：已稳定 7 个领域 vs 仍不稳定 7 个领域
+- check-oedw-page-health.py 新增维护期状态检查（maintenance_plan: PASS / stable_candidate_boundary: PASS）
+- check-route-seo.py 接受 v1.5.14
+- 不改辽塔页面 / 不改山西页面 / 不改 CSV/GeoJSON/GPX/SVG 坐标
+- 不新增大段路线内容 / 不新增图片 / 不改路线为 Paul Salopek 原始 GPS
+- OEDW 事实边界完整保留
+
